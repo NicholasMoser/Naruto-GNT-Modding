@@ -32,12 +32,11 @@ The rest of the information in the FPK file will be the data contained in each a
 |   ank        | Anko                       |
 |   bou        | Jirōbō                     |
 |   cho        | Chōji                      |
-|   cmn        | ???                        |
 |   dog        | Akamaru                    |
 |   gai        | Might Guy                  |
 |   gar        | Gaara                      |
-|   hak        | Haku	                    |
-|   hi         | Awakened Hinata            |
+|   hak        | Haku	                      |
+|   hi(2)      | Awakened Hinata            |
 |   hin        | Hinata                     |
 |   ino        | Ino                        |
 |   iru        | Iruka                      |
@@ -53,25 +52,26 @@ The rest of the information in the FPK file will be the data contained in each a
 |   kis        | Kisame                     |
 |   loc        | Rock Lee                   |
 |   miz        | Mizuki                     |
-|   na         | Kyūbi Naruto               |
+|   na(9)      | Kyūbi Naruto               |
 |   nar        | Naruto                     |
 |   nej        | Neji                       |
 |   obo        | Oboro                      |
 |   oro        | Orochimaru                 |
-|   sa         | Sasuke CS2                 |
+|   sa(2)      | Sasuke CS2                 |
 |   sak        | Sakura                     |
 |   sar        | Sarutobi (Third Hokage)    |
 |   sas        | Sasuke                     |
-|   scmn       | ???                        |
 |   sik        | Shikamaru                  |
 |   sin        | Shino                      |
 |   sko        | Sakon                      |
-|   ta         | ???                        |
+|   ta(2)      | Tayuya's Doki Demon        |
 |   tay        | Tayuya                     |
 |   tem        | Temari                     |
 |   ten        | Tenten                     |
 |   tsu        | Tsunade                    |
 |   zab        | Zabuza                     |
+
+Note: **cmn** is Effects and Items
   
 ### FPK File Contents
 When you unpack an FPK file, you will find a handful of different files types that have been extracted. Different characters will have different amounts of these files.
