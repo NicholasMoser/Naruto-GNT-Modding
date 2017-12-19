@@ -8,7 +8,7 @@
 5. **[MOT Files](#mot-files)**
 6. **[PTL Files](#ptl-files)**
 7. **[REF Files](#ref-files)**
-8. **[POO, PRO, SAM and SDI Files](#poo-files)**
+8. **[POO, PRO, SAM and SDI Files](#poo-pro-sam-and-sdi-files)**
 9. **[TRK Files](#trk-files)**
 10. **[H4M Files](#h4m-files)**
 
