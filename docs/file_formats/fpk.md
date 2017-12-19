@@ -1,7 +1,7 @@
 # FPK Files
 Naruto character data is stored in FPK files. These files are archives that contain related character data files. All Eighting games use this format. For more information on game data archives, see http://wiki.xentax.com/index.php/DGTEFF
 
-Each entry is compress with a properietary form of PRS compression. [QuickBMS](https://www.google.com/search?q=quickbms&ie=utf-8&oe=utf-8&client=firefox-b-ab) has support for unpacking this.
+Each entry is compress with a properietary form of PRS compression. [QuickBMS](https://www.google.com/search?q=quickbms) has support for unpacking this.
 
 ### FPK Headers
 The first 16 bytes in an FPK file represent the header for the file. In particular, this header describes information regarding the archive such as how many files are being stored in this single FPK file. The byte order is **Big-Endian**. 
