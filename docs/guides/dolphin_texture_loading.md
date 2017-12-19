@@ -1,5 +1,6 @@
 # Dolphin Texture Loading
 The Dolphin Emulator has a built-in way to load your own textures into the game. As of version 5.0 you will find these two options under the Advanced tab of Graphics Configuration:
+
 ![Dolphin Load/Dump Textures](/images/dolphin_load_dump_textures.png?raw=true "Dolphin Load/Dump Textures")
 
 ## How to Dump Textures
