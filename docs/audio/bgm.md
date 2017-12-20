@@ -6,16 +6,16 @@ Stage identification can be found here: [Stages](/docs/stages/stages.md)
 
 | File     |  Used For                                 |  Time | 
 |----------|-------------------------------------------|-------| 
-| m000.trk |  Menu Main Theme                          |  4:12 | 
+| m000.trk |  Menu Main                                |  4:12 | 
 | m001.trk |  Character Select                         |  4:39 | 
-| m002.trk |  Entering Battle                          |  0:05 | 
-| m003.trk |  Ending Battle                            |  0:08 | 
-| m004.trk |  ??? (Maybe Strongest Rival Fight)        |  0:04 | 
-| m005.trk |  ???                                      |  4:26 | 
-| m006.trk |  ???                                      |  0:11 | 
+| m002.trk |  Versus Screen                            |  0:05 | 
+| m003.trk |  Winner                                   |  0:08 | 
+| m004.trk |  Challenger                               |  0:04 | 
+| m005.trk |  Continue                                 |  4:26 | 
+| m006.trk |  Game Over                                |  0:11 | 
 | m007.trk |  Opening Video                            |  1:12 | 
-| m008.trk |  ???                                      |  1:45 | 
-| m009.trk |  Story Music                              |  4:22 | 
+| m008.trk |  Credits                                  |  1:45 | 
+| m009.trk |  Ranking                                  |  4:22 | 
 | m010.trk |  Story Music                              |  4:49 | 
 | m011.trk |  Story Music                              |  3:00 | 
 | m012.trk |  Story Music                              |  2:20 | 
@@ -27,7 +27,7 @@ Stage identification can be found here: [Stages](/docs/stages/stages.md)
 | m018.trk |  Story Music                              |  6:24 | 
 | m019.trk |  Story Music                              |  5:27 | 
 | m020.trk |  Story Music                              |  6:04 | 
-| m021.trk |  Extra Options                            |  5:14 | 
+| m021.trk |  Omake (Extra Options)                    |  5:14 | 
 | m040.trk |  Gamabunta's Bath                         |  4:35 | 
 | m041.trk |  Hokage's Monument                        |  5:03 | 
 | m042.trk |  Ichiraku Ramen (Night)                   |  3:34 | 
