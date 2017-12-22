@@ -1,4 +1,5 @@
 # Stages
+There are 31 stages in total.
 
 ## 3-Way Deadlock
 ![3-Way Deadlock](/images/3_way_deadlock.png?raw=true "3-Way Deadlock")
