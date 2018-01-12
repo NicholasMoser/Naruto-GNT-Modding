@@ -11,76 +11,67 @@ import codecs
 
 parser = argparse.ArgumentParser(description='Unpack FPK files.')
 group = parser.add_mutually_exclusive_group(required=True)
-group.add_argument('-f', '--file', type=argparse.FileType('rb'), help='FPK file to unpack.')
+group.add_argument('-f', '--file', help='FPK file to unpack.')
 group.add_argument('-d', '--directory', help='Directory of FPK files to unpack.')
 
 def main():
     ''' Unpack an FPK file or directory of FPK files. '''
     args = parser.parse_args()
-    fpk_file = args.file
-    if fpk_file is None:
+    fpk_path = args.file
+    if fpk_path is None:
         directory = args.directory
         files = [file for file in next(os.walk(directory))[2] if file.endswith('.fpk')]
         for file in files:
-            file_path = os.path.join(directory, file)
-            fpk_file = open(file_path, 'rb')
-            unpack_fpk(fpk_file)
+            fpk_path = os.path.join(directory, file)
+            unpack_fpk(fpk_path)
     else:
-        unpack_fpk(fpk_file)
+        unpack_fpk(fpk_path)
 
-def unpack_fpk(fpk_file):
+def unpack_fpk(fpk_path):
     ''' Unpacks a single FPK file. '''
-    current_byte = 0
-    header, current_byte = read_fpk_header(fpk_file, current_byte)
-    files, current_byte = read_file_headers(fpk_file, header['number_of_files'], current_byte)
-    for file_header in files:
-        start_byte = file_header['offset']
-        if current_byte < start_byte:
-            empty_bytes = start_byte - current_byte
-            print('{} padding bytes found. Skipping...'.format(empty_bytes))
-            fpk_file.read(empty_bytes)
-            current_byte += empty_bytes
-        file_size = file_header['size']
-        data = fpk_file.read(file_size)
-        current_byte += file_size
-        write_file(data, file_header['name'])
-    print('Ended at byte {}'.format(current_byte))
-    fpk_file.close()
+    with open(fpk_path, 'rb') as fpk_file:
+        header = read_fpk_header(fpk_file)
+        files = read_file_headers(fpk_file, header['file_count'])
+        for file_header in files:
+            start_byte = file_header['offset']
+            if fpk_file.tell() < start_byte:
+                empty_bytes = start_byte - fpk_file.tell()
+                print('{} padding bytes found. Skipping...'.format(empty_bytes))
+                fpk_file.read(empty_bytes)
+            file_size = file_header['compressed_size']
+            data = fpk_file.read(file_size)
+            write_file(data, file_header['name'])
+        print('Ended at byte {}'.format(fpk_file.tell()))
 
-def read_fpk_header(fpk_file, current_byte):
+def read_fpk_header(fpk_file):
     ''' Read and return the first 16 bytes that describe the FPK file itself. '''
     header = {}
-    header['file_int'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-    header['number_of_files'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-    header['string_entry_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+    header['null'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+    header['file_count'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+    header['header_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
     header['file_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-    current_byte += 16
     print('Begin to unpack fpk file: {}'.format(fpk_file.name))
-    print('File int: {}'.format(header['file_int']))
-    print('Number of files: {}'.format(header['number_of_files']))
-    print('String entry size: {}'.format(header['string_entry_size']))
+    print('File count: {}'.format(header['file_count']))
     print('File size: {}\n'.format(header['file_size']))
-    return header, current_byte
+    return header
 
-def read_file_headers(fpk_file, number_of_files, current_byte):
+def read_file_headers(fpk_file, file_count):
     ''' Read and return the headers of each file contained in the FPK file. '''
     files = []
-    for _ in range(number_of_files):
+    for _ in range(file_count):
         file = {}
         name_value = binascii.hexlify(fpk_file.read(16))
         file['name'] = codecs.decode(name_value, 'hex').decode('utf-8')[:-1]
         file['null_value'] = int.from_bytes(fpk_file.read(4), byteorder='big')
         file['offset'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-        file['size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-        file['unknown'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+        file['compressed_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+        file['uncompressed_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
         files.append(file)
-        current_byte += 32
         print('Found file: {}'.format(file['name']))
-        print('Null value: {}'.format(file['null_value']))
         print('Offset: {}'.format(file['offset']))
-        print('Size: {}'.format(file['size']))
-        print('Unknown: {}\n'.format(file['unknown']))
-    return files, current_byte
+        print('Compressed size: {}'.format(file['compressed_size']))
+        print('Uncompressed size: {}\n'.format(file['uncompressed_size']))
+    return files
 
 def write_file(data, file_name):
     ''' Write binary data to file_name. '''
