@@ -6,8 +6,6 @@ Written by Nicholas Moser. NicholasMoser56@gmail.com www.github.com/NicholasMose
 """
 import os
 import argparse
-import binascii
-import codecs
 
 parser = argparse.ArgumentParser(description='Unpack FPK files.')
 group = parser.add_mutually_exclusive_group(required=True)
@@ -30,9 +28,9 @@ def main():
 def unpack_fpk(fpk_path):
     ''' Unpacks a single FPK file. '''
     with open(fpk_path, 'rb') as fpk_file:
-        header = read_fpk_header(fpk_file)
-        files = read_file_headers(fpk_file, header['file_count'])
-        for file_header in files:
+        fpk_header = read_fpk_header(fpk_file)
+        file_headers = read_file_headers(fpk_file, fpk_header['file_count'])
+        for file_header in file_headers:
             start_byte = file_header['offset']
             if fpk_file.tell() < start_byte:
                 empty_bytes = start_byte - fpk_file.tell()
@@ -45,36 +43,39 @@ def unpack_fpk(fpk_path):
 
 def read_fpk_header(fpk_file):
     ''' Read and return the first 16 bytes that describe the FPK file itself. '''
-    header = {}
-    header['null'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-    header['file_count'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-    header['header_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-    header['file_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+    fpk_header = {}
+    fpk_header['null'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+    fpk_header['file_count'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+    fpk_header['header_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+    fpk_header['file_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
     print('Begin to unpack fpk file: {}'.format(fpk_file.name))
-    print('File count: {}'.format(header['file_count']))
-    print('File size: {}\n'.format(header['file_size']))
-    return header
+    print('File count: {}'.format(fpk_header['file_count']))
+    print('File size: {}\n'.format(fpk_header['file_size']))
+    return fpk_header
 
 def read_file_headers(fpk_file, file_count):
     ''' Read and return the headers of each file contained in the FPK file. '''
-    files = []
+    file_headers = []
     for _ in range(file_count):
-        file = {}
-        name_value = binascii.hexlify(fpk_file.read(16))
-        file['name'] = codecs.decode(name_value, 'hex').decode('utf-8')[:-1]
-        file['null_value'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-        file['offset'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-        file['compressed_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-        file['uncompressed_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-        files.append(file)
-        print('Found file: {}'.format(file['name']))
-        print('Offset: {}'.format(file['offset']))
-        print('Compressed size: {}'.format(file['compressed_size']))
-        print('Uncompressed size: {}\n'.format(file['uncompressed_size']))
-    return files
+        file_header = {}
+        file_header['name'] = fpk_file.read(16).decode('utf-8')[:-1]
+        file_header['null_value'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+        file_header['offset'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+        file_header['compressed_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+        file_header['uncompressed_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+        file_headers.append(file_header)
+        print('Found file: {}'.format(file_header['name']))
+        print('Offset: {}'.format(file_header['offset']))
+        print('Compressed size: {}'.format(file_header['compressed_size']))
+        print('Uncompressed size: {}\n'.format(file_header['uncompressed_size']))
+    return file_headers
 
 def write_file(data, file_name):
-    ''' Write binary data to file_name. '''
+    '''
+    Write binary data to file_name.
+    Files are in the form folder/folder/file, and will save them as such.
+    Example: hr/ank/0000.dat
+    '''
     split_path = file_name.split('/')
     if not os.path.exists(split_path[1]):
         os.makedirs(split_path[1])
