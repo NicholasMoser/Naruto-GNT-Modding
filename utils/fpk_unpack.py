@@ -6,6 +6,7 @@ Written by Nicholas Moser. NicholasMoser56@gmail.com www.github.com/NicholasMose
 """
 import os
 import argparse
+import numpy as np
 
 parser = argparse.ArgumentParser(description='Unpack FPK files.')
 group = parser.add_mutually_exclusive_group(required=True)
@@ -58,32 +59,36 @@ def read_file_headers(fpk_file, file_count):
     file_headers = []
     for _ in range(file_count):
         file_header = {}
-        file_header['name'] = fpk_file.read(16).decode('utf-8')[:-1]
+        file_header['name'] = fpk_file.read(16).decode('utf-8').rstrip('\0')
         file_header['null_value'] = int.from_bytes(fpk_file.read(4), byteorder='big')
         file_header['offset'] = int.from_bytes(fpk_file.read(4), byteorder='big')
         file_header['compressed_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
-        file_header['uncompressed_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
+        file_header['decompressed_size'] = int.from_bytes(fpk_file.read(4), byteorder='big')
         file_headers.append(file_header)
         print('Found file: {}'.format(file_header['name']))
         print('Offset: {}'.format(file_header['offset']))
         print('Compressed size: {}'.format(file_header['compressed_size']))
-        print('Uncompressed size: {}\n'.format(file_header['uncompressed_size']))
+        print('decompressed size: {}\n'.format(file_header['decompressed_size']))
     return file_headers
 
 def write_file(data, file_name):
     '''
     Write binary data to file_name.
-    Files are in the form folder/folder/file, and will save them as such.
+    Files are in the form folder/.../file, and will save them as such.
     Example: hr/ank/0000.dat
     '''
     split_path = file_name.split('/')
-    if not os.path.exists(split_path[1]):
-        os.makedirs(split_path[1])
-    full_path = os.path.join(split_path[1], split_path[2])
-    if os.path.isfile(full_path):
-        print('Ignoring {}; file already exists.'.format(full_path))
+    path = ''
+    for folder in split_path[:-1]:
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+        path = os.path.join(path, folder)
+    file_path = os.path.join(path, split_path[-1])
+    print(file_path)
+    if os.path.isfile(file_path):
+        print('Ignoring {}; file already exists.'.format(file_path))
     else:
-        with open(full_path, 'wb') as file:
+        with open(file_path, 'wb') as file:
             file.write(data)
 
 main()
