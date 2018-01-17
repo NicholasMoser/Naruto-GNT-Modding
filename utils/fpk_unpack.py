@@ -6,7 +6,6 @@ Written by Nicholas Moser. NicholasMoser56@gmail.com www.github.com/NicholasMose
 """
 import os
 import argparse
-import numpy as np
 
 parser = argparse.ArgumentParser(description='Unpack FPK files.')
 group = parser.add_mutually_exclusive_group(required=True)
