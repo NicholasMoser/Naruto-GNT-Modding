@@ -13,29 +13,30 @@ def main():
     parser = GooeyParser(description='Convert ASCII to big endian Shift JIS hex.')
 
     parser.add_argument(
-    'text',
-    metavar='Insert Text',
-    help='Example: ')
+        'text',
+        metavar='Insert Text',
+        help='Example: ')
 
     parser.add_argument(
-    '-c', '--count',
-    metavar='Count Shift JIS characters',
-    action='store_true',
-    help='I want to count characters in Shift JIS bytes instead (make sure it starts with 00 00)')
+        '-c', '--count',
+        metavar='Count Shift JIS characters',
+        action='store_true',
+        help='I want to count characters in Shift JIS bytes instead (make sure it starts with 00 00)')
 
     args = parser.parse_args()
     if args.count:
-        count_characters(args.text)
+        count_characters_in_hex(args.text)
     else:
         ascii_to_shift_jis(args.text)
+    print('\n\n---------------')
 
-def count_characters(hex):
+def count_characters_in_hex(text):
     '''
     Given shift-jis hex, count the number of characters.
     Example: 00 00 46 81 00 00 00 0A would be two.
     '''
-    length = len(hex.split('00 00')) - 1
-    print('\n{0} characters long.'.format(length))
+    length = (len(text) + 1) // 12
+    print('{0} characters long.'.format(length))
 
 def ascii_to_shift_jis(text):
     '''
@@ -44,6 +45,7 @@ def ascii_to_shift_jis(text):
     This dictionary maps all of the important characters.
     \n is a newline, and \\ is the end command.
     '''
+    print('Text: {}\n'.format(text))
     charmap = {}
     charmap['\n'] = '00 0A'
     charmap['\\'] = '00 1A'
@@ -139,4 +141,4 @@ def ascii_to_shift_jis(text):
             print('00 00 {0} '.format(bytestring), end='')
 
 if __name__ == '__main__':
-  main()
+    main()
