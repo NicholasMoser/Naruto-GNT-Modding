@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. **[FPK Files](#fpk-files)**
-2. **[SEQ Files](#dat-files)**
+2. **[SEQ Files](#seq-files)**
 3. **[DAT Files](#dat-files)**
 4. **[JCV Files](#jcv-files)**
 5. **[TXG Files](#txg-files)**
@@ -27,6 +27,7 @@ These files are **believed** to be bones/armature for associated DAT files.
 
 # TXG Files
 These files contain textures. ThatTrueStruggle has written a program that will allow you to convert them to TPL here: [TXG2TPL code](https://github.com/ThatTrueStruggle/TXG2TPL).
+
 TPL files can be opened with [BrawlBox](https://github.com/libertyernie/brawltools)
 
 # MOT Files
@@ -46,5 +47,7 @@ TRK files are music files (does not include sound effects). are simply renamed A
 
 # H4M Files
 Movie files. Includes the opening, ending, Tomy and 8ing videos.
+
 You can find the patent for this format here: https://www.google.com/patents/US6714687
+
 You can find a tool to decode the audio from it here: https://github.com/hcs64/vgm_ripping/tree/master/demux/h4m_audio_decode
