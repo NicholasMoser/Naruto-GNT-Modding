@@ -1,7 +1,9 @@
 # Sequence Files
 Files ending with .seq dictate just about everything about the UI and characters that aren't art assets. This includes damage, speed, which animation to play, hitboxes, etc.
 
-### Flags
+### KF Flags
+These are for value *24 1A 12 00*
+
 | Value       |  Name    |  Description                                    | 
 |-------------|----------|-------------------------------------------------| 
 | 00          |  None    |                                                 | 
@@ -37,3 +39,26 @@ Files ending with .seq dictate just about everything about the UI and characters
 | 20 00 00 00 |  Freeze  |                                                 | 
 | 40 00 00 00 |  Cancel  |  Hyuuga cancel                                  | 
 | 80 00 00 00 |  AtkCan  |  Super Cancel                                   | 
+
+### K2F Flags
+These are for value *24 1A 48 00*
+
+| Value   |  Name       |  Description                 | 
+|---------|-------------|------------------------------| 
+| 01      |  yoro2      |  Feet trapped                | 
+| 02      |  hiki       |  Jiraya 2A                   | 
+| 04      |  hiki2      |  Shika 2X                    | 
+| 08      |  mission    |                              | 
+| 10      |  natemi     |                              | 
+| 20      |  superarmor |                              | 
+| 40      |  mato2      |  Feet trapped                | 
+| 80      |  atkallcan  |  Can cancel in to any attack | 
+| 1 00    |  toji       |                              | 
+| 2 00    |  hasa       |  Jirobo crumple              | 
+| 4 00    |  shave      |  Kisame sword                | 
+| 8 00    |  nemu       |  Sleep                       | 
+| 10 00   |  wing       |                              | 
+| 20 00   |  null       |                              | 
+| 40 00   |  null       |                              | 
+| 80 00   |  null       |                              | 
+| 1 00 00 |  null       |                              | 
