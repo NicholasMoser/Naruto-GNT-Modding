@@ -1,4 +1,6 @@
 '''
+NOTE: This file is now deprecated. Please use the GNT Hex Editor instead: https://github.com/NicholasMoser/hexeditor
+
 ASCII to Shift JIS
 Convert standard ASCII characters to Big Endian Shift JIS hex.
 Only works with Python 3.0+
