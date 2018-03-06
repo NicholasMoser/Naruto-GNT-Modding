@@ -10,7 +10,9 @@ While this document covers Naruto GNT4, most of the information you'll find here
 
 You can find a guide for this process here: [Dolphin Texture Loading](/docs/guides/dolphin_texture_loading.md)
 
-There also exists a basic English patch of GNT4, and you can find it here: [Naruto GNT4 English Patch](https://www.youtube.com/watch?v=d-NbZB3I4wo)
+[Naruto GNT4 English Patch](https://www.youtube.com/watch?v=d-NbZB3I4wo)
+
+[Gecko Codes](/docs/guides/gecko_codes.md)
 
 ## Advanced
 If you are wanting to do anything other than dumping and loading textures with Dolphin, you will need to put in some more effort. You will want to familiarize yourself with the process of hex editing and the various data formats stored in the game. You can both import and export these files by using the [GCRebuilder](https://www.google.com/search?q=gcrebuilder) with your copy of the game.
