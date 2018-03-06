@@ -24,3 +24,5 @@ Here are various pages associated with hacking the game:
 [Sequence Files](/docs/file_formats/seq.md)
 
 [Background Music](/docs/audio/bgm.md)
+
+[Useful Memory Locations](/docs/guides/useful_memory_locations.md)
