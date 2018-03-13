@@ -1,4 +1,6 @@
 """
+NOTE: This file should not be used anymore, as it does not decompress the files. Please use QuickBMS instead.
+
 FPK Unpacker
 Unpacks a FPK file or directory of FPK files from the Naruto GNT series.
 Only works with Python 3.2+
