@@ -1,7 +1,7 @@
 # Dolphin Texture Loading
 The Dolphin Emulator has a built-in way to load your own textures into the game. As of version 5.0 you will find these two options under the Advanced tab of Graphics Configuration:
 
-![Dolphin Load/Dump Textures](/images/dolphin_load_dump_textures.png?raw=true "Dolphin Load/Dump Textures")
+![Dolphin Load/Dump Textures](/images/tools/dolphin_load_dump_textures.png?raw=true "Dolphin Load/Dump Textures")
 
 ## How to Dump Textures
 To dump textures, make sure that the option in the above image for Dump Textures has been selected. Then you will want to launch the game and encounter the texture. When the game attempts to load the texture, it will dump it to your Dolphin documents folder (on Windows, this defaults to C:\Users\<your user>\Documents\Dolphin Emulator\Dump\Textures). In the textures folder you will find the folder G4NJDA, which is the folder that contains the dumped textures for Naruto GNT4.

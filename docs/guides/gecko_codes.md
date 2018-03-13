@@ -1,7 +1,7 @@
 # Gecko Codes
 These are codes that modify the game in various ways. You can add them to games by right clicking on the game in Dolphin and going to properties. Go to Gecko Codes and you can add them here by either going to Edit Config or hitting the Add button (Add button only exists in latest Dolphin versions).
 
-The codes you'll find here were written by Ralf from gc-forever: http://www.gc-forever.com/forums/viewtopic.php?t=2174
+Most of the codes you'll find here were written by Ralf from gc-forever: http://www.gc-forever.com/forums/viewtopic.php?t=2174
 
 ## Table of Contents
 1. **[General](#general)**
@@ -98,6 +98,14 @@ E0000000 80008000
 480143D0 00000000  
 040183E4 4BFEBC1C
 
+**Low Gravity [Nicholas Moser]**  
+48000000 80226358  
+DE000000 80008180  
+320001E0 00000000  
+140001E0 BCF5C28F  
+E0000000 80008000  
+[Notes](#gravity-adjustment)
+
 **Hit Anywhere [Ralf]**  
 C203C958 00000004  
 3C808022 80046358  
@@ -148,6 +156,14 @@ E0000000 80008000
 54600739 480143B0  
 040183E8 4BFEBC38
 
+**Low Gravity [Nicholas Moser]**  
+48000000 80226614  
+DE000000 80008180  
+320001E0 00000000  
+140001E0 BCF5C28F  
+E0000000 80008000  
+[Notes](#gravity-adjustment)
+
 **Hit Anywhere [Ralf]**  
 0600391C 00000024  
 3C808022 80046614  
@@ -196,6 +212,13 @@ DE000000 80008180
 120002BE 000000FF  
 E0000000 80008000
 
+**Low Gravity [Nicholas Moser]**  
+48000000 802268D0  
+DE000000 80008180  
+320001E0 00000000  
+140001E0 BCF5C28F  
+E0000000 80008000  
+[Notes](#gravity-adjustment)
 
 ## Player 4 Codes
 
@@ -216,6 +239,14 @@ E0000000 80008000
 DE000000 80008180  
 120002BE 000000FF  
 E0000000 80008000
+
+**Low Gravity [Nicholas Moser]**  
+48000000 80226B8C  
+DE000000 80008180  
+320001E0 00000000  
+140001E0 BCF5C28F  
+E0000000 80008000  
+[Notes](#gravity-adjustment)
 
 ## Global Character Modifiers
 
@@ -562,3 +593,15 @@ xx = Character ID
 040400A4 4BFC4A7D  
 04040328 4BFC47F9  
 040A86D8 4BF5C468
+
+### Gravity Adjustment
+
+The Gecko codes for low gravity can easily be modified to use different gravity values. This is accomplished by adjusting the value following 0x140001E0. For example, the default set for the codes listed on this page is 0xBCF5C28F. That number is the hexadecimal representation of the float -0.03. The default gravity value of the game is 0xBDAA0000 (-0.083008). Gravity in this case represents the change in speed that occurs each frame of the game. Here are the results of using -0.03 for the gravity:
+
+![Low Gravity](/images/gameplay/low_gravity.gif?raw=true "Low Gravity")
+
+Here is an example of using 0xBE23D70A (-0.16):
+
+![High Gravity](/images/gameplay/high_gravity.gif?raw=true "High Gravity")
+
+As you can see, any float closer to zero than -0.083008 will be lower gravity and any float further from zero will be higher gravity.
