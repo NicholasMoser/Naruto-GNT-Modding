@@ -2,9 +2,13 @@
 
 The following memory locations can be used to modify game values while the game is running. This is useful for writing Gecko codes to change game logic. They can be modified by using Dolphin's built-in debug mode. Please note that these values may be used for other things in the game (many are used while the intro cutscene is playing), so side effects can occur.
 
+## Difference Between Absolute and Relative Values
+
 There are two types of hex locations that you may come across, absolute and relative. Absolute hex locations will always be in the same location, for example the title screen demo trigger at 0x802FD704. This hex location is used for other things in other parts of the game, but the title screen demo trigger can always be found there. Relative values are dependent upon certain variables. For example, modifying character health values depends on which controller number you are and which character is selected. In these cases, an absolute hex location will hold a pointer to the relative hex location. Then, the values we wish to modify will be offsets of the resulting relative hex location. Gecko's pointer address operations are used to interact with these relative hex locations. 
 
-As an example, the absolute hex location 0x80226358 contains the relative hex location for player 1. If we pick Naruto in training, this is set to relative hex location 0x8031B520 (and will be different if we chose a different character). Now, if we go to this location we will be at the list of player values for player 1. Adding any of the offsets from the relative table will give us the specific location of our desired variable. Chakra values have an offset of 0x28E, so if we add that to 0x8031B520 we get 0x8031B7AE. This value holds player 1's chakra value and can be modified.
+### Example
+
+The absolute hex location 0x80226358 contains the relative hex location for player 1. If we pick Naruto in training, this is set to relative hex location 0x8031B520 (and will be different if we chose a different character). Now, if we go to this location we will be at the list of player values for player 1. Adding any of the offsets from the relative table will give us the specific location of our desired variable. Chakra values have an offset of 0x28E, so if we add that to 0x8031B520 we get 0x8031B7AE. This value holds player 1's chakra value and can be modified.
 
 ## Absolute Values
 
