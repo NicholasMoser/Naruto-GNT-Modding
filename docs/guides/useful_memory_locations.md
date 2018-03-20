@@ -16,7 +16,7 @@ The absolute hex location 0x80226358 contains the relative hex location for play
 |--------------|--------|---------|--------------------------------------------------------------------------------------------| 
 | 8024A594     |  4     |  uint   |  Very fast universal timer                                                                 | 
 | 8106C37C     |  4     |  uint   |  Set to 0x00000001 if in character select and 0x00000000 if not.                           | 
-| 802FD704     |  4     |  uint   |  Title screen demo trigger timer (0x00000258 triggers demo which correlates to 10 seconds) | 
+| 802FD704     |  4     |  uint   |  Title screen demo trigger timer[1]                                                        | 
 | 802D5D17     |  4     |  uint   |  Training Mode: P1 Character Select (Visual)                                               | 
 | 802DB4E3     |  4     |  uint   |  Training Mode: P1 Character Select (Actual)                                               | 
 | 802D5D47     |  4     |  uint   |  Training Mode: P2 Character Select (Visual)                                               | 
@@ -63,23 +63,28 @@ The absolute hex location 0x80226358 contains the relative hex location for play
 | 8024C94E     |  2     |  uint   |  Player 2 Controller Input (Buttons)                                                       | 
 | 8024C956     |  2     |  uint   |  Player 2 Controller Input (Buttons)                                                       | 
 
+[1] Demo triggers after 10 seconds (0x00000258)
+
 ## Relative Values
 
 | Absolute Location |  Offset |  Bytes |  Type  |  Description                                    | 
 |-------------------|---------|--------|--------|-------------------------------------------------| 
 | 80226358          |  1DC    |  4     |  float |  P1 Vertical Speed                              | 
-| 80226358          |  1E0    |  4     |  float |  P1 Gravitational Constant (default: -0.083008) | 
+| 80226358          |  1E0    |  4     |  float |  P1 Gravitational Constant[1]                   | 
 | 80226358          |  262    |  4     |  uint  |  P1 Health Value                                | 
-| 80226358          |  28E    |  4     |  uint  |  P1 Chakra Value (max: 0x00003C00)              | 
+| 80226358          |  28E    |  4     |  uint  |  P1 Chakra Value[2]                             | 
 | 80226614          |  1DC    |  4     |  float |  P2 Vertical Speed                              | 
-| 80226614          |  1E0    |  4     |  float |  P2 Gravitational Constant (default: -0.083008) | 
+| 80226614          |  1E0    |  4     |  float |  P2 Gravitational Constant[1]                   | 
 | 80226614          |  262    |  4     |  uint  |  P2 Health Value                                | 
-| 80226614          |  28E    |  4     |  uint  |  P2 Chakra Value (max: 0x00003C00)              | 
+| 80226614          |  28E    |  4     |  uint  |  P2 Chakra Value[2]                             | 
 | 802268D0          |  1DC    |  4     |  float |  P3 Vertical Speed                              | 
-| 802268D0          |  1E0    |  4     |  float |  P3 Gravitational Constant (default: -0.083008) | 
+| 802268D0          |  1E0    |  4     |  float |  P3 Gravitational Constant[1]                   | 
 | 802268D0          |  262    |  4     |  uint  |  P3 Health Value                                | 
-| 802268D0          |  28E    |  4     |  uint  |  P3 Chakra Value (max: 0x00003C00)              | 
+| 802268D0          |  28E    |  4     |  uint  |  P3 Chakra Value[2]                             | 
 | 80226B8C          |  1DC    |  4     |  float |  P4 Vertical Speed                              | 
-| 80226B8C          |  1E0    |  4     |  float |  P4 Gravitational Constant (default: -0.083008) | 
+| 80226B8C          |  1E0    |  4     |  float |  P4 Gravitational Constant[1]                   | 
 | 80226B8C          |  262    |  4     |  uint  |  P4 Health Value                                | 
-| 80226B8C          |  28E    |  4     |  uint  |  P4 Chakra Value (max: 0x00003C00)              | 
+| 80226B8C          |  28E    |  4     |  uint  |  P4 Chakra Value[2]                             | 
+
+[1] Default: -0.083008  
+[2] Max: 15360 (0x00003C00)
