@@ -1,0 +1,20 @@
+comtype prs_8ing
+endian big
+
+get NULL long
+get FCOUNT long
+get HSIZE long
+get FSIZE long
+
+for i = 0 < FCOUNT
+	getdstring NAME 0x14
+	get OFFSET long
+	get SIZE long 
+	get ZSIZE long
+	
+	if SIZE == ZSIZE
+		log NAME OFFSET SIZE
+	else
+		clog NAME OFFSET SIZE ZSIZE
+	endif
+next i
