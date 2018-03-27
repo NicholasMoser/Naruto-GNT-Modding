@@ -13,6 +13,9 @@
 10. **[TRK Files](#trk-files)**
 11. **[H4M Files](#h4m-files)**
 
+# DOL File
+The Dol file format is the main executable file format for both the GameCube and the Wii. The name presumably refers to "Dolphin", which was the GameCube's codename. It is a simple file format consisting of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values. For more information see the following page: [DOL File](/docs/file_formats/dol.md)
+
 # FPK Files
 These files are archives that contain related character data files. For more information see the following page: [FPK Files](/docs/file_formats/fpk.md)
 

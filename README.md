@@ -28,3 +28,5 @@ Here are various pages associated with hacking the game:
 [Background Music](/docs/audio/bgm.md)
 
 [Useful Memory Locations](/docs/guides/useful_memory_locations.md)
+
+[DOL Hacking](/docs/file_formats/dol.md)
