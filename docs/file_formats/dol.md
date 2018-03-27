@@ -3,10 +3,57 @@
 ## Table of Contents
 1. **[Description](#description)**
 2. **[DOL Header](#dol-header)**
+2. **[Resources](#resources)**
 
 ## Description
 
-The Dol file format is the main executable file format for both the GameCube and the Wii. The name presumably refers to "Dolphin", which was the GameCube's codename. It is a simple file format consisting of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values.
+The Dol file format is the main executable file format for both the GameCube and the Wii. The name presumably refers to "Dolphin", which was the GameCube's codename. It is a simple file format consisting of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values. The BSS section is the data area for uninitialized variables.
+
+## How to inject ASM codes (C2xx xxxx) directly into the iso
+
+*Note: This was taken from [Sham Rock's smashboards post](https://smashboards.com/threads/the-dol-mod-topic.326347/page-5#post-16623011) on how to do it*
+
+### Requirements
+
+* A working ASM code
+* The DOL file
+* Debug version of Dolphin that can execute memory breakpoints
+* Tool to extract/replace the dol (gc-rebuilder or gc-tool)
+* Hex editor
+* ASM <> WiiRd converter
+
+### Guide
+
+First you will need to find free space in the DOL. Extract the DOL, then load it up in your hex editor and look for some free space (a lot of 00´s). Insert the code and add a little something to make it easy to find it later on (0xFEDCBA98 for example since it´s normally not found in the game's memory, so you can find it easily with a single memory search). Save and insert the DOL into the ISO.
+
+Next you will need to check if the memory space is safe to inject. Load up the ISO in dolphin and search for the identifier you added (0xFEDCBA98 in this case). It should only give you 1 result. From there you can find where you inserted the code into the game permanently. To check if it's safe to use that space load up the development version of dolphin and simply put 1 big memory-breakpoint for all the memory addresses we just modified and just play a bit. If the game never breaks, it never uses those memory addresses and it's safe to use them.
+
+Now that we know the memory is not used by the game, we can add 2 simple branches to and from the custom code. One way to do this is with the ASM<>WiiRd converter:
+
+**Branching backwards**  
+b 0x (FFFF FFFF - (start memory address - end memory address) )+1 in this case  
+(FFFF FFFF - (801a415c - 80004420) )+ 1 = FFE602C4  
+--> enter "b 0xFFE602C4" into converter  
+--> 4BE602C4 assembler instruction that has to be inserted into the dol where the code would normally be injected
+
+**Branching forward**  
+b 0x end address - start address  
+801a4160 - 8000448c = 19FCD4  
+--> enter "b 0x19FCD4" into converter  
+--> 4819FCD4 assembler instruction that has to be inserted where we wrote "FEDCBA98"
+
+Now you can find the injection point (0x801A415C in this example) in the DOL. You can find it with a simple hex search by looking at the surrounding instructions:
+
+```
+address code line hex instructions
+801a415c subi r0, r3, 1 3803ffff
+801a4160 stb r0, 0x0003 (r31) 981f0003
+801a4164 li r0, 0 38000000
+801a4168 stb r0, 0x0005 (r31) 981f0005
+```
+
+search for "3803ffff981f000338000000981f0005" in the DOL
+1 result @1A0D3C, meaning that's the point the branch backwards has to be inserted
 
 ## DOL Header
 
@@ -72,3 +119,9 @@ Here are the header entries for the Naruto GNT4 DOL file along with their respec
 | 0xDC  |  0xDF |  4      |  BSS size                       |  0x59B98 (367512)   | 
 | 0xE0  |  0xE3 |  4      |  Entry point                    |  0x80003154         | 
 | 0xE4  |  0xFF |  28     |  padding                        |  0x0                |
+
+## Resources
+
+[Gamecube Optical Disc Drive Guidelines](https://archive.org/stream/GCN_SDK_Documentation/Nintendo%20GameCube%20Optical%20Disc%20Drive%20Guidelines%20Version%201.41_djvu.txt)
+
+[Sham Rock ASM Injection Guide](https://smashboards.com/threads/the-dol-mod-topic.326347/page-5#post-16623011)
