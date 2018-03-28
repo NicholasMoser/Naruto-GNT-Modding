@@ -2,14 +2,16 @@
 
 ## Table of Contents
 1. **[Description](#description)**
-2. **[DOL Header](#dol-header)**
-2. **[Resources](#resources)**
+2. **[How to Inject ASM](#how-to-inject-asm)**
+3. **[DOL Header](#dol-header)**
+4. **[DOL Breakdown](#dol-breakdown)**
+5. **[Resources](#resources)**
 
 ## Description
 
-The Dol file format is the main executable file format for both the GameCube and the Wii. The name presumably refers to "Dolphin", which was the GameCube's codename. It is a simple file format consisting of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values. The BSS section is the data area for uninitialized variables.
+The Dol file format is the main executable file format for both the GameCube and the Wii. The name presumably refers to "Dolphin", which was the GameCube's codename. It is a simple file format consisting of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values. Text is executable code and data is just data for the game. The header also allows for a zero initialized (BSS) range. This range can overlap the 18 sections, with the sections taking priority. The BSS section is for uninitialized variables.
 
-## How to inject ASM codes (C2xx xxxx) directly into the iso
+## How to Inject ASM
 
 *Note: This was taken from [Sham Rock's smashboards post](https://smashboards.com/threads/the-dol-mod-topic.326347/page-5#post-16623011) on how to do it*
 
@@ -24,7 +26,7 @@ The Dol file format is the main executable file format for both the GameCube and
 
 ### Guide
 
-First you will need to find free space in the DOL. Extract the DOL, then load it up in your hex editor and look for some free space (a lot of 00´s). Insert the code and add a little something to make it easy to find it later on (0xFEDCBA98 for example since it´s normally not found in the game's memory, so you can find it easily with a single memory search). Save and insert the DOL into the ISO.
+Injecting ASM into the game involves inserting ASM codes (C2xx xxxx) directly into the ISO (particularly the DOL). First you will need to find free space in the DOL. Extract the DOL, then load it up in your hex editor and look for some free space (a lot of 00´s). Insert the code and add a little something to make it easy to find it later on (0xFEDCBA98 for example since it´s normally not found in the game's memory, so you can find it easily with a single memory search). Save and insert the DOL into the ISO.
 
 Next you will need to check if the memory space is safe to inject. Load up the ISO in dolphin and search for the identifier you added (0xFEDCBA98 in this case). It should only give you 1 result. From there you can find where you inserted the code into the game permanently. To check if it's safe to use that space load up the development version of dolphin and simply put 1 big memory-breakpoint for all the memory addresses we just modified and just play a bit. If the game never breaks, it never uses those memory addresses and it's safe to use them.
 
@@ -119,6 +121,11 @@ Here are the header entries for the Naruto GNT4 DOL file along with their respec
 | 0xDC  |  0xDF |  4      |  BSS size                       |  0x59B98 (367512)   | 
 | 0xE0  |  0xE3 |  4      |  Entry point                    |  0x80003154         | 
 | 0xE4  |  0xFF |  28     |  padding                        |  0x0                |
+
+## DOL Breakdown
+
+* Data0: 32 bytes of zeros.
+* Data1: The four byte word 0x8018E10C followed by 28 bytes of zeros. 0x8018E10C is a location to the ASM code for __destroy_global_chain.
 
 ## Resources
 
