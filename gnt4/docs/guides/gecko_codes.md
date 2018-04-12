@@ -1,4 +1,4 @@
-# Gecko Codes
+# GNT4 Gecko Codes
 These are codes that modify the game in various ways. You can add them to games by right clicking on the game in Dolphin and going to properties. Go to Gecko Codes and you can add them here by either going to Edit Config or hitting the Add button (Add button only exists in latest Dolphin versions).
 
 Most of the codes you'll find here were written by Ralf from gc-forever: http://www.gc-forever.com/forums/viewtopic.php?t=2174
@@ -598,10 +598,10 @@ xx = Character ID
 
 The Gecko codes for low gravity can easily be modified to use different gravity values. This is accomplished by adjusting the value following 0x140001E0. For example, the default set for the codes listed on this page is 0xBCF5C28F. That number is the hexadecimal representation of the float -0.03. The default gravity value of the game is 0xBDAA0000 (-0.083008). Gravity in this case represents the change in speed that occurs each frame of the game. Here are the results of using -0.03 for the gravity:
 
-![Low Gravity](/images/gameplay/low_gravity.gif?raw=true "Low Gravity")
+![Low Gravity](/gnt4/images/gameplay/low_gravity.gif?raw=true "Low Gravity")
 
 Here is an example of using 0xBE23D70A (-0.16):
 
-![High Gravity](/images/gameplay/high_gravity.gif?raw=true "High Gravity")
+![High Gravity](/gnt4/images/gameplay/high_gravity.gif?raw=true "High Gravity")
 
 As you can see, any float closer to zero than -0.083008 will be lower gravity and any float further from zero will be higher gravity.

@@ -2,7 +2,7 @@
 
 Stored in root\audio\bgm, the music is stored as TRK files. However, you can simply change the file extension to ADP and play them with [vgmstream](https://github.com/kode54/vgmstream).
 
-Stage identification can be found here: [Stages](/docs/stages/stages.md)
+Stage identification can be found here: [Stages](/gnt4/docs/stages/stages.md)
 
 | File     |  Used For                                 |  Time | 
 |----------|-------------------------------------------|-------| 
