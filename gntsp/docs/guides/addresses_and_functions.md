@@ -4,12 +4,12 @@ The following memory locations can be used to modify game values while the game 
 
 ## Addresses
 
-**character_block_pointer** = 803E324C
-**Max Chakra** = [character_block_pointer] + 40
-**Chakra** = [character_block_pointer] + 44
-**Max KnJ** = [character_block_pointer] + 48
-**KnJ** = [character_block_pointer] + 4C
-**Character State** = [character_block_pointer] + 60
+**character_block_pointer** = 803E324C  
+**Max Chakra** = [character_block_pointer] + 40  
+**Chakra** = [character_block_pointer] + 44  
+**Max KnJ** = [character_block_pointer] + 48  
+**KnJ** = [character_block_pointer] + 4C  
+**Character State** = [character_block_pointer] + 60  
 *Note: Each of the above four values are 0x2710 by default*
 
 A teleport will add the 2's compliment of the Max KNJ (0x00002710), which results in 0xFFFFE2B4.
@@ -18,73 +18,73 @@ A teleport will add the 2's compliment of the Max KNJ (0x00002710), which result
 
 Here are all of the flags that can be set for the character state address ([character_block_pointer] + 60).
 
-**Intro Cutscene**
-8086_0002
+**Intro Cutscene**  
+8086_0002  
 8086_0009
 
-**Standing**
+**Standing**  
 0000_0000
 
-**Moving Forward or Backwards**
+**Moving Forward or Backwards**  
 0200_0000
 
 *Note: Includes running*
 
-**Jump Once**
-0200_0000
-0800_0000
-4200_0000 (first touch ground)
-0200_0000
+**Jump Once**  
+0200_0000  
+0800_0000  
+4200_0000 (first touch ground)  
+0200_0000  
 0800_0000
 
 *Note: Direction does not influence these values*
 
-**Double Jump (from 08000000)**
-8000_0010
-4200_0010 (first touch ground)
+**Double Jump (from 08000000)**  
+8000_0010  
+4200_0010 (first touch ground)  
 0200_0000 
 
-**Throw Whiff**
+**Throw Whiff**  
 (no change)
 
-**Successful Throw**
-0020_0000
-1020_0000 (released from throw)
+**Successful Throw**  
+0020_0000  
+1020_0000 (released from throw)  
 1000_0000 
 
-**B**
-0200_0000 (begin animation)
+**B**  
+0200_0000 (begin animation)  
 0600_0000 (active damage frames)
 
 *Note: Whether it hits or not does not influence these values*
 
-**A**
+**A**  
 0200_0000 (begin animation)
 
-**X Whiff**
-4240_0008 (begin animation and invincibility)
-4240_0808 (???)
-4240_0008 (???)
-0240_0000 (exit cutscene)
+**X Whiff**  
+4240_0008 (begin animation and invincibility)  
+4240_0808 (???)  
+4240_0008 (???)  
+0240_0000 (exit cutscene)  
 0640_0000 (active frames)
 
-**X Hit**
-4240_0008 (begin animation and invincibility)
-4240_0808 (???)
-4240_0008 (???)
-0240_0000 (exit cutscene)
-6030_000A (hit)
+**X Hit**  
+4240_0008 (begin animation and invincibility)  
+4240_0808 (???)  
+4240_0008 (???)  
+0240_0000 (exit cutscene)  
+6030_000A (hit)  
 6030_0008 (begin cutscene)
 
-**Sidestep (L or R)**
-0200_0000 (begin animation)
+**Sidestep (L or R)**  
+0200_0000 (begin animation)  
 0200_0008 (invincibility frames)
 
 *Note: invicibility lasts 7 frames*
 
-**Backstep (double back)**
-0200_0000 (begin animation)
-4200_0008 (invincibility frames)
+**Backstep (double back)**  
+0200_0000 (begin animation)  
+4200_0008 (invincibility frames)  
 0200_0000 (non-invincible part of animation)
 
 *Note: invicibility lasts 7 frames*

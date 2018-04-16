@@ -45,4 +45,4 @@ Here are various pages associated with hacking the game:
 
 [Teleport Fix](/gntsp/docs/guides/teleport_fix.md)
 
-[Vulnerable Backstep/Sidestep](/gntsp/docs/guides/teleport_fix.md)
+[Vulnerable Backstep/Sidestep](/gntsp/docs/guides/backstep_sidestep_vulnerable.md)
