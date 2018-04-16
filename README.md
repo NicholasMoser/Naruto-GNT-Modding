@@ -15,10 +15,6 @@ You can find a guide for this process here: [Dolphin Texture Loading](/general/d
 
 [Naruto GNT4 English Patch](https://www.youtube.com/watch?v=d-NbZB3I4wo)
 
-[Naruto GNT4 Gecko Codes](/gnt4/docs/guides/gecko_codes.md)
-
-[Naruto GNT Special Gecko Codes](/gntsp/docs/guides/gecko_codes.md)
-
 ## Advanced
 
 If you are wanting to do anything other than dumping and loading textures with Dolphin, you will need to put in some more effort. You will want to familiarize yourself with the process of hex editing and the various data formats stored in the game. You can both import and export these files by using the [GCRebuilder](https://www.google.com/search?q=gcrebuilder) with your copy of the game.
@@ -26,6 +22,8 @@ If you are wanting to do anything other than dumping and loading textures with D
 Here are various pages associated with hacking the game:
 
 ### GNT4
+
+[Gecko Codes](/gnt4/docs/guides/gecko_codes.md)
 
 [Useful Addresses and Functions](/gnt4/docs/guides/addresses_and_functions.md)
 
@@ -40,6 +38,8 @@ Here are various pages associated with hacking the game:
 [DOL Hacking](/gnt4/docs/file_formats/dol.md)
 
 ### GNT Special
+
+[Gecko Codes](/gntsp/docs/guides/gecko_codes.md)
 
 [Useful Addresses and Functions](/gntsp/docs/guides/addresses_and_functions.md)
 
