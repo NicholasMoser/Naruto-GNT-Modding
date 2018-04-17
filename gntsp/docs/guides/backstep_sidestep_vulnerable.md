@@ -2,6 +2,10 @@
 
 In Naruto GNT Special, there are ~7 frames of invincibility frames when you sidestep (L or R) or backstep (double back). This page talks about the code to disable these invincibility frames.
 
+![Backstep Fix](/gntsp/images/gameplay/backstep_fix.gif?raw=true "Backstep Fix")
+
+![Sidestep Fix](/gntsp/images/gameplay/sidestep_fix.gif?raw=true "Backstep Fix")
+
 ## Code
 
 ### Gecko Code

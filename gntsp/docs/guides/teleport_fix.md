@@ -2,6 +2,8 @@
 
 The Naruto GNT SP teleport fix is a change to the game to use Chakra for teleports instead of KnJ. Both the L and R teleports will use 75% of your chakra. You will not gain or use any meter from the KnJ meter. There will be no additional gain to chakra during gameplay to make up for this additional use for it.
 
+![Teleport Uses Chakra](/gntsp/images/gameplay/teleport_chakra.gif?raw=true "Teleport Uses Chakra")
+
 ## Code
 
 ### Gecko Code
