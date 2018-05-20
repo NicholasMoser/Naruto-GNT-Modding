@@ -37,6 +37,8 @@ Here are various pages associated with hacking the game:
 
 [DOL Hacking](/gnt4/docs/file_formats/dol.md)
 
+[Random Select](gnt4/docs/guides/random_select.md)
+
 ### GNT Special
 
 [Gecko Codes](/gntsp/docs/guides/gecko_codes.md)
