@@ -192,7 +192,11 @@ Also we need to make sure that the new code is only triggered when one of the pl
 
 ### 0x80091ee8
 
-0x80091ee8 is the location where the character select actual value is set. Here are some of the important values stored in the registers at 80091ee8:
+0x80091ee8 is the location where the character select actual value is set. In order to examine this area of code, I took images of the register state in various scenarios:
+
+![Menu Registers](/gnt4/images/functions/menu_registers.png?raw=true "Menu Registers")
+
+So using this information, here are some of the important values stored in the registers at 80091ee8:
 
 * r0: New index
 * r1: Always 8028c4b0 (stack pointer?)
