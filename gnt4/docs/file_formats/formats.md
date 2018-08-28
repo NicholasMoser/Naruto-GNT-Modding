@@ -29,7 +29,7 @@ Contains much of the logic of the game itself. Think character health, attacks, 
 HAL Labs HSD Model format. The same model format used in Melee.
 
 # JCV Files
-These files are **believed** to be bones/armature for associated DAT files.
+These files are responsible for bones/armature for associated DAT files.
 
 # TXG Files
 These files contain textures. ThatTrueStruggle has written a program that will allow you to convert them to TPL here: [TXG2TPL code](https://github.com/ThatTrueStruggle/TXG2TPL).
