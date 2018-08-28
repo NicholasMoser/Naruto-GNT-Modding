@@ -72,19 +72,3 @@ The rest of the information in the FPK file will be the data contained in each a
 |   zab        | Zabuza                     |
 
 Note: **cmn** is Effects and Items
-  
-### FPK File Contents
-When you unpack an FPK file, you will find a handful of different files types that have been extracted. Different characters will have different amounts of these files.
-
-| File Type | Purpose                                                                                        |
-| :-------- | :--------------------------------------------------------------------------------------------- |
-|   .dat    | HAL Labs HSD Model format                                                                      |
-|   .jcv    | Potentially bones/armature for DAT files                                                       |
-|   .txg    | Texture file                                                                                   |
-|   .mot    | Animations                                                                                     |
-|   .ptl    | Unknown                                                                                        |
-|   .ref    | Unknown                                                                                        |
-|   .poo    | Sound and Voice                                                                                |
-|   .pro    | Sound and Voice                                                                                |
-|   .sam    | Sound and Voice                                                                                |
-|   .sdi    | Sound and Voice                                                                                |
