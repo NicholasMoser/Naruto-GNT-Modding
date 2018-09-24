@@ -2,7 +2,7 @@
 
 ## Details
 
-When Choji eats chips, it will increase his chakra and his attack power. His attack power starts at 1.0 and will increase by 0.04 for each chip to a maximum of 1.5. It takes 13 chips to reach 1.5 power. The damage multiplier is stored at each character block absolute pointer (e.g. 0x80226358) + 0x2C4. The multiplier only affects normal contact hits, so it does not affect projectiles and supers. Throws are affected by this. This applies to all characters in the game.
+When Choji eats chips, it will increase his chakra and his attack power. The chakra gain is 0x258 (600) per chip. His attack power starts at 1.0 and will increase by 0.04 for each chip to a maximum of 1.5. It takes 13 chips to reach 1.5 power. The damage multiplier is stored at each character block absolute pointer (e.g. 0x80226358) + 0x2C4. The multiplier only affects normal contact hits, so it does not affect projectiles and supers. Throws are affected by this. This applies to all characters in the game.
 
 Here is the full list of possible attack powers for each chip eaten, with each row being an additional chip eaten:
 
@@ -25,8 +25,6 @@ Here is the full list of possible attack powers for each chip eaten, with each r
 
 0x00000000 for the float value (0 in decimal) does not completely remove damage; it makes the amount of damage very small. The function that modifies this value on a chip eat is at address 0x80017020. When the new attack power is larger than the max, it will go to line 0x8001703c which resets it to the max (1.5).
 
-
-
 ## Gecko Codes
 
 Here are Gecko codes related to Choji's chips.
@@ -38,6 +36,8 @@ C201703C 00000001
 ![No Chip Max Attack](/gnt4/images/gameplay/no_chip_max.gif?raw=true "No Chip Max Attack")
 
 ## Value Modifiers
+
+Chakra gain from chips can be modified in Choji's 0000.seq file at offset 0x1C42C. It is set to 0x00000258 (600).
 
 Attack power gain from chips can be modified in Choji's 0000.seq file at offset 0x1C41C. It is set to 0x3D23D70A which in decimal is 0.03999999910593033 (better known as 0.04). You can change the power increase to a power decrease by changing the 0x00000001 to 0x00000000 at offset 0x1C418; any other value will effectively disable the power change.
 
