@@ -2,60 +2,17 @@
 
 ## Table of Contents
 1. **[Description](#description)**
-2. **[How to Inject ASM](#how-to-inject-asm)**
-3. **[DOL Header](#dol-header)**
-4. **[DOL Breakdown](#dol-breakdown)**
-5. **[Resources](#resources)**
+2. **[DOL Header](#dol-header)**
+3. **[DOL Breakdown](#dol-breakdown)**
+4. **[DOL Code Empty Space](#dol-code-empty-space)**
+5. **[How to Inject ASM](#how-to-inject-asm)**
+6. **[Resources](#resources)**
 
 ## Description
 
-The Dol file format is the main executable file format for both the GameCube and the Wii. The name presumably refers to "Dolphin", which was the GameCube's codename. It is a simple file format consisting of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values. Text is executable code and data is just data for the game. The header also allows for a zero initialized (BSS) range. This range can overlap the 18 sections, with the sections taking priority. The BSS section is for uninitialized variables.
+The Dol file format is for GameCube and Wii disc partitions. The name presumably refers to "Dolphin", which was the GameCube's codename. It is a simple file format consisting of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values. Text is executable code and data is just data for the game. The header also allows for a zero initialized (BSS) range. This range can overlap the 18 sections, with the sections taking priority. The BSS section is for uninitialized variables.
 
-## How to Inject ASM
-
-*Note: This was taken from [Sham Rock's smashboards post](https://smashboards.com/threads/the-dol-mod-topic.326347/page-5#post-16623011) on how to do it*
-
-### Requirements
-
-* A working ASM code
-* The DOL file
-* Debug version of Dolphin that can execute memory breakpoints
-* Tool to extract/replace the dol (gc-rebuilder or gc-tool)
-* Hex editor
-* ASM <> WiiRd converter
-
-### Guide
-
-Injecting ASM into the game involves inserting ASM codes (C2xx xxxx) directly into the ISO (particularly the DOL). First you will need to find free space in the DOL. Extract the DOL, then load it up in your hex editor and look for some free space (a lot of 00´s). Insert the code and add a little something to make it easy to find it later on (0xFEDCBA98 for example since it´s normally not found in the game's memory, so you can find it easily with a single memory search). Save and insert the DOL into the ISO.
-
-Next you will need to check if the memory space is safe to inject. Load up the ISO in dolphin and search for the identifier you added (0xFEDCBA98 in this case). It should only give you 1 result. From there you can find where you inserted the code into the game permanently. To check if it's safe to use that space load up the development version of dolphin and simply put 1 big memory-breakpoint for all the memory addresses we just modified and just play a bit. If the game never breaks, it never uses those memory addresses and it's safe to use them.
-
-Now that we know the memory is not used by the game, we can add 2 simple branches to and from the custom code. One way to do this is with the ASM<>WiiRd converter:
-
-**Branching backwards**  
-b 0x (FFFF FFFF - (start memory address - end memory address) )+1 in this case  
-(FFFF FFFF - (801a415c - 80004420) )+ 1 = FFE602C4  
---> enter "b 0xFFE602C4" into converter  
---> 4BE602C4 assembler instruction that has to be inserted into the dol where the code would normally be injected
-
-**Branching forward**  
-b 0x end address - start address  
-801a4160 - 8000448c = 19FCD4  
---> enter "b 0x19FCD4" into converter  
---> 4819FCD4 assembler instruction that has to be inserted where we wrote "FEDCBA98"
-
-Now you can find the injection point (0x801A415C in this example) in the DOL. You can find it with a simple hex search by looking at the surrounding instructions:
-
-```
-address code line hex instructions
-801a415c subi r0, r3, 1 3803ffff
-801a4160 stb r0, 0x0003 (r31) 981f0003
-801a4164 li r0, 0 38000000
-801a4168 stb r0, 0x0005 (r31) 981f0005
-```
-
-search for "3803ffff981f000338000000981f0005" in the DOL
-1 result @1A0D3C, meaning that's the point the branch backwards has to be inserted
+More information can be found here: http://wiki.tockdom.com/wiki/DOL_(File_Format)
 
 ## DOL Header
 
@@ -124,10 +81,70 @@ Here are the header entries for the Naruto GNT4 DOL file along with their respec
 
 ## DOL Breakdown
 
+GNT4 has two sections of code, Text0 and Text1. Text0 starts at file offset 0x100, which is loaded into address 0x80003100 when the game is playing. Text1 starts at file offset 0x26c0, which is loaded into address 0x800056c0 when the game is playing.
+
+Text0 is all of the code up until you hit Start at the title screen. This includes initialization of things needed to run the game such as registers. After you hit Start at the title screen it will begin Text1 code. This explains why Text0 is 9,664 bytes and Text1 is 2,064,704 bytes. This also means that if you go back to the title screen and hit Start again, it will begin from the start of Text1 code again.
+
 * Data0: 32 bytes of zeros.
 * Data1: The four byte word 0x8018E10C followed by 28 bytes of zeros. 0x8018E10C is a location to the ASM code for __destroy_global_chain.
+* Data2: Contains lots of text (e.g. file names, error messages, debug messages)
+* Data3: ???
+* Data4: Contains names of c code files (e.g. dvd.c, audio.c, pobj.c, hash.c)
+* Data5: Contains names of in-game battle properties (e.g. UKEMI, DAMAGE, THROW, SPECIAL).
+
+## DOL Code Empty Space
+
+One way of injection ASM is to insert into empty space in the code. There is only a single gap in Text1 for inserting new code. It exists at Start.dol offset 0x18a424, which is loaded into address 0x8018d424. It has room for 3 instructions, however this actually would only be 2 instructions since one instruction needs to be a return to the calling code.
+
+## How to Inject ASM
+
+*Note: This was taken from [Sham Rock's smashboards post](https://smashboards.com/threads/the-dol-mod-topic.326347/page-5#post-16623011) on how to do it*
+
+### Requirements
+
+* A working ASM code
+* The DOL file
+* Debug version of Dolphin that can execute memory breakpoints
+* Tool to extract/replace the dol (gc-rebuilder or gc-tool)
+* Hex editor
+* ASM <> WiiRd converter
+
+### Guide
+
+Injecting ASM into the game involves inserting ASM codes (C2xx xxxx) directly into the ISO (particularly the DOL). First you will need to find free space in the DOL. Extract the DOL, then load it up in your hex editor and look for some free space (a lot of 00´s). Insert the code and add a little something to make it easy to find it later on (0xFEDCBA98 for example since it´s normally not found in the game's memory, so you can find it easily with a single memory search). Save and insert the DOL into the ISO.
+
+Next you will need to check if the memory space is safe to inject. Load up the ISO in dolphin and search for the identifier you added (0xFEDCBA98 in this case). It should only give you 1 result. From there you can find where you inserted the code into the game permanently. To check if it's safe to use that space load up the development version of dolphin and simply put 1 big memory-breakpoint for all the memory addresses we just modified and just play a bit. If the game never breaks, it never uses those memory addresses and it's safe to use them.
+
+Now that we know the memory is not used by the game, we can add 2 simple branches to and from the custom code. One way to do this is with the ASM<>WiiRd converter:
+
+**Branching backwards**  
+b 0x (FFFF FFFF - (start memory address - end memory address) )+1 in this case  
+(FFFF FFFF - (801a415c - 80004420) )+ 1 = FFE602C4  
+--> enter "b 0xFFE602C4" into converter  
+--> 4BE602C4 assembler instruction that has to be inserted into the dol where the code would normally be injected
+
+**Branching forward**  
+b 0x end address - start address  
+801a4160 - 8000448c = 19FCD4  
+--> enter "b 0x19FCD4" into converter  
+--> 4819FCD4 assembler instruction that has to be inserted where we wrote "FEDCBA98"
+
+Now you can find the injection point (0x801A415C in this example) in the DOL. You can find it with a simple hex search by looking at the surrounding instructions:
+
+```
+address code line hex instructions
+801a415c subi r0, r3, 1 3803ffff
+801a4160 stb r0, 0x0003 (r31) 981f0003
+801a4164 li r0, 0 38000000
+801a4168 stb r0, 0x0005 (r31) 981f0005
+```
+
+search for "3803ffff981f000338000000981f0005" in the DOL
+1 result @1A0D3C, meaning that's the point the branch backwards has to be inserted
 
 ## Resources
+
+[DOL File Format](http://wiki.tockdom.com/wiki/DOL_(File_Format))
 
 [Gamecube Optical Disc Drive Guidelines](https://archive.org/stream/GCN_SDK_Documentation/Nintendo%20GameCube%20Optical%20Disc%20Drive%20Guidelines%20Version%201.41_djvu.txt)
 
