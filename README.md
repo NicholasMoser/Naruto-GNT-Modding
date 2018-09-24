@@ -39,6 +39,8 @@ Here are various pages associated with hacking the game:
 
 [Random Select](gnt4/docs/guides/random_select.md)
 
+[Choji's Chips](gnt4/docs/guides/choji_chips.md)
+
 ### GNT Special
 
 [Gecko Codes](/gntsp/docs/guides/gecko_codes.md)
