@@ -3,6 +3,11 @@ These are codes that modify the game in various ways. You can add them to games 
 
 ## General
 
+**Unlock All Characters [Nick]**  
+043e896c fecbfebf  
+043e8970 7f901f01  
+Note: You can remove or disable this code after you create/load your file, they will permanently save to your file data.
+
 **Teleports Use 75% of Chakra (instead of KnJ) [Nick]**  
 C2064E04 00000001  
 80030044 00000000  
