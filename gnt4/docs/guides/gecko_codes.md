@@ -15,6 +15,14 @@ Most of the codes you'll find here were written by Ralf from gc-forever: http://
 
 ## General
 
+**Skip Three Intro Videos**  
+C200CB14 00000001  
+60000000 00000000  
+C200CB28 00000001  
+60000000 00000000  
+C200CB3C 00000001  
+60000000 00000000
+
 **Add Random Select to Character Select (Activate with Down+Start)**  
 C2091ED4 00000015  
 3C800145 7C043800  
