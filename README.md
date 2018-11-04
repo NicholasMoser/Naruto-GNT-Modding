@@ -41,6 +41,10 @@ Here are various pages associated with hacking the game:
 
 [Choji's Chips](gnt4/docs/guides/choji_chips.md)
 
+### GNT Revolution 3
+
+[Gecko Codes](/rev3/docs/guides/gecko_codes.md)
+
 ### GNT Special
 
 [Gecko Codes](/gntsp/docs/guides/gecko_codes.md)
