@@ -8,6 +8,10 @@ These are codes that modify the game in various ways. You can add them to games 
 043e8970 7f901f01  
 Note: You can remove or disable this code after you create/load your file, they will permanently save to your file data.
 
+**60 FPS for 4-player Mode [Nick]**  
+C216CBEC 00000001  
+60030000 00000000
+
 **Teleports Use 75% of Chakra (instead of KnJ) [Nick]**  
 C2064E04 00000001  
 80030044 00000000  
