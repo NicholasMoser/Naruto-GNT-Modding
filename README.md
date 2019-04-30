@@ -23,6 +23,8 @@ Here are various pages associated with hacking the game:
 
 ### GNT4
 
+[Skins](/gnt4/docs/skins/README.md)
+
 [Gecko Codes](/gnt4/docs/guides/gecko_codes.md)
 
 [Useful Addresses and Functions](/gnt4/docs/guides/addresses_and_functions.md)
