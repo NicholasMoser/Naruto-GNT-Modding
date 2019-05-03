@@ -5,7 +5,7 @@ Download the skins by clicking on the image associated with them.
 
 ## Naruto
 
-### Naruto HD Shippuden [Alt]
+### Naruto Shippuden [Alt]
 
 Created by [Sophie-bear](https://twitter.com/Soph3D)  
 *Version 2*
