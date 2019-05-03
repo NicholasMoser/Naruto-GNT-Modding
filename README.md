@@ -4,8 +4,9 @@ Naruto Gekitō Ninja Taisen(GNT)/Clash of Ninja Hacking
 
 ## Introduction
 
-This repository is dedicated to investigating and modding the Naruto GNT games (known as Clash of Ninja in the United States) for the Nintendo Gamecube and Wii. Most of the information you'll find here is for GNT4 and GNT Special, however much of the information has been generalized to be appropriate to any of the games. Before you begin, I would highly suggest visiting the Naruto GNT4 subreddit: https://www.reddit.com/r/GNT4/
-Here you'll find a community of both modders and players interested in the game. The Discord channel in particular is good for connecting with people interested in modding the game. You can also download the most up to date Naruto GNT4 balance patch. Most of the information you'll find on this repository was discovered and written about by the various members of the Discord, so thanks to them for this :)
+This repository is dedicated to investigating and modding the Naruto GNT games, also known as Clash of Ninja in the United States. Before you begin, I would highly suggest visiting the [Naruto GNT4 Subreddit](https://www.reddit.com/r/GNT4/).
+
+Here you'll find a community of both modders and players interested in the game. The Discord channel in particular is good for connecting with people interested in modding the game. Most of the information you'll find on this repository was discovered and written about by the various members of the Discord.
 
 ## Basics
 
