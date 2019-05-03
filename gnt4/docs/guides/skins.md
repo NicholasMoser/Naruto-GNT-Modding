@@ -1,6 +1,7 @@
 # GNT4 Skins
 
-This page contains custom skins made by the GNT4 community.
+This page contains custom skins made by the GNT4 community.  
+Download the skins by clicking on the image associated with them.
 
 ## Naruto
 

@@ -14,7 +14,7 @@ For those only interested in modifying textures or installing custom skins for a
 
 You can find a guide for loading textures/skins here: [Dolphin Texture Loading](/general/docs/guides/dolphin_texture_loading.md)
 
-You can find a list of community made skins and textures here: [Skins](/gnt4/docs/skins/README.md)
+You can find a list of community made skins and textures here: [Skins](/gnt4/docs/guides/skins.md)
 
 You can find a set of textures for the game to translate it mostly into English here: [Naruto GNT4 English Patch](https://www.youtube.com/watch?v=d-NbZB3I4wo)
 
