@@ -10,7 +10,7 @@ Download the skins by clicking on the image associated with them.
 Created by [Sophie-bear](https://twitter.com/Soph3D)  
 *Version 2*
 
-[![Gym Boss](/gnt4/images/skins/NarutoShippudenCostumeSD_P2.png?raw=true "Gym Boss (Zabuza)")](/gnt4/files/NarutoShippudenCostumeSD_P2.zip?raw=true)
+[![Naruto Shippuden [Alt]](/gnt4/images/skins/NarutoShippudenCostumeSD_P2.png?raw=true "Naruto Shippuden [Alt]")](/gnt4/files/NarutoShippudenCostumeSD_P2.zip?raw=true)
 
 ## Sasuke
 
@@ -32,7 +32,7 @@ Created by [Sophie-bear](https://twitter.com/Soph3D)
 
 Created by Ada
 
-[![Gym Boss](/gnt4/images/skins/gymbossshika.png?raw=true "Gym Boss (Zabuza)")](/gnt4/files/Shikamaru_Gym_Boss.zip?raw=true)
+[![Gym Boss](/gnt4/images/skins/gymbossshika.png?raw=true "Gym Boss (Shikamaru)")](/gnt4/files/Shikamaru_Gym_Boss.zip?raw=true)
 
 ## Choji
 
@@ -80,13 +80,13 @@ Created by Ada
 
 Created by Ada
 
-[![Optimus Prime](/gnt4/images/skins/ankawo.png?raw=true "Kaworu Nagisa")](/gnt4/files/Anko_Kaworu_Nagisa.zip?raw=true)
+[![Kaworu Nagisa](/gnt4/images/skins/ankawo.png?raw=true "Kaworu Nagisa")](/gnt4/files/Anko_Kaworu_Nagisa.zip?raw=true)
 
 ### Black Clothes Red Nails
 
 Created by Ada
 
-[![Gym Boss](/gnt4/images/skins/blackred.png?raw=true "Gym Boss (Zabuza)")](/gnt4/files/Anko_Black_Clothes_Red_Nails.zip?raw=true)
+[![Black Clothes Red Nails](/gnt4/images/skins/blackred.png?raw=true "Black Clothes Red Nails")](/gnt4/files/Anko_Black_Clothes_Red_Nails.zip?raw=true)
 
 ## Hiruzen (Third)
 
