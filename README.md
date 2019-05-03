@@ -1,6 +1,6 @@
 # Naruto GNT Hacking
 
-Naruto Gekitō Ninja Taisen(GNT)/Clash of Ninja Hacking White Paper
+Naruto Gekitō Ninja Taisen(GNT)/Clash of Ninja Hacking
 
 ## Introduction
 

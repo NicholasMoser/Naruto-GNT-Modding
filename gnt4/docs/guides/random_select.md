@@ -8,7 +8,7 @@ In Naruto GNT4, there is no character select in the character select menus. This
 
 ### Gecko Code
 
-```
+```hex
 C2091ED4 00000015
 3C800145 7C043800
 40820098 2C1F0020
@@ -39,9 +39,8 @@ C2091EE8 00000003
 
 ### Assembly
 
-```
 80091ed4: 
-
+```assembly
 lis r4, 0x145
 cmpw r4, r7
 bne 152
@@ -83,9 +82,11 @@ ori r4, r4, 0xce50
 mtctr r4
 bctrl
 lwz    r4, -0x7788 (r13)
+```
 
 80091ee8:
 
+```assembly
 cmpwi r3, 0
 beq 8
 mr r0, r3
@@ -119,9 +120,10 @@ However we need to go back further to see where the random value is actually obt
 ![Kinda RNG](/gnt4/images/functions/kinda_rng.png?raw=true "Kinda RNG")
 
 r5 is set to an offset, such as 0x0000243c or 0x00002430. r6 is set to 0x802c6780, the start of a list of "RNG values" in memory. r5 and r6 are added to get the associated random value. I mapped out the locations in memory to see the spread of values it chooses from:
-    
-```
+
 r28 input and output:
+
+```hex
      0 ->  0 + 23f0 = 23f0 + 802c6780 = [802c8b70] =  7
      1 ->  4 + 24f0 = 23f4 + 802c6780 = [802c8b74] =  8
      2 ->  8 + 23f0 = 23f8 + 802c6780 = [802c8b78] =  f
@@ -163,17 +165,21 @@ Unfortunately I can't use this same spread for my own purposes since there's not
 Super Smash Brothers Melee, another GameCube title, uses a [Linear Congruential Generator](https://en.wikipedia.org/wiki/Linear_congruential_generator). You can read more about what that means and how it uses it here: [The Basics of RNG in Melee](https://www.reddit.com/r/SSBM/comments/71gn1d/the_basics_of_rng_in_melee/). However, what is really interesting is that the Linear Congruential Generator assembly code that Melee uses comes from a standard in Microsoft Visual/Quick C/C++. It actually turns out that GNT4 has the **exact** same function in the game:
 
 #### Melee Random Int
+
 ![Melee Random Int](/gnt4/images/functions/melee_random_int.png?raw=true "Melee Random Int")
 
 #### GNT4 Random Int
+
 ![GNT4 Random Int](/gnt4/images/functions/gnt4_random_int.png?raw=true "GNT4 Random Int")
 
 The main differences being them located in different places in the code, the different memory location offset (0x570c vs 0x7a20), and the order of the registers in the last three lines. There is also a function in both games for a random float, which you can see here:
 
 #### Melee Random Float
+
 ![Melee Random Float](/gnt4/images/functions/melee_random_float.png?raw=true "Melee Random Float")
 
 #### GNT4 Random Float
+
 ![GNT4 Random Float](/gnt4/images/functions/gnt4_random_float.png?raw=true "GNT4 Random Float")
 
 The random float function in GNT4 is called in around 52 different locations, particularly for in-game effects like dust and hit effects. The random integer function in GNT4 however is only called in two places, 0x801cd374 and 0x801ce40c which are both in the function at 0x801cce8c. I wasn't able to figure out what these locations are for, but that doesn't matter for writing this code.
@@ -182,7 +188,7 @@ The random integer function takes in r3 as a parameter and return value. It addi
 
 ### Random Character Select
 
-When in character select, there are two locations in memory that store the currently selected character in random select. One of these I call the visual value, the other I call the actual value. The visual value is what you see is actually selected in the game, but the actual value is what is truly selected. Modifying one but not the other means that what is selected on the screen does not much what is actually selected. Therefore we want to make sure that both are modified. 
+When in character select, there are two locations in memory that store the currently selected character in random select. One of these I call the visual value, the other I call the actual value. The visual value is what you see is actually selected in the game, but the actual value is what is truly selected. Modifying one but not the other means that what is selected on the screen does not much what is actually selected. Therefore we want to make sure that both are modified.
 
 The actual value is written to first. The visual value grabs the actual value and uses that. Therefore we only need to change what value is written to the actual value to affect the visual value, assuming we insert the code before the visual value is set. Unfortunately, different gamemodes use different memory locations to store the actual value and visual value. Training mode uses 0x802D5D14 for the visual value and 0x802DB4E0 for the actual value whereas four player mode uses different locations. Therefore it makes sense to add the new code somewhere near the point that the actual value is set since we have the memory locations of the actual value in context.
 
@@ -202,24 +208,24 @@ So using this information, here are some of the important values stored in the r
 * r1: Always 8028c4b0 (stack pointer?)
 * r3: 0, until the selection overflow check. If overflow occurs, set to r29 + 20
 * r4: Character selection base address
-    * Menus:    802fd600
-    * Versus:   802db440
-    * Practice: 802db460
-    * FFA:      802df560
+  * Menus:    802fd600
+  * Versus:   802db440
+  * Practice: 802db460
+  * FFA:      802df560
 * r5: Character selection offset
-    * P1: 80
-    * P2: 84
-    * P3: 88
-    * P4: 8c
+  * P1: 80
+  * P2: 84
+  * P3: 88
+  * P4: 8c
 * r7: Flag for character select is 0x01450000
 * r13: Subtract 0x7788 from this address to get the address for the old value.
 * r27: The max value for the list (inclusive). 27 for character select.
 * r30: Amount to add for selection move (always 1)
 * r31: Value used to get the character selection offset
-    * P1: 20
-    * P2: 21
-    * P3: 22
-   *  P4: 23
+  * P1: 20
+  * P2: 21
+  * P3: 22
+  * P4: 23
 
 Using these values we have everything we need to solve the original considerations in the first section.
 
@@ -249,13 +255,13 @@ So with this being said let's look at the location we will add our code in:
 
 There is immediately an issue present in that r4 and r5 are used in this block of code, but random_int() also requires using r4 and r5. Therefore it makes the most sense to add our new code before r4 and r5 are set, so this will actually be added at 0x80091ed4. We first will check that r7 is equal to 0x01450000 so that we know we are in the character select menu and not a different menu. If it is not equal, ignore the rest of the newly added code. Once we know we're in the character select menu see which character performed the movement by seeing whether r31 is equal to 0x20. 0x21, 0x22, or 0x23. Once we know which player performed it, check the inputs of their respective controller and memory and see if Start is being held. If it is then go to the random_int() function. Use the return value as the new character select value.
 
-### C Code for 
+### C Code
 
 To help me understand what I want the code to do I decided to write a C program to show what I want to occur. Additionally, using the [Writing Codes for Melee in C Guide](https://smashboards.com/threads/writing-codes-for-melee-in-c.425351/) along with DevKitPro, I was able to compile the program into assembly to get a good baseline for what I want the end assembly to look like.
 
-```
 0x80091ed4:
 
+```c
 #include <stdint.h>
 
 // Random Integer Function
@@ -282,17 +288,17 @@ To help me understand what I want the code to do I decided to write a C program 
 int _main() {
     // Built-in function setup
     uint32_t * (*random_int)(int) = GNT4_RANDOM_INT;
-    
+
     // Memory location setup
     int p1 = *(int*)GNT4_PLAYER_1_CONTROLLER;
     int p2 = *(int*)GNT4_PLAYER_2_CONTROLLER;
     int p3 = *(int*)GNT4_PLAYER_3_CONTROLLER;
     int p4 = *(int*)GNT4_PLAYER_4_CONTROLLER;
-    
+
     // Set to 0 for example, will have actual values in the registers during runtime
     int r31 = 0;
     int r7 = 0;
-    
+
     if (r7 == GNT_CHARACTER_SELECT_VALUE)
     {
         if (r31 == GNT4_PLAYER_1_MOVEMENT)
@@ -331,9 +337,9 @@ One thing to note is that this C code has four separate calls to random_int(). S
 
 ### Assembly Code with Comments
 
-```
-80091ed4: 
+80091ed4:
 
+```assembly
 // First compare r4 with 0x145. For whatever reason, only character select menus use this value and any
 // other menus use a different value. If r4 is not 0x145 branch to the end and ignore all of this new code.
 lis r4, 0x145
@@ -428,9 +434,11 @@ ori r4, r4, 0xce50
 mtctr r4
 bctrl
 lwz    r4, -0x7788 (r13)
+```
 
 80091ee8:
 
+```assembly
 // After the portion of code where we increment or decrement the selected character value,
 // we need to check if we're using a random select value instead and replace it.
 // Check if there is a value set for r3. If there is, move the value of r3 to r0.

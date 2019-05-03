@@ -6,22 +6,22 @@ When Choji eats chips, it will increase his chakra and his attack power. The cha
 
 Here is the full list of possible attack powers for each chip eaten, with each row being an additional chip eaten:
 
-| Hex      |  Decimal  | 
-|----------|-----------| 
-| 3f800000 |  1        | 
-| 3f851eb8 |  1.039999 | 
-| 3f8a3d70 |  1.079999 | 
-| 3f8f5c28 |  1.119999 | 
-| 3f947ae0 |  1.159999 | 
-| 3f999998 |  1.199999 | 
-| 3f9eb850 |  1.239999 | 
-| 3fa3d708 |  1.279999 | 
-| 3fa8f5c0 |  1.319999 | 
-| 3fae1478 |  1.359999 | 
-| 3fb33330 |  1.399999 | 
-| 3fb851e8 |  1.439999 | 
-| 3fbd70a0 |  1.479999 | 
-| 3fc00000 |  1.5      | 
+| Hex      |  Decimal  |
+|----------|-----------|
+| 3f800000 |  1        |
+| 3f851eb8 |  1.039999 |
+| 3f8a3d70 |  1.079999 |
+| 3f8f5c28 |  1.119999 |
+| 3f947ae0 |  1.159999 |
+| 3f999998 |  1.199999 |
+| 3f9eb850 |  1.239999 |
+| 3fa3d708 |  1.279999 |
+| 3fa8f5c0 |  1.319999 |
+| 3fae1478 |  1.359999 |
+| 3fb33330 |  1.399999 |
+| 3fb851e8 |  1.439999 |
+| 3fbd70a0 |  1.479999 |
+| 3fc00000 |  1.5      |
 
 0x00000000 for the float value (0 in decimal) does not completely remove damage; it makes the amount of damage very small. The function that modifies this value on a chip eat is at address 0x80017020. When the new attack power is larger than the max, it will go to line 0x8001703c which resets it to the max (1.5).
 
