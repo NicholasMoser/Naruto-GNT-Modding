@@ -10,11 +10,13 @@ Here you'll find a community of both modders and players interested in the game.
 
 ## Basics
 
-For those only interested in modifying textures for an emulated copy of the GNT games you are in luck. The [Dolphin Emulator](https://dolphin-emu.org/) drastically simplifies this process with the **Dump Textures** and **Load Textures** tools. This will allow you to skip straight to the texture design process.
+For those only interested in modifying textures or installing custom skins for an emulated copy of the GNT games you are in luck. The [Dolphin Emulator](https://dolphin-emu.org/) drastically simplifies this process with the **Dump Textures** and **Load Textures** tools. This will allow you to skip straight to the texture design process.
 
-You can find a guide for this process here: [Dolphin Texture Loading](/general/docs/guides/dolphin_texture_loading.md)
+You can find a guide for loading textures/skins here: [Dolphin Texture Loading](/general/docs/guides/dolphin_texture_loading.md)
 
-[Naruto GNT4 English Patch](https://www.youtube.com/watch?v=d-NbZB3I4wo)
+You can find a list of community made skins and textures here: [Skins](/gnt4/docs/skins/README.md)
+
+You can find a set of textures for the game to translate it mostly into English here: [Naruto GNT4 English Patch](https://www.youtube.com/watch?v=d-NbZB3I4wo)
 
 ## Advanced
 
@@ -23,8 +25,6 @@ If you are wanting to do anything other than dumping and loading textures with D
 Here are various pages associated with hacking the game:
 
 ### GNT4
-
-[Skins](/gnt4/docs/skins/README.md)
 
 [Gecko Codes](/gnt4/docs/guides/gecko_codes.md)
 
