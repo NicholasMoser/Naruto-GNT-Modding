@@ -14,6 +14,12 @@ Created by [Sophie-bear](https://twitter.com/Soph3D)
 
 ## Sasuke
 
+### Naruto Costume
+
+Created by [mom666](https://www.youtube.com/channel/UCAxpsO3P1QW-CMuYv5RQiNQ)
+
+[![Naruto Costume](/gnt4/images/skins/sasuke_naruto.png?raw=true "Naruto Costume")](/gnt4/files/Sasuke_P1_-_Naruto_Costume.zip?raw=true)
+
 ## Sakura
 
 ## Kakashi
