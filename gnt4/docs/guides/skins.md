@@ -24,6 +24,12 @@ Created by [mom666](https://www.youtube.com/channel/UCAxpsO3P1QW-CMuYv5RQiNQ)
 
 ## Kakashi
 
+### Dark Dolphin (Oboro)
+
+Created by Darrkoz
+
+[![Dark Dolphin (Oboro)](/gnt4/images/skins/oborokakashi.png?raw=true "Dark Dolphin (Oboro)")](/gnt4/files/Kakashi_Dark_Dolphin_Oboro.zip?raw=true)
+
 ## Neji
 
 ## Rock Lee
@@ -79,6 +85,12 @@ Created by Ada
 ## Iruka
 
 ## Mizuki
+
+### Akatsuki Mizuki
+
+Created by Darrkoz
+
+[![Akatsuki Mizuki](/gnt4/images/skins/akatsukimizuki.png?raw=true "Akatsuki Mizuki")](/gnt4/files/Akatsuki_Mizuki.zip?raw=true)
 
 ## Anko
 
