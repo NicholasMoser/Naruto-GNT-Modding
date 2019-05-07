@@ -26,7 +26,7 @@ Created by [mom666](https://www.youtube.com/channel/UCAxpsO3P1QW-CMuYv5RQiNQ)
 
 ### Dark Dolphin (Oboro)
 
-Created by Darrkoz
+Created by [Darrkoz](https://dolphinnetplayninja.tumblr.com)
 
 [![Dark Dolphin (Oboro)](/gnt4/images/skins/oborokakashi.png?raw=true "Dark Dolphin (Oboro)")](/gnt4/files/Kakashi_Dark_Dolphin_Oboro.zip?raw=true)
 
@@ -88,7 +88,7 @@ Created by Ada
 
 ### Akatsuki Mizuki
 
-Created by Darrkoz
+Created by [Darrkoz](https://dolphinnetplayninja.tumblr.com)
 
 [![Akatsuki Mizuki](/gnt4/images/skins/akatsukimizuki.png?raw=true "Akatsuki Mizuki")](/gnt4/files/Akatsuki_Mizuki.zip?raw=true)
 
