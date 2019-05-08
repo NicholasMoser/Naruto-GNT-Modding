@@ -84,6 +84,12 @@ Created by Ada
 
 ## Iruka
 
+### Iruka Grunge
+
+Created by [Darrkoz](https://dolphinnetplayninja.tumblr.com)
+
+[![Iruka Grunge](/gnt4/images/skins/irukagrunge.png?raw=true "Iruka Grunge")](/gnt4/files/Iruka_Grunge.zip?raw=true)
+
 ## Mizuki
 
 ### Akatsuki Mizuki
