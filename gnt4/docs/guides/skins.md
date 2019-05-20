@@ -134,6 +134,22 @@ Created by Nicholas Moser
 
 ## Tayuya
 
+### Pastel Tayuya
+
+Created by Ada
+
+*Note: Download combination with Pastel Tayuya Alt [here](/gnt4/files/pastel_tayuya_-_player_1_and_2.zip?raw=true).*
+
+[![Pastel Tayuya](/gnt4/images/skins/pasteltay1.png?raw=true "Pastel Tayuya")](/gnt4/files/pastel_tayuya_-_p1_blue_hair_purple_tunic.zip?raw=true)
+
+### Pastel Tayuya Alt
+
+Created by Ada
+
+*Note: Download combination with Pastel Tayuya [here](/gnt4/files/pastel_tayuya_-_player_1_and_2.zip?raw=true).*
+
+[![Pastel Tayuya Alt](/gnt4/images/skins/pasteltay2.png?raw=true "Pastel Tayuya Alt")](/gnt4/files/pastel_tayuya_-_p2_purple_hair_blue_tunic.zip?raw=true)
+
 ## Kimimaro
 
 ## Kabuto
