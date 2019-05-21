@@ -1,0 +1,1 @@
+python %~dp0ram2dol.py %1
