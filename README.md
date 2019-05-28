@@ -38,6 +38,8 @@ Here are various pages associated with hacking the game:
 
 [Background Music](/gnt4/docs/audio/bgm.md)
 
+[Main Menu Character](/gnt4/docs/guides/main_menu_character.md)
+
 [File Load Order](/gnt4/docs/guides/file_load_order.md)
 
 [DOL Hacking](/gnt4/docs/file_formats/dol.md)
