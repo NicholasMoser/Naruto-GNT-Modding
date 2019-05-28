@@ -1,0 +1,22 @@
+comtype prs_8ing
+endian big
+
+get NULL long
+get FCOUNT long
+get HSIZE long
+get FSIZE long
+set OFFSETD FSIZE
+set FNUM 0
+
+
+for i = 0 < FCOUNT
+	get OFFSET long
+	if OFFSET != NULL ;
+		math OFFSETD - OFFSET
+		set FNAM string FNUM
+		string FNAM + ".gnta"
+		Log FNAM OFFSET OFFSETD
+		set OFFSETD OFFSET
+		math FNUM + 1
+	EndIf;
+next i

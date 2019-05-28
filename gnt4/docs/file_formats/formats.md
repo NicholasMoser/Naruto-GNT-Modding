@@ -45,7 +45,115 @@ TPL files can be opened with [BrawlBox](https://github.com/libertyernie/brawltoo
 
 ## MOT Files
 
-The file that contains animations.
+MOT files contain animations. They can be unpacked using QuickBMS and [naruto_mot.bms](/utils/naruto_mot.bms). Each character has a **0000.mot**, **0001.mot**, and potentially others. 0001.mot contains only a single animation, the idle animation used for the character select screen. 0000.mot contains battle animations, as well as the same idle animation in 0001.mot. You can replace animations with each other using the QuickBMS reimport option.
+
+### Full List of MOT Files
+
+* fpack\chr\hr\ank\0000.mot
+* fpack\chr\hr\ank\0001.mot
+* fpack\chr\hr\bou\0000.mot
+* fpack\chr\hr\bou\0001.mot
+* fpack\chr\hr\bou\1002.mot
+* fpack\chr\hr\cho\0000.mot
+* fpack\chr\hr\cho\0001.mot
+* fpack\chr\hr\cho\1002.mot
+* fpack\chr\hr\cmn\0000.mot
+* fpack\chr\hr\dog\0000.mot
+* fpack\chr\hr\dog\0001.mot
+* fpack\chr\hr\gai\0000.mot
+* fpack\chr\hr\gai\0001.mot
+* fpack\chr\hr\gar\0000.mot
+* fpack\chr\hr\gar\0001.mot
+* fpack\chr\hr\hak\0000.mot
+* fpack\chr\hr\hak\0001.mot
+* fpack\chr\hr\hi2\0000.mot
+* fpack\chr\hr\hi2\0001.mot
+* fpack\chr\hr\hin\0000.mot
+* fpack\chr\hr\hin\0001.mot
+* fpack\chr\hr\ino\0000.mot
+* fpack\chr\hr\ino\0001.mot
+* fpack\chr\hr\ino\1000.mot
+* fpack\chr\hr\iru\0000.mot
+* fpack\chr\hr\iru\0001.mot
+* fpack\chr\hr\ita\0000.mot
+* fpack\chr\hr\ita\0001.mot
+* fpack\chr\hr\jir\0000.mot
+* fpack\chr\hr\jir\0001.mot
+* fpack\chr\hr\jir\1001.mot
+* fpack\chr\hr\jir\1153.mot
+* fpack\chr\hr\kab\0000.mot
+* fpack\chr\hr\kab\0001.mot
+* fpack\chr\hr\kak\0000.mot
+* fpack\chr\hr\kak\0001.mot
+* fpack\chr\hr\kan\0000.mot
+* fpack\chr\hr\kan\0001.mot
+* fpack\chr\hr\kar\0000.mot
+* fpack\chr\hr\kar\0001.mot
+* fpack\chr\hr\kib\0000.mot
+* fpack\chr\hr\kib\0001.mot
+* fpack\chr\hr\kid\0000.mot
+* fpack\chr\hr\kid\0001.mot
+* fpack\chr\hr\kim\0000.mot
+* fpack\chr\hr\kim\0001.mot
+* fpack\chr\hr\kis\0000.mot
+* fpack\chr\hr\kis\0001.mot
+* fpack\chr\hr\loc\0000.mot
+* fpack\chr\hr\loc\0001.mot
+* fpack\chr\hr\miz\0000.mot
+* fpack\chr\hr\miz\0001.mot
+* fpack\chr\hr\na9\0000.mot
+* fpack\chr\hr\na9\0001.mot
+* fpack\chr\hr\nar\0000.mot
+* fpack\chr\hr\nar\0001.mot
+* fpack\chr\hr\nej\0000.mot
+* fpack\chr\hr\nej\0001.mot
+* fpack\chr\hr\obo\0000.mot
+* fpack\chr\hr\obo\0001.mot
+* fpack\chr\hr\oro\0000.mot
+* fpack\chr\hr\oro\0001.mot
+* fpack\chr\hr\sa2\0000.mot
+* fpack\chr\hr\sa2\0001.mot
+* fpack\chr\hr\sak\0000.mot
+* fpack\chr\hr\sak\0001.mot
+* fpack\chr\hr\sar\0000.mot
+* fpack\chr\hr\sar\0001.mot
+* fpack\chr\hr\sar\1003.mot
+* fpack\chr\hr\sas\0000.mot
+* fpack\chr\hr\sas\0001.mot
+* fpack\chr\hr\sik\0000.mot
+* fpack\chr\hr\sik\0001.mot
+* fpack\chr\hr\sin\0000.mot
+* fpack\chr\hr\sin\0001.mot
+* fpack\chr\hr\sko\0000.mot
+* fpack\chr\hr\sko\0001.mot
+* fpack\chr\hr\ta2\0000.mot
+* fpack\chr\hr\tay\0000.mot
+* fpack\chr\hr\tay\0001.mot
+* fpack\chr\hr\tem\0000.mot
+* fpack\chr\hr\tem\0001.mot
+* fpack\chr\hr\ten\0000.mot
+* fpack\chr\hr\ten\0001.mot
+* fpack\chr\hr\tsu\0000.mot
+* fpack\chr\hr\tsu\0001.mot
+* fpack\chr\hr\zab\0000.mot
+* fpack\chr\hr\zab\0001.mot
+* fpack\shop\0000.mot
+* fpack\title\0000.mot
+* fpack\unite\te\000\0000.mot
+* fpack\unite\te\001\0000.mot
+* fpack\unite\te\002\0000.mot
+* fpack\unite\te\003\0000.mot
+* fpack\unite\te\004\0000.mot
+* fpack\unite\te\005\0000.mot
+* fpack\unite\te\006\0000.mot
+* fpack\unite\te\007\0000.mot
+* fpack\unite\te\008\0000.mot
+* fpack\unite\te\009\0000.mot
+* fpack\unite\te\010\0000.mot
+* fpack\unite\te\011\0000.mot
+* fpack\unite\te\012\0000.mot
+* fpack\unite\te\013\0000.mot
+* fpack\unite\te\014\0000.mot
 
 ## PTL Files
 
