@@ -45,7 +45,32 @@ TPL files can be opened with [BrawlBox](https://github.com/libertyernie/brawltoo
 
 ## MOT Files
 
-MOT files contain animations. They can be unpacked using QuickBMS and [naruto_mot.bms](/utils/naruto_mot.bms). Each character has a **0000.mot**, **0001.mot**, and potentially others. 0001.mot contains only a single animation, the idle animation used for the character select screen. 0000.mot contains battle animations, as well as the same idle animation in 0001.mot. You can replace animations with each other using the QuickBMS reimport option.
+MOT files contain one or more animations. They can be unpacked using QuickBMS and [naruto_mot.bms](/utils/naruto_mot.bms). Each character has a **0000.mot**, **0001.mot**, and potentially others. 0001.mot contains only a single animation, the idle animation used for the character select screen. 0000.mot contains battle animations, as well as the same idle animation in 0001.mot. You can replace animations with each other using the QuickBMS reimport option.
+
+### GNTA Files
+
+GNTA files are specific animations extracted using **naruto_mot.bms**. Their header info as as follows:
+
+0x00(4): Number of entries  
+0x04(4): Always 00000010  
+0x08(4): Float. Smoothness/Bounciness of the animation, lower is bouncier, Usually is between .03 and .25  
+0x0C(4): Float. Animation repeat delay, lower is quicker. Usually is between .03 and 5.0  
+0x10(4): Always 00000040  
+0x14(4): idk what this is, but always starts with FF FF  
+0x18(4): idk the purpose of this float, but you can find it in the frame data entries in 0x08  
+0x1C(4): 0 padding  
+0x20(4): Pointer to the beginning of the animation values  
+
+Frame data entries:  
+0x00(2): Always begins with 02 02  
+0x02(2): Always 21 or 28, other values don't seem to be allowed  
+0x04(2): Bone id maybe  
+0x06(2): Number of floats  
+0x08(4): That float doesn't repeat itself twice for a specific value in 0x02  
+0x0C(4): 0 padding  
+0x10(4): Offset to the first part of the animation values  
+0x14(4): Offset to the second part of the animation values  
+0x18(4): 0 padding  
 
 ### Full List of MOT Files
 
