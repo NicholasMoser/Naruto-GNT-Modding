@@ -22,6 +22,12 @@ Created by [mom666](https://www.youtube.com/channel/UCAxpsO3P1QW-CMuYv5RQiNQ)
 
 ## Sakura
 
+### Sakura HD
+
+Created by [Sophie-bear](https://twitter.com/Soph3D)
+
+[![Sakura HD](/gnt4/images/skins/sakurahd.jpg?raw=true "Itachi HD")](/gnt4/files/SakuraHD.zip?raw=true)
+
 ## Kakashi
 
 ### Dark Dolphin (Oboro)
@@ -67,6 +73,12 @@ Created by Ada
 ## Karasu
 
 ## Haku
+
+### Haku HD
+
+Created by [Sophie-bear](https://twitter.com/Soph3D)
+
+[![Haku HD](/gnt4/images/skins/hakuhd.jpg?raw=true "Haku HD")](/gnt4/files/HakuHD.zip?raw=true)
 
 ## Zabuza
 
@@ -155,6 +167,12 @@ Created by Ada
 ## Kabuto
 
 ## Itachi
+
+### Itachi HD
+
+Created by [Sophie-bear](https://twitter.com/Soph3D)
+
+[![Itachi HD](/gnt4/images/skins/itachihd.jpg?raw=true "Itachi HD")](/gnt4/files/ItachiHD.zip?raw=true)
 
 ## ## Kisame
 
