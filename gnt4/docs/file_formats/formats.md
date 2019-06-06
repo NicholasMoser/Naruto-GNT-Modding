@@ -28,6 +28,7 @@ These files are archives that contain related character data files. For more inf
 ## SEQ Files
 
 Contains much of the logic of the game itself. Think character health, attacks, etc.
+See more here: [Sequence Files](/gnt4/docs/file_formats/seq.md)
 
 ## DAT Files
 

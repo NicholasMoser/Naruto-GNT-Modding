@@ -32,7 +32,7 @@ Secondly, at 020 we have 24 1A 12 00 which is the KF flags. These are your main 
 |-------------|----------------|
 | 00 00 02 00 |  Punch         |
 | 00 00 01 00 |  High          |
-| 00 00 08 00 |  Weak Strength |
+| 00 00 00 08 |  Weak Strength |
 
 `24 1A 48 00` is K2F, which are special flags and generally not used for most moves.
 
@@ -192,15 +192,15 @@ A. Hinata chakra drain per frame on 4A (-180). This shows, with the 0000.seq loc
 | 00 00 00 01 |     replay    |  No effect                                                                      |
 | 00 00 00 02 |     BDrive    |  Changes lighting, no sub or tech roll, generally on Ougi moves                 |
 | 00 00 00 04 |     Shot      |  ??                                                                             |
-| 00 00 00 08 |     Pow_W     |  weak hit. affects blockstun and hitstun                                        |
-| 00 00 00 10 |     Pow_M     |  medium hit                                                                     |
-| 00 00 00 20 |     Pow_S     |  strong hit                                                                     |
-| 00 00 00 40 |     Low       |  attack hits low, and can be evaded by AF float flag                            |
-| 00 00 00 80 |     Middle    |  attack hits middle                                                             |
-| 00 00 01 00 |     High      |  attack hits high, and can be evaded by AF sit flag                             |
-| 00 00 02 00 |     Punch     |  attack is classified as a punch                                                |
-| 00 00 04 00 |     Kick      |  attack is classified as a kick                                                 |
-| 00 00 08 00 |     Throw     |  attack is classified as a throw, no sub or tech roll                           |
+| 00 00 00 08 |     Pow_W     |  Weak hit. affects blockstun and hitstun                                        |
+| 00 00 00 10 |     Pow_M     |  Medium hit                                                                     |
+| 00 00 00 20 |     Pow_S     |  Strong hit                                                                     |
+| 00 00 00 40 |     Low       |  Attack hits low, and can be evaded by AF float flag                            |
+| 00 00 00 80 |     Middle    |  Attack hits middle                                                             |
+| 00 00 01 00 |     High      |  Attack hits high, and can be evaded by AF sit flag                             |
+| 00 00 02 00 |     Punch     |  Attack is classified as a punch                                                |
+| 00 00 04 00 |     Kick      |  Attack is classified as a kick                                                 |
+| 00 00 08 00 |     Throw     |  Attack is classified as a throw, no sub or tech roll                           |
 | 00 00 10 00 |     Oiuchi    |  Hits later on OTG and during tech rolls (also called “Pursuit”)                |
 | 00 00 20 00 |     Special   |  Builds no chakra, generally seen on Ougi moves                                 |
 | 00 00 40 00 |     NoGuard   |  Unblockable                                                                    |
@@ -228,21 +228,21 @@ A. Hinata chakra drain per frame on 4A (-180). This shows, with the 0000.seq loc
 
 | Hex         |  Flag          |  Description                                                   |
 |-------------|----------------|----------------------------------------------------------------|
-| 00 00 00 01 |     yoro2      |  feet trapped. Ex: Kidomaru 5A1C                               |
+| 00 00 00 01 |     yoro2      |  Feet trapped. Ex: Kidomaru 5A1C                               |
 | 00 00 00 02 |     hiki       |  Sink into the ground and pop out. Ex: Jiraya 2A               |
 | 00 00 00 04 |     hiki2      |  Sink into the ground and fall from above. Ex: Shika 2X        |
 | 00 00 00 08 |     mission    |  ??                                                            |
 | 00 00 00 10 |     natemi     |  ??                                                            |
 | 00 00 00 20 |     superarmor |  Gives the move super armor, must be turned off. Ex: Chouji 5A |
 | 00 00 00 40 |     mato2      |  Trapped. Ex: Shino 2A                                         |
-| 00 00 00 80 |     atkallcan  |  can follow up with any other attack                           |
+| 00 00 00 80 |     atkallcan  |  Can follow up with any other attack                           |
 | 00 00 01 00 |     toji       |  ??                                                            |
 | 00 00 02 00 |     hasa       |  Crumple. Ex: Jirobo stone clap crumple                        |
-| 00 00 04 00 |     shave      |  for Kisame                                                    |
-| 00 00 08 00 |     nemu       |  sleep. Ex: Kabuto 2X                                          |
+| 00 00 04 00 |     shave      |  For Kisame                                                    |
+| 00 00 08 00 |     nemu       |  Sleep. Ex: Kabuto 2X                                          |
 | 00 00 10 00 |     wing       |  ??. ex: Kabuto 2X                                             |
-| 00 00 20 00 |     null       |  Crumple. Ex: OTK 2X                                           |
-| 00 00 40 00 |     null       |  ??                                                            |
+| 00 00 20 00 |     null1      |  Crumple. Ex: OTK 2X                                           |
+| 00 00 40 00 |     null2      |  ??                                                            |
 
 ### NF State Flags
 
@@ -253,7 +253,7 @@ A. Hinata chakra drain per frame on 4A (-180). This shows, with the 0000.seq loc
 | 00 00 00 01 |     kamae       |                                                              |
 | 00 00 00 02 |     disp        |  Disappears, can even walk through opponent while invisible. |
 | 00 00 00 04 |     tdmg        |  Used in conjuction with tdown for intangibility.            |
-| 00 00 00 08 |     jump2       |  Flag that appears after doing your midair jump/             |
+| 00 00 00 08 |     jump2       |  Flag that appears after doing your midair jump.             |
 | 00 00 00 10 |     leverdir    |                                                              |
 | 00 00 00 20 |     getup       |                                                              |
 | 00 00 00 40 |     hiteft      |                                                              |
