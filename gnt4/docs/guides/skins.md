@@ -20,6 +20,12 @@ Created by [mom666](https://www.youtube.com/channel/UCAxpsO3P1QW-CMuYv5RQiNQ)
 
 [![Naruto Costume](/gnt4/images/skins/sasuke_naruto.jpg?raw=true "Naruto Costume")](/gnt4/files/Sasuke_P1_-_Naruto_Costume.zip?raw=true)
 
+### Yugo the Wolf
+
+Created by [Sigma](https://www.youtube.com/channel/UCq1IHhIigmcwhqorTlsYhdA)
+
+[![Yugo the Wolf](/gnt4/images/skins/Yugo_The_Wolf.jpg?raw=true "Yugo the Wolf")](/gnt4/files/Yugo_The_Wolf.zip?raw=true)
+
 ## Sakura
 
 ### Sakura HD
@@ -174,9 +180,15 @@ Created by [Sophie-bear](https://twitter.com/Soph3D)
 
 [![Itachi HD](/gnt4/images/skins/itachihd.jpg?raw=true "Itachi HD")](/gnt4/files/ItachiHD.zip?raw=true)
 
-## ## Kisame
+## Kisame
 
 ## Sasuke CS2
+
+### Yugo the Wolf Beast Form
+
+Created by [Sigma](https://www.youtube.com/channel/UCq1IHhIigmcwhqorTlsYhdA)
+
+[![Yugo the Wolf Beast Form](/gnt4/images/skins/Yugo_The_Wolf_Beast_Form.jpg?raw=true "Yugo the Wolf Beast Form")](/gnt4/files/Yugo_The_Wolf_Beast_Form.zip?raw=true)
 
 ## Naruto Kyuubi
 
