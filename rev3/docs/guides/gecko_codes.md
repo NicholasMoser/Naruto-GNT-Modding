@@ -4,9 +4,11 @@ These are codes that modify the game in various ways. You can add them to games 
 ## General
 
 **Skip Intro Cutscenes [Nick]**  
-C2055264 00000003  
-827C0018 2C13000D  
-40820008 3A600000  
+c2055264 00000005
+827c0018 2c13000d
+4082000c 3a60000e
+48000010 2c130010
+40820008 3a600000
 60000000 00000000
 
 **60 FPS for 4-player Mode [Nick]**  
