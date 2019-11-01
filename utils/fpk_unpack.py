@@ -4,7 +4,6 @@ NOTE: This file should not be used anymore, as it does not decompress the files.
 FPK Unpacker
 Unpacks a FPK file or directory of FPK files from the Naruto GNT series.
 Only works with Python 3.2+
-Written by Nicholas Moser. NicholasMoser56@gmail.com www.github.com/NicholasMoser
 """
 import os
 import argparse

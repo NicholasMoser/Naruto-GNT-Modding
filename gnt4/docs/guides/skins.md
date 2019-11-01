@@ -12,6 +12,12 @@ Created by [Sophie-bear](https://twitter.com/Soph3D)
 
 [![Naruto Shippuden [Alt]](/gnt4/images/skins/NarutoShippudenCostumeSD_P2.jpg?raw=true "Naruto Shippuden [Alt]")](/gnt4/files/NarutoShippudenCostumeSD_P2.zip?raw=true)
 
+### Mystical Ninja Goemon
+
+Created by [Darrkoz](https://dolphinnetplayninja.tumblr.com)
+
+[![Naruto Shippuden [Alt]](/gnt4/images/skins/goemon_naruto.jpg?raw=true "Naruto Mystical Ninja Goemon")](/gnt4/files/Mystical_Ninja_Goemon_Naruto.zip?raw=true)
+
 ## Sasuke
 
 ### Naruto Costume

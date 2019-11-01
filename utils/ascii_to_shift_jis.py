@@ -4,7 +4,6 @@ NOTE: This file is now deprecated. Please use the GNT Hex Editor instead: https:
 ASCII to Shift JIS
 Convert standard ASCII characters to Big Endian Shift JIS hex.
 Only works with Python 3.0+
-Written by Nicholas Moser. NicholasMoser56@gmail.com www.github.com/NicholasMoser
 '''
 import argparse
 from gooey import Gooey, GooeyParser

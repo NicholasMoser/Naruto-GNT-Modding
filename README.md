@@ -1,6 +1,6 @@
-# Naruto GNT Hacking
+# Naruto GNT Modding
 
-Naruto Gekitō Ninja Taisen(GNT)/Clash of Ninja Hacking
+Naruto Gekitō Ninja Taisen(GNT)/Clash of Ninja Modding
 
 ## Introduction
 
@@ -22,7 +22,7 @@ You can find a set of textures for the game to translate it mostly into English 
 
 If you are wanting to do anything other than dumping and loading textures with Dolphin, you will need to put in some more effort. You will want to familiarize yourself with the process of hex editing and the various data formats stored in the game. You can both import and export these files by using the [GCRebuilder](https://www.google.com/search?q=gcrebuilder) with your copy of the game.
 
-Here are various pages associated with hacking the game:
+Here are various pages associated with modding the game:
 
 ### GNT4
 
