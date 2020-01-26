@@ -27,7 +27,7 @@ C200CB3C 00000001
 
 ### No Slow Down on Kill
 
-C2014868 00000001
+C2014868 00000001  
 60000000 00000000
 
 ### Add Random Select to Character Select (Activate with Down+Start)
