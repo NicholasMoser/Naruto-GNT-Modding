@@ -1,4 +1,4 @@
-# Sequence Files
+# SEQ Files
 
 Files ending with .seq dictate just about everything about the UI and characters that aren't art assets. This includes damage, speed, which animation to play, hitboxes, etc.  
 *Credit to TheCape for writing the content of this page*

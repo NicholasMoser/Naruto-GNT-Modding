@@ -4,9 +4,7 @@ Naruto Gekitō Ninja Taisen(GNT)/Clash of Ninja Modding
 
 ## Introduction
 
-This repository is dedicated to investigating and modding the Naruto GNT games, also known as Clash of Ninja in the United States. Before you begin, I would highly suggest visiting the [Naruto GNT4 Subreddit](https://www.reddit.com/r/GNT4/).
-
-Here you'll find a community of both modders and players interested in the game. The Discord channel in particular is good for connecting with people interested in modding the game. Most of the information you'll find on this repository was discovered and written about by the various members of the Discord.
+This repository is dedicated to investigating and modding the Naruto GNT games, also known as Clash of Ninja in the United States.
 
 ## Basics
 
@@ -16,11 +14,13 @@ You can find a guide for loading textures/skins here: [Dolphin Texture Loading](
 
 You can find a list of community made skins and textures here: [Skins](/gnt4/docs/guides/skins.md)
 
-You can find a set of textures for the game to translate it mostly into English here: [Naruto GNT4 English Patch](https://www.youtube.com/watch?v=d-NbZB3I4wo)
+You can find a set of textures for the game to translate it mostly into English here:  
+[Naruto GNT4 English Patch Footage](https://www.youtube.com/watch?v=d-NbZB3I4wo)  
+[Naruto GNT4 English Patch Download](http://www.mediafire.com/file/95qgicueh9hig7u/GNT4_English%252B_Netplay_Bulid.zip/file)
 
 ## Advanced
 
-If you are wanting to do anything other than dumping and loading textures with Dolphin, you will need to put in some more effort. You will want to familiarize yourself with the process of hex editing and the various data formats stored in the game. You can both import and export these files by using the [GCRebuilder](https://www.google.com/search?q=gcrebuilder) with your copy of the game.
+If you are wanting to do anything other than dumping and loading textures with Dolphin, you will need to put in some more effort. You will want to familiarize yourself with the process of hex editing and the various data formats stored in the game. You can both import and export these files by using [GNTool](https://github.com/NicholasMoser/GNTool) with your copy of the game.
 
 Here are various pages associated with modding the game:
 
@@ -32,21 +32,15 @@ Here are various pages associated with modding the game:
 
 [File Formats](/gnt4/docs/file_formats/formats.md)
 
-[FPK Files](/gnt4/docs/file_formats/fpk.md)
-
-[Sequence Files](/gnt4/docs/file_formats/seq.md)
-
 [Background Music](/gnt4/docs/audio/bgm.md)
 
 [Main Menu Character](/gnt4/docs/guides/main_menu_character.md)
 
-[File Load Order](/gnt4/docs/guides/file_load_order.md)
-
-[DOL Hacking](/gnt4/docs/file_formats/dol.md)
-
 [Random Select](gnt4/docs/guides/random_select.md)
 
 [Choji's Chips](gnt4/docs/guides/choji_chips.md)
+
+[File Load Order](/gnt4/docs/guides/file_load_order.md)
 
 ### GNT Revolution 3
 
@@ -61,3 +55,11 @@ Here are various pages associated with modding the game:
 [Teleport Fix](/gntsp/docs/guides/teleport_fix.md)
 
 [Vulnerable Backstep/Sidestep](/gntsp/docs/guides/backstep_sidestep_vulnerable.md)
+
+## Other Resources
+
+[Naruto GNT4 Subreddit](https://www.reddit.com/r/GNT4/)
+
+[GNT Community Discord](https://discord.gg/jDUxzvH)
+
+[GNT4 Documentation Notion](https://www.notion.so/GNT4-Documentation-40969865cc5d46cd97fd3900037c1de7)

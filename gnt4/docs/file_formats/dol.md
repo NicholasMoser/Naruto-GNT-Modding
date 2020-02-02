@@ -13,7 +13,7 @@
 
 ## Description
 
-The Dol file format is for GameCube and Wii disc partitions. The name presumably refers to "Dolphin", which was the GameCube's codename. It is a simple file format consisting of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values. Text is executable code and data is just data for the game. The header also allows for a zero initialized (BSS) range. This range can overlap the 18 sections, with the sections taking priority. The BSS section is for uninitialized variables.
+The dol file format is the main executable format for the GameCube and contains the code for the game. The name presumably refers to "Dolphin", which was the GameCube's codename. It is a simple file format consisting of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values. Text is executable code and data is just data for the game. The header also allows for a zero initialized (BSS) range. This range can overlap the 18 sections, with the sections taking priority. The BSS section is for uninitialized variables.
 
 More information can be found on the [Custom Mario Kart Wiki DOL Page](http://wiki.tockdom.com/wiki/DOL_(File_Format))
 
