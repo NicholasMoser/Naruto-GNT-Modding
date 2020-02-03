@@ -6,7 +6,7 @@ Archive of one or more .tpl files. TPL files are containers for one or more imag
 
 First you will need to unpack the TXG file to the TPL files it contains. This can be done with ThatTrueStruggle's [TXG2TPL](https://github.com/ThatTrueStruggle/TXG2TPL) software. You can also use [GNTool](https://github.com/NicholasMoser/GNTool) to unpack these files, which uses TXG2TPL underneath.
 
-TPL files can be opened and modified with [BrawlBox](https://github.com/libertyernie/brawltools). Afer you have modified them, you can repack the TXG using TXG2TPL.
+TPL files can be opened and modified with [BrawlBox](https://github.com/libertyernie/brawltools). Afer you have modified them, you can repack the TXG using TXG2TPL or GNTool.
 
 ## TPL Header
 
