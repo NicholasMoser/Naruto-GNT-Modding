@@ -34,6 +34,8 @@ Here are various pages associated with modding the game:
 
 [Background Music](/gnt4/docs/audio/bgm.md)
 
+[Stage Modding](/gnt4/docs/guides/stage_modding.md)
+
 [Main Menu Character](/gnt4/docs/guides/main_menu_character.md)
 
 [Random Select](gnt4/docs/guides/random_select.md)
