@@ -7,12 +7,13 @@ Most of the codes you'll find here were written by [Ralf from GC-FOREVER](http:/
 ## Table of Contents
 
 1. **[General](#general)**
-2. **[Player 1 Codes](#player-1-codes)**
-3. **[Player 2 Codes](#player-2-codes)**
-4. **[Player 3 Codes](#player-3-codes)**
-5. **[Player 4 Codes](#player-4-codes)**
-6. **[Global Character Modifiers](#global-character-modifiers)**
-7. **[Character Replacers](#character-replacers)**
+2. **[Experimental](#experimental)**
+3. **[Player 1 Codes](#player-1-codes)**
+4. **[Player 2 Codes](#player-2-codes)**
+5. **[Player 3 Codes](#player-3-codes)**
+6. **[Player 4 Codes](#player-4-codes)**
+7. **[Global Character Modifiers](#global-character-modifiers)**
+8. **[Character Replacers](#character-replacers)**
 
 ## General
 
@@ -23,40 +24,6 @@ C200CB14 00000001
 C200CB28 00000001  
 60000000 00000000  
 C200CB3C 00000001  
-60000000 00000000
-
-### No Slow Down on Kill
-
-C2014868 00000001  
-60000000 00000000
-
-### Add Random Select to Character Select (Activate with Down+Start)
-
-C2091ED4 00000015  
-3C800145 7C043800  
-40820098 2C1F0020  
-4082001C 3C808022  
-60842D40 80840000  
-5484843E 2C041000  
-41820064 2C1F0021  
-4082001C 3C808022  
-60842D4C 80840000  
-5484843E 2C041000  
-41820044 2C1F0022  
-4082001C 3C808022  
-60842D58 80840000  
-5484843E 2C041000  
-41820024 2C1F0023  
-40820030 3C808022  
-60842D64 80840000  
-5484843E 2C041000  
-40820018 7F63DB78  
-3C80801C 6084CE50  
-7C8903A6 4E800421  
-808D8878 00000000  
-C2091EE8 00000003  
-2C030000 41820008  
-7C601B78 7C04292E  
 60000000 00000000
 
 ### No limit to Choji Chip Eating Attack Boost
@@ -126,6 +93,56 @@ C-Stick Left/Right = Rotate Left/Right
 ### Disable Blocking (All Players) [Ralf]
 
 0403A7E4 60000000
+
+## Experimental
+
+### Duplicate Characters in 4-Player Mode
+
+48000000 802a4324  
+de000000 80008180  
+140142b0 00000000  
+140142f8 00000000  
+140142b4 00000000  
+14014318 00000000  
+140142b8 00000000  
+14014338 00000000  
+140142bc 00000000  
+14014358 00000000  
+e0000000 80008000
+
+### No Slow Down on Kill
+
+C2014868 00000001  
+60000000 00000000
+
+### Add Random Select to Character Select (Activate with Down+Start)
+
+C2091ED4 00000015  
+3C800145 7C043800  
+40820098 2C1F0020  
+4082001C 3C808022  
+60842D40 80840000  
+5484843E 2C041000  
+41820064 2C1F0021  
+4082001C 3C808022  
+60842D4C 80840000  
+5484843E 2C041000  
+41820044 2C1F0022  
+4082001C 3C808022  
+60842D58 80840000  
+5484843E 2C041000  
+41820024 2C1F0023  
+40820030 3C808022  
+60842D64 80840000  
+5484843E 2C041000  
+40820018 7F63DB78  
+3C80801C 6084CE50  
+7C8903A6 4E800421  
+808D8878 00000000  
+C2091EE8 00000003  
+2C030000 41820008  
+7C601B78 7C04292E  
+60000000 00000000
 
 ## Player 1 Codes
 
