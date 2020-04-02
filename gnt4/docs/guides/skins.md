@@ -42,7 +42,7 @@ Created by [Sophie-bear](https://twitter.com/Soph3D)
 
 ## Kakashi
 
-### Dark Dolphin (Oboro)
+### Dark Dolphin
 
 Created by [Darrkoz](https://dolphinnetplayninja.tumblr.com)
 
