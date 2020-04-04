@@ -23,20 +23,29 @@ Each folder within the /chr/ directory is an individual character. For example, 
 In order to edit the character, we must extract the model to obtain the necessary base for our future import. How is this done? Ploaj has developed a tool named HSDRaw that thankfully supports the model format we will be looking at. Simply download the latest version from the github page linked above.
 
 From my knowledge, the file “0000.dat” is the primary character model file. We can open this model in HSDRaw, and open the subfolders on the left-hand column until you reach a subdirectory called “RootJoint”.
+
 Double click on “RootJoint” to open the model in the viewport on the right side of the program. Select the “DOBJs”tab, and keep track of how many objects there are in the list, we’ll need this information for later. Now we can take a look at the model, and export it for us to then use in blender. We can export the model by clicking “File” next to the viewport tab, and selecting “Export Model to File”. Simply save the model anywhere where you can keep track of it, as it is very important.
 
 ### Setting up in Blender
 
 After you have extracted the “.dae” model of your choosing, you can import it into Blender. In doing so, it is now possible to make edits or completely replace the character.
+
 Now that it is in Blender, it is a good time to set the skeleton to display the bone names, so we can see what bone we will be assigning to our new model’s vertices. Also, install the io_export_objex plugin, which will allow you to view what vertices are not linked to a bone, for rigging convenience.
+
 After doing this, you should now look to deleting Bone #0, as this bone will cause importing stress in the future. This bone will not be missed.
+
 Now then, after dealing with the stray bone, we can begin to set up our new model. First, delete the original character model, excluding the skeleton. Select your custom model, then select the skeleton, and press “ctrl+p”, selecting “Armature Deform [With Empty Groups]. This allows us to rig our custom model to the character’s skeleton.
+
 Now that we have our custom model tied to the skeleton, we should be able to start assigning our vertices to the bones. In edit mode, select the vertices that line up with what the bone represents, and start rigging! A good tip to keep in mind is that not every bone needs to be assigned to something. I only assign bones to the major bones, so don’t worry about having to do all of them!
+
+It is also recommended to keep the poly limit at or below 9k tris.
 
 ### Importing your model
 
 After rigging the model and successfully testing it, it is now time to export. In blender, export as “.dae”, and in the export settings, make sure UV Maps is selected instead of Materials, if your model uses UV maps. Otherwise keep the settings default and export like usual.
+
 With your new character model rigged and exported as “.dae”, follow the process of opening the ORIGINAL character “.dat” in HSDRaw. Now, instead of selecting “Export Model To File”, select “Import Model From File”. Find your custom character’s “.dae”, and select it. A window will appear named “Import Options”. Set “Flip UVs” to “True”, and “Apply Naruto Materials” to “True” as well. Now, your model should load in the viewport!
+
 Make sure it is oriented properly, as the skeleton and model sometimes need to be rotated a certain way to align properly. Once you have confirmed that it is at an acceptable state, open the “DOBJs” tab. Here, what you will want to do is select “Options”, then “Add Dummy DOBJ” until your custom model has an equal amount of objects as the original model.
 Now click “File” in the top left of the window and select “save”!
 

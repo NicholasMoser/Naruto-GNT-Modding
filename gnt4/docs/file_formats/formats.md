@@ -10,10 +10,10 @@
 | [.txg](/gnt4/docs/file_formats/txg.md)        | Archive of one or more .tpl files.                                   |
 | [.mot](/gnt4/docs/file_formats/mot.md)        | Archive of one or more animations.                                   |
 | [.trk](/gnt4/docs/file_formats/trk.md)        | Used for music (also known as .adp).                                 |
-| [.sam](/gnt4/docs/file_formats/samsdi.md)     | Used for sound effects (also known as .samp).                        |
-| [.sdi](/gnt4/docs/file_formats/samsdi.md)     | Used for sound effects (also known as .sdir).                        |
-| .poo                                          | Used for sound effects (also known as .pool).                        |
-| .pro                                          | Used for sound effects (also known as .proj).                        |
+| [.sam](/gnt4/docs/file_formats/sounds.md)     | Used for sound effects (also known as .samp).                        |
+| [.sdi](/gnt4/docs/file_formats/sounds.md)     | Used for sound effects (also known as .sdir).                        |
+| [.poo](/gnt4/docs/file_formats/sounds.md)     | Used for sound effects (also known as .pool).                        |
+| [.pro](/gnt4/docs/file_formats/sounds.md)     | Used for sound effects (also known as .proj).                        |
 | [.ptl](/gnt4/docs/file_formats/ptl.md)        | Used for particles.                                                  |
 | .ref                                          | ???                                                                  |
 | [.h4m](/gnt4/docs/file_formats/h4m.md)        | Used for movies.                                                     |
