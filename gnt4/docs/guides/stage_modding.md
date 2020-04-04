@@ -10,7 +10,7 @@ You cannot just replace the .poo, .pro, .sam, and .sdi files from one folder to 
 
 If you wish to simply remove sound effects from a stage, you can copy the contents of the last .dsp sound effect file into each other .dsp sound effect file. This is because the last .dsp file in each folder is a sort of "null terminator", or rather, a 0 second blank sound effect.
 
-The sound effect id is the hex number in the .dsp filename surrounded by parentheses, e.g. `0x075C` in `00000 (0x075C).dsp`. It may be theoretically possible to add new sound effects by removing sound effects from other stages and using the ids of the remove sound effects for new ones in a given stage.
+The sound effect id is the hex number in the .dsp filename surrounded by parentheses, e.g. `0x075C` in `00000 (0x075C).dsp`. It may be theoretically possible to add new sound effects by removing sound effects from other stages and using the ids of the removed sound effects for new ones in a given stage.
 
 ## Draw Distance
 
