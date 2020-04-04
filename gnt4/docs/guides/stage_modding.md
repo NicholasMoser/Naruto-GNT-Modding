@@ -6,18 +6,16 @@ The collision in GNT4 is done in a unique way from other fighting games that hav
 
 For the Collision Viewing feature in Debug: (Stage; Touch)
 
-Yellow Lines:
-Bones that are the boundaries of the stage, they stretch infinitely long and infinitely high. Even if they do not look it. Thus, the engine is made to only accomodate convex shaped stage layouts.
+**Yellow Lines**: Bones that are the boundaries of the stage, they stretch infinitely long and infinitely high. Even if they do not look it. Thus, the engine is made to only accomodate convex shaped stage layouts.
 
-Blue lines:
-Bones that help the game inform the axis you are playing on, without these projectiles will not land and running side step will be weird
+**Blue lines**: Bones that help the game inform the axis you are playing on, without these projectiles will not land and running side step will be weird
 
-Parameters of what makes the game recognize these bones as collision and not others currently unknown. But stage shape can be manipulated extensively with the ones that already exist. As the line are drawn by bones, these can be opened up in Blender or HSDRAW and then manipulated to change stage shape. Through creative rotating and moving of bones, custom shaped stages such as triangles have been made. Each bone has a parent which draws the yellow lines, and a child that draws the blue line. A stage can work without blue lines but not without yellow.
+Parameters of what makes the game recognize these bones as collision and not others currently unknown. But stage shape can be manipulated extensively with the ones that already exist. As the lines are drawn by bones, these can be opened up in Blender or HSDRAW and then manipulated to change stage shape. Through creative rotating and moving of bones, custom shaped stages such as triangles have been made. Each bone has a parent which draws the yellow lines, and a child that draws the blue line. A stage can work without blue lines but not without yellow.
 
 For reference
 
 * 0000.dat the background of the stage
-* 0100.dat the floor of the state
+* 0100.dat the floor of the stage
 * 0200.dat the walls and thus collision of a stage
 
 Any dats beyond 0200 are additional nonessential background elements.
