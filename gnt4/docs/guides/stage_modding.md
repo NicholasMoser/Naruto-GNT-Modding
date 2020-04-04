@@ -1,5 +1,15 @@
 # Stage Modding
 
+## Replacing Sounds
+
+You cannot just replace the .poo, .pro, .sam, and .sdi files from one folder to another. Each sound effect contained inside the files has an id associated with it. By copying the sound effects from one folder to another, you duplicate those sound effect ids and lose the sound effect ids of the folder copied to. Therefore, the proper way to manipulate these sounds is to do the following:
+
+* Extract the .dsp sound files with [GNTool](https://github.com/NicholasMoser/GNTool) or [MusyX-Extract](https://github.com/Nisto/musyx-extract).
+* Modify the contents of the sound files without changing the filenames (to preserve the sound effect id).
+* Import the new sound files back into the .sam and .sdi files.
+
+If you wish to simply remove sound effects from a stage, you can copy the contents of the last .dsp sound effect file into each other .dsp sound effect file. This is because the last .dsp file in each folder is a sort of "null terminator", or rather, a 0 second blank sound effect.
+
 ## Draw Distance
 
 When overriding an existing stage, it is possible for some objects in the stage to unload incorrectly due to draw distance.
