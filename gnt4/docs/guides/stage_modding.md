@@ -2,7 +2,7 @@
 
 ## Replacing Sounds
 
-You cannot just replace the .poo, .pro, .sam, and .sdi files from one folder to another. Each sound effect contained inside the files has an id associated with it. By copying the sound effects from one folder to another, you duplicate those sound effect ids and lose the sound effect ids of the folder copied to. Therefore, the proper way to manipulate these sounds is to do the following:
+You cannot just replace the .poo, .pro, .sam, and .sdi files from one folder to another. Each sound effect contained inside the files has an id associated with it. By copying the sound effects from one folder to another, you duplicate those sound effect ids and lose the sound effect ids of the folder copied to. This can result in sound effects breaking after leaving the stage with duplicate sound effects. Therefore, the proper way to manipulate these sounds is to do the following:
 
 * Extract the .dsp sound files with [GNTool](https://github.com/NicholasMoser/GNTool) or [MusyX-Extract](https://github.com/Nisto/musyx-extract).
 * Modify the contents of the sound files without changing the filenames (to preserve the sound effect id).
