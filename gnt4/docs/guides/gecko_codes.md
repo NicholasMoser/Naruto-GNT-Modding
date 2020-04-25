@@ -94,7 +94,7 @@ C-Stick Left/Right = Rotate Left/Right
 
 0403A7E4 60000000
 
-## Experimental
+## Experimental (May cause unintended side effects or crash)
 
 ### Duplicate Characters in 4-Player Mode
 
