@@ -1,6 +1,6 @@
 # SEQ Files
 
-Files ending with .seq dictate just about everything about the UI and characters that aren't art assets. This includes damage, speed, which animation to play, hitboxes, etc.  
+Files ending with .seq dictate just about everything about the UI and characters that aren't art assets. This includes damage, speed, which animation to play, hitboxes, etc. Character's `0000.seq` file contain action data, while `0010.seq` appear to contain data for CPU control (AI). 
 *Credit to TheCape for writing the content of this page*
 
 ## Table of Contents
