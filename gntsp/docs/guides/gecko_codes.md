@@ -1,7 +1,14 @@
 # GNT Special Gecko Codes
+
 These are codes that modify the game in various ways. You can add them to games by right clicking on the game in Dolphin and going to properties. Go to Gecko Codes and you can add them here by either going to Edit Config or hitting the Add button (Add button only exists in latest Dolphin versions).
 
 ## General
+
+**Skip Intro Cutscenes [Nick]**
+C21633E0 00000003  
+2C12000b 40820008  
+3A400001 9421FFF0  
+60000000 00000000
 
 **Unlock All Characters [Nick]**  
 043e896c fecbfebf  
