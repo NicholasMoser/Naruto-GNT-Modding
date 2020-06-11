@@ -62,6 +62,20 @@ C2042C40 00000007
 022233A8 00000002  
 04222FB8 8004CB64
 
+### Audio Plays While Paused
+
+c2044d28 00000001  
+3860ffff 00000000  
+c204712c 00000001  
+3860ffff 00000000
+c20477fc 00000001  
+3860ffff 00000000  
+
+The above code is actually compressed of three codes. The first plays audio when you pause in training mode.
+The second plays audio when you pause in mission mode. The third plays audio when you pause in other modes.
+The volume can be modified by changing the `ffff` to a different value. `0000` is mute, which is the default.
+If you want the audio somewhat softer, the value `0fff` is recommended.
+
 ### Fight Debug Menu
 
 START            = Debug Menu On/Off & Go Into Sub-Menu  
