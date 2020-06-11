@@ -17,7 +17,7 @@ Most of the codes you'll find here were written by [Ralf from GC-FOREVER](http:/
 
 ## General
 
-### Skip Three Intro Videos
+### Skip Three Intro Videos [Nicholas Moser]
 
 C200CB14 00000001  
 60000000 00000000  
@@ -26,7 +26,7 @@ C200CB28 00000001
 C200CB3C 00000001  
 60000000 00000000
 
-### No limit to Choji Chip Eating Attack Boost
+### No limit to Choji Chip Eating Attack Boost [Nicholas Moser]
 
 C201703C 00000001  
 60000000 00000000
@@ -96,7 +96,7 @@ C-Stick Left/Right = Rotate Left/Right
 
 ## Experimental (May cause unintended side effects or crash)
 
-### Duplicate Characters in 4-Player Mode
+### Duplicate Characters in 4-Player Mode [Nicholas Moser]
 
 48000000 802a4324  
 de000000 80008180  
@@ -110,12 +110,12 @@ de000000 80008180
 14014358 00000000  
 e0000000 80008000
 
-### No Slow Down on Kill
+### No Slow Down on Kill [Nicholas Moser]
 
 C2014868 00000001  
 60000000 00000000
 
-### Add Random Select to Character Select (Activate with Down+Start)
+### Add Random Select to Character Select (Activate with Down+Start) [Nicholas Moser]
 
 C2091ED4 00000015  
 3C800145 7C043800  
