@@ -26,11 +26,6 @@ C200CB28 00000001
 C200CB3C 00000001  
 60000000 00000000
 
-### No limit to Choji Chip Eating Attack Boost [Nicholas Moser]
-
-C201703C 00000001  
-60000000 00000000
-
 ### Infinite Time [Ralf]
 
 040374B8 60000000
@@ -95,6 +90,11 @@ C-Stick Left/Right = Rotate Left/Right
 0403A7E4 60000000
 
 ## Experimental (May cause unintended side effects or crash)
+
+### No limit to Choji Chip Eating Attack Boost [Nicholas Moser]
+
+C201703C 00000001  
+60000000 00000000
 
 ### Duplicate Characters in 4-Player Mode [Nicholas Moser]
 
