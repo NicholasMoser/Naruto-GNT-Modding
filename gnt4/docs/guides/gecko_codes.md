@@ -17,9 +17,9 @@ Most of the codes you'll find here were written by [Ralf from GC-FOREVER](http:/
 
 ## General
 
-### Skip Three Intro Videos [Nicholas Moser]
+### Skip Three Intro Videos [Nick]
 
-```asm
+```hex
 C200CB14 00000001
 60000000 00000000
 C200CB28 00000001
@@ -30,13 +30,13 @@ C200CB3C 00000001
 
 ### Infinite Time [Ralf]
 
-```asm
+```hex
 040374B8 60000000
 ```
 
 ### Unlock Everything [Ralf]
 
-```asm
+```hex
 02223258 0017FFFF
 042232E8 0001FF03
 042232F0 00FFFFFF
@@ -45,7 +45,7 @@ C200CB3C 00000001
 
 ### Enable DPad During Fights [Ralf]
 
-```asm
+```hex
 C2042C40 00000007
 54A007BD 41820008
 64A50008 54A007FF
@@ -58,27 +58,27 @@ C2042C40 00000007
 
 ### 16:9 Aspect Ratio (Widescreen) [Ralf]
 
-```asm
+```hex
 0416E15C C3A2A024
 04279CC4 3FE38E39
 ```
 
 ### Enable Training Menu (All Modes) [Ralf]
 
-```asm
+```hex
 0400B520 38600003
 ```
 
 ### Enable Fight Debug Menu [Ralf]
 
-```asm
+```hex
 022233A8 00000002
 04222FB8 8004CB64
 ```
 
 ### Audio Plays While Paused
 
-```asm
+```hex
 c2044d28 00000001
 3860ffff 00000000
 c204712c 00000001
@@ -109,34 +109,34 @@ C-Stick Left/Right = Rotate Left/Right
 
 ### Mission Mode Complete [Ralf]
 
-```asm
+```hex
 02223228 0017FFFF
 ```
 
 ### Hit Anywhere (All Players) [Ralf]
 
-```asm
+```hex
 0403C95C 60000000
 ```
 
 ### Disable Blocking (All Players) [Ralf]
 
-```asm
+```hex
 0403A7E4 60000000
 ```
 
 ## Experimental (May cause unintended side effects or crash)
 
-### No limit to Choji Chip Eating Attack Boost [Nicholas Moser]
+### No limit to Choji Chip Eating Attack Boost [Nick]
 
-```asm
+```hex
 C201703C 00000001
 60000000 00000000
 ```
 
-### Duplicate Characters in 4-Player Mode [Nicholas Moser]
+### Duplicate Characters in 4-Player Mode [Nick]
 
-```asm
+```hex
 48000000 802a4324
 de000000 80008180
 140142b0 00000000
@@ -150,16 +150,16 @@ de000000 80008180
 e0000000 80008000
 ```
 
-### No Slow Down on Kill [Nicholas Moser]
+### No Slow Down on Kill [Nick]
 
-```asm
+```hex
 C2014868 00000001
 60000000 00000000
 ```
 
-### Add Random Select to Character Select (Activate with Down+Start) [Nicholas Moser]
+### Add Random Select to Character Select (Activate with Down+Start) [Nick]
 
-```asm
+```hex
 C2091ED4 00000015
 3C800145 7C043800
 40820098 2C1F0020
@@ -192,7 +192,7 @@ C2091EE8 00000003
 
 ### P1 Infinite Health [Ralf]
 
-```asm
+```hex
 48000000 80226358
 DE000000 80008180
 12000262 00000000
@@ -201,7 +201,7 @@ E0000000 80008000
 
 ### P1 Infinite Chakra [Ralf]
 
-```asm
+```hex
 48000000 80226358
 DE000000 80008180
 1200028E 00003C00
@@ -210,7 +210,7 @@ E0000000 80008000
 
 ### P1 1 Hit Kills (Press B) [Ralf]
 
-```asm
+```hex
 48000000 80226358
 DE000000 80008180
 120002BE 000000FF
@@ -219,7 +219,7 @@ E0000000 80008000
 
 ### P1 Moon Jump (Press Stick Up Multiple Times) [Ralf]
 
-```asm
+```hex
 06004000 0000001C
 3C608022 80636358
 7C1F1840 807F0130
@@ -228,9 +228,9 @@ E0000000 80008000
 040183E4 4BFEBC1C
 ```
 
-### P1 Low Gravity [Nicholas Moser]
+### P1 Low Gravity [Nick]
 
-```asm
+```hex
 48000000 80226358
 DE000000 80008180
 320001E0 00000000
@@ -241,7 +241,7 @@ E0000000 80008000
 
 ### P1 Hit Anywhere [Ralf]
 
-```asm
+```hex
 C203C958 00000004
 3C808022 80046358
 7C00C800 40820008
@@ -251,7 +251,7 @@ C203C958 00000004
 
 ### P1 Never Blocking [Ralf]
 
-```asm
+```hex
 C203A7E0 00000004
 3C608022 80036358
 7C008800 40820008
@@ -261,7 +261,7 @@ C203A7E0 00000004
 
 ### P1 Always Blocking [Ralf]
 
-```asm
+```hex
 C203A7E0 00000004
 3C608022 80036358
 7C008800 40820008
@@ -273,7 +273,7 @@ C203A7E0 00000004
 
 ### P2 Infinite Health [Ralf]
 
-```asm
+```hex
 48000000 80226614
 DE000000 80008180
 12000262 00000000
@@ -282,7 +282,7 @@ E0000000 80008000
 
 ### P2 Infinite Chakra [Ralf]
 
-```asm
+```hex
 48000000 80226614
 DE000000 80008180
 1200028E 00003C00
@@ -291,7 +291,7 @@ E0000000 80008000
 
 ### P2 1 Hit Kills (Press B) [Ralf]
 
-```asm
+```hex
 48000000 80226614
 DE000000 80008180
 120002BE 000000FF
@@ -300,7 +300,7 @@ E0000000 80008000
 
 ### P2 Moon Jump (Press Stick Up Multiple Times) [Ralf]
 
-```asm
+```hex
 06004020 00000020
 3C608022 80636614
 7C1F1840 807F0130
@@ -309,9 +309,9 @@ E0000000 80008000
 040183E8 4BFEBC38
 ```
 
-### P2 Low Gravity [Nicholas Moser]
+### P2 Low Gravity [Nick]
 
-```asm
+```hex
 48000000 80226614
 DE000000 80008180
 320001E0 00000000
@@ -322,7 +322,7 @@ E0000000 80008000
 
 ### P2 Hit Anywhere [Ralf]
 
-```asm
+```hex
 0600391C 00000024
 3C808022 80046614
 7C00C800 40820008
@@ -334,7 +334,7 @@ E0000000 80008000
 
 ### P2 Never Blocking [Ralf]
 
-```asm
+```hex
 0600381C 00000024
 3C608022 80036614
 7C008800 40820008
@@ -346,7 +346,7 @@ E0000000 80008000
 
 ### P2 Always Blocking [Ralf]
 
-```asm
+```hex
 0600381C 00000024
 3C608022 80036614
 7C008800 40820008
@@ -360,7 +360,7 @@ E0000000 80008000
 
 ### P3 Infinite Health [Ralf]
 
-```asm
+```hex
 48000000 802268D0
 DE000000 80008180
 12000262 00000000
@@ -369,7 +369,7 @@ E0000000 80008000
 
 ### P3 Infinite Chakra [Ralf]
 
-```asm
+```hex
 48000000 802268D0
 DE000000 80008180
 1200028E 00003C00
@@ -378,16 +378,16 @@ E0000000 80008000
 
 ### P3 1 Hit Kills (Press B) [Ralf]
 
-```asm
+```hex
 48000000 802268D0
 DE000000 80008180
 120002BE 000000FF
 E0000000 80008000
 ```
 
-### P3 Low Gravity [Nicholas Moser]
+### P3 Low Gravity [Nick]
 
-```asm
+```hex
 48000000 802268D0
 DE000000 80008180
 320001E0 00000000
@@ -400,7 +400,7 @@ E0000000 80008000
 
 ### P4 Infinite Health [Ralf]
 
-```asm
+```hex
 48000000 80226B8C
 DE000000 80008180
 12000262 00000000
@@ -409,7 +409,7 @@ E0000000 80008000
 
 ### P4 Infinite Chakra [Ralf]
 
-```asm
+```hex
 48000000 80226B8C
 DE000000 80008180
 1200028E 00003C00
@@ -418,16 +418,16 @@ E0000000 80008000
 
 ### P4 1 Hit Kills (Press B) [Ralf]
 
-```asm
+```hex
 48000000 80226B8C
 DE000000 80008180
 120002BE 000000FF
 E0000000 80008000
 ```
 
-### P4 Low Gravity [Nicholas Moser]
+### P4 Low Gravity [Nick]
 
-```asm
+```hex
 48000000 80226B8C
 DE000000 80008180
 320001E0 00000000
@@ -494,247 +494,247 @@ xxx = Character ID
 
 ### Sasuke [Ralf]
 
-```asm
+```hex
 04208804 80278xxx
 ```
 
 ### Haku [Ralf]
 
-```asm
+```hex
 04208808 80278xxx
 ```
 
 ### Kakashi [Ralf]
 
-```asm
+```hex
 0420880C 80278xxx
 ```
 
 ### Rock Lee [Ralf]
 
-```asm
+```hex
 04208810 80278xxx
 ```
 
 ### Iruka [Ralf]
 
-```asm
+```hex
 04208814 80278xxx
 ```
 
 ### Zabuza [Ralf]
 
-```asm
+```hex
 04208818 80278xxx
 ```
 
 ### Sakura [Ralf]
 
-```asm
+```hex
 0420881C 80278xxx
 ```
 
 ### Naruto [Ralf]
 
-```asm
+```hex
 04208820 80278xxx
 ```
 
 ### Ino [Ralf]
 
-```asm
+```hex
 04208824 80278xxx
 ```
 
 ### Shikamaru [Ralf]
 
-```asm
+```hex
 04208828 80278xxx
 ```
 
 ### Neji [Ralf]
 
-```asm
+```hex
 0420882C 80278xxx
 ```
 
 ### Hinata [Ralf]
 
-```asm
+```hex
 04208830 80278xxx
 ```
 
 ### Might Guy [Ralf]
 
-```asm
+```hex
 04208834 80278xxx
 ```
 
 ### Kankuro [Ralf]
 
-```asm
+```hex
 04208838 80278xxx
 ```
 
 ### Karasu [Ralf]
 
-```asm
+```hex
 0420883C 80278xxx
 ```
 
 ### Kiba [Ralf]
 
-```asm
+```hex
 04208840 80278xxx
 ```
 
 ### Akamaru [Ralf]
 
-```asm
+```hex
 04208844 80278xxx
 ```
 
 ### Gaara [Ralf]
 
-```asm
+```hex
 04208848 80278xxx
 ```
 
 ### Orochimaru [Ralf]
 
-```asm
+```hex
 0420884C 80278xxx
 ```
 
 ### Oboro [Ralf]
 
-```asm
+```hex
 04208850 80278xxx
 ```
 
 ### Mizuki [Ralf]
 
-```asm
+```hex
 04208854 80278xxx
 ```
 
 ### Anko [Ralf]
 
-```asm
+```hex
 04208858 80278xxx
 ```
 
 ### Jiraiya [Ralf]
 
-```asm
+```hex
 0420885C 80278xxx
 ```
 
 ### Choji [Ralf]
 
-```asm
+```hex
 04208860 80278xxx
 ```
 
 ### Tenten [Ralf]
 
-```asm
+```hex
 04208864 80278xxx
 ```
 
 ### Temari [Ralf]
 
-```asm
+```hex
 04208868 80278xxx
 ```
 
 ### Shino [Ralf]
 
-```asm
+```hex
 0420886C 80278xxx
 ```
 
 ### Itachi [Ralf]
 
-```asm
+```hex
 04208870 80278xxx
 ```
 
 ### Tsunade [Ralf]
 
-```asm
+```hex
 04208874 80278xxx
 ```
 
 ### Hiruzen [Ralf]
 
-```asm
+```hex
 04208878 80278xxx
 ```
 
 ### Kimimaro [Ralf]
 
-```asm
+```hex
 0420887C 80278xxx
 ```
 
 ### Jirobo [Ralf]
 
-```asm
+```hex
 04208880 80278xxx
 ```
 
 ### Kidomaru [Ralf]
 
-```asm
+```hex
 04208884 80278xxx
 ```
 
 ### Sakon [Ralf]
 
-```asm
+```hex
 04208888 80278xxx
 ```
 
 ### Tayuya [Ralf]
 
-```asm
+```hex
 0420888C 80278xxx
 ```
 
 ### Kisame [Ralf]
 
-```asm
+```hex
 04208890 80278xxx
 ```
 
 ### Sasuke CS2 [Ralf]
 
-```asm
+```hex
 04208894 80278xxx
 ```
 
 ### Naruto Kyuubi [Ralf]
 
-```asm
+```hex
 04208898 80278xxx
 ```
 
 ### Kabuto [Ralf]
 
-```asm
+```hex
 0420889C 80278xxx
 ```
 
 ### Awakened Hinata [Ralf]
 
-```asm
+```hex
 042088A0 80278xxx
 ```
 
 ### Tayuya's Doki Demon [Ralf]
 
-```asm
+```hex
 042088A4 80278xxx
 ```
 
@@ -742,7 +742,7 @@ xxx = Character ID
 
 ### Character Replacer (1 Character Version) [Ralf]
 
-```asm
+```hex
 06004B54 00000014
 2C0500xx 40820008
 38A000yy 3C808020
@@ -757,7 +757,7 @@ Replaces Character xx with Character yy.
 
 ### Character Replacer (2 Characters Version) [Ralf]
 
-```asm
+```hex
 06004B54 00000024
 2C0500vv 4082000C
 38A000ww 48000010
@@ -775,7 +775,7 @@ Replaces Character vv with Character ww and Character xx with Character yy.
 
 ### Character Replacer (3 Characters Version) [Ralf]
 
-```asm
+```hex
 06004B54 00000034
 2C0500tt 4082000C
 38A000uu 48000020
@@ -840,7 +840,7 @@ Replaces Character tt with Character uu, Character vv with Character ww and Char
 
 ### Replace Character With Oboro [Ralf]
 
-```asm
+```hex
 06004B00 00000020
 2C0500xx 40820014
 38A00014 2C060001
@@ -854,7 +854,7 @@ xx = Character ID
 
 ### Replace Character With Tayuya's Doki Demon [Ralf]
 
-```asm
+```hex
 06004B20 00000034
 2C0500xx 40820014
 38A00029 2C060001
@@ -872,7 +872,7 @@ xx = Character ID
 
 ### Replace Akamaru With Karasu [Ralf]
 
-```asm
+```hex
 06004B54 00000014
 2C050011 40820008
 38A0000F 3C808020
@@ -883,7 +883,7 @@ xx = Character ID
 
 ### Replace Naruto, Sasuke & Sakura With Hinata [Ralf]
 
-```asm
+```hex
 06004B54 00000034
 2C050008 4082000C
 38A0000C 48000020
@@ -898,7 +898,7 @@ xx = Character ID
 
 ### Replace Sakura With Oboro [Ralf]
 
-```asm
+```hex
 06004B00 00000020
 2C050007 40820014
 38A00014 2C060001
@@ -910,7 +910,7 @@ xx = Character ID
 
 ### Replace Ino With Tayuya's Doki Demon [Ralf]
 
-```asm
+```hex
 06004B20 00000034
 2C050009 40820014
 38A00029 2C060001

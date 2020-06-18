@@ -158,7 +158,7 @@ Created by Ada
 
 ### Optimus Prime
 
-Created by Nicholas Moser
+Created by Nick
 
 [![Optimus Prime](/gnt4/images/skins/optimus_prime.jpg?raw=true "Optimus Prime")](/gnt4/files/Third_Optimus_Prime.zip?raw=true)
 
