@@ -40,6 +40,12 @@ Created by [Sophie-bear](https://twitter.com/Soph3D)
 
 [![Sakura HD](/gnt4/images/skins/sakurahd.jpg?raw=true "Itachi HD")](/gnt4/files/SakuraHD.zip?raw=true)
 
+### Mint Chocolate Sakura
+
+Created by Skyclops
+
+[![Mint Chocolate Sakura](/gnt4/images/skins/mint_chocolate_sakura.jpg?raw=true "Itachi HD")](/gnt4/files/mint_chocolate_sakura.zip?raw=true)
+
 ## Kakashi
 
 ### Dark Dolphin
@@ -53,6 +59,12 @@ Created by [Darrkoz](https://dolphinnetplayninja.tumblr.com)
 ## Rock Lee
 
 ## Tenten
+
+### E-girl Tenten
+
+Created by Skyclops
+
+[![E-girl Tenten](/gnt4/images/skins/e_girl_tenten.jpg?raw=true "Itachi HD")](/gnt4/files/e_girl_tenten.zip?raw=true)
 
 ## Might Guy
 
@@ -121,6 +133,12 @@ Created by [Darrkoz](https://dolphinnetplayninja.tumblr.com)
 Created by [Darrkoz](https://dolphinnetplayninja.tumblr.com)
 
 [![Akatsuki Mizuki](/gnt4/images/skins/akatsukimizuki.jpg?raw=true "Akatsuki Mizuki")](/gnt4/files/Akatsuki_Mizuki.zip?raw=true)
+
+### Red Mizuki
+
+Created by Skyclops
+
+[![Red Mizuki](/gnt4/images/skins/red_zuki.jpg?raw=true "Itachi HD")](/gnt4/files/red_zuki.zip?raw=true)
 
 ## Anko
 
