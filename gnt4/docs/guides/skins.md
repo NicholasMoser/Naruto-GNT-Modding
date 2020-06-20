@@ -7,7 +7,7 @@ Download the skins by clicking on the image associated with them.
 
 ### Naruto Shippuden [Alt]
 
-Created by [Sophie-bear](https://twitter.com/Soph3D)  
+Created by [Sophie-bear](https://github.com/Sophie-bear)  
 *Version 2*
 
 [![Naruto Shippuden [Alt]](/gnt4/images/skins/NarutoShippudenCostumeSD_P2.jpg?raw=true "Naruto Shippuden [Alt]")](/gnt4/files/NarutoShippudenCostumeSD_P2.zip?raw=true)
@@ -36,7 +36,7 @@ Created by [Sigma](https://www.youtube.com/channel/UCq1IHhIigmcwhqorTlsYhdA)
 
 ### Sakura HD
 
-Created by [Sophie-bear](https://twitter.com/Soph3D)
+Created by [Sophie-bear](https://github.com/Sophie-bear)
 
 [![Sakura HD](/gnt4/images/skins/sakurahd.jpg?raw=true "Itachi HD")](/gnt4/files/SakuraHD.zip?raw=true)
 
@@ -100,7 +100,7 @@ Created by Ada
 
 ### Haku HD
 
-Created by [Sophie-bear](https://twitter.com/Soph3D)
+Created by [Sophie-bear](https://github.com/Sophie-bear)
 
 [![Haku HD](/gnt4/images/skins/hakuhd.jpg?raw=true "Haku HD")](/gnt4/files/HakuHD.zip?raw=true)
 
@@ -200,7 +200,7 @@ Created by Ada
 
 ### Itachi HD
 
-Created by [Sophie-bear](https://twitter.com/Soph3D)
+Created by [Sophie-bear](https://github.com/Sophie-bear)
 
 [![Itachi HD](/gnt4/images/skins/itachihd.jpg?raw=true "Itachi HD")](/gnt4/files/ItachiHD.zip?raw=true)
 
