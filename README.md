@@ -44,6 +44,10 @@ Here are various pages associated with modding the game:
 
 [File Load Order](/gnt4/docs/guides/file_load_order.md)
 
+### GNT EX 1
+
+[Gecko Codes](/ex1/docs/guides/gecko_codes.md)
+
 ### GNT EX 2
 
 [Gecko Codes](/ex2/docs/guides/gecko_codes.md)
