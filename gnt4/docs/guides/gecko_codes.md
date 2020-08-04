@@ -90,7 +90,8 @@ c20477fc 00000001
 The above code is actually compressed of three codes. The first plays audio when you pause in training mode.
 The second plays audio when you pause in mission mode. The third plays audio when you pause in other modes.
 The volume can be modified by changing the `ffff` to a different value. `0000` is mute, which is the default.
-If you want the audio somewhat softer, the value `0fff` is recommended.
+If you want the audio somewhat softer, the value `0fff` is recommended. However, using a value other than `ffff`
+will result in the audio playing while paused even if audio is disabled through the in-game options.
 
 ### Fight Debug Menu
 
@@ -126,6 +127,14 @@ C-Stick Left/Right = Rotate Left/Right
 ```
 
 ## Experimental (May cause unintended side effects or crash)
+
+### Change Number of Rounds to Win
+
+```hex
+0422627c 000000xx
+```
+
+Change the last byte to the number of rounds you wish to win.
 
 ### No limit to Choji Chip Eating Attack Boost [Nick]
 
@@ -237,6 +246,7 @@ DE000000 80008180
 140001E0 BCF5C28F
 E0000000 80008000
 ```
+
 [Notes](#gravity-adjustment)
 
 ### P1 Hit Anywhere [Ralf]
@@ -318,6 +328,7 @@ DE000000 80008180
 140001E0 BCF5C28F
 E0000000 80008000
 ```
+
 [Notes](#gravity-adjustment)
 
 ### P2 Hit Anywhere [Ralf]
@@ -394,6 +405,7 @@ DE000000 80008180
 140001E0 BCF5C28F
 E0000000 80008000
 ```
+
 [Notes](#gravity-adjustment)
 
 ## Player 4 Codes
@@ -434,6 +446,7 @@ DE000000 80008180
 140001E0 BCF5C28F
 E0000000 80008000
 ```
+
 [Notes](#gravity-adjustment)
 
 ## Global Character Modifiers
