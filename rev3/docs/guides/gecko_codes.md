@@ -22,6 +22,14 @@ C21712A8 00000001
 60030000 00000000
 ```
 
+### LNP Always Activated [Nick]
+
+```hex
+0449ee00  3f8ccccd
+0449ee04  3f8ccccd
+0449ee08  3f8ccccd
+```
+
 ### Replace Kiba with Rogue Ninja [Nick]
 
 ```hex
