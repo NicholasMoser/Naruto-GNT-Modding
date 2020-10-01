@@ -128,6 +128,40 @@ C-Stick Left/Right = Rotate Left/Right
 
 ## Experimental (May cause unintended side effects or crash)
 
+### Modify ZTK Damage Multiplier
+
+Normally, ZTK takes 1.5x damage on all attacks. You can modify this value using the below code. The `3f800000` is the multiplier as a float. The code below has it set to 1.0, thus makes it so that ZTK takes the same damage as all other characters.
+
+```hex
+04278890 3f800000
+```
+
+### Modify Ukon Damage Multiplier
+
+Normally, Ukon takes 1.2x damage on all attacks. You can modify this value using the below code. The `3f800000` is the multiplier as a float. The code below has it set to 1.0, thus makes it so that Ukon takes the same damage as all other characters.
+
+```hex
+04278894 3f800000
+```
+
+### Remove Sharingan Kakashi Health Drain
+
+```hex
+0403ea14 38030000
+```
+
+### Remove ZTK Health Drain
+
+```hex
+0403ea5c 38030000
+```
+
+### Remove 2-Gate Lee Health Drain
+
+```hex
+0403e9cc 38030000
+```
+
 ### Change Number of Rounds to Win
 
 ```hex
