@@ -6,7 +6,6 @@ These are codes that modify the game in various ways. You can add them to games 
 
 ### Force 60 FPS [Nick]
 
-```hex
-c20192d0 00000001
-60030000 00000000
+```gecko
+040192d0 60030000
 ```

@@ -19,24 +19,21 @@ Most of the codes you'll find here were written by [Ralf from GC-FOREVER](http:/
 
 ### Skip Three Intro Videos [Nick]
 
-```hex
-C200CB14 00000001
-60000000 00000000
-C200CB28 00000001
-60000000 00000000
-C200CB3C 00000001
-60000000 00000000
+```gecko
+0400CB14 60000000
+0400CB28 60000000
+0400CB3C 60000000
 ```
 
 ### Infinite Time [Ralf]
 
-```hex
+```gecko
 040374B8 60000000
 ```
 
 ### Unlock Everything [Ralf]
 
-```hex
+```gecko
 02223258 0017FFFF
 042232E8 0001FF03
 042232F0 00FFFFFF
@@ -45,7 +42,7 @@ C200CB3C 00000001
 
 ### Enable DPad During Fights [Ralf]
 
-```hex
+```gecko
 C2042C40 00000007
 54A007BD 41820008
 64A50008 54A007FF
@@ -58,33 +55,30 @@ C2042C40 00000007
 
 ### 16:9 Aspect Ratio (Widescreen) [Ralf]
 
-```hex
+```gecko
 0416E15C C3A2A024
 04279CC4 3FE38E39
 ```
 
 ### Enable Training Menu (All Modes) [Ralf]
 
-```hex
+```gecko
 0400B520 38600003
 ```
 
 ### Enable Fight Debug Menu [Ralf]
 
-```hex
+```gecko
 022233A8 00000002
 04222FB8 8004CB64
 ```
 
 ### Audio Plays While Paused
 
-```hex
-c2044d28 00000001
-3860ffff 00000000
-c204712c 00000001
-3860ffff 00000000
-c20477fc 00000001
-3860ffff 00000000
+```gecko
+04044d28 3860ffff
+0404712c 3860ffff
+040477fc 3860ffff
 ```
 
 The above code is actually compressed of three codes. The first plays audio when you pause in training mode.
@@ -110,19 +104,19 @@ C-Stick Left/Right = Rotate Left/Right
 
 ### Mission Mode Complete [Ralf]
 
-```hex
+```gecko
 02223228 0017FFFF
 ```
 
 ### Hit Anywhere (All Players) [Ralf]
 
-```hex
+```gecko
 0403C95C 60000000
 ```
 
 ### Disable Blocking (All Players) [Ralf]
 
-```hex
+```gecko
 0403A7E4 60000000
 ```
 
@@ -132,7 +126,7 @@ C-Stick Left/Right = Rotate Left/Right
 
 Normally, ZTK takes 1.5x damage on all attacks. You can modify this value using the below code. The `3f800000` is the multiplier as a float. The code below has it set to 1.0, thus makes it so that ZTK takes the same damage as all other characters.
 
-```hex
+```gecko
 04278890 3f800000
 ```
 
@@ -140,31 +134,31 @@ Normally, ZTK takes 1.5x damage on all attacks. You can modify this value using 
 
 Normally, Ukon takes 1.2x damage on all attacks. You can modify this value using the below code. The `3f800000` is the multiplier as a float. The code below has it set to 1.0, thus makes it so that Ukon takes the same damage as all other characters.
 
-```hex
+```gecko
 04278894 3f800000
 ```
 
 ### Remove Sharingan Kakashi Health Drain
 
-```hex
+```gecko
 0403ea14 38030000
 ```
 
 ### Remove ZTK Health Drain
 
-```hex
+```gecko
 0403ea5c 38030000
 ```
 
 ### Remove 2-Gate Lee Health Drain
 
-```hex
+```gecko
 0403e9cc 38030000
 ```
 
 ### Change Number of Rounds to Win
 
-```hex
+```gecko
 0422627c 000000xx
 ```
 
@@ -172,14 +166,13 @@ Change the last byte to the number of rounds you wish to win.
 
 ### No limit to Choji Chip Eating Attack Boost [Nick]
 
-```hex
-C201703C 00000001
-60000000 00000000
+```gecko
+0401703C 60000000
 ```
 
 ### Duplicate Characters in 4-Player Mode [Nick]
 
-```hex
+```gecko
 48000000 802a4324
 de000000 80008180
 140142b0 00000000
@@ -195,14 +188,13 @@ e0000000 80008000
 
 ### No Slow Down on Kill [Nick]
 
-```hex
-C2014868 00000001
-60000000 00000000
+```gecko
+04014868 60000000
 ```
 
 ### Add Random Select to Character Select (Activate with Down+Start) [Nick]
 
-```hex
+```gecko
 C2091ED4 00000015
 3C800145 7C043800
 40820098 2C1F0020
@@ -235,7 +227,7 @@ C2091EE8 00000003
 
 ### P1 Infinite Health [Ralf]
 
-```hex
+```gecko
 48000000 80226358
 DE000000 80008180
 12000262 00000000
@@ -244,7 +236,7 @@ E0000000 80008000
 
 ### P1 Infinite Chakra [Ralf]
 
-```hex
+```gecko
 48000000 80226358
 DE000000 80008180
 1200028E 00003C00
@@ -253,7 +245,7 @@ E0000000 80008000
 
 ### P1 1 Hit Kills (Press B) [Ralf]
 
-```hex
+```gecko
 48000000 80226358
 DE000000 80008180
 120002BE 000000FF
@@ -262,7 +254,7 @@ E0000000 80008000
 
 ### P1 Moon Jump (Press Stick Up Multiple Times) [Ralf]
 
-```hex
+```gecko
 06004000 0000001C
 3C608022 80636358
 7C1F1840 807F0130
@@ -273,7 +265,7 @@ E0000000 80008000
 
 ### P1 Low Gravity [Nick]
 
-```hex
+```gecko
 48000000 80226358
 DE000000 80008180
 320001E0 00000000
@@ -285,7 +277,7 @@ E0000000 80008000
 
 ### P1 Hit Anywhere [Ralf]
 
-```hex
+```gecko
 C203C958 00000004
 3C808022 80046358
 7C00C800 40820008
@@ -295,7 +287,7 @@ C203C958 00000004
 
 ### P1 Never Blocking [Ralf]
 
-```hex
+```gecko
 C203A7E0 00000004
 3C608022 80036358
 7C008800 40820008
@@ -305,7 +297,7 @@ C203A7E0 00000004
 
 ### P1 Always Blocking [Ralf]
 
-```hex
+```gecko
 C203A7E0 00000004
 3C608022 80036358
 7C008800 40820008
@@ -317,7 +309,7 @@ C203A7E0 00000004
 
 ### P2 Infinite Health [Ralf]
 
-```hex
+```gecko
 48000000 80226614
 DE000000 80008180
 12000262 00000000
@@ -326,7 +318,7 @@ E0000000 80008000
 
 ### P2 Infinite Chakra [Ralf]
 
-```hex
+```gecko
 48000000 80226614
 DE000000 80008180
 1200028E 00003C00
@@ -335,7 +327,7 @@ E0000000 80008000
 
 ### P2 1 Hit Kills (Press B) [Ralf]
 
-```hex
+```gecko
 48000000 80226614
 DE000000 80008180
 120002BE 000000FF
@@ -344,7 +336,7 @@ E0000000 80008000
 
 ### P2 Moon Jump (Press Stick Up Multiple Times) [Ralf]
 
-```hex
+```gecko
 06004020 00000020
 3C608022 80636614
 7C1F1840 807F0130
@@ -355,7 +347,7 @@ E0000000 80008000
 
 ### P2 Low Gravity [Nick]
 
-```hex
+```gecko
 48000000 80226614
 DE000000 80008180
 320001E0 00000000
@@ -367,7 +359,7 @@ E0000000 80008000
 
 ### P2 Hit Anywhere [Ralf]
 
-```hex
+```gecko
 0600391C 00000024
 3C808022 80046614
 7C00C800 40820008
@@ -379,7 +371,7 @@ E0000000 80008000
 
 ### P2 Never Blocking [Ralf]
 
-```hex
+```gecko
 0600381C 00000024
 3C608022 80036614
 7C008800 40820008
@@ -391,7 +383,7 @@ E0000000 80008000
 
 ### P2 Always Blocking [Ralf]
 
-```hex
+```gecko
 0600381C 00000024
 3C608022 80036614
 7C008800 40820008
@@ -405,7 +397,7 @@ E0000000 80008000
 
 ### P3 Infinite Health [Ralf]
 
-```hex
+```gecko
 48000000 802268D0
 DE000000 80008180
 12000262 00000000
@@ -414,7 +406,7 @@ E0000000 80008000
 
 ### P3 Infinite Chakra [Ralf]
 
-```hex
+```gecko
 48000000 802268D0
 DE000000 80008180
 1200028E 00003C00
@@ -423,7 +415,7 @@ E0000000 80008000
 
 ### P3 1 Hit Kills (Press B) [Ralf]
 
-```hex
+```gecko
 48000000 802268D0
 DE000000 80008180
 120002BE 000000FF
@@ -432,7 +424,7 @@ E0000000 80008000
 
 ### P3 Low Gravity [Nick]
 
-```hex
+```gecko
 48000000 802268D0
 DE000000 80008180
 320001E0 00000000
@@ -446,7 +438,7 @@ E0000000 80008000
 
 ### P4 Infinite Health [Ralf]
 
-```hex
+```gecko
 48000000 80226B8C
 DE000000 80008180
 12000262 00000000
@@ -455,7 +447,7 @@ E0000000 80008000
 
 ### P4 Infinite Chakra [Ralf]
 
-```hex
+```gecko
 48000000 80226B8C
 DE000000 80008180
 1200028E 00003C00
@@ -464,7 +456,7 @@ E0000000 80008000
 
 ### P4 1 Hit Kills (Press B) [Ralf]
 
-```hex
+```gecko
 48000000 80226B8C
 DE000000 80008180
 120002BE 000000FF
@@ -473,7 +465,7 @@ E0000000 80008000
 
 ### P4 Low Gravity [Nick]
 
-```hex
+```gecko
 48000000 80226B8C
 DE000000 80008180
 320001E0 00000000
@@ -485,11 +477,17 @@ E0000000 80008000
 
 ## Global Character Modifiers
 
-These are customizable codes where you can replace it yourself. For example, to replace Oboro with Tayuya you can use the following code created from the below sections:  
-`04208850 80278954`
+These are customizable codes where you can replace it yourself. For example, to replace Oboro with Tayuya you can use the following code created from the below sections:
+
+```gecko
+04208850 80278954
+```
 
 These changes are global and therefore affect story mode, so you could replace Naruto with Orochimaru with the following code:  
-`04208820 80278914`
+
+```gecko
+04208820 80278914
+```
 
 ### Character IDs (Global Character Modifiers)
 
@@ -541,247 +539,247 @@ xxx = Character ID
 
 ### Sasuke [Ralf]
 
-```hex
+```gecko
 04208804 80278xxx
 ```
 
 ### Haku [Ralf]
 
-```hex
+```gecko
 04208808 80278xxx
 ```
 
 ### Kakashi [Ralf]
 
-```hex
+```gecko
 0420880C 80278xxx
 ```
 
 ### Rock Lee [Ralf]
 
-```hex
+```gecko
 04208810 80278xxx
 ```
 
 ### Iruka [Ralf]
 
-```hex
+```gecko
 04208814 80278xxx
 ```
 
 ### Zabuza [Ralf]
 
-```hex
+```gecko
 04208818 80278xxx
 ```
 
 ### Sakura [Ralf]
 
-```hex
+```gecko
 0420881C 80278xxx
 ```
 
 ### Naruto [Ralf]
 
-```hex
+```gecko
 04208820 80278xxx
 ```
 
 ### Ino [Ralf]
 
-```hex
+```gecko
 04208824 80278xxx
 ```
 
 ### Shikamaru [Ralf]
 
-```hex
+```gecko
 04208828 80278xxx
 ```
 
 ### Neji [Ralf]
 
-```hex
+```gecko
 0420882C 80278xxx
 ```
 
 ### Hinata [Ralf]
 
-```hex
+```gecko
 04208830 80278xxx
 ```
 
 ### Might Guy [Ralf]
 
-```hex
+```gecko
 04208834 80278xxx
 ```
 
 ### Kankuro [Ralf]
 
-```hex
+```gecko
 04208838 80278xxx
 ```
 
 ### Karasu [Ralf]
 
-```hex
+```gecko
 0420883C 80278xxx
 ```
 
 ### Kiba [Ralf]
 
-```hex
+```gecko
 04208840 80278xxx
 ```
 
 ### Akamaru [Ralf]
 
-```hex
+```gecko
 04208844 80278xxx
 ```
 
 ### Gaara [Ralf]
 
-```hex
+```gecko
 04208848 80278xxx
 ```
 
 ### Orochimaru [Ralf]
 
-```hex
+```gecko
 0420884C 80278xxx
 ```
 
 ### Oboro [Ralf]
 
-```hex
+```gecko
 04208850 80278xxx
 ```
 
 ### Mizuki [Ralf]
 
-```hex
+```gecko
 04208854 80278xxx
 ```
 
 ### Anko [Ralf]
 
-```hex
+```gecko
 04208858 80278xxx
 ```
 
 ### Jiraiya [Ralf]
 
-```hex
+```gecko
 0420885C 80278xxx
 ```
 
 ### Choji [Ralf]
 
-```hex
+```gecko
 04208860 80278xxx
 ```
 
 ### Tenten [Ralf]
 
-```hex
+```gecko
 04208864 80278xxx
 ```
 
 ### Temari [Ralf]
 
-```hex
+```gecko
 04208868 80278xxx
 ```
 
 ### Shino [Ralf]
 
-```hex
+```gecko
 0420886C 80278xxx
 ```
 
 ### Itachi [Ralf]
 
-```hex
+```gecko
 04208870 80278xxx
 ```
 
 ### Tsunade [Ralf]
 
-```hex
+```gecko
 04208874 80278xxx
 ```
 
 ### Hiruzen [Ralf]
 
-```hex
+```gecko
 04208878 80278xxx
 ```
 
 ### Kimimaro [Ralf]
 
-```hex
+```gecko
 0420887C 80278xxx
 ```
 
 ### Jirobo [Ralf]
 
-```hex
+```gecko
 04208880 80278xxx
 ```
 
 ### Kidomaru [Ralf]
 
-```hex
+```gecko
 04208884 80278xxx
 ```
 
 ### Sakon [Ralf]
 
-```hex
+```gecko
 04208888 80278xxx
 ```
 
 ### Tayuya [Ralf]
 
-```hex
+```gecko
 0420888C 80278xxx
 ```
 
 ### Kisame [Ralf]
 
-```hex
+```gecko
 04208890 80278xxx
 ```
 
 ### Sasuke CS2 [Ralf]
 
-```hex
+```gecko
 04208894 80278xxx
 ```
 
 ### Naruto Kyuubi [Ralf]
 
-```hex
+```gecko
 04208898 80278xxx
 ```
 
 ### Kabuto [Ralf]
 
-```hex
+```gecko
 0420889C 80278xxx
 ```
 
 ### Awakened Hinata [Ralf]
 
-```hex
+```gecko
 042088A0 80278xxx
 ```
 
 ### Tayuya's Doki Demon [Ralf]
 
-```hex
+```gecko
 042088A4 80278xxx
 ```
 
@@ -789,7 +787,7 @@ xxx = Character ID
 
 ### Character Replacer (1 Character Version) [Ralf]
 
-```hex
+```gecko
 06004B54 00000014
 2C0500xx 40820008
 38A000yy 3C808020
@@ -804,7 +802,7 @@ Replaces Character xx with Character yy.
 
 ### Character Replacer (2 Characters Version) [Ralf]
 
-```hex
+```gecko
 06004B54 00000024
 2C0500vv 4082000C
 38A000ww 48000010
@@ -822,7 +820,7 @@ Replaces Character vv with Character ww and Character xx with Character yy.
 
 ### Character Replacer (3 Characters Version) [Ralf]
 
-```hex
+```gecko
 06004B54 00000034
 2C0500tt 4082000C
 38A000uu 48000020
@@ -887,7 +885,7 @@ Replaces Character tt with Character uu, Character vv with Character ww and Char
 
 ### Replace Character With Oboro [Ralf]
 
-```hex
+```gecko
 06004B00 00000020
 2C0500xx 40820014
 38A00014 2C060001
@@ -901,7 +899,7 @@ xx = Character ID
 
 ### Replace Character With Tayuya's Doki Demon [Ralf]
 
-```hex
+```gecko
 06004B20 00000034
 2C0500xx 40820014
 38A00029 2C060001
@@ -919,7 +917,7 @@ xx = Character ID
 
 ### Replace Akamaru With Karasu [Ralf]
 
-```hex
+```gecko
 06004B54 00000014
 2C050011 40820008
 38A0000F 3C808020
@@ -930,7 +928,7 @@ xx = Character ID
 
 ### Replace Naruto, Sasuke & Sakura With Hinata [Ralf]
 
-```hex
+```gecko
 06004B54 00000034
 2C050008 4082000C
 38A0000C 48000020
@@ -945,7 +943,7 @@ xx = Character ID
 
 ### Replace Sakura With Oboro [Ralf]
 
-```hex
+```gecko
 06004B00 00000020
 2C050007 40820014
 38A00014 2C060001
@@ -957,7 +955,7 @@ xx = Character ID
 
 ### Replace Ino With Tayuya's Doki Demon [Ralf]
 
-```hex
+```gecko
 06004B20 00000034
 2C050009 40820014
 38A00029 2C060001

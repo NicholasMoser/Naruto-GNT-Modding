@@ -8,7 +8,7 @@ In Naruto GNT4, there is no character select in the character select menus. This
 
 ### Gecko Code
 
-```hex
+```gecko
 C2091ED4 00000015
 3C800145 7C043800
 40820098 2C1F0020

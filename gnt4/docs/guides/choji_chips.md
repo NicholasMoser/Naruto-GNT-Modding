@@ -29,9 +29,11 @@ Here is the full list of possible attack powers for each chip eaten, with each r
 
 Here are Gecko codes related to Choji's chips.
 
-**No limit to Choji Chip Eating Attack Boost**  
-C201703C 00000001  
-60000000 00000000
+### No limit to Choji Chip Eating Attack Boost
+
+```gecko
+0401703C 60000000
+```
 
 ![No Chip Max Attack](/gnt4/images/gameplay/no_chip_max.gif?raw=true "No Chip Max Attack")
 

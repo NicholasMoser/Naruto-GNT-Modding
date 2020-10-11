@@ -10,7 +10,7 @@ In Naruto GNT Special, there are ~7 frames of invincibility frames when you side
 
 ### Gecko Code
 
-```
+```gecko
 C2135B18 00000006
 3C604200 60630008
 7C001800 40820008
@@ -22,7 +22,7 @@ C2135B18 00000006
 
 ### Assembly
 
-```
+```assembly
 @80135b18
 lis r3,0x4200
 ori r3,r3,0x0008
@@ -51,27 +51,27 @@ The actual line we care about is at 80135B18. Every frame of the battle it will 
 
 First let's check if it's a backstep by seeing if the character state is set to 0x4200_0008. Since this value is larger than 2 bytes, we will need to use two separate assembly commands to store the whole value in a register.
 
-```
+```assembly
 lis r3,0x4200
 ori r3,r3,0x0008
 ```
 
 Now that we've stored this value in register 3, let's compare it to the character state and see if it matches:
 
-```
+```assembly
 cmpw r0,r3
 bne- 0x8
 ```
 
 If they do not match, branch ahead to the next check. If they do match, do the following:
 
-```
+```assembly
 andis. r0,r0,0x4200
 ```
 
 By doing an AND immediate shifted, we can AND 0x4200_0008 with 0x4200_0000. This will result in storing 0x4200_0000 in r0, removing invincibility. Now do the same for sidestep:
 
-```
+```assembly
 lis r3,0x0200
 ori r3,r3,0x0008
 cmpw r0,r3
@@ -81,7 +81,6 @@ andis. r0,r0,0x0200
 
 And last we need to add back the original line we are replacing:
 
-```
+```assembly
 stw r0, 0 (r5)
 ```
-

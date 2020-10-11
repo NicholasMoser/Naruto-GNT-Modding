@@ -6,7 +6,7 @@ These are codes that modify the game in various ways. You can add them to games 
 
 ### Skip Intro Cutscenes [Nick]
 
-```hex
+```gecko
 c2055264 00000005  
 827c0018 2c13000d  
 4082000c 3a60000e  
@@ -17,14 +17,13 @@ c2055264 00000005
 
 ### 60 FPS for 4-player Mode [Nick]
 
-```hex
-C21712A8 00000001  
-60030000 00000000
+```gecko
+041712A8 60030000
 ```
 
 ### LNP Always Activated [Nick]
 
-```hex
+```gecko
 0449ee00  3f8ccccd
 0449ee04  3f8ccccd
 0449ee08  3f8ccccd
@@ -32,7 +31,7 @@ C21712A8 00000001
 
 ### Replace Kiba with Rogue Ninja [Nick]
 
-```hex
+```gecko
 C2155014 00000003  
 2C00000F 40820008  
 3800002B 90040028  
