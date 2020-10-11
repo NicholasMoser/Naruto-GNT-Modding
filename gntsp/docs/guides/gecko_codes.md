@@ -22,7 +22,7 @@ C21633E0 00000003
 
 Note: You can remove or disable this code after you create/load your file, they will permanently save to your file data.
 
-### 60 FPS for 4-player Mode [Nick]
+### Force 60 FPS [Nick]
 
 ```gecko
 0416CBEC 60030000
