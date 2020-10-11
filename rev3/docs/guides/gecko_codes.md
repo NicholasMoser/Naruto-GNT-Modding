@@ -15,7 +15,7 @@ c2055264 00000005
 60000000 00000000
 ```
 
-### 60 FPS for 4-player Mode [Nick]
+### Force 60 FPS [Nick]
 
 ```gecko
 041712A8 60030000
