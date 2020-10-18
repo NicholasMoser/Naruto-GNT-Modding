@@ -164,6 +164,24 @@ Normally, Ukon takes 1.2x damage on all attacks. You can modify this value using
 
 Change the last byte to the number of rounds you wish to win.
 
+### ZTK, Ukon, 1G Lee, and S. Kakashi takes 1.25x damage and 2GLee takes 1.5x damage
+
+```gecko
+04278894 3FA00000
+0403E2C0 2C000004
+0403E2D0 5400077B
+C203E2B0 00000007
+8003001C 28000008
+41820028 28000003
+41820020 28000004
+4082001C 80030854
+5400077B 4182000C
+38000004 48000008
+38000022 00000000
+```
+
+This is in contrast to normal circumstances, where Ukon takes 1.2x damage and ZTK takes 1.5x damage.
+
 ### No limit to Choji Chip Eating Attack Boost [Nick]
 
 ```gecko
