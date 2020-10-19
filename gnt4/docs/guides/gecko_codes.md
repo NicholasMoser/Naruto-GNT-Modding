@@ -122,6 +122,14 @@ C-Stick Left/Right = Rotate Left/Right
 
 ## Experimental (May cause unintended side effects or crash)
 
+### X Does Not Throw Break
+
+When you don't have full chakra, you can mash X for easy throw breaks. This disables X as a throw break button completely to disable that.
+
+```gecko
+040632f0 70000230
+```
+
 ### Modify ZTK Damage Multiplier
 
 Normally, ZTK takes 1.5x damage on all attacks. You can modify this value using the below code. The `3f800000` is the multiplier as a float. The code below has it set to 1.0, thus makes it so that ZTK takes the same damage as all other characters.
