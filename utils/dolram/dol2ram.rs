@@ -25,7 +25,7 @@ fn main() {
     
     let arguments: Vec<String> = env::args().collect();
     if arguments.len() == 1 {
-        println!("Please include ram address hex string argument.")
+        println!("Please include dol offset hex string argument.")
     } else if arguments.len() > 2 {
         println!("Please provide exactly one argument.")
     } else {
