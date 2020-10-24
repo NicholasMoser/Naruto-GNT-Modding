@@ -2,20 +2,21 @@
 
 ## Table of Contents
 
-1. **[Description](#description)**
-2. **[DOL Header](#dol-header)**
-3. **[DOL Breakdown](#dol-breakdown)**
-4. **[DOL Code Empty Space](#dol-code-empty-space)**
-5. **[How to Inject ASM](#how-to-inject-asm)**
-6. **[Requirements](#requirements)**
-7. **[Guide](#guide)**
-8. **[Resources](#resources)**
+1. **[Description](#Description)**
+2. **[DOL Header](#DOL-Header)**
+3. **[DOL Breakdown](#DOL-Breakdown)**
+4. **[Assembly](#Assembly)**
+5. **[Modifying the DOL](#Modifying-the-DOL)**
+6. **[Decompilation](#Decompilation)**
+6. **[Resources](#Resources)**
 
 ## Description
 
-The dol file format is the main executable format for the GameCube and contains the code for the game. The name presumably refers to "Dolphin", which was the GameCube's codename. It is a simple file format consisting of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values. Text is executable code and data is just data for the game. The header also allows for a zero initialized (BSS) range. This range can overlap the 18 sections, with the sections taking priority. The BSS section is for uninitialized variables.
+The DOL file format is the main executable format for the GameCube/Wii and contains all of the code for a game. The name presumably refers to "Dolphin", which was the GameCube's codename.
 
-More information can be found on the [Custom Mario Kart Wiki DOL Page](http://wiki.tockdom.com/wiki/DOL_(File_Format))
+The DOL itself is similar to the [ELF file format](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format). So much so, that you can convert between the two formats using scripts both [open source](https://github.com/devkitPro/gamecube-tools/blob/master/elftool/elf2dol.c) and in the GameCube SDK. 
+
+The DOL file format consists of a header and up to 7 loadable code sections (Text0..Text6) and up to 11 data sections (Data0..Data10). All values in the header are unsigned big-endian 32-bit values. **Text** is executable PowerPC assembly code and **data** are numbers and text used by the code. The header also allows for a [zero initialized (BSS)](https://en.wikipedia.org/wiki/.bss) range. This range can overlap the 18 sections, with the sections taking priority. The BSS section is for uninitialized variables.
 
 ## DOL Header
 
@@ -84,65 +85,25 @@ Here are the header entries for the Naruto GNT4 DOL file along with their respec
 
 ## DOL Breakdown
 
-GNT4 has two sections of code, Text0 and Text1. Text0 starts at file offset 0x100, which is loaded into address 0x80003100 when the game is playing. Text1 starts at file offset 0x26c0, which is loaded into address 0x800056c0 when the game is playing.
+GNT4 has two sections of code, Text0 and Text1, known as **init** and **text** respectively. The **init** section starts at file offset 0x100, which is loaded into address 0x80003100 when the game starts. The **text** section starts at file offset 0x26c0, which is loaded into address 0x800056c0 when the game starts.
 
-Text0 is all of the code up until you hit Start at the title screen. This includes initialization of things needed to run the game such as registers. After you hit Start at the title screen it will begin Text1 code. This explains why Text0 is 9,664 bytes and Text1 is 2,064,704 bytes. This also means that if you go back to the title screen and hit Start again, it will begin from the start of Text1 code again.
+The **init** section is all of the code that runs when the game starts up. All of this code runs before any of the intro videos play. The **text** section is all of the rest of the code of the game.
 
-* Data0: 32 bytes of zeros.
-* Data1: The four byte word 0x8018E10C followed by 28 bytes of zeros. 0x8018E10C is a location to the ASM code for __destroy_global_chain.
-* Data2: Contains lots of text (e.g. file names, error messages, debug messages)
-* Data3: ???
-* Data4: Contains names of c code files (e.g. dvd.c, audio.c, pobj.c, hash.c)
-* Data5: Contains names of in-game battle properties (e.g. UKEMI, DAMAGE, THROW, SPECIAL).
+## Assembly
 
-## DOL Code Empty Space
+The code in the DOL is PowerPC assembly. IBM designed a custom processor called the [Gekko](https://en.wikipedia.org/wiki/Gekko_(microprocessor)) for the GameCube and the [Broadway](https://en.wikipedia.org/wiki/Broadway_(microprocessor)) for the Wii. These use the PowerPC instruction set, but with additional features for better performance with video games.
 
-One way of injection ASM is to insert into empty space in the code. There is only a single gap in Text1 for inserting new code. It exists at Start.dol offset 0x18a424, which is loaded into address 0x8018d424. It has room for 3 instructions, however this actually would only be 2 instructions since one instruction needs to be a return to the calling code.
+## Modifying the DOL
 
-## How to Inject ASM
+Modifying the DOL may be very easy or very hard depending on what you wish to do. For example, assuming you just wish to replace a single instruction. All this requires is finding the instruction in the DOL and replace the four bytes with the four bytes of your desired new instruction. This type of modification is similar to the Gecko code for a [32 bits Write](https://github.com/NicholasMoser/Naruto-GNT-Modding/blob/master/general/docs/guides/gecko_codetype_documentation.md#32-bits-write).
 
-*Note: This was taken from [Sham Rock's smashboards post](https://smashboards.com/threads/the-dol-mod-topic.326347/page-5#post-16623011) on how to do it*
+However, assume you wish to replace a single instruction with multiple instructions. This will require either making the DOL larger or overwriting other existing instructions. The DOL cannot simply be made larger to due all of the code inside of it using offsets to jump around. Inserting new code would break these offsets. Overwriting existing code and branching to and from it is much simpler to implement but riskier since code is removed from the game. This type of modification is similar to the Gecko code for [Insert ASM](https://github.com/NicholasMoser/Naruto-GNT-Modding/blob/master/general/docs/guides/gecko_codetype_documentation.md#insert-asm).
 
-### Requirements
+Both Gecko codes for 32 bits Write and Insert ASM can be inserted into a DOL using GNTool. This functionality was added as part of [this issue](https://github.com/NicholasMoser/GNTool/issues/14). Insert ASM codes in particular overwrite the unused recording functionality in GNT4, therefore no functionality in the game is lost. For more information on how this works, see the README for GNTool.
 
-* A working ASM code
-* The DOL file
-* Debug version of Dolphin that can execute memory breakpoints
-* Tool to extract/replace the dol (gc-rebuilder or gc-tool)
-* Hex editor
-* ASM <> WiiRd converter
+## Decompilation
 
-### Guide
-
-Injecting ASM into the game involves inserting ASM codes (C2xx xxxx) directly into the ISO (particularly the DOL). First you will need to find free space in the DOL. Extract the DOL, then load it up in your hex editor and look for some free space (a lot of 00´s). Insert the code and add a little something to make it easy to find it later on (0xFEDCBA98 for example since it´s normally not found in the game's memory, so you can find it easily with a single memory search). Save and insert the DOL into the ISO.
-
-Next you will need to check if the memory space is safe to inject. Load up the ISO in dolphin and search for the identifier you added (0xFEDCBA98 in this case). It should only give you 1 result. From there you can find where you inserted the code into the game permanently. To check if it's safe to use that space load up the development version of dolphin and simply put 1 big memory-breakpoint for all the memory addresses we just modified and just play a bit. If the game never breaks, it never uses those memory addresses and it's safe to use them.
-
-Now that we know the memory is not used by the game, we can add 2 simple branches to and from the custom code. One way to do this is with the ASM<>WiiRd converter:
-
-**Branching backwards**  
-b 0x (FFFF FFFF - (start memory address - end memory address) )+1 in this case  
-(FFFF FFFF - (801a415c - 80004420) )+ 1 = FFE602C4  
---> enter "b 0xFFE602C4" into converter  
---> 4BE602C4 assembler instruction that has to be inserted into the dol where the code would normally be injected
-
-**Branching forward**  
-b 0x end address - start address  
-801a4160 - 8000448c = 19FCD4  
---> enter "b 0x19FCD4" into converter  
---> 4819FCD4 assembler instruction that has to be inserted where we wrote "FEDCBA98"
-
-Now you can find the injection point (0x801A415C in this example) in the DOL. You can find it with a simple hex search by looking at the surrounding instructions:
-
-| Address  |  Instruction                              |  Hex      |
-|----------|-------------------------------------------|-----------|
-| 801a415c |  subi r0, r3, 1                           |  3803ffff |
-| 801a4160 |  stb  r0, 0x0003 (r31)                    |  981f0003 |
-| 801a4164 |  li   r0, 0                               |  38000000 |
-| 801a4168 |  stb  r0, 0x0005 (r31)                    |  981f0005 |
-
-search for "3803ffff981f000338000000981f0005" in the DOL
-1 result @1A0D3C, meaning that's the point the branch backwards has to be inserted
+Through [decompilation](https://en.wikipedia.org/wiki/Decompiler), we can slowly recreate the original C/C++ code of the game from the assembly in the DOL. This is currently being done at [doldecomp/gnt4](https://github.com/doldecomp/gnt4). Eventually, it may be possible to compile the game with entirely new C/C++ for easier modding.
 
 ## Resources
 
