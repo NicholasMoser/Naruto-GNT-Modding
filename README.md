@@ -5,6 +5,7 @@ This repository contains information related to modding the Naruto Gekitō Ninja
 
 - [Overview](#Overview)
 - [Skins](#Skins)
+- [Additional Modding](#Additional-Modding)
 - [Games](#Games)
   - [GNT4](#GNT4)
   - [GNT EX 1](#GNT-EX-1)
@@ -32,13 +33,19 @@ You can find a set of textures for the game to translate it mostly into English 
 [Naruto GNT4 English Patch Footage](https://www.youtube.com/watch?v=d-NbZB3I4wo)  
 [Naruto GNT4 English Patch Download](http://www.mediafire.com/file/95qgicueh9hig7u/GNT4_English%252B_Netplay_Bulid.zip/file)
 
+## Additional Modding
+
+If you are wanting to do any modding beyond skins, it will require some more effort.
+
+One way is by using Gecko codes. Gecko codes are similar to [GameShark](https://en.wikipedia.org/wiki/GameShark) or [Action Replay](https://en.wikipedia.org/wiki/Action_Replay) codes. They allow you to modify code in the game, inject new code, modify memory while the game is running, and much more. You can find the full Gecko code type documentation under [Gecko Code Type Documentation](/general/docs/guides/gecko_codetype_documentation.md).
+
+Another valuable tool for modding GNT games is [GNTool](https://github.com/NicholasMoser/GNTool). It provides tools for interacting with GNT related files, as well as create workspaces for modding GNT4. Many options are included for easily modding the game. The changes can quickly be tested in Dolphin and even repacked in a new ISO.
+
+Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.com/doldecomp/gnt4). You can also use Ghidra to reverse engineer the code of the game yourself. It is recommended to follow the [Ghidra Guide](/gnt4/docs/guides/ghidra.md) to do so.
+
 ## Games
 
-
-
-If you are wanting to do any modding beyond skins, it will require some more effort. It is recommended to use [GNTool](https://github.com/NicholasMoser/GNTool) for modding, as it provides a variety of tools to make it easier.
-
-Here are various pages associated with modding the game:
+Here are various pages associated with modding each game:
 
 ### GNT4
 
