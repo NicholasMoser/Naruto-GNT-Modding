@@ -1,12 +1,26 @@
 # Naruto GNT Modding
 
-Naruto Gekitō Ninja Taisen(GNT)/Clash of Ninja Modding
+This repository contains information related to modding the Naruto Gekitō Ninja Taisen(GNT)/Clash of Ninja games.
 
-## Introduction
 
-This repository is dedicated to investigating and modding the Naruto GNT games, also known as Clash of Ninja in the United States.
+- [Overview](#Overview)
+- [Skins](#Skins)
+- [Games](#Games)
+  - [GNT4](#GNT4)
+  - [GNT EX 1](#GNT-EX-1)
+  - [GNT EX 2](#GNT-EX-2)
+  - [GNT EX 3](#GNT-EX-3)
+  - [GNT Revolution 1](#GNT-Revolution-1)
+  - [GNT Revolution 2](#GNT-Revolution-2)
+  - [GNT Revolution 3](#GNT-Revolution-3)
+  - [GNT Special](#GNT-Special)
+- [Other Resources](#Other-Resources)
 
-## Basics
+## Overview
+
+The GNT series of games currently has a very active modding community. Most modding work is currently going into the Super GNT4 mod. Here you can find the [SUPER Naruto Gekitou Ninja Taisen 4 Trailer](https://www.youtube.com/watch?v=dBm2x1XauN8). And by going to the [Super GNT4 Discord](https://discord.gg/wyNpXKx) you can download the mod.
+
+## Skins
 
 For those only interested in modifying textures or installing custom skins for an emulated copy of the GNT games you are in luck. The [Dolphin Emulator](https://dolphin-emu.org/) drastically simplifies this process with the **Dump Textures** and **Load Textures** tools. This will allow you to skip straight to the texture design process.
 
@@ -18,9 +32,11 @@ You can find a set of textures for the game to translate it mostly into English 
 [Naruto GNT4 English Patch Footage](https://www.youtube.com/watch?v=d-NbZB3I4wo)  
 [Naruto GNT4 English Patch Download](http://www.mediafire.com/file/95qgicueh9hig7u/GNT4_English%252B_Netplay_Bulid.zip/file)
 
-## Advanced
+## Games
 
-If you are wanting to do anything other than dumping and loading textures with Dolphin, you will need to put in some more effort. You will want to familiarize yourself with the process of hex editing and the various data formats stored in the game. You can both import and export these files by using [GNTool](https://github.com/NicholasMoser/GNTool) with your copy of the game.
+
+
+If you are wanting to do any modding beyond skins, it will require some more effort. It is recommended to use [GNTool](https://github.com/NicholasMoser/GNTool) for modding, as it provides a variety of tools to make it easier.
 
 Here are various pages associated with modding the game:
 
@@ -83,5 +99,7 @@ Here are various pages associated with modding the game:
 [Naruto GNT4 Subreddit](https://www.reddit.com/r/GNT4/)
 
 [GNT Community Discord](https://discord.gg/jDUxzvH)
+
+[Super GNT4 Discord](https://discord.gg/wyNpXKx)
 
 [GNT4 Documentation Notion](https://www.notion.so/GNT4-Documentation-40969865cc5d46cd97fd3900037c1de7)
