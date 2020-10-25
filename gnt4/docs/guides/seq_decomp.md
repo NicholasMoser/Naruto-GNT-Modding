@@ -336,3 +336,334 @@ Many pointers appear to be set after this based on the number of SEQ Header Word
 ```
 
 </details>
+
+## Reading Opcodes
+
+The opcode is read from the seq file at 0x800c9120. It uses the following function to find the pointer to code associated with it:
+
+```c
+0x802103a0 + (opcode >> 0x16 & 0x3fc)
+```
+
+1. Read opcode, e.g. `0x01320000` (`0001001100100000000000000000` in binary)
+2. Use bit shifting to get the top 6 bits, `000100` in this case.
+3. & it with `0x3fc` (`001111111100` in binary)
+4. For this example, that doesn't change the value and it stays as `000100` in binary, or 4 in hex.
+5. This value is added as an offset to `0x802103a0`, which is a location to a pointer table in memory.
+6. For this example, we get the final value `0x800a5698`, which is the second pointer in the opcode pointer table.
+
+The highest value that can come from this math is `0x3fc`, so the opcode pointer table is between `0x802103a0` and `0x8021079C`
+
+<details>
+  <summary>Opcode Pointer Table</summary>
+
+```hex
+0x0   800A6068
+0x4   800A5698
+0x8   800A52F8
+0xc   800A51B0
+0x10  800A4B40
+0x14  800A44C4
+0x18  800A3ED4
+0x1c  800A3888
+0x20  800A32C0
+0x24  800A2A8C
+0x28  800A274C
+0x2c  800A1C5C
+0x30  800A1894
+0x34  800A188C
+0x38  800AA9B8
+0x3c  800AA430
+0x40  800A9C1C
+0x44  800A99F0
+0x48  800A8E68
+0x4c  800A8594
+0x50  800A76EC
+0x54  800A75C0
+0x58  800A7204
+0x5c  800A713C
+0x60  800A7054
+0x64  800A6B1C
+0x68  800A6458
+0x6c  800A6324
+0x70  800A6228
+0x74  800BB7A0
+0x78  800BB5F8
+0x7c  800BB338
+0x80  800BA19C
+0x84  800B9458
+0x88  800B832C
+0x8c  800B7D98
+0x90  800B3EC4
+0x94  800B3CE4
+0x98  800C0288
+0x9c  800B097C
+0xa0  800B0320
+0xa4  800B214C
+0xa8  800B1750
+0xac  800B1590
+0xb0  800B24B8
+0xb4  800B24B0
+0xb8  800B24A8
+0xbc  800B24A0
+0xc0  800B2498
+0xc4  800B3580
+0xc8  800B3020
+0xcc  800B25D0
+0xd0  800B24C0
+0xd4  00000000
+0xd8  800960B4
+0xdc  800952F4
+0xe0  80094324
+0xe4  800924F0
+0xe8  80091248
+0xec  8009228C
+0xf0  80091B8C
+0xf4  800C6228
+0xf8  80090EF8
+0xfc  800C5EDC
+0x100 800C57BC
+0x104 800C531C
+0x108 800C5124
+0x10c 800C4FCC
+0x110 800C4688
+0x114 00000000
+0x118 800C88A8
+0x11c 800C8404
+0x120 800C8108
+0x124 800C7D20
+0x128 800C7C5C
+0x12c 800C7424
+0x130 800C6900
+0x134 800C676C
+0x138 00000000
+0x13c 00000000
+0x140 800C6534
+0x144 00000000
+0x148 00000000
+0x14c 00000000
+0x150 00000000
+0x154 800AAD24
+0x158 800AAC68
+0x15c 00000000
+0x160 00000000
+0x164 00000000
+0x168 00000000
+0x16c 800BFBB0
+0x170 800BE9EC
+0x174 00000000
+0x178 00000000
+0x17c 00000000
+0x180 00000000
+0x184 800AB754
+0x188 00000000
+0x18c 00000000
+0x190 00000000
+0x194 800C97B0
+0x198 800C9858
+0x19c 800C97C0
+0x1a0 800C97D0
+0x1a4 800C97E0
+0x1a8 800C9858
+0x1ac 800C9858
+0x1b0 800C9858
+0x1b4 800C9858
+0x1b8 800C97F0
+0x1bc 800C9800
+0x1c0 800C9810
+0x1c4 800C9820
+0x1c8 800C9830
+0x1cc 800C9840
+0x1d0 800C9850
+0x1d4 00000000
+0x1d8 80201EC8
+0x1dc 80201ED8
+0x1e0 80201EEC
+0x1e4 80201F00
+0x1e8 800CE908
+0x1ec 800CE808
+0x1f0 800CE810
+0x1f4 800CE818
+0x1f8 800CE820
+0x1fc 800CE828
+0x200 800CE830
+0x204 800CE838
+0x208 800CE840
+0x20c 800CE848
+0x210 800CE850
+0x214 800CE858
+0x218 800CE860
+0x21c 800CE868
+0x220 800CE870
+0x224 800CE878
+0x228 800CE880
+0x22c 800CE888
+0x230 800CE890
+0x234 800CE898
+0x238 800CE8A0
+0x23c 800CE8A8
+0x240 800CE8B0
+0x244 800CE8B8
+0x248 800CE8C0
+0x24c 800CE8C8
+0x250 800CE8D0
+0x254 800CE8D8
+0x258 800CE8E0
+0x25c 800CE8E8
+0x260 800CE8F0
+0x264 800CE8F8
+0x268 800CE900
+0x26c 800CE980
+0x270 800CEB08
+0x274 800CEB08
+0x278 800CE9DC
+0x27c 800CEB08
+0x280 800CEB08
+0x284 800CEB08
+0x288 800CEB08
+0x28c 800CE9F8
+0x290 800CEA54
+0x294 800CEAB0
+0x298 800CEEF8
+0x29c 800CEF08
+0x2a0 800CEF18
+0x2a4 800CEF24
+0x2a8 800CEF30
+0x2ac 800CEF3C
+0x2b0 800CEF4C
+0x2b4 800CEF58
+0x2b8 800CEF64
+0x2bc 800CEF70
+0x2c0 800CEF80
+0x2c4 800CEF90
+0x2c8 800CEFA0
+0x2cc 800CEFB0
+0x2d0 800CEFC0
+0x2d4 800CEFD0
+0x2d8 800CEFE0
+0x2dc 800CEFF0
+0x2e0 800CF000
+0x2e4 800CF010
+0x2e8 800CF020
+0x2ec 800CF02C
+0x2f0 800CF25C
+0x2f4 800CF25C
+0x2f8 800CF25C
+0x2fc 800CF25C
+0x300 800CF25C
+0x304 800CF25C
+0x308 800CF25C
+0x30c 800CF25C
+0x310 800CF25C
+0x314 800CF25C
+0x318 800CF25C
+0x31c 800CF25C
+0x320 800CF25C
+0x324 800CF25C
+0x328 800CF25C
+0x32c 800CF25C
+0x330 800CF25C
+0x334 800CF25C
+0x338 800CF038
+0x33c 800CF048
+0x340 800CF058
+0x344 800CF068
+0x348 800CF078
+0x34c 800CF088
+0x350 800CF098
+0x354 800CF0A8
+0x358 800CF0B8
+0x35c 800CF0C8
+0x360 800CF0D8
+0x364 800CF0E8
+0x368 800CF0F8
+0x36c 800CF108
+0x370 800CF118
+0x374 800CF128
+0x378 800CF138
+0x37c 800CF148
+0x380 800CF158
+0x384 800CF168
+0x388 800CF178
+0x38c 800CF188
+0x390 800CF198
+0x394 800CF1A8
+0x398 800CF1B8
+0x39c 800CF1C8
+0x3a0 800CF1D8
+0x3a4 800CF1E8
+0x3a8 800CF1F8
+0x3ac 800CF208
+0x3b0 800CF218
+0x3b4 800CF228
+0x3b8 800CF25C
+0x3bc 800CF25C
+0x3c0 800CF25C
+0x3c4 800CF25C
+0x3c8 800CF25C
+0x3cc 800CF25C
+0x3d0 800CF25C
+0x3d4 800CF25C
+0x3d8 800CF238
+0x3dc 800CF244
+0x3e0 800CF250
+0x3e4 800CFDA4
+0x3e8 800CFA84
+0x3ec 800CFA98
+0x3f0 800CFAAC
+0x3f4 800CFAC0
+0x3f8 800CFAD4
+0x3fc 800CFAE8
+```
+
+</details>
+
+It will then jump to the code found in the opcode pointer table. When we jump to `0x800a5698`, it then checks the second byte of the opcode. This second byte further breaks down the action to be performed.
+
+## Branching Opcodes
+
+X = param_2[0x15]
+Y = param_2[0x14]
+Z = param_2[0x17] (is a pointer)
+
+0100: ???
+0101: ???
+0102: ???
+0103: ???
+0104: ???
+0105: ???
+0106: ???
+0107: ???
+0108: ???
+0132: Unconditional branch.
+0133: Branch if X is 0.
+0134: Branch if X is not 0.
+0135: Branch is X is 1 or greater.
+0136: Branch if X is 0 or greater.
+0137: Branch if X is less than 0.
+0138: Branch if X is less than 1.
+0139: Branch if X is less than 0 (Duplicate of 0137).
+013A: Branch if X is 0 or greater (Duplicate of 0136).
+013B: Branch if Y is less than 0. Otherwise, decrement Y and if Y is then not 0, branch.
+013C: Subtract 4 from Z. Using the pointer Z is holding, set it to the offset of the opcode after the current one. Unconditional branch.
+013D: Execute opcode 013C if X is 0.
+013E: Execute opcode 013C if X is not 0.
+013F: Execute opcode 013C if X is 1 or greater.
+0140: Execute opcode 013C if X is 0 or greater.
+0141: Execute opcode 013C if X is less than 0.
+0142: Execute opcode 013C if X is less than 1.
+0143: Execute opcode 013C if X is less than 0 (Duplicate of 0141).
+0144: Execute opcode 013C if X is 0 or greater (Duplicate of 0140).
+0145: Unconditional branch to the deferenced pointer of Z. Increment Z by 4.
+0146: Execute opcode 0145 if X is 0.
+0147: Execute opcode 0145 if X is not 0.
+0148: Execute opcode 0145 if X is 1 or greater.
+0149: Execute opcode 0145 if X is 0 or greater.
+014A: Execute opcode 0145 if X is less than 0.
+014B: Execute opcode 0145 if X is less than 1.
+014C: Execute opcode 0145 if X is less than 0 (Duplicate of 014A).
+014D: Execute opcode 0145 if X is 0 or greater (Duplicate of 0149).
+014E: ???
+014F: Execute opcode 0145 if Y is less than 0. Otherwise, decrement Y and if Y is then not 0, execute opcode 0145.
+0150: ???
+0151: ???
