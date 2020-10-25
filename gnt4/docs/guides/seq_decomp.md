@@ -622,10 +622,11 @@ It will then jump to the code found in the opcode pointer table. When we jump to
 
 ## Branching Opcodes
 
-X = param_2[0x15]
-Y = param_2[0x14]
-Z = param_2[0x17] (is a pointer)
+- X = param_2[0x15]
+- Y = param_2[0x14]
+- Z = param_2[0x17] (is a pointer)
 
+```
 0100: ???
 0101: ???
 0102: ???
@@ -667,3 +668,4 @@ Z = param_2[0x17] (is a pointer)
 014F: Execute opcode 0145 if Y is less than 0. Otherwise, decrement Y and if Y is then not 0, execute opcode 0145.
 0150: ???
 0151: ???
+```
