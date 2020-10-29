@@ -1,4 +1,4 @@
-.text section layout
+.text
 80000100 00000098 80000100 0 system_reset_exception_handler
 80000200 00000098 80000200 0 machine_check_exception_handler
 80000300 00000098 80000300 0 dsi_exception_handler
