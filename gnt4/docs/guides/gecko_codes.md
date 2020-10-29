@@ -190,6 +190,18 @@ C203E2B0 00000007
 
 This is in contrast to normal circumstances, where Ukon takes 1.2x damage and ZTK takes 1.5x damage.
 
+### ZTK and S. Kakashi take 1.25x damage
+
+```gecko
+04278890 3fa00000
+c203e2b0 00000003
+8003001c 28000003
+40820008 38000008
+60000000 00000000
+```
+
+This is in contrast to normal circumstances, where Ukon takes 1.2x damage and ZTK takes 1.5x damage.
+
 ### No limit to Choji Chip Eating Attack Boost [Nick]
 
 ```gecko
