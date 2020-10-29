@@ -372,7 +372,7 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 | 0xa    | 0x28   | 800A274C     |                                                  |
 | 0xb    | 0x2c   | 800A1C5C     |                                                  |
 | 0xc    | 0x30   | 800A1894     |                                                  |
-| 0xd    | 0x34   | 800A188C     |                                                  |
+| 0xd    | 0x34   | 800A188C     | Empty and unused                                 |
 | 0xe    | 0x38   | 800AA9B8     |                                                  |
 | 0xf    | 0x3c   | 800AA430     |                                                  |
 | 0x10   | 0x40   | 800A9C1C     |                                                  |
@@ -403,16 +403,16 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 | 0x29   | 0xa4   | 800B214C     |                                                  |
 | 0x2a   | 0xa8   | 800B1750     |                                                  |
 | 0x2b   | 0xac   | 800B1590     |                                                  |
-| 0x2c   | 0xb0   | 800B24B8     |                                                  |
-| 0x2d   | 0xb4   | 800B24B0     |                                                  |
-| 0x2e   | 0xb8   | 800B24A8     |                                                  |
-| 0x2f   | 0xbc   | 800B24A0     |                                                  |
-| 0x30   | 0xc0   | 800B2498     |                                                  |
+| 0x2c   | 0xb0   | 800B24B8     | Empty and unused                                 |
+| 0x2d   | 0xb4   | 800B24B0     | Empty and unused                                 |
+| 0x2e   | 0xb8   | 800B24A8     | Empty and unused                                 |
+| 0x2f   | 0xbc   | 800B24A0     | Empty and unused                                 |
+| 0x30   | 0xc0   | 800B2498     | Empty and unused                                 |
 | 0x31   | 0xc4   | 800B3580     |                                                  |
 | 0x32   | 0xc8   | 800B3020     |                                                  |
 | 0x33   | 0xcc   | 800B25D0     |                                                  |
 | 0x34   | 0xd0   | 800B24C0     |                                                  |
-| 0x35   | 0xd4   | 00000000     |                                                  |
+| 0x35   | 0xd4   | 00000000     | Invalid                                          |
 | 0x36   | 0xd8   | 800960B4     |                                                  |
 | 0x37   | 0xdc   | 800952F4     |                                                  |
 | 0x38   | 0xe0   | 80094324     |                                                  |
@@ -428,7 +428,7 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 | 0x42   | 0x108  | 800C5124     |                                                  |
 | 0x43   | 0x10c  | 800C4FCC     |                                                  |
 | 0x44   | 0x110  | 800C4688     |                                                  |
-| 0x45   | 0x114  | 00000000     |                                                  |
+| 0x45   | 0x114  | 00000000     | Invalid                                          |
 | 0x46   | 0x118  | 800C88A8     |                                                  |
 | 0x47   | 0x11c  | 800C8404     |                                                  |
 | 0x48   | 0x120  | 800C8108     |                                                  |
@@ -437,184 +437,184 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 | 0x4b   | 0x12c  | 800C7424     |                                                  |
 | 0x4c   | 0x130  | 800C6900     |                                                  |
 | 0x4d   | 0x134  | 800C676C     |                                                  |
-| 0x4e   | 0x138  | 00000000     |                                                  |
-| 0x4f   | 0x13c  | 00000000     |                                                  |
+| 0x4e   | 0x138  | 00000000     | Invalid                                          |
+| 0x4f   | 0x13c  | 00000000     | Invalid                                          |
 | 0x50   | 0x140  | 800C6534     |                                                  |
-| 0x51   | 0x144  | 00000000     |                                                  |
-| 0x52   | 0x148  | 00000000     |                                                  |
-| 0x53   | 0x14c  | 00000000     |                                                  |
-| 0x54   | 0x150  | 00000000     |                                                  |
+| 0x51   | 0x144  | 00000000     | Invalid                                          |
+| 0x52   | 0x148  | 00000000     | Invalid                                          |
+| 0x53   | 0x14c  | 00000000     | Invalid                                          |
+| 0x54   | 0x150  | 00000000     | Invalid                                          |
 | 0x55   | 0x154  | 800AAD24     |                                                  |
 | 0x56   | 0x158  | 800AAC68     |                                                  |
-| 0x57   | 0x15c  | 00000000     |                                                  |
-| 0x58   | 0x160  | 00000000     |                                                  |
-| 0x59   | 0x164  | 00000000     |                                                  |
-| 0x5a   | 0x168  | 00000000     |                                                  |
+| 0x57   | 0x15c  | 00000000     | Invalid                                          |
+| 0x58   | 0x160  | 00000000     | Invalid                                          |
+| 0x59   | 0x164  | 00000000     | Invalid                                          |
+| 0x5a   | 0x168  | 00000000     | Invalid                                          |
 | 0x5b   | 0x16c  | 800BFBB0     |                                                  |
 | 0x5c   | 0x170  | 800BE9EC     |                                                  |
-| 0x5d   | 0x174  | 00000000     |                                                  |
-| 0x5e   | 0x178  | 00000000     |                                                  |
-| 0x5f   | 0x17c  | 00000000     |                                                  |
-| 0x60   | 0x180  | 00000000     |                                                  |
+| 0x5d   | 0x174  | 00000000     | Invalid                                          |
+| 0x5e   | 0x178  | 00000000     | Invalid                                          |
+| 0x5f   | 0x17c  | 00000000     | Invalid                                          |
+| 0x60   | 0x180  | 00000000     | Invalid                                          |
 | 0x61   | 0x184  | 800AB754     |                                                  |
-| 0x62   | 0x188  | 00000000     |                                                  |
-| 0x63   | 0x18c  | 00000000     |                                                  |
-| 0x64   | 0x190  | 00000000     |                                                  |
-| 0x65   | 0x194  | 800C97B0     |  None of the opcodes from here on are valid      |
-| 0x66   | 0x198  | 800C9858     |  Invalid                                         |
-| 0x67   | 0x19c  | 800C97C0     |  Invalid                                         |
-| 0x68   | 0x1a0  | 800C97D0     |  Invalid                                         |
-| 0x69   | 0x1a4  | 800C97E0     |  Invalid                                         |
-| 0x6a   | 0x1a8  | 800C9858     |  Invalid                                         |
-| 0x6b   | 0x1ac  | 800C9858     |  Invalid                                         |
-| 0x6c   | 0x1b0  | 800C9858     |  Invalid                                         |
-| 0x6d   | 0x1b4  | 800C9858     |  Invalid                                         |
-| 0x6e   | 0x1b8  | 800C97F0     |  Invalid                                         |
-| 0x6f   | 0x1bc  | 800C9800     |  Invalid                                         |
-| 0x70   | 0x1c0  | 800C9810     |  Invalid                                         |
-| 0x71   | 0x1c4  | 800C9820     |  Invalid                                         |
-| 0x72   | 0x1c8  | 800C9830     |  Invalid                                         |
-| 0x73   | 0x1cc  | 800C9840     |  Invalid                                         |
-| 0x74   | 0x1d0  | 800C9850     |  Invalid                                         |
-| 0x75   | 0x1d4  | 00000000     |  Invalid                                         |
-| 0x76   | 0x1d8  | 80201EC8     |  Invalid                                         |
-| 0x77   | 0x1dc  | 80201ED8     |  Invalid                                         |
-| 0x78   | 0x1e0  | 80201EEC     |  Invalid                                         |
-| 0x79   | 0x1e4  | 80201F00     |  Invalid                                         |
-| 0x7a   | 0x1e8  | 800CE908     |  Invalid                                         |
-| 0x7b   | 0x1ec  | 800CE808     |  Invalid                                         |
-| 0x7c   | 0x1f0  | 800CE810     |  Invalid                                         |
-| 0x7d   | 0x1f4  | 800CE818     |  Invalid                                         |
-| 0x7e   | 0x1f8  | 800CE820     |  Invalid                                         |
-| 0x7f   | 0x1fc  | 800CE828     |  Invalid                                         |
-| 0x80   | 0x200  | 800CE830     |  Invalid                                         |
-| 0x81   | 0x204  | 800CE838     |  Invalid                                         |
-| 0x82   | 0x208  | 800CE840     |  Invalid                                         |
-| 0x83   | 0x20c  | 800CE848     |  Invalid                                         |
-| 0x84   | 0x210  | 800CE850     |  Invalid                                         |
-| 0x85   | 0x214  | 800CE858     |  Invalid                                         |
-| 0x86   | 0x218  | 800CE860     |  Invalid                                         |
-| 0x87   | 0x21c  | 800CE868     |  Invalid                                         |
-| 0x88   | 0x220  | 800CE870     |  Invalid                                         |
-| 0x89   | 0x224  | 800CE878     |  Invalid                                         |
-| 0x8a   | 0x228  | 800CE880     |  Invalid                                         |
-| 0x8b   | 0x22c  | 800CE888     |  Invalid                                         |
-| 0x8c   | 0x230  | 800CE890     |  Invalid                                         |
-| 0x8d   | 0x234  | 800CE898     |  Invalid                                         |
-| 0x8e   | 0x238  | 800CE8A0     |  Invalid                                         |
-| 0x8f   | 0x23c  | 800CE8A8     |  Invalid                                         |
-| 0x90   | 0x240  | 800CE8B0     |  Invalid                                         |
-| 0x91   | 0x244  | 800CE8B8     |  Invalid                                         |
-| 0x92   | 0x248  | 800CE8C0     |  Invalid                                         |
-| 0x93   | 0x24c  | 800CE8C8     |  Invalid                                         |
-| 0x94   | 0x250  | 800CE8D0     |  Invalid                                         |
-| 0x95   | 0x254  | 800CE8D8     |  Invalid                                         |
-| 0x96   | 0x258  | 800CE8E0     |  Invalid                                         |
-| 0x97   | 0x25c  | 800CE8E8     |  Invalid                                         |
-| 0x98   | 0x260  | 800CE8F0     |  Invalid                                         |
-| 0x99   | 0x264  | 800CE8F8     |  Invalid                                         |
-| 0x9a   | 0x268  | 800CE900     |  Invalid                                         |
-| 0x9b   | 0x26c  | 800CE980     |  Invalid                                         |
-| 0x9c   | 0x270  | 800CEB08     |  Invalid                                         |
-| 0x9d   | 0x274  | 800CEB08     |  Invalid                                         |
-| 0x9e   | 0x278  | 800CE9DC     |  Invalid                                         |
-| 0x9f   | 0x27c  | 800CEB08     |  Invalid                                         |
-| 0xa0   | 0x280  | 800CEB08     |  Invalid                                         |
-| 0xa1   | 0x284  | 800CEB08     |  Invalid                                         |
-| 0xa2   | 0x288  | 800CEB08     |  Invalid                                         |
-| 0xa3   | 0x28c  | 800CE9F8     |  Invalid                                         |
-| 0xa4   | 0x290  | 800CEA54     |  Invalid                                         |
-| 0xa5   | 0x294  | 800CEAB0     |  Invalid                                         |
-| 0xa6   | 0x298  | 800CEEF8     |  Invalid                                         |
-| 0xa7   | 0x29c  | 800CEF08     |  Invalid                                         |
-| 0xa8   | 0x2a0  | 800CEF18     |  Invalid                                         |
-| 0xa9   | 0x2a4  | 800CEF24     |  Invalid                                         |
-| 0xaa   | 0x2a8  | 800CEF30     |  Invalid                                         |
-| 0xab   | 0x2ac  | 800CEF3C     |  Invalid                                         |
-| 0xac   | 0x2b0  | 800CEF4C     |  Invalid                                         |
-| 0xad   | 0x2b4  | 800CEF58     |  Invalid                                         |
-| 0xae   | 0x2b8  | 800CEF64     |  Invalid                                         |
-| 0xaf   | 0x2bc  | 800CEF70     |  Invalid                                         |
-| 0xb0   | 0x2c0  | 800CEF80     |  Invalid                                         |
-| 0xb1   | 0x2c4  | 800CEF90     |  Invalid                                         |
-| 0xb2   | 0x2c8  | 800CEFA0     |  Invalid                                         |
-| 0xb3   | 0x2cc  | 800CEFB0     |  Invalid                                         |
-| 0xb4   | 0x2d0  | 800CEFC0     |  Invalid                                         |
-| 0xb5   | 0x2d4  | 800CEFD0     |  Invalid                                         |
-| 0xb6   | 0x2d8  | 800CEFE0     |  Invalid                                         |
-| 0xb7   | 0x2dc  | 800CEFF0     |  Invalid                                         |
-| 0xb8   | 0x2e0  | 800CF000     |  Invalid                                         |
-| 0xb9   | 0x2e4  | 800CF010     |  Invalid                                         |
-| 0xba   | 0x2e8  | 800CF020     |  Invalid                                         |
-| 0xbb   | 0x2ec  | 800CF02C     |  Invalid                                         |
-| 0xbc   | 0x2f0  | 800CF25C     |  Invalid                                         |
-| 0xbd   | 0x2f4  | 800CF25C     |  Invalid                                         |
-| 0xbe   | 0x2f8  | 800CF25C     |  Invalid                                         |
-| 0xbf   | 0x2fc  | 800CF25C     |  Invalid                                         |
-| 0xc0   | 0x300  | 800CF25C     |  Invalid                                         |
-| 0xc1   | 0x304  | 800CF25C     |  Invalid                                         |
-| 0xc2   | 0x308  | 800CF25C     |  Invalid                                         |
-| 0xc3   | 0x30c  | 800CF25C     |  Invalid                                         |
-| 0xc4   | 0x310  | 800CF25C     |  Invalid                                         |
-| 0xc5   | 0x314  | 800CF25C     |  Invalid                                         |
-| 0xc6   | 0x318  | 800CF25C     |  Invalid                                         |
-| 0xc7   | 0x31c  | 800CF25C     |  Invalid                                         |
-| 0xc8   | 0x320  | 800CF25C     |  Invalid                                         |
-| 0xc9   | 0x324  | 800CF25C     |  Invalid                                         |
-| 0xca   | 0x328  | 800CF25C     |  Invalid                                         |
-| 0xcb   | 0x32c  | 800CF25C     |  Invalid                                         |
-| 0xcc   | 0x330  | 800CF25C     |  Invalid                                         |
-| 0xcd   | 0x334  | 800CF25C     |  Invalid                                         |
-| 0xce   | 0x338  | 800CF038     |  Invalid                                         |
-| 0xcf   | 0x33c  | 800CF048     |  Invalid                                         |
-| 0xd0   | 0x340  | 800CF058     |  Invalid                                         |
-| 0xd1   | 0x344  | 800CF068     |  Invalid                                         |
-| 0xd2   | 0x348  | 800CF078     |  Invalid                                         |
-| 0xd3   | 0x34c  | 800CF088     |  Invalid                                         |
-| 0xd4   | 0x350  | 800CF098     |  Invalid                                         |
-| 0xd5   | 0x354  | 800CF0A8     |  Invalid                                         |
-| 0xd6   | 0x358  | 800CF0B8     |  Invalid                                         |
-| 0xd7   | 0x35c  | 800CF0C8     |  Invalid                                         |
-| 0xd8   | 0x360  | 800CF0D8     |  Invalid                                         |
-| 0xd9   | 0x364  | 800CF0E8     |  Invalid                                         |
-| 0xda   | 0x368  | 800CF0F8     |  Invalid                                         |
-| 0xdb   | 0x36c  | 800CF108     |  Invalid                                         |
-| 0xdc   | 0x370  | 800CF118     |  Invalid                                         |
-| 0xdd   | 0x374  | 800CF128     |  Invalid                                         |
-| 0xde   | 0x378  | 800CF138     |  Invalid                                         |
-| 0xdf   | 0x37c  | 800CF148     |  Invalid                                         |
-| 0xe0   | 0x380  | 800CF158     |  Invalid                                         |
-| 0xe1   | 0x384  | 800CF168     |  Invalid                                         |
-| 0xe2   | 0x388  | 800CF178     |  Invalid                                         |
-| 0xe3   | 0x38c  | 800CF188     |  Invalid                                         |
-| 0xe4   | 0x390  | 800CF198     |  Invalid                                         |
-| 0xe5   | 0x394  | 800CF1A8     |  Invalid                                         |
-| 0xe6   | 0x398  | 800CF1B8     |  Invalid                                         |
-| 0xe7   | 0x39c  | 800CF1C8     |  Invalid                                         |
-| 0xe8   | 0x3a0  | 800CF1D8     |  Invalid                                         |
-| 0xe9   | 0x3a4  | 800CF1E8     |  Invalid                                         |
-| 0xea   | 0x3a8  | 800CF1F8     |  Invalid                                         |
-| 0xeb   | 0x3ac  | 800CF208     |  Invalid                                         |
-| 0xec   | 0x3b0  | 800CF218     |  Invalid                                         |
-| 0xed   | 0x3b4  | 800CF228     |  Invalid                                         |
-| 0xee   | 0x3b8  | 800CF25C     |  Invalid                                         |
-| 0xef   | 0x3bc  | 800CF25C     |  Invalid                                         |
-| 0xf0   | 0x3c0  | 800CF25C     |  Invalid                                         |
-| 0xf1   | 0x3c4  | 800CF25C     |  Invalid                                         |
-| 0xf2   | 0x3c8  | 800CF25C     |  Invalid                                         |
-| 0xf3   | 0x3cc  | 800CF25C     |  Invalid                                         |
-| 0xf4   | 0x3d0  | 800CF25C     |  Invalid                                         |
-| 0xf5   | 0x3d4  | 800CF25C     |  Invalid                                         |
-| 0xf6   | 0x3d8  | 800CF238     |  Invalid                                         |
-| 0xf7   | 0x3dc  | 800CF244     |  Invalid                                         |
-| 0xf8   | 0x3e0  | 800CF250     |  Invalid                                         |
-| 0xf9   | 0x3e4  | 800CFDA4     |  Invalid                                         |
-| 0xfa   | 0x3e8  | 800CFA84     |  Invalid                                         |
-| 0xfb   | 0x3ec  | 800CFA98     |  Invalid                                         |
-| 0xfc   | 0x3f0  | 800CFAAC     |  Invalid                                         |
-| 0xfd   | 0x3f4  | 800CFAC0     |  Invalid                                         |
-| 0xfe   | 0x3f8  | 800CFAD4     |  Invalid                                         |
-| 0xff   | 0x3fc  | 800CFAE8     |  Invalid                                         |
+| 0x62   | 0x188  | 00000000     | Invalid                                          |
+| 0x63   | 0x18c  | 00000000     | Invalid                                          |
+| 0x64   | 0x190  | 00000000     | Invalid                                          |
+| 0x65   | 0x194  | 800C97B0     | None of the opcodes from here on are valid       |
+| 0x66   | 0x198  | 800C9858     | Invalid                                          |
+| 0x67   | 0x19c  | 800C97C0     | Invalid                                          |
+| 0x68   | 0x1a0  | 800C97D0     | Invalid                                          |
+| 0x69   | 0x1a4  | 800C97E0     | Invalid                                          |
+| 0x6a   | 0x1a8  | 800C9858     | Invalid                                          |
+| 0x6b   | 0x1ac  | 800C9858     | Invalid                                          |
+| 0x6c   | 0x1b0  | 800C9858     | Invalid                                          |
+| 0x6d   | 0x1b4  | 800C9858     | Invalid                                          |
+| 0x6e   | 0x1b8  | 800C97F0     | Invalid                                          |
+| 0x6f   | 0x1bc  | 800C9800     | Invalid                                          |
+| 0x70   | 0x1c0  | 800C9810     | Invalid                                          |
+| 0x71   | 0x1c4  | 800C9820     | Invalid                                          |
+| 0x72   | 0x1c8  | 800C9830     | Invalid                                          |
+| 0x73   | 0x1cc  | 800C9840     | Invalid                                          |
+| 0x74   | 0x1d0  | 800C9850     | Invalid                                          |
+| 0x75   | 0x1d4  | 00000000     | Invalid                                          |
+| 0x76   | 0x1d8  | 80201EC8     | Invalid                                          |
+| 0x77   | 0x1dc  | 80201ED8     | Invalid                                          |
+| 0x78   | 0x1e0  | 80201EEC     | Invalid                                          |
+| 0x79   | 0x1e4  | 80201F00     | Invalid                                          |
+| 0x7a   | 0x1e8  | 800CE908     | Invalid                                          |
+| 0x7b   | 0x1ec  | 800CE808     | Invalid                                          |
+| 0x7c   | 0x1f0  | 800CE810     | Invalid                                          |
+| 0x7d   | 0x1f4  | 800CE818     | Invalid                                          |
+| 0x7e   | 0x1f8  | 800CE820     | Invalid                                          |
+| 0x7f   | 0x1fc  | 800CE828     | Invalid                                          |
+| 0x80   | 0x200  | 800CE830     | Invalid                                          |
+| 0x81   | 0x204  | 800CE838     | Invalid                                          |
+| 0x82   | 0x208  | 800CE840     | Invalid                                          |
+| 0x83   | 0x20c  | 800CE848     | Invalid                                          |
+| 0x84   | 0x210  | 800CE850     | Invalid                                          |
+| 0x85   | 0x214  | 800CE858     | Invalid                                          |
+| 0x86   | 0x218  | 800CE860     | Invalid                                          |
+| 0x87   | 0x21c  | 800CE868     | Invalid                                          |
+| 0x88   | 0x220  | 800CE870     | Invalid                                          |
+| 0x89   | 0x224  | 800CE878     | Invalid                                          |
+| 0x8a   | 0x228  | 800CE880     | Invalid                                          |
+| 0x8b   | 0x22c  | 800CE888     | Invalid                                          |
+| 0x8c   | 0x230  | 800CE890     | Invalid                                          |
+| 0x8d   | 0x234  | 800CE898     | Invalid                                          |
+| 0x8e   | 0x238  | 800CE8A0     | Invalid                                          |
+| 0x8f   | 0x23c  | 800CE8A8     | Invalid                                          |
+| 0x90   | 0x240  | 800CE8B0     | Invalid                                          |
+| 0x91   | 0x244  | 800CE8B8     | Invalid                                          |
+| 0x92   | 0x248  | 800CE8C0     | Invalid                                          |
+| 0x93   | 0x24c  | 800CE8C8     | Invalid                                          |
+| 0x94   | 0x250  | 800CE8D0     | Invalid                                          |
+| 0x95   | 0x254  | 800CE8D8     | Invalid                                          |
+| 0x96   | 0x258  | 800CE8E0     | Invalid                                          |
+| 0x97   | 0x25c  | 800CE8E8     | Invalid                                          |
+| 0x98   | 0x260  | 800CE8F0     | Invalid                                          |
+| 0x99   | 0x264  | 800CE8F8     | Invalid                                          |
+| 0x9a   | 0x268  | 800CE900     | Invalid                                          |
+| 0x9b   | 0x26c  | 800CE980     | Invalid                                          |
+| 0x9c   | 0x270  | 800CEB08     | Invalid                                          |
+| 0x9d   | 0x274  | 800CEB08     | Invalid                                          |
+| 0x9e   | 0x278  | 800CE9DC     | Invalid                                          |
+| 0x9f   | 0x27c  | 800CEB08     | Invalid                                          |
+| 0xa0   | 0x280  | 800CEB08     | Invalid                                          |
+| 0xa1   | 0x284  | 800CEB08     | Invalid                                          |
+| 0xa2   | 0x288  | 800CEB08     | Invalid                                          |
+| 0xa3   | 0x28c  | 800CE9F8     | Invalid                                          |
+| 0xa4   | 0x290  | 800CEA54     | Invalid                                          |
+| 0xa5   | 0x294  | 800CEAB0     | Invalid                                          |
+| 0xa6   | 0x298  | 800CEEF8     | Invalid                                          |
+| 0xa7   | 0x29c  | 800CEF08     | Invalid                                          |
+| 0xa8   | 0x2a0  | 800CEF18     | Invalid                                          |
+| 0xa9   | 0x2a4  | 800CEF24     | Invalid                                          |
+| 0xaa   | 0x2a8  | 800CEF30     | Invalid                                          |
+| 0xab   | 0x2ac  | 800CEF3C     | Invalid                                          |
+| 0xac   | 0x2b0  | 800CEF4C     | Invalid                                          |
+| 0xad   | 0x2b4  | 800CEF58     | Invalid                                          |
+| 0xae   | 0x2b8  | 800CEF64     | Invalid                                          |
+| 0xaf   | 0x2bc  | 800CEF70     | Invalid                                          |
+| 0xb0   | 0x2c0  | 800CEF80     | Invalid                                          |
+| 0xb1   | 0x2c4  | 800CEF90     | Invalid                                          |
+| 0xb2   | 0x2c8  | 800CEFA0     | Invalid                                          |
+| 0xb3   | 0x2cc  | 800CEFB0     | Invalid                                          |
+| 0xb4   | 0x2d0  | 800CEFC0     | Invalid                                          |
+| 0xb5   | 0x2d4  | 800CEFD0     | Invalid                                          |
+| 0xb6   | 0x2d8  | 800CEFE0     | Invalid                                          |
+| 0xb7   | 0x2dc  | 800CEFF0     | Invalid                                          |
+| 0xb8   | 0x2e0  | 800CF000     | Invalid                                          |
+| 0xb9   | 0x2e4  | 800CF010     | Invalid                                          |
+| 0xba   | 0x2e8  | 800CF020     | Invalid                                          |
+| 0xbb   | 0x2ec  | 800CF02C     | Invalid                                          |
+| 0xbc   | 0x2f0  | 800CF25C     | Invalid                                          |
+| 0xbd   | 0x2f4  | 800CF25C     | Invalid                                          |
+| 0xbe   | 0x2f8  | 800CF25C     | Invalid                                          |
+| 0xbf   | 0x2fc  | 800CF25C     | Invalid                                          |
+| 0xc0   | 0x300  | 800CF25C     | Invalid                                          |
+| 0xc1   | 0x304  | 800CF25C     | Invalid                                          |
+| 0xc2   | 0x308  | 800CF25C     | Invalid                                          |
+| 0xc3   | 0x30c  | 800CF25C     | Invalid                                          |
+| 0xc4   | 0x310  | 800CF25C     | Invalid                                          |
+| 0xc5   | 0x314  | 800CF25C     | Invalid                                          |
+| 0xc6   | 0x318  | 800CF25C     | Invalid                                          |
+| 0xc7   | 0x31c  | 800CF25C     | Invalid                                          |
+| 0xc8   | 0x320  | 800CF25C     | Invalid                                          |
+| 0xc9   | 0x324  | 800CF25C     | Invalid                                          |
+| 0xca   | 0x328  | 800CF25C     | Invalid                                          |
+| 0xcb   | 0x32c  | 800CF25C     | Invalid                                          |
+| 0xcc   | 0x330  | 800CF25C     | Invalid                                          |
+| 0xcd   | 0x334  | 800CF25C     | Invalid                                          |
+| 0xce   | 0x338  | 800CF038     | Invalid                                          |
+| 0xcf   | 0x33c  | 800CF048     | Invalid                                          |
+| 0xd0   | 0x340  | 800CF058     | Invalid                                          |
+| 0xd1   | 0x344  | 800CF068     | Invalid                                          |
+| 0xd2   | 0x348  | 800CF078     | Invalid                                          |
+| 0xd3   | 0x34c  | 800CF088     | Invalid                                          |
+| 0xd4   | 0x350  | 800CF098     | Invalid                                          |
+| 0xd5   | 0x354  | 800CF0A8     | Invalid                                          |
+| 0xd6   | 0x358  | 800CF0B8     | Invalid                                          |
+| 0xd7   | 0x35c  | 800CF0C8     | Invalid                                          |
+| 0xd8   | 0x360  | 800CF0D8     | Invalid                                          |
+| 0xd9   | 0x364  | 800CF0E8     | Invalid                                          |
+| 0xda   | 0x368  | 800CF0F8     | Invalid                                          |
+| 0xdb   | 0x36c  | 800CF108     | Invalid                                          |
+| 0xdc   | 0x370  | 800CF118     | Invalid                                          |
+| 0xdd   | 0x374  | 800CF128     | Invalid                                          |
+| 0xde   | 0x378  | 800CF138     | Invalid                                          |
+| 0xdf   | 0x37c  | 800CF148     | Invalid                                          |
+| 0xe0   | 0x380  | 800CF158     | Invalid                                          |
+| 0xe1   | 0x384  | 800CF168     | Invalid                                          |
+| 0xe2   | 0x388  | 800CF178     | Invalid                                          |
+| 0xe3   | 0x38c  | 800CF188     | Invalid                                          |
+| 0xe4   | 0x390  | 800CF198     | Invalid                                          |
+| 0xe5   | 0x394  | 800CF1A8     | Invalid                                          |
+| 0xe6   | 0x398  | 800CF1B8     | Invalid                                          |
+| 0xe7   | 0x39c  | 800CF1C8     | Invalid                                          |
+| 0xe8   | 0x3a0  | 800CF1D8     | Invalid                                          |
+| 0xe9   | 0x3a4  | 800CF1E8     | Invalid                                          |
+| 0xea   | 0x3a8  | 800CF1F8     | Invalid                                          |
+| 0xeb   | 0x3ac  | 800CF208     | Invalid                                          |
+| 0xec   | 0x3b0  | 800CF218     | Invalid                                          |
+| 0xed   | 0x3b4  | 800CF228     | Invalid                                          |
+| 0xee   | 0x3b8  | 800CF25C     | Invalid                                          |
+| 0xef   | 0x3bc  | 800CF25C     | Invalid                                          |
+| 0xf0   | 0x3c0  | 800CF25C     | Invalid                                          |
+| 0xf1   | 0x3c4  | 800CF25C     | Invalid                                          |
+| 0xf2   | 0x3c8  | 800CF25C     | Invalid                                          |
+| 0xf3   | 0x3cc  | 800CF25C     | Invalid                                          |
+| 0xf4   | 0x3d0  | 800CF25C     | Invalid                                          |
+| 0xf5   | 0x3d4  | 800CF25C     | Invalid                                          |
+| 0xf6   | 0x3d8  | 800CF238     | Invalid                                          |
+| 0xf7   | 0x3dc  | 800CF244     | Invalid                                          |
+| 0xf8   | 0x3e0  | 800CF250     | Invalid                                          |
+| 0xf9   | 0x3e4  | 800CFDA4     | Invalid                                          |
+| 0xfa   | 0x3e8  | 800CFA84     | Invalid                                          |
+| 0xfb   | 0x3ec  | 800CFA98     | Invalid                                          |
+| 0xfc   | 0x3f0  | 800CFAAC     | Invalid                                          |
+| 0xfd   | 0x3f4  | 800CFAC0     | Invalid                                          |
+| 0xfe   | 0x3f8  | 800CFAD4     | Invalid                                          |
+| 0xff   | 0x3fc  | 800CFAE8     | Invalid                                          |
 
 </details>
 
