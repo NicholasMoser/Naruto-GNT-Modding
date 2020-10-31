@@ -359,22 +359,22 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 
 | Opcode | Offset | Code Pointer | Purpose                                          |
 |--------|--------|--------------|--------------------------------------------------|
-| 0x0    | 0x0    | 800A6068     |                                                  |
-| 0x1    | 0x4    | 800A5698     | Branching                                        |
-| 0x2    | 0x8    | 800A52F8     |                                                  |
-| 0x3    | 0xc    | 800A51B0     |                                                  |
-| 0x4    | 0x10   | 800A4B40     |                                                  |
-| 0x5    | 0x14   | 800A44C4     |                                                  |
-| 0x6    | 0x18   | 800A3ED4     |                                                  |
-| 0x7    | 0x1c   | 800A3888     |                                                  |
-| 0x8    | 0x20   | 800A32C0     |                                                  |
-| 0x9    | 0x24   | 800A2A8C     |                                                  |
-| 0xa    | 0x28   | 800A274C     |                                                  |
-| 0xb    | 0x2c   | 800A1C5C     |                                                  |
-| 0xc    | 0x30   | 800A1894     |                                                  |
-| 0xd    | 0x34   | 800A188C     | Empty and unused                                 |
-| 0xe    | 0x38   | 800AA9B8     |                                                  |
-| 0xf    | 0x3c   | 800AA430     |                                                  |
+| 0x00   | 0x0    | 800A6068     |                                                  |
+| 0x01   | 0x4    | 800A5698     | Branching                                        |
+| 0x02   | 0x8    | 800A52F8     |                                                  |
+| 0x03   | 0xc    | 800A51B0     |                                                  |
+| 0x04   | 0x10   | 800A4B40     |                                                  |
+| 0x05   | 0x14   | 800A44C4     |                                                  |
+| 0x06   | 0x18   | 800A3ED4     |                                                  |
+| 0x07   | 0x1c   | 800A3888     |                                                  |
+| 0x08   | 0x20   | 800A32C0     |                                                  |
+| 0x09   | 0x24   | 800A2A8C     |                                                  |
+| 0x0a   | 0x28   | 800A274C     |                                                  |
+| 0x0b   | 0x2c   | 800A1C5C     |                                                  |
+| 0x0c   | 0x30   | 800A1894     |                                                  |
+| 0x0d   | 0x34   | 800A188C     | Empty and unused                                 |
+| 0x0e   | 0x38   | 800AA9B8     |                                                  |
+| 0x0f   | 0x3c   | 800AA430     |                                                  |
 | 0x10   | 0x40   | 800A9C1C     |                                                  |
 | 0x11   | 0x44   | 800A99F0     |                                                  |
 | 0x12   | 0x48   | 800A8E68     |                                                  |
@@ -395,7 +395,7 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 | 0x21   | 0x84   | 800B9458     |                                                  |
 | 0x22   | 0x88   | 800B832C     |                                                  |
 | 0x23   | 0x8c   | 800B7D98     |                                                  |
-| 0x24   | 0x90   | 800B3EC4     |                                                  |
+| 0x24   | 0x90   | 800B3EC4     | Battle related                                   |
 | 0x25   | 0x94   | 800B3CE4     |                                                  |
 | 0x26   | 0x98   | 800C0288     |                                                  |
 | 0x27   | 0x9c   | 800B097C     |                                                  |
@@ -419,7 +419,7 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 | 0x39   | 0xe4   | 800924F0     |                                                  |
 | 0x3a   | 0xe8   | 80091248     |                                                  |
 | 0x3b   | 0xec   | 8009228C     |                                                  |
-| 0x3c   | 0xf0   | 80091B8C     |                                                  |
+| 0x3c   | 0xf0   | 80091B8C     | Menu logic                                       |
 | 0x3d   | 0xf4   | 800C6228     |                                                  |
 | 0x3e   | 0xf8   | 80090EF8     |                                                  |
 | 0x3f   | 0xfc   | 800C5EDC     |                                                  |
@@ -620,59 +620,83 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 
 It will then jump to the code found in the opcode pointer table. When we jump to `0x800a5698`, it then checks the second byte of the opcode. This second byte further breaks down the action to be performed.
 
-## Branching Opcodes
+## Opcode Groups
 
-- X = param_2[0x15]
-- Y = param_2[0x14]
-- Z = param_2[0x17] (is a pointer)
+There are 82 total opcode groups. 6 of the groups are empty (resulting in a no-op), leaving 76 with actual instructions in them. The number of instructions in each group varies. Each instruction for each opcode group can be found in the respective pages below for each opcode group.
 
-In the below table, Params is the number of bytes after the opcode used for parameters.
-
-<details>
-  <summary>Branching Opcodes</summary>
-
-| Opcode | Params | Description                                                                                                                        |
-|--------|--------|------------------------------------------------------------------------------------------------------------------------------------|
-| 0100   | 4      | ???                                                                                                                                |
-| 0101   | ?      | ???                                                                                                                                |
-| 0102   | 4      | ???                                                                                                                                |
-| 0103   | ?      | ???                                                                                                                                |
-| 0104   | 0      | ???                                                                                                                                |
-| 0105   | ?      | ???                                                                                                                                |
-| 0106   | 0      | ???                                                                                                                                |
-| 0107   | ?      | ???                                                                                                                                |
-| 0108   | 0      | ???                                                                                                                                |
-| 0132   | 4      | Unconditional branch.                                                                                                              |
-| 0133   | 4      | Branch if X is 0.                                                                                                                  |
-| 0134   | 4      | Branch if X is not 0.                                                                                                              |
-| 0135   | 4      | Branch is X is 1 or greater.                                                                                                       |
-| 0136   | 4      | Branch if X is 0 or greater.                                                                                                       |
-| 0137   | 4      | Branch if X is less than 0.                                                                                                        |
-| 0138   | 4      | Branch if X is less than 1.                                                                                                        |
-| 0139   | 4      | Branch if X is less than 0 (Duplicate of 0137).                                                                                    |
-| 013A   | 4      | Branch if X is 0 or greater (Duplicate of 0136).                                                                                   |
-| 013B   | 4      | Branch if Y is less than 0. Otherwise, decrement Y and if Y is then not 0, branch.                                                 |
-| 013C   | 4      | Subtract 4 from Z. Using the pointer Z is holding, set it to the offset of the opcode after the current one. Unconditional branch. |
-| 013D   | 4      | Execute opcode 013C if X is 0.                                                                                                     |
-| 013E   | 4      | Execute opcode 013C if X is not 0.                                                                                                 |
-| 013F   | 4      | Execute opcode 013C if X is 1 or greater.                                                                                          |
-| 0140   | 4      | Execute opcode 013C if X is 0 or greater.                                                                                          |
-| 0141   | 4      | Execute opcode 013C if X is less than 0.                                                                                           |
-| 0142   | 4      | Execute opcode 013C if X is less than 1.                                                                                           |
-| 0143   | 4      | Execute opcode 013C if X is less than 0 (Duplicate of 0141).                                                                       |
-| 0144   | 4      | Execute opcode 013C if X is 0 or greater (Duplicate of 0140).                                                                      |
-| 0145   | 0      | Unconditional branch to the deferenced pointer of Z. Increment Z by 4.                                                             |
-| 0146   | 0      | Execute opcode 0145 if X is 0.                                                                                                     |
-| 0147   | 0      | Execute opcode 0145 if X is not 0.                                                                                                 |
-| 0148   | 0      | Execute opcode 0145 if X is 1 or greater.                                                                                          |
-| 0149   | 0      | Execute opcode 0145 if X is 0 or greater.                                                                                          |
-| 014A   | 0      | Execute opcode 0145 if X is less than 0.                                                                                           |
-| 014B   | 0      | Execute opcode 0145 if X is less than 1.                                                                                           |
-| 014C   | 0      | Execute opcode 0145 if X is less than 0 (Duplicate of 014A).                                                                       |
-| 014D   | 0      | Execute opcode 0145 if X is 0 or greater (Duplicate of 0149).                                                                      |
-| 014E   | ?      | ???                                                                                                                                |
-| 014F   | 0      | Execute opcode 0145 if Y is less than 0. Otherwise, decrement Y and if Y is then not 0, execute opcode 0145.                       |
-| 0150   | varies | ???                                                                                                                                |
-| 0151   | varies | ???                                                                                                                                |
-
-</details>
+- [Group 00](opcode_group/00.md)
+- [Group 01](opcode_group/01.md)
+- [Group 02](opcode_group/02.md)
+- [Group 03](opcode_group/03.md)
+- [Group 04](opcode_group/04.md)
+- [Group 05](opcode_group/05.md)
+- [Group 06](opcode_group/06.md)
+- [Group 07](opcode_group/07.md)
+- [Group 08](opcode_group/08.md)
+- [Group 09](opcode_group/09.md)
+- [Group 0A](opcode_group/0A.md)
+- [Group 0B](opcode_group/0B.md)
+- [Group 0C](opcode_group/0C.md)
+- [Group 0D](opcode_group/0D.md)
+- [Group 0E](opcode_group/0E.md)
+- [Group 0F](opcode_group/0F.md)
+- [Group 10](opcode_group/10.md)
+- [Group 11](opcode_group/11.md)
+- [Group 12](opcode_group/12.md)
+- [Group 13](opcode_group/13.md)
+- [Group 14](opcode_group/14.md)
+- [Group 15](opcode_group/15.md)
+- [Group 16](opcode_group/16.md)
+- [Group 17](opcode_group/17.md)
+- [Group 18](opcode_group/18.md)
+- [Group 19](opcode_group/19.md)
+- [Group 1A](opcode_group/1A.md)
+- [Group 1B](opcode_group/1B.md)
+- [Group 1C](opcode_group/1C.md)
+- [Group 1E](opcode_group/1E.md)
+- [Group 1F](opcode_group/1F.md)
+- [Group 20](opcode_group/20.md)
+- [Group 21](opcode_group/21.md)
+- [Group 22](opcode_group/22.md)
+- [Group 23](opcode_group/23.md)
+- [Group 24](opcode_group/24.md)
+- [Group 25](opcode_group/25.md)
+- [Group 26](opcode_group/26.md)
+- [Group 27](opcode_group/27.md)
+- [Group 28](opcode_group/28.md)
+- [Group 29](opcode_group/29.md)
+- [Group 2A](opcode_group/2A.md)
+- [Group 2B](opcode_group/2B.md)
+- [Group 31](opcode_group/31.md)
+- [Group 32](opcode_group/32.md)
+- [Group 33](opcode_group/33.md)
+- [Group 34](opcode_group/34.md)
+- [Group 36](opcode_group/36.md)
+- [Group 37](opcode_group/37.md)
+- [Group 38](opcode_group/38.md)
+- [Group 39](opcode_group/39.md)
+- [Group 3A](opcode_group/3A.md)
+- [Group 3B](opcode_group/3B.md)
+- [Group 3C](opcode_group/3C.md)
+- [Group 3D](opcode_group/3D.md)
+- [Group 3E](opcode_group/3E.md)
+- [Group 3F](opcode_group/3F.md)
+- [Group 40](opcode_group/40.md)
+- [Group 41](opcode_group/41.md)
+- [Group 42](opcode_group/42.md)
+- [Group 43](opcode_group/43.md)
+- [Group 44](opcode_group/44.md)
+- [Group 46](opcode_group/46.md)
+- [Group 47](opcode_group/47.md)
+- [Group 48](opcode_group/48.md)
+- [Group 49](opcode_group/49.md)
+- [Group 4A](opcode_group/4A.md)
+- [Group 4B](opcode_group/4B.md)
+- [Group 4C](opcode_group/4C.md)
+- [Group 4D](opcode_group/4D.md)
+- [Group 50](opcode_group/50.md)
+- [Group 55](opcode_group/55.md)
+- [Group 56](opcode_group/56.md)
+- [Group 5B](opcode_group/5B.md)
+- [Group 5C](opcode_group/5C.md)
+- [Group 61](opcode_group/61.md)
