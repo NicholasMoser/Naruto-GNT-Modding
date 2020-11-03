@@ -12,7 +12,9 @@ Gnta files are a series of keyframes. The game will automatically fill animation
 
 It is believed that Eighting made the animations in soft image and converted them to gnta. Reason being, that they wanted their animations to be recyclable across many characters. The gnta format works across jcv files. It can store bone movement data for bones, and can even do so for bones a character potentially doesn't have. This allows them to reuse the same animation across many characters with different bones.
 
-The universal throw for example defines movements for bones 16, 17, 18, and 19, which most characters don't have. So in this case the animation would ignore those movements for characters it does not match against. For a breakdown of bone ids see the [Bone IDs section](#Bone-IDs).
+The universal throw for example defines movements for bones 118, 119, and 120, which most characters don't have. So in this case the animation would ignore those movements for characters it does not match against. For a breakdown of bone ids see the [Bone IDs section](#Bone-IDs).
+
+Gnta files were also designed to be able to combine, in that you can ask the game to play two at once. If the joints do not conflict, the game will do so. This is how hand animations in done in the GNT games. For example, Naruto's clone summoning animation is completely separate from the hand sign animation he does to call it.
 
 ### Header info
 
