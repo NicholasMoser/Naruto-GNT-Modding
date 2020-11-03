@@ -8,9 +8,9 @@ MOT files contain one or more animations. They can be unpacked using QuickBMS an
 
 Gnta files are specific animations extracted using **naruto_mot.bms**. Gnta is an unofficial name given to these files since we do not know the original file type name. It stands for GNT Animation.
 
-Gnta files are a series of keyframes. The game will automatically fill animations in-between each keyframe. A keyframe consists of an x, y, z, and w for all applicable joints. The joint values are the same as those used in the jcv and seq files. It is theorized that these were originally created using the auto key feature of soft image, a now-defunct 3D modeling program. You would give it a series of poses and it would fill in animations between them for you. 3dsmax has the same feature today.
+Gnta files are a series of keyframes. The game will automatically fill animations in-between each keyframe. A keyframe consists of an x, y, z, and w for all applicable joints. The joint values are the same as those used in the jcv and seq files. These were originally created using the auto key feature of soft image, a now-defunct 3D modeling program. You would give it a series of poses and it would fill in animations between them for you. 3dsmax has the same feature today.
 
-It is believed that Eighting made the animations in soft image and converted them to gnta. Reason being, that they wanted their animations to be recyclable across many characters. The gnta format works across jcv files. It can store bone movement data for bones, and can even do so for bones a character potentially doesn't have. This allows them to reuse the same animation across many characters with different bones.
+Eighting made the animations in soft image and converted them to gnta. Reason being, they wanted their animations to be recyclable across many characters. The gnta format works across jcv files. It can store bone movement data for bones, and can even do so for bones a character potentially doesn't have. This allows them to reuse the same animation across many characters with different bones.
 
 The universal throw for example defines movements for bones 118, 119, and 120, which most characters don't have. So in this case the animation would ignore those movements for characters it does not match against. For a breakdown of bone ids see the [Bone IDs section](#Bone-IDs).
 
