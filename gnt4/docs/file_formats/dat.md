@@ -2,7 +2,9 @@
 
 ## Description
 
-HAL Labs HSD Model format. The same model format used in Melee.
+HAL Labs HSD Model format. The same model format used for Super Smash Bros Melee.
+
+These models originally created by Eighting were created in the now defunct software [Softimage](https://en.wikipedia.org/wiki/Autodesk_Softimage). These models were then converted to the Hal Labs HSD model format. We know this is true because the the DAT files have the save signature in the hex representing Softimage.
 
 ## Replacing Models
 
