@@ -122,6 +122,12 @@ C-Stick Left/Right = Rotate Left/Right
 
 ## Experimental (May cause unintended side effects or crash)
 
+### Unlimited Block Guard
+
+```gecko
+0403F0A8 60000000
+```
+
 ### X Does Not Throw Break
 
 When you don't have full chakra, you can mash X for easy throw breaks. This disables X as a throw break button completely to disable that.
