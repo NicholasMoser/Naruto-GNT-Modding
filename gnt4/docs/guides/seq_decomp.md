@@ -9,6 +9,8 @@ The file begins with a 16 byte header. Only the first three four-byte words are 
 <details>
   <summary>First word</summary>
 
+Appears to be used to determine the number of register groups needed. For more info see [Opcode Method Parameters](#opcode-method-parameters)
+
 - 0x01
 - 0x02
 - 0x04
@@ -339,16 +341,23 @@ Many pointers appear to be set after this based on the number of SEQ Header Word
 
 ## Reading Opcodes
 
-The opcode is read from the seq file in the seq_parse method. It uses the following function to find the pointer to code associated with it:
+Opcodes are read from the seq file in the seq_parse method. Each full opcode is four bytes long. The first byte defines the opcode group and the second byte defines the opcode within that opcode group to use. The third and fourth byte may be used to additionally configure the full opcode.
+
+Each opcode will jump to code in the game to execute. It uses the following function to find the code to execute:
 
 ```c
+// Find the opcode group method
 0x802103a0 + (opcode >> 0x16 & 0x3fc)
 ```
 
-1. Read opcode, e.g. `0x01320000` (`0001001100100000000000000000` in binary)
-2. Use bit shifting to get the top 6 bits, `000100` in this case.
+By bit shifting by 0x16, it multiplies the top byte by four. This is because each pointer is four bytes long, so we need the opcode group index multiplied by four. It is &'d with 0x3fc (`001111111100` in binary) in order to force it to be a multiple of four.
+
+So for example:
+
+1. Read opcode, e.g. `0x01320000` (`00000001001100100000000000000000` in binary)
+2. Use bit shifting to get the top 10 bits, the binary `0000000100` in this case.
 3. & it with `0x3fc` (`001111111100` in binary)
-4. For this example, that doesn't change the value and it stays as `000100` in binary, or 4 in hex.
+4. For this example, that doesn't change the value and it stays as `100` in binary, or 4 in hex.
 5. This value is added as an offset to `0x802103a0`, which is a location to a pointer table in memory.
 6. For this example, we get the final value `0x800a5698`, which is the second pointer in the opcode pointer table.
 
@@ -466,6 +475,9 @@ It will then jump to the code found in the opcode pointer table. When we jump to
 
 There are 82 total opcode groups. 6 of the groups are empty (resulting in a no-op), leaving 76 with actual instructions in them. The number of instructions in each group varies. Each instruction for each opcode group can be found in the respective pages below for each opcode group.
 
+<details>
+  <summary>Opcode Group Pages</summary>
+
 - [Group 00](opcode_group/00.md)
 - [Group 01](opcode_group/01.md)
 - [Group 02](opcode_group/02.md)
@@ -542,3 +554,31 @@ There are 82 total opcode groups. 6 of the groups are empty (resulting in a no-o
 - [Group 5B](opcode_group/5B.md)
 - [Group 5C](opcode_group/5C.md)
 - [Group 61](opcode_group/61.md)
+
+</details>
+
+## Opcode Method Parameters
+
+Each opcode group method takes in three parameters, `seq_p`, `reg_p`, and `pc`. We know this is the case because opcode `02` in group `00` prints them out:
+
+```c
+sprintf("sys_bp(): seq_p%08x reg_p%08x pc%08x\n", seq_p, reg_p, pc);
+```
+
+### seq_p
+
+The first parameter `seq_p` is a pointer to something currently unknown.
+
+### reg_p
+
+The second parameter `reg_p` is a pointer to what is believed to be registers used by opcodes. The size of it appears to be the first four-byte word of the seq file plus 1 times 0x60.
+
+```c
+reg_p_size = (first_word + 1) * 0x60
+```
+
+So for example, `game00.seq` starts with `0x00000006`, so it will initialize a `reg_p` of size `0x2A0`.
+
+### pc
+
+The third parameter `pc` is a pointer to the current opcode being executed in the seq file. It will move from opcode to opcode and branch when told to. When set to 0 it will cease executing opcodes.
