@@ -1,7 +1,7 @@
 file = io.open("C:/Users/kites/Desktop/test.log", "a")
 io.output(file)
 io.write("Begin seq_reader.lua", "\n")
-io.write("File            Offset", "\n")
+io.write("File            Offset   Opcode", "\n")
 
 dolphin.hook_instruction(0x800c9138, function ()
     -- The start of the seq file is at *(int *)(seq_p[5] + 0x5c)
@@ -21,6 +21,10 @@ dolphin.hook_instruction(0x800c9138, function ()
     file_name = dolphin.str_read(file_entry + 0x14, 0x10)
     file_name_str = string.format("%15s ", string.sub(file_name, 0, 0xf))
 
+    -- Get the current opcode being executed
+    opcode = dolphin.mem_u32[seq_pc]
+    opcode_str = string.format("%08x ", opcode)
+
     -- Append the data to the log file
-    io.write(file_name_str, offset_str, "\n")
+    io.write(file_name_str, offset_str, opcode_str, "\n")
 end)
