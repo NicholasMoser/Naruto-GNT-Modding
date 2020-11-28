@@ -39,7 +39,7 @@ dolphin.hook_instruction(0x800e0c28, parse_seq)
 
 dolphin.hook_instruction(0x800e0cdc, parse_seq)
 
--- Not sure what the next four are for, but add them anyways
+-- These appear to be called in other circumstances, like seqs calling other seqs
 dolphin.hook_instruction(0x800e0dc8, parse_seq)
 
 dolphin.hook_instruction(0x800e0edc, parse_seq)
