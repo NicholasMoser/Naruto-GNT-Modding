@@ -1,0 +1,203 @@
+# Occurs the moment you hit A on 1v1 training modes
+802c6790
+802c8bf0
+802c8bf8
+802c8c00
+802c8c08
+802c8c10
+802c8c14
+802c8c18
+802c8c28
+802c8c38
+802c8c40
+802c8c50
+802c8c70
+802c8c74
+802c8c78
+802c8c80
+802c8c84
+802c8ca0
+# Enters loading.seq and does stuff...
+# Skipping to when it re-enters the character select seq
+802c8ca4
+802c8ca8
+802c8ca0
+# Enters loading.seq again, some kind of weird loop?
+# Skipping to when it finally gets past this loop
+802c8cb0
+802c8cb4
+802c8cc4
+802c8ccc
+# Finally the screen changes to the loading screen
+# Apparently also jumps outside of the seq to another seq
+802eca98
+802eca9c
+# Returns to character select seq
+802c8cd0
+802c8cb4
+802c8cc4
+802c8ccc
+802c8cd0
+# In a loop?
+802c8cb4
+802c8cc4
+802c8ccc
+802c8cd0
+# Dog graphic appears in loading screen, I think this is advancing frames
+802c8cb4
+802c8cc4
+802c8ccc
+# Increased by one frame, also went to another seq again
+802ecaa0
+802ecab8
+# Back to CSS seq
+802c8cd0
+802c8cb4
+# Let's skip to 0x2558, one opcode after the loop
+# A few frames of loading passed
+802c8cd8
+802c8cdc
+802c8ce0
+802c8cf0
+802c8cf4
+# Appears to load fpack/game0007.fpk and some css textures
+802c8cfc
+802c8d18
+802c8d1c
+802c8d34
+802c8d4c
+802c8d64
+802c8d74
+802c8d78
+802c8d7c
+802c8d84
+802c8d8c
+802c8d94
+# Appears to load game/player00.seq
+802c8db4
+802c8db8
+802c8dbc
+802c8dcc
+# Jumps to beginning of player00.seq and executes it
+802ef190
+# Skipping to 0x2650
+802c8dd0
+802c8de0
+802c8de8
+802c8df8
+802c8e00
+802c8e10
+802c8e18
+802c8e28
+802c8e30
+802c8e40
+802c8e48
+802c8e58
+802c8e60
+802c8e70
+802c8e78
+802c8e90
+802c8ea8
+802c8ebc
+802c8ed0
+802c8ee4
+802c8ef8
+802c9080
+802c908c
+802c9098
+802c90a8
+# Jumps back to player00.seq at offset 0x50
+802ef1d0
+# A few opcodes later
+802c90ac
+802c90b8
+802c90c4
+802c90d0
+802c90dc
+802c90e4
+802c90fc
+# Jumps back to player00.seq at offset 0x50
+802ef1d0
+802ef214
+# Back again
+802c9100
+802c9104
+802c9110
+802c911c
+802c912c
+802c913c
+802c9148
+802c9150
+802c9158
+802c9160
+# Big jump
+802d0834
+802d0844
+802d084c
+802d085c
+802d0864
+802d0874
+802d087c
+802d088c
+802d0894
+802d08a4
+802d08ac
+802d08bc
+802d08c4
+802d08d4
+802d08dc
+802d08ec
+802d08f4
+802d094c
+# Back from the big jump
+802c9168
+802c9174
+802c9180
+802c9190
+802c9198
+802c91a8
+802c91b0
+802c91c0
+802c91c8
+802c91dc
+802c91ec
+802c9200
+802c9210
+802c9224
+802c9234
+802c9248
+802c9258
+802c9264
+802c9278
+802c928c
+802c929c
+802c92b0
+802c92c0
+802c92d4
+802c92e4
+802c92f8
+802c9308
+802c9314
+802c9320
+802c932c
+802c9338
+802c9344
+802c9350
+802c935c
+802c9368
+802c9374
+802c9380
+802c938c
+802c9398
+802c93a4
+802c93b0
+802c93bc
+802c93c8
+802c93d8
+802c93e0
+802c93f0
+802c93f8
+802c9420
+# 2CA4, 2CA8, and 2CAC are pretty weird, in that changing them seems to affect the CSS
+# portraits, such as replacing characters with naruto
+802c9430
