@@ -29,4 +29,18 @@ function parse_seq()
     io.write(file_name_str, offset_str, opcode_str, "\n")
 end
 
+-- The below four hooks occur in the function seq_parse (0x800c8f38)
+dolphin.hook_instruction(0x800c903c, parse_seq)
+
+dolphin.hook_instruction(0x800c9094, parse_seq)
+
 dolphin.hook_instruction(0x800c9138, parse_seq)
+
+dolphin.hook_instruction(0x800c91a0, parse_seq)
+
+-- Not sure what the next three are for, but add them anyways
+dolphin.hook_instruction(0x800c8e30, parse_seq)
+
+dolphin.hook_instruction(0x800c8ef8, parse_seq)
+
+dolphin.hook_instruction(0x80106f10, parse_seq)
