@@ -1,7 +1,7 @@
 file = io.open("C:/Users/kites/Desktop/test.log", "a")
 io.output(file)
 io.write("Begin seq_reader.lua", "\n")
-io.write("File             Offset   Opcode", "\n")
+io.write("File             Offset   Opcode   PC", "\n")
 
 function parse_seq()
     -- The start of the seq file is at *(int *)(seq_p[5] + 0x5c)
@@ -25,8 +25,12 @@ function parse_seq()
     opcode = dolphin.mem_u32[seq_pc]
     opcode_str = string.format("%08x ", opcode)
 
+    -- Get the program counter
+    pc = dolphin.ppc.pc
+    pc_str = string.format("%08x ", pc)
+
     -- Append the data to the log file
-    io.write(file_name_str, offset_str, opcode_str, "\n")
+    io.write(file_name_str, offset_str, opcode_str, pc_str, "\n")
 end
 
 -- The below four hooks occur in the function seq_parse (0x800c8f38)
