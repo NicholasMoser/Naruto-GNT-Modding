@@ -73,7 +73,7 @@ C2042C40 00000007
 04222FB8 8004CB64
 ```
 
-### Audio Plays While Paused
+### Audio Plays While Paused [Nick]
 
 ```gecko
 04044d28 3860ffff
@@ -122,13 +122,13 @@ C-Stick Left/Right = Rotate Left/Right
 
 ## Experimental (May cause unintended side effects or crash)
 
-### Unlimited Block Guard
+### Unlimited Block Guard [Nick]
 
 ```gecko
 0403F0A8 60000000
 ```
 
-### X Does Not Throw Break
+### X Does Not Throw Break [Nick]
 
 When you don't have full chakra, you can mash X for easy throw breaks. This disables X as a throw break button completely to disable that.
 
@@ -136,7 +136,7 @@ When you don't have full chakra, you can mash X for easy throw breaks. This disa
 040632f0 70000230
 ```
 
-### Modify ZTK Damage Multiplier
+### Modify ZTK Damage Multiplier [Nick]
 
 Normally, ZTK takes 1.5x damage on all attacks. You can modify this value using the below code. The `3f800000` is the multiplier as a float. The code below has it set to 1.0, thus makes it so that ZTK takes the same damage as all other characters.
 
@@ -144,7 +144,7 @@ Normally, ZTK takes 1.5x damage on all attacks. You can modify this value using 
 04278890 3f800000
 ```
 
-### Modify Ukon Damage Multiplier
+### Modify Ukon Damage Multiplier [Nick]
 
 Normally, Ukon takes 1.2x damage on all attacks. You can modify this value using the below code. The `3f800000` is the multiplier as a float. The code below has it set to 1.0, thus makes it so that Ukon takes the same damage as all other characters.
 
@@ -152,25 +152,25 @@ Normally, Ukon takes 1.2x damage on all attacks. You can modify this value using
 04278894 3f800000
 ```
 
-### Remove Sharingan Kakashi Health Drain
+### Remove Sharingan Kakashi Health Drain [Nick]
 
 ```gecko
 0403ea14 38030000
 ```
 
-### Remove ZTK Health Drain
+### Remove ZTK Health Drain [Nick]
 
 ```gecko
 0403ea5c 38030000
 ```
 
-### Remove 2-Gate Lee Health Drain
+### Remove 2-Gate Lee Health Drain [Nick]
 
 ```gecko
 0403e9cc 38030000
 ```
 
-### Change Number of Rounds to Win
+### Change Number of Rounds to Win [Nick]
 
 ```gecko
 0422627c 000000xx
@@ -178,7 +178,7 @@ Normally, Ukon takes 1.2x damage on all attacks. You can modify this value using
 
 Change the last byte to the number of rounds you wish to win.
 
-### ZTK, Ukon, 1G Lee, and S. Kakashi takes 1.25x damage and 2GLee takes 1.5x damage
+### ZTK, Ukon, 1G Lee, and S. Kakashi takes 1.25x damage and 2GLee takes 1.5x damage [Nick]
 
 ```gecko
 04278894 3FA00000
@@ -196,7 +196,7 @@ C203E2B0 00000007
 
 This is in contrast to normal circumstances, where Ukon takes 1.2x damage and ZTK takes 1.5x damage.
 
-### ZTK and S. Kakashi take 1.25x damage
+### ZTK and S. Kakashi take 1.25x damage [Nick]
 
 ```gecko
 04278890 3fa00000
