@@ -1,6 +1,6 @@
 file = io.open("D:/test.log", "a")
 io.output(file)
-io.write("Begin seq_reader.lua", "\n")
+io.write("Begin seq_reader_gnt4.lua", "\n")
 io.write("File             Offset   Opcode   PC", "\n")
 
 function parse_seq()
