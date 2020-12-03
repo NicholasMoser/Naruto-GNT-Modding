@@ -6,6 +6,7 @@ This repository contains information related to modding the Naruto Gekitō Ninja
 - [Overview](#Overview)
 - [Skins](#Skins)
 - [Additional Modding](#Additional-Modding)
+- [General](#General)
 - [Games](#Games)
   - [GNT4](#GNT4)
   - [GNT EX 1](#GNT-EX-1)
@@ -43,29 +44,29 @@ Another valuable tool for modding GNT games is [GNTool](https://github.com/Nicho
 
 Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.com/doldecomp/gnt4). You can also use Ghidra to reverse engineer the code of the game yourself. It is recommended to follow the [Ghidra Guide](/gnt4/docs/guides/ghidra.md) to do so.
 
-## Games
+## General
 
-Here are various pages associated with modding each game:
+[Gecko Codetype Documentation](/general/docs/guides/gecko_codetype_documentation.md)
+
+## Games
 
 ### GNT4
 
 [Gecko Codes](/gnt4/docs/guides/gecko_codes.md)
 
-[Useful Addresses and Functions](/gnt4/docs/guides/addresses_and_functions.md)
-
 [File Formats](/gnt4/docs/file_formats/formats.md)
 
-[Background Music](/gnt4/docs/audio/bgm.md)
+[Ghidra Guide](/gnt4/docs/guides/ghidra.md)
 
 [Stage Modding](/gnt4/docs/guides/stage_modding.md)
+
+[Structs](/gnt4/docs/guides/structs.md)
 
 [Main Menu Character](/gnt4/docs/guides/main_menu_character.md)
 
 [Random Select](gnt4/docs/guides/random_select.md)
 
 [Choji's Chips](gnt4/docs/guides/choji_chips.md)
-
-[File Load Order](/gnt4/docs/guides/file_load_order.md)
 
 ### GNT EX 1
 

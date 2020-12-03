@@ -1,5 +1,7 @@
 # File Formats
 
+There are a variety of file formats that can be found in the game data. You can see an example of the order these files are loaded in [File Load Order](/gnt4/docs/guides/file_load_order.md).
+
 | File Format | Purpose                                                                                                |
 |-----------------------------------------------|----------------------------------------------------------------------|
 | [.dol](/gnt4/docs/file_formats/dol.md)        | The main executable that contains all the code for the game.         |

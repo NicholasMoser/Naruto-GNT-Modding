@@ -1,7 +1,10 @@
 # SEQ Files
 
-Files ending with .seq dictate just about everything about the UI and characters that aren't art assets. This includes damage, speed, which animation to play, hitboxes, etc. Character's `0000.seq` file contain action data, while `0010.seq` appear to contain data for CPU control (AI). 
-*Credit to TheCape for writing the content of this page*
+Files ending with .seq dictate just about everything about the UI and characters that aren't art assets. This includes damage, speed, which animation to play, hitboxes, etc. For example, a character's `0000.seq` file contains action data, while `0010.seq` appears to contain data for CPU control (AI).
+
+## Decompilation
+
+There currently is an effort to decompile the seq parsing code of the game, which can be found under [SEQ Decompilation](/gnt4/docs/guides/seq_decomp.md).
 
 ## Table of Contents
 
@@ -13,6 +16,8 @@ Files ending with .seq dictate just about everything about the UI and characters
 6. **[K2F Special Attack Flags](#k2f-special-attack-flags)**
 7. **[NF State Flags](#nf-state-flags)**
 8. **[AF Action State Flags](#af-action-state-flags)**
+
+*Credit to TheCape for writing the content of this page*
 
 ## How to Read Sequence Files
 
