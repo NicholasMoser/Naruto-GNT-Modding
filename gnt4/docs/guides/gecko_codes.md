@@ -120,6 +120,40 @@ C-Stick Left/Right = Rotate Left/Right
 0403A7E4 60000000
 ```
 
+### Training Mode Default 2P Action: 2P Control [Nick]
+
+By default, 2P Action is set to Stand in training mode. This changes the default to 2P Control.
+
+```gecko
+C2045350 00000002
+38000002 B003002C
+60000000 00000000
+```
+
+### Training Mode Default Guard: ON [Nick]
+
+By default, Guard is set to OFF in training mode. This changes the default to ON.
+
+```gecko
+04045360 B0A30030
+```
+
+### Training Mode Default Show Inputs: OFF [Nick]
+
+By default, Show Inputs is set to ON in training mode. This changes the default to OFF.
+
+```gecko
+04045364 B0A30032
+```
+
+### Training Mode Default Chakra Recovery: OFF [Nick]
+
+By default, Chakra Recovery is set to ON in training mode. This changes the default to OFF.
+
+```gecko
+04045380 B0A30040
+```
+
 ## Experimental (May cause unintended side effects or crash)
 
 ### Unlimited Block Guard [Nick]
