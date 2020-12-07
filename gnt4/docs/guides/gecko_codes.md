@@ -124,15 +124,21 @@ C-Stick Left/Right = Rotate Left/Right
 
 By default, 2P Action is set to Stand in training mode. This changes the default to 2P Control.
 
+Note: This new default will only take affect after pausing unless you modify `files/game/game00.seq` by changing 11 to 13 at offset 0x11277.
+
 ```gecko
-C2045350 00000002
-38000002 B003002C
+c2045350 00000002
+38000002 b003002c
 60000000 00000000
+0402e718 3bc00012
+0402e728 3bc00012
 ```
 
 ### Training Mode Default Guard: ON [Nick]
 
 By default, Guard is set to OFF in training mode. This changes the default to ON.
+
+Note: This new default will only take affect after pausing unless you modify `files/game/game00.seq` by changing 01 to 00 at offset 0x11287
 
 ```gecko
 04045360 B0A30030
@@ -144,11 +150,18 @@ By default, Show Inputs is set to ON in training mode. This changes the default 
 
 ```gecko
 04045364 B0A30032
+C204CF8C 00000004
+3FE08022 3BFF61D8
+83FF221C 64000080
+901F0000 80010024
+60000000 00000000
 ```
 
 ### Training Mode Default Chakra Recovery: OFF [Nick]
 
 By default, Chakra Recovery is set to ON in training mode. This changes the default to OFF.
+
+Note: This new default will only take affect after pausing unless you modify `files/game/game00.seq` by changing C0 to 00 at offset 0x11286
 
 ```gecko
 04045380 B0A30040
