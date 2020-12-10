@@ -1,7 +1,10 @@
-# Parses an opcode table and prints a csv
+'''
+Parses an opcode table and prints a csv. Useful when working with any Eighting game
+that references an opcode table. Copy the opcode table to a file named opcode_table
+and run this script.
+'''
 
 print('Opcode,Offset,Code Pointer,Purpose')
-# 0x00   | 0x0    | 800A6068
 opcode = 0
 offset = 0
 code_ptr = ''
