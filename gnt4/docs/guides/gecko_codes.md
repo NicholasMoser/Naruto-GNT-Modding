@@ -14,6 +14,7 @@ Most of the codes you'll find here were written by [Ralf from GC-FOREVER](http:/
 6. **[Player 4 Codes](#player-4-codes)**
 7. **[Global Character Modifiers](#global-character-modifiers)**
 8. **[Character Replacers](#character-replacers)**
+9. **[DOL Injection Codes](#dol-injection-codes)**
 
 ## General
 
@@ -31,13 +32,15 @@ Most of the codes you'll find here were written by [Ralf from GC-FOREVER](http:/
 040374B8 60000000
 ```
 
-### Unlock Everything [Ralf]
+### Unlock Everything [Nick]
+
+The original version of this code was written by Ralf, and has been modified to remove unlock notices when this code is used with no save data.
 
 ```gecko
 02223258 0017FFFF
 042232E8 0001FF03
 042232F0 00FFFFFF
-022232FC 0017FFFF
+022232FC 0021FFFF
 ```
 
 ### Enable DPad During Fights [Ralf]
@@ -1058,6 +1061,37 @@ xx = Character ID
 040400A4 4BFC4A7D
 04040328 4BFC47F9
 040A86D8 4BF5C468
+```
+
+## DOL Injection Codes
+
+When modding the game, you may want to distribute an ISO that has codes built-in. Certain codes cannot be built into an ISO since they either directly manipulate RAM or inject more code than can fit in a section of the dol. Therefore, this section contains modified forms of the above codes that can be injected into the dol.
+
+### Unlock Everything [Nick]
+
+For more information on the specifics of this code, see [GNTool/issues/32](https://github.com/NicholasMoser/GNTool/issues/32#issuecomment-743796834).
+
+```gecko
+C208956C 00000013
+3860FFFF 3FC08022
+907E3258 907E325C
+907E3260 907E3264
+907E3268 907E326C
+907E3270 907E3274
+907E3278 907E327C
+907E3280 907E3284
+907E32FC 907E3300
+907E3304 907E3308
+907E330C 907E3310
+907E3314 907E3318
+907E331C 907E3320
+907E3324 907E3328
+907E332C 907E3330
+907E3334 907E3338
+907E333C 3FE00002
+387FFF03 907E32E8
+38600000 38600000
+60000000 00000000
 ```
 
 ## Gravity Adjustment
