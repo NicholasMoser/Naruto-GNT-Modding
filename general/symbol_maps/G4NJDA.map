@@ -5399,7 +5399,7 @@
 801e8360 00000248 801e8360 0 dataInsertLayer 	musyx.a synthdata.c
 801e85a8 000001c4 801e85a8 0 dataRemoveLayer 	musyx.a synthdata.c
 801e876c 00000204 801e876c 0 dataInsertCurve 	musyx.a synthdata.c
-801e8970 0000017c 801e8970 0 dataRemoveKeymap 	musyx.a synthdata.c
+801e8970 0000017c 801e8970 0 dataRemoveCurve 	musyx.a synthdata.c
 801e8aec 00000168 801e8aec 0 dataInsertSDir 	musyx.a synthdata.c
 801e8c54 000001dc 801e8c54 0 dataRemoveSDir 	musyx.a synthdata.c
 801e8e30 000000d8 801e8e30 0 dataAddSampleReference 	musyx.a synthdata.c
@@ -5453,7 +5453,7 @@
 801ec31c 00000104 801ec31c 0 mcmdFilterSwitchSelect 	musyx.a synthmacros.c
 801ec420 00000104 801ec420 0 mcmdFilterParameterSelect 	musyx.a synthmacros.c
 801ec524 0000017c 801ec524 0 mcmdAuxAFXSelect 	musyx.a synthmacros.c
-801ec6a0 0000017c 801ec6a0 0 mcmdAuxAFXSelect 	musyx.a synthmacros.c
+801ec6a0 0000017c 801ec6a0 0 mcmdAuxBFXSelect 	musyx.a synthmacros.c
 801ec81c 00000164 801ec81c 0 mcmdPortamento 	musyx.a synthmacros.c
 801ec980 00000068 801ec980 0 varGet 	musyx.a synthmacros.c
 801ec9e8 00000220 801ec9e8 0 mcmdVarCalculation 	musyx.a synthmacros.c
@@ -5602,7 +5602,7 @@
 801fab2c 00000028 801fab2c 0 hwKeyOff 	musyx.a HARDWARE.C
 801fab54 00000078 801fab54 0 hwSetPitch 	musyx.a HARDWARE.C
 801fabcc 0000002c 801fabcc 0 hwSetSRCType 	musyx.a HARDWARE.C
-801fabf8 0000002c 801fabf8 0 hwSetSRCType 	musyx.a HARDWARE.C
+801fabf8 0000002c 801fabf8 0 hwSetPolyPhaseFilter 	musyx.a HARDWARE.C
 801fac24 000000f8 801fac24 0 hwLowPassFrqToCoef 	musyx.a HARDWARE.C
 801fad1c 00000080 801fad1c 0 hwSetFilter 	musyx.a HARDWARE.C
 801fad9c 0000005c 801fad9c 0 hwSetITDMode 	musyx.a HARDWARE.C
@@ -5637,7 +5637,7 @@
 801fbf80 000000a8 801fbf80 0 salCallback 	musyx.a hw_dolphin.c
 801fc028 00000010 801fc028 0 dspInitCallback 	musyx.a hw_dolphin.c
 801fc038 00000064 801fc038 0 dspResumeCallback 	musyx.a hw_dolphin.c
-801fc09c 00000024 801fc09c 0 nlVirtualTotalFree(void)
+801fc09c 00000024 801fc09c 0 nlVirtualTotalFree
 801fc0c0 000000c8 801fc0c0 0 salInitAi 	musyx.a hw_dolphin.c
 801fc188 00000020 801fc188 0 salStartAi 	musyx.a hw_dolphin.c
 801fc1a8 00000030 801fc1a8 0 salAiGetDest 	musyx.a hw_dolphin.c
@@ -5651,8 +5651,8 @@
 801fc428 00000020 801fc428 0 hwIRQLeaveCritical 	musyx.a hw_dolphin.c
 801fc448 0000002c 801fc448 0 salMalloc 	musyx.a hw_memory.c
 801fc474 00000030 801fc474 0 salMallocPhysical
-801fc4a4 00000030 801fc4a4 0 salMallocPhysical
-801fc4d4 0000005c 801fc4d4 0 sndAuxCallbackReverbSTD
+801fc4a4 00000030 801fc4a4 0 salMallocPhysical2
+801fc4d4 0000005c 801fc4d4 0 sndAuxCallbackReverbSTD 	musyx.a creverb_fx.c
 801fc530 00000058 801fc530 0 sndAuxCallbackUpdateSettingsReverbHI musyx.a reverb_fx.c
 801fc588 00000040 801fc588 0 sndAuxCallbackPrepareReverbHI 	musyx.a reverb_fx.c
 801fc5c8 00000520 801fc5c8 0 zz_801fc5c8_
