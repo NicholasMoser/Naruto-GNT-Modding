@@ -1,7 +1,7 @@
 .text
 80003100 00000040 80003100 0 __check_pad3
 80003140 0000000c 80003140 0 __set_debug_bba
-8000314c 00000008 8000314c 0 WPADGetDpdSensitivity 	wpad.a WPAD.o
+8000314c 00000008 8000314c 0 __get_debug_bba
 80003154 000001ec 80003154 0 __start
 800032b0 00000090 800032b0 0 __init_registers
 80003340 000000c0 80003340 0 __init_data
@@ -101,7 +101,7 @@
 8000c028 0000076c 8000c028 0 zz_8000c028_
 8000c794 000001a4 8000c794 0 zz_8000c794_
 8000c938 00000040 8000c938 0 stats_update_total_matches_played
-8000c978 0000027c 8000c978 0 app_run
+8000c978 0000027c 8000c978 0 main
 8000cbf4 00000118 8000cbf4 0 zz_8000cbf4_
 8000cd0c 000000fc 8000cd0c 0 zz_8000cd0c_
 8000ce08 00000118 8000ce08 0 zz_8000ce08_
@@ -3706,7 +3706,7 @@
 8016d080 00000064 8016d080 0 __OSGetSystemTime
 8016d0e4 0000019c 8016d0e4 0 GetDates
 8016d280 00000204 8016d280 0 OSTicksToCalendarTime
-8016d484 00000004 8016d484 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+8016d484 00000004 8016d484 0 InitMetroTRK_BBA
 8016d488 00000020 8016d488 0 IFFifoAlloc
 8016d4a8 00000054 8016d4a8 0 __init_cpp
 8016d4fc 00000020 8016d4fc 0 IFFifoAlloc
@@ -4353,90 +4353,89 @@
 8018e2c0 00000020 8018e2c0 0 _restgpr_25 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
 8018e2c4 0000001c 8018e2c4 0 _restgpr_26 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
 8018e2c8 00000018 8018e2c8 0 _restgpr_27 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-8018e2e0 000000ec 8018e2e0 0 __div2u
-8018e3cc 00000138 8018e3cc 0 __div2i
-8018e504 000000e0 8018e504 0 __mod2u
-8018e5e4 00000004 8018e5e4 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-8018e5e8 0000010c 8018e5e8 0 __mod2i
-8018e6f4 00000024 8018e6f4 0 __shl2i
-8018e718 00000024 8018e718 0 __shr2u
-8018e73c 00000028 8018e73c 0 __shr2i
-8018e764 000000b4 8018e764 0 __cvt_sll_flt
-8018e818 000000cc 8018e818 0 __cvt_dbl_usll
-8018e8e4 000000b8 8018e8e4 0 __sys_free
-8018e99c 000000cc 8018e99c 0 zz_8018e99c_
-8018ea68 00000134 8018ea68 0 zz_8018ea68_
-8018eb9c 000001fc 8018eb9c 0 zz_8018eb9c_
-8018ed98 000000bc 8018ed98 0 zz_8018ed98_
-8018ee54 0000017c 8018ee54 0 zz_8018ee54_
-8018efd0 00000070 8018efd0 0 __flush_all
-8018f040 00000098 8018f040 0 zz_8018f040_
-8018f0d8 000001a4 8018f0d8 0 __num2dec
-8018f27c 0000023c 8018f27c 0 zz_8018f27c_
-8018f4b8 00000340 8018f4b8 0 zz_8018f4b8_
-8018f7f8 000000ec 8018f7f8 0 zz_8018f7f8_
-8018f8e4 0000028c 8018f8e4 0 zz_8018f8e4_
-8018fb70 00000110 8018fb70 0 zz_8018fb70_
-8018fc80 00000070 8018fc80 0 zz_8018fc80_
-8018fcf0 000000c4 8018fcf0 0 __flush_buffer
-8018fdb4 00000034 8018fdb4 0 __prep_buffer
-8018fde8 00000024 8018fde8 0 tolower
-8018fe0c 0000030c 8018fe0c 0 __fwrite
-80190118 00000020 80190118 0 cPlayer::PostPhysicsUpdate(void)
-80190138 00000138 80190138 0 fflush
-80190270 000000c0 80190270 0 zz_80190270_
-80190330 00000020 80190330 0 cPlayer::PostPhysicsUpdate(void)
-80190350 0000023c 80190350 0 zz_80190350_
-8019058c 00000070 8019058c 0 zz_8019058c_
-801905fc 000000a0 801905fc 0 zz_801905fc_
-8019069c 000000a4 8019069c 0 zz_8019069c_
-80190740 0000004c 80190740 0 memcmp
-8019078c 0000002c 8019078c 0 __memrchr
-801907b8 0000002c 801907b8 0 memchr
-801907e4 000000cc 801907e4 0 memmove
-801908b0 000000b0 801908b0 0 zz_801908b0_
-80190960 000000c4 80190960 0 zz_80190960_
-80190a24 000000ac 80190a24 0 zz_80190a24_
-80190ad0 000000c0 80190ad0 0 zz_80190ad0_
-80190b90 00000010 80190b90 0 __sinit_AILoader_cpp
-80190ba0 000000e0 80190ba0 0 sprintf
-80190c80 00000078 80190c80 0 zz_80190c80_
-80190cf8 0000007c 80190cf8 0 zz_80190cf8_
-80190d74 0000006c 80190d74 0 __StringWrite
-80190de0 00000058 80190de0 0 __FileWrite
-80190e38 00000774 80190e38 0 __pformatter
-801915ac 000006ec 801915ac 0 zz_801915ac_
-80191c98 0000012c 80191c98 0 round_decimal
-80191dc4 00000338 80191dc4 0 zz_80191dc4_
-801920fc 000002dc 801920fc 0 zz_801920fc_
-801923d8 00000220 801923d8 0 zz_801923d8_
-801925f8 00000504 801925f8 0 zz_801925f8_
-80192afc 00000008 80192afc 0 IPCSetBufferLo 	ipc.a ipcMain.o
-80192b04 00000068 80192b04 0 strstr
+8018e2e0 000000ec 8018e2e0 0 __div2u 	Runtime.PPCEABI.H.a runtime.o
+8018e3cc 00000138 8018e3cc 0 __div2i 	Runtime.PPCEABI.H.a runtime.o
+8018e504 000000e0 8018e504 0 __mod2u 	Runtime.PPCEABI.H.a runtime.o
+8018e5e4 00000004 8018e5e4 0 do_nothing
+8018e5e8 0000010c 8018e5e8 0 __mod2i 	Runtime.PPCEABI.H.a runtime.o
+8018e6f4 00000024 8018e6f4 0 __shl2i 	Runtime.PPCEABI.H.a runtime.o
+8018e718 00000024 8018e718 0 __shr2u 	Runtime.PPCEABI.H.a runtime.o
+8018e73c 00000028 8018e73c 0 __shr2i 	Runtime.PPCEABI.H.a runtime.o
+8018e764 000000b4 8018e764 0 __cvt_sll_flt 	Runtime.PPCEABI.H.a runtime.o
+8018e818 000000cc 8018e818 0 __cvt_dbl_usll 	Runtime.PPCEABI.H.a runtime.o
+8018e8e4 000000b8 8018e8e4 0 __sys_free 	Runtime.PPCEABI.H.a GCN_mem_alloc.o
+8018e99c 000000cc 8018e99c 0 exit 	MSL_C.PPCEABI.bare.H.a abort_exit.c
+8018ea68 00000134 8018ea68 0 free 	MSL_C.PPCEABI.bare.H.a alloc.c
+8018eb9c 000001fc 8018eb9c 0 __pool_free 	MSL_C.PPCEABI.bare.H.a alloc.c
+8018ed98 000000bc 8018ed98 0 deallocate_from_fixed_pools 	MSL_C.PPCEABI.bare.H.a alloc.c
+8018ee54 0000017c 8018ee54 0 deallocate_from_var_pools 	MSL_C.PPCEABI.bare.H.a alloc.c
+8018efd0 00000070 8018efd0 0 __flush_all 	MSL_C.PPCEABI.bare.H.a ansi_files.c
+8018f040 00000098 8018f040 0 __close_all 	MSL_C.PPCEABI.bare.H.a ansi_files.c
+8018f0d8 000001a4 8018f0d8 0 __num2dec 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
+8018f27c 0000023c 8018f27c 0 __num2dec_internal 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
+8018f4b8 00000340 8018f4b8 0 __two_exp 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
+8018f7f8 000000ec 8018f7f8 0 __str2dec 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
+8018f8e4 0000028c 8018f8e4 0 __ull2dec 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
+8018fb70 00000110 8018fb70 0 __cvt_dbl_usll 	Runtime.PPCEABI.H.a runtime.c
+8018fc80 00000070 8018fc80 0 __count_trailing_zerol 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
+8018fcf0 000000c4 8018fcf0 0 __flush_buffer 	MSL_C.PPCEABI.bare.H.a buffer_io.c
+8018fdb4 00000034 8018fdb4 0 __prep_buffer 	MSL_C.PPCEABI.bare.H.a buffer_io.c
+8018fde8 00000024 8018fde8 0 tolower 	MSL_C.PPCEABI.bare.H.a ctype.c
+8018fe0c 0000030c 8018fe0c 0 __fwrite 	MSL_C.PPCEABI.bare.H.a direct_io.c
+80190118 00000020 80190118 0 fwrite 	MSL_C.PPCEABI.bare.H.a direct_io.c
+80190138 00000138 80190138 0 fflush 	MSL_C.PPCEABI.bare.H.a file_io.c
+80190270 000000c0 80190270 0 fclose 	MSL_C.PPCEABI.bare.H.a file_io.c
+80190330 00000020 80190330 0 fseek 	MSL_C.PPCEABI.bare.H.a FILE_POS.C
+80190350 0000023c 80190350 0 _fseek 	MSL_C.PPCEABI.bare.H.a FILE_POS.C
+8019058c 00000070 8019058c 0 ftell 	MSL_C.PPCEABI.bare.H.a FILE_POS.C
+801905fc 000000a0 801905fc 0 wcstombs 	MSL_C.PPCEABI.bare.H.a mbstring.c
+8019069c 000000a4 8019069c 0 unicode_to_UTF8 	MSL_C.PPCEABI.bare.H.a mbstring.c
+80190740 0000004c 80190740 0 memcmp 	MSL_C.PPCEABI.bare.H.a mem.c
+8019078c 0000002c 8019078c 0 __memrchr 	MSL_C.PPCEABI.bare.H.a mem.c
+801907b8 0000002c 801907b8 0 memchr 	MSL_C.PPCEABI.bare.H.a mem.c
+801907e4 000000cc 801907e4 0 memmove 	MSL_C.PPCEABI.bare.H.a mem.c
+801908b0 000000b0 801908b0 0 __copy_longs_rev_unaligned 	MSL_C.PPCEABI.bare.H.a mem_funcs.c
+80190960 000000c4 80190960 0 __copy_longs_unaligned 	MSL_C.PPCEABI.bare.H.a mem_funcs.c
+80190a24 000000ac 80190a24 0 __copy_longs_rev_aligned 	MSL_C.PPCEABI.bare.H.a mem_funcs.c
+80190ad0 000000c0 80190ad0 0 __copy_longs_aligned 	MSL_C.PPCEABI.bare.H.a mem_funcs.c
+80190b90 00000010 80190b90 0 __stdio_atexit 	MSL_C.PPCEABI.bare.H.a misc_io.c
+80190ba0 000000e0 80190ba0 0 sprintf 	MSL_C.PPCEABI.bare.H.a printf.c
+80190c80 00000078 80190c80 0 vsprintf 	MSL_C.PPCEABI.bare.H.a printf.c
+80190cf8 0000007c 80190cf8 0 vprintf 	MSL_C.PPCEABI.bare.H.a printf.c
+80190d74 0000006c 80190d74 0 __StringWrite 	MSL_C.PPCEABI.bare.H.a printf.c
+80190de0 00000058 80190de0 0 __FileWrite 	MSL_C.PPCEABI.bare.H.a printf.c
+80190e38 00000774 80190e38 0 __pformatter 	MSL_C.PPCEABI.bare.H.a printf.c
+801915ac 000006ec 801915ac 0 float2str 	MSL_C.PPCEABI.bare.H.a printf.c
+80191c98 0000012c 80191c98 0 round_decimal 	MSL_C.PPCEABI.bare.H.a printf.c
+80191dc4 00000338 80191dc4 0 double2hex 	MSL_C.PPCEABI.bare.H.a printf.c
+801920fc 000002dc 801920fc 0 longlong2str 	MSL_C.PPCEABI.bare.H.a printf.c
+801923d8 00000220 801923d8 0 long2str 	MSL_C.PPCEABI.bare.H.a printf.c
+801925f8 00000504 801925f8 0 parse_format 	MSL_C.PPCEABI.bare.H.a printf.c
+80192afc 00000008 80192afc 0 random_set_useless
+80192b04 00000068 80192b04 0 strstr MSL_C.PPCEABI.bare.H.a string.c
 80192b40 0000002c 80192b40 0 zz_80192b40_
-80192b6c 00000030 80192b6c 0 strchr
-80192b9c 00000040 80192b9c 0 strncmp
-80192bdc 00000128 80192bdc 0 strcmp
-80192d04 0000002c 80192d04 0 zz_80192d04_
-80192d30 00000044 80192d30 0 strncpy
-80192d74 000000b8 80192d74 0 strcpy
-80192e2c 0000001c 80192e2c 0 strlen
-80192e48 000000c4 80192e48 0 zz_80192e48_
-80192f0c 00000088 80192f0c 0 fwide
-80192f94 00000310 80192f94 0 zz_80192f94_
-801932a4 00000264 801932a4 0 zz_801932a4_
-80193508 00000290 80193508 0 zz_80193508_
+80192b6c 00000030 80192b6c 0 strchr 	MSL_C.PPCEABI.bare.H.a string.c
+80192b9c 00000040 80192b9c 0 strncmp 	MSL_C.PPCEABI.bare.H.a string.c
+80192bdc 00000128 80192bdc 0 strcmp 	MSL_C.PPCEABI.bare.H.a string.c
+80192d04 0000002c 80192d04 0 strcat 	MSL_C.PPCEABI.bare.H.a string.c
+80192d30 00000044 80192d30 0 strncpy 	MSL_C.PPCEABI.bare.H.a string.c
+80192d74 000000b8 80192d74 0 strcpy 	MSL_C.PPCEABI.bare.H.a string.c
+80192e2c 0000001c 80192e2c 0 strlen 	MSL_C.PPCEABI.bare.H.a string.c
+80192e48 000000c4 80192e48 0 __write_console 	MSL_C.PPCEABI.bare.H.a uart_console_io.c
+80192f0c 00000088 80192f0c 0 fwide 	MSL_C.PPCEABI.bare.H.a wchar_io.c
+80192f94 00000310 80192f94 0 __ieee754_acos 	MSL_C.PPCEABI.bare.H.a e_acos.c
+801932a4 00000264 801932a4 0 __ieee754_asin 	MSL_C.PPCEABI.bare.H.a e_asin.c
+80193508 00000290 80193508 0 __ieee754_atan2 	MSL_C.PPCEABI.bare.H.a e_atan2.c
 80193798 0000021c 80193798 0 zz_80193798_
-801939b4 0000033c 801939b4 0 __ieee754_fmod
-80193cf0 0000027c 80193cf0 0 zz_80193cf0_
+801939b4 0000033c 801939b4 0 __ieee754_fmod 	MSL_C.PPCEABI.bare.H.a e_fmod.c
+80193cf0 0000027c 80193cf0 0 __ieee754_log 	MSL_C.PPCEABI.bare.H.a e_log.c
 80193f34 00000038 80193f34 0 zz_80193f34_
-80193f6c 0000088c 80193f6c 0 zz_80193f6c_
-801947f8 000003a0 801947f8 0 __ieee754_rem_pio2
-80194b98 000000f4 80194b98 0 __kernel_cos
-80194c8c 00000e54 80194c8c 0 __kernel_rem_pio2
-80195adc 00000004 80195adc 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-80195ae0 000000a0 80195ae0 0 __kernel_sin
-80195b80 00000214 80195b80 0 __kernel_tan
+80193f6c 0000088c 80193f6c 0 __ieee754_pow 	MSL_C.PPCEABI.bare.H.a e_pow.c
+801947f8 000003a0 801947f8 0 __ieee754_rem_pio2 	MSL_C.PPCEABI.bare.H.a e_rem_pio2.c
+80194b98 000000f4 80194b98 0 __kernel_cos 	MSL_C.PPCEABI.bare.H.a k_cos.c
+80194c8c 00000e54 80194c8c 0 __kernel_rem_pio2 	MSL_C.PPCEABI.bare.H.a k_rem_pio2.c
+80195ae0 000000a0 80195ae0 0 __kernel_sin 	MSL_C.PPCEABI.bare.H.a k_sin.c
+80195b80 00000214 80195b80 0 __kernel_tan 	MSL_C.PPCEABI.bare.H.a k_tan.c
 80195d94 00000200 80195d94 0 zz_80195d94_
 80195f94 00000028 80195f94 0 copysign
 80195fbc 000000d4 80195fbc 0 zz_80195fbc_
@@ -4457,17 +4456,17 @@
 801967b8 00000024 801967b8 0 tanf
 801967dc 00000024 801967dc 0 tanf
 80196800 00000024 80196800 0 tanf
-80196824 00000004 80196824 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-80196828 00000004 80196828 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+80196824 00000004 80196824 0 do_nothing
+80196828 00000004 80196828 0 do_nothing
 8019682c 00000008 8019682c 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
 80196834 00000008 80196834 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
 8019683c 00000008 8019683c 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-80196844 00000004 80196844 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-80196848 00000004 80196848 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+80196844 00000004 80196844 0 do_nothing
+80196848 00000004 80196848 0 do_nothing
 8019684c 00000008 8019684c 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
 80196854 00000008 80196854 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-8019685c 00000004 8019685c 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-80196860 00000004 80196860 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+8019685c 00000004 8019685c 0 do_nothing
+80196860 00000004 80196860 0 do_nothing
 80196864 00000260 80196864 0 DBWrite
 80196ac4 0000008c 80196ac4 0 DBRead
 80196b50 0000009c 80196b50 0 DBQueryData
@@ -4977,7 +4976,7 @@
 801c138c 00000008 801c138c 0 IPCSetBufferLo 	ipc.a ipcMain.o
 801c1394 00000108 801c1394 0 zz_801c1394_
 801c149c 00000018 801c149c 0 zz_801c149c_
-801c14b4 00000004 801c14b4 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+801c14b4 00000004 801c14b4 0 do_nothing
 801c14b8 00000134 801c14b8 0 zz_801c14b8_
 801c15ec 00000050 801c15ec 0 zz_801c15ec_
 801c163c 000000ac 801c163c 0 zz_801c163c_
@@ -4991,7 +4990,7 @@
 801c1a14 0000000c 801c1a14 0 GetOneTimerLeadGroundContactAnims(void)
 801c1a20 00000008 801c1a20 0 IPCGetBufferLo 	ipc.a ipcMain.o
 801c1a28 000000a0 801c1a28 0 zz_801c1a28_
-801c1ac8 00000004 801c1ac8 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+801c1ac8 00000004 801c1ac8 0 do_nothing
 801c1acc 00000010 801c1acc 0 zz_801c1acc_
 801c1adc 00000044 801c1adc 0 zz_801c1adc_
 801c1b20 00000114 801c1b20 0 zz_801c1b20_
@@ -5178,7 +5177,7 @@
 801ce9b8 00000058 801ce9b8 0 zz_801ce9b8_
 801cea10 00000058 801cea10 0 zz_801cea10_
 801cea68 00000008 801cea68 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801cea70 00000004 801cea70 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+801cea70 00000004 801cea70 0 do_nothing
 801cea74 0000006c 801cea74 0 zz_801cea74_
 801ceae0 0000002c 801ceae0 0 zz_801ceae0_
 801ceb0c 0000009c 801ceb0c 0 zz_801ceb0c_
@@ -5334,363 +5333,336 @@
 801df698 00000034 801df698 0 zz_801df698_
 801df6cc 00000154 801df6cc 0 zz_801df6cc_
 801df820 000000b4 801df820 0 zz_801df820_
-801df8d4 00000068 801df8d4 0 seqGetPrivateId
-801df93c 00000acc 801df93c 0 seqStartPlay
-801e0408 00000064 801e0408 0 StartPause
-801e046c 0000027c 801e046c 0 seqPause
-801e06e8 000002b0 801e06e8 0 seqStop
-801e0998 00000090 801e0998 0 seqKillInstancesByGroupID
-801e0a28 000000e4 801e0a28 0 seqSpeed
-801e0b0c 00000108 801e0b0c 0 seqContinue
-801e0c14 000000bc 801e0c14 0 seqMute
-801e0cd0 000001cc 801e0cd0 0 seqVolume
-801e0e9c 00000b58 801e0e9c 0 seqCrossFade
-801e19f4 00000218 801e19f4 0 GenerateNextTrackEvent
-801e1c0c 00000ac0 801e1c0c 0 HandleEvent
-801e26cc 00000174 801e26cc 0 InitTrackEvents
-801e2840 0000049c 801e2840 0 HandleTrackEvents
-801e2cdc 00000a1c 801e2cdc 0 seqHandle
-801e36f8 000001a8 801e36f8 0 seqInit
-801e38a0 00000044 801e38a0 0 synthSetBpm
-801e38e4 00000034 801e38e4 0 synthGetTicksPerSecond
-801e3918 00000078 801e3918 0 synthInitPortamento
-801e3990 000002a0 801e3990 0 do_voice_portamento
-801e3c30 000003c0 801e3c30 0 StartLayer
-801e3ff0 0000025c 801e3ff0 0 StartKeymap
-801e414c 00000100 801e414c 0 zz_801e414c_
-801e424c 00000460 801e424c 0 synthStartSound
-801e46ac 00000744 801e46ac 0 LowPrecisionHandler
-801e4df0 000007b0 801e4df0 0 ZeroOffsetHandler
-801e55a0 00000150 801e55a0 0 synthAddJob
-801e56f0 00000064 801e56f0 0 synthStartSynthJobHandling
-801e5754 00000044 801e5754 0 synthForceLowPrecisionUpdate
-801e5798 00000028 801e5798 0 BasicSlotPoolHigh<33ListEntry<20AnimAudioEventLookup>>::allocFN(unsigned long)
-801e57c0 00000510 801e57c0 0 synthHandle
-801e5cd0 000000e4 801e5cd0 0 synthFXStart
-801e5db4 0000007c 801e5db4 0 synthCheckFXRealloc
-801e5e30 000000e4 801e5e30 0 synthFXSetCtrl
-801e5f14 000000e4 801e5f14 0 synthFXSetCtrl
-801e5ff8 00000084 801e5ff8 0 synthFXCloneMidiSetup
-801e607c 00000088 801e607c 0 synthSendKeyOff
-801e6104 00000530 801e6104 0 synthVolume
-801e6634 00000054 801e6634 0 synthIsFadeOutActive
-801e6688 00000028 801e6688 0 synthSetMusicVolumeType
-801e66b0 000000d0 801e66b0 0 synthHWMessageHandler
-801e6780 00000574 801e6780 0 synthInit
-801e6cf4 00000048 801e6cf4 0 sndSeqSpeed
-801e6d3c 00000038 801e6d3c 0 sndSeqContinue
-801e6d74 00000058 801e6d74 0 sndSeqMute
-801e6dcc 00000068 801e6dcc 0 sndSeqVolume
-801e6e34 0000001c 801e6e34 0 seqGetMIDIPriority
-801e6e50 000000a4 801e6e50 0 seqGetInstanceForVoice
-801e6ef4 00000060 801e6ef4 0 sndFXCtrl
-801e6f54 00000040 801e6f54 0 sndFXKeyOff
+801df8d4 00000068 801df8d4 0 seqGetPrivateId 	musyx.a seq.c
+801df93c 00000acc 801df93c 0 seqStartPlay 	musyx.a seq.c
+801e0408 00000064 801e0408 0 StartPause 	musyx.a seq.c
+801e046c 0000027c 801e046c 0 seqPause 	musyx.a seq.c
+801e06e8 000002b0 801e06e8 0 seqStop 	musyx.a seq.c
+801e0998 00000090 801e0998 0 seqKillInstancesByGroupID 	musyx.a seq.c
+801e0a28 000000e4 801e0a28 0 seqSpeed 	musyx.a seq.c
+801e0b0c 00000108 801e0b0c 0 seqContinue 	musyx.a seq.c
+801e0c14 000000bc 801e0c14 0 seqMute 	musyx.a seq.c
+801e0cd0 000001cc 801e0cd0 0 seqVolume 	musyx.a seq.c
+801e0e9c 00000b58 801e0e9c 0 seqCrossFade 	musyx.a seq.c
+801e19f4 00000218 801e19f4 0 GenerateNextTrackEvent 	musyx.a seq.c
+801e1c0c 00000ac0 801e1c0c 0 HandleEvent 	musyx.a seq.c
+801e26cc 00000174 801e26cc 0 InitTrackEvents 	musyx.a seq.c
+801e2840 0000049c 801e2840 0 HandleTrackEvents 	musyx.a seq.c
+801e2cdc 00000a1c 801e2cdc 0 seqHandle 	musyx.a seq.c
+801e36f8 000001a8 801e36f8 0 seqInit 	musyx.a seq.c
+801e38a0 00000044 801e38a0 0 synthSetBpm 	musyx.a synth.c
+801e38e4 00000034 801e38e4 0 synthGetTicksPerSecond 	musyx.a synth.c
+801e3918 00000078 801e3918 0 synthInitPortamento 	musyx.a synth.c
+801e3990 000002a0 801e3990 0 do_voice_portamento 	musyx.a synth.c
+801e3c30 000003c0 801e3c30 0 StartLayer 	musyx.a synth.c
+801e3ff0 0000025c 801e3ff0 0 StartKeymap 	musyx.a synth.c
+801e424c 00000460 801e424c 0 synthStartSound 	musyx.a synth.c
+801e46ac 00000744 801e46ac 0 LowPrecisionHandler 	musyx.a synth.c
+801e4df0 000007b0 801e4df0 0 ZeroOffsetHandler 	musyx.a synth.c
+801e55a0 00000150 801e55a0 0 synthAddJob 	musyx.a synth.c
+801e56f0 00000064 801e56f0 0 synthStartSynthJobHandling 	musyx.a synth.c
+801e5754 00000044 801e5754 0 synthForceLowPrecisionUpdate 	musyx.a synth.c
+801e5798 00000028 801e5798 0 synthKeyStateUpdate 	musyx.a synth.c
+801e57c0 00000510 801e57c0 0 synthHandle 	musyx.a synth.c
+801e5cd0 000000e4 801e5cd0 0 synthFXStart 	musyx.a synth.c
+801e5db4 0000007c 801e5db4 0 synthCheckFXRealloc 	musyx.a synth.c
+801e5e30 000000e4 801e5e30 0 synthFXSetCtrl 	musyx.a synth.c
+801e5f14 000000e4 801e5f14 0 synthFXSetCtrl14 	musyx.a synth.c
+801e5ff8 00000084 801e5ff8 0 synthFXCloneMidiSetup 	musyx.a synth.c
+801e607c 00000088 801e607c 0 synthSendKeyOff 	musyx.a synth.c
+801e6104 00000530 801e6104 0 synthVolume 	musyx.a synth.c
+801e6634 00000054 801e6634 0 synthIsFadeOutActive 	musyx.a synth.c
+801e6688 00000028 801e6688 0 synthSetMusicVolumeType 	musyx.a synth.c
+801e66b0 000000d0 801e66b0 0 synthHWMessageHandler 	musyx.a synth.c
+801e6780 00000574 801e6780 0 synthInit 	musyx.a synth.c
+801e6cf4 00000048 801e6cf4 0 sndSeqSpeed 	musyx.a seq_api.c
+801e6d3c 00000038 801e6d3c 0 sndSeqContinue 	musyx.a seq_api.c
+801e6d74 00000058 801e6d74 0 sndSeqMute 	musyx.a seq_api.c
+801e6dcc 00000068 801e6dcc 0 sndSeqVolume 	musyx.a seq_api.c
+801e6e34 0000001c 801e6e34 0 seqGetMIDIPriority 	musyx.a seq_api.c
+801e6e50 000000a4 801e6e50 0 seqGetInstanceForVoice 	musyx.a seq_api.c
+801e6ef4 00000060 801e6ef4 0 sndFXCtrl 	musyx.a snd_synthapi.c
+801e6f54 00000040 801e6f54 0 sndFXKeyOff 	musyx.a snd_synthapi.c
 801e6f94 00000164 801e6f94 0 zz_801e6f94_
-801e70f8 0000004c 801e70f8 0 sndFXCheck
-801e7144 00000060 801e7144 0 sndVolume
-801e71a4 00000094 801e71a4 0 zz_801e71a4_
-801e7238 000000ec 801e7238 0 sndOutputMode
-801e7324 00000158 801e7324 0 sndSetAuxProcessingCallbacks
-801e747c 000000c8 801e747c 0 streamInit
-801e7544 000008e4 801e7544 0 streamHandle
-801e7e28 00000004 801e7e28 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801e7e2c 00000098 801e7e2c 0 streamKill
-801e7ec4 00000130 801e7ec4 0 streamOutputModeChanged
-801e7ff4 000001f0 801e7ff4 0 dataInsertKeymap
-801e81e4 0000017c 801e81e4 0 dataRemoveKeymap
-801e8360 00000248 801e8360 0 dataInsertLayer
-801e85a8 000001c4 801e85a8 0 dataRemoveLayer
-801e876c 00000204 801e876c 0 dataInsertCurve
-801e8970 0000017c 801e8970 0 dataRemoveKeymap
-801e8aec 00000168 801e8aec 0 dataInsertSDir
-801e8c54 000001dc 801e8c54 0 dataRemoveSDir
-801e8e30 000000d8 801e8e30 0 dataAddSampleReference
-801e8f08 0000009c 801e8f08 0 dataRemoveSampleReference
-801e8fa4 00000140 801e8fa4 0 dataInsertFX
-801e90e4 000001cc 801e90e4 0 dataRemoveFX
-801e9184 0000012c 801e9184 0 zz_801e9184_
-801e92b0 000002ec 801e92b0 0 dataInsertMacro
-801e959c 00000284 801e959c 0 dataRemoveMacro
-801e9820 00000010 801e9820 0 nlFont::GlyphInfo::SortProc( (nlFont::GlyphInfo *, nlFont::GlyphInfo *))
-801e9830 0000008c 801e9830 0 dataGetMacro
-801e98bc 00000010 801e98bc 0 nlFont::GlyphInfo::SortProc( (nlFont::GlyphInfo *, nlFont::GlyphInfo *))
-801e98cc 00000130 801e98cc 0 dataGetSample
-801e99fc 00000010 801e99fc 0 nlFont::GlyphInfo::SortProc( (nlFont::GlyphInfo *, nlFont::GlyphInfo *))
-801e9a0c 0000005c 801e9a0c 0 dataGetCurve
-801e9a68 0000005c 801e9a68 0 dataGetCurve
-801e9ac4 00000010 801e9ac4 0 nlFont::GlyphInfo::SortProc( (nlFont::GlyphInfo *, nlFont::GlyphInfo *))
-801e9ad4 0000007c 801e9ad4 0 dataGetLayer
-801e9b50 00000010 801e9b50 0 nlFont::GlyphInfo::SortProc( (nlFont::GlyphInfo *, nlFont::GlyphInfo *))
-801e9b60 0000009c 801e9b60 0 dataGetFX
-801e9bfc 000000e4 801e9bfc 0 dataInit
-801e9ce0 000002f0 801e9ce0 0 mcmdWait
-801e9fd0 000000d0 801e9fd0 0 mcmdGosub
-801ea0a0 00000154 801ea0a0 0 mcmdLoop
-801ea1f4 0000018c 801ea1f4 0 mcmdPlayMacro
-801ea380 000000d8 801ea380 0 mcmdAddKey
-801ea458 00000200 801ea458 0 mcmdStartSample
-801ea658 0000017c 801ea658 0 mcmdVibrato
-801ea7d4 000001a0 801ea7d4 0 DoSetPitch
-801ea914 00000060 801ea914 0 zz_801ea914_
-801ea974 00000258 801ea974 0 mcmdSetADSR
-801ea9b4 00000218 801ea9b4 0 zz_801ea9b4_
-801eabcc 0000012c 801eabcc 0 mcmdSetADSRFromCtrl
-801eacf8 0000027c 801eacf8 0 mcmdSetPitchADSR
-801eaf74 0000009c 801eaf74 0 mcmdSetPanning
-801eb010 0000009c 801eb010 0 mcmdSetPanning
-801eb0ac 00000134 801eb0ac 0 mcmdScaleVolume
-801eb1e0 00000130 801eb1e0 0 mcmdEnvelope
-801eb310 0000013c 801eb310 0 mcmdFadeIn
-801eb44c 0000019c 801eb44c 0 mcmdRandomKey
-801eb5e8 00000104 801eb5e8 0 mcmdVolumeSelect
-801eb6ec 00000104 801eb6ec 0 mcmdVolumeSelect
-801eb7f0 00000104 801eb7f0 0 mcmdVolumeSelect
-801eb8f4 00000104 801eb8f4 0 mcmdVolumeSelect
-801eb9f8 00000104 801eb9f8 0 mcmdVolumeSelect
-801ebafc 00000104 801ebafc 0 mcmdVolumeSelect
-801ebc00 00000104 801ebc00 0 mcmdVolumeSelect
-801ebd04 00000104 801ebd04 0 mcmdVolumeSelect
-801ebe08 00000104 801ebe08 0 mcmdVolumeSelect
-801ebf0c 00000104 801ebf0c 0 mcmdVolumeSelect
-801ec010 00000104 801ec010 0 mcmdVolumeSelect
-801ec114 00000104 801ec114 0 mcmdVolumeSelect
-801ec218 00000104 801ec218 0 mcmdVolumeSelect
-801ec31c 00000104 801ec31c 0 mcmdFilterSwitchSelect
-801ec420 00000104 801ec420 0 mcmdFilterSwitchSelect
-801ec524 0000017c 801ec524 0 mcmdAuxAFXSelect
-801ec6a0 0000017c 801ec6a0 0 mcmdAuxAFXSelect
-801ec81c 00000164 801ec81c 0 mcmdPortamento
-801ec980 00000068 801ec980 0 varGet
-801ec9e8 00000220 801ec9e8 0 mcmdVarCalculation
-801ecc08 0000014c 801ecc08 0 mcmdIfVarCompare
-801ecd54 00000244 801ecd54 0 mcmdSendMessage
-801ecf98 00000080 801ecf98 0 mcmdGetVID
-801ed018 000000dc 801ed018 0 mcmdSetKeyGroup
-801ed098 0000005c 801ed098 0 zz_801ed098_
-801ed0f4 00000f94 801ed0f4 0 macHandleActive
-801ee088 00000154 801ee088 0 macHandle
-801ee1dc 000000ac 801ee1dc 0 macSampleEndNotify
-801ee288 000000f0 801ee288 0 macSetExternalKeyoff
-801ee378 00000108 801ee378 0 macSetPedalState
-801ee480 000000a4 801ee480 0 TimeQueueAdd
-801ee524 00000108 801ee524 0 macMakeActive
-801ee62c 000000fc 801ee62c 0 macMakeInactive
-801ee728 00000438 801ee728 0 macStart
-801eeb60 00000068 801eeb60 0 macInit
-801eebc8 000000e0 801eebc8 0 vidInit
-801eeca8 00000368 801eeca8 0 vidRemoveVoiceReferences
-801ef010 00000014 801ef010 0 vidMakeRoot
-801ef024 00000114 801ef024 0 vidMakeNew
-801ef138 00000050 801ef138 0 vidGetInternalId
-801ef188 00000054 801ef188 0 vidGetPublicId
-801ef1dc 0000024c 801ef1dc 0 voiceSetPriority
-801ef428 00000388 801ef428 0 voiceAllocateFind
-801ef7b0 00000110 801ef7b0 0 voiceAllocate
-801ef8c0 00000078 801ef8c0 0 voiceAllocatePeek
-801ef938 000001c4 801ef938 0 voiceFree
-801efafc 000002a0 801efafc 0 synthInitAllocationAids
-801efcdc 000000c0 801efcdc 0 zz_801efcdc_
-801efd9c 00000218 801efd9c 0 voiceUnblock
-801effb4 00000234 801effb4 0 voiceKill
-801f01e8 000000c4 801f01e8 0 voiceKillSound
-801f02ac 0000015c 801f02ac 0 synthKillVoicesByMacroReferences
-801f0408 0000015c 801f0408 0 synthKillVoicesByMacroReferences
-801f0564 00000074 801f0564 0 voiceIsLastStarted
-801f05d8 00000054 801f05d8 0 voiceSetLastStarted
-801f0614 00000018 801f0614 0 zz_801f0614_
-801f062c 00000074 801f062c 0 voiceResetLastStarted
-801f06a0 00000144 801f06a0 0 voiceInitLastStarted
-801f07e4 0000003c 801f07e4 0 sndPitchUpOne
-801f0820 000000e4 801f0820 0 sndGetPitch
-801f0904 00000058 801f0904 0 adsrConvertTimeCents
-801f095c 0000026c 801f095c 0 salChangeADSRState
-801f0bc8 00000028 801f0bc8 0 adsrSetup
-801f0bf0 00000150 801f0bf0 0 adsrStartRelease
-801f0d40 00000168 801f0d40 0 adsrRelease
-801f0ea8 00000198 801f0ea8 0 adsrHandle
-801f1040 00000084 801f1040 0 adsrHandleLowPrecision
-801f10c4 000000bc 801f10c4 0 vsInit
-801f1180 000002cc 801f1180 0 vsSampleStartNotify
-801f144c 000000a8 801f144c 0 vsSampleEndNotify
-801f14f4 00000358 801f14f4 0 vsUpdateBuffer
-801f184c 00000210 801f184c 0 vsSampleUpdates
-801f1a5c 00000040 801f1a5c 0 dataInitStack
-801f1a9c 0000028c 801f1a9c 0 InsertData
-801f1d28 0000034c 801f1d28 0 sndPushGroup
-801f2074 00000350 801f2074 0 sndPopGroup
-801f23c4 00000154 801f23c4 0 seqPlaySong
-801f2518 00000124 801f2518 0 sndSeqPlayEx
-801f263c 000003b4 801f263c 0 salInitDspCtrl
-801f29f0 00000038 801f29f0 0 salInitHRTFBuffer
-801f2a28 00000150 801f2a28 0 salActivateStudio
-801f2b78 000000f4 801f2b78 0 salCheckVolErrorAndResetDelta
-801f2c40 0000002c 801f2c40 0 zz_801f2c40_
-801f2c6c 00000048 801f2c6c 0 sal_setup_dspvol
-801f2cb4 00000074 801f2cb4 0 sal_update_hostplayinfo
-801f2d28 000000ac 801f2d28 0 DoDepopFade
-801f2dd4 0000030c 801f2dd4 0 HandleDepopVoice
-801f30e0 00000258 801f30e0 0 SortVoices
-801f3338 000025f8 801f3338 0 salBuildCommandList
-801f337c 000025b4 801f337c 0 zz_801f337c_
-801f5930 00000044 801f5930 0 salSynthSendMessage
-801f5974 000000a0 801f5974 0 salActivateVoice
-801f5a14 00000060 801f5a14 0 salDeactivateVoice
-801f5a74 00000158 801f5a74 0 salHandleAuxProcessing
-801f5bcc 000006f0 801f5bcc 0 salCalcVolume
-801f62bc 0000067c 801f62bc 0 CalcEmitter
-801f6938 000000fc 801f6938 0 s3dKillEmitterByFXID
-801f6a34 00000154 801f6a34 0 AddStartingEmitter
-801f6b88 000008f4 801f6b88 0 StartContinousEmitters
-801f6e38 00000644 801f6e38 0 zz_801f6e38_
-801f747c 00000728 801f747c 0 s3dHandle
-801f7ba4 00000038 801f7ba4 0 s3dInit
-801f7bdc 00000138 801f7bdc 0 sndInit
-801f7d14 000000ac 801f7d14 0 salApplyMatrix
-801f7dc0 000000b4 801f7dc0 0 salNormalizeVector
-801f7e74 00000024 801f7e74 0 inpSetGlobalMIDIDirtyFlag
-801f7e98 00000164 801f7e98 0 inpSetRPNHi
+801e70f8 0000004c 801e70f8 0 sndFXCheck 	musyx.a snd_synthapi.c
+801e7144 00000060 801e7144 0 sndVolume 	musyx.a snd_synthapi.c
+801e71a4 00000094 801e71a4 0 sndMasterVolume 	musyx.a snd_synthapi.c
+801e7238 000000ec 801e7238 0 sndOutputMode 	musyx.a snd_synthapi.c
+801e7324 00000158 801e7324 0 sndSetAuxProcessingCallbacks 	musyx.a snd_synthapi.c
+801e747c 000000c8 801e747c 0 streamInit 	musyx.a stream.c
+801e7544 000008e4 801e7544 0 streamHandle 	musyx.a stream.c
+801e7e28 00000004 801e7e28 0 streamCorrectLoops 	musyx.a stream.c
+801e7e2c 00000098 801e7e2c 0 streamKill 	musyx.a stream.c
+801e7ec4 00000130 801e7ec4 0 streamOutputModeChanged 	musyx.a stream.c
+801e7ff4 000001f0 801e7ff4 0 dataInsertKeymap 	musyx.a synthdata.c
+801e81e4 0000017c 801e81e4 0 dataRemoveKeymap 	musyx.a synthdata.c
+801e8360 00000248 801e8360 0 dataInsertLayer 	musyx.a synthdata.c
+801e85a8 000001c4 801e85a8 0 dataRemoveLayer 	musyx.a synthdata.c
+801e876c 00000204 801e876c 0 dataInsertCurve 	musyx.a synthdata.c
+801e8970 0000017c 801e8970 0 dataRemoveKeymap 	musyx.a synthdata.c
+801e8aec 00000168 801e8aec 0 dataInsertSDir 	musyx.a synthdata.c
+801e8c54 000001dc 801e8c54 0 dataRemoveSDir 	musyx.a synthdata.c
+801e8e30 000000d8 801e8e30 0 dataAddSampleReference 	musyx.a synthdata.c
+801e8f08 0000009c 801e8f08 0 dataRemoveSampleReference 	musyx.a synthdata.c
+801e8fa4 00000140 801e8fa4 0 dataInsertFX 	musyx.a synthdata.c
+801e90e4 000001cc 801e90e4 0 dataRemoveFX 	musyx.a synthdata.c
+801e92b0 000002ec 801e92b0 0 dataInsertMacro 	musyx.a synthdata.c
+801e959c 00000284 801e959c 0 dataRemoveMacro 	musyx.a synthdata.c
+801e9820 00000010 801e9820 0 maccmp 	musyx.a synthdata.c
+801e9830 0000008c 801e9830 0 dataGetMacro 	musyx.a synthdata.c
+801e98bc 00000010 801e98bc 0 smpcmp 	musyx.a synthdata.c
+801e98cc 00000130 801e98cc 0 dataGetSample 	musyx.a synthdata.c
+801e99fc 00000010 801e99fc 0 curvecmp 	musyx.a synthdata.c
+801e9a0c 0000005c 801e9a0c 0 dataGetCurve 	musyx.a synthdata.c
+801e9a68 0000005c 801e9a68 0 dataGetKeymap 	musyx.a synthdata.c
+801e9ac4 00000010 801e9ac4 0 layercmp 	musyx.a synthdata.c
+801e9ad4 0000007c 801e9ad4 0 dataGetLayer 	musyx.a synthdata.c
+801e9b50 00000010 801e9b50 0 fxcmp 	musyx.a synthdata.c
+801e9b60 0000009c 801e9b60 0 dataGetFX 	musyx.a synthdata.c
+801e9bfc 000000e4 801e9bfc 0 dataInit 	musyx.a synthdata.c
+801e9ce0 000002f0 801e9ce0 0 mcmdWait 	musyx.a synthmacros.c
+801e9fd0 000000d0 801e9fd0 0 mcmdGosub 	musyx.a synthmacros.c
+801ea0a0 00000154 801ea0a0 0 mcmdLoop 	musyx.a synthmacros.c
+801ea1f4 0000018c 801ea1f4 0 mcmdPlayMacro 	musyx.a synthmacros.c
+801ea380 000000d8 801ea380 0 mcmdAddKey 	musyx.a synthmacros.c
+801ea458 00000200 801ea458 0 mcmdStartSample 	musyx.a synthmacros.c
+801ea658 0000017c 801ea658 0 mcmdVibrato 	musyx.a synthmacros.c
+801ea7d4 000001a0 801ea7d4 0 DoSetPitch 	musyx.a synthmacros.c
+801ea974 00000258 801ea974 0 mcmdSetADSR 	musyx.a synthmacros.c
+801eabcc 0000012c 801eabcc 0 mcmdSetADSRFromCtrl 	musyx.a synthmacros.c
+801eacf8 0000027c 801eacf8 0 mcmdSetPitchADSR 	musyx.a synthmacros.c
+801eaf74 0000009c 801eaf74 0 mcmdSetPanning 	musyx.a synthmacros.c
+801eb010 0000009c 801eb010 0 mcmdSetSurroundPanning 	musyx.a synthmacros.c
+801eb0ac 00000134 801eb0ac 0 mcmdScaleVolume 	musyx.a synthmacros.c
+801eb1e0 00000130 801eb1e0 0 mcmdEnvelope 	musyx.a synthmacros.c
+801eb310 0000013c 801eb310 0 mcmdFadeIn 	musyx.a synthmacros.c
+801eb44c 0000019c 801eb44c 0 mcmdRandomKey 	musyx.a synthmacros.c
+801eb5e8 00000104 801eb5e8 0 mcmdVolumeSelect 	musyx.a synthmacros.c
+801eb6ec 00000104 801eb6ec 0 mcmdPanningSelect 	musyx.a synthmacros.c
+801eb7f0 00000104 801eb7f0 0 mcmdPitchWheelSelect 	musyx.a synthmacros.c
+801eb8f4 00000104 801eb8f4 0 mcmdModWheelSelect 	musyx.a synthmacros.c
+801eb9f8 00000104 801eb9f8 0 mcmdPedalSelect 	musyx.a synthmacros.c
+801ebafc 00000104 801ebafc 0 mcmdPortamentoSelect 	musyx.a synthmacros.c
+801ebc00 00000104 801ebc00 0 mcmdReverbSelect 	musyx.a synthmacros.c
+801ebd04 00000104 801ebd04 0 mcmdPreAuxASelect 	musyx.a synthmacros.c
+801ebe08 00000104 801ebe08 0 mcmdPreAuxBSelect 	musyx.a synthmacros.c
+801ebf0c 00000104 801ebf0c 0 mcmdPostAuxBSelect 	musyx.a synthmacros.c
+801ec010 00000104 801ec010 0 mcmdSurroundPanningSelect 	musyx.a synthmacros.c
+801ec114 00000104 801ec114 0 mcmdDopplerSelect 	musyx.a synthmacros.c
+801ec218 00000104 801ec218 0 mcmdTremoloSelect 	musyx.a synthmacros.c
+801ec31c 00000104 801ec31c 0 mcmdFilterSwitchSelect 	musyx.a synthmacros.c
+801ec420 00000104 801ec420 0 mcmdFilterParameterSelect 	musyx.a synthmacros.c
+801ec524 0000017c 801ec524 0 mcmdAuxAFXSelect 	musyx.a synthmacros.c
+801ec6a0 0000017c 801ec6a0 0 mcmdAuxAFXSelect 	musyx.a synthmacros.c
+801ec81c 00000164 801ec81c 0 mcmdPortamento 	musyx.a synthmacros.c
+801ec980 00000068 801ec980 0 varGet 	musyx.a synthmacros.c
+801ec9e8 00000220 801ec9e8 0 mcmdVarCalculation 	musyx.a synthmacros.c
+801ecc08 0000014c 801ecc08 0 mcmdIfVarCompare 	musyx.a synthmacros.c
+801ecd54 00000244 801ecd54 0 mcmdSendMessage 	musyx.a synthmacros.c
+801ecf98 00000080 801ecf98 0 mcmdGetVID 	musyx.a synthmacros.c
+801ed018 000000dc 801ed018 0 mcmdSetKeyGroup 	musyx.a synthmacros.c
+801ed0f4 00000f94 801ed0f4 0 macHandleActive 	musyx.a synthmacros.c
+801ee088 00000154 801ee088 0 macHandle 	musyx.a synthmacros.c
+801ee1dc 000000ac 801ee1dc 0 macSampleEndNotify 	musyx.a synthmacros.c
+801ee288 000000f0 801ee288 0 macSetExternalKeyoff 	musyx.a synthmacros.c
+801ee378 00000108 801ee378 0 macSetPedalState 	musyx.a synthmacros.c
+801ee480 000000a4 801ee480 0 TimeQueueAdd 	musyx.a synthmacros.c
+801ee524 00000108 801ee524 0 macMakeActive 	musyx.a synthmacros.c
+801ee62c 000000fc 801ee62c 0 macMakeInactive 	musyx.a synthmacros.c
+801ee728 00000438 801ee728 0 macStart 	musyx.a synthmacros.c
+801eeb60 00000068 801eeb60 0 macInit 	musyx.a synthmacros.c
+801eebc8 000000e0 801eebc8 0 vidInit 	musyx.a synthvoice.c
+801eeca8 00000368 801eeca8 0 vidRemoveVoiceReferences 	musyx.a synthvoice.c
+801ef010 00000014 801ef010 0 vidMakeRoot 	musyx.a synthvoice.c
+801ef024 00000114 801ef024 0 vidMakeNew 	musyx.a synthvoice.c
+801ef138 00000050 801ef138 0 vidGetInternalId 	musyx.a synthvoice.c
+801ef188 00000054 801ef188 0 vidGetPublicId 	musyx.a synthvoice.c
+801ef1dc 0000024c 801ef1dc 0 voiceSetPriority 	musyx.a synthvoice.c
+801ef428 00000388 801ef428 0 voiceAllocateFind 	musyx.a synthvoice.c
+801ef7b0 00000110 801ef7b0 0 voiceAllocate 	musyx.a synthvoice.c
+801ef8c0 00000078 801ef8c0 0 voiceAllocatePeek 	musyx.a synthvoice.c
+801ef938 000001c4 801ef938 0 voiceFree 	musyx.a synthvoice.c
+801efafc 000002a0 801efafc 0 synthInitAllocationAids 	musyx.a synthvoice.c
+801efd9c 00000218 801efd9c 0 voiceUnblock 	musyx.a synthvoice.c
+801effb4 00000234 801effb4 0 voiceKill 	musyx.a synthvoice.c
+801f01e8 000000c4 801f01e8 0 voiceKillSound 	musyx.a synthvoice.c
+801f02ac 0000015c 801f02ac 0 synthKillVoicesByMacroReferences 	musyx.a synthvoice.c
+801f0408 0000015c 801f0408 0 synthKillVoicesBySampleReferences 	musyx.a synthvoice.c
+801f0564 00000074 801f0564 0 voiceIsLastStarted 	musyx.a synthvoice.c
+801f05d8 00000054 801f05d8 0 voiceSetLastStarted 	musyx.a synthvoice.c
+801f062c 00000074 801f062c 0 voiceResetLastStarted 	musyx.a synthvoice.c
+801f06a0 00000144 801f06a0 0 voiceInitLastStarted 	musyx.a synthvoice.c
+801f07e4 0000003c 801f07e4 0 sndPitchUpOne 	musyx.a synth_ac.c
+801f0820 000000e4 801f0820 0 sndGetPitch 	musyx.a synth_ac.c
+801f0904 00000058 801f0904 0 adsrConvertTimeCents 	musyx.a synth_adsr.c
+801f095c 0000026c 801f095c 0 salChangeADSRState 	musyx.a synth_adsr.c
+801f0bc8 00000028 801f0bc8 0 adsrSetup 	musyx.a synth_adsr.c
+801f0bf0 00000150 801f0bf0 0 adsrStartRelease 	musyx.a synth_adsr.c
+801f0d40 00000168 801f0d40 0 adsrRelease 	musyx.a synth_adsr.c
+801f0ea8 00000198 801f0ea8 0 adsrHandle 	musyx.a synth_adsr.c
+801f1040 00000084 801f1040 0 adsrHandleLowPrecision 	musyx.a synth_adsr.c
+801f10c4 000000bc 801f10c4 0 vsInit 	musyx.a synth_vsamples.c
+801f1180 000002cc 801f1180 0 vsSampleStartNotify 	musyx.a synth_vsamples.c
+801f144c 000000a8 801f144c 0 vsSampleEndNotify 	musyx.a synth_vsamples.c
+801f14f4 00000358 801f14f4 0 vsUpdateBuffer 	musyx.a synth_vsamples.c
+801f184c 00000210 801f184c 0 vsSampleUpdates 	musyx.a synth_vsamples.c
+801f1a5c 00000040 801f1a5c 0 dataInitStack 	musyx.a s_data.c
+801f1a9c 0000028c 801f1a9c 0 InsertData 	musyx.a s_data.c
+801f1d28 0000034c 801f1d28 0 sndPushGroup 	musyx.a s_data.c
+801f2074 00000350 801f2074 0 sndPopGroup 	musyx.a s_data.c
+801f23c4 00000154 801f23c4 0 seqPlaySong 	musyx.a s_data.c
+801f2518 00000124 801f2518 0 sndSeqPlayEx 	musyx.a s_data.c
+801f263c 000003b4 801f263c 0 salInitDspCtrl 	musyx.a hw_dspctrl.c
+801f29f0 00000038 801f29f0 0 salInitHRTFBuffer 	musyx.a hw_dspctrl.c
+801f2a28 00000150 801f2a28 0 salActivateStudio 	musyx.a hw_dspctrl.c
+801f2b78 000000f4 801f2b78 0 salCheckVolErrorAndResetDelta 	musyx.a hw_dspctrl.c
+801f2c6c 00000048 801f2c6c 0 sal_setup_dspvol 	musyx.a hw_dspctrl.c
+801f2cb4 00000074 801f2cb4 0 sal_update_hostplayinfo 	musyx.a hw_dspctrl.c
+801f2d28 000000ac 801f2d28 0 DoDepopFade 	musyx.a hw_dspctrl.c
+801f2dd4 0000030c 801f2dd4 0 HandleDepopVoice 	musyx.a hw_dspctrl.c
+801f30e0 00000258 801f30e0 0 SortVoices 	musyx.a hw_dspctrl.c
+801f3338 000025f8 801f3338 0 salBuildCommandList 	musyx.a hw_dspctrl.c
+801f5930 00000044 801f5930 0 salSynthSendMessage 	musyx.a hw_dspctrl.c
+801f5974 000000a0 801f5974 0 salActivateVoice 	musyx.a hw_dspctrl.c
+801f5a14 00000060 801f5a14 0 salDeactivateVoice 	musyx.a hw_dspctrl.c
+801f5a74 00000158 801f5a74 0 salHandleAuxProcessing 	musyx.a hw_dspctrl.c
+801f5bcc 000006f0 801f5bcc 0 salCalcVolume 	musyx.a hw_volconv.c
+801f62bc 0000067c 801f62bc 0 CalcEmitter 	musyx.a snd3d.c
+801f6938 000000fc 801f6938 0 s3dKillEmitterByFXID 	musyx.a snd3d.c
+801f6a34 00000154 801f6a34 0 AddStartingEmitter 	musyx.a snd3d.c
+801f6b88 000008f4 801f6b88 0 StartContinousEmitters 	musyx.a snd3d.c
+801f747c 00000728 801f747c 0 s3dHandle 	musyx.a snd3d.c
+801f7ba4 00000038 801f7ba4 0 s3dInit 	musyx.a snd3d.c
+801f7bdc 00000138 801f7bdc 0 sndInit 	musyx.a snd_init.c
+801f7d14 000000ac 801f7d14 0 salApplyMatrix 	musyx.a snd_math.c
+801f7dc0 000000b4 801f7dc0 0 salNormalizeVector 	musyx.a snd_math.c
+801f7e74 00000024 801f7e74 0 inpSetGlobalMIDIDirtyFlag 	musyx.a snd_midictrl.c
+801f7e98 00000164 801f7e98 0 inpSetRPNHi 	musyx.a snd_midictrl.c
 801f7ffc 0000007c 801f7ffc 0 zz_801f7ffc_
-801f8078 00000184 801f8078 0 inpSetRPNDec
+801f8078 00000184 801f8078 0 inpSetRPNDec 	musyx.a snd_midictrl.c
 801f81fc 000000a0 801f81fc 0 zz_801f81fc_
-801f829c 00000184 801f829c 0 inpSetRPNDec
+801f829c 00000184 801f829c 0 inpSetRPNInc 	musyx.a snd_midictrl.c
 801f8420 000000a0 801f8420 0 zz_801f8420_
-801f84c0 0000051c 801f84c0 0 inpSetMidiCtrl
-801f89dc 00000124 801f89dc 0 inpSetMidiCtrl14
-801f8b00 000000f0 801f8b00 0 inpResetMidiCtrl
-801f8bf0 000002c4 801f8bf0 0 inpGetMidiCtrl
-801f8c24 00000028 801f8c24 0 zz_801f8c24_
-801f8c4c 00000128 801f8c4c 0 zz_801f8c4c_
-801f8d74 00000138 801f8d74 0 zz_801f8d74_
-801f8eb4 00000044 801f8eb4 0 inpGetChannelDefaults
-801f8ef8 0000005c 801f8ef8 0 inpResetChannelDefaults
-801f8f54 00000098 801f8f54 0 inpAddCtrl
-801f8fec 00000114 801f8fec 0 inpFXCopyCtrl
-801f9100 0000003c 801f9100 0 inpSetMidiLastNote
-801f913c 0000003c 801f913c 0 inpGetMidiLastNote
-801f9178 000004a0 801f9178 0 _GetInputValue
-801f9618 00000048 801f9618 0 inpGetVolume
-801f9660 00000048 801f9660 0 inpGetVolume
-801f96a8 00000048 801f96a8 0 inpGetVolume
-801f96f0 00000048 801f96f0 0 inpGetVolume
-801f9738 00000048 801f9738 0 inpGetVolume
-801f9780 00000048 801f9780 0 inpGetVolume
-801f97c8 00000048 801f97c8 0 inpGetVolume
-801f9810 00000048 801f9810 0 inpGetVolume
-801f9858 00000048 801f9858 0 inpGetVolume
-801f98a0 00000048 801f98a0 0 inpGetVolume
-801f98e8 00000048 801f98e8 0 inpGetVolume
-801f9930 00000048 801f9930 0 inpGetVolume
-801f9978 00000048 801f9978 0 inpGetVolume
-801f99c0 00000048 801f99c0 0 inpGetVolume
-801f9a08 000000b4 801f9a08 0 inpGetAuxA
-801f9abc 000000b4 801f9abc 0 inpGetAuxA
-801f9b70 000002c4 801f9b70 0 inpInit
-801f9e34 00000030 801f9e34 0 inpTranslateExCtrl
-801f9e64 00000008 801f9e64 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801f9e6c 00000008 801f9e6c 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801f9e74 00000008 801f9e74 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801f9e7c 00000008 801f9e7c 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801f9e84 00000008 801f9e84 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801f9e8c 00000008 801f9e8c 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801f9e94 00000008 801f9e94 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801f9e9c 00000008 801f9e9c 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801f9ea4 000000fc 801f9ea4 0 inpGetExCtrl
-801f9fa0 000001e4 801f9fa0 0 inpSetExCtrl
-801fa184 0000001c 801fa184 0 sndRand
-801fa1a0 0000008c 801fa1a0 0 sndSin
-801fa22c 000000a4 801fa22c 0 sndBSearch
-801fa2d0 00000054 801fa2d0 0 sndSqrt
-801fa324 000000d4 801fa324 0 sndCos
-801fa3f8 00000010 801fa3f8 0 dGeomDisable
-801fa408 00000048 801fa408 0 sndConvertTicks
-801fa450 00000008 801fa450 0 __RAS_OSDisableInterrupts_end (entry of OSDisableInterrupts) 	os.a OSInterrupt.o
-801fa458 00000154 801fa458 0 snd_handle_irq
-801fa5ac 000000c4 801fa5ac 0 hwInit
-801fa670 00000008 801fa670 0 bta_sys_set_trace_level 	bte.a bta_sys_main.o
-801fa678 00000008 801fa678 0 WPADGetDpdSensitivity 	wpad.a WPAD.o
-801fa680 00000020 801fa680 0 hwIsActive
-801fa6a0 00000008 801fa6a0 0 IPCSetBufferLo 	ipc.a ipcMain.o
-801fa6a8 00000014 801fa6a8 0 hwSetPriority
-801fa6bc 000001b4 801fa6bc 0 hwInitSamplePlayback
-801fa870 00000050 801fa870 0 hwBreak
-801fa8c0 000001ac 801fa8c0 0 hwSetADSR
-801faa6c 00000020 801faa6c 0 hwSetVirtualSampleLoopBuffer
-801faa8c 00000014 801faa8c 0 hwGetVirtualSampleState
-801faaa0 00000014 801faaa0 0 hwGetVirtualSampleState
-801faab4 00000014 801faab4 0 hwGetSampleID
-801faac8 00000014 801faac8 0 hwGetSampleExtraData
-801faadc 00000014 801faadc 0 hwSetStreamLoopPS
-801faaf0 0000003c 801faaf0 0 hwStart
-801fab2c 00000028 801fab2c 0 hwKeyOff
-801fab54 00000078 801fab54 0 hwSetPitch
-801fabcc 0000002c 801fabcc 0 hwSetSRCType
-801fabf8 0000002c 801fabf8 0 hwSetSRCType
-801fac24 000000f8 801fac24 0 hwLowPassFrqToCoef
-801fac40 000000dc 801fac40 0 zz_801fac40_
-801fad1c 00000080 801fad1c 0 hwSetFilter
-801fad9c 0000005c 801fad9c 0 hwSetITDMode
-801fadf8 000002c0 801fadf8 0 hwSetVolume
-801fb0b8 00000028 801fb0b8 0 hwSetAUXProcessingCallbacks
-801fb0e0 000000ac 801fb0e0 0 hwGetPos
-801fb118 00000074 801fb118 0 zz_801fb118_
-801fb18c 00000090 801fb18c 0 hwFlushStream
-801fb21c 00000024 801fb21c 0 cFielder::EndAction(void)
-801fb240 00000004 801fb240 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801fb244 0000005c 801fb244 0 hwFrq2Pitch
-801fb2a0 00000024 801fb2a0 0 ListContainerBase<P6cSAnim,33NewAdapter<19ListEntry<P6cSAnim>>>::DeleteEntry(ListEntry<P6cSAnim> *)
-801fb2c4 00000098 801fb2c4 0 hwSaveSample
-801fb35c 00000088 801fb35c 0 hwRemoveSample
-801fb3e4 00000020 801fb3e4 0 cPlayer::PostPhysicsUpdate(void)
-801fb404 00000004 801fb404 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801fb408 0000001c 801fb408 0 sndSetHooks
-801fb424 0000000c 801fb424 0 FEAudio::ResetRandomVoiceToggleSFX(void)
-801fb430 0000000c 801fb430 0 FEAudio::ResetRandomVoiceToggleSFX(void)
-801fb43c 00000028 801fb43c 0 hwGetVirtualSampleID
-801fb464 00000020 801fb464 0 hwVoiceInStartup
-801fb484 000000a0 801fb484 0 aramQueueCallback
-801fb524 000001dc 801fb524 0 aramUploadData
-801fb648 000000b8 801fb648 0 zz_801fb648_
-801fb700 00000018 801fb700 0 aramSyncTransferQueue
-801fb718 000002e4 801fb718 0 aramInit
-801fb9fc 00000020 801fb9fc 0 cPlayer::PostPhysicsUpdate(void)
-801fba1c 00000024 801fba1c 0 aramGetFirstUserAddress
-801fba40 00000008 801fba40 0 J3DTexGenBlock4::getNBTScale(void) 	J3DGraphBase.a J3DMatBlock.o
-801fba48 00000424 801fba48 0 aramStoreData
-801fba58 00000414 801fba58 0 zz_801fba58_
-801fbe6c 00000018 801fbe6c 0 aramRemoveData
-801fbe84 000000c4 801fbe84 0 InitStreamBuffers
-801fbf48 00000038 801fbf48 0 aramGetStreamBufferAddress
-801fbf80 000000a8 801fbf80 0 salCallback
-801fc028 00000010 801fc028 0 LooseBallAnims::Destroy(void)
-801fc038 00000064 801fc038 0 dspResumeCallback
+801f84c0 0000051c 801f84c0 0 inpSetMidiCtrl 	musyx.a snd_midictrl.c
+801f89dc 00000124 801f89dc 0 inpSetMidiCtrl14 	musyx.a snd_midictrl.c
+801f8b00 000000f0 801f8b00 0 inpResetMidiCtrl 	musyx.a snd_midictrl.c
+801f8bf0 000002c4 801f8bf0 0 inpGetMidiCtrl 	musyx.a snd_midictrl.c
+801f8eb4 00000044 801f8eb4 0 inpGetChannelDefaults 	musyx.a snd_midictrl.c
+801f8ef8 0000005c 801f8ef8 0 inpResetChannelDefaults 	musyx.a snd_midictrl.c
+801f8f54 00000098 801f8f54 0 inpAddCtrl 	musyx.a snd_midictrl.c
+801f8fec 00000114 801f8fec 0 inpFXCopyCtrl 	musyx.a snd_midictrl.c
+801f9100 0000003c 801f9100 0 inpSetMidiLastNote 	musyx.a snd_midictrl.c
+801f913c 0000003c 801f913c 0 inpGetMidiLastNote 	musyx.a snd_midictrl.c
+801f9178 000004a0 801f9178 0 _GetInputValue 	musyx.a snd_midictrl.c
+801f9618 00000048 801f9618 0 inpGetVolume 	musyx.a snd_midictrl.c
+801f9660 00000048 801f9660 0 inpGetPanning 	musyx.a snd_midictrl.c
+801f96a8 00000048 801f96a8 0 inpGetSurPanning 	musyx.a snd_midictrl.c
+801f96f0 00000048 801f96f0 0 inpGetPitchBend 	musyx.a snd_midictrl.c
+801f9738 00000048 801f9738 0 inpGetDoppler 	musyx.a snd_midictrl.c
+801f9780 00000048 801f9780 0 inpGetModulation 	musyx.a snd_midictrl.c
+801f97c8 00000048 801f97c8 0 inpGetPedal 	musyx.a snd_midictrl.c
+801f9810 00000048 801f9810 0 inpGetPreAuxA 	musyx.a snd_midictrl.c
+801f9858 00000048 801f9858 0 inpGetReverb 	musyx.a snd_midictrl.c
+801f98a0 00000048 801f98a0 0 inpGetPreAuxB 	musyx.a snd_midictrl.c
+801f98e8 00000048 801f98e8 0 inpGetPostAuxB 	musyx.a snd_midictrl.c
+801f9930 00000048 801f9930 0 inpGetTremolo 	musyx.a snd_midictrl.c
+801f9978 00000048 801f9978 0 inpGetFilterSwitch 	musyx.a snd_midictrl.c
+801f99c0 00000048 801f99c0 0 inpGetFilterParameter 	musyx.a snd_midictrl.c
+801f9a08 000000b4 801f9a08 0 inpGetAuxA 	musyx.a snd_midictrl.c
+801f9abc 000000b4 801f9abc 0 inpGetAuxB 	musyx.a snd_midictrl.c
+801f9b70 000002c4 801f9b70 0 inpInit 	musyx.a snd_midictrl.c
+801f9e34 00000070 801f9e34 0 inpTranslateExCtrl 	musyx.a snd_midictrl.c
+801f9ea4 000000fc 801f9ea4 0 inpGetExCtrl 	musyx.a snd_midictrl.c
+801f9fa0 000001e4 801f9fa0 0 inpSetExCtrl 	musyx.a snd_midictrl.c
+801fa184 0000001c 801fa184 0 sndRand 	musyx.a snd_service.c
+801fa1a0 0000008c 801fa1a0 0 sndSin 	musyx.a snd_service.c
+801fa22c 000000a4 801fa22c 0 sndBSearch 	musyx.a snd_service.c
+801fa2d0 00000054 801fa2d0 0 sndSqrt 	musyx.a snd_service.c
+801fa324 000000d4 801fa324 0 sndCos 	musyx.a snd_service.c
+801fa3f8 00000010 801fa3f8 0 sndConvertMs 	musyx.a snd_service.c
+801fa408 00000048 801fa408 0 sndConvertTicks 	musyx.a snd_service.c
+801fa450 00000008 801fa450 0 sndConvert2Ms 	musyx.a snd_service.c
+801fa458 00000154 801fa458 0 snd_handle_irq 	musyx.a HARDWARE.C
+801fa5ac 000000c4 801fa5ac 0 hwInit 	musyx.a HARDWARE.C
+801fa670 00000008 801fa670 0 hwSetTimeOffset 	musyx.a HARDWARE.C
+801fa678 00000008 801fa678 0 hwGetTimeOffset 	musyx.a HARDWARE.C
+801fa680 00000020 801fa680 0 hwIsActive 	musyx.a HARDWARE.C
+801fa6a0 00000008 801fa6a0 0 hwSetMesgCallback 	musyx.a HARDWARE.C
+801fa6a8 00000014 801fa6a8 0 hwSetPriority 	musyx.a HARDWARE.C
+801fa6bc 000001b4 801fa6bc 0 hwInitSamplePlayback 	musyx.a HARDWARE.C
+801fa870 00000050 801fa870 0 hwBreak 	musyx.a HARDWARE.C
+801fa8c0 000001ac 801fa8c0 0 hwSetADSR 	musyx.a HARDWARE.C
+801faa6c 00000020 801faa6c 0 hwSetVirtualSampleLoopBuffer 	musyx.a HARDWARE.C
+801faa8c 00000014 801faa8c 0 hwGetVirtualSampleState 	musyx.a HARDWARE.C
+801faaa0 00000014 801faaa0 0 hwGetSampleType 	musyx.a HARDWARE.C
+801faab4 00000014 801faab4 0 hwGetSampleID 	musyx.a HARDWARE.C
+801faac8 00000014 801faac8 0 hwGetSampleExtraData 	musyx.a HARDWARE.C
+801faadc 00000014 801faadc 0 hwSetStreamLoopPS 	musyx.a HARDWARE.C
+801faaf0 0000003c 801faaf0 0 hwStart 	musyx.a HARDWARE.C
+801fab2c 00000028 801fab2c 0 hwKeyOff 	musyx.a HARDWARE.C
+801fab54 00000078 801fab54 0 hwSetPitch 	musyx.a HARDWARE.C
+801fabcc 0000002c 801fabcc 0 hwSetSRCType 	musyx.a HARDWARE.C
+801fabf8 0000002c 801fabf8 0 hwSetSRCType 	musyx.a HARDWARE.C
+801fac24 000000f8 801fac24 0 hwLowPassFrqToCoef 	musyx.a HARDWARE.C
+801fad1c 00000080 801fad1c 0 hwSetFilter 	musyx.a HARDWARE.C
+801fad9c 0000005c 801fad9c 0 hwSetITDMode 	musyx.a HARDWARE.C
+801fadf8 000002c0 801fadf8 0 hwSetVolume 	musyx.a HARDWARE.C
+801fb0b8 00000028 801fb0b8 0 hwSetAUXProcessingCallbacks 	musyx.a HARDWARE.C
+801fb0e0 000000ac 801fb0e0 0 hwGetPos 	musyx.a HARDWARE.C
+801fb18c 00000090 801fb18c 0 hwFlushStream 	musyx.a HARDWARE.C
+801fb21c 00000024 801fb21c 0 hwGetStreamPlayBuffer 	musyx.a HARDWARE.C
+801fb240 00000004 801fb240 0 hwTransAddr 	musyx.a HARDWARE.C
+801fb244 0000005c 801fb244 0 hwFrq2Pitch 	musyx.a HARDWARE.C
+801fb2a0 00000024 801fb2a0 0 hwInitSampleMem 	musyx.a HARDWARE.C
+801fb2c4 00000098 801fb2c4 0 hwSaveSample 	musyx.a HARDWARE.C
+801fb35c 00000088 801fb35c 0 hwRemoveSample 	musyx.a HARDWARE.C
+801fb3e4 00000020 801fb3e4 0 hwSyncSampleMem 	musyx.a HARDWARE.C
+801fb404 00000004 801fb404 0 hwFrameDone 	musyx.a HARDWARE.C
+801fb408 0000001c 801fb408 0 sndSetHooks 	musyx.a HARDWARE.C
+801fb424 0000000c 801fb424 0 hwDisableHRTF 	musyx.a HARDWARE.C
+801fb430 0000000c 801fb430 0 hwEnableCompressor 	musyx.a HARDWARE.C
+801fb43c 00000028 801fb43c 0 hwGetVirtualSampleID 	musyx.a HARDWARE.C
+801fb464 00000020 801fb464 0 hwVoiceInStartup 	musyx.a HARDWARE.C
+801fb484 000000a0 801fb484 0 aramQueueCallback 	musyx.a hw_aramdma.c
+801fb524 000001dc 801fb524 0 aramUploadData 	musyx.a hw_aramdma.c
+801fb700 00000018 801fb700 0 aramSyncTransferQueue 	musyx.a hw_aramdma.c
+801fb718 000002e4 801fb718 0 aramInit 	musyx.a hw_aramdma.c
+801fb9fc 00000020 801fb9fc 0 aramGetZeroBuffer 	musyx.a hw_aramdma.c
+801fba1c 00000024 801fba1c 0 aramGetFirstUserAddress 	musyx.a hw_aramdma.c
+801fba40 00000008 801fba40 0 zz_801fba40_
+801fba48 00000424 801fba48 0 aramStoreData 	musyx.a hw_aramdma.c
+801fbe6c 00000018 801fbe6c 0 aramRemoveData 	musyx.a hw_aramdma.c
+801fbe84 000000c4 801fbe84 0 InitStreamBuffers 	musyx.a hw_aramdma.c
+801fbf48 00000038 801fbf48 0 aramGetStreamBufferAddress 	musyx.a hw_aramdma.c
+801fbf80 000000a8 801fbf80 0 salCallback 	musyx.a hw_dolphin.c
+801fc028 00000010 801fc028 0 dspInitCallback 	musyx.a hw_dolphin.c
+801fc038 00000064 801fc038 0 dspResumeCallback 	musyx.a hw_dolphin.c
 801fc09c 00000024 801fc09c 0 nlVirtualTotalFree(void)
-801fc0c0 000000c8 801fc0c0 0 salInitAi
-801fc188 00000020 801fc188 0 cPlayer::PostPhysicsUpdate(void)
-801fc1a8 00000030 801fc1a8 0 salAiGetDest
-801fc1d8 000000d4 801fc1d8 0 salInitDsp
-801fc2ac 00000074 801fc2ac 0 salCtrlDsp
-801fc320 0000004c 801fc320 0 salGetStartDelay
-801fc36c 0000002c 801fc36c 0 hwInitIrq
-801fc398 00000038 801fc398 0 hwEnableIrq
-801fc3d0 00000038 801fc3d0 0 hwDisableIrq
-801fc408 00000020 801fc408 0 cPlayer::PostPhysicsUpdate(void)
-801fc428 00000020 801fc428 0 cPlayer::PostPhysicsUpdate(void)
-801fc448 0000002c 801fc448 0 salMalloc
+801fc0c0 000000c8 801fc0c0 0 salInitAi 	musyx.a hw_dolphin.c
+801fc188 00000020 801fc188 0 salStartAi 	musyx.a hw_dolphin.c
+801fc1a8 00000030 801fc1a8 0 salAiGetDest 	musyx.a hw_dolphin.c
+801fc1d8 000000d4 801fc1d8 0 salInitDsp 	musyx.a hw_dolphin.c
+801fc2ac 00000074 801fc2ac 0 salCtrlDsp 	musyx.a hw_dolphin.c
+801fc320 0000004c 801fc320 0 salGetStartDelay 	musyx.a hw_dolphin.c
+801fc36c 0000002c 801fc36c 0 hwInitIrq 	musyx.a hw_dolphin.c
+801fc398 00000038 801fc398 0 hwEnableIrq 	musyx.a hw_dolphin.c
+801fc3d0 00000038 801fc3d0 0 hwDisableIrq 	musyx.a hw_dolphin.c
+801fc408 00000020 801fc408 0 hwIRQEnterCritical 	musyx.a hw_dolphin.c
+801fc428 00000020 801fc428 0 hwIRQLeaveCritical 	musyx.a hw_dolphin.c
+801fc448 0000002c 801fc448 0 salMalloc 	musyx.a hw_memory.c
 801fc474 00000030 801fc474 0 salMallocPhysical
 801fc4a4 00000030 801fc4a4 0 salMallocPhysical
 801fc4d4 0000005c 801fc4d4 0 sndAuxCallbackReverbSTD
-801fc520 00000010 801fc520 0 zz_801fc520_
-801fc530 00000058 801fc530 0 sndAuxCallbackUpdateSettingsReverbHI
-801fc588 00000040 801fc588 0 sndAuxCallbackPrepareReverbHI
+801fc530 00000058 801fc530 0 sndAuxCallbackUpdateSettingsReverbHI musyx.a reverb_fx.c
+801fc588 00000040 801fc588 0 sndAuxCallbackPrepareReverbHI 	musyx.a reverb_fx.c
 801fc5c8 00000520 801fc5c8 0 zz_801fc5c8_
-801fc690 00000458 801fc690 0 zz_801fc690_
 801fcae8 000001e4 801fcae8 0 zz_801fcae8_
-801fcccc 00000184 801fcccc 0 DoCrossTalk
-801fce50 0000050c 801fce50 0 zz_801fce50_
-801fd35c 000000e0 801fd35c 0 ReverbHICallback
-801fd43c 00000168 801fd43c 0 sndAuxCallbackDelay
-801fd5a4 000001d0 801fd5a4 0 sndAuxCallbackUpdateSettingsDelay
-801fd774 00000028 801fd774 0 sndAuxCallbackPrepareDelay
-801fd79c 0000004c 801fd79c 0 sndAuxCallbackShutdownDelay
+801fcccc 00000184 801fcccc 0 DoCrossTalk 	musyx.a reverb.c
+801fce50 0000050c 801fce50 0 HandleReverb 	musyx.a reverb.c
+801fd35c 000000e0 801fd35c 0 ReverbHICallback 	musyx.a reverb.c
+801fd43c 00000168 801fd43c 0 sndAuxCallbackDelay 	musyx.a delay_fx.c
+801fd5a4 000001d0 801fd5a4 0 sndAuxCallbackUpdateSettingsDelay 	musyx.a delay_fx.c
+801fd774 00000028 801fd774 0 sndAuxCallbackPrepareDelay 	musyx.a delay_fx.c
+801fd79c 0000004c 801fd79c 0 sndAuxCallbackShutdownDelay 	musyx.a delay_fx.c
 
 .data section layout
