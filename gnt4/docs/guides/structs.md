@@ -27,7 +27,7 @@ The absolute positions of these structs can be found at the locations listed bel
 - 0x6F: **Facing Opponent**
   - A signed short representing the degree to which you are facing the opponent. 0 is directly facing the opponent, −32,767 is directly facing away from your opponent.
 - 0x77: **Vertical Speed**
-- 0x7a: **Horizontal Air Speed**
+- 0x7A: **Horizontal Air Speed**
 - 0x8E: **Idle Counter Difference**
   - The amount to add to the **Idle Counter** every frame.
 - 0x78: **Gravitational Constant**
