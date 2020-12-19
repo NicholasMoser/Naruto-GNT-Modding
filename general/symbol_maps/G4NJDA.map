@@ -4513,57 +4513,54 @@
 8019a770 0000013c 8019a770 0 SIGetTypeAsync 	si.a SIBios.c
 8019a8ac 000000e4 8019a8ac 0 SISetSamplingRate 	si.a SISamplingRate.c
 8019a990 00000024 8019a990 0 SIRefreshSamplingRate 	si.a SISamplingRate.c
-8019a9b4 00000374 8019a9b4 0 HSD_start
-8019ad28 0000015c 8019ad28 0 zz_8019ad28_
-8019ae84 00000164 8019ae84 0 zz_8019ae84_
-8019afe8 0000013c 8019afe8 0 zz_8019afe8_
-8019b124 000002f8 8019b124 0 zz_8019b124_
-8019b41c 000000f8 8019b41c 0 zz_8019b41c_
-8019b514 00000064 8019b514 0 zz_8019b514_
-8019b578 0000010c 8019b578 0 zz_8019b578_
-8019b684 000000d8 8019b684 0 zz_8019b684_
-8019b75c 000000fc 8019b75c 0 zz_8019b75c_
-8019b858 000000f8 8019b858 0 zz_8019b858_
-8019b950 000000dc 8019b950 0 zz_8019b950_
-8019ba2c 00000068 8019ba2c 0 zz_8019ba2c_
-8019ba94 0000005c 8019ba94 0 zz_8019ba94_
-8019baf0 0000010c 8019baf0 0 zz_8019baf0_
-8019bbfc 00000114 8019bbfc 0 zz_8019bbfc_
-8019bd10 0000008c 8019bd10 0 zz_8019bd10_
-8019bd9c 0000008c 8019bd9c 0 zz_8019bd9c_
-8019be28 00000170 8019be28 0 zz_8019be28_
-8019bf98 00000038 8019bf98 0 zz_8019bf98_
-8019bfd0 00000030 8019bfd0 0 zz_8019bfd0_
-8019c000 00000294 8019c000 0 zz_8019c000_
-8019c294 00000270 8019c294 0 zz_8019c294_
-8019c504 000001a8 8019c504 0 zz_8019c504_
-8019c6ac 00000144 8019c6ac 0 zz_8019c6ac_
-8019c7f0 00002f30 8019c7f0 0 zz_8019c7f0_
-8019f5a4 0000017c 8019f5a4 0 zz_8019f5a4_
-8019f720 000000b0 8019f720 0 zz_8019f720_
-8019f7d0 000000b0 8019f7d0 0 zz_8019f7d0_
-8019f880 000000b0 8019f880 0 zz_8019f880_
-8019f930 00000070 8019f930 0 zz_8019f930_
-8019f9a0 00000058 8019f9a0 0 zz_8019f9a0_
-8019f9f8 00000020 8019f9f8 0 cPlayer::PostPhysicsUpdate(void)
-8019fa18 00000064 8019fa18 0 zz_8019fa18_
-8019fa7c 00000008 8019fa7c 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-8019fa84 000000d8 8019fa84 0 zz_8019fa84_
-8019fb5c 00000028 8019fb5c 0 zz_8019fb5c_
-8019fb84 00000098 8019fb84 0 zz_8019fb84_
-8019fc1c 00000058 8019fc1c 0 zz_8019fc1c_
-8019fc74 000001bc 8019fc74 0 zz_8019fc74_
-8019fe30 00000188 8019fe30 0 zz_8019fe30_
-8019ffb8 000001f0 8019ffb8 0 zz_8019ffb8_
-801a01a8 000002dc 801a01a8 0 zz_801a01a8_
-801a0484 00001270 801a0484 0 zz_801a0484_
-801a151c 000001d8 801a151c 0 zz_801a151c_
-801a16f4 000003a0 801a16f4 0 zz_801a16f4_
-801a1a94 000000ac 801a1a94 0 zz_801a1a94_
-801a1b40 00000730 801a1b40 0 zz_801a1b40_
-801a21f8 00000078 801a21f8 0 zz_801a21f8_
-801a2270 000000bc 801a2270 0 zz_801a2270_
-801a232c 000000ec 801a232c 0 zz_801a232c_
+8019a9b4 00000374 8019a9b4 0 psInitDataBankLocate 	hsdparticle.a particle.c
+8019ad28 0000015c 8019ad28 0 psInitDataBank 	hsdparticle.a particle.c
+8019ae84 00000164 8019ae84 0 psInitParticle 	hsdparticle.a particle.c
+8019afe8 0000013c 8019afe8 0 psRemoveParticle hsdparticle.a particle.c
+8019b124 000002f8 8019b124 0 psGenerateParticle0 	hsdparticle.a particle.c
+8019b41c 000000f8 8019b41c 0 psGenerateParticleID0 	hsdparticle.a particle.c
+8019b514 00000064 8019b514 0 psGenerateParticle 	hsdparticle.a particle.c
+8019b578 0000010c 8019b578 0 psGenerateParticleID hsdparticle.a particle.c
+8019b684 000000d8 8019b684 0 psKillParticle hsdparticle.a particle.c
+8019b75c 000000fc 8019b75c 0 psKillAllParticle hsdparticle.a particle.c
+8019b858 000000f8 8019b858 0 psSetPointJObj 	hsdparticle.a particle.c
+8019b950 000000dc 8019b950 0 psSetPointJObjNodup hsdparticle.a particle.c
+8019ba2c 00000068 8019ba2c 0 psClearPointJObj hsdparticle.a particle.c
+8019ba94 0000005c 8019ba94 0 psDeletePntJObjwithParticle 	hsdparticle.a particle.c
+8019baf0 0000010c 8019baf0 0 psKillFamily hsdparticle.a particle.c
+8019bbfc 00000114 8019bbfc 0 psKillGeneratorChild 	hsdparticle.a particle.c
+8019bd10 0000008c 8019bd10 0 psPauseFamily hsdparticle.a particle.c
+8019bd9c 0000008c 8019bd9c 0 psRestartFamily hsdparticle.a particle.c
+8019be28 00000170 8019be28 0 genPosUpdate 	hsdparticle.a psinterpret.c
+8019bf98 00000038 8019bf98 0 getFloat 	hsdparticle.a psinterpret.c
+8019bfd0 00000030 8019bfd0 0 getTime 	hsdparticle.a psinterpret.c
+8019c000 00000294 8019c000 0 modifyDirGenBase 	hsdparticle.a psinterpret.c
+8019c294 00000270 8019c294 0 modifyDir 	hsdparticle.a psinterpret.c
+8019c504 000001a8 8019c504 0 setVelToJObj 	hsdparticle.a psinterpret.c
+8019c6ac 00000144 8019c6ac 0 applyForceJObj 	hsdparticle.a psinterpret.c
+8019c7f0 00002f30 8019c7f0 0 psInterpretParticle0 	hsdparticle.a psinterpret.c
+8019f720 000000b0 8019f720 0 HSD_JObjAddTz 	hsdparticle.a psinterpret.c
+8019f7d0 000000b0 8019f7d0 0 HSD_JObjAddTy 	hsdparticle.a psinterpret.c
+8019f880 000000b0 8019f880 0 HSD_JObjAddTx 	hsdparticle.a psinterpret.c
+8019f930 00000070 8019f930 0 HSD_JObjSetupMatrix 	hsdparticle.a psinterpret.c
+8019f9a0 00000058 8019f9a0 0 U8ClampAdd 	hsdparticle.a psinterpret.c
+8019f9f8 00000020 8019f9f8 0 HSD_MTXSRT 	hsdparticle.a psinterpret.c
+8019fa18 00000064 8019fa18 0 setJObj 	hsdparticle.a psinterpret.c
+8019fa7c 00000008 8019fa7c 0 _psListGetNext 	hsdparticle.a psinterpret.c
+8019fa84 000000d8 8019fa84 0 psInterpretParticles 	hsdparticle.a psinterpret.c
+8019fb5c 00000028 8019fb5c 0 psGetNewIDNum 	hsdparticle.a generator.c
+8019fb84 00000098 8019fb84 0 psInitGenerator 	hsdparticle.a generator.c
+8019fc1c 00000058 8019fc1c 0 psRemoveGenerator hsdparticle.a generator.c
+8019fc74 000001bc 8019fc74 0 psKillGenerator hsdparticle.a generator.c
+8019fe30 00000188 8019fe30 0 psKillGeneratorID hsdparticle.a generator.c
+8019ffb8 000001f0 8019ffb8 0 psKillAllGenerator hsdparticle.a generator.c
+801a01a8 000002dc 801a01a8 0 fixGeneratorJObj 	hsdparticle.a generator.c
+801a0484 00001270 801a0484 0 generateParticle 	hsdparticle.a generator.c
+801a16f4 000003a0 801a16f4 0 psExecGenerator 	hsdparticle.a generator.c
+801a1a94 000000ac 801a1a94 0 psCreateGeneratorIDJObjD 	hsdparticle.a generator.c
+801a1b40 00000730 801a1b40 0 psCreateGeneratorID 	hsdparticle.a generator.c
+801a2270 000000bc 801a2270 0 psCreateGeneratorIDJObjS hsdparticle.a generator.c
+801a232c 000000ec 801a232c 0 psSetBillboardCamera 	hsdparticle.a generator.c
 801a2418 00000e84 801a2418 0 zz_801a2418_
 801a27b4 00000ae8 801a27b4 0 zz_801a27b4_
 801a329c 00000700 801a329c 0 zz_801a329c_
@@ -4579,25 +4576,24 @@
 801a5b10 0000041c 801a5b10 0 zz_801a5b10_
 801a5f2c 00000274 801a5f2c 0 zz_801a5f2c_
 801a6108 00000098 801a6108 0 zz_801a6108_
-801a61a0 00000130 801a61a0 0 zz_801a61a0_
-801a62d0 0000000c 801a62d0 0 FEAudio::ResetRandomVoiceToggleSFX(void)
-801a62dc 000006d8 801a62dc 0 zz_801a62dc_
-801a65a4 00000410 801a65a4 0 zz_801a65a4_
-801a69b4 000000a0 801a69b4 0 zz_801a69b4_
-801a6a54 00000048 801a6a54 0 zz_801a6a54_
-801a6a9c 000000f8 801a6a9c 0 zz_801a6a9c_
-801a6b94 0000003c 801a6b94 0 zz_801a6b94_
-801a6bd0 0000003c 801a6bd0 0 zz_801a6bd0_
-801a6c0c 0000006c 801a6c0c 0 zz_801a6c0c_
-801a6c78 0000006c 801a6c78 0 zz_801a6c78_
-801a6ce4 000000a0 801a6ce4 0 zz_801a6ce4_
-801a6d84 000000b8 801a6d84 0 zz_801a6d84_
-801a6e3c 0000010c 801a6e3c 0 zz_801a6e3c_
-801a6f48 000000a8 801a6f48 0 zz_801a6f48_
-801a6ff0 000000dc 801a6ff0 0 zz_801a6ff0_
-801a70cc 000000dc 801a70cc 0 zz_801a70cc_
-801a71a8 0000006c 801a71a8 0 zz_801a71a8_
-801a7214 00000338 801a7214 0 zz_801a7214_
+801a61a0 00000130 801a61a0 0 psSetupTevCommon 	hsdparticle.a psdisptev.c
+801a62d0 0000000c 801a62d0 0 psSetupTevInvalidState 	hsdparticle.a psdisptev.c
+801a62dc 000006d8 801a62dc 0 psSetupTev 	hsdparticle.a psdisptev.c
+801a69b4 000000a0 801a69b4 0 psInitAppSRT 	hsdparticle.a psappsrt.c
+801a6a54 00000048 801a6a54 0 psRemoveAppSRT hsdparticle.a psappsrt.c
+801a6a9c 000000f8 801a6a9c 0 psAddGeneratorAppSRT 	hsdparticle.a psappsrt.c
+801a6b94 0000003c 801a6b94 0 psAttachParticleAppSRT 	hsdparticle.a psappsrt.c
+801a6bd0 0000003c 801a6bd0 0 psAttachGeneratorAppSRT 	hsdparticle.a psappsrt.c
+801a6c0c 0000006c 801a6c0c 0 psChangeParticleAppSRT 	hsdparticle.a psappsrt.c
+801a6c78 0000006c 801a6c78 0 psChangeGeneratorAppSRT 	hsdparticle.a psappsrt.c
+801a6ce4 000000a0 801a6ce4 0 psRemoveParticleAppSRT 	hsdparticle.a psappsrt.c
+801a6d84 000000b8 801a6d84 0 psRemoveGeneratorAppSRT 	hsdparticle.a psappsrt.c
+801a6e3c 0000010c 801a6e3c 0 _psLinkInit 	hsdparticle.a pslist.c
+801a6f48 000000a8 801a6f48 0 _psListClear hsdparticle.a pslist.c
+801a6ff0 000000dc 801a6ff0 0 _psListNew 	hsdparticle.a pslist.c
+801a70cc 000000dc 801a70cc 0 _psListDelete 	hsdparticle.a pslist.c
+801a71a8 0000006c 801a71a8 0 _psListGetFirst 	hsdparticle.a pslist.c
+801a7214 00000338 801a7214 0 particleSort 	hsdparticle.a pslist.c
 801a754c 0000005c 801a754c 0 zz_801a754c_
 801a75a8 00000028 801a75a8 0 zz_801a75a8_
 801a75d0 00000034 801a75d0 0 zz_801a75d0_
@@ -4607,21 +4603,21 @@
 801a79f0 00000028 801a79f0 0 zz_801a79f0_
 801a7a18 00000028 801a7a18 0 zz_801a7a18_
 801a7a40 0000005c 801a7a40 0 zz_801a7a40_
-801a7a9c 00000008 801a7a9c 0 IPCSetBufferLo 	ipc.a ipcMain.o
-801a7aa4 00000018 801a7aa4 0 zz_801a7aa4_
-801a7abc 00000018 801a7abc 0 zz_801a7abc_
-801a7ad4 000000b0 801a7ad4 0 zz_801a7ad4_
-801a7b84 00000080 801a7b84 0 zz_801a7b84_
-801a7c04 0000006c 801a7c04 0 zz_801a7c04_
-801a7c70 00000110 801a7c70 0 zz_801a7c70_
-801a7d80 00000098 801a7d80 0 zz_801a7d80_
-801a7e18 00000074 801a7e18 0 zz_801a7e18_
-801a7e8c 0000005c 801a7e8c 0 zz_801a7e8c_
-801a7ee8 0000006c 801a7ee8 0 zz_801a7ee8_
-801a7f54 000000c0 801a7f54 0 zz_801a7f54_
-801a8014 0000005c 801a8014 0 zz_801a8014_
-801a8070 00000048 801a8070 0 zz_801a8070_
-801a80b8 00000080 801a80b8 0 zz_801a80b8_
+801a7a9c 00000008 801a7a9c 0 HSD_DObjSetCurrent 	hsdbase.a dobj.c
+801a7aa4 00000018 801a7aa4 0 HSD_DObjSetFlags hsdbase.a dobj.c
+801a7abc 00000018 801a7abc 0 HSD_DObjClearFlags hsdbase.a dobj.c
+801a7ad4 000000b0 801a7ad4 0 HSD_DObjAddAnimAll hsdbase.a dobj.c
+801a7b84 00000080 801a7b84 0 HSD_DObjReqAnimAllByFlags 	hsdbase.a dobj.c
+801a7c04 0000006c 801a7c04 0 HSD_DObjAnimAll 	hsdbase.a dobj.c
+801a7c70 00000110 801a7c70 0 DObjLoad 	hsdbase.a dobj.c
+801a7d80 00000098 801a7d80 0 HSD_DObjLoadDesc 	hsdbase.a dobj.c
+801a7e18 00000074 801a7e18 0 HSD_DObjRemoveAll 	hsdbase.a dobj.c
+801a7e8c 0000005c 801a7e8c 0 HSD_DObjAlloc 	hsdbase.a dobj.c
+801a7ee8 0000006c 801a7ee8 0 HSD_DObjResolveRefsAll 	hsdbase.a dobj.c
+801a7f54 000000c0 801a7f54 0 HSD_DObjDisp 	hsdbase.a dobj.c
+801a8014 0000005c 801a8014 0 DObjRelease 	hsdbase.a dobj.c
+801a8070 00000048 801a8070 0 DObjAmnesia 	hsdbase.a dobj.c
+801a80b8 00000080 801a80b8 0 DObjInfoInit 	hsdbase.a dobj.c
 801a8138 00000154 801a8138 0 zz_801a8138_
 801a828c 00000074 801a828c 0 zz_801a828c_
 801a8300 000005cc 801a8300 0 zz_801a8300_
@@ -4686,31 +4682,31 @@
 801abe34 00000020 801abe34 0 cPlayer::PostPhysicsUpdate(void)
 801abe54 00000058 801abe54 0 zz_801abe54_
 801abeac 00000060 801abeac 0 zz_801abeac_
-801abf0c 0000005c 801abf0c 0 zz_801abf0c_
-801abf68 0000000c 801abf68 0 GetOneTimerLeadGroundContactAnims(void)
-801abf74 0000000c 801abf74 0 GetOneTimerLeadGroundContactAnims(void)
-801abf80 0000000c 801abf80 0 GetOneTimerLeadGroundContactAnims(void)
-801abf8c 000003a4 801abf8c 0 zz_801abf8c_
-801ac330 000000f8 801ac330 0 zz_801ac330_
-801ac428 00000040 801ac428 0 zz_801ac428_
-801ac468 0000007c 801ac468 0 zz_801ac468_
-801ac4e4 00000030 801ac4e4 0 zz_801ac4e4_
-801ac514 00000030 801ac514 0 zz_801ac514_
-801ac544 0000000c 801ac544 0 FEAudio::ResetRandomVoiceToggleSFX(void)
-801ac550 00000008 801ac550 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801ac558 0000002c 801ac558 0 zz_801ac558_
-801ac584 00000030 801ac584 0 zz_801ac584_
-801ac5b4 000000f8 801ac5b4 0 zz_801ac5b4_
-801ac6ac 0000013c 801ac6ac 0 zz_801ac6ac_
-801ac7e8 000000b0 801ac7e8 0 zz_801ac7e8_
-801ac898 000000d0 801ac898 0 zz_801ac898_
-801ac968 000000d0 801ac968 0 zz_801ac968_
-801aca38 000000c0 801aca38 0 zz_801aca38_
-801acaf8 000000c8 801acaf8 0 zz_801acaf8_
-801acbc0 00000058 801acbc0 0 zz_801acbc0_
-801acc18 0000000c 801acc18 0 FEAudio::ResetRandomVoiceToggleSFX(void)
-801acc24 00000020 801acc24 0 zz_801acc24_
-801acc44 0000000c 801acc44 0 FEAudio::ResetRandomVoiceToggleSFX(void)
+801abf0c 0000005c 801abf0c 0 HSD_RenderInitAllocData 	hsdbase.a tev.c
+801abf68 0000000c 801abf68 0 HSD_RenderGetAllocData 	hsdbase.a tev.c
+801abf74 0000000c 801abf74 0 HSD_TevRegGetAllocData 	hsdbase.a tev.c
+801abf80 0000000c 801abf80 0 HSD_ChanGetAllocData 	hsdbase.a tev.c
+801abf8c 000003a4 801abf8c 0 HSD_SetupChannel 	hsdbase.a tev.c
+801ac330 000000f8 801ac330 0 HSD_DisableChannelLighting 	hsdbase.a tev.c
+801ac428 00000040 801ac428 0 HSD_StateSetNumChans 	hsdbase.a tev.c
+801ac468 0000007c 801ac468 0 HSD_SetupChannelAll hsdbase.a tev.c
+801ac4e4 00000030 801ac4e4 0 HSD_StateRegisterTexGen 	hsdbase.a tev.c
+801ac514 00000030 801ac514 0 HSD_StateSetNumTexGens 	hsdbase.a tev.c
+801ac544 0000000c 801ac544 0 HSD_StateInitTev 	hsdbase.a tev.c
+801ac550 00000008 801ac550 0 HSD_StateGetNumTevStages 	hsdbase.a tev.c
+801ac558 0000002c 801ac558 0 HSD_StateAssignTev 	hsdbase.a tev.c
+801ac584 00000030 801ac584 0 HSD_StateSetNumTevStages 	hsdbase.a tev.c
+801ac5b4 000000f8 801ac5b4 0 HSD_SetupTevStage 	hsdbase.a tev.c
+801ac6ac 0000013c 801ac6ac 0 HSD_SetupTevStageAll hsdbase.a tev.c
+801ac7e8 000000b0 801ac7e8 0 HSD_Channel2Num hsdbase.a tev.c
+801ac898 000000d0 801ac898 0 HSD_Index2TevStage 	hsdbase.a tev.c
+801ac968 000000d0 801ac968 0 HSD_TevStage2Num hsdbase.a tev.c
+801aca38 000000c0 801aca38 0 HSD_SetTevRegAll 	hsdbase.a tev.c
+801acaf8 000000c8 801acaf8 0 HSD_TexCoordID2Num 	hsdbase.a tev.c
+801acbc0 00000058 801acbc0 0 _HSD_StateInvalidateColorChannel 	hsdbase.a tev.c
+801acc18 0000000c 801acc18 0 _HSD_StateInvalidateTevStage 	hsdbase.a tev.c
+801acc24 00000020 801acc24 0 _HSD_StateInvalidateTevRegister 	hsdbase.a tev.c
+801acc44 0000000c 801acc44 0 _HSD_StateInvalidateTexCoordGen 	hsdbase.a tev.c
 801acc50 00000008 801acc50 0 IPCSetBufferLo 	ipc.a ipcMain.o
 801acc58 00000018 801acc58 0 zz_801acc58_
 801acc70 00000068 801acc70 0 zz_801acc70_
@@ -4734,47 +4730,45 @@
 801ae294 0000009c 801ae294 0 zz_801ae294_
 801ae330 00000064 801ae330 0 zz_801ae330_
 801ae394 000000b0 801ae394 0 zz_801ae394_
-801ae444 00000030 801ae444 0 zz_801ae444_
-801ae474 0000000c 801ae474 0 GetOneTimerLeadGroundContactAnims(void)
-801ae480 00000010 801ae480 0 LooseBallAnims::Destroy(void)
-801ae490 0000005c 801ae490 0 zz_801ae490_
-801ae4ec 00000040 801ae4ec 0 zz_801ae4ec_
-801ae52c 000001b8 801ae52c 0 zz_801ae52c_
-801ae6e4 00000128 801ae6e4 0 zz_801ae6e4_
-801ae80c 00000070 801ae80c 0 zz_801ae80c_
-801ae87c 0000006c 801ae87c 0 zz_801ae87c_
-801ae8e8 00000034 801ae8e8 0 zz_801ae8e8_
-801ae91c 000006e0 801ae91c 0 zz_801ae91c_
-801aeffc 000006ec 801aeffc 0 zz_801aeffc_
-801af658 00000090 801af658 0 zz_801af658_
-801af6e8 000005a0 801af6e8 0 zz_801af6e8_
-801afc88 00000358 801afc88 0 zz_801afc88_
-801affe0 00000c84 801affe0 0 zz_801affe0_
-801b0c64 00000010 801b0c64 0 zz_801b0c64_
-801b0c74 00000010 801b0c74 0 zz_801b0c74_
-801b0c84 00000018 801b0c84 0 zz_801b0c84_
-801b0c9c 00000018 801b0c9c 0 zz_801b0c9c_
-801b0cb4 00000008 801b0cb4 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801b0cbc 00000008 801b0cbc 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801b0cc4 00000008 801b0cc4 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801b0ccc 00000008 801b0ccc 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801b0cd4 00000008 801b0cd4 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801b0cdc 00000048 801b0cdc 0 zz_801b0cdc_
-801b0d24 0000002c 801b0d24 0 zz_801b0d24_
-801b0d50 0000024c 801b0d50 0 zz_801b0d50_
+801ae444 00000030 801ae444 0 HSD_AObjInitAllocData 	hsdbase.a aobj.c
+801ae474 0000000c 801ae474 0 HSD_AObjGetAllocData 	hsdbase.a aobj.c
+801ae480 00000010 801ae480 0 HSD_AObjInitEndCallBack hsdbase.a aobj.c
+801ae490 0000005c 801ae490 0 HSD_AObjInvokeCallBacks hsdbase.a aobj.c
+801ae4ec 00000040 801ae4ec 0 HSD_AObjReqAnim 	hsdbase.a aobj.c
+801ae52c 000001b8 801ae52c 0 HSD_AObjInterpretAnim 	hsdbase.a aobj.c
+801ae6e4 00000128 801ae6e4 0 HSD_AObjLoadDesc 	hsdbase.a aobj.c
+801ae80c 00000070 801ae80c 0 HSD_AObjRemove 	hsdbase.a aobj.c
+801ae87c 0000006c 801ae87c 0 HSD_AObjAlloc 	hsdbase.a aobj.c
+801ae8e8 00000034 801ae8e8 0 HSD_AObjFree 	hsdbase.a aobj.c
+801ae91c 000006e0 801ae91c 0 CObjForeachAnim hsdbase.a aobj.c
+801aeffc 000006ec 801aeffc 0 LObjForeachAnim hsdbase.a aobj.c
+801af6e8 000005a0 801af6e8 0 DObjForeachAnim hsdbase.a aobj.c
+801afc88 00000358 801afc88 0 JObjForeachAnim hsdbase.a aobj.c
+801affe0 00000c84 801affe0 0 HSD_ForeachAnim hsdbase.a aobj.c
+801b0c64 00000010 801b0c64 0 HSD_AObjSetRewindFrame 	hsdbase.a aobj.c
+801b0c74 00000010 801b0c74 0 HSD_AObjSetEndFrame 	hsdbase.a aobj.c
+801b0c84 00000018 801b0c84 0 HSD_LObjSetFlags 	lobj.o
+801b0c9c 00000018 801b0c9c 0 HSD_LObjClearFlags lobj.o
+801b0cb4 00000008 801b0cb4 0 HSD_LObjGetLightMaskDiffuse 	lobj.o
+801b0cbc 00000008 801b0cbc 0 HSD_LObjGetLightMaskAttnFunc 	lobj.o
+801b0cc4 00000008 801b0cc4 0 HSD_LObjGetLightMaskAlpha 	lobj.o
+801b0ccc 00000008 801b0ccc 0 HSD_LObjGetLightMaskSpecular 	lobj.o
+801b0cd4 00000008 801b0cd4 0 HSD_LObjGetNbActive 	lobj.o
+801b0cdc 00000048 801b0cdc 0 HSD_LObjGetActiveByID 	lobj.o
+801b0d24 0000002c 801b0d24 0 HSD_LObjGetActiveByIndex 	lobj.o
+801b0d50 0000024c 801b0d50 0 LObjUpdateFunc 	lobj.o
 801b0f9c 00000074 801b0f9c 0 zz_801b0f9c_
 801b1010 00000080 801b1010 0 zz_801b1010_
-801b1090 00000124 801b1090 0 zz_801b1090_
-801b11b4 00000164 801b11b4 0 zz_801b11b4_
+801b1090 00000124 801b1090 0 HSD_LObjGetLightVector 	lobj.o
+801b11b4 00000164 801b11b4 0 HSD_LObjSetup 	lobj.o 
 801b1318 00000278 801b1318 0 zz_801b1318_
-801b14d4 000000bc 801b14d4 0 zz_801b14d4_
 801b1590 00000bbc 801b1590 0 zz_801b1590_
 801b214c 00000134 801b214c 0 zz_801b214c_
-801b2280 00000178 801b2280 0 zz_801b2280_
-801b23f8 00000258 801b23f8 0 zz_801b23f8_
-801b2650 00000034 801b2650 0 zz_801b2650_
-801b2684 000000ec 801b2684 0 zz_801b2684_
-801b2770 00000070 801b2770 0 zz_801b2770_
+801b2280 00000178 801b2280 0 HSD_LObjDeleteCurrent 	lobj.o
+801b23f8 00000258 801b23f8 0 HSD_LObjDeleteCurrentAll 	lobj.o
+801b2650 00000034 801b2650 0 HSD_LObjGetCurrentByType 	lobj.o
+801b2684 000000ec 801b2684 0 HSD_LightID2Index 	lobj.o
+801b2770 00000070 801b2770 0 HSD_Index2LightID 	lobj.o
 801b27e0 0000020c 801b27e0 0 zz_801b27e0_
 801b29ec 0000000c 801b29ec 0 GXInitLightColor
 801b29f8 00000014 801b29f8 0 zz_801b29f8_
@@ -4792,74 +4786,72 @@
 801b3218 00000164 801b3218 0 zz_801b3218_
 801b337c 00000060 801b337c 0 zz_801b337c_
 801b33dc 00000080 801b33dc 0 zz_801b33dc_
-801b345c 00000144 801b345c 0 zz_801b345c_
-801b35a0 00000264 801b35a0 0 zz_801b35a0_
-801b3804 000002cc 801b3804 0 zz_801b3804_
-801b3ad0 000000cc 801b3ad0 0 zz_801b3ad0_
-801b3b9c 00000504 801b3b9c 0 zz_801b3b9c_
-801b40a0 00000024 801b40a0 0 homebutton::MotorCallback(OSAlarm *, OSContext *) 	homebuttonLib.a HBMBase.o
-801b40c4 00000040 801b40c4 0 zz_801b40c4_
-801b4104 00000040 801b4104 0 zz_801b4104_
-801b4144 0000006c 801b4144 0 zz_801b4144_
-801b41b0 0000006c 801b41b0 0 zz_801b41b0_
-801b421c 0000006c 801b421c 0 zz_801b421c_
-801b4288 0000006c 801b4288 0 zz_801b4288_
-801b42f4 00000104 801b42f4 0 zz_801b42f4_
-801b43f8 000001e8 801b43f8 0 zz_801b43f8_
-801b45e0 000002e4 801b45e0 0 zz_801b45e0_
-801b48c4 00000068 801b48c4 0 zz_801b48c4_
-801b492c 000002fc 801b492c 0 zz_801b492c_
-801b4c28 00000010 801b4c28 0 zz_801b4c28_
-801b4c38 0000004c 801b4c38 0 zz_801b4c38_
-801b4c84 00000034 801b4c84 0 cCharacter::IsPlayingEffect( (EffectsGroup *))
-801b4cb8 00000064 801b4cb8 0 zz_801b4cb8_
-801b4d1c 00000030 801b4d1c 0 zz_801b4d1c_
-801b4d4c 00000068 801b4d4c 0 zz_801b4d4c_
-801b4db4 00000218 801b4db4 0 zz_801b4db4_
-801b4fcc 00000428 801b4fcc 0 zz_801b4fcc_
-801b53f4 00000024 801b53f4 0 zz_801b53f4_
-801b5418 00000020 801b5418 0 zz_801b5418_
-801b5438 00000020 801b5438 0 zz_801b5438_
-801b5458 00000018 801b5458 0 zz_801b5458_
-801b5470 00000010 801b5470 0 zz_801b5470_
-801b5480 00000018 801b5480 0 zz_801b5480_
-801b5498 00000010 801b5498 0 zz_801b5498_
-801b54a8 0000001c 801b54a8 0 zz_801b54a8_
-801b54c4 0000001c 801b54c4 0 zz_801b54c4_
-801b54e0 0000001c 801b54e0 0 zz_801b54e0_
-801b54fc 0000002c 801b54fc 0 zz_801b54fc_
-801b5528 0000008c 801b5528 0 zz_801b5528_
-801b55b4 0000001c 801b55b4 0 zz_801b55b4_
-801b55d0 00000018 801b55d0 0 zz_801b55d0_
-801b55e8 00000010 801b55e8 0 zz_801b55e8_
-801b55f8 0000001c 801b55f8 0 zz_801b55f8_
-801b5614 00000024 801b5614 0 zz_801b5614_
-801b5638 00000024 801b5638 0 zz_801b5638_
-801b565c 00000008 801b565c 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-801b5664 00000018 801b5664 0 zz_801b5664_
-801b567c 00000018 801b567c 0 zz_801b567c_
-801b5694 00000008 801b5694 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801b569c 0000005c 801b569c 0 zz_801b569c_
-801b56f8 0000022c 801b56f8 0 zz_801b56f8_
-801b5924 000000c4 801b5924 0 zz_801b5924_
-801b59e8 00000074 801b59e8 0 zz_801b59e8_
-801b5a5c 00000184 801b5a5c 0 zz_801b5a5c_
-801b5be0 00000060 801b5be0 0 zz_801b5be0_
-801b5c40 0000008c 801b5c40 0 zz_801b5c40_
-801b5ccc 0000000c 801b5ccc 0 GetOneTimerLeadGroundContactAnims(void)
-801b5cd8 00000030 801b5cd8 0 zz_801b5cd8_
-801b5d08 00000028 801b5d08 0 zz_801b5d08_
-801b5d30 00000124 801b5d30 0 zz_801b5d30_
-801b5e54 000000a4 801b5e54 0 zz_801b5e54_
-801b5ef8 00000098 801b5ef8 0 zz_801b5ef8_
-801b5f90 000010d0 801b5f90 0 zz_801b5f90_
-801b61d8 00000e88 801b61d8 0 zz_801b61d8_
-801b6678 000009e8 801b6678 0 zz_801b6678_
-801b7060 000006d4 801b7060 0 zz_801b7060_
-801b7734 00000070 801b7734 0 zz_801b7734_
-801b77a4 00000228 801b77a4 0 zz_801b77a4_
-801b79cc 0000005c 801b79cc 0 zz_801b79cc_
-801b7a28 0000002c 801b7a28 0 zz_801b7a28_
+801b345c 00000144 801b345c 0 CObjUpdateFunc 	hsdbase.a cobj.c
+801b35a0 00000264 801b35a0 0 setupTopHalfCamera 	hsdbase.a cobj.c
+801b3804 000002cc 801b3804 0 setupBottomHalfCamera 	hsdbase.a cobj.c
+801b3ad0 000000cc 801b3ad0 0 HSD_CObjSetupViewingMtx 	hsdbase.a cobj.c
+801b3b9c 00000504 801b3b9c 0 HSD_CObjSetCurrent 	hsdbase.a cobj.c
+801b40a0 00000024 801b40a0 0 HSD_CObjEndCurrent 	hsdbase.a cobj.c
+801b40c4 00000040 801b40c4 0 HSD_CObjGetInterestWObj 	hsdbase.a cobj.c
+801b4104 00000040 801b4104 0 HSD_CObjGetEyePositionWObj 	hsdbase.a cobj.c
+801b4144 0000006c 801b4144 0 HSD_CObjGetInterest 	hsdbase.a cobj.c
+801b41b0 0000006c 801b41b0 0 HSD_CObjSetInterest 	hsdbase.a cobj.c
+801b421c 0000006c 801b421c 0 HSD_CObjGetEyePosition 	hsdbase.a cobj.c
+801b4288 0000006c 801b4288 0 HSD_CObjSetEyePosition 	hsdbase.a cobj.c
+801b42f4 00000104 801b42f4 0 HSD_CObjGetEyeDistance 	hsdbase.a cobj.c
+801b43f8 000001e8 801b43f8 0 upvec2roll 	hsdbase.a cobj.c
+801b45e0 000002e4 801b45e0 0 roll2upvec 	hsdbase.a cobj.c
+801b48c4 00000068 801b48c4 0 HSD_CObjGetUpVector 	hsdbase.a cobj.c
+801b492c 000002fc 801b492c 0 HSD_CObjSetUpVector 	hsdbase.a cobj.c
+801b4c28 00000010 801b4c28 0 HSD_CObjSetMtxDirty 	hsdbase.a cobj.c
+801b4c38 0000004c 801b4c38 0 HSD_CObjMtxIsDirty 	hsdbase.a cobj.c
+801b4c84 00000034 801b4c84 0 HSD_CObjGetViewingMtx 	hsdbase.a cobj.c
+801b4cb8 00000064 801b4cb8 0 HSD_CObjGetInvViewingMtxPtrDirect 	hsdbase.a cobj.c
+801b4d1c 00000030 801b4d1c 0 HSD_CObjGetViewingMtxPtr 	hsdbase.a cobj.c
+801b4d4c 00000068 801b4d4c 0 HSD_CObjGetInvViewingMtxPtr 	hsdbase.a cobj.c
+801b4db4 00000218 801b4db4 0 HSD_CObjGetRoll 	hsdbase.a cobj.c
+801b4fcc 00000428 801b4fcc 0 HSD_CObjSetRoll 	hsdbase.a cobj.c
+801b53f4 00000024 801b53f4 0 HSD_CObjGetFov 	hsdbase.a cobj.c
+801b5418 00000020 801b5418 0 HSD_CObjSetFov 	hsdbase.a cobj.c
+801b5438 00000020 801b5438 0 HSD_CObjSetAspect 	hsdbase.a cobj.c
+801b5458 00000018 801b5458 0 HSD_CObjGetNear 	hsdbase.a cobj.c
+801b5470 00000010 801b5470 0 HSD_CObjSetNear 	hsdbase.a cobj.c
+801b5480 00000018 801b5480 0 HSD_CObjGetFar 	hsdbase.a cobj.c
+801b5498 00000010 801b5498 0 HSD_CObjSetFar 	hsdbase.a cobj.c
+801b54a8 0000001c 801b54a8 0 HSD_CObjGetScissor hsdbase.a cobj.c
+801b54c4 0000001c 801b54c4 0 HSD_CObjSetScissor 	hsdbase.a cobj.c
+801b54e0 0000001c 801b54e0 0 HSD_CObjSetScissorx4 	hsdbase.a cobj.c
+801b54fc 0000002c 801b54fc 0 HSD_CObjGetViewportf hsdbase.a cobj.c
+801b5528 0000008c 801b5528 0 HSD_CObjSetViewport 	hsdbase.a cobj.c
+801b55b4 0000001c 801b55b4 0 HSD_CObjSetViewportfx4 	hsdbase.a cobj.c
+801b55d0 00000018 801b55d0 0 HSD_CObjGetProjectionType 	hsdbase.a cobj.c
+801b55e8 00000010 801b55e8 0 HSD_CObjSetProjectionType 	hsdbase.a cobj.c
+801b55f8 0000001c 801b55f8 0 HSD_CObjSetPerspective 	hsdbase.a cobj.c
+801b5614 00000024 801b5614 0 HSD_CObjSetFrustum 	hsdbase.a cobj.c
+801b5638 00000024 801b5638 0 HSD_CObjSetOrtho 	hsdbase.a cobj.c
+801b565c 00000008 801b565c 0 HSD_CObjGetFlags hsdbase.a cobj.c
+801b5664 00000018 801b5664 0 HSD_CObjSetFlags 	hsdbase.a cobj.c
+801b567c 00000018 801b567c 0 HSD_CObjClearFlags 	hsdbase.a cobj.c
+801b5694 00000008 801b5694 0 HSD_CObjGetCurrent 	hsdbase.a cobj.c
+801b569c 0000005c 801b569c 0 HSD_CObjAlloc 	hsdbase.a cobj.c
+801b56f8 0000022c 801b56f8 0 CObjLoad 	hsdbase.a cobj.c
+801b5924 000000c4 801b5924 0 HSD_CObjLoadDesc 	hsdbase.a cobj.c
+801b59e8 00000074 801b59e8 0 CObjInit 	hsdbase.a cobj.c
+801b5a5c 00000184 801b5a5c 0 CObjRelease 	hsdbase.a cobj.c
+801b5be0 00000060 801b5be0 0 CObjAmnesia 	hsdbase.a cobj.c
+801b5c40 0000008c 801b5c40 0 CObjInfoInit 	hsdbase.a cobj.c
+801b5ccc 0000000c 801b5ccc 0 HSD_FObjGetAllocData 	hsdbase.a fobj.c
+801b5cd8 00000030 801b5cd8 0 HSD_FObjInitAllocData 	hsdbase.a fobj.c
+801b5d08 00000028 801b5d08 0 HSD_FObjRemove 	hsdbase.a fobj.c
+801b5d30 00000124 801b5d30 0 HSD_FObjRemoveAll 	hsdbase.a fobj.c
+801b5e54 000000a4 801b5e54 0 HSD_FObjReqAnimAll 	hsdbase.a fobj.c
+801b5ef8 00000098 801b5ef8 0 HSD_FObjStopAnimAll 	hsdbase.a fobj.c
+801b5f90 000010d0 801b5f90 0 FObjLoadData 	hsdbase.a fobj.c
+801b7060 000006d4 801b7060 0 HSD_FObjInterpretAnim 	hsdbase.a fobj.c
+801b7734 00000070 801b7734 0 HSD_FObjInterpretAnimAll 	hsdbase.a fobj.c
+801b77a4 00000228 801b77a4 0 HSD_FObjLoadDesc 	hsdbase.a fobj.c
+801b79cc 0000005c 801b79cc 0 HSD_FObjAlloc 	hsdbase.a fobj.c
+801b7a28 0000002c 801b7a28 0 HSD_FObjFree 	hsdbase.a fobj.c
 801b7a54 00000090 801b7a54 0 zz_801b7a54_
 801b7ae4 00000074 801b7ae4 0 zz_801b7ae4_
 801b7b58 0000004c 801b7b58 0 zz_801b7b58_
@@ -4884,62 +4876,59 @@
 801ba2b8 0000012c 801ba2b8 0 zz_801ba2b8_
 801ba3e4 000000ac 801ba3e4 0 zz_801ba3e4_
 801ba490 00000098 801ba490 0 zz_801ba490_
-801ba528 0000012c 801ba528 0 zz_801ba528_
-801ba654 00000384 801ba654 0 zz_801ba654_
-801ba9d8 00000058 801ba9d8 0 zz_801ba9d8_
-801baa30 00000070 801baa30 0 zz_801baa30_
-801baaa0 00000344 801baaa0 0 zz_801baaa0_
-801bade4 00000090 801bade4 0 zz_801bade4_
-801bae74 000002d0 801bae74 0 zz_801bae74_
-801bb144 00000088 801bb144 0 zz_801bb144_
-801bb1cc 000002c8 801bb1cc 0 zz_801bb1cc_
-801bb494 00000024 801bb494 0 cFielder::EndAction(void)
-801bb4b8 00000058 801bb4b8 0 zz_801bb4b8_
-801bb510 00000140 801bb510 0 zz_801bb510_
-801bb650 000003dc 801bb650 0 zz_801bb650_
-801bba2c 00000944 801bba2c 0 zz_801bba2c_
-801bc158 00000218 801bc158 0 zz_801bc158_
-801bc370 00000164 801bc370 0 zz_801bc370_
-801bc4d4 00000348 801bc4d4 0 zz_801bc4d4_
-801bc81c 0000003c 801bc81c 0 zz_801bc81c_
-801bc858 00000130 801bc858 0 zz_801bc858_
-801bc988 00000544 801bc988 0 zz_801bc988_
-801bcecc 00000008 801bcecc 0 J3DTexGenBlock4::getNBTScale(void) 	J3DGraphBase.a J3DMatBlock.o
-801bced4 00000070 801bced4 0 zz_801bced4_
-801bcf44 000001fc 801bcf44 0 zz_801bcf44_
-801bd140 000000a8 801bd140 0 zz_801bd140_
-801bd1e8 000000f8 801bd1e8 0 zz_801bd1e8_
-801bd2e0 000002d4 801bd2e0 0 zz_801bd2e0_
-801bd300 000002b4 801bd300 0 zz_801bd300_
-801bd5b4 00000054 801bd5b4 0 zz_801bd5b4_
-801bd608 0000002c 801bd608 0 zz_801bd608_
-801bd634 0000004c 801bd634 0 zz_801bd634_
-801bd680 00000148 801bd680 0 zz_801bd680_
-801bd7c8 000000a8 801bd7c8 0 zz_801bd7c8_
-801bd870 000001a8 801bd870 0 zz_801bd870_
-801bda18 0000014c 801bda18 0 zz_801bda18_
-801bdb64 0000008c 801bdb64 0 zz_801bdb64_
-801bdbf0 0000002c 801bdbf0 0 zz_801bdbf0_
-801bdc1c 0000009c 801bdc1c 0 zz_801bdc1c_
-801bdcb8 000002d8 801bdcb8 0 unload_stage_object
-801bdf90 0000009c 801bdf90 0 zz_801bdf90_
-801be02c 000002dc 801be02c 0 load_stage_object
-801be308 0000005c 801be308 0 zz_801be308_
-801be364 00000190 801be364 0 zz_801be364_
-801be4f4 00000008 801be4f4 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801be4fc 000007f0 801be4fc 0 zz_801be4fc_
-801becec 0000055c 801becec 0 zz_801becec_
-801bf248 00000278 801bf248 0 zz_801bf248_
-801bf4c0 00000334 801bf4c0 0 zz_801bf4c0_
-801bf7f4 00000008 801bf7f4 0 IPCSetBufferLo 	ipc.a ipcMain.o
-801bf7fc 00000008 801bf7fc 0 IPCSetBufferLo 	ipc.a ipcMain.o
-801bf804 00000008 801bf804 0 IPCSetBufferLo 	ipc.a ipcMain.o
-801bf80c 00000064 801bf80c 0 zz_801bf80c_
-801bf870 000004d4 801bf870 0 zz_801bf870_
-801bfbcc 00000178 801bfbcc 0 zz_801bfbcc_
-801bfd44 00000098 801bfd44 0 zz_801bfd44_
-801bfddc 00000064 801bfddc 0 zz_801bfddc_
-801bfe40 000000bc 801bfe40 0 zz_801bfe40_
+801ba528 0000012c 801ba528 0 HSD_JObjCheckDepend 	hsdbase.a jobj.c
+801ba654 00000384 801ba654 0 HSD_JObjCheckDependAll hsdbase.a jobj.c
+801ba9d8 00000058 801ba9d8 0 HSD_JObjMtxIsDirty 	hsdbase.a jobj.c
+801baa30 00000070 801baa30 0 HSD_JObjSetMtxDirty 	hsdbase.a jobj.c
+801baaa0 00000344 801baaa0 0 HSD_JObjWalkTree0 hsdbase.a jobj.c
+801bade4 00000090 801bade4 0 HSD_JObjWalkTree hsdbase.a jobj.c
+801bae74 000002d0 801bae74 0 HSD_JObjMakeMatrix 	hsdbase.a jobj.c
+801bb144 00000088 801bb144 0 HSD_JObjReqAnimByFlags 	hsdbase.a jobj.c
+801bb1cc 000002c8 801bb1cc 0 HSD_JObjReqAnimAllByFlags hsdbase.a jobj.c
+801bb494 00000024 801bb494 0 HSD_JObjReqAnimAll hsdbase.a jobj.c
+801bb4b8 00000058 801bb4b8 0 JObjSortAnim hsdbase.a jobj.c
+801bb510 00000140 801bb510 0 HSD_JObjAddAnim hsdbase.a jobj.c
+801bb650 000003dc 801bb650 0 HSD_JObjAddAnimAll hsdbase.a jobj.c
+801bba2c 00000944 801bba2c 0 JObjUpdateFunc 	hsdbase.a jobj.c
+801bc370 00000164 801bc370 0 HSD_JObjAnim 	hsdbase.a jobj.c
+801bc4d4 00000348 801bc4d4 0 JObjAnimAll hsdbase.a jobj.c
+801bc81c 0000003c 801bc81c 0 HSD_JObjAnimAll hsdbase.a jobj.c
+801bc858 00000130 801bc858 0 setupInstanceMtx 	hsdbase.a jobj.c
+801bc988 00000544 801bc988 0 HSD_JObjDispAll 	hsdbase.a jobj.c
+801bcecc 00000008 801bcecc 0 HSD_CObjGetViewingMtxPtrDirect 	hsdbase.a jobj.c
+801bced4 00000070 801bced4 0 HSD_JObjSetupMatrix 	hsdbase.a jobj.c
+801bcf44 000001fc 801bcf44 0 JObjLoad 	hsdbase.a jobj.c
+801bd140 000000a8 801bd140 0 HSD_JObjLoadJoint 	hsdbase.a jobj.c
+801bd1e8 000000f8 801bd1e8 0 HSD_JObjResolveRefs 	hsdbase.a jobj.c
+801bd2e0 000002d4 801bd2e0 0 HSD_JObjResolveRefsAll 	hsdbase.a jobj.c
+801bd5b4 00000054 801bd5b4 0 HSD_JObjRef 	hsdbase.a jobj.c
+801bd608 0000002c 801bd608 0 HSD_IDGetData 	hsdbase.a jobj.c
+801bd634 0000004c 801bd634 0 ref_INC 	hsdbase.a jobj.c
+801bd680 00000148 801bd680 0 HSD_JObjUnref 	hsdbase.a jobj.c
+801bd7c8 000000a8 801bd7c8 0 HSD_JObjUnrefThis 	hsdbase.a jobj.c
+801bd870 000001a8 801bd870 0 HSD_JObjRemoveAll hsdbase.a jobj.c
+801bda18 0000014c 801bda18 0 HSD_JObjAddChild 	hsdbase.a jobj.c
+801bdb64 0000008c 801bdb64 0 HSD_JObjGetPrev 	hsdbase.a jobj.c
+801bdbf0 0000002c 801bdbf0 0 HSD_JObjGetDObj 	hsdbase.a jobj.c
+801bdc1c 0000009c 801bdc1c 0 HSD_JObjSetFlags 	hsdbase.a jobj.c
+801bdcb8 000002d8 801bdcb8 0 HSD_JObjSetFlagsAll 	hsdbase.a jobj.c
+801bdf90 0000009c 801bdf90 0 HSD_JObjClearFlags 	hsdbase.a jobj.c
+801be02c 000002dc 801be02c 0 HSD_JObjClearFlagsAll 	hsdbase.a jobj.c
+801be308 0000005c 801be308 0 HSD_JObjAlloc 	hsdbase.a jobj.c
+801be364 00000190 801be364 0 HSD_JObjSetCurrent 	hsdbase.a jobj.c
+801be4f4 00000008 801be4f4 0 HSD_JObjGetCurrent 	hsdbase.a jobj.c
+801be4fc 000007f0 801be4fc 0 resolveIKJoint1 	hsdbase.a jobj.c
+801becec 0000055c 801becec 0 resolveIKJoint2 	hsdbase.a jobj.c
+801bf248 00000278 801bf248 0 HSD_JObjSetupMatrixSub 	hsdbase.a jobj.c
+801bf4c0 00000334 801bf4c0 0 HSD_JObjSetMtxDirtySub 	hsdbase.a jobj.c
+801bf7f4 00000008 801bf7f4 0 HSD_JObjSetDPtclCallback hsdbase.a jobj.c
+801bf7fc 00000008 801bf7fc 0 HSD_JObjSetJSoundCallback hsdbase.a jobj.c
+801bf804 00000008 801bf804 0 HSD_JObjSetPtclTargetCallback hsdbase.a jobj.c
+801bf80c 00000064 801bf80c 0 JObjInit 	hsdbase.a jobj.c
+801bf870 000004d4 801bf870 0 JObjReleaseChild 	hsdbase.a jobj.c
+801bfd44 00000098 801bfd44 0 JObjRelease 	hsdbase.a jobj.c
+801bfddc 00000064 801bfddc 0 JObjAmnesia 	hsdbase.a jobj.c
+801bfe40 000000bc 801bfe40 0 JObjInfoInit 	hsdbase.a jobj.c
 801bfefc 00000030 801bfefc 0 zz_801bfefc_
 801bff2c 000002dc 801bff2c 0 zz_801bff2c_
 801c0208 00000344 801c0208 0 zz_801c0208_
@@ -4992,90 +4981,87 @@
 801c2b78 00000018 801c2b78 0 zz_801c2b78_
 801c2b90 00000228 801c2b90 0 zz_801c2b90_
 801c2db8 0000003c 801c2db8 0 zz_801c2db8_
-801c2df4 000002ac 801c2df4 0 zz_801c2df4_
-801c30a0 00000140 801c30a0 0 zz_801c30a0_
-801c31e0 000007b4 801c31e0 0 zz_801c31e0_
-801c3994 00000508 801c3994 0 zz_801c3994_
-801c3e9c 0000047c 801c3e9c 0 zz_801c3e9c_
-801c4318 000001a0 801c4318 0 zz_801c4318_
-801c44b8 00000098 801c44b8 0 zz_801c44b8_
-801c4550 0000026c 801c4550 0 zz_801c4550_
-801c47bc 0000004c 801c47bc 0 zz_801c47bc_
-801c4808 00000094 801c4808 0 zz_801c4808_
-801c489c 000000bc 801c489c 0 zz_801c489c_
-801c4958 000000f8 801c4958 0 zz_801c4958_
-801c4a50 0000003c 801c4a50 0 zz_801c4a50_
-801c4a8c 00000190 801c4a8c 0 zz_801c4a8c_
-801c4c1c 00000128 801c4c1c 0 zz_801c4c1c_
-801c4d44 000001d4 801c4d44 0 zz_801c4d44_
-801c4f18 00000060 801c4f18 0 zz_801c4f18_
-801c4f78 00000490 801c4f78 0 zz_801c4f78_
-801c5408 00000308 801c5408 0 zz_801c5408_
-801c5710 00000200 801c5710 0 zz_801c5710_
-801c5910 00000048 801c5910 0 cXyz::normalize(void) 	SComponent.a c_xyz.o
-801c5958 00000430 801c5958 0 zz_801c5958_
-801c5d88 00000320 801c5d88 0 zz_801c5d88_
-801c60a8 00000338 801c60a8 0 zz_801c60a8_
-801c63e0 0000001c 801c63e0 0 dGeomBoxGetLengths
-801c63fc 000004d8 801c63fc 0 zz_801c63fc_
-801c68d4 0000013c 801c68d4 0 zz_801c68d4_
-801c6a10 000002d8 801c6a10 0 zz_801c6a10_
-801c6ce8 000001ac 801c6ce8 0 zz_801c6ce8_
-801c6e94 000000c4 801c6e94 0 zz_801c6e94_
-801c6f58 000000e0 801c6f58 0 zz_801c6f58_
-801c7038 0000004c 801c7038 0 zz_801c7038_
-801c7084 00000034 801c7084 0 zz_801c7084_
-801c70b8 0000004c 801c70b8 0 zz_801c70b8_
-801c7104 00000034 801c7104 0 zz_801c7104_
-801c7138 0000000c 801c7138 0 GetOneTimerLeadGroundContactAnims(void)
-801c7144 00000030 801c7144 0 zz_801c7144_
-801c7174 0000000c 801c7174 0 GetOneTimerLeadGroundContactAnims(void)
-801c7180 00000030 801c7180 0 zz_801c7180_
-801c71b0 0000006c 801c71b0 0 zz_801c71b0_
-801c721c 000000c0 801c721c 0 zz_801c721c_
-801c72dc 000000a0 801c72dc 0 zz_801c72dc_
-801c737c 0000001c 801c737c 0 zz_801c737c_
-801c7398 00000030 801c7398 0 zz_801c7398_
-801c73c8 00000250 801c73c8 0 zz_801c73c8_
-801c7618 00000150 801c7618 0 zz_801c7618_
-801c7768 00000028 801c7768 0 zz_801c7768_
-801c7790 00000124 801c7790 0 zz_801c7790_
-801c78b4 00000044 801c78b4 0 zz_801c78b4_
-801c78f8 0000000c 801c78f8 0 GetOneTimerLeadGroundContactAnims(void)
-801c7904 0000000c 801c7904 0 GetOneTimerLeadGroundContactAnims(void)
-801c7910 00000018 801c7910 0 zz_801c7910_
-801c7928 00000018 801c7928 0 zz_801c7928_
-801c7940 00000018 801c7940 0 zz_801c7940_
-801c7958 00000058 801c7958 0 zz_801c7958_
-801c79b0 00000044 801c79b0 0 zz_801c79b0_
-801c79f4 00000068 801c79f4 0 zz_801c79f4_
-801c7a5c 00000084 801c7a5c 0 zz_801c7a5c_
-801c7ae0 0000006c 801c7ae0 0 zz_801c7ae0_
-801c7b4c 00000090 801c7b4c 0 zz_801c7b4c_
-801c7bdc 000001b4 801c7bdc 0 zz_801c7bdc_
-801c7d90 000005e8 801c7d90 0 zz_801c7d90_
-801c7fec 0000038c 801c7fec 0 zz_801c7fec_
-801c8378 00000208 801c8378 0 zz_801c8378_
-801c8580 00000484 801c8580 0 zz_801c8580_
-801c8a04 00000114 801c8a04 0 zz_801c8a04_
-801c8b18 00000474 801c8b18 0 zz_801c8b18_
-801c8f8c 0000009c 801c8f8c 0 zz_801c8f8c_
-801c9028 0000005c 801c9028 0 zz_801c9028_
-801c9084 0000002c 801c9084 0 zz_801c9084_
-801c90b0 0000049c 801c90b0 0 zz_801c90b0_
-801c954c 00000008 801c954c 0 J3DAnmCluster::getWeight(unsigned short) const 	J3DGraphAnimator.a J3DCluster.o
-801c9554 00000070 801c9554 0 zz_801c9554_
-801c95c4 000000f4 801c95c4 0 zz_801c95c4_
-801c96b8 000000f8 801c96b8 0 zz_801c96b8_
-801c97b0 000000e8 801c97b0 0 zz_801c97b0_
-801c9898 0000000c 801c9898 0 GetOneTimerLeadGroundContactAnims(void)
-801c98a4 00000030 801c98a4 0 zz_801c98a4_
-801c98d4 00000030 801c98d4 0 zz_801c98d4_
-801c9904 000000ec 801c9904 0 zz_801c9904_
-801c99f0 000000ac 801c99f0 0 zz_801c99f0_
-801c9a9c 00000088 801c9a9c 0 zz_801c9a9c_
-801c9af8 00000008 801c9af8 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-801c9b00 00000024 801c9b00 0 zz_801c9b00_
+801c2df4 000002ac 801c2df4 0 HSD_PadRenewRawStatus 	hsdbase.a controller.c
+801c30a0 00000140 801c30a0 0 HSD_PadFlushQueue hsdbase.a controller.c
+801c31e0 000007b4 801c31e0 0 HSD_PadClamp 	hsdbase.a controller.c
+801c3994 00000508 801c3994 0 HSD_PadADConvert 	hsdbase.a controller.c
+801c3e9c 0000047c 801c3e9c 0 HSD_PadRenewMasterStatus 	hsdbase.a controller.c
+801c4318 000001a0 801c4318 0 HSD_PadRenewCopyStatus 	hsdbase.a controller.c
+801c44b8 00000098 801c44b8 0 HSD_PadReset hsdbase.a controller.c
+801c4550 0000026c 801c4550 0 HSD_PadInit 	hsdbase.a controller.c
+801c47bc 0000004c 801c47bc 0 HSD_PadRumbleOffH 	hsdbase.a rumble.c
+801c4808 00000094 801c4808 0 HSD_PadRumbleRemove hsdbase.a rumble.c
+801c489c 000000bc 801c489c 0 HSD_PadRumbleRemoveAll hsdbase.a rumble.c
+801c4958 000000f8 801c4958 0 HSD_PadRumbleAdd hsdbase.a rumble.c
+801c4a50 0000003c 801c4a50 0 HSD_PadRumbleSetMaxList hsdbase.a rumble.c
+801c4a8c 00000190 801c4a8c 0 HSD_PadRumbleInterpret1 	hsdbase.a rumble.c
+801c4c1c 00000128 801c4c1c 0 HSD_PadRumbleInterpret 	hsdbase.a rumble.c
+801c4d44 000001d4 801c4d44 0 HSD_PadRumbleInit 	hsdbase.a rumble.c
+801c4f18 00000060 801c4f18 0 splGetHelmite 	hsdbase.a spline.c
+801c4f78 00000490 801c4f78 0 splGetSplinePoint 	hsdbase.a spline.c
+801c5408 00000308 801c5408 0 splArcLength 	hsdbase.a spline.c
+801c5710 00000200 801c5710 0 splArcLengthGetParameter 	hsdbase.a spline.csplArcLengthGetParameter 	hsdbase.a spline.c
+801c5910 00000048 801c5910 0 splArcLengthPoint 	hsdbase.a spline.c
+801c5958 00000430 801c5958 0 HSD_MtxInverseConcat 	hsdbase.a mtx.c
+801c5d88 00000320 801c5d88 0 HSD_MtxGetRotation 	hsdbase.a mtx.c
+801c60a8 00000338 801c60a8 0 HSD_MtxGetRotationMtx 	hsdbase.a mtx.c
+801c63e0 0000001c 801c63e0 0 HSD_MtxGetTranslate 	hsdbase.a mtx.c
+801c63fc 000004d8 801c63fc 0 HSD_MtxGetScale 	hsdbase.a mtx.c
+801c68d4 0000013c 801c68d4 0 HSD_MkRotationMtx 	hsdbase.a mtx.c
+801c6a10 000002d8 801c6a10 0 HSD_MtxSRT 	hsdbase.a mtx.c
+801c6ce8 000001ac 801c6ce8 0 HSD_MtxSRTQuat 	hsdbase.a mtx.c
+801c6e94 000000c4 801c6e94 0 HSD_MtxScaledAdd 	hsdbase.a mtx.c
+801c6f58 000000e0 801c6f58 0 HSD_VecGetOrthogonal 	hsdbase.a mtx.c
+801c7038 0000004c 801c7038 0 HSD_VecAlloc 	hsdbase.a mtx.c
+801c7084 00000034 801c7084 0 HSD_VecFree 	hsdbase.a mtx.c
+801c70b8 0000004c 801c70b8 0 HSD_MtxAlloc 	hsdbase.a mtx.c
+801c7104 00000034 801c7104 0 HSD_MtxFree 	hsdbase.a mtx.c
+801c7138 0000000c 801c7138 0 HSD_VecGetAllocData 	hsdbase.a mtx.c
+801c7144 00000030 801c7144 0 HSD_VecInitAllocData 	hsdbase.a mtx.c
+801c7174 0000000c 801c7174 0 HSD_MtxGetAllocData 	hsdbase.a mtx.c
+801c7180 00000030 801c7180 0 HSD_MtxInitAllocData 	hsdbase.a mtx.c
+801c71b0 0000006c 801c71b0 0 HSD_MulColor 	hsdbase.a util.c
+801c721c 000000c0 801c721c 0 HSD_GetNbBits 	hsdbase.a util.c
+801c72dc 000000a0 801c72dc 0 HSD_Index2PosNrmMtx 	hsdbase.a util.c
+801c737c 0000001c 801c737c 0 HSD_ObjSetHeap 	hsdbase.a objalloc.c
+801c7398 00000030 801c7398 0 HSD_ObjGetHeap hsdbase.a objalloc.c
+801c73c8 00000250 801c73c8 0 HSD_ObjAllocAddFree 	hsdbase.a objalloc.c
+801c7618 00000150 801c7618 0 HSD_ObjAlloc 	hsdbase.a objalloc.c
+801c7768 00000028 801c7768 0 HSD_ObjFree 	hsdbase.a objalloc.c
+801c7790 00000124 801c7790 0 HSD_ObjAllocInit 	hsdbase.a objalloc.c
+801c78b4 00000044 801c78b4 0 HSD_RObjInitAllocData 	hsdbase.a robj.c
+801c78f8 0000000c 801c78f8 0 HSD_RObjGetAllocData 	hsdbase.a robj.c
+801c7904 0000000c 801c7904 0 HSD_RvalueObjGetAllocData 	hsdbase.a robj.c
+801c7910 00000018 801c7910 0 HSD_RObjGetFlags hsdbase.a robj.c
+801c7928 00000018 801c7928 0 HSD_RObjSetFlags hsdbase.a robj.c
+801c7940 00000018 801c7940 0 HSD_RObjClearFlags hsdbase.a robj.c
+801c7958 00000058 801c7958 0 HSD_RObjGetByType 	hsdbase.a robj.c
+801c79b0 00000044 801c79b0 0 RObjUpdateFunc 	hsdbase.a robj.c
+801c79f4 00000068 801c79f4 0 HSD_RObjAnimAll 	hsdbase.a robj.c
+801c7a5c 00000084 801c7a5c 0 HSD_RObjReqAnimAllByFlags 	hsdbase.a robj.c
+801c7ae0 0000006c 801c7ae0 0 HSD_RObjReqAnimAll 	hsdbase.a robj.c
+801c7b4c 00000090 801c7b4c 0 HSD_RObjAddAnimAll 	hsdbase.a robj.c
+801c7bdc 000001b4 801c7bdc 0 HSD_RObjGetGlobalPosition 	hsdbase.a robj.c
+801c7d90 000005e8 801c7d90 0 resolveCnsDirUp 	hsdbase.a robj.c
+801c8378 00000208 801c8378 0 resolveLimits 	hsdbase.a robj.c
+801c8580 00000484 801c8580 0 HSD_RObjUpdateAll 	hsdbase.a robj.c
+801c8a04 00000114 801c8a04 0 HSD_RObjResolveRefsAll 	hsdbase.a robj.c
+801c8b18 00000474 801c8b18 0 HSD_RObjLoadDesc 	hsdbase.a robj.c
+801c8f8c 0000009c 801c8f8c 0 HSD_RObjRemoveAll 	hsdbase.a robj.c
+801c9028 0000005c 801c9028 0 HSD_RObjAlloc 	hsdbase.a robj.c
+801c9084 0000002c 801c9084 0 HSD_RObjFree 	hsdbase.a robj.c
+801c90b0 0000049c 801c90b0 0 expEvaluate 	hsdbase.a robj.c
+801c954c 00000008 801c954c 0 dummy_func 	hsdbase.a robj.c
+801c9554 00000070 801c9554 0 HSD_RvalueRemoveAll 	hsdbase.a robj.c
+801c95c4 000000f4 801c95c4 0 expLoadDesc 	hsdbase.a robj.c
+801c96b8 000000f8 801c96b8 0 bcexpLoadDesc 	hsdbase.a robj.c
+801c97b0 000000e8 801c97b0 0 HSD_RvalueResolveRefsAll 	hsdbase.a robj.c
+801c9898 0000000c 801c9898 0 HSD_IDGetAllocData 	hsdbase.a id.c
+801c98a4 00000030 801c98a4 0 HSD_IDInitAllocData 	hsdbase.a id.c
+801c98d4 00000030 801c98d4 0 HSD_IDSetup 	hsdbase.a id.c
+801c9904 000000ec 801c9904 0 HSD_IDInsertToTable 	hsdbase.a id.c
+801c99f0 000000ac 801c99f0 0 HSD_IDRemoveByIDFromTable 	hsdbase.a id.c
+801c9a9c 00000088 801c9a9c 0 HSD_IDGetDataFromTable 	hsdbase.a id.c
 801c9b24 0000004c 801c9b24 0 zz_801c9b24_
 801c9b70 00000068 801c9b70 0 zz_801c9b70_
 801c9bd8 00000144 801c9bd8 0 zz_801c9bd8_
@@ -5151,59 +5137,59 @@
 801ccdc8 00000030 801ccdc8 0 HSD_Rand
 801ccdf8 00000058 801ccdf8 0 HSD_Randf
 801cce50 0000003c 801cce50 0 HSD_Randi
-801cce8c 000015c8 801cce8c 0 zz_801cce8c_
-801ce454 000000e8 801ce454 0 zz_801ce454_
-801ce53c 00000050 801ce53c 0 zz_801ce53c_
-801ce58c 00000264 801ce58c 0 zz_801ce58c_
-801ce7f0 000001c8 801ce7f0 0 zz_801ce7f0_
-801ce9b8 00000058 801ce9b8 0 zz_801ce9b8_
-801cea10 00000058 801cea10 0 zz_801cea10_
-801cea68 00000008 801cea68 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801cea70 00000004 801cea70 0 do_nothing
-801cea74 0000006c 801cea74 0 zz_801cea74_
-801ceae0 0000002c 801ceae0 0 zz_801ceae0_
-801ceb0c 0000009c 801ceb0c 0 zz_801ceb0c_
-801ceba8 000000c8 801ceba8 0 zz_801ceba8_
-801cec70 00000040 801cec70 0 zz_801cec70_
-801cecb0 000000b0 801cecb0 0 zz_801cecb0_
-801ced60 0000031c 801ced60 0 zz_801ced60_
-801cf07c 00000100 801cf07c 0 zz_801cf07c_
-801cf17c 0000003c 801cf17c 0 zz_801cf17c_
-801cf1b8 00000088 801cf1b8 0 zz_801cf1b8_
-801cf240 0000057c 801cf240 0 zz_801cf240_
-801cf7bc 00000320 801cf7bc 0 zz_801cf7bc_
-801cfadc 000000c0 801cfadc 0 zz_801cfadc_
-801cfb9c 00000120 801cfb9c 0 zz_801cfb9c_
-801cfcbc 000000e8 801cfcbc 0 zz_801cfcbc_
-801cfda4 000000e8 801cfda4 0 zz_801cfda4_
-801cfe8c 000005b8 801cfe8c 0 zz_801cfe8c_
-801d0444 00000108 801d0444 0 zz_801d0444_
-801d054c 000003f8 801d054c 0 zz_801d054c_
-801d0944 00000108 801d0944 0 zz_801d0944_
-801d0a4c 000000c4 801d0a4c 0 zz_801d0a4c_
-801d0b10 00000178 801d0b10 0 zz_801d0b10_
-801d0c88 0000022c 801d0c88 0 zz_801d0c88_
-801d0eb4 00000164 801d0eb4 0 zz_801d0eb4_
-801d1018 000006cc 801d1018 0 zz_801d1018_
-801d16e4 00000400 801d16e4 0 zz_801d16e4_
-801d1ae4 000004fc 801d1ae4 0 zz_801d1ae4_
-801d1fe0 0000006c 801d1fe0 0 zz_801d1fe0_
-801d204c 000002a8 801d204c 0 zz_801d204c_
-801d22f4 00000040 801d22f4 0 zz_801d22f4_
-801d2334 000001b0 801d2334 0 zz_801d2334_
-801d24e4 00000238 801d24e4 0 zz_801d24e4_
-801d271c 00000438 801d271c 0 zz_801d271c_
-801d2b54 000004b0 801d2b54 0 zz_801d2b54_
-801d3004 00000368 801d3004 0 zz_801d3004_
-801d336c 00000498 801d336c 0 zz_801d336c_
-801d3804 00000840 801d3804 0 zz_801d3804_
-801d4044 000017c8 801d4044 0 zz_801d4044_
-801d580c 000002b4 801d580c 0 zz_801d580c_
-801d5ac0 00000090 801d5ac0 0 zz_801d5ac0_
-801d5b50 000001fc 801d5b50 0 zz_801d5b50_
-801d5d4c 000000f4 801d5d4c 0 zz_801d5d4c_
-801d5de4 0000005c 801d5de4 0 zz_801d5de4_
-801d5e40 00000098 801d5e40 0 zz_801d5e40_
+801cce8c 000015c8 801cce8c 0 HSD_ByteCodeEval 	hsdbase.a bytecode.c
+801ce454 000000e8 801ce454 0 hsdInitClassInfo 	hsdbase.a class.c
+801ce53c 00000050 801ce53c 0 TAB hsdbase.a class.c
+801ce58c 00000264 801ce58c 0 GetMemoryEntry 	hsdbase.a class.c
+801ce7f0 000001c8 801ce7f0 0 hsdAllocMemPiece 	hsdbase.a class.c
+801ce9b8 00000058 801ce9b8 0 hsdFreeMemPiece 	hsdbase.a class.c
+801cea10 00000058 801cea10 0 _hsdClassAlloc 	hsdbase.a class.c
+801cea68 00000008 801cea68 0 _hsdClassInit 	hsdbase.a class.c
+801cea70 00000004 801cea70 0 _hsdClassRelease 	hsdbase.a class.c
+801cea74 0000006c 801cea74 0 _hsdClassDestroy 	hsdbase.a class.c
+801ceae0 0000002c 801ceae0 0 _hsdClassAmnesia 	hsdbase.a class.c
+801ceb0c 0000009c 801ceb0c 0 _hsdClassInfoInit 	hsdbase.a class.c
+801ceba8 000000c8 801ceba8 0 hsdNew 	hsdbase.a class.c
+801cec70 00000040 801cec70 0 hsdSearchClassInfo 	hsdbase.a class.c
+801cecb0 000000b0 801cecb0 0 DumpClassStat hsdbase.a class.c
+801ced60 0000031c 801ced60 0 hsdDumpClassStat hsdbase.a class.c
+801cf07c 00000100 801cf07c 0 HSD_HashSearch 	hsdbase.a hash.c
+801cf17c 0000003c 801cf17c 0 HSD_TExpGetType 	hsdbase.a texp.c
+801cf1b8 00000088 801cf1b8 0 HSD_TExpRef 	hsdbase.a texp.c
+801cf240 0000057c 801cf240 0 HSD_TExpUnref 	hsdbase.a texp.c
+801cf7bc 00000320 801cf7bc 0 HSD_TExpFreeList 	hsdbase.a texp.c
+801cfadc 000000c0 801cfadc 0 HSD_TExpTev 	hsdbase.a texp.c
+801cfb9c 00000120 801cfb9c 0 HSD_TExpCnst 	hsdbase.a texp.c
+801cfcbc 000000e8 801cfcbc 0 HSD_TExpColorOp 	hsdbase.a texp.c
+801cfda4 000000e8 801cfda4 0 HSD_TExpAlphaOp 	hsdbase.a texp.c
+801cfe8c 000005b8 801cfe8c 0 HSD_TExpColorInSub 	hsdbase.a texp.c
+801d0444 00000108 801d0444 0 HSD_TExpColorIn 	hsdbase.a texp.c
+801d054c 000003f8 801d054c 0 HSD_TExpAlphaInSub 	hsdbase.a texp.c
+801d0944 00000108 801d0944 0 HSD_TExpAlphaIn 	hsdbase.a texp.c
+801d0a4c 000000c4 801d0a4c 0 HSD_TExpOrder 	hsdbase.a texp.c
+801d0b10 00000178 801d0b10 0 AssignColorReg 	hsdbase.a texp.c
+801d0c88 0000022c 801d0c88 0 AssignColorKonst 	hsdbase.a texp.c
+801d0eb4 00000164 801d0eb4 0 AssignAlphaKonst 	hsdbase.a texp.c
+801d1018 000006cc 801d1018 0 TExpAssignReg 	hsdbase.a texp.c
+801d16e4 00000400 801d16e4 0 TExp2TevDesc 	hsdbase.a texp.c
+801d1ae4 000004fc 801d1ae4 0 HSD_TExpSetReg 	hsdbase.a texp.c
+801d1fe0 0000006c 801d1fe0 0 HSD_TExpSetupTev 	hsdbase.a texp.c
+801d204c 000002a8 801d204c 0 HSD_TExpCompile 	hsdbase.a texp.c
+801d22f4 00000040 801d22f4 0 HSD_TExpFreeTevDesc 	hsdbase.a texp.c
+801d2334 000001b0 801d2334 0 assign_reg 	hsdbase.a texpdag.c
+801d24e4 00000238 801d24e4 0 order_dag 	hsdbase.a texpdag.c
+801d271c 00000438 801d271c 0 CalcDistance 	hsdbase.a texpdag.c
+801d2b54 000004b0 801d2b54 0 HSD_TExpMakeDag 	hsdbase.a texpdag.c
+801d3004 00000368 801d3004 0 HSD_TExpSchedule 	hsdbase.a texpdag.c
+801d336c 00000498 801d336c 0 SimplifySrc 	hsdbase.a texpopt.c
+801d3804 00000840 801d3804 0 SimplifyThis 	hsdbase.a texpopt.c
+801d4044 000017c8 801d4044 0 SimplifyByMerge 	hsdbase.a texpopt.c
+801d580c 000002b4 801d580c 0 CalcTevRange 	hsdbase.a texpopt.c
+801d5ac0 00000090 801d5ac0 0 HSD_TExpSimplify 	hsdbase.a texpopt.c
+801d5b50 000001fc 801d5b50 0 HSD_TExpSimplify2 	hsdbase.a texpopt.c
+801d5d4c 000000f4 801d5d4c 0 HSD_SaveContext 	hsdbase.a debug.c
+801d5de4 0000005c 801d5de4 0 __assert 	hsdbase.a debug.c
+801d5e40 00000098 801d5e40 0 HSD_Panic 	hsdbase.a debug.c
 801d5ed8 00000134 801d5ed8 0 zz_801d5ed8_
 801d600c 000003d8 801d600c 0 zz_801d600c_
 801d63e4 000000c4 801d63e4 0 zz_801d63e4_
