@@ -4562,20 +4562,13 @@
 801a2270 000000bc 801a2270 0 psCreateGeneratorIDJObjS hsdparticle.a generator.c
 801a232c 000000ec 801a232c 0 psSetBillboardCamera 	hsdparticle.a generator.c
 801a2418 00000e84 801a2418 0 zz_801a2418_
-801a27b4 00000ae8 801a27b4 0 zz_801a27b4_
 801a329c 00000700 801a329c 0 zz_801a329c_
-801a32e4 000006b8 801a32e4 0 zz_801a32e4_
-801a3428 00000574 801a3428 0 zz_801a3428_
 801a399c 00000be0 801a399c 0 zz_801a399c_
-801a3ec0 000006bc 801a3ec0 0 zz_801a3ec0_
-801a44f4 00000088 801a44f4 0 zz_801a44f4_
 801a457c 00000a3c 801a457c 0 zz_801a457c_
-801a4db8 00000200 801a4db8 0 zz_801a4db8_
 801a4fb8 00000464 801a4fb8 0 zz_801a4fb8_
 801a541c 000006f4 801a541c 0 zz_801a541c_
 801a5b10 0000041c 801a5b10 0 zz_801a5b10_
 801a5f2c 00000274 801a5f2c 0 zz_801a5f2c_
-801a6108 00000098 801a6108 0 zz_801a6108_
 801a61a0 00000130 801a61a0 0 psSetupTevCommon 	hsdparticle.a psdisptev.c
 801a62d0 0000000c 801a62d0 0 psSetupTevInvalidState 	hsdparticle.a psdisptev.c
 801a62dc 000006d8 801a62dc 0 psSetupTev 	hsdparticle.a psdisptev.c
@@ -4618,70 +4611,65 @@
 801a8014 0000005c 801a8014 0 DObjRelease 	hsdbase.a dobj.c
 801a8070 00000048 801a8070 0 DObjAmnesia 	hsdbase.a dobj.c
 801a80b8 00000080 801a80b8 0 DObjInfoInit 	hsdbase.a dobj.c
-801a8138 00000154 801a8138 0 zz_801a8138_
-801a828c 00000074 801a828c 0 zz_801a828c_
-801a8300 000005cc 801a8300 0 zz_801a8300_
-801a88cc 0000005c 801a88cc 0 zz_801a88cc_
-801a8928 00000128 801a8928 0 zz_801a8928_
-801a8a50 00000098 801a8a50 0 zz_801a8a50_
-801a8ae8 0000004c 801a8ae8 0 zz_801a8ae8_
-801a8b34 0000004c 801a8b34 0 zz_801a8b34_
-801a8b80 0000003c 801a8b80 0 zz_801a8b80_
-801a8bbc 00000094 801a8bbc 0 zz_801a8bbc_
-801a8c50 000001d4 801a8c50 0 zz_801a8c50_
-801a8e24 000002e8 801a8e24 0 zz_801a8e24_
-801a910c 00000290 801a910c 0 zz_801a910c_
-801a9388 00000014 801a9388 0 zz_801a9388_
-801a939c 00000120 801a939c 0 zz_801a939c_
-801a94bc 000008c8 801a94bc 0 zz_801a94bc_
-801a9d84 00000668 801a9d84 0 zz_801a9d84_
-801aa354 00000098 801aa354 0 zz_801aa354_
-801aa3ec 00000260 801aa3ec 0 zz_801aa3ec_
-801aa64c 000002dc 801aa64c 0 zz_801aa64c_
-801aa928 00000094 801aa928 0 zz_801aa928_
-801aa9bc 00000088 801aa9bc 0 zz_801aa9bc_
-801aaa44 00000090 801aaa44 0 zz_801aaa44_
-801aaad4 00000090 801aaad4 0 zz_801aaad4_
-801aab64 000000b0 801aab64 0 zz_801aab64_
-801aac14 000000bc 801aac14 0 zz_801aac14_
-801aacd0 00000090 801aacd0 0 zz_801aacd0_
-801aad10 00000050 801aad10 0 zz_801aad10_
-801aad60 00000090 801aad60 0 zz_801aad60_
-801aadf0 00000074 801aadf0 0 zz_801aadf0_
-801aae64 0000005c 801aae64 0 zz_801aae64_
-801aaec0 00000034 801aaec0 0 zz_801aaec0_
-801aaef4 00000058 801aaef4 0 zz_801aaef4_
-801aaf4c 0000002c 801aaf4c 0 zz_801aaf4c_
-801aaf78 00000058 801aaf78 0 zz_801aaf78_
-801aafd0 00000058 801aafd0 0 zz_801aafd0_
-801ab028 00000024 801ab028 0 cFielder::EndAction(void)
-801ab04c 00000058 801ab04c 0 zz_801ab04c_
-801ab0a4 000000bc 801ab0a4 0 zz_801ab0a4_
-801ab160 00000060 801ab160 0 zz_801ab160_
-801ab1c0 000000a4 801ab1c0 0 zz_801ab1c0_
-801ab264 0000023c 801ab264 0 zz_801ab264_
-801ab2f0 000001b0 801ab2f0 0 zz_801ab2f0_
-801ab4a0 00000174 801ab4a0 0 zz_801ab4a0_
-801ab614 000001d0 801ab614 0 zz_801ab614_
-801ab7e4 00000140 801ab7e4 0 zz_801ab7e4_
-801ab924 00000074 801ab924 0 zz_801ab924_
-801ab954 00000044 801ab954 0 zz_801ab954_
-801ab998 00000010 801ab998 0 zz_801ab998_
-801ab9a8 00000064 801ab9a8 0 zz_801ab9a8_
-801aba0c 0000003c 801aba0c 0 zz_801aba0c_
-801aba48 000000a0 801aba48 0 zz_801aba48_
-801abae8 00000090 801abae8 0 zz_801abae8_
-801abb78 00000064 801abb78 0 zz_801abb78_
-801abbdc 000000b0 801abbdc 0 zz_801abbdc_
-801abc8c 00000048 801abc8c 0 zz_801abc8c_
-801abcd4 00000048 801abcd4 0 zz_801abcd4_
-801abd1c 0000006c 801abd1c 0 zz_801abd1c_
-801abd88 00000048 801abd88 0 zz_801abd88_
-801abdd0 00000048 801abdd0 0 zz_801abdd0_
-801abe18 0000001c 801abe18 0 zz_801abe18_
-801abe34 00000020 801abe34 0 cPlayer::PostPhysicsUpdate(void)
-801abe54 00000058 801abe54 0 zz_801abe54_
-801abeac 00000060 801abeac 0 zz_801abeac_
+801a8138 00000154 801a8138 0 HSD_TObjAddAnim 	tobj.o
+801a828c 00000074 801a828c 0 HSD_TObjReqAnimAllByFlags 	tobj.o
+801a8300 000005cc 801a8300 0 TObjUpdateFunc 	tobj.o
+801a88cc 0000005c 801a88cc 0 HSD_TObjAnimAll 	tobj.o 
+801a8928 00000128 801a8928 0 TObjLoad 	tobj.o
+801a8a50 00000098 801a8a50 0 HSD_TObjLoadDesc 	tobj.o
+801a8ae8 0000004c 801a8ae8 0 HSD_TlutLoadDesc 	tobj.o
+801a8b34 0000004c 801a8b34 0 HSD_TObjTevLoadDesc 	tobj.o
+801a8b80 0000003c 801a8b80 0 _HSD_TObjGetCurrentByType 	tobj.o
+801a8bbc 00000094 801a8bbc 0 HSD_TexMapID2PTTexMtx 	tobj.o
+801a8c50 000001d4 801a8c50 0 MakeTextureMtx 	tobj.o
+801a8e24 000002e8 801a8e24 0 TObjSetupMtx 	tobj.o
+801a910c 00000290 801a910c 0 HSD_TObjSetupTextureCoordGen 	tobj.o
+801a939c 00000120 801a939c 0 HSD_TObjSetupVolatileTev 	tobj.o
+801a94bc 000008c8 801a94bc 0 MakeColorGenTExp 	tobj.o
+801a9d84 00000668 801a9d84 0 TObjMakeTExp 	tobj.o
+801aa3ec 00000260 801aa3ec 0 HSD_TObjAssignResources 	tobj.o
+801aa64c 000002dc 801aa64c 0 HSD_TObjSetup 	tobj.o
+801aa928 00000094 801aa928 0 HSD_TGTex2Index 	tobj.o
+801aa9bc 00000088 801aa9bc 0 HSD_TexCoordID2TexGenSrc 	tobj.o
+801aaa44 00000090 801aaa44 0 HSD_TexCoord2Index 	tobj.o
+801aaad4 00000090 801aaad4 0 HSD_Index2TexCoord 	tobj.o
+801aab64 000000b0 801aab64 0 HSD_TexMtx2Index 	tobj.o
+801aac14 000000bc 801aac14 0 HSD_Index2TexMtx 	tobj.o
+801aacd0 00000090 801aacd0 0 HSD_Index2TexMap 	tobj.o
+801aad60 00000090 801aad60 0 HSD_TexMap2Index 	tobj.o
+801aadf0 00000074 801aadf0 0 HSD_TObjRemoveAll 	tobj.o
+801aae64 0000005c 801aae64 0 HSD_TObjAlloc 	tobj.o
+801aaec0 00000034 801aaec0 0 HSD_TObjFree 	tobj.o
+801aaef4 00000058 801aaef4 0 HSD_TlutAlloc 	tobj.o
+801aaf4c 0000002c 801aaf4c 0 HSD_TlutFree 	tobj.o
+801aaf78 00000058 801aaf78 0 HSD_TObjTevAlloc 	tobj.o
+801aafd0 00000058 801aafd0 0 HSD_ImageDescAlloc 	tobj.o
+801ab028 00000024 801ab028 0 HSD_ImageDescFree 	tobj.o
+801ab04c 00000058 801ab04c 0 TObjInit 	tobj.o
+801ab0a4 000000bc 801ab0a4 0 TObjRelease 	tobj.o
+801ab160 00000060 801ab160 0 TObjAmnesia 	tobj.o
+801ab1c0 000000a4 801ab1c0 0 TObjInfoInit 	tobj.o
+801ab264 0000023c 801ab264 0 HSD_SetupChannelMode 	state.o
+801ab4a0 00000174 801ab4a0 0 HSD_SetupPEMode 	state.o
+801ab614 000001d0 801ab614 0 HSD_SetupRenderModeWithCustomPE 	state.o
+801ab7e4 00000140 801ab7e4 0 HSD_SetupRenderMode 	state.o
+801ab924 00000074 801ab924 0 HSD_SetMaterialColor 	state.o
+801ab998 00000010 801ab998 0 HSD_SetMaterialShininess 	state.o
+801ab9a8 00000064 801ab9a8 0 HSD_StateSetLineWidth state.o
+801aba0c 0000003c 801aba0c 0 HSD_StateSetCullMode 	state.o
+801aba48 000000a0 801aba48 0 HSD_StateSetBlendMode 	state.o
+801abae8 00000090 801abae8 0 HSD_StateSetZMode 	state.o
+801abb78 00000064 801abb78 0 HSD_StateSetPointSize state.o
+801abbdc 000000b0 801abbdc 0 HSD_StateSetAlphaCompare 	state.o
+801abc8c 00000048 801abc8c 0 HSD_StateSetColorUpdate 	state.o
+801abcd4 00000048 801abcd4 0 HSD_StateSetAlphaUpdate 	state.o
+801abd1c 0000006c 801abd1c 0 HSD_StateSetDstAlpha 	state.o
+801abd88 00000048 801abd88 0 HSD_StateSetZCompLoc 	state.o
+801abdd0 00000048 801abdd0 0 HSD_StateSetDither 	state.o
+801abe18 0000001c 801abe18 0 _HSD_StateInvalidatePrimitive 	state.o
+801abe34 00000020 801abe34 0 _HSD_StateInvalidateVtxAttr 	state.o
+801abe54 00000058 801abe54 0 _HSD_StateInvalidateRenderMode 	state.o
+801abeac 00000060 801abeac 0 HSD_StateInvalidate 	state.o
 801abf0c 0000005c 801abf0c 0 HSD_RenderInitAllocData 	hsdbase.a tev.c
 801abf68 0000000c 801abf68 0 HSD_RenderGetAllocData 	hsdbase.a tev.c
 801abf74 0000000c 801abf74 0 HSD_TevRegGetAllocData 	hsdbase.a tev.c
@@ -4707,29 +4695,29 @@
 801acc18 0000000c 801acc18 0 _HSD_StateInvalidateTevStage 	hsdbase.a tev.c
 801acc24 00000020 801acc24 0 _HSD_StateInvalidateTevRegister 	hsdbase.a tev.c
 801acc44 0000000c 801acc44 0 _HSD_StateInvalidateTexCoordGen 	hsdbase.a tev.c
-801acc50 00000008 801acc50 0 IPCSetBufferLo 	ipc.a ipcMain.o
-801acc58 00000018 801acc58 0 zz_801acc58_
-801acc70 00000068 801acc70 0 zz_801acc70_
-801accd8 00000064 801accd8 0 zz_801accd8_
-801acd3c 0000049c 801acd3c 0 zz_801acd3c_
-801ad1d8 00000048 801ad1d8 0 zz_801ad1d8_
-801ad220 000000a0 801ad220 0 zz_801ad220_
-801ad2c0 000000a0 801ad2c0 0 zz_801ad2c0_
-801ad360 000009cc 801ad360 0 zz_801ad360_
-801add2c 00000120 801add2c 0 zz_801add2c_
-801ade4c 00000078 801ade4c 0 zz_801ade4c_
-801adec4 00000144 801adec4 0 zz_801adec4_
-801ae008 00000024 801ae008 0 LessonTickerDoneCB(void)
-801ae02c 0000007c 801ae02c 0 zz_801ae02c_
-801ae0a8 00000018 801ae0a8 0 nlDLRingGetStart<11cBaseCamera>(cBaseCamera *)
-801ae0c0 00000050 801ae0c0 0 zz_801ae0c0_
-801ae110 0000005c 801ae110 0 zz_801ae110_
-801ae16c 00000060 801ae16c 0 zz_801ae16c_
-801ae1cc 00000064 801ae1cc 0 zz_801ae1cc_
-801ae230 00000064 801ae230 0 zz_801ae230_
-801ae294 0000009c 801ae294 0 zz_801ae294_
-801ae330 00000064 801ae330 0 zz_801ae330_
-801ae394 000000b0 801ae394 0 zz_801ae394_
+801acc50 00000008 801acc50 0 HSD_MObjSetCurrent 	mobj.o
+801acc58 00000018 801acc58 0 HSD_MObjSetFlags 	mobj.o
+801acc70 00000068 801acc70 0 HSD_MObjAddAnim 	mobj.o
+801accd8 00000064 801accd8 0 HSD_MObjReqAnimByFlags 	mobj.o
+801acd3c 0000049c 801acd3c 0 MObjUpdateFunc 	mobj.o
+801ad1d8 00000048 801ad1d8 0 HSD_MObjAnim 	mobj.o
+801ad220 000000a0 801ad220 0 MObjLoad 	mobj.o
+801ad2c0 000000a0 801ad2c0 0 HSD_MObjLoadDesc 	mobj.o
+801ad360 000009cc 801ad360 0 MObjMakeTExp 	mobj.o
+801add2c 00000120 801add2c 0 HSD_MObjCompileTev 	mobj.o
+801ade4c 00000078 801ade4c 0 MObjSetupTev 	mobj.o
+801adec4 00000144 801adec4 0 HSD_MObjSetup 	mobj.o
+801ae008 00000024 801ae008 0 HSD_MObjUnset 	mobj.o
+801ae02c 0000007c 801ae02c 0 SetToonTObj 	mobj.o
+801ae0a8 00000018 801ae0a8 0 HSD_MObjGetTObj 	mobj.o
+801ae0c0 00000050 801ae0c0 0 HSD_MObjRemove 	mobj.o
+801ae110 0000005c 801ae110 0 HSD_MObjAlloc 	mobj.o
+801ae16c 00000060 801ae16c 0 HSD_MaterialAlloc 	mobj.o
+801ae1cc 00000064 801ae1cc 0 HSD_MObjAddShadowTexture 	mobj.o
+801ae230 00000064 801ae230 0 HSD_MObjDeleteShadowTexture
+801ae294 0000009c 801ae294 0 MObjRelease 	mobj.o
+801ae330 00000064 801ae330 0 MObjAmnesia 	mobj.o
+801ae394 000000b0 801ae394 0 MObjInfoInit 	mobj.o
 801ae444 00000030 801ae444 0 HSD_AObjInitAllocData 	hsdbase.a aobj.c
 801ae474 0000000c 801ae474 0 HSD_AObjGetAllocData 	hsdbase.a aobj.c
 801ae480 00000010 801ae480 0 HSD_AObjInitEndCallBack hsdbase.a aobj.c
@@ -4852,30 +4840,29 @@
 801b77a4 00000228 801b77a4 0 HSD_FObjLoadDesc 	hsdbase.a fobj.c
 801b79cc 0000005c 801b79cc 0 HSD_FObjAlloc 	hsdbase.a fobj.c
 801b7a28 0000002c 801b7a28 0 HSD_FObjFree 	hsdbase.a fobj.c
-801b7a54 00000090 801b7a54 0 zz_801b7a54_
-801b7ae4 00000074 801b7ae4 0 zz_801b7ae4_
-801b7b58 0000004c 801b7b58 0 zz_801b7b58_
-801b7ba4 0000005c 801b7ba4 0 zz_801b7ba4_
-801b7c00 0000023c 801b7c00 0 zz_801b7c00_
-801b7e3c 00000098 801b7e3c 0 zz_801b7e3c_
-801b7ed4 00000074 801b7ed4 0 zz_801b7ed4_
-801b7f48 0000005c 801b7f48 0 zz_801b7f48_
-801b7fa4 000001d4 801b7fa4 0 zz_801b7fa4_
-801b8178 0000002c 801b8178 0 glplatAbortFrame(void)
-801b81a4 0000038c 801b81a4 0 zz_801b81a4_
-801b8530 0000038c 801b8530 0 zz_801b8530_
-801b8584 00000338 801b8584 0 zz_801b8584_
-801b88bc 00000408 801b88bc 0 zz_801b88bc_
-801b8cc4 00000324 801b8cc4 0 zz_801b8cc4_
-801b8fe8 0000073c 801b8fe8 0 zz_801b8fe8_
-801b9724 00000018 801b9724 0 zz_801b9724_
-801b973c 00000280 801b973c 0 zz_801b973c_
-801b99bc 00000380 801b99bc 0 zz_801b99bc_
-801b9d3c 00000294 801b9d3c 0 zz_801b9d3c_
-801b9fd0 000002e8 801b9fd0 0 zz_801b9fd0_
-801ba2b8 0000012c 801ba2b8 0 zz_801ba2b8_
-801ba3e4 000000ac 801ba3e4 0 zz_801ba3e4_
-801ba490 00000098 801ba490 0 zz_801ba490_
+801b7a54 00000090 801b7a54 0 HSD_PObjRemoveAnimAll 	pobj.o
+801b7ae4 00000074 801b7ae4 0 HSD_PObjReqAnimAllByFlags 	pobj.o
+801b7b58 0000004c 801b7b58 0 PObjUpdateFunc 	pobj.o
+801b7ba4 0000005c 801b7ba4 0 HSD_PObjAnimAll 	pobj.o
+801b7c00 0000023c 801b7c00 0 PObjLoad 	pobj.o
+801b7e3c 00000098 801b7e3c 0 HSD_PObjLoadDesc 	pobj.o
+801b7ed4 00000074 801b7ed4 0 HSD_PObjRemoveAll 	pobj.o
+801b7f48 0000005c 801b7f48 0 HSD_PObjAlloc 	pobj.o
+801b7fa4 000001d4 801b7fa4 0 HSD_PObjResolveRefsAll 	pobj.o
+801b8178 0000002c 801b8178 0 HSD_ClearVtxDesc 	pobj.o
+801b81a4 0000038c 801b81a4 0 get_shape_vertex_xyz 	pobj.o
+801b8530 0000038c 801b8530 0 get_shape_normal_xyz 	pobj.o
+801b88bc 00000408 801b88bc 0 get_shape_nbt_xyz 	pobj.o
+801b8cc4 00000324 801b8cc4 0 interpretShapeAnimDisplayList 	pobj.o
+801b8fe8 0000073c 801b8fe8 0 drawShapeAnim 	pobj.o
+801b9724 00000018 801b9724 0 HSD_PObjClearMtxMark 	pobj.o
+801b973c 00000280 801b973c 0 SetupRigidModelMtx 	pobj.o
+801b99bc 00000380 801b99bc 0 SetupSharedVtxModelMtx 	pobj.o
+801b9d3c 00000294 801b9d3c 0 SetupEnvelopeModelMtx 	pobj.o
+801b9fd0 000002e8 801b9fd0 0 HSD_PObjDisp 	pobj.o
+801ba2b8 0000012c 801ba2b8 0 PObjRelease 	pobj.o
+801ba3e4 000000ac 801ba3e4 0 PObjAmnesia 	pobj.o
+801ba490 00000098 801ba490 0 PObjInfoInit 	pobj.o
 801ba528 0000012c 801ba528 0 HSD_JObjCheckDepend 	hsdbase.a jobj.c
 801ba654 00000384 801ba654 0 HSD_JObjCheckDependAll hsdbase.a jobj.c
 801ba9d8 00000058 801ba9d8 0 HSD_JObjMtxIsDirty 	hsdbase.a jobj.c
@@ -4945,42 +4932,42 @@
 801c12d4 0000000c 801c12d4 0 AXFXSetHooks 	axfx.a AXFXHooks.o
 801c12e0 000000ac 801c12e0 0 zz_801c12e0_
 801c138c 00000008 801c138c 0 IPCSetBufferLo 	ipc.a ipcMain.o
-801c1394 00000108 801c1394 0 zz_801c1394_
-801c149c 00000018 801c149c 0 zz_801c149c_
-801c14b4 00000004 801c14b4 0 do_nothing
-801c14b8 00000134 801c14b8 0 zz_801c14b8_
-801c15ec 00000050 801c15ec 0 zz_801c15ec_
-801c163c 000000ac 801c163c 0 zz_801c163c_
-801c16e8 000001a4 801c16e8 0 zz_801c16e8_
-801c188c 00000060 801c188c 0 zz_801c188c_
-801c18ec 00000034 801c18ec 0 cCharacter::IsPlayingEffect( (EffectsGroup *))
-801c1920 00000024 801c1920 0 homebutton::MotorCallback(OSAlarm *, OSContext *) 	homebuttonLib.a HBMBase.o
-801c1944 00000064 801c1944 0 zz_801c1944_
-801c19a8 00000028 801c19a8 0 zz_801c19a8_
-801c19d0 00000044 801c19d0 0 zz_801c19d0_
-801c1a14 0000000c 801c1a14 0 GetOneTimerLeadGroundContactAnims(void)
-801c1a20 00000008 801c1a20 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801c1a28 000000a0 801c1a28 0 zz_801c1a28_
-801c1ac8 00000004 801c1ac8 0 do_nothing
-801c1acc 00000010 801c1acc 0 zz_801c1acc_
-801c1adc 00000044 801c1adc 0 zz_801c1adc_
-801c1b20 00000114 801c1b20 0 zz_801c1b20_
-801c1c34 000002b8 801c1c34 0 zz_801c1c34_
-801c1eec 00000054 801c1eec 0 zz_801c1eec_
-801c1f40 00000054 801c1f40 0 zz_801c1f40_
-801c1f94 00000270 801c1f94 0 zz_801c1f94_
-801c2204 0000020c 801c2204 0 zz_801c2204_
-801c2410 00000044 801c2410 0 zz_801c2410_
-801c2454 00000010 801c2454 0 THPSimpleGetCurrentFrame
-801c2464 00000258 801c2464 0 zz_801c2464_
-801c26bc 0000017c 801c26bc 0 zz_801c26bc_
-801c2838 000001c4 801c2838 0 zz_801c2838_
-801c29fc 00000044 801c29fc 0 zz_801c29fc_
-801c2a40 000000b0 801c2a40 0 zz_801c2a40_
-801c2af0 00000088 801c2af0 0 zz_801c2af0_
-801c2b78 00000018 801c2b78 0 zz_801c2b78_
-801c2b90 00000228 801c2b90 0 zz_801c2b90_
-801c2db8 0000003c 801c2db8 0 zz_801c2db8_
+801c1394 00000108 801c1394 0 HSD_InitComponent 	initialize.o
+801c149c 00000018 801c149c 0 HSD_GXSetFifoObj 	initialize.o
+801c14b4 00000004 801c14b4 0 HSD_DVDInit 	initialize.o
+801c14b8 00000134 801c14b8 0 HSD_AllocateXFB 	initialize.o
+801c15ec 00000050 801c15ec 0 HSD_AllocateFIFO 	initialize.o
+801c163c 000000ac 801c163c 0 HSD_GXInit 	initialize.o
+801c16e8 000001a4 801c16e8 0 HSD_OSInit 	initialize.o
+801c188c 00000060 801c188c 0 _HSD_MemAllocDefaultCB 	initialize.o
+801c18ec 00000034 801c18ec 0 _HSD_MemFreeDefaultCB 	initialize.o
+801c1920 00000024 801c1920 0 _HSD_MemGetRemainDefaultCB 	initialize.o
+801c1944 00000064 801c1944 0 _HSD_MemClearDefaultCB 	initialize.o
+801c19a8 00000028 801c19a8 0 _HSD_MemCheckOwnDefaultCB 	initialize.o
+801c19d0 00000044 801c19d0 0 HSD_GetHeap 	initialize.o
+801c1a14 0000000c 801c1a14 0 HSD_GetCurrentRenderPass 	initialize.o
+801c1a20 00000008 801c1a20 0 HSD_SetCurrentRenderPass 	initialize.o
+801c1a28 000000a0 801c1a28 0 HSD_StartRender 	initialize.o
+801c1ac8 00000004 801c1ac8 0 HSD_EndRender 	initialize.o
+801c1acc 00000010 801c1acc 0 _HSD_NeedCacheInvalidate 	initialize.o
+801c1adc 00000044 801c1adc 0 HSD_ObjInit 	initialize.o
+801c1b20 00000114 801c1b20 0 HSD_ObjDumpStat 	initialize.o
+801c1c34 000002b8 801c1c34 0 HSD_SetInitParameter 	initialize.o
+801c1eec 00000054 801c1eec 0 HSD_VISetUserPreRetraceCallback 	video.o
+801c1f40 00000054 801c1f40 0 HSD_VISetUserPostRetraceCallback 	video.o
+801c1f94 00000270 801c1f94 0 HSD_VIPreRetraceCB 	video.o
+801c2204 0000020c 801c2204 0 HSD_VIPostRetraceCB 	video.o
+801c2410 00000044 801c2410 0 HSD_VIGXDrawDoneCB 	video.o
+801c2454 00000010 801c2454 0 HSD_VIGetDrawDoneWaitingFlag 	video.o
+801c2464 00000258 801c2464 0 HSD_VICopyEFB2XFBPtr 	video.o
+801c26bc 0000017c 801c26bc 0 zz_801c26bc_ 	video.o
+801c2838 000001c4 801c2838 0 zz_801c2838_ 	video.o
+801c29fc 00000044 801c29fc 0 zz_801c29fc_ 	video.o
+801c2a40 000000b0 801c2a40 0 zz_801c2a40_ 	video.o
+801c2af0 00000088 801c2af0 0 HSD_VISetConfigure 	video.o
+801c2b78 00000018 801c2b78 0 HSD_VISetBlack 	video.o
+801c2b90 00000228 801c2b90 0 HSD_VIInit 	video.o
+801c2db8 0000003c 801c2db8 0 HSD_PadGetRawQueueCount 	hsdbase.a controller.c
 801c2df4 000002ac 801c2df4 0 HSD_PadRenewRawStatus 	hsdbase.a controller.c
 801c30a0 00000140 801c30a0 0 HSD_PadFlushQueue hsdbase.a controller.c
 801c31e0 000007b4 801c31e0 0 HSD_PadClamp 	hsdbase.a controller.c
@@ -5062,81 +5049,81 @@
 801c9904 000000ec 801c9904 0 HSD_IDInsertToTable 	hsdbase.a id.c
 801c99f0 000000ac 801c99f0 0 HSD_IDRemoveByIDFromTable 	hsdbase.a id.c
 801c9a9c 00000088 801c9a9c 0 HSD_IDGetDataFromTable 	hsdbase.a id.c
-801c9b24 0000004c 801c9b24 0 HSD_WObjReqAnim
-801c9b70 00000068 801c9b70 0 zz_801c9b70_
+801c9b24 0000004c 801c9b24 0 HSD_WObjReqAnim 	hsdbase.a wobj.c
+801c9b70 00000068 801c9b70 0 HSD_WObjAddAnim 	hsdbase.a wobj.c
 801c9bd8 00000144 801c9bd8 0 WObjUpdateFunc 	hsdbase.a wobj.c
-801c9d1c 00000048 801c9d1c 0 HSD_WObjInterpretAnim
-801c9d64 00000068 801c9d64 0 zz_801c9d64_
-801c9dcc 00000074 801c9dcc 0 zz_801c9dcc_
-801c9e40 00000098 801c9e40 0 zz_801c9e40_
-801c9ed8 00000048 801c9ed8 0 zz_801c9ed8_
-801c9f20 000000d4 801c9f20 0 zz_801c9f20_
-801c9ff4 000000d4 801c9ff4 0 zz_801c9ff4_
-801ca0c8 000000d4 801ca0c8 0 zz_801ca0c8_
-801ca19c 000000e8 801ca19c 0 zz_801ca19c_
-801ca284 0000005c 801ca284 0 zz_801ca284_
-801ca2e0 00000054 801ca2e0 0 zz_801ca2e0_
-801ca334 00000048 801ca334 0 zz_801ca334_
-801ca37c 00000080 801ca37c 0 zz_801ca37c_
-801ca3fc 000002bc 801ca3fc 0 zz_801ca3fc_
-801ca6b8 00000090 801ca6b8 0 zz_801ca6b8_
-801ca748 0000008c 801ca748 0 zz_801ca748_
-801ca7d4 0000002c 801ca7d4 0 zz_801ca7d4_
-801ca800 0000007c 801ca800 0 zz_801ca800_
-801ca87c 0000007c 801ca87c 0 zz_801ca87c_
-801ca8f8 00000018 801ca8f8 0 zz_801ca8f8_
-801ca910 00000230 801ca910 0 zz_801ca910_
-801cab40 000000cc 801cab40 0 zz_801cab40_
-801cac0c 00000064 801cac0c 0 zz_801cac0c_
-801cac70 00000044 801cac70 0 zz_801cac70_
-801cacb4 00000064 801cacb4 0 zz_801cacb4_
-801cad18 00000028 801cad18 0 zz_801cad18_
-801cad40 00000074 801cad40 0 zz_801cad40_
-801cadb4 00000078 801cadb4 0 zz_801cadb4_
-801cae2c 00000078 801cae2c 0 zz_801cae2c_
-801caea4 0000005c 801caea4 0 zz_801caea4_
-801caf00 00000044 801caf00 0 zz_801caf00_
-801caf44 0000000c 801caf44 0 GetOneTimerLeadGroundContactAnims(void)
-801caf50 0000000c 801caf50 0 GetOneTimerLeadGroundContactAnims(void)
-801caf5c 0000005c 801caf5c 0 zz_801caf5c_
-801cafb8 00000080 801cafb8 0 zz_801cafb8_
-801cb038 00000080 801cb038 0 zz_801cb038_
-801cb0b8 00000070 801cb0b8 0 zz_801cb0b8_
-801cb128 00000050 801cb128 0 zz_801cb128_
-801cb178 00000050 801cb178 0 zz_801cb178_
-801cb1c8 00000044 801cb1c8 0 zz_801cb1c8_
-801cb20c 00000074 801cb20c 0 zz_801cb20c_
-801cb280 0000002c 801cb280 0 zz_801cb280_
-801cb2ac 00000030 801cb2ac 0 UnreserveEXI2Port
-801cb2dc 00000030 801cb2dc 0 salMallocPhysical
-801cb30c 00000030 801cb30c 0 salMallocPhysical
-801cb33c 00000038 801cb33c 0 malloc_maybe
-801cb374 0000000c 801cb374 0 GetOneTimerLeadGroundContactAnims(void)
-801cb380 00000030 801cb380 0 zz_801cb380_
-801cb3b0 000000fc 801cb3b0 0 zz_801cb3b0_
-801cb4ac 00000108 801cb4ac 0 zz_801cb4ac_
-801cb5b4 00000070 801cb5b4 0 zz_801cb5b4_
-801cb624 00000160 801cb624 0 zz_801cb624_
+801c9d1c 00000048 801c9d1c 0 HSD_WObjInterpretAnim 	hsdbase.a wobj.c
+801c9d64 00000068 801c9d64 0 WObjLoad 	hsdbase.a wobj.c
+801c9dcc 00000074 801c9dcc 0 HSD_WObjInit 	hsdbase.a wobj.c
+801c9e40 00000098 801c9e40 0 HSD_WObjLoadDesc 	hsdbase.a wobj.c
+801c9ed8 00000048 801c9ed8 0 HSD_WObjSetPosition 	hsdbase.a wobj.c
+801c9f20 000000d4 801c9f20 0 HSD_WObjSetPositionX 	hsdbase.a wobj.c
+801c9ff4 000000d4 801c9ff4 0 HSD_WObjSetPositionY 	hsdbase.a wobj.c
+801ca0c8 000000d4 801ca0c8 0 HSD_WObjSetPositionZ 	hsdbase.a wobj.c
+801ca19c 000000e8 801ca19c 0 HSD_WObjGetPosition 	hsdbase.a wobj.c
+801ca284 0000005c 801ca284 0 HSD_WObjAlloc 	hsdbase.a wobj.c
+801ca2e0 00000054 801ca2e0 0 WObjRelease 	hsdbase.a wobj.c
+801ca334 00000048 801ca334 0 WObjAmnesia 	hsdbase.a wobj.c
+801ca37c 00000080 801ca37c 0 WObjInfoInit 	hsdbase.a wobj.c
+801ca3fc 000002bc 801ca3fc 0 HSD_FogSet 	hsdbase.a fog.c
+801ca6b8 00000090 801ca6b8 0 HSD_FogLoadDesc 	hsdbase.a fog.c
+801ca748 0000008c 801ca748 0 HSD_FogInit 	hsdbase.a fog.c
+801ca7d4 0000002c 801ca7d4 0 HSD_FogGetColor hsdbase.a fog.c
+801ca800 0000007c 801ca800 0 HSD_FogAdjLoadDesc 	hsdbase.a fog.c
+801ca87c 0000007c 801ca87c 0 HSD_FogAdjInit 	hsdbase.a fog.c
+801ca8f8 00000018 801ca8f8 0 HSD_FogAdjGetFlags 	hsdbase.a fog.c
+801ca910 00000230 801ca910 0 FogUpdateFunc 	hsdbase.a fog.c
+801cab40 000000cc 801cab40 0 FogRelease 	hsdbase.a fog.c
+801cac0c 00000064 801cac0c 0 FogInfoInit 	hsdbase.a fog.c
+801cac70 00000044 801cac70 0 FogAdjInfoInit 	hsdbase.a fog.c
+801cacb4 00000064 801cacb4 0 HSD_PerfInitStat hsdbase.a perf.c
+801cad18 00000028 801cad18 0 HSD_PerfSetStartTime hsdbase.a perf.c
+801cad40 00000074 801cad40 0 HSD_PerfSetCPUTime hsdbase.a perf.c
+801cadb4 00000078 801cadb4 0 HSD_PerfSetDrawTime hsdbase.a perf.c
+801cae2c 00000078 801cae2c 0 HSD_PerfSetTotalTime hsdbase.a perf.c
+801caea4 0000005c 801caea4 0 HSD_PerfCountEnvelopeBlending 	hsdbase.a perf.c
+801caf00 00000044 801caf00 0 HSD_ListInitAllocData 	hsdbase.a list.c
+801caf44 0000000c 801caf44 0 HSD_SListGetAllocData 	hsdbase.a list.c
+801caf50 0000000c 801caf50 0 HSD_DListGetAllocData 	hsdbase.a list.c
+801caf5c 0000005c 801caf5c 0 HSD_SListAlloc 	hsdbase.a list.c
+801cafb8 00000080 801cafb8 0 HSD_SListAppend 	hsdbase.a list.c
+801cb038 00000080 801cb038 0 HSD_SListPrepend 	hsdbase.a list.c
+801cb0b8 00000070 801cb0b8 0 HSD_SListAppendList 	hsdbase.a list.c
+801cb128 00000050 801cb128 0 HSD_SListPrependList 	hsdbase.a list.c
+801cb178 00000050 801cb178 0 HSD_SListRemove 	hsdbase.a list.c
+801cb1c8 00000044 801cb1c8 0 ObjInfoInit 	hsdbase.a object.c
+801cb20c 00000074 801cb20c 0 _HSD_MemSetCallbacks 	hsdbase.a memory.c
+801cb280 0000002c 801cb280 0 _HSD_MemAlloc 	hsdbase.a memory.c
+801cb2ac 00000030 801cb2ac 0 _HSD_MemGetRemain 	hsdbase.a memory.c
+801cb2dc 00000030 801cb2dc 0 _HSD_MemCheckOwn 	hsdbase.a memory.c
+801cb30c 00000030 801cb30c 0 HSD_Free 	hsdbase.a memory.c
+801cb33c 00000038 801cb33c 0 HSD_Alloc 	hsdbase.a memory.c
+801cb374 0000000c 801cb374 0 HSD_ShadowGetAllocData
+801cb380 00000030 801cb380 0 HSD_ShadowInitAllocData
+801cb3b0 000000fc 801cb3b0 0 HSD_ShadowAlloc
+801cb4ac 00000108 801cb4ac 0 HSD_ShadowFree
+801cb5b4 00000070 801cb5b4 0 HSD_ShadowInit
+801cb624 00000160 801cb624 0 HSD_ShadowSetSize
 801cb784 000002a8 801cb784 0 zz_801cb784_
 801cba2c 00000198 801cba2c 0 zz_801cba2c_
 801cbbc4 00000124 801cbbc4 0 zz_801cbbc4_
 801cbce8 000001c8 801cbce8 0 zz_801cbce8_
-801cbeb0 000000ac 801cbeb0 0 zz_801cbeb0_
-801cbf5c 00000094 801cbf5c 0 zz_801cbf5c_
-801cbff0 0000013c 801cbff0 0 zz_801cbff0_
+801cbeb0 000000ac 801cbeb0 0 HSD_ShadowAddObject
+801cbf5c 00000094 801cbf5c 0 HSD_ShadowDeleteObject
+801cbff0 0000013c 801cbff0 0 makeMatrix
 801cc12c 0000020c 801cc12c 0 zz_801cc12c_
-801cc338 0000016c 801cc338 0 zz_801cc338_
-801cc4a4 000000a4 801cc4a4 0 zz_801cc4a4_
-801cc548 00000038 801cc548 0 zz_801cc548_
-801cc580 000000d4 801cc580 0 zz_801cc580_
-801cc654 00000340 801cc654 0 zz_801cc654_
-801cc994 000000a0 801cc994 0 zz_801cc994_
-801cca34 00000020 801cca34 0 cPlayer::PostPhysicsUpdate(void)
-801cca54 00000160 801cca54 0 zz_801cca54_
-801ccbb4 00000214 801ccbb4 0 zz_801ccbb4_
-801ccdc8 00000030 801ccdc8 0 HSD_Rand
-801ccdf8 00000058 801ccdf8 0 HSD_Randf
-801cce50 0000003c 801cce50 0 HSD_Randi
+801cc338 0000016c 801cc338 0 HSD_ArchiveParse 	hsdbase.a archive.c
+801cc4a4 000000a4 801cc4a4 0 HSD_ArchiveGetPublicAddress 	hsdbase.a archive.c
+801cc548 00000038 801cc548 0 HSD_ArchiveGetExtern 	hsdbase.a archive.c
+801cc580 000000d4 801cc580 0 HSD_ArchiveLocateExtern 	hsdbase.a archive.c
+801cc654 00000340 801cc654 0 HSD_ArchiveLoad 	hsdbase.a archive.c
+801cc994 000000a0 801cc994 0 HSD_ArchiveFree 	hsdbase.a archive.c
+801cca34 00000020 801cca34 0 HSD_ArchiveDefaultLoader 	hsdbase.a archive.c
+801cca54 00000160 801cca54 0 HSD_ArchiveLoadDepends 	hsdbase.a archive.c
+801ccbb4 00000214 801ccbb4 0 HSD_ArchiveResolveReference 	hsdbase.a archive.c
+801ccdc8 00000030 801ccdc8 0 HSD_Rand 	hsdbase.a random.c
+801ccdf8 00000058 801ccdf8 0 HSD_Randf 	hsdbase.a random.c
+801cce50 0000003c 801cce50 0 HSD_Randi 	hsdbase.a random.c
 801cce8c 000015c8 801cce8c 0 HSD_ByteCodeEval 	hsdbase.a bytecode.c
 801ce454 000000e8 801ce454 0 hsdInitClassInfo 	hsdbase.a class.c
 801ce53c 00000050 801ce53c 0 TAB hsdbase.a class.c
