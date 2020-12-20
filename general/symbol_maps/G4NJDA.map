@@ -3518,7 +3518,6 @@
 80164840 00000354 80164840 0 zz_80164840_
 80164b94 00000020 80164b94 0 cPlayer::PostPhysicsUpdate(void)
 80164bb4 00000234 80164bb4 0 zz_80164bb4_
-80164bdc 0000020c 80164bdc 0 zz_80164bdc_
 80164de8 00000008 80164de8 0 PPCMfmsr 	base.a PPCArch.c
 80164df0 00000008 80164df0 0 PPCMtmsr 	base.a PPCArch.c
 80164df8 00000008 80164df8 0 PPCMfhid0 	base.a PPCArch.c
@@ -3610,7 +3609,7 @@
 80167c5c 000002e8 80167c5c 0 __OSUnhandledException 	os.a OSError.c
 80167f44 00000188 80167f44 0 PackArgs 	os.a OSExec.c
 801680cc 00000028 801680cc 0 Run 	os.a OSExec.c
-801680f4 00000014 801680f4 0 zz_801680f4_
+801680f4 00000014 801680f4 0 StartDol 	os.a OSExec.c
 80168108 0000006c 80168108 0 ReadDisc 	os.a OSExec.c
 80168174 0000000c 80168174 0 Callback 	os.a OSExec.c
 80168180 00000040 80168180 0 __OSGetExecParams 	os.a OSExec.c
@@ -3639,7 +3638,7 @@
 8016a030 00000344 8016a030 0 __OSDispatchInterrupt 	os.a OSInterrupt.c
 8016a374 00000068 8016a374 0 ExternalInterruptHandler 	os.a OSInterrupt.c
 8016a3c4 00000018 8016a3c4 0 __OSModuleInit 	os.a OSLink.c
-8016a3dc 0000000c 8016a3dc 0 OSGetCurrentContext 	os.a OSContext.c
+8016a3dc 0000000c 8016a3dc 0 OSGetPhysicalMemSize 	os.a OSMemory.c
 8016a3e8 0000003c 8016a3e8 0 OnReset 	os.a OSMemory.c
 8016a424 0000006c 8016a424 0 MEMIntrruptHandler 	os.a OSMemory.c
 8016a490 00000080 8016a490 0 Config24MB  	os.a OSMemory.c
@@ -3658,7 +3657,7 @@
 8016ac00 00000038 8016ac00 0 OSGetResetCode 	os.a OSReset.c
 8016ac38 000000f4 8016ac38 0 __OSResetSWInterruptHandler 	os.a OSResetSW.c
 8016ad2c 00000298 8016ad2c 0 OSGetResetButtonState 	os.a OSResetSW.c
-8016afc4 00000020 8016afc4 0 IFFifoAlloc
+8016afc4 00000020 8016afc4 0 OSGetResetSwitchState 	os.a OSResetSW.c
 8016afe4 00000060 8016afe4 0 WriteSramCallback 	os.a OSRtc.c
 8016b044 00000118 8016b044 0 WriteSram 	os.a OSRtc.c
 8016b15c 0000013c 8016b15c 0 __OSInitSram 	os.a OSRtc.c
@@ -3682,8 +3681,8 @@
 8016bd1c 00000004 8016bd1c 0 DefaultSwitchThreadCallback 	os.a OSThread.c
 8016bd20 00000158 8016bd20 0 __OSThreadInit 	os.a OSThread.c
 8016be78 00000010 8016be78 0 OSInitThreadQueue 	os.a OSThread.c
-8016be88 0000000c 8016be88 0 OSGetCurrentContext 	os.a OSThread.c
-8016be94 00000034 8016be94 0 OSGetCurrentThread os.a OSThread.c
+8016be88 0000000c 8016be88 0 OSGetCurrentThread 	os.a OSThread.c
+8016be94 00000034 8016be94 0 OSIsThreadTerminated os.a OSThread.c
 8016bec8 00000040 8016bec8 0 OSDisableScheduler os.a OSThread.c
 8016bf08 00000040 8016bf08 0 OSEnableScheduler os.a OSThread.c
 8016bf48 00000068 8016bf48 0 UnsetRun 	os.a OSThread.c
@@ -3779,8 +3778,7 @@
 8016fa9c 00000118 8016fa9c 0 DVDReadPrio 	dvd.a dvdfs.c
 8016fbb4 00000024 8016fbb4 0 cbForReadSync 	dvd.a dvdfs.c
 8016fbd8 000000ec 8016fbd8 0 DVDPrepareStreamAsync 	dvd.a dvdfs.c
-8016fc2c 00000098 8016fc2c 0 DVDSeekAsyncPrio 	dvd.a dvdfs.c
-8016fcc4 00000030 8016fcc4 0 cbForReadAsync 	dvd.a dvdfs.c
+8016fcc4 00000030 8016fcc4 0 cbForPrepareStreamAsync 	dvd.a dvdfs.c
 8016fcf4 00000004 8016fcf4 0 defaultOptionalCommandChecker 	dvd.a dvd.c
 8016fcf8 000000d8 8016fcf8 0 DVDInit 	dvd.a dvd.c
 8016fdd0 00000094 8016fdd0 0 stateReadingFST 	dvd.a dvd.c
@@ -3796,7 +3794,7 @@
 80170408 00000140 80170408 0 cbForStateGoToRetry 	dvd.a dvd.c
 80170548 000000e0 80170548 0 stateCheckID 	dvd.a dvd.c
 80170628 00000034 80170628 0 stateCheckID3 	dvd.a dvd.c
-8017065c 00000034 8017065c 0 stateCheckID3 	dvd.a dvd.c
+8017065c 00000034 8017065c 0 stateCheckID2a 	dvd.a dvd.c
 80170690 00000068 80170690 0 cbForStateCheckID2a 	dvd.a dvd.c
 801706f8 00000038 801706f8 0 stateCheckID2 	dvd.a dvd.c
 80170730 000000fc 80170730 0 cbForStateCheckID1 	dvd.a dvd.c
@@ -4100,8 +4098,8 @@
 80183e1c 0000007c 80183e1c 0 GXLoadLightObjImm 	gx.a GXLight.c
 80183e98 000000b4 80183e98 0 GXSetChanAmbColor 	gx.a GXLight.c
 80183f4c 00000034 80183f4c 0 __GXSetChanAmbColor 	gx.a GXLight.c
-80183f80 000000b4 80183f80 0 GXSetNumChans 	gx.a GXLight.c
-80184034 00000034 80184034 0 __GXSetNumChans 	gx.a GXLight.c
+80183f80 000000b4 80183f80 0 GXSetChanMatColor 	gx.a GXLight.c
+80184034 00000034 80184034 0 __GXSetChanMatColor 	gx.a GXLight.c
 80184068 0000003c 80184068 0 GXSetNumChans 	gx.a GXLight.c
 801840a4 000000b0 801840a4 0 GXSetChanCtrl 	gx.a GXLight.c
 80184154 0000015c 80184154 0 GXGetTexBufferSize 	gx.a GXTexture.c
@@ -4139,7 +4137,7 @@
 801855f4 00000064 801855f4 0 GXSetTevColorS10 	gx.a GXTev.c
 80185658 00000064 80185658 0 GXSetTevKColor 	gx.a GXTev.c
 801856bc 0000005c 801856bc 0 GXSetTevKColorSel 	gx.a GXTev.c
-80185718 0000005c 80185718 0 GXSetTevKColorSel 	gx.a GXTev.c
+80185718 0000005c 80185718 0 GXSetTevKAlphaSel 	gx.a GXTev.c
 80185774 00000048 80185774 0 GXSetTevSwapMode 	gx.a GXTev.c
 801857bc 00000080 801857bc 0 GXSetTevSwapModeTable 	gx.a GXTev.c
 8018583c 00000044 8018583c 0 GXSetAlphaCompare 	gx.a GXTev.c
@@ -4361,8 +4359,8 @@
 8018f27c 0000023c 8018f27c 0 __num2dec_internal 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
 8018f4b8 00000340 8018f4b8 0 __two_exp 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
 8018f7f8 000000ec 8018f7f8 0 __str2dec 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
-8018f8e4 0000028c 8018f8e4 0 __ull2dec 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
-8018fb70 00000110 8018fb70 0 __cvt_dbl_usll 	Runtime.PPCEABI.H.a runtime.c
+8018f8e4 0000028c 8018f8e4 0 __timesdec 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
+8018fb70 00000110 8018fb70 0 __ull2dec MSL_C.PPCEABI.bare.H.a ansi_fp.c
 8018fc80 00000070 8018fc80 0 __count_trailing_zerol 	MSL_C.PPCEABI.bare.H.a ansi_fp.c
 8018fcf0 000000c4 8018fcf0 0 __flush_buffer 	MSL_C.PPCEABI.bare.H.a buffer_io.c
 8018fdb4 00000034 8018fdb4 0 __prep_buffer 	MSL_C.PPCEABI.bare.H.a buffer_io.c
@@ -4561,14 +4559,14 @@
 801a1b40 00000730 801a1b40 0 psCreateGeneratorID 	hsdparticle.a generator.c
 801a2270 000000bc 801a2270 0 psCreateGeneratorIDJObjS hsdparticle.a generator.c
 801a232c 000000ec 801a232c 0 psSetBillboardCamera 	hsdparticle.a generator.c
-801a2418 00000e84 801a2418 0 zz_801a2418_
-801a329c 00000700 801a329c 0 zz_801a329c_
-801a399c 00000be0 801a399c 0 zz_801a399c_
-801a457c 00000a3c 801a457c 0 zz_801a457c_
-801a4fb8 00000464 801a4fb8 0 zz_801a4fb8_
-801a541c 000006f4 801a541c 0 zz_801a541c_
-801a5b10 0000041c 801a5b10 0 zz_801a5b10_
-801a5f2c 00000274 801a5f2c 0 zz_801a5f2c_
+801a2418 00000e84 801a2418 0 psDispParticles 	psdisp.o
+801a329c 00000700 801a329c 0 psDispSub 	psdisp.o
+801a399c 00000be0 801a399c 0 psDispSubMakePolygon 	psdisp.o
+801a457c 00000a3c 801a457c 0 psDispSubAppSRT 	psdisp.o
+801a4fb8 00000464 801a4fb8 0 psDispSubPointTrail 	psdisp.o
+801a541c 000006f4 801a541c 0 psDispSubAPPSRTPoint 	psdisp.o
+801a5b10 0000041c 801a5b10 0 setupTevReg 	psdisp.o
+801a5f2c 00000274 801a5f2c 0 setupChanReg 	psdisp.o
 801a61a0 00000130 801a61a0 0 psSetupTevCommon 	hsdparticle.a psdisptev.c
 801a62d0 0000000c 801a62d0 0 psSetupTevInvalidState 	hsdparticle.a psdisptev.c
 801a62dc 000006d8 801a62dc 0 psSetupTev 	hsdparticle.a psdisptev.c
