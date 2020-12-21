@@ -6,11 +6,10 @@ with open('../general/symbol_maps/G4NJDA.map', 'r') as f:
 print(len(lines))
 a = []
 for count, line in enumerate(lines):
-    if count >= 3520: # Just check musyx.a for now
-        parts = line.split(' ')
-        if len(parts) > 4:
-            name = parts[4]
-            if name in a:
-                print('found: ' + name)
-            if name:
-                a.append(name)
+    parts = line.split(' ')
+    if len(parts) > 4:
+        name = parts[4]
+        if name in a:
+            print('found: ' + name)
+        if name:
+            a.append(name)
