@@ -984,15 +984,15 @@
 8005fdc8 0000003c 8005fdc8 0 zz_8005fdc8_
 8005fe04 00000c74 8005fe04 0 zz_8005fe04_
 80060720 00000358 80060720 0 zz_80060720_
-80060a78 00000008 80060a78 0 GXInitTexObjUserData 	gx.a GXTexture.o
+80060a78 00000008 80060a78 0 zz_80060a78_
 80060a80 00000020 80060a80 0 zz_80060a80_
 80060aa0 0000001c 80060aa0 0 zz_80060aa0_
 80060abc 00000038 80060abc 0 zz_80060abc_
 80060af4 00000098 80060af4 0 zz_80060af4_
 80060b8c 00000178 80060b8c 0 zz_80060b8c_
 80060d04 000000a4 80060d04 0 zz_80060d04_
-80060da8 00000004 80060da8 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-80060dac 00000004 80060dac 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+80060da8 00000004 80060da8 0 zz_80060da8_
+80060dac 00000004 80060dac 0 zz_80060dac_
 80060db0 0000036c 80060db0 0 zz_80060db0_
 8006111c 00000098 8006111c 0 zz_8006111c_
 800611b4 000000f8 800611b4 0 zz_800611b4_
@@ -1000,7 +1000,7 @@
 80061510 00000254 80061510 0 zz_80061510_
 80061764 0000010c 80061764 0 zz_80061764_
 80061870 000000fc 80061870 0 zz_80061870_
-8006196c 00000004 8006196c 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+8006196c 00000004 8006196c 0 zz_8006196c_
 80061970 0000005c 80061970 0 zz_80061970_
 800619cc 00000044 800619cc 0 zz_800619cc_
 80061a10 000003f8 80061a10 0 zz_80061a10_
@@ -1023,19 +1023,19 @@
 80063284 00000150 80063284 0 throw_check
 800633d4 00000590 800633d4 0 zz_800633d4_
 80063964 000003ac 80063964 0 zz_80063964_
-80063d10 00000008 80063d10 0 J3DAnmCluster::getWeight(unsigned short) const 	J3DGraphAnimator.a J3DCluster.o
+80063d10 00000008 80063d10 0 zz_80063d10_
 80063d18 000000cc 80063d18 0 zz_80063d18_
-80063de4 00000028 80063de4 0 sndAuxCallbackShutdownChorus
+80063de4 00000028 80063de4 0 zz_80063de4_
 80063e0c 000000b4 80063e0c 0 zz_80063e0c_
 80063ec0 00000024 80063ec0 0 zz_80063ec0_
-80063ee4 00000024 80063ee4 0 cFielder::UpdatePlay(float)
+80063ee4 00000024 80063ee4 0 zz_80063ee4_
 80063f08 00000190 80063f08 0 zz_80063f08_
 80064098 00000088 80064098 0 zz_80064098_
 80064100 00000020 80064100 0 zz_80064100_
 80064120 00000084 80064120 0 zz_80064120_
 800641a4 0000006c 800641a4 0 zz_800641a4_
 800641ec 00000024 800641ec 0 zz_800641ec_
-80064210 00000008 80064210 0 return_0
+80064210 00000008 80064210 0 zz_80064210_
 80064218 00000074 80064218 0 zz_80064218_
 8006428c 00000070 8006428c 0 zz_8006428c_
 800642fc 000000a4 800642fc 0 zz_800642fc_
@@ -1044,7 +1044,7 @@
 800644cc 0000009c 800644cc 0 zz_800644cc_
 80064568 00000670 80064568 0 zz_80064568_
 80064bd8 00000030 80064bd8 0 zz_80064bd8_
-80064c08 00000004 80064c08 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+80064c08 00000004 80064c08 0 zz_80064c08_
 80064c0c 000001f8 80064c0c 0 zz_80064c0c_
 80064e04 00000140 80064e04 0 zz_80064e04_
 80064f44 00000130 80064f44 0 zz_80064f44_
@@ -5336,7 +5336,7 @@
 801e6e50 000000a4 801e6e50 0 seqGetInstanceForVoice 	musyx.a seq_api.c
 801e6ef4 00000060 801e6ef4 0 sndFXCtrl 	musyx.a snd_synthapi.c
 801e6f54 00000040 801e6f54 0 sndFXKeyOff 	musyx.a snd_synthapi.c
-801e6f94 00000164 801e6f94 0 zz_801e6f94_
+801e6f94 00000164 801e6f94 0 sndFXStartPara     musyx.a snd_synthapi.c
 801e70f8 0000004c 801e70f8 0 sndFXCheck 	musyx.a snd_synthapi.c
 801e7144 00000060 801e7144 0 sndVolume 	musyx.a snd_synthapi.c
 801e71a4 00000094 801e71a4 0 sndMasterVolume 	musyx.a snd_synthapi.c
@@ -5491,11 +5491,11 @@
 801f7dc0 000000b4 801f7dc0 0 salNormalizeVector 	musyx.a snd_math.c
 801f7e74 00000024 801f7e74 0 inpSetGlobalMIDIDirtyFlag 	musyx.a snd_midictrl.c
 801f7e98 00000164 801f7e98 0 inpSetRPNHi 	musyx.a snd_midictrl.c
-801f7ffc 0000007c 801f7ffc 0 zz_801f7ffc_
+801f7ffc 0000007c 801f7ffc 0 _inpSetRPNHi 	musyx.a snd_midictrl.c
 801f8078 00000184 801f8078 0 inpSetRPNDec 	musyx.a snd_midictrl.c
-801f81fc 000000a0 801f81fc 0 zz_801f81fc_
+801f81fc 000000a0 801f81fc 0 _inpSetRPNDec 	musyx.a snd_midictrl.c
 801f829c 00000184 801f829c 0 inpSetRPNInc 	musyx.a snd_midictrl.c
-801f8420 000000a0 801f8420 0 zz_801f8420_
+801f8420 000000a0 801f8420 0 _inpSetRPNInc 	musyx.a snd_midictrl.c
 801f84c0 0000051c 801f84c0 0 inpSetMidiCtrl 	musyx.a snd_midictrl.c
 801f89dc 00000124 801f89dc 0 inpSetMidiCtrl14 	musyx.a snd_midictrl.c
 801f8b00 000000f0 801f8b00 0 inpResetMidiCtrl 	musyx.a snd_midictrl.c
@@ -5582,7 +5582,7 @@
 801fb718 000002e4 801fb718 0 aramInit 	musyx.a hw_aramdma.c
 801fb9fc 00000020 801fb9fc 0 aramGetZeroBuffer 	musyx.a hw_aramdma.c
 801fba1c 00000024 801fba1c 0 aramGetFirstUserAddress 	musyx.a hw_aramdma.c
-801fba40 00000008 801fba40 0 zz_801fba40_
+801fba40 00000008 801fba40 0 aramGetUserBytes   musyx.a hw_aramdma.c
 801fba48 00000424 801fba48 0 aramStoreData 	musyx.a hw_aramdma.c
 801fbe6c 00000018 801fbe6c 0 aramRemoveData 	musyx.a hw_aramdma.c
 801fbe84 000000c4 801fbe84 0 InitStreamBuffers 	musyx.a hw_aramdma.c
@@ -5590,7 +5590,7 @@
 801fbf80 000000a8 801fbf80 0 salCallback 	musyx.a hw_dolphin.c
 801fc028 00000010 801fc028 0 dspInitCallback 	musyx.a hw_dolphin.c
 801fc038 00000064 801fc038 0 dspResumeCallback 	musyx.a hw_dolphin.c
-801fc09c 00000024 801fc09c 0 nlVirtualTotalFree
+801fc09c 00000024 801fc09c 0 dspDoneCallback    musyx.a hw_dolphin.c
 801fc0c0 000000c8 801fc0c0 0 salInitAi 	musyx.a hw_dolphin.c
 801fc188 00000020 801fc188 0 salStartAi 	musyx.a hw_dolphin.c
 801fc1a8 00000030 801fc1a8 0 salAiGetDest 	musyx.a hw_dolphin.c
@@ -5603,13 +5603,13 @@
 801fc408 00000020 801fc408 0 hwIRQEnterCritical 	musyx.a hw_dolphin.c
 801fc428 00000020 801fc428 0 hwIRQLeaveCritical 	musyx.a hw_dolphin.c
 801fc448 0000002c 801fc448 0 salMalloc 	musyx.a hw_memory.c
-801fc474 00000030 801fc474 0 salMallocPhysical
-801fc4a4 00000030 801fc4a4 0 salMallocPhysical2
+801fc474 00000030 801fc474 0 salMallocPhysical 	musyx.a hw_memory.c
+801fc4a4 00000030 801fc4a4 0 salFree 	musyx.a hw_memory.c
 801fc4d4 0000005c 801fc4d4 0 sndAuxCallbackReverbSTD 	musyx.a creverb_fx.c
 801fc530 00000058 801fc530 0 sndAuxCallbackUpdateSettingsReverbHI musyx.a reverb_fx.c
 801fc588 00000040 801fc588 0 sndAuxCallbackPrepareReverbHI 	musyx.a reverb_fx.c
-801fc5c8 00000520 801fc5c8 0 zz_801fc5c8_
-801fcae8 000001e4 801fcae8 0 zz_801fcae8_
+801fc5c8 00000520 801fc5c8 0 ReverbHICreate 	musyx.a reverb.c
+801fcae8 000001e4 801fcae8 0 ReverbHIModify     musyx.a reverb.c
 801fcccc 00000184 801fcccc 0 DoCrossTalk 	musyx.a reverb.c
 801fce50 0000050c 801fce50 0 HandleReverb 	musyx.a reverb.c
 801fd35c 000000e0 801fd35c 0 ReverbHICallback 	musyx.a reverb.c
