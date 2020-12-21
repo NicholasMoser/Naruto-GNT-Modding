@@ -5096,20 +5096,20 @@
 801cb2dc 00000030 801cb2dc 0 _HSD_MemCheckOwn 	hsdbase.a memory.c
 801cb30c 00000030 801cb30c 0 HSD_Free 	hsdbase.a memory.c
 801cb33c 00000038 801cb33c 0 HSD_Alloc 	hsdbase.a memory.c
-801cb374 0000000c 801cb374 0 HSD_ShadowGetAllocData
-801cb380 00000030 801cb380 0 HSD_ShadowInitAllocData
-801cb3b0 000000fc 801cb3b0 0 HSD_ShadowAlloc
-801cb4ac 00000108 801cb4ac 0 HSD_ShadowFree
-801cb5b4 00000070 801cb5b4 0 HSD_ShadowInit
-801cb624 00000160 801cb624 0 HSD_ShadowSetSize
-801cb784 000002a8 801cb784 0 zz_801cb784_
-801cba2c 00000198 801cba2c 0 zz_801cba2c_
-801cbbc4 00000124 801cbbc4 0 zz_801cbbc4_
-801cbce8 000001c8 801cbce8 0 zz_801cbce8_
-801cbeb0 000000ac 801cbeb0 0 HSD_ShadowAddObject
-801cbf5c 00000094 801cbf5c 0 HSD_ShadowDeleteObject
-801cbff0 0000013c 801cbff0 0 makeMatrix
-801cc12c 0000020c 801cc12c 0 zz_801cc12c_
+801cb374 0000000c 801cb374 0 HSD_ShadowGetAllocData 	hsdbase.a shadow.c
+801cb380 00000030 801cb380 0 HSD_ShadowInitAllocData 	hsdbase.a shadow.c
+801cb3b0 000000fc 801cb3b0 0 HSD_ShadowAlloc 	hsdbase.a shadow.c
+801cb4ac 00000108 801cb4ac 0 HSD_ShadowFree 	hsdbase.a shadow.c
+801cb5b4 00000070 801cb5b4 0 HSD_ShadowInit 	hsdbase.a shadow.c
+801cb624 00000160 801cb624 0 HSD_ShadowSetSize 	hsdbase.a shadow.c
+801cb784 000002a8 801cb784 0 HSD_ShadowStartRender 	hsdbase.a shadow.c
+801cba2c 00000198 801cba2c 0 HSD_ShadowEndRender 	hsdbase.a shadow.c
+801cbbc4 00000124 801cbbc4 0 HSD_ShadowCopyLightPos 	hsdbase.a shadow.c
+801cbce8 000001c8 801cbce8 0 HSD_ShadowSetActive 	hsdbase.a shadow.c
+801cbeb0 000000ac 801cbeb0 0 HSD_ShadowAddObject 	hsdbase.a shadow.c
+801cbf5c 00000094 801cbf5c 0 HSD_ShadowDeleteObject 	hsdbase.a shadow.c
+801cbff0 0000013c 801cbff0 0 makeMatrix 	hsdbase.a shadow.c
+801cc12c 0000020c 801cc12c 0 HSD_ViewingRectInit 	hsdbase.a shadow.c
 801cc338 0000016c 801cc338 0 HSD_ArchiveParse 	hsdbase.a archive.c
 801cc4a4 000000a4 801cc4a4 0 HSD_ArchiveGetPublicAddress 	hsdbase.a archive.c
 801cc548 00000038 801cc548 0 HSD_ArchiveGetExtern 	hsdbase.a archive.c
