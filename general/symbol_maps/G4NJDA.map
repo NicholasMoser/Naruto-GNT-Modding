@@ -2173,7 +2173,7 @@
 800d01b4 00000010 800d01b4 0 LooseBallAnims::Destroy(void)
 800d01c4 000000ec 800d01c4 0 zz_800d01c4_
 800d02b0 00000064 800d02b0 0 zz_800d02b0_
-800d0314 000001e8 800d0314 0 zz_800d0314_
+800d0314 000001e8 800d0314 0 audio_init
 800d04fc 0000003c 800d04fc 0 zz_800d04fc_
 800d0538 00000064 800d0538 0 sound_play_c
 800d059c 00000068 800d059c 0 zz_800d059c_
@@ -4585,15 +4585,15 @@
 801a70cc 000000dc 801a70cc 0 _psListDelete 	hsdparticle.a pslist.c
 801a71a8 0000006c 801a71a8 0 _psListGetFirst 	hsdparticle.a pslist.c
 801a7214 00000338 801a7214 0 particleSort 	hsdparticle.a pslist.c
-801a754c 0000005c 801a754c 0 zz_801a754c_
-801a75a8 00000028 801a75a8 0 zz_801a75a8_
-801a75d0 00000034 801a75d0 0 zz_801a75d0_
-801a7604 00000294 801a7604 0 zz_801a7604_
-801a7898 000000b8 801a7898 0 zz_801a7898_
-801a7950 000000a0 801a7950 0 zz_801a7950_
-801a79f0 00000028 801a79f0 0 zz_801a79f0_
-801a7a18 00000028 801a7a18 0 zz_801a7a18_
-801a7a40 0000005c 801a7a40 0 zz_801a7a40_
+801a754c 0000005c 801a754c 0 AudioMalloc 	audio.o
+801a75a8 00000028 801a75a8 0 AudioFree 	audio.o
+801a75d0 00000034 801a75d0 0 AudioInitMalloc 	audio.o
+801a7604 00000294 801a7604 0 AudioInit 	audio.o
+801a7898 000000b8 801a7898 0 zz_801a7898_ 	audio.o
+801a7950 000000a0 801a7950 0 zz_801a7950_ 	audio.o
+801a79f0 00000028 801a79f0 0 zz_801a79f0_ 	audio.o
+801a7a18 00000028 801a7a18 0 zz_801a7a18_ 	audio.o
+801a7a40 0000005c 801a7a40 0 AudioSetVolume 	audio.o
 801a7a9c 00000008 801a7a9c 0 HSD_DObjSetCurrent 	hsdbase.a dobj.c
 801a7aa4 00000018 801a7aa4 0 HSD_DObjSetFlags hsdbase.a dobj.c
 801a7abc 00000018 801a7abc 0 HSD_DObjClearFlags hsdbase.a dobj.c
@@ -4744,19 +4744,19 @@
 801b0d24 0000002c 801b0d24 0 HSD_LObjGetActiveByIndex 	lobj.o
 801b0d50 0000024c 801b0d50 0 LObjUpdateFunc 	lobj.o
 801b0f9c 00000074 801b0f9c 0 HSD_LObjAnimAll 	lobj.o
-801b1010 00000080 801b1010 0 zz_801b1010_
+801b1010 00000080 801b1010 0 HSD_LObjReqAnimByFlags 	lobj.o
 801b1090 00000124 801b1090 0 HSD_LObjGetLightVector 	lobj.o
-801b11b4 00000164 801b11b4 0 HSD_LObjSetup 	lobj.o 
-801b1318 00000278 801b1318 0 zz_801b1318_
-801b1590 00000bbc 801b1590 0 zz_801b1590_
+801b11b4 00000164 801b11b4 0 HSD_LObjSetup 	lobj.o
+801b1318 00000278 801b1318 0 HSD_LObjSetupSpecularInit 	lobj.o
+801b1590 00000bbc 801b1590 0 HSD_LObjSetupInit 	lobj.o
 801b214c 00000134 801b214c 0 HSD_LObjAddCurrent 	lobj.o
 801b2280 00000178 801b2280 0 HSD_LObjDeleteCurrent 	lobj.o
 801b23f8 00000258 801b23f8 0 HSD_LObjDeleteCurrentAll 	lobj.o
 801b2650 00000034 801b2650 0 HSD_LObjGetCurrentByType 	lobj.o
 801b2684 000000ec 801b2684 0 HSD_LightID2Index 	lobj.o
 801b2770 00000070 801b2770 0 HSD_Index2LightID 	lobj.o
-801b27e0 0000020c 801b27e0 0 zz_801b27e0_
-801b29ec 0000000c 801b29ec 0 HSD_LObjRemoveAll 	lobj.o
+801b27e0 0000020c 801b27e0 0 HSD_LObjRemoveAll 	lobj.o
+801b29ec 0000000c 801b29ec 0 HSD_LObjSetColor 	lobj.o
 801b29f8 00000014 801b29f8 0 HSD_LObjSetSpot 	lobj.o
 801b2a0c 00000018 801b2a0c 0 HSD_LObjSetDistAttn 	lobj.o
 801b2a24 00000088 801b2a24 0 HSD_LObjSetPosition 	lobj.o
@@ -4914,22 +4914,22 @@
 801bfd44 00000098 801bfd44 0 JObjRelease 	hsdbase.a jobj.c
 801bfddc 00000064 801bfddc 0 JObjAmnesia 	hsdbase.a jobj.c
 801bfe40 000000bc 801bfe40 0 JObjInfoInit 	hsdbase.a jobj.c
-801bfefc 00000030 801bfefc 0 zz_801bfefc_
-801bff2c 000002dc 801bff2c 0 zz_801bff2c_
-801c0208 00000344 801c0208 0 zz_801c0208_
-801c054c 00000398 801c054c 0 zz_801c054c_
-801c08e4 000001e8 801c08e4 0 zz_801c08e4_
-801c0acc 00000100 801c0acc 0 zz_801c0acc_
-801c0bcc 0000010c 801c0bcc 0 zz_801c0bcc_
-801c0cd8 000000d0 801c0cd8 0 zz_801c0cd8_
-801c0da8 00000208 801c0da8 0 zz_801c0da8_
-801c0fb0 0000016c 801c0fb0 0 zz_801c0fb0_
-801c111c 00000050 801c111c 0 zz_801c111c_
-801c116c 000000c8 801c116c 0 zz_801c116c_
-801c1234 000000a0 801c1234 0 zz_801c1234_
-801c12d4 0000000c 801c12d4 0 AXFXSetHooks 	axfx.a AXFXHooks.o
-801c12e0 000000ac 801c12e0 0 zz_801c12e0_
-801c138c 00000008 801c138c 0 IPCSetBufferLo 	ipc.a ipcMain.o
+801bfefc 00000030 801bfefc 0 HSD_ZListInitAllocData 	displayfunc.o
+801bff2c 000002dc 801bff2c 0 mkVBillBoardMtx 	displayfunc.o
+801c0208 00000344 801c0208 0 mkHBillBoardMtx 	displayfunc.o
+801c054c 00000398 801c054c 0 mkBillBoardMtx 	displayfunc.o
+801c08e4 000001e8 801c08e4 0 mkRBillBoardMtx 	displayfunc.o
+801c0acc 00000100 801c0acc 0 HSD_JObjMakePositionMtx 	displayfunc.o
+801c0bcc 0000010c 801c0bcc 0 _HSD_mkEnvelopeModelNodeMtx 	displayfunc.o
+801c0cd8 000000d0 801c0cd8 0 HSD_JObjDispSub 	displayfunc.o
+801c0da8 00000208 801c0da8 0 HSD_JObjDispDObj 	displayfunc.o
+801c0fb0 0000016c 801c0fb0 0 zlist_sort 	displayfunc.o
+801c111c 00000050 801c111c 0 zlist_sort 	displayfunc.o
+801c116c 000000c8 801c116c 0 _HSD_ZListDisp 	displayfunc.o
+801c1234 000000a0 801c1234 0 _HSD_ZListClear 	displayfunc.o
+801c12d4 0000000c 801c12d4 0 HSD_SetZSortMode 	displayfunc.o
+801c12e0 000000ac 801c12e0 0 HSD_JObjDisp 	displayfunc.o
+801c138c 00000008 801c138c 0 HSD_JObjSetSPtclCallback 	displayfunc.o
 801c1394 00000108 801c1394 0 HSD_InitComponent 	initialize.o
 801c149c 00000018 801c149c 0 HSD_GXSetFifoObj 	initialize.o
 801c14b4 00000004 801c14b4 0 HSD_DVDInit 	initialize.o
@@ -4958,10 +4958,10 @@
 801c2410 00000044 801c2410 0 HSD_VIGXDrawDoneCB 	video.o
 801c2454 00000010 801c2454 0 HSD_VIGetDrawDoneWaitingFlag 	video.o
 801c2464 00000258 801c2464 0 HSD_VICopyEFB2XFBPtr 	video.o
-801c26bc 0000017c 801c26bc 0 zz_801c26bc_ 	video.o
-801c2838 000001c4 801c2838 0 zz_801c2838_ 	video.o
-801c29fc 00000044 801c29fc 0 zz_801c29fc_ 	video.o
-801c2a40 000000b0 801c2a40 0 zz_801c2a40_ 	video.o
+801c26bc 0000017c 801c26bc 0 HSD_VICopyXFBASync 	video.o
+801c2838 000001c4 801c2838 0 HSD_VISetXFBDrawDone 	video.o
+801c29fc 00000044 801c29fc 0 HSD_VIGetEFBDrawEnable 	video.o
+801c2a40 000000b0 801c2a40 0 HSD_VISetEFBDrawDone 	video.o
 801c2af0 00000088 801c2af0 0 HSD_VISetConfigure 	video.o
 801c2b78 00000018 801c2b78 0 HSD_VISetBlack 	video.o
 801c2b90 00000228 801c2b90 0 HSD_VIInit 	video.o
