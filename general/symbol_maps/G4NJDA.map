@@ -4921,7 +4921,7 @@
 801c0cd8 000000d0 801c0cd8 0 HSD_JObjDispSub 	displayfunc.o
 801c0da8 00000208 801c0da8 0 HSD_JObjDispDObj 	displayfunc.o
 801c0fb0 0000016c 801c0fb0 0 zlist_sort 	displayfunc.o
-801c111c 00000050 801c111c 0 zlist_sort 	displayfunc.o
+801c111c 00000050 801c111c 0 _HSD_ZListSort 	displayfunc.o
 801c116c 000000c8 801c116c 0 _HSD_ZListDisp 	displayfunc.o
 801c1234 000000a0 801c1234 0 _HSD_ZListClear 	displayfunc.o
 801c12d4 0000000c 801c12d4 0 HSD_SetZSortMode 	displayfunc.o
