@@ -1073,9 +1073,9 @@
 8006682c 00000148 8006682c 0 zz_8006682c_
 80066974 000002ec 80066974 0 zz_80066974_
 80066c60 00000234 80066c60 0 zz_80066c60_
-80066e94 0000000c 80066e94 0 GetOneTimerLeadGroundContactAnims(void)
-80066ea0 00000008 80066ea0 0 IPCGetBufferLo 	ipc.a ipcMain.o
-80066ea8 00000024 80066ea8 0 LessonTickerDoneCB(void)
+80066e94 0000000c 80066e94 0 zz_80066e94_
+80066ea0 00000008 80066ea0 0 zz_80066ea0_
+80066ea8 00000024 80066ea8 0 fog_disable
 80066ecc 00000044 80066ecc 0 zz_80066ecc_
 80066f10 0000005c 80066f10 0 zz_80066f10_
 80066f6c 00000058 80066f6c 0 zz_80066f6c_
@@ -5175,18 +5175,18 @@
 801d5d4c 000000f4 801d5d4c 0 HSD_SaveContext 	hsdbase.a debug.c
 801d5de4 0000005c 801d5de4 0 __assert 	hsdbase.a debug.c
 801d5e40 00000098 801d5e40 0 HSD_Panic 	hsdbase.a debug.c
-801d5ed8 00000134 801d5ed8 0 zz_801d5ed8_
-801d600c 000003d8 801d600c 0 zz_801d600c_
-801d63e4 000000c4 801d63e4 0 zz_801d63e4_
-801d64a8 00000350 801d64a8 0 zz_801d64a8_
-801d67f8 00000150 801d67f8 0 zz_801d67f8_
-801d6948 000002e4 801d6948 0 zz_801d6948_
-801d6c2c 000000a0 801d6c2c 0 zz_801d6c2c_
-801d6ccc 00000088 801d6ccc 0 zz_801d6ccc_
-801d6d54 000003ec 801d6d54 0 zz_801d6d54_
-801d7140 000000d4 801d7140 0 zz_801d7140_
-801d7214 00000034 801d7214 0 zz_801d7214_
-801d7248 000002c8 801d7248 0 DevelopMode_CPUProcessorStats  devcom.o
+801d5ed8 00000134 801d5ed8 0 zz_801d5ed8_   code_801d5ed8.o
+801d600c 000003d8 801d600c 0 zz_801d600c_   code_801d5ed8.o
+801d63e4 000000c4 801d63e4 0 zz_801d63e4_   code_801d5ed8.o
+801d64a8 00000350 801d64a8 0 zz_801d64a8_   code_801d5ed8.o
+801d67f8 00000150 801d67f8 0 zz_801d67f8_   code_801d5ed8.o
+801d6948 000002e4 801d6948 0 zz_801d6948_   code_801d5ed8.o
+801d6c2c 000000a0 801d6c2c 0 zz_801d6c2c_   code_801d5ed8.o
+801d6ccc 00000088 801d6ccc 0 zz_801d6ccc_   code_801d5ed8.o
+801d6d54 000003ec 801d6d54 0 zz_801d6d54_   code_801d5ed8.o
+801d7140 000000d4 801d7140 0 zz_801d7140_   code_801d5ed8.o
+801d7214 00000034 801d7214 0 zz_801d7214_   code_801d5ed8.o
+801d7248 000002c8 801d7248 0 zz_801d7248_   code_801d5ed8.o
 801d7510 0000014c 801d7510 0 zz_801d7510_ 	gobjproc.o
 801d765c 000000c0 801d765c 0 zz_801d765c_ 	gobjproc.o
 801d771c 000000e4 801d771c 0 GObj_CreateProcWithCallback 	gobjproc.o
@@ -5199,8 +5199,7 @@
 801d7e34 00000034 801d7e34 0 zz_801d7e34_ 	gobjplink.o
 801d7e68 000000e8 801d7e68 0 zz_801d7e68_ 	gobjplink.o
 801d7f50 000003a4 801d7f50 0 zz_801d7f50_ 	gobjplink.o
-801d82f4 0000022c 801d82f4 0 zz_801d82f4_
-801d84d4 0000004c 801d84d4 0 zz_801d84d4_
+801d82f4 0000022c 801d82f4 0 zz_801d82f4_ 	gobjgxlink.o
 801d8520 00000094 801d8520 0 zz_801d8520_ 	gobjgxlink.o
 801d85b4 00000094 801d85b4 0 zz_801d85b4_ 	gobjgxlink.o
 801d8648 00000038 801d8648 0 zz_801d8648_ 	gobjgxlink.o
@@ -5225,67 +5224,61 @@
 801d8edc 0000005c 801d8edc 0 zz_801d8edc_ 	gobjobject.o
 801d8f38 0000007c 801d8f38 0 zz_801d8f38_ 	gobjuserdata.o
 801d8fb4 00000078 801d8fb4 0 zz_801d8fb4_ 	gobjuserdata.o
-801d902c 00000174 801d902c 0 zz_801d902c_
-801d91a0 00000014 801d91a0 0 LooseBallAnims::GetDesperationInfo(unsigned int)
-801d91b4 000000f4 801d91b4 0 zz_801d91b4_
-801d92a8 00000080 801d92a8 0 zz_801d92a8_
-801d9328 00000098 801d9328 0 zz_801d9328_
-801d93c0 00000098 801d93c0 0 zz_801d93c0_
-801d9458 00000048 801d9458 0 zz_801d9458_
-801d9480 00000020 801d9480 0 zz_801d9480_
-801d94a0 00000038 801d94a0 0 zz_801d94a0_
-801d94d8 00000014 801d94d8 0 zz_801d94d8_
-801d94ec 00000270 801d94ec 0 zz_801d94ec_
-801d975c 00000614 801d975c 0 zz_801d975c_
-801d9d70 00000060 801d9d70 0 zz_801d9d70_
-801d9dd0 00000040 801d9dd0 0 zz_801d9dd0_
-801d9e10 00000070 801d9e10 0 zz_801d9e10_
-801d9e80 000002bc 801d9e80 0 zz_801d9e80_
-801da13c 000001d8 801da13c 0 zz_801da13c_
-801da314 000003a0 801da314 0 zz_801da314_
-801da6b4 00000118 801da6b4 0 zz_801da6b4_
-801da7cc 000001b0 801da7cc 0 zz_801da7cc_
-801da890 000000ec 801da890 0 zz_801da890_
-801da97c 00000228 801da97c 0 zz_801da97c_
-801daba4 00000278 801daba4 0 zz_801daba4_
-801dae1c 000002a0 801dae1c 0 zz_801dae1c_
-801db0bc 00000308 801db0bc 0 zz_801db0bc_
-801db3c4 00000144 801db3c4 0 zz_801db3c4_
-801db508 000000dc 801db508 0 zz_801db508_
-801db5e4 000000f4 801db5e4 0 zz_801db5e4_
-801db6d8 00000024 801db6d8 0 zz_801db6d8_
-801db6fc 00000124 801db6fc 0 zz_801db6fc_
-801db820 00000114 801db820 0 zz_801db820_
-801db934 00000174 801db934 0 zz_801db934_
-801dbaa8 000003f4 801dbaa8 0 zz_801dbaa8_
-801dbe9c 000006a8 801dbe9c 0 zz_801dbe9c_
-801dc1b0 00000394 801dc1b0 0 zz_801dc1b0_
-801dc544 00000278 801dc544 0 zz_801dc544_
-801dc7bc 000003ec 801dc7bc 0 zz_801dc7bc_
-801dcba8 0000018c 801dcba8 0 zz_801dcba8_
-801dcd34 00000208 801dcd34 0 zz_801dcd34_
-801dcf3c 000001b0 801dcf3c 0 zz_801dcf3c_
-801dd0ec 000005c8 801dd0ec 0 zz_801dd0ec_
-801dd6b4 000005f4 801dd6b4 0 zz_801dd6b4_
-801ddca8 00000224 801ddca8 0 zz_801ddca8_
-801ddce8 000001e4 801ddce8 0 zz_801ddce8_
-801ddecc 00000024 801ddecc 0 zz_801ddecc_
-801ddef0 00000068 801ddef0 0 zz_801ddef0_
-801ddf58 000006c4 801ddf58 0 zz_801ddf58_
-801de0ec 00000530 801de0ec 0 zz_801de0ec_
-801de61c 00000454 801de61c 0 zz_801de61c_
-801de6c8 000003a8 801de6c8 0 zz_801de6c8_
-801dea70 00000024 801dea70 0 ListContainerBase<P6cSAnim,33NewAdapter<19ListEntry<P6cSAnim>>>::DeleteEntry(ListEntry<P6cSAnim> *)
-801dea94 00000488 801dea94 0 zz_801dea94_
-801def1c 00000224 801def1c 0 zz_801def1c_
-801df140 00000260 801df140 0 zz_801df140_
-801df3a0 000000c0 801df3a0 0 zz_801df3a0_
-801df460 000000e8 801df460 0 zz_801df460_
-801df548 000000f8 801df548 0 zz_801df548_
-801df640 00000058 801df640 0 zz_801df640_
-801df698 00000034 801df698 0 zz_801df698_
-801df6cc 00000154 801df6cc 0 zz_801df6cc_
-801df820 000000b4 801df820 0 zz_801df820_
+801d902c 00000174 801d902c 0 wP_RunObjectFrameFunctions   gobj.o
+801d91a0 00000014 801d91a0 0 zz_801d91a0_   gobj.o
+801d91b4 000000f4 801d91b4 0 zz_801d91b4_   gobj.o
+801d92a8 00000080 801d92a8 0 zz_801d92a8_   gobj.o
+801d9328 00000098 801d9328 0 zz_801d9328_   gobj.o
+801d93c0 00000098 801d93c0 0 zz_801d93c0_   gobj.o
+801d9458 00000048 801d9458 0 zz_801d9458_   gobj.o
+801d94a0 00000038 801d94a0 0 zz_801d94a0_   gobj.o
+801d94d8 00000014 801d94d8 0 zz_801d94d8_   gobj.o
+801d94ec 00000270 801d94ec 0 zz_801d94ec_   gobj.o
+801d975c 00000614 801d975c 0 _readTree 	hvqm4dec.a hvqm4dec.c
+801d9d70 00000060 801d9d70 0 getByte 	hvqm4dec.a hvqm4dec.c
+801d9dd0 00000040 801d9dd0 0 getBit 	hvqm4dec.a hvqm4dec.c
+801d9e10 00000070 801d9e10 0 readTree 	hvqm4dec.a hvqm4dec.c
+801d9e80 000002bc 801d9e80 0 Ipic_BasisNumDec 	hvqm4dec.a hvqm4dec.c
+801da13c 000001d8 801da13c 0 IpicDcvDec 	hvqm4dec.a hvqm4dec.c
+801da314 000003a0 801da314 0 MakeNest 	hvqm4dec.a hvqm4dec.c
+801da6b4 00000118 801da6b4 0 MakeNestMinMax 	hvqm4dec.a hvqm4dec.c
+801da7cc 000001b0 801da7cc 0 WeightImBlock 	hvqm4dec.a hvqm4dec.c
+801da97c 00000228 801da97c 0 IntraAotBlock 	hvqm4dec.a hvqm4dec.c
+801daba4 00000278 801daba4 0 GetAotSum 	hvqm4dec.a hvqm4dec.c
+801dae1c 000002a0 801dae1c 0 GetAotBasis 	hvqm4dec.a hvqm4dec.c
+801db0bc 00000308 801db0bc 0 GetAot1 	hvqm4dec.a hvqm4dec.c
+801db3c4 00000144 801db3c4 0 IpicBlockDec 	hvqm4dec.a hvqm4dec.c
+801db508 000000dc 801db508 0 IpicLineDec 	hvqm4dec.a hvqm4dec.c
+801db5e4 000000f4 801db5e4 0 IpicPlaneDec 	hvqm4dec.a hvqm4dec.c
+801db6d8 00000024 801db6d8 0 _MotionComp_00 	hvqm4dec.a hvqm4dec.c
+801db6fc 00000124 801db6fc 0 _MotionComp_10 	hvqm4dec.a hvqm4dec.c
+801db820 00000114 801db820 0 _MotionComp_01 	hvqm4dec.a hvqm4dec.c
+801db934 00000174 801db934 0 _MotionComp_11 	hvqm4dec.a hvqm4dec.c
+801dbaa8 000003f4 801dbaa8 0 decode_PB_cc 	hvqm4dec.a hvqm4dec.c
+801dbe9c 000006a8 801dbe9c 0 PrediAotBlock 	hvqm4dec.a hvqm4dec.c
+801dc544 00000278 801dc544 0 GetMCAotSum 	hvqm4dec.a hvqm4dec.c
+801dc7bc 000003ec 801dc7bc 0 GetMCAotBasis 	hvqm4dec.a hvqm4dec.c
+801dcba8 0000018c 801dcba8 0 GetMCAot1 	hvqm4dec.a hvqm4dec.c
+801dcd34 00000208 801dcd34 0 MCBlockDecMCNest 	hvqm4dec.a hvqm4dec.c
+801dcf3c 000001b0 801dcf3c 0 MCBlockDecDCNest 	hvqm4dec.a hvqm4dec.c
+801dd0ec 000005c8 801dd0ec 0 spread_PB_descMap 	hvqm4dec.a hvqm4dec.c
+801dd6b4 000005f4 801dd6b4 0 BpicPlaneDec 	hvqm4dec.a hvqm4dec.c
+801ddca8 00000224 801ddca8 0 HVQM4InitDecoder 	hvqm4dec.a hvqm4dec.c
+801ddecc 00000024 801ddecc 0 HVQM4InitSeqObj 	hvqm4dec.a hvqm4dec.c
+801ddef0 00000068 801ddef0 0 HVQM4BuffSize 	hvqm4dec.a hvqm4dec.c
+801ddf58 000006c4 801ddf58 0 HVQM4SetBuffer 	hvqm4dec.a hvqm4dec.c
+801de61c 00000454 801de61c 0 HVQM4DecodeIpic 	hvqm4dec.a hvqm4dec.c
+801dea70 00000024 801dea70 0 HVQM4DecodePpic 	hvqm4dec.a hvqm4dec.c
+801dea94 00000488 801dea94 0 HVQM4DecodeBpic 	hvqm4dec.a hvqm4dec.c
+801def1c 00000224 801def1c 0 HVQM4DecodeAdpcmCh1 	hvqm4decsnd.a HVQM4Adpcm.c
+801df140 00000260 801df140 0 HVQM4DecodeAdpcmCh2 	hvqm4decsnd.a HVQM4Adpcm.c
+801df3a0 000000c0 801df3a0 0 HVQM4DecodePcm16Ch1 	hvqm4decsnd.a HVQM4Pcm16.c
+801df460 000000e8 801df460 0 HVQM4DecodePcm16Ch2 	hvqm4decsnd.a HVQM4Pcm16.c
+801df548 000000f8 801df548 0 HVQM4DecodeAdp8xCh2 	hvqm4decsnd.a HVQM4Adp8x.c
+801df640 00000058 801df640 0 HVQM4DecSoundCreate 	hvqm4decsnd.a HVQM4DecSnd.c
+801df698 00000034 801df698 0 HVQM4DecSoundClose 	hvqm4decsnd.a HVQM4DecSnd.c
+801df6cc 00000154 801df6cc 0 HVQM4DecSoundDecode 	hvqm4decsnd.a HVQM4DecSnd.c
+801df820 000000b4 801df820 0 HVQM4DecSoundMaxDecodeSize 	hvqm4decsnd.a HVQM4DecSnd.c
 801df8d4 00000068 801df8d4 0 seqGetPrivateId 	musyx.a seq.c
 801df93c 00000acc 801df93c 0 seqStartPlay 	musyx.a seq.c
 801e0408 00000064 801e0408 0 StartPause 	musyx.a seq.c
