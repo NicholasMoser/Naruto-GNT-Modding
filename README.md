@@ -64,8 +64,6 @@ Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.c
 
 [Main Menu Character](/gnt4/docs/guides/main_menu_character.md)
 
-[Random Select](gnt4/docs/guides/random_select.md)
-
 [Choji's Chips](gnt4/docs/guides/choji_chips.md)
 
 ### GNT EX 1
