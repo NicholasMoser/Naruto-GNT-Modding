@@ -1,5 +1,13 @@
 # GNT4 Random Select
 
+## Deprecation Note
+
+This document was written back in mid-2018, and much of the information in it we now understand a lot better. For example, we now know that Super Smash Bros. Melee and Naruto GNT4 use the same random function because they both take it from the HAL Sysdolphin library. Additionally, the way random select was originally investigated was not as effective as how we would have done it today (i.e. using Ghidra).
+
+Worst of all, the code described here has a major issue with it. When random select is activated in non-CSS menus it can break the menus, such as the options menu. With that being said, this page is left up for historical reasons but should not held as a source of truth for the code it describes.
+
+## Description
+
 In Naruto GNT4, there is no character select in the character select menus. This page talks about the code to add a random select to the game. Using this code, random select is activated by holding **Start** and hitting **Down** on the control stick in any character select menu. It will also work for all four players if in multiplayer.
 
 ![Random Select](/gnt4/images/gameplay/random_select.gif?raw=true "Random Select")
