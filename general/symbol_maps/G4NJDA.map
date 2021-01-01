@@ -3877,7 +3877,7 @@
 801764bc 00000060 801764bc 0 SamplingHandler 	pad.a Pad.c
 8017651c 00000054 8017651c 0 PADSetSamplingCallback 	pad.a Pad.c
 80176570 0000007c 80176570 0 __PADDisableRecalibration 	pad.a Pad.c
-801765ec 00000044 801765ec 0 AIRegisterDMACallback
+801765ec 00000044 801765ec 0 AIRegisterDMACallback 	ai.a ai.c
 80176630 00000088 80176630 0 AIInitDMA 	ai.a ai.c
 801766b8 00000018 801766b8 0 AIStartDMA 	ai.a ai.c
 801766d0 00000044 801766d0 0 AIRegisterStreamCallback 	ai.a ai.c
@@ -4043,7 +4043,7 @@
 80182590 00000280 80182590 0 GXSetTexCoordGen2 	gx.a GXAttr.c
 80182810 0000003c 80182810 0 GXSetNumTexGens 	gx.a GXAttr.c
 8018284c 0000007c 8018284c 0 GXSetMisc 	gx.a GXMisc.c
-801828c8 00000018 801828c8 0 zz_801828c8_
+801828c8 00000018 801828c8 0 _GXSetMisc 	gx.a GXMisc.c
 801828e0 0000005c 801828e0 0 GXFlush 	gx.a GXMisc.c
 8018293c 0000016c 8018293c 0 __GXAbort 	gx.a GXMisc.c
 80182aa8 0000004c 80182aa8 0 GXWaitDrawDone 	gx.a GXMisc.c
@@ -5594,7 +5594,7 @@
 801fc448 0000002c 801fc448 0 salMalloc 	musyx.a hw_memory.c
 801fc474 00000030 801fc474 0 salMallocPhysical 	musyx.a hw_memory.c
 801fc4a4 00000030 801fc4a4 0 salFree 	musyx.a hw_memory.c
-801fc4d4 0000005c 801fc4d4 0 sndAuxCallbackReverbSTD 	musyx.a creverb_fx.c
+801fc4d4 0000005c 801fc4d4 0 sndAuxCallbackReverbHI 	musyx.a reverb_fx.c
 801fc530 00000058 801fc530 0 sndAuxCallbackUpdateSettingsReverbHI musyx.a reverb_fx.c
 801fc588 00000040 801fc588 0 sndAuxCallbackPrepareReverbHI 	musyx.a reverb_fx.c
 801fc5c8 00000520 801fc5c8 0 ReverbHICreate 	musyx.a reverb.c
