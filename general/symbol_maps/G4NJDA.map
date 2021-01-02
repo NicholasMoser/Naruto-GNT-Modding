@@ -4708,7 +4708,7 @@
 801ae110 0000005c 801ae110 0 HSD_MObjAlloc 	mobj.o
 801ae16c 00000060 801ae16c 0 HSD_MaterialAlloc 	mobj.o
 801ae1cc 00000064 801ae1cc 0 HSD_MObjAddShadowTexture 	mobj.o
-801ae230 00000064 801ae230 0 HSD_MObjDeleteShadowTexture
+801ae230 00000064 801ae230 0 HSD_MObjDeleteShadowTexture 	mobj.o
 801ae294 0000009c 801ae294 0 MObjRelease 	mobj.o
 801ae330 00000064 801ae330 0 MObjAmnesia 	mobj.o
 801ae394 000000b0 801ae394 0 MObjInfoInit 	mobj.o
