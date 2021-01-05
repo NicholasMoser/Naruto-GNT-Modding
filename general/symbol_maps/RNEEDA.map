@@ -10731,38 +10731,38 @@
 8031da7c 00000008 8031da7c 0 zz_8031da7c_
 8031da84 00000078 8031da84 0 OSUTF32toANSI 	os.a OSUtf.o
 8031dafc 00000040 8031dafc 0 OSUTF32toSJIS 	os.a OSUtf.o
-8031db3c 00000008 8031db3c 0 IPCGetBufferLo 	ipc.a ipcMain.o
-8031db44 00000008 8031db44 0 IPCGetBufferLo 	ipc.a ipcMain.o
+8031db3c 00000008 8031db3c 0 __OSGetIPCBufferHi 	os.a OSIpc.o
+8031db44 00000008 8031db44 0 __OSGetIPCBufferLo 	os.a OSIpc.o
 8031db4c 00000018 8031db4c 0 __OSInitIPCBuffer 	os.a OSIpc.o
-8031db64 000000ec 8031db64 0 zz_8031db64_
-8031dc50 000000ec 8031dc50 0 zz_8031dc50_
+8031db64 000000ec 8031db64 0 OSSetResetCallback 	os.a OSStateTM.o
+8031dc50 000000ec 8031dc50 0 OSSetPowerCallback 	os.a OSStateTM.o
 8031dd3c 00000118 8031dd3c 0 __OSInitSTM 	os.a OSStateTM.o
-8031de54 000001e0 8031de54 0 zz_8031de54_
-8031decc 00000168 8031decc 0 zz_8031decc_
+8031de54 000001e0 8031de54 0 __OSShutdownToSBY 	os.a OSStateTM.o
+8031decc 00000168 8031decc 0 __OSHotReset 	os.a OSStateTM.o
 8031df3c 000000f8 8031df3c 0 __OSSetVIForceDimming 	os.a OSStateTM.o
-8031e034 00000040 8031e034 0 zz_8031e034_
+8031e034 00000040 8031e034 0 __OSSetIdleLEDMode os.a OSStateTM.o
 8031e074 00000078 8031e074 0 __OSUnRegisterStateEvent 	os.a OSStateTM.o
-8031e0ec 00000010 8031e0ec 0 __VIResetSIIdle 	vi.a vi.o
-8031e0fc 00000004 8031e0fc 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-8031e100 00000004 8031e100 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-8031e104 00000154 8031e104 0 zz_8031e104_
-8031e258 000004bc 8031e258 0 zz_8031e258_
+8031e0ec 00000010 8031e0ec 0 __OSVIDimReplyHandler 	os.a OSStateTM.o
+8031e0fc 00000004 8031e0fc 0 __OSDefaultResetCallback 	os.a OSStateTM.o
+8031e100 00000004 8031e100 0 __OSDefaultPowerCallback 	os.a OSStateTM.o
+8031e104 00000154 8031e104 0 __OSStateEventHandler 	os.a OSStateTM.o
+8031e258 0000000c 8031e258 0 PlayRecordAlarmCallback 	os.a OSPlayRecord.o
 8031e264 000004b0 8031e264 0 PlayRecordCallback 	os.a OSPlayRecord.o
 8031e714 00000054 8031e714 0 __OSStartPlayRecord 	os.a OSPlayRecord.o
-8031e768 000001e8 8031e768 0 zz_8031e768_
-8031e950 000000e4 8031e950 0 zz_8031e950_
+8031e768 000001e8 8031e768 0 __OSStopPlayRecord 	os.a OSPlayRecord.o
+8031e950 000000e4 8031e950 0 __OSWriteStateFlags 	os.a OSStateFlags.o
 8031ea34 00000128 8031ea34 0 __OSReadStateFlags 	os.a OSStateFlags.o
-8031eb5c 000000b4 8031eb5c 0 zz_8031eb5c_
-8031ec10 000000b0 8031ec10 0 zz_8031ec10_
-8031ecc0 00000158 8031ecc0 0 zz_8031ecc0_
-8031ee18 00000018 8031ee18 0 zz_8031ee18_
-8031ee30 000001bc 8031ee30 0 zz_8031ee30_
-8031efec 00000114 8031efec 0 zz_8031efec_
-8031f100 00000018 8031f100 0 zz_8031f100_
-8031f118 000000ec 8031f118 0 zz_8031f118_
-8031f204 000000a0 8031f204 0 zz_8031f204_
-8031f2a4 000001c8 8031f2a4 0 zz_8031f2a4_
-8031f46c 00000158 8031f46c 0 zz_8031f46c_
+8031eb5c 000000b4 8031eb5c 0 __OSInitNet 	os.a OSNet.o
+8031ec10 000000b0 8031ec10 0 __OSCreateNandbootInfo 	os.a OSNandbootInfo.o
+8031ecc0 00000158 8031ecc0 0 __OSWriteNandbootInfo 	os.a OSNandbootInfo.o
+8031ee18 00000018 8031ee18 0 OSPlayTimeIsLimited 	os.a OSPlayTime.o
+8031ee30 000001bc 8031ee30 0 __OSPlayTimeFadeLastAIDCallback 	os.a OSPlayTime.o
+8031efec 00000114 8031efec 0 __OSWriteExpiredFlag 	os.a OSPlayTime.o
+8031f100 00000018 8031f100 0 __OSWriteExpiredFlagIfSet 	os.a OSPlayTime.o
+8031f118 000000ec 8031f118 0 __OSPlayTimeRebootThread 	os.a OSPlayTime.o
+8031f204 000000a0 8031f204 0 __OSPlayTimeAlarmExpired 	os.a OSPlayTime.o
+8031f2a4 000001c8 8031f2a4 0 __OSGetPlayTime 	os.a OSPlayTime.o
+8031f46c 00000158 8031f46c 0 __OSInitPlayTime 	os.a OSPlayTime.o
 8031f5c4 00000180 8031f5c4 0 PackArgs 	os.a OSExec.o
 8031f744 00000114 8031f744 0 zz_8031f744_
 8031f858 000000d4 8031f858 0 zz_8031f858_
@@ -10784,23 +10784,23 @@
 80320d5c 0000013c 80320d5c 0 PADReceiveCheckCallback 	pad.a Pad.o
 80320e98 00000108 80320e98 0 PADReset 	pad.a Pad.o
 80320fa0 0000010c 80320fa0 0 PADRecalibrate 	pad.a Pad.o
-803210ac 0000015c 803210ac 0 zz_803210ac_
-80321208 000004bc 80321208 0 zz_80321208_
+803210ac 0000015c 803210ac 0 PADInit 	pad.a Pad.o
+80321208 000004bc 80321208 0 PADRead 	pad.a Pad.o
 803216c4 000000b8 803216c4 0 PADControlMotor 	pad.a Pad.o
-8032177c 00000118 8032177c 0 SPEC1_MakeStatus 	pad.a Pad.o
+8032177c 00000118 8032177c 0 SPEC0_MakeStatus 	pad.a Pad.o
 80321894 00000118 80321894 0 SPEC1_MakeStatus 	pad.a Pad.o
-803219ac 0000040c 803219ac 0 zz_803219ac_
+803219ac 0000040c 803219ac 0 SPEC2_MakeStatus 	pad.a Pad.o
 80321db8 000000c8 80321db8 0 OnShutdown 	pad.a Pad.o
 80321e80 00000060 80321e80 0 SamplingHandler 	pad.a Pad.o
 80321ee0 0000005c 80321ee0 0 __PADDisableRecalibration 	pad.a Pad.o
 80321f3c 000000a0 80321f3c 0 SCInit 	sc.a scsystem.o
-80321fdc 0000011c 80321fdc 0 zz_80321fdc_
+80321fdc 0000011c 80321fdc 0 SCCheckStatus 	sc.a scsystem.o
 803220f8 00000114 803220f8 0 SCReloadConfFileAsync 	sc.a scsystem.o
 8032220c 000000d0 8032220c 0 OpenCallbackFromReload 	sc.a scsystem.o
 803222dc 000000e8 803222dc 0 ReadCallbackFromReload 	sc.a scsystem.o
 803223c4 0000008c 803223c4 0 CloseCallbackFromReload 	sc.a scsystem.o
-80322450 0000013c 80322450 0 zz_80322450_
-8032258c 00000250 8032258c 0 zz_8032258c_
+80322450 0000013c 80322450 0 FinishFromReload 	sc.a scsystem.o
+8032258c 00000004 8032258c 0 CloseCallbackFromReloadError 	sc.a scsystem.o
 80322590 0000024c 80322590 0 ParseConfBuf 	sc.a scsystem.o
 803227dc 00000198 803227dc 0 UnpackItem 	sc.a scsystem.o
 80322974 00000190 80322974 0 DeleteItemByID 	sc.a scsystem.o
@@ -10808,38 +10808,38 @@
 80322d7c 000000e0 80322d7c 0 SCFindByteArrayItem 	sc.a scsystem.o
 80322e5c 00000124 80322e5c 0 SCReplaceByteArrayItem 	sc.a scsystem.o
 80322f80 00000118 80322f80 0 SCReplaceIntegerItem 	sc.a scsystem.o
-80323098 000000d4 80323098 0 SCFindU32Item 	sc.a scsystem.o
+80323098 000000d4 80323098 0 SCFindU8Item 	sc.a scsystem.o
 8032316c 000000d4 8032316c 0 SCFindU32Item 	sc.a scsystem.o
-80323240 000000d4 80323240 0 SCFindU32Item 	sc.a scsystem.o
+80323240 000000d4 80323240 0 SCFindS32Item 	sc.a scsystem.o
 80323314 0000002c 80323314 0 SCReplaceU8Item 	sc.a scsystem.o
-80323340 00000228 80323340 0 zz_80323340_
+80323340 0000000c 80323340 0 __SCFlushSyncCallback 	sc.a scsystem.o
 8032334c 0000021c 8032334c 0 SCFlushAsync 	sc.a scsystem.o
 80323568 00000338 80323568 0 MyNandCallback 	sc.a scsystem.o
-803238a0 00000054 803238a0 0 SCGetWpadSpeakerVolume 	sc.a scapi.o
+803238a0 00000054 803238a0 0 SCGetAspectRatio 	sc.a scapi.o
 803238f4 00000074 803238f4 0 SCGetDisplayOffsetH 	sc.a scapi.o
-80323968 00000078 80323968 0 zz_80323968_
+80323968 0000000c 80323968 0 SCGetIdleMode 	sc.a scapi.o
 80323974 0000006c 80323974 0 SCGetLanguage 	sc.a scapi.o
-803239e0 00000054 803239e0 0 SCGetWpadSpeakerVolume 	sc.a scapi.o
-80323a34 00000054 80323a34 0 SCGetWpadSpeakerVolume 	sc.a scapi.o
+803239e0 00000054 803239e0 0 SCGetProgressiveMode 	sc.a scapi.o
+80323a34 00000054 80323a34 0 SCGetScreenSaverMode 	sc.a scapi.o
 80323a88 00000064 80323a88 0 SCGetSoundMode 	sc.a scapi.o
-80323aec 00000040 80323aec 0 zz_80323aec_
-80323b2c 00000098 80323b2c 0 zz_80323b2c_
-80323b38 0000008c 80323b38 0 zz_80323b38_
-80323b44 00000080 80323b44 0 zz_80323b44_
-80323b50 00000074 80323b50 0 zz_80323b50_
+80323aec 00000040 80323aec 0 SCGetCounterBias 	sc.a scapi.o
+80323b2c 0000000c 80323b2c 0 SCGetBtDeviceInfoArray 	sc.a scapi.o
+80323b38 0000000c 80323b38 0 SCSetBtCmpDevInfoArray 	sc.a scapi.o
+80323b44 0000000c 80323b44 0 SCGetBtCmpDevInfoArray 	sc.a scapi.o
+80323b50 0000000c 80323b50 0 SCSetBtCmpDevInfoArray 	sc.a scapi.o
 80323b5c 00000068 80323b5c 0 SCGetBtDpdSensibility 	sc.a scapi.o
-80323bc4 00000054 80323bc4 0 SCGetWpadSpeakerVolume 	sc.a scapi.o
-80323c18 0000005c 80323c18 0 zz_80323c18_
-80323c20 00000054 80323c20 0 SCGetWpadSpeakerVolume 	sc.a scapi.o
+80323bc4 00000054 80323bc4 0 SCGetWpadMotorMode 	sc.a scapi.o
+80323c18 00000008 80323c18 0 SCSetWpadMotorMode 	sc.a scapi.o
+80323c20 00000054 80323c20 0 SCGetWpadSensorBarPosition 	sc.a scapi.o
 80323c74 00000054 80323c74 0 SCGetWpadSpeakerVolume 	sc.a scapi.o
-80323cc8 000000f8 80323cc8 0 zz_80323cc8_
-80323cd0 000000f0 80323cd0 0 zz_80323cd0_
-80323dc0 00000050 80323dc0 0 zz_80323dc0_
+80323cc8 00000008 80323cc8 0 SCSetWpadSpeakerVolume 	sc.a scapi.o
+80323cd0 000000f0 80323cd0 0 zz_80323cd0_ 	sc.a scapi.o
+80323dc0 00000050 80323dc0 0 SCCheckPCMessageRestriction 	sc.a scapi.o
 80323e10 0000016c 80323e10 0 __SCF1 	sc.a scapi_prdinfo.o
 80323f7c 00000084 80323f7c 0 SCGetProductArea 	sc.a scapi_prdinfo.o
-80324000 0000003c 80324000 0 zz_80324000_
-8032403c 00000068 8032403c 0 zz_8032403c_
-803240a4 00000084 803240a4 0 SCGetProductArea 	sc.a scapi_prdinfo.o
+80324000 0000003c 80324000 0 SCGetProductCode 	sc.a scapi_prdinfo.o
+8032403c 00000068 8032403c 0 SCGetProductSN 	sc.a scapi_prdinfo.o
+803240a4 00000084 803240a4 0 SCGetProductGameRegion 	sc.a scapi_prdinfo.o
 80324128 0000001c 80324128 0 SIBusy 	si.a SIBios.o
 80324144 00000038 80324144 0 SIIsChanBusy 	si.a SIBios.o
 8032417c 000002f4 8032417c 0 CompleteTransfer 	si.a SIBios.o
@@ -10861,7 +10861,7 @@
 803253e4 000001b4 803253e4 0 SIGetType 	si.a SIBios.o
 80325598 00000110 80325598 0 SIGetTypeAsync 	si.a SIBios.o
 803256a8 000000d8 803256a8 0 SISetSamplingRate 	si.a SISamplingRate.o
-80325780 000002c8 80325780 0 zz_80325780_
+80325780 00000008 80325780 0 SIRefreshSamplingRate 	si.a SISamplingRate.o
 80325788 000002c0 80325788 0 zz_80325788_
 80325a48 00000134 80325a48 0 zz_80325a48_
 80325b7c 00000114 80325b7c 0 zz_80325b7c_
@@ -10884,31 +10884,31 @@
 803291ec 000000a8 803291ec 0 USB_LOG 	usb.a usb.o
 80329294 000000ac 80329294 0 USB_ERR 	usb.a usb.o
 80329340 000000f8 80329340 0 IUSB_OpenLib 	usb.a usb.o
-80329438 00000008 80329438 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-80329440 000001a8 80329440 0 zz_80329440_
-803295e8 00000144 803295e8 0 zz_803295e8_
-8032972c 00000124 8032972c 0 zz_8032972c_
-80329850 00000354 80329850 0 zz_80329850_
-80329ba4 00000358 80329ba4 0 zz_80329ba4_
-80329efc 00000074 80329efc 0 IUSB_WriteBlkMsgAsync 	usb.a usb.o
-80329f70 000000a0 80329f70 0 zz_80329f70_
-8032a010 000000a0 8032a010 0 zz_8032a010_
-8032a0b0 000005a4 8032a0b0 0 zz_8032a0b0_
+80329438 00000008 80329438 0 zz_80329438_
+80329440 000001a8 80329440 0 _intrBlkCtrlIsoCb 	usb.a usb.o
+803295e8 00000144 803295e8 0 IUSB_OpenDeviceIds 	usb.a usb.o
+8032972c 00000124 8032972c 0 IUSB_CloseDeviceAsync 	usb.a usb.o
+80329850 00000354 80329850 0 __LongBlkMsgInt 	usb.a usb.o
+80329ba4 00000358 80329ba4 0 __IntrBlkMsgInt 	usb.a usb.o
+80329efc 00000074 80329efc 0 IUSB_ReadIntrMsgAsync 	usb.a usb.o
+80329f70 000000a0 80329f70 0 IUSB_ReadBlkMsgAsync 	usb.a usb.o
+8032a010 000000a0 8032a010 0 IUSB_WriteBlkMsgAsync 	usb.a usb.o
+8032a0b0 000005a4 8032a0b0 0 __CtrlMsgInt 	usb.a usb.o
 8032a654 0000008c 8032a654 0 IUSB_WriteCtrlMsgAsync 	usb.a usb.o
-8032a6e0 000000f8 8032a6e0 0 zz_8032a6e0_
-8032a7d8 00000158 8032a7d8 0 zz_8032a7d8_
-8032a930 00000104 8032a930 0 zz_8032a930_
-8032aa34 00000128 8032aa34 0 zz_8032aa34_
-8032ab5c 0000017c 8032ab5c 0 zz_8032ab5c_
-8032acd8 00000194 8032acd8 0 zz_8032acd8_
-8032ae6c 000000f0 8032ae6c 0 zz_8032ae6c_
-8032af5c 00000278 8032af5c 0 zz_8032af5c_
-8032b1d4 00000080 8032b1d4 0 zz_8032b1d4_
-8032b254 00000178 8032b254 0 zz_8032b254_
-8032b3cc 00000008 8032b3cc 0 IPCGetBufferLo 	ipc.a ipcMain.o
-8032b3d4 000003ac 8032b3d4 0 zz_8032b3d4_
-8032b3d8 000003a8 8032b3d8 0 zz_8032b3d8_
-8032b780 00000100 8032b780 0 zz_8032b780_
+8032a6e0 000000f8 8032a6e0 0 NCDGetCurrentIfConfig 	ncd.a ncdsystem.o
+8032a7d8 00000158 8032a7d8 0 NCDGetCurrentIpConfig 	ncd.a ncdsystem.o
+8032a930 00000104 8032a930 0 NCDGetLinkStatus 	ncd.a ncdsystem.o
+8032aa34 00000128 8032aa34 0 NCDiGetWirelessMacAddress 	ncd.a ncdsystem.o
+8032ab5c 0000017c 8032ab5c 0 NCDiGetEnabledConfigList 	ncd.a ncdsystem.o
+8032acd8 00000194 8032acd8 0 ExecConfigCommand 	ncd.a ncdsystem.o
+8032ae6c 000000f0 8032ae6c 0 LockRight 	ncd.a ncdsystem.o
+8032af5c 00000278 8032af5c 0 NETiGetConnectionTypeFromConfigList 	net.a neterrorcode.o
+8032b1d4 00000080 8032b1d4 0 NETGetStartupErrorCode 	net.a neterrorcode.o
+8032b254 00000178 8032b254 0 GetStartupErrorCode 	net.a neterrorcode.o
+8032b3cc 00000008 8032b3cc 0 NETGetRexPPCVersionPrintable 	net.a NETVersion.o
+8032b3d4 00000004 8032b3d4 0 NETGetWirelessMacAddress 	net.a wireless_macaddr.o
+8032b3d8 000003a8 8032b3d8 0 NETMemCpy 	net.a netmemcpy.o
+8032b780 00000100 8032b780 0 NETMemSet 	net.a netmemset.o
 8032b880 00000040 8032b880 0 zz_8032b880_
 8032b8c0 000000f0 8032b8c0 0 zz_8032b8c0_
 8032b9b0 00000128 8032b9b0 0 zz_8032b9b0_
@@ -10917,79 +10917,79 @@
 8032bfac 0000023c 8032bfac 0 zz_8032bfac_
 8032c1e8 000001b4 8032c1e8 0 zz_8032c1e8_
 8032c1f8 000001a4 8032c1f8 0 zz_8032c1f8_
-8032c39c 00000030 8032c39c 0 zz_8032c39c_
-8032c3cc 0000005c 8032c3cc 0 zz_8032c3cc_
-8032c428 00000044 8032c428 0 zz_8032c428_
-8032c46c 00000008 8032c46c 0 GXInitTexObjUserData 	gx.a GXTexture.o
-8032c474 00000008 8032c474 0 GXInitTexObjUserData 	gx.a GXTexture.o
-8032c47c 00000008 8032c47c 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-8032c484 00000190 8032c484 0 zz_8032c484_
-8032c614 000000f0 8032c614 0 zz_8032c614_
-8032c704 0000013c 8032c704 0 zz_8032c704_
-8032c840 00000048 8032c840 0 zz_8032c840_
-8032c888 00000020 8032c888 0 zz_8032c888_
-8032c8a8 0000018c 8032c8a8 0 zz_8032c8a8_
-8032ca34 00000010 8032ca34 0 nlListContainer<P8SaveData>::__ct(void)
-8032ca44 000000cc 8032ca44 0 zz_8032ca44_
-8032cb10 0000011c 8032cb10 0 zz_8032cb10_
-8032cc2c 00000054 8032cc2c 0 zz_8032cc2c_
-8032cc80 00000010 8032cc80 0 zz_8032cc80_
-8032cc84 0000000c 8032cc84 0 cAIPad::__ct(void)
-8032cc90 00000040 8032cc90 0 zz_8032cc90_
-8032ccd0 00000004 8032ccd0 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-8032ccd4 0000009c 8032ccd4 0 zz_8032ccd4_
-8032ccd8 00000098 8032ccd8 0 zz_8032ccd8_
-8032ccdc 00000094 8032ccdc 0 zz_8032ccdc_
-8032cd70 00000048 8032cd70 0 zz_8032cd70_
-8032cdb8 00000028 8032cdb8 0 zz_8032cdb8_
-8032cde0 000000a4 8032cde0 0 zz_8032cde0_
-8032cdec 00000098 8032cdec 0 zz_8032cdec_
-8032ce84 00000024 8032ce84 0 LexicalCast<PCc,f>(float &)
-8032cea8 000001f8 8032cea8 0 zz_8032cea8_
-8032d0a0 000000f8 8032d0a0 0 zz_8032d0a0_
-8032d198 000001f0 8032d198 0 zz_8032d198_
-8032d388 00000144 8032d388 0 zz_8032d388_
-8032d4cc 0000001c 8032d4cc 0 zz_8032d4cc_
-8032d4e8 0000005c 8032d4e8 0 zz_8032d4e8_
-8032d508 0000003c 8032d508 0 zz_8032d508_
-8032d544 0000000c 8032d544 0 cAIPad::__ct(void)
-8032d550 00000628 8032d550 0 zz_8032d550_
-8032db78 00000104 8032db78 0 zz_8032db78_
-8032dc7c 000000d8 8032dc7c 0 zz_8032dc7c_
-8032dd54 000000c0 8032dd54 0 zz_8032dd54_
-8032de14 000000c4 8032de14 0 zz_8032de14_
-8032ded8 000000a8 8032ded8 0 zz_8032ded8_
-8032df80 000000cc 8032df80 0 zz_8032df80_
-8032e04c 00000134 8032e04c 0 zz_8032e04c_
-8032e180 00000058 8032e180 0 zz_8032e180_
-8032e1d8 000000d4 8032e1d8 0 zz_8032e1d8_
-8032e2ac 0000006c 8032e2ac 0 zz_8032e2ac_
-8032e318 000000c0 8032e318 0 zz_8032e318_
-8032e3d8 000001b0 8032e3d8 0 zz_8032e3d8_
-8032e588 0000010c 8032e588 0 zz_8032e588_
-8032e694 000000dc 8032e694 0 zz_8032e694_
-8032e770 00000198 8032e770 0 zz_8032e770_
-8032e908 000000ac 8032e908 0 zz_8032e908_
-8032e9b4 00000054 8032e9b4 0 zz_8032e9b4_
-8032ea08 00000074 8032ea08 0 zz_8032ea08_
-8032ea7c 000000e4 8032ea7c 0 zz_8032ea7c_
-8032ea80 000000e0 8032ea80 0 zz_8032ea80_
-8032ea84 000000dc 8032ea84 0 zz_8032ea84_
-8032ea88 000000d8 8032ea88 0 zz_8032ea88_
-8032ea94 000000cc 8032ea94 0 zz_8032ea94_
-8032eb60 00000070 8032eb60 0 zz_8032eb60_
-8032ebd0 00000074 8032ebd0 0 zz_8032ebd0_
-8032ec44 000000a0 8032ec44 0 zz_8032ec44_
-8032ece4 00000124 8032ece4 0 zz_8032ece4_
-8032ee08 000000a0 8032ee08 0 zz_8032ee08_
-8032eea8 0000017c 8032eea8 0 zz_8032eea8_
-8032f024 000000b4 8032f024 0 zz_8032f024_
-8032f0d8 00000090 8032f0d8 0 zz_8032f0d8_
-8032f168 000000ac 8032f168 0 zz_8032f168_
-8032f214 000001dc 8032f214 0 zz_8032f214_
-8032f3f0 0000000c 8032f3f0 0 cAIPad::__ct(void)
-8032f3fc 0000000c 8032f3fc 0 cAIPad::__ct(void)
-8032f408 00000008 8032f408 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+8032c39c 00000030 8032c39c 0 NHTTPi_InitBgnEndInfo 	nhttp.a NHTTP_bgnend.o
+8032c3cc 0000005c 8032c3cc 0 NHTTPi_alloc 	nhttp.a NHTTP_bgnend.o
+8032c428 00000044 8032c428 0 NHTTPi_free 	nhttp.a NHTTP_bgnend.o
+8032c46c 00000008 8032c46c 0 NHTTPi_SetError 	nhttp.a NHTTP_bgnend.o
+8032c474 00000008 8032c474 0 NHTTPi_SetSSLError 	nhttp.a NHTTP_bgnend.o
+8032c47c 00000008 8032c47c 0 NHTTPi_GetSSLError 	nhttp.a NHTTP_bgnend.o
+8032c484 00000190 8032c484 0 NHTTPi_Startup 	nhttp.a NHTTP_bgnend.o
+8032c614 000000f0 8032c614 0 NHTTPi_CleanupAsync 	nhttp.a NHTTP_bgnend.o
+8032c704 0000013c 8032c704 0 addHdrList 	nhttp.a NHTTP_control.o
+8032c840 00000048 8032c840 0 NHTTPi_getHdrFromList 	nhttp.a NHTTP_control.o
+8032c888 00000020 8032c888 0 NHTTP_AddHeaderField 	nhttp.a NHTTP_control.o
+8032c8a8 0000018c 8032c8a8 0 NHTTP_AddPostDataAscii 	nhttp.a NHTTP_control.o
+8032ca34 00000010 8032ca34 0 NHTTPi_InitListInfo 	nhttp.a NHTTP_list.o
+8032ca44 000000cc 8032ca44 0 NHTTPi_setReqQueue 	nhttp.a NHTTP_list.o
+8032cb10 0000011c 8032cb10 0 NHTTPi_freeReqQueue 	nhttp.a NHTTP_list.o
+8032cc2c 00000054 8032cc2c 0 NHTTPi_allFreeReqQueue 	nhttp.a NHTTP_list.o
+8032cc80 00000004 8032cc80 0 NHTTPi_getReqFromReqQueue 	nhttp.a NHTTP_list.o
+8032cc84 0000000c 8032cc84 0 NHTTPi_InitMutexInfo 	nhttp.a NHTTP_os_RVL.o
+8032cc90 00000040 8032cc90 0 NHTTPi_initLockReqList 	nhttp.a NHTTP_os_RVL.o
+8032ccd0 00000004 8032ccd0 0 NHTTPi_exitLockReqList 	nhttp.a NHTTP_os_RVL.o
+8032ccd4 00000004 8032ccd4 0 NHTTPi_lockReqList 	nhttp.a NHTTP_os_RVL.o
+8032ccd8 00000004 8032ccd8 0 NHTTPi_unlockReqList 	nhttp.a NHTTP_os_RVL.o
+8032ccdc 00000094 8032ccdc 0 NHTTPi_createCommThread 	nhttp.a NHTTP_os_RVL.o
+8032cd70 00000048 8032cd70 0 NHTTPi_destroyCommThread 	nhttp.a NHTTP_os_RVL.o
+8032cdb8 00000028 8032cdb8 0 NHTTPi_idleCommThread 	nhttp.a NHTTP_os_RVL.o
+8032cde0 0000000c 8032cde0 0 NHTTPi_kickCommThread 	nhttp.a NHTTP_os_RVL.o
+8032cdec 00000098 8032cdec 0 NHTTPi_CheckCurrentThread 	nhttp.a NHTTP_os_RVL.o
+8032ce84 00000024 8032ce84 0 NHTTPi_CommThreadProc 	nhttp.a NHTTP_os_RVL.o
+8032cea8 000001f8 8032cea8 0 NHTTPi_findNextLineHdrRecvBuf 	nhttp.a NHTTP_recvbuf.o
+8032d0a0 000000f8 8032d0a0 0 NHTTPi_skipSpaceHdrRecvBuf 	nhttp.a NHTTP_recvbuf.o
+8032d198 000001f0 8032d198 0 NHTTPi_compareTokenN_HdrRecvBuf 	nhttp.a NHTTP_recvbuf.o
+8032d388 00000144 8032d388 0 NHTTPi_loadFromHdrRecvBuf 	nhttp.a NHTTP_recvbuf.o
+8032d4cc 0000001c 8032d4cc 0 NHTTPi_isRecvBufFull 	nhttp.a NHTTP_recvbuf.o
+8032d4e8 00000020 8032d4e8 0 NHTTPi_RecvBuf 	nhttp.a NHTTP_recvbuf.o
+8032d508 0000003c 8032d508 0 NHTTPi_RecvBufN 	nhttp.a NHTTP_recvbuf.o
+8032d544 0000000c 8032d544 0 NHTTPi_InitRequestInfo 	nhttp.a NHTTP_request.o
+8032d550 00000628 8032d550 0 NHTTP_CreateRequest 	nhttp.a NHTTP_request.o
+8032db78 00000104 8032db78 0 NHTTP_DestroyRequest 	nhttp.a NHTTP_request.o
+8032dc7c 000000d8 8032dc7c 0 NHTTPi_destroyRequestObject 	nhttp.a NHTTP_request.o
+8032dd54 000000c0 8032dd54 0 NHTTP_SendRequestAsync 	nhttp.a NHTTP_request.o
+8032de14 000000c4 8032de14 0 NHTTP_CancelRequestAsync 	nhttp.a NHTTP_request.o
+8032ded8 000000a8 8032ded8 0 NHTTPi_cancelAllRequests 	nhttp.a NHTTP_request.o
+8032df80 000000cc 8032df80 0 NHTTP_DestroyResponse 	nhttp.a NHTTP_response.o
+8032e04c 00000134 8032e04c 0 NHTTPi_getHeaderValue 	nhttp.a NHTTP_response.o
+8032e180 00000058 8032e180 0 NHTTPi_checkKeepAlive 	nhttp.a NHTTP_socket_RVL.o
+8032e1d8 000000d4 8032e1d8 0 NHTTPi_SocOpen 	nhttp.a NHTTP_socket_RVL.o
+8032e2ac 0000006c 8032e2ac 0 NHTTPi_SocClose 	nhttp.a NHTTP_socket_RVL.o
+8032e318 000000c0 8032e318 0 NHTTPi_SocConnect 	nhttp.a NHTTP_socket_RVL.o
+8032e3d8 000001b0 8032e3d8 0 NHTTPi_SocSSLConnect 	nhttp.a NHTTP_socket_RVL.o
+8032e588 0000010c 8032e588 0 NHTTPi_SocRecv_sub 	nhttp.a NHTTP_socket_RVL.o
+8032e694 000000dc 8032e694 0 NHTTPi_SocRecv 	nhttp.a NHTTP_socket_RVL.o
+8032e770 00000198 8032e770 0 NHTTPi_SocSend_sub 	nhttp.a NHTTP_socket_RVL.o
+8032e908 000000ac 8032e908 0 NHTTPi_SocSend 	nhttp.a NHTTP_socket_RVL.o
+8032e9b4 00000054 8032e9b4 0 NHTTPi_SocCancel 	nhttp.a NHTTP_socket_RVL.o
+8032ea08 00000074 8032ea08 0 NHTTPi_resolveHostname 	nhttp.a NHTTP_socket_RVL.o
+8032ea7c 00000004 8032ea7c 0 NHTTPi_memcpy 	nhttp.a NHTTP_stdlib_RVL.o
+8032ea80 00000004 8032ea80 0 NHTTPi_strlen 	nhttp.a NHTTP_stdlib_RVL.o
+8032ea84 00000004 8032ea84 0 NHTTPi_strcmp 	nhttp.a NHTTP_stdlib_RVL.o
+8032ea88 0000000c 8032ea88 0 NHTTPi_memclr 	nhttp.a NHTTP_stdlib_RVL.o
+8032ea94 000000cc 8032ea94 0 NHTTPi_strnicmp 	nhttp.a NHTTP_stdlib_RVL.o
+8032eb60 00000070 8032eb60 0 NHTTPi_getUrlEncodedSize 	nhttp.a NHTTP_stdlib_RVL.o
+8032ebd0 00000074 8032ebd0 0 NHTTPi_getUrlEncodedSize2 	nhttp.a NHTTP_stdlib_RVL.o
+8032ec44 000000a0 8032ec44 0 NHTTPi_encodeUrlChar 	nhttp.a NHTTP_stdlib_RVL.o
+8032ece4 00000124 8032ece4 0 NHTTPi_strToHex 	nhttp.a NHTTP_stdlib_RVL.o
+8032ee08 000000a0 8032ee08 0 NHTTPi_strToInt 	nhttp.a NHTTP_stdlib_RVL.o
+8032eea8 0000017c 8032eea8 0 NHTTPi_intToStr 	nhttp.a NHTTP_stdlib_RVL.o
+8032f024 000000b4 8032f024 0 NHTTPi_compareToken 	nhttp.a NHTTP_stdlib_RVL.o
+8032f0d8 00000090 8032f0d8 0 NHTTPi_strtonum 	nhttp.a NHTTP_stdlib_RVL.o
+8032f168 000000ac 8032f168 0 NHTTPi_memfind 	nhttp.a NHTTP_stdlib_RVL.o
+8032f214 000001dc 8032f214 0 NHTTPi_Base64Encode 	nhttp.a NHTTP_stdlib_RVL.o
+8032f3f0 0000000c 8032f3f0 0 NHTTPi_InitThreadInfo 	nhttp.a NHTTP_thread.o
+8032f3fc 0000000c 8032f3fc 0 NHTTPi_IsCreateCommThreadMessageQueueOn 	nhttp.a NHTTP_thread.o
+8032f408 00000008 8032f408 0 NHTTPi_IsCreateCommThreadMessageQueue 	nhttp.a NHTTP_thread.o
 8032f410 000000c8 8032f410 0 zz_8032f410_
 8032f4d8 000000e0 8032f4d8 0 zz_8032f4d8_
 8032f5b8 00000104 8032f5b8 0 zz_8032f5b8_
