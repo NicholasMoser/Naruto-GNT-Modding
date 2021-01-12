@@ -9729,19 +9729,19 @@
 802e2a4c 00000048 802e2a4c 0 GXInitTexObjCI 	gx.a GXTexture.o
 802e2a94 00000104 802e2a94 0 GXInitTexObjLOD 	gx.a GXTexture.o
 802e2b98 00000014 802e2b98 0 GXInitTexObjWrapMode 	gx.a GXTexture.o
-802e2bac 00000008 802e2bac 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802e2bb4 00000028 802e2bb4 0 zz_802e2bb4_
+802e2bac 00000008 802e2bac 0 GXInitTexObjTlut 	gx.a GXTexture.o
+802e2bb4 00000028 802e2bb4 0 GXInitTexObjFilter 	gx.a GXTexture.o
 802e2bdc 00000008 802e2bdc 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802e2be4 00000008 802e2be4 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802e2be4 00000008 802e2be4 0 GXGetTexObjUserData 	gx.a GXTexture.o
 802e2bec 0000000c 802e2bec 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-802e2bf8 00000014 802e2bf8 0 GXGetTexObjHeight 	gx.a GXTexture.o
+802e2bf8 00000014 802e2bf8 0 GXGetTexObjWidth 	gx.a GXTexture.o
 802e2c0c 00000014 802e2c0c 0 GXGetTexObjHeight 	gx.a GXTexture.o
-802e2c20 00000008 802e2c20 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802e2c20 00000008 802e2c20 0 GXGetTexObjFmt 	gx.a GXTexture.o
 802e2c28 0000000c 802e2c28 0 GXGetTexObjWrapT 	gx.a GXTexture.o
 802e2c34 0000000c 802e2c34 0 GXGetTexObjWrapT 	gx.a GXTexture.o
 802e2c40 0000000c 802e2c40 0 GXGetTexObjMipMap 	gx.a GXTexture.o
-802e2c4c 000000e4 802e2c4c 0 zz_802e2c4c_
-802e2d30 00000008 802e2d30 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802e2c4c 000000e4 802e2c4c 0 GXGetTexObjLODAll 	gx.a GXTexture.o
+802e2d30 00000008 802e2d30 0 GXGetTexObjTlut 	gx.a GXTexture.o
 802e2d38 00000164 802e2d38 0 GXLoadTexObjPreLoaded 	gx.a GXTexture.o
 802e2e9c 00000054 802e2e9c 0 GXLoadTexObj 	gx.a GXTexture.o
 802e2ef0 00000028 802e2ef0 0 GXInitTlutObj 	gx.a GXTexture.o
@@ -9779,8 +9779,8 @@
 802e3efc 0000008c 802e3efc 0 GXSetZTexture 	gx.a GXTev.o
 802e3f88 0000015c 802e3f88 0 GXSetTevOrder 	gx.a GXTev.o
 802e40e4 00000024 802e40e4 0 GXSetNumTevStages 	gx.a GXTev.o
-802e4108 0000022c 802e4108 0 zz_802e4108_
-802e4334 00000160 802e4334 0 zz_802e4334_
+802e4108 0000022c 802e4108 0 GXSetFog 	gx.a GXPixel.o
+802e4334 00000160 802e4334 0 GXInitFogAdjTable 	gx.a GXPixel.o
 802e4494 00000124 802e4494 0 GXSetFogRangeAdj 	gx.a GXPixel.o
 802e45b8 00000050 802e45b8 0 GXSetBlendMode 	gx.a GXPixel.o
 802e4608 0000002c 802e4608 0 GXSetDither 	gx.a GXPixel.o
@@ -9792,22 +9792,22 @@
 802e4798 00000030 802e4798 0 GXSetDstAlpha 	gx.a GXPixel.o
 802e47c8 00000034 802e47c8 0 GXSetFieldMask 	gx.a GXPixel.o
 802e47fc 00000070 802e47fc 0 GXSetFieldMode 	gx.a GXPixel.o
-802e486c 000000b4 802e486c 0 zz_802e486c_
-802e4920 000000b0 802e4920 0 zz_802e4920_
+802e486c 000000b4 802e486c 0 GXBeginDisplayList 	gx.a GXDisplayList.o
+802e4920 000000b0 802e4920 0 GXEndDisplayList 	gx.a GXDisplayList.o
 802e49d0 00000074 802e49d0 0 GXCallDisplayList 	gx.a GXDisplayList.o
 802e4a44 00000188 802e4a44 0 GXProject 	gx.a GXTransform.o
 802e4bcc 00000044 802e4bcc 0 __GXSetProjection 	gx.a GXTransform.o
 802e4c10 00000064 802e4c10 0 GXSetProjection 	gx.a GXTransform.o
 802e4c74 0000004c 802e4c74 0 GXSetProjectionv 	gx.a GXTransform.o
 802e4cc0 00000040 802e4cc0 0 GXGetProjectionv 	gx.a GXTransform.o
-802e4d00 00000050 802e4d00 0 GXLoadPosMtxImm
-802e4d50 0000002c 802e4d50 0 zz_802e4d50_
+802e4d00 00000050 802e4d00 0 GXLoadPosMtxImm 	gx.a GXTransform.o
+802e4d50 0000002c 802e4d50 0 GXLoadPosMtxIndx 	gx.a GXTransform.o
 802e4d7c 00000058 802e4d7c 0 GXLoadNrmMtxImm 	gx.a GXTransform.o
-802e4dd4 00000034 802e4dd4 0 zz_802e4dd4_
+802e4dd4 00000034 802e4dd4 0 GXLoadNrmMtxIndx3x3 	gx.a GXTransform.o
 802e4e08 00000020 802e4e08 0 GXSetCurrentMtx 	gx.a GXTransform.o
 802e4e28 000000b4 802e4e28 0 GXLoadTexMtxImm 	gx.a GXTransform.o
 802e4edc 00000090 802e4edc 0 __GXSetViewport 	gx.a GXTransform.o
-802e4f6c 0000003c 802e4f6c 0 zz_802e4f6c_
+802e4f6c 0000003c 802e4f6c 0 GXSetViewportJitter 	gx.a GXTransform.o
 802e4fa8 0000002c 802e4fa8 0 GXSetViewport 	gx.a GXTransform.o
 802e4fd4 00000020 802e4fd4 0 GXGetViewportv 	gx.a GXTransform.o
 802e4ff4 00000068 802e4ff4 0 GXSetScissor 	gx.a GXTransform.o
@@ -9815,7 +9815,7 @@
 802e5098 00000028 802e5098 0 GXSetClipMode 	gx.a GXTransform.o
 802e50c0 00000088 802e50c0 0 __GXSetMatrixIndex 	gx.a GXTransform.o
 802e5148 0000082c 802e5148 0 GXSetGPMetric 	gx.a GXPerf.o
-802e5974 00000010 802e5974 0 GXClearGPMetric
+802e5974 00000010 802e5974 0 GXClearGPMetric 	gx.a GXPerf.o
 802e5984 00000038 802e5984 0 homebutton::FrameController::init(int, float, float, float) 	homebuttonLib.a HBMFrameController.o
 802e59bc 00000020 802e59bc 0 homebutton::FrameController::initFrame(void) 	homebuttonLib.a HBMFrameController.o
 802e59dc 000000d8 802e59dc 0 zz_802e59dc_
@@ -10081,127 +10081,127 @@
 802f898c 000000d0 802f898c 0 zz_802f898c_
 802f8a5c 0000004c 802f8a5c 0 nw4hbm::lyt::Picture::Append(TPLPalette *) 	homebuttonLib.a lyt_picture.o
 802f8aa8 00000170 802f8aa8 0 zz_802f8aa8_
-802f8c18 0000002c 802f8c18 0 nw4hbm::lyt::Window::GetVtxColor(unsigned long) const 	homebuttonLib.a lyt_window.o
-802f8c44 0000002c 802f8c44 0 nw4hbm::lyt::Window::SetVtxColor(unsigned long, nw4hbm::ut::Color) 	homebuttonLib.a lyt_window.o
-802f8c70 00000018 802f8c70 0 nw4hbm::lyt::Window::GetVtxColorElement(unsigned long) const 	homebuttonLib.a lyt_window.o
-802f8c88 00000018 802f8c88 0 nw4hbm::lyt::Window::SetVtxColorElement(unsigned long, unsigned char) 	homebuttonLib.a lyt_window.o
-802f8ca0 000000dc 802f8ca0 0 nw4hbm::lyt::Picture::DrawSelf(nw4hbm::lyt::DrawInfo const &) 	homebuttonLib.a lyt_picture.o
-802f8d7c 0000000c 802f8d7c 0 GetOneTimerLeadGroundContactAnims(void)
-802f8d88 00000014 802f8d88 0 zz_802f8d88_
-802f8d9c 00000040 802f8d9c 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802f8ddc 00000010 802f8ddc 0 J3DAnmKeyLoader_v15::J3DAnmKeyLoader_v15(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802f8dec 00000008 802f8dec 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
+802f8c18 0000002c 802f8c18 0 GetVtxColor__Q36nw4hbm3lyt7PictureCFUl 	homebuttonLib.a lyt_picture.o
+802f8c44 0000002c 802f8c44 0 SetVtxColor__Q36nw4hbm3lyt7PictureFUlQ36nw4hbm2ut5Color 	homebuttonLib.a lyt_picture.o
+802f8c70 00000018 802f8c70 0 GetVtxColorElement__Q36nw4hbm3lyt7PictureCFUl 	homebuttonLib.a lyt_picture.o
+802f8c88 00000018 802f8c88 0 SetVtxColorElement__Q36nw4hbm3lyt7PictureFUlUc 	homebuttonLib.a lyt_picture.o
+802f8ca0 000000dc 802f8ca0 0 DrawSelf__Q36nw4hbm3lyt7PictureFRCQ36nw4hbm3lyt8DrawInfo 	homebuttonLib.a lyt_picture.o
+802f8d7c 0000000c 802f8d7c 0 GetRuntimeTypeInfo__Q36nw4hbm3lyt7PictureCFv 	homebuttonLib.a lyt_picture.o
+802f8d88 00000014 802f8d88 0 __sinit_\lyt_picture_cpp 	homebuttonLib.a lyt_picture.o
+802f8d9c 00000040 802f8d9c 0 __dt__Q36nw4hbm3lyt16ResourceAccessorFv 	homebuttonLib.a lyt_resourceAccessor.o
+802f8ddc 00000010 802f8ddc 0 __ct__Q36nw4hbm3lyt16ResourceAccessorFv 	homebuttonLib.a lyt_resourceAccessor.o
+802f8dec 00000008 802f8dec 0 zz_802f8dec_
 802f8df4 000000b4 802f8df4 0 GetColor__25@unnamed@lyt_textBox_cpp@FRC11_GXColorS10 	homebuttonLib.a lyt_textBox.o
-802f8ea8 000002b4 802f8ea8 0 zz_802f8ea8_
-802f915c 00000190 802f915c 0 zz_802f915c_
-802f92ec 00000034 802f92ec 0 zz_802f92ec_
-802f9320 00000048 802f9320 0 nw4hbm::lyt::TextBox::SetVtxColor(unsigned long, nw4hbm::ut::Color) 	homebuttonLib.a lyt_textBox.o
-802f9368 0000002c 802f9368 0 nw4hbm::lyt::Window::SetVtxColor(unsigned long, nw4hbm::ut::Color) 	homebuttonLib.a lyt_window.o
-802f9394 00000018 802f9394 0 nw4hbm::lyt::Window::GetVtxColorElement(unsigned long) const 	homebuttonLib.a lyt_window.o
-802f93ac 00000018 802f93ac 0 nw4hbm::lyt::Window::SetVtxColorElement(unsigned long, unsigned char) 	homebuttonLib.a lyt_window.o
-802f93c4 00000568 802f93c4 0 zz_802f93c4_
-802f992c 0000042c 802f992c 0 zz_802f992c_
-802f9d58 00000038 802f9d58 0 nw4hbm::ut::Font::GetCharStrmReader(void) const 	homebuttonLib.a lyt_textBox.o
-802f9d90 0000007c 802f9d90 0 zz_802f9d90_
-802f9e0c 0000004c 802f9e0c 0 zz_802f9e0c_
-802f9e58 00000068 802f9e58 0 nw4hbm::lyt::TextBox::SetString(wchar_t const *, unsigned short) 	homebuttonLib.a lyt_textBox.o
-802f9ec0 000000c8 802f9ec0 0 nw4hbm::lyt::TextBox::SetString(wchar_t const *, unsigned short, unsigned short) 	homebuttonLib.a lyt_textBox.o
-802f9f88 00000040 802f9f88 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802f9fc8 00000338 802f9fc8 0 zz_802f9fc8_
-802fa300 00000168 802fa300 0 zz_802fa300_
-802fa468 0000000c 802fa468 0 GetOneTimerLeadGroundContactAnims(void)
-802fa474 00000014 802fa474 0 zz_802fa474_
-802fa488 00000210 802fa488 0 zz_802fa488_
-802fa698 00000144 802fa698 0 zz_802fa698_
-802fa7dc 000000fc 802fa7dc 0 nw4hbm::lyt::Window::FindMaterialByName(char const *, bool) 	homebuttonLib.a lyt_window.o
-802fa8d8 000000a4 802fa8d8 0 nw4hbm::lyt::Window::FindAnimationLink(nw4hbm::lyt::AnimTransform *) 	homebuttonLib.a lyt_window.o
-802fa97c 00000094 802fa97c 0 nw4hbm::lyt::Window::SetAnimationEnable(nw4hbm::lyt::AnimTransform *, bool, bool) 	homebuttonLib.a lyt_window.o
-802faa10 0000002c 802faa10 0 nw4hbm::lyt::Window::GetVtxColor(unsigned long) const 	homebuttonLib.a lyt_window.o
-802faa3c 0000002c 802faa3c 0 nw4hbm::lyt::Window::SetVtxColor(unsigned long, nw4hbm::ut::Color) 	homebuttonLib.a lyt_window.o
-802faa68 00000018 802faa68 0 nw4hbm::lyt::Window::GetVtxColorElement(unsigned long) const 	homebuttonLib.a lyt_window.o
-802faa80 00000018 802faa80 0 nw4hbm::lyt::Window::SetVtxColorElement(unsigned long, unsigned char) 	homebuttonLib.a lyt_window.o
-802faa98 00000140 802faa98 0 nw4hbm::lyt::Window::DrawSelf(nw4hbm::lyt::DrawInfo const &) 	homebuttonLib.a lyt_window.o
-802fabd8 00000090 802fabd8 0 nw4hbm::lyt::Window::AnimateSelf(unsigned long) 	homebuttonLib.a lyt_window.o
-802fac68 00000090 802fac68 0 nw4hbm::lyt::Window::UnbindAnimationSelf(nw4hbm::lyt::AnimTransform *) 	homebuttonLib.a lyt_window.o
-802facf8 00000114 802facf8 0 nw4hbm::lyt::Window::DrawContent(nw4hbm::math::VEC2 const &, nw4hbm::lyt::WindowFrameSize const &, unsigned char) 	homebuttonLi
-802fae0c 000005dc 802fae0c 0 zz_802fae0c_
-802fb3e8 000006c8 802fb3e8 0 zz_802fb3e8_
-802fbab0 00000d30 802fbab0 0 zz_802fbab0_
-802fc7e0 00000100 802fc7e0 0 nw4hbm::lyt::Window::GetFrameSize(unsigned char, nw4hbm::lyt::Window::Frame const *) 	homebuttonLib.a lyt_window.o
-802fc8e0 00000028 802fc8e0 0 nw4hbm::lyt::Window::GetFrameMaterial(unsigned long) const 	homebuttonLib.a lyt_window.o
-802fc908 0000001c 802fc908 0 zz_802fc908_
-802fc924 00000014 802fc924 0 zz_802fc924_
-802fc938 00000074 802fc938 0 zz_802fc938_
-802fc9ac 00000060 802fc9ac 0 zz_802fc9ac_
-802fca0c 000001b0 802fca0c 0 zz_802fca0c_
-802fcbbc 00000074 802fcbbc 0 nw4hbm::ut::IsValidBinaryFile(nw4hbm::ut::BinaryFileHeader const *, unsigned long, unsigned short, unsigned short) 	homebuttonL
-802fcc30 00000078 802fcc30 0 nw4hbm::ut::CharStrmReader::ReadNextCharUTF8(void) 	homebuttonLib.a ut_CharStrmReader.o
-802fcca8 0000001c 802fcca8 0 nw4hbm::ut::CharStrmReader::ReadNextCharUTF16(void) 	homebuttonLib.a ut_CharStrmReader.o
-802fccc4 0000001c 802fccc4 0 nw4hbm::ut::CharStrmReader::ReadNextCharCP1252(void) 	homebuttonLib.a ut_CharStrmReader.o
-802fcce0 00000060 802fcce0 0 nw4hbm::ut::CharStrmReader::ReadNextCharSJIS(void) 	homebuttonLib.a ut_CharStrmReader.o
-802fcd40 0000022c 802fcd40 0 zz_802fcd40_
-802fcf6c 00000040 802fcf6c 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802fcfac 00000008 802fcfac 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802fcfb4 00000008 802fcfb4 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-802fcfbc 00000a78 802fcfbc 0 zz_802fcfbc_
-802fda34 00000044 802fda34 0 nw4hbm::ut::CharWriter::SetColorMapping(nw4hbm::ut::Color, nw4hbm::ut::Color) 	homebuttonLib.a ut_CharWriter.o
-802fda78 00000150 802fda78 0 nw4hbm::ut::CharWriter::SetGradationMode(nw4hbm::ut::CharWriter::GradationMode) 	homebuttonLib.a ut_CharWriter.o
-802fdbc8 00000160 802fdbc8 0 nw4hbm::ut::CharWriter::SetTextColor(nw4hbm::ut::Color) 	homebuttonLib.a ut_CharWriter.o
-802fdd28 00000180 802fdd28 0 nw4hbm::ut::CharWriter::SetTextColor(nw4hbm::ut::Color, nw4hbm::ut::Color) 	homebuttonLib.a ut_CharWriter.o
-802fdea8 00000008 802fdea8 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-802fdeb0 00000008 802fdeb0 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-802fdeb8 000000d0 802fdeb8 0 zz_802fdeb8_
-802fdf88 00000064 802fdf88 0 zz_802fdf88_
-802fdfec 00000064 802fdfec 0 zz_802fdfec_
-802fe050 00000064 802fe050 0 zz_802fe050_
-802fe0b4 00000008 802fe0b4 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
-802fe0bc 00000008 802fe0bc 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-802fe0c4 0000013c 802fe0c4 0 zz_802fe0c4_
-802fe200 0000000c 802fe200 0 WorldDarkening::Fade(float, float)
-802fe20c 00000008 802fe20c 0 nw4hbm::ut::TextWriterBase<w>::SetCharSpace(float) 	homebuttonLib.a ut_TextWriterBase.o
-802fe214 00000008 802fe214 0 nw4hbm::ut::TextWriterBase<w>::SetCharSpace(float) 	homebuttonLib.a ut_TextWriterBase.o
+802f8ea8 000002b4 802f8ea8 0 __ct__Q36nw4hbm3lyt7TextBoxFPCQ46nw4hbm3lyt3res7TextBoxRCQ36nw4hbm3lyt11ResBlockSet 	homebuttonLib.a lyt_textBox.o
+802f915c 00000190 802f915c 0 __dt__Q36nw4hbm3lyt7TextBoxFv 	homebuttonLib.a lyt_textBox.o
+802f92ec 00000034 802f92ec 0 GetVtxColor__Q36nw4hbm3lyt7TextBoxCFUl 	homebuttonLib.a lyt_textBox.o
+802f9320 00000048 802f9320 0 SetVtxColor__Q36nw4hbm3lyt7TextBoxFUlQ36nw4hbm2ut5Color 	homebuttonLib.a lyt_textBox.o
+802f9320 00000048 802f9320 0 SetTextColor__Q36nw4hbm3lyt7TextBoxFUlQ36nw4hbm2ut5Color 	homebuttonLib.a lyt_textBox.o
+802f9394 00000018 802f9394 0 GetVtxColorElement__Q36nw4hbm3lyt7TextBoxCFUl 	homebuttonLib.a lyt_textBox.o
+802f93ac 00000018 802f93ac 0 SetVtxColorElement__Q36nw4hbm3lyt7TextBoxFUlUc 	homebuttonLib.a lyt_textBox.o
+802f93c4 00000568 802f93c4 0 DrawSelf__Q36nw4hbm3lyt7TextBoxFRCQ36nw4hbm3lyt8DrawInfo 	homebuttonLib.a lyt_textBox.o
+802f992c 0000042c 802f992c 0 CalcLineRectImpl<w>__25@unnamed@lyt_textBox_cpp@FPQ36nw4hbm2ut4RectPQ36nw4hbm2ut17TextWriterBase<w>PCwifPb_i 	homebuttonLib.a lyt_textBox.o
+802f9d58 00000038 802f9d58 0 GetCharStrmReader__Q34nw4r2ut4FontCFv 	libnw4r_lyt.a lyt_textBox.o
+802f9d90 0000007c 802f9d90 0 AllocStringBuffer__Q36nw4hbm3lyt7TextBoxFUs 	homebuttonLib.a lyt_textBox.o
+802f9e0c 0000004c 802f9e0c 0 FreeStringBuffer__Q36nw4hbm3lyt7TextBoxFv 	homebuttonLib.a lyt_textBox.o
+802f9e58 00000068 802f9e58 0 SetString__Q36nw4hbm3lyt7TextBoxFPCwUs 	homebuttonLib.a lyt_textBox.o
+802f9ec0 000000c8 802f9ec0 0 SetString__Q36nw4hbm3lyt7TextBoxFPCwUsUs 	homebuttonLib.a lyt_textBox.o
+802f9f88 00000040 802f9f88 0 __dt__Q36nw4hbm2ut4FontFv 	homebuttonLib.a lyt_textBox.o
+802f9fc8 00000338 802f9fc8 0 GetTextDrawRect__Q36nw4hbm3lyt7TextBoxCFPQ36nw4hbm2ut17TextWriterBase<w> homebuttonLib.a lyt_textBox.o
+802fa300 00000168 802fa300 0 CalcStringRectImpl<w>__25@unnamed@lyt_textBox_cpp@FPQ36nw4hbm2ut4RectPQ36nw4hbm2ut17TextWriterBase<w>PCwif_v 	homebuttonLib.a lyt_textBox.o
+802fa468 0000000c 802fa468 0 GetRuntimeTypeInfo__Q36nw4hbm3lyt7TextBoxCFv 	homebuttonLib.a lyt_textBox.o
+802fa474 00000014 802fa474 0 __sinit_\lyt_textBox_cpp 	homebuttonLib.a lyt_textBox.o
+802fa488 00000210 802fa488 0 __ct__Q36nw4hbm3lyt6WindowFPCQ46nw4hbm3lyt3res6WindowRCQ36nw4hbm3lyt11ResBlockSet 	homebuttonLib.a lyt_window.o
+802fa698 00000144 802fa698 0 __dt__Q36nw4hbm3lyt6WindowFv 	homebuttonLib.a lyt_window.o
+802fa7dc 000000fc 802fa7dc 0 FindMaterialByName__Q36nw4hbm3lyt6WindowFPCcb 	homebuttonLib.a lyt_window.o
+802fa8d8 000000a4 802fa8d8 0 FindAnimationLink__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_window.o
+802fa97c 00000094 802fa97c 0 SetAnimationEnable__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransformbb 	homebuttonLib.a lyt_window.o
+802faa10 0000002c 802faa10 0 GetVtxColor__Q36nw4hbm3lyt6WindowCFUl 	homebuttonLib.a lyt_window.o
+802faa3c 0000002c 802faa3c 0 SetVtxColor__Q36nw4hbm3lyt6WindowFUlQ36nw4hbm2ut5Color 	homebuttonLib.a lyt_window.o
+802faa68 00000018 802faa68 0 GetVtxColorElement__Q36nw4hbm3lyt6WindowCFUl 	homebuttonLib.a lyt_window.o
+802faa80 00000018 802faa80 0 SetVtxColorElement__Q36nw4hbm3lyt6WindowFUlUc 	homebuttonLib.a lyt_window.o
+802faa98 00000140 802faa98 0 DrawSelf__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm3lyt8DrawInfo 	homebuttonLib.a lyt_window.o
+802fabd8 00000090 802fabd8 0 AnimateSelf__Q36nw4hbm3lyt6WindowFUl 	homebuttonLib.a lyt_window.o
+802fac68 00000090 802fac68 0 UnbindAnimationSelf__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_window.o
+802facf8 00000114 802facf8 0 DrawContent__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt15WindowFrameSizeUc 	homebuttonLib.a lyt_window.o
+802fae0c 000005dc 802fae0c 0 DrawFrame__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2RCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc 	homebuttonLib.a lyt_window.o
+802fb3e8 000006c8 802fb3e8 0 DrawFrame4__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2PCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc 	homebuttonLib.a lyt_window.o
+802fbab0 00000d30 802fbab0 0 DrawFrame8__Q36nw4hbm3lyt6WindowFRCQ36nw4hbm4math4VEC2PCQ46nw4hbm3lyt6Window5FrameRCQ36nw4hbm3lyt15WindowFrameSizeUc 	homebuttonLib.a lyt_window.o
+802fc7e0 00000100 802fc7e0 0 GetFrameSize__Q36nw4hbm3lyt6WindowFUcPCQ46nw4hbm3lyt6Window5Frame homebuttonLib.a lyt_window.o
+802fc8e0 00000028 802fc8e0 0 GetFrameMaterial__Q36nw4hbm3lyt6WindowCFUl 	homebuttonLib.a lyt_window.o
+802fc908 0000001c 802fc908 0 GetContentMaterial__Q36nw4hbm3lyt6WindowCFv 	homebuttonLib.a lyt_window.o
+802fc924 00000014 802fc924 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
+802fc938 00000074 802fc938 0 SinFIdx__Q26nw4hbm4mathFf 	homebuttonLib.a math_triangular.o
+802fc9ac 00000060 802fc9ac 0 CosFIdx__Q26nw4hbm4mathFf 	homebuttonLib.a math_triangular.o
+802fca0c 000001b0 802fca0c 0 Atan2FIdx__Q26nw4hbm4mathFff 	homebuttonLib.a math_triangular.o
+802fcbbc 00000074 802fcbbc 0 IsValidBinaryFile__Q26nw4hbm2utFPCQ36nw4hbm2ut16BinaryFileHeaderUlUsUs 	homebuttonLib.a ut_binaryFileFormat.o
+802fcc30 00000078 802fcc30 0 ReadNextCharUTF8__Q36nw4hbm2ut14CharStrmReaderFv 	homebuttonLib.a ut_CharStrmReader.o
+802fcca8 0000001c 802fcca8 0 ReadNextCharUTF16__Q36nw4hbm2ut14CharStrmReaderFv 	homebuttonLib.a ut_CharStrmReader.o
+802fccc4 0000001c 802fccc4 0 ReadNextCharCP1252__Q36nw4hbm2ut14CharStrmReaderFv 	homebuttonLib.a ut_CharStrmReader.o
+802fcce0 00000060 802fcce0 0 ReadNextCharSJIS__Q36nw4hbm2ut14CharStrmReaderFv 	homebuttonLib.a ut_CharStrmReader.o
+802fcd40 0000022c 802fcd40 0 __ct__Q36nw4hbm2ut10CharWriterFv 	homebuttonLib.a ut_CharWriter.o
+802fcf6c 00000040 802fcf6c 0 __dt__Q36nw4hbm2ut10CharWriterFv 	homebuttonLib.a ut_CharWriter.o
+802fcfac 00000008 802fcfac 0 SetFont__Q36nw4hbm2ut10CharWriterFRCQ36nw4hbm2ut4Font 	homebuttonLib.a ut_CharWriter.o
+802fcfb4 00000008 802fcfb4 0 GetFont__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
+802fcfbc 00000a78 802fcfbc 0 SetupGX__Q36nw4hbm2ut10CharWriterFv 	homebuttonLib.a ut_CharWriter.o
+802fda34 00000044 802fda34 0 SetColorMapping__Q36nw4hbm2ut10CharWriterFQ36nw4hbm2ut5ColorQ36nw4hbm2ut5Color 	homebuttonLib.a ut_CharWriter.o
+802fda78 00000150 802fda78 0 SetGradationMode__Q36nw4hbm2ut10CharWriterFQ46nw4hbm2ut10CharWriter13GradationMode 	homebuttonLib.a ut_CharWriter.o
+802fdbc8 00000160 802fdbc8 0 SetTextColor__Q36nw4hbm2ut10CharWriterFQ36nw4hbm2ut5Color homebuttonLib.a ut_CharWriter.o
+802fdd28 00000180 802fdd28 0 SetTextColor__Q36nw4hbm2ut10CharWriterFQ36nw4hbm2ut5ColorQ36nw4hbm2ut5Color 	homebuttonLib.a ut_CharWriter.o
+802fdea8 00000008 802fdea8 0 GetScaleH__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
+802fdeb0 00000008 802fdeb0 0 GetScaleV__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
+802fdeb8 000000d0 802fdeb8 0 SetFontSize__Q36nw4hbm2ut10CharWriterFff 	homebuttonLib.a ut_CharWriter.o
+802fdf88 00000064 802fdf88 0 GetFontWidth__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
+802fdfec 00000064 802fdfec 0 GetFontHeight__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
+802fe050 00000064 802fe050 0 GetFontAscent__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
+802fe0b4 00000008 802fe0b4 0 IsWidthFixed__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
+802fe0bc 00000008 802fe0bc 0 GetFixedWidth__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
+802fe0c4 0000013c 802fe0c4 0 Print__Q36nw4hbm2ut10CharWriterFUs 	homebuttonLib.a ut_CharWriter.o
+802fe200 0000000c 802fe200 0 SetCursor__Q36nw4hbm2ut10CharWriterFff 	homebuttonLib.a ut_CharWriter.o
+802fe20c 00000008 802fe20c 0 SetCursorX__Q36nw4hbm2ut10CharWriterFf 	homebuttonLib.a ut_CharWriter.o
+802fe214 00000008 802fe214 0 SetCursorY__Q36nw4hbm2ut10CharWriterFf 	homebuttonLib.a ut_CharWriter.o
 802fe21c 00000010 802fe21c 0 ColourBlendScreenTransition::Update(float)
 802fe22c 00000010 802fe22c 0 ColourBlendScreenTransition::Update(float)
-802fe23c 00000008 802fe23c 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-802fe244 00000008 802fe244 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-802fe24c 00000284 802fe24c 0 zz_802fe24c_
+802fe23c 00000008 802fe23c 0 GetCursorX__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
+802fe244 00000008 802fe244 0 GetCursorY__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
+802fe24c 00000284 802fe24c 0 PrintGlyph__Q36nw4hbm2ut10CharWriterFfffRCQ36nw4hbm2ut5Glyph 	homebuttonLib.a ut_CharWriter.o
 802fe4d0 00000360 802fe4d0 0 zz_802fe4d0_
-802fe830 000000a8 802fe830 0 nw4hbm::ut::Font::InitReaderFunc(nw4hbm::ut::FontEncoding) 	homebuttonLib.a ut_Font.o
-802fe8d8 00000084 802fe8d8 0 nw4hbm::ut::detail::LinkListImpl::~LinkListImpl(void) 	homebuttonLib.a ut_LinkList.o
-802fe95c 00000048 802fe95c 0 nw4hbm::ut::detail::LinkListImpl::Erase(nw4hbm::ut::detail::LinkListImpl::Iterator) 	homebuttonLib.a ut_LinkList.o
-802fe9a4 0000002c 802fe9a4 0 JGadget::TNodeLinkList::Insert(JGadget::TNodeLinkList::iterator, JGadget::TLinkListNode *) 	JGadget.a linklist.o
-802fe9d0 00000018 802fe9d0 0 MEMInitList 	mem.a mem_list.o
-802fe9e8 00000070 802fe9e8 0 MEMAppendListObject 	mem.a mem_list.o
-802fea58 0000006c 802fea58 0 nw4hbm::ut::List_Remove(nw4hbm::ut::List *, void *) 	homebuttonLib.a ut_list.o
-802feac4 00000020 802feac4 0 MEMGetNextListObject 	mem.a mem_list.o
-802feae4 0000004c 802feae4 0 nw4hbm::ut::List_GetNth(nw4hbm::ut::List const *, unsigned short) 	homebuttonLib.a ut_list.o
-802feb30 0000003c 802feb30 0 J3DModelLoader_v26::J3DModelLoader_v26(void) 	J3DGraphLoader.a J3DModelLoader.o
-802feb6c 00000058 802feb6c 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
-802febc4 00000144 802febc4 0 nw4hbm::ut::ResFont::SetResource(void *) 	homebuttonLib.a ut_ResFont.o
-802fed08 0000012c 802fed08 0 nw4hbm::ut::ResFont::Rebuild(nw4hbm::ut::BinaryFileHeader *) 	homebuttonLib.a ut_ResFont.o
-802fee34 00000044 802fee34 0 nw4hbm::ut::detail::ResFontBase::ResFontBase(void) 	homebuttonLib.a ut_ResFontBase.o
-802fee78 00000040 802fee78 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802feeb8 0000000c 802feeb8 0 FETweener::setDoneCallFunc(void (*)(void *), void *)
-802feec4 0000000c 802feec4 0 EmissionController::IsLingering( (void))
-802feed0 0000000c 802feed0 0 EmissionController::IsLingering( (void))
-802feedc 0000000c 802feedc 0 EmissionController::IsLingering( (void))
-802feee8 00000014 802feee8 0 nw4hbm::ut::detail::ResFontBase::GetDescent(void) const 	homebuttonLib.a ut_ResFontBase.o
-802feefc 00000014 802feefc 0 nw4hbm::ut::detail::ResFontBase::GetBaselinePos(void) const 	homebuttonLib.a ut_ResFontBase.o
-802fef10 00000010 802fef10 0 nw4hbm::ut::detail::ResFontBase::GetMaxCharWidth(void) const 	homebuttonLib.a ut_ResFontBase.o
-802fef20 00000010 802fef20 0 nw4hbm::ut::detail::ResFontBase::GetMaxCharWidth(void) const 	homebuttonLib.a ut_ResFontBase.o
-802fef30 00000010 802fef30 0 nw4hbm::ut::detail::ResFontBase::GetMaxCharWidth(void) const 	homebuttonLib.a ut_ResFontBase.o
-802fef40 00000008 802fef40 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-802fef48 00000010 802fef48 0 nw4hbm::ut::detail::ResFontBase::GetTextureFormat(void) const 	homebuttonLib.a ut_ResFontBase.o
-802fef58 00000010 802fef58 0 nw4hbm::ut::detail::ResFontBase::GetLineFeed(void) const 	homebuttonLib.a ut_ResFontBase.o
-802fef68 00000018 802fef68 0 nw4hbm::ut::detail::ResFontBase::GetDefaultCharWidths(void) const 	homebuttonLib.a ut_ResFontBase.o
-802fef80 00000020 802fef80 0 nw4hbm::ut::detail::ResFontBase::SetDefaultCharWidths(nw4hbm::ut::CharWidths const &) 	homebuttonLib.a ut_ResFontBase.o
-802fefa0 00000098 802fefa0 0 nw4hbm::ut::detail::ResFontBase::SetAlternateChar(unsigned short) 	homebuttonLib.a ut_ResFontBase.o
-802ff038 0000000c 802ff038 0 AnimatedModelExplodable::SetUnexplodedModelVisibility(bool)
-802ff044 0000004c 802ff044 0 nw4hbm::ut::detail::ResFontBase::GetCharWidth(unsigned short) const 	homebuttonLib.a ut_ResFontBase.o
-802ff090 000000ec 802ff090 0 nw4hbm::ut::detail::ResFontBase::GetCharWidths(unsigned short) const 	homebuttonLib.a ut_ResFontBase.o
-802ff17c 000000a4 802ff17c 0 nw4hbm::ut::detail::ResFontBase::GetGlyph(nw4hbm::ut::Glyph *, unsigned short) const 	homebuttonLib.a ut_ResFontBase.o
-802ff220 0000000c 802ff220 0 EmissionController::IsLingering( (void))
-802ff22c 00000060 802ff22c 0 nw4hbm::ut::detail::ResFontBase::FindGlyphIndex(nw4hbm::ut::FontCodeMap const *, unsigned short) const 	homebuttonLib.a ut_ResF
+802fe830 000000a8 802fe830 0 InitReaderFunc__Q36nw4hbm2ut4FontFQ36nw4hbm2ut12FontEncoding 	homebuttonLib.a ut_Font.o
+802fe8d8 00000084 802fe8d8 0 __dt__Q46nw4hbm2ut6detail12LinkListImplFv 	homebuttonLib.a ut_LinkList.o
+802fe95c 00000048 802fe95c 0 Erase__Q46nw4hbm2ut6detail12LinkListImplFQ56nw4hbm2ut6detail12LinkListImpl8Iterator 	homebuttonLib.a ut_LinkList.o
+802fe9a4 0000002c 802fe9a4 0 Insert__Q46nw4hbm2ut6detail12LinkListImplFQ56nw4hbm2ut6detail12LinkListImpl8IteratorPQ36nw4hbm2ut12LinkListNode 	homebuttonLib.a ut_LinkList.o
+802fe9d0 00000018 802fe9d0 0 List_Init__Q26nw4hbm2utFPQ36nw4hbm2ut4ListUs 	homebuttonLib.a ut_list.o
+802fe9e8 00000070 802fe9e8 0 List_Append__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv 	homebuttonLib.a ut_list.o
+802fea58 0000006c 802fea58 0 List_Remove__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv 	homebuttonLib.a ut_list.o
+802feac4 00000020 802feac4 0 List_GetNext__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListPCv 	homebuttonLib.a ut_list.o
+802feae4 0000004c 802feae4 0 List_GetNth__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListUs 	homebuttonLib.a ut_list.o
+802feb30 0000003c 802feb30 0 __ct__Q36nw4hbm2ut7ResFontFv 	homebuttonLib.a ut_ResFont.o
+802feb6c 00000058 802feb6c 0 __dt__Q36nw4hbm2ut7ResFontFv 	homebuttonLib.a ut_ResFont.o
+802febc4 00000144 802febc4 0 SetResource__Q36nw4hbm2ut7ResFontFPv 	homebuttonLib.a ut_ResFont.o
+802fed08 0000012c 802fed08 0 Rebuild__Q36nw4hbm2ut7ResFontFPQ36nw4hbm2ut16BinaryFileHeader 	homebuttonLib.a ut_ResFont.o
+802fee34 00000044 802fee34 0 __ct__Q46nw4hbm2ut6detail11ResFontBaseFv 	homebuttonLib.a ut_ResFontBase.o
+802fee78 00000040 802fee78 0 __dt__Q46nw4hbm2ut6detail11ResFontBaseFv 	homebuttonLib.a ut_ResFontBase.o
+802feeb8 0000000c 802feeb8 0 SetResourceBuffer__Q46nw4hbm2ut6detail11ResFontBaseFPvPQ36nw4hbm2ut15FontInformation 	homebuttonLib.a ut_ResFontBase.o
+802feec4 0000000c 802feec4 0 GetWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802feed0 0000000c 802feed0 0 GetHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802feedc 0000000c 802feedc 0 GetAscent__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802feee8 00000014 802feee8 0 GetDescent__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802feefc 00000014 802feefc 0 GetBaselinePos__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802fef10 00000010 802fef10 0 GetCellHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802fef20 00000010 802fef20 0 GetCellWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802fef30 00000010 802fef30 0 GetMaxCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802fef40 00000008 802fef40 0 GetType__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802fef48 00000010 802fef48 0 GetTextureFormat__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802fef58 00000010 802fef58 0 GetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802fef68 00000018 802fef68 0 GetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802fef80 00000020 802fef80 0 SetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseFRCQ36nw4hbm2ut10CharWidths 	homebuttonLib.a ut_ResFontBase.o
+802fefa0 00000098 802fefa0 0 SetAlternateChar__Q46nw4hbm2ut6detail11ResFontBaseFUs 	homebuttonLib.a ut_ResFontBase.o
+802ff038 0000000c 802ff038 0 SetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseFi 	homebuttonLib.a ut_ResFontBase.o
+802ff044 0000004c 802ff044 0 GetCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFUs 	homebuttonLib.a ut_ResFontBase.o
+802ff090 000000ec 802ff090 0 GetCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFUs 	homebuttonLib.a ut_ResFontBase.o
+802ff17c 000000a4 802ff17c 0 GetGlyph__Q46nw4hbm2ut6detail11ResFontBaseCFPQ36nw4hbm2ut5GlyphUs 	homebuttonLib.a ut_ResFontBase.o
+802ff220 0000000c 802ff220 0 GetEncoding__Q46nw4hbm2ut6detail11ResFontBaseCFv 	homebuttonLib.a ut_ResFontBase.o
+802ff22c 00000060 802ff22c 0 FindGlyphIndex__Q46nw4hbm2ut6detail11ResFontBaseCFPCQ36nw4hbm2ut11FontCodeMapUs 	homebuttonLib.a ut_ResFontBase.o
 802ff28c 00000068 802ff28c 0 zz_802ff28c_
 802ff2f4 0000000c 802ff2f4 0 zz_802ff2f4_
 802ff300 00000104 802ff300 0 nw4hbm::ut::detail::ResFontBase::GetGlyphFromIndex(nw4hbm::ut::Glyph *, unsigned short) const 	homebuttonLib.a ut_ResFontBase.o
@@ -10286,18 +10286,18 @@
 80304e74 00000008 80304e74 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
 80304e7c 00000054 80304e7c 0 zz_80304e7c_
 80304e84 0000004c 80304e84 0 IPCInit 	ipc.a ipcMain.o
-80304ed0 00000048 80304ed0 0 zz_80304ed0_
+80304ed0 00000048 80304ed0 0 IPCReInit 	ipc.a ipcMain.o
 80304f18 00000010 80304f18 0 IPCReadReg 	ipc.a ipcMain.o
 80304f28 00000010 80304f28 0 IPCWriteReg 	ipc.a ipcMain.o
-80304f38 00000008 80304f38 0 IPCGetBufferLo 	ipc.a ipcMain.o
+80304f38 00000008 80304f38 0 IPCGetBufferHi 	ipc.a ipcMain.o
 80304f40 00000008 80304f40 0 IPCGetBufferLo 	ipc.a ipcMain.o
 80304f48 00000008 80304f48 0 IPCSetBufferLo 	ipc.a ipcMain.o
 80304f50 0000002c 80304f50 0 strnlen 	ipc.a ipcclt.o
 80304f7c 00000258 80304f7c 0 IpcReplyHandler 	ipc.a ipcclt.o
-803051d4 000001ac 803051d4 0 zz_803051d4_
+803051d4 000001ac 803051d4 0 IPCInterruptHandler 	ipc.a ipcclt.o
 80305380 000000b4 80305380 0 IPCCltInit 	ipc.a ipcclt.o
-80305434 00000074 80305434 0 zz_80305434_
-803054a8 00000240 803054a8 0 zz_803054a8_
+80305434 00000074 80305434 0 IPCCltReInit 	ipc.a ipcclt.o
+803054a8 00000240 803054a8 0 __ios_Ipc2 	ipc.a ipcclt.o
 803056e8 00000118 803056e8 0 IOS_OpenAsync 	ipc.a ipcclt.o
 80305800 00000120 80305800 0 IOS_Open 	ipc.a ipcclt.o
 80305920 000000c0 80305920 0 IOS_CloseAsync 	ipc.a ipcclt.o
@@ -10313,10 +10313,10 @@
 803062c8 0000013c 803062c8 0 __ios_Ioctlv 	ipc.a ipcclt.o
 80306404 000000e4 80306404 0 IOS_IoctlvAsync 	ipc.a ipcclt.o
 803064e8 000000dc 803064e8 0 IOS_Ioctlv 	ipc.a ipcclt.o
-803065c4 000002fc 803065c4 0 zz_803065c4_
+803065c4 000002fc 803065c4 0 IOS_IoctlvReboot 	ipc.a ipcclt.o
 803068c0 00000130 803068c0 0 iosCreateHeap 	ipc.a memory.o
 803069f0 00000204 803069f0 0 __iosAlloc 	ipc.a memory.o
-80306bf4 000001f0 80306bf4 0 zz_80306bf4_
+80306bf4 00000004 80306bf4 0 iosAllocAligned 	ipc.a memory.o
 80306bf8 000001ec 80306bf8 0 iosFree 	ipc.a memory.o
 80306de4 000000b8 80306de4 0 IPCiProfInit 	ipc.a ipcProfile.o
 80306e9c 00000080 80306e9c 0 IPCiProfQueueReq 	ipc.a ipcProfile.o
