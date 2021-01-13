@@ -9532,34 +9532,34 @@
 802d7450 00000194 802d7450 0 DVDLowAudioBufferConfig 	dvd.a dvd_broadway.o
 802d75e4 00000168 802d75e4 0 DVDLowInquiry 	dvd.a dvd_broadway.o
 802d774c 00000168 802d774c 0 DVDLowRequestError 	dvd.a dvd_broadway.o
-802d78b4 0000000c 802d78b4 0 hioEnumCallback(long)
+802d78b4 0000000c 802d78b4 0 DVDLowSetSpinupFlag 	dvd.a dvd_broadway.o
 802d78c0 0000017c 802d78c0 0 DVDLowReset 	dvd.a dvd_broadway.o
 802d7a3c 00000194 802d7a3c 0 DVDLowAudioBufferConfig 	dvd.a dvd_broadway.o
-802d7bd0 00000194 802d7bd0 0 zz_802d7bd0_
+802d7bd0 00000194 802d7bd0 0 DVDLowReportKey 	dvd.a dvd_broadway.o
 802d7d64 00000180 802d7d64 0 DVDLowSetMaximumRotation 	dvd.a dvd_broadway.o
 802d7ee4 000001b0 802d7ee4 0 DVDLowRead 	dvd.a dvd_broadway.o
 802d8094 0000017c 802d8094 0 DVDLowSeek 	dvd.a dvd_broadway.o
-802d8210 00000010 802d8210 0 THPSimpleGetCurrentFrame
-802d8220 0000000c 802d8220 0 OSGetCurrentContext
-802d822c 0000000c 802d822c 0 OSGetCurrentContext
+802d8210 00000010 802d8210 0 DVDLowGetCoverRegister 	dvd.a dvd_broadway.o
+802d8220 0000000c 802d8220 0 DVDLowGetStatusRegister 	dvd.a dvd_broadway.o
+802d822c 0000000c 802d822c 0 DVDLowGetControlRegister 	dvd.a dvd_broadway.o
 802d8238 00000168 802d8238 0 DVDLowPrepareCoverRegister 	dvd.a dvd_broadway.o
-802d83a0 00000168 802d83a0 0 DVDLowPrepareCoverRegister 	dvd.a dvd_broadway.o
-802d8508 00000168 802d8508 0 DVDLowPrepareCoverRegister 	dvd.a dvd_broadway.o
-802d8670 0000000c 802d8670 0 OSGetCurrentContext
-802d867c 00000008 802d867c 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-802d8684 00000008 802d8684 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
+802d83a0 00000168 802d83a0 0 DVDLowPrepareStatusRegister 	dvd.a dvd_broadway.o
+802d8508 00000168 802d8508 0 DVDLowPrepareControlRegister 	dvd.a dvd_broadway.o
+802d8670 0000000c 802d8670 0 DVDLowGetImmBufferReg 	dvd.a dvd_broadway.o
+802d867c 00000008 802d867c 0 DVDLowUnmaskStatusInterrupts 	dvd.a dvd_broadway.o
+802d8684 00000008 802d8684 0 DVDLowMaskCoverInterrupt 	dvd.a dvd_broadway.o
 802d868c 00000164 802d868c 0 DVDLowClearCoverInterrupt 	dvd.a dvd_broadway.o
-802d87f0 00000008 802d87f0 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-802d87f8 00000054 802d87f8 0 zz_802d87f8_
-802d884c 00000048 802d884c 0 zz_802d884c_
-802d8894 00000094 802d8894 0 zz_802d8894_
-802d8928 00000118 802d8928 0 zz_802d8928_
-802d8a40 000000a4 802d8a40 0 zz_802d8a40_
-802d8ae4 000000f0 802d8ae4 0 zz_802d8ae4_
-802d8bd4 00000114 802d8bd4 0 zz_802d8bd4_
-802d8ce8 00000098 802d8ce8 0 zz_802d8ce8_
-802d8d80 00000098 802d8d80 0 zz_802d8d80_
-802d8e18 000000d4 802d8e18 0 zz_802d8e18_
+802d87f0 00000008 802d87f0 0 __DVDLowTestAlarm 	dvd.a dvd_broadway.o
+802d87f8 00000054 802d87f8 0 ESP_InitLib 	esp.a esp.o
+802d884c 00000048 802d884c 0 ESP_CloseLib 	esp.a esp.o
+802d8894 00000094 802d8894 0 ESP_LaunchTitle 	esp.a esp.o
+802d8928 00000118 802d8928 0 ESP_GetTicketViews 	esp.a esp.o
+802d8a40 000000a4 802d8a40 0 ESP_DiGetTicketView 	esp.a esp.o
+802d8ae4 000000f0 802d8ae4 0 ESP_DiGetTmd 	esp.a esp.o
+802d8bd4 00000114 802d8bd4 0 ESP_GetTmd 	esp.a esp.o
+802d8ce8 00000098 802d8ce8 0 ESP_GetDataDir 	esp.a esp.o
+802d8d80 00000098 802d8d80 0 ESP_GetTitleId 	esp.a esp.o
+802d8e18 000000d4 802d8e18 0 ESP_GetConsumption 	esp.a esp.o
 802d8eec 000000fc 802d8eec 0 EUARTInit 	euart.a euart.o
 802d8fe8 00000048 802d8fe8 0 InitializeUART 	euart.a euart.o
 802d9030 0000022c 802d9030 0 WriteUARTN 	euart.a euart.o
@@ -9585,12 +9585,12 @@
 802daaf0 00000178 802daaf0 0 ProbeBarnacle 	exi.a EXIUart.o
 802dac68 000001bc 802dac68 0 __OSEnableBarnacle 	exi.a EXIUart.o
 802dae24 0000018c 802dae24 0 EXIWriteReg 	exi.a EXICommon.o
-802dafb0 00000128 802dafb0 0 zz_802dafb0_
-802db0d8 00000180 802db0d8 0 zz_802db0d8_
-802db258 000000d4 802db258 0 zz_802db258_
-802db32c 000000ac 802db32c 0 zz_802db32c_
-802db3d8 000000f4 802db3d8 0 ISFS_CreateFile 	fs.a fs.o
-802db4cc 000000f4 802db4cc 0 ISFS_CreateFileAsync 	fs.a fs.o
+802dafb0 00000128 802dafb0 0 ISFS_OpenLib 	fs.a fs.o
+802db0d8 00000180 802db0d8 0 _isfsFuncCb 	fs.a fs.o
+802db258 000000d4 802db258 0 ISFS_GetStats 	fs.a fs.o
+802db32c 000000ac 802db32c 0 ISFS_GetStatsAsync fs.a fs.o
+802db3d8 000000f4 802db3d8 0 ISFS_CreateDir 	fs.a fs.o
+802db4cc 000000f4 802db4cc 0 ISFS_CreateDirAsync 	fs.a fs.o
 802db5c0 00000154 802db5c0 0 ISFS_ReadDir 	fs.a fs.o
 802db714 00000148 802db714 0 ISFS_ReadDirAsync 	fs.a fs.o
 802db85c 00000158 802db85c 0 ISFS_GetAttr 	fs.a fs.o
@@ -9598,73 +9598,73 @@
 802dbae8 000000d8 802dbae8 0 ISFS_Delete 	fs.a fs.o
 802dbbc0 000000d0 802dbbc0 0 ISFS_DeleteAsync 	fs.a fs.o
 802dbc90 00000104 802dbc90 0 ISFS_Rename 	fs.a fs.o
-802dbd94 00000104 802dbd94 0 zz_802dbd94_
+802dbd94 00000104 802dbd94 0 ISFS_RenameAsync 	fs.a fs.o
 802dbe98 00000138 802dbe98 0 ISFS_GetUsage 	fs.a fs.o
-802dbfd0 00000124 802dbfd0 0 zz_802dbfd0_
+802dbfd0 00000124 802dbfd0 0 ISFS_GetUsageAsync fs.a fs.o
 802dc0f4 000000f4 802dc0f4 0 ISFS_CreateFile 	fs.a fs.o
 802dc1e8 000000f4 802dc1e8 0 ISFS_CreateFileAsync 	fs.a fs.o
 802dc2dc 000000c8 802dc2dc 0 ISFS_Open 	fs.a fs.o
 802dc3a4 000000b8 802dc3a4 0 ISFS_OpenAsync 	fs.a fs.o
-802dc45c 00000090 802dc45c 0 zz_802dc45c_
+802dc45c 00000004 802dc45c 0 ISFS_Seek 	fs.a fs.o
 802dc460 0000008c 802dc460 0 ISFS_SeekAsync 	fs.a fs.o
-802dc4ec 00000020 802dc4ec 0 ISFS_Write 	fs.a fs.o
-802dc50c 000000a4 802dc50c 0 ISFS_WriteAsync 	fs.a fs.o
+802dc4ec 00000020 802dc4ec 0 ISFS_Read 	fs.a fs.o
+802dc50c 000000a4 802dc50c 0 ISFS_ReadAsync 	fs.a fs.o
 802dc5b0 00000020 802dc5b0 0 ISFS_Write 	fs.a fs.o
 802dc5d0 000000a4 802dc5d0 0 ISFS_WriteAsync 	fs.a fs.o
-802dc674 00000088 802dc674 0 zz_802dc674_
+802dc674 00000004 802dc674 0 ISFS_Close 	fs.a fs.o
 802dc678 00000084 802dc678 0 ISFS_CloseAsync 	fs.a fs.o
-802dc6fc 00000090 802dc6fc 0 zz_802dc6fc_
+802dc6fc 00000090 802dc6fc 0 ISFS_ShutdownAsync 	fs.a fs.o
 802dc78c 00000018 802dc78c 0 GDInitGDLObj 	gd.a GDBase.o
-802dc7a4 00000128 802dc7a4 0 zz_802dc7a4_
+802dc7a4 00000010 802dc7a4 0 GDFlushCurrToMem 	gd.a GDBase.o
 802dc7b4 00000118 802dc7b4 0 GDPadCurr32 	gd.a GDBase.o
 802dc8cc 00000018 802dc8cc 0 GDOverflowed 	gd.a GDBase.o
 802dc8e4 000005dc 802dc8e4 0 GDSetVtxDescv 	gd.a GDGeometry.o
-802dcec0 00000624 802dcec0 0 zz_802dcec0_
+802dcec0 00000624 802dcec0 0 GDSetVtxAttrFmtv 	gd.a GDGeometry.o
 802dd4e4 00000204 802dd4e4 0 GDSetArrayRaw 	gd.a GDGeometry.o
-802dd6e8 000000a4 802dd6e8 0 zz_802dd6e8_
+802dd6e8 000000a4 802dd6e8 0 GDPatchArrayPtr 	gd.a GDGeometry.o
 802dd78c 000000f4 802dd78c 0 __GXDefaultTexRegionCallback 	gx.a GXInit.o
 802dd880 00000024 802dd880 0 __GXDefaultTlutRegionCallback 	gx.a GXInit.o
 802dd8a4 0000016c 802dd8a4 0 __GXShutdown 	gx.a GXInit.o
 802dda10 00000130 802dda10 0 __GXInitRevisionBits 	gx.a GXInit.o
 802ddb40 00000504 802ddb40 0 GXInit 	gx.a GXInit.o
-802de044 00000914 802de044 0 zz_802de044_
+802de044 00000914 802de044 0 __GXInitGX 	gx.a GXInit.o
 802de958 00000160 802de958 0 GXCPInterruptHandler 	gx.a GXFifo.o
 802deab8 0000008c 802deab8 0 GXInitFifoBase 	gx.a GXFifo.o
 802deb44 000000f8 802deb44 0 CPGPLinkCheck 	gx.a GXFifo.o
 802dec3c 000001e0 802dec3c 0 GXSetCPUFifo 	gx.a GXFifo.o
 802dee1c 00000290 802dee1c 0 GXSetGPFifo 	gx.a GXFifo.o
 802df0ac 00000100 802df0ac 0 __GXSaveFifo 	gx.a GXFifo.o
-802df1ac 00000008 802df1ac 0 WPADGetDpdSensitivity 	wpad.a WPAD.o
-802df1b4 00000090 802df1b4 0 zz_802df1b4_
-802df244 00000008 802df244 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-802df24c 00000008 802df24c 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
-802df254 00000044 802df254 0 AIRegisterDMACallback 	ai.a ai.o
+802df1ac 00000008 802df1ac 0 __GXIsGPFifoReady 	gx.a GXFifo.o
+802df1b4 00000090 802df1b4 0 GXGetCPUFifo 	gx.a GXFifo.o
+802df244 00000008 802df244 0 GXGetFifoCount 	gx.a GXFifo.oe
+802df24c 00000008 802df24c 0 GXGetFifoWrap 	gx.a GXFifo.o
+802df254 00000044 802df254 0 GXSetBreakPtCallback 	gx.a GXFifo.o
 802df298 0000007c 802df298 0 __GXFifoInit 	gx.a GXFifo.o
 802df314 000001a0 802df314 0 __GXCleanGPFifo 	gx.a GXFifo.o
 802df4b4 00000264 802df4b4 0 GXSetVtxDesc 	gx.a GXAttr.o
 802df718 0000020c 802df718 0 GXSetVtxDescv 	gx.a GXAttr.o
 802df924 000000b0 802df924 0 __GXSetVCD 	gx.a GXAttr.o
 802df9d4 0000012c 802df9d4 0 __GXCalculateVLim 	gx.a GXAttr.o
-802dfb00 000001b4 802dfb00 0 zz_802dfb00_
-802dfcb4 00000090 802dfcb4 0 zz_802dfcb4_
+802dfb00 000001b4 802dfb00 0 GXGetVtxDesc 	gx.a GXAttr.o
+802dfcb4 00000090 802dfcb4 0 GXGetVtxDescv 	gx.a GXAttr.o
 802dfd44 00000034 802dfd44 0 GXClearVtxDesc 	gx.a GXAttr.o
 802dfd78 000001a0 802dfd78 0 GXSetVtxAttrFmt 	gx.a GXAttr.o
 802dff18 000001c4 802dff18 0 GXSetVtxAttrFmtv 	gx.a GXAttr.o
 802e00dc 00000080 802e00dc 0 __GXSetVAT 	gx.a GXAttr.o
-802e015c 0000026c 802e015c 0 zz_802e015c_
-802e03c8 00000074 802e03c8 0 zz_802e03c8_
+802e015c 0000026c 802e015c 0 GXGetVtxAttrFmt gx.a GXAttr.o
+802e03c8 00000074 802e03c8 0 GXGetVtxAttrFmtv gx.a GXAttr.o
 802e043c 00000040 802e043c 0 GXSetArray 	gx.a GXAttr.o
 802e047c 00000010 802e047c 0 GXInvalidateVtxCache
 802e048c 00000228 802e048c 0 GXSetTexCoordGen2 	gx.a GXAttr.o
-802e06b4 00000024 802e06b4 0 GXSetNumChans 	gx.a GXLight.o
+802e06b4 00000024 802e06b4 0 GXSetNumTexGens 	gx.a GXAttr.o
 802e06d8 00000074 802e06d8 0 GXSetMisc 	gx.a GXMisc.o
-802e074c 00000018 802e074c 0 zz_802e074c_
+802e074c 00000018 802e074c 0 _GXSetMisc 	gx.a GXMisc.o
 802e0764 0000005c 802e0764 0 GXFlush 	gx.a GXMisc.o
-802e07c0 00000034 802e07c0 0 zz_802e07c0_
+802e07c0 00000034 802e07c0 0 GXResetWriteGatherPipe 	gx.a GXMisc.o
 802e07f4 00000164 802e07f4 0 __GXAbort 	gx.a GXMisc.o
 802e0958 000001b4 802e0958 0 GXAbortFrame 	gx.a GXMisc.o
-802e0b0c 000000cc 802e0b0c 0 zz_802e0b0c_
-802e0bd8 00000024 802e0bd8 0 __GXFlushTextureState 	gx.a GXBump.o
+802e0b0c 000000cc 802e0b0c 0 GXDrawDone 	gx.a GXMisc.o
+802e0bd8 00000024 802e0bd8 0 GXPixModeSync 	gx.a GXMisc.o
 802e0bfc 00000010 802e0bfc 0 GXPokeAlphaMode 	gx.a GXMisc.o
 802e0c0c 00000018 802e0c0c 0 GXPokeAlphaRead 	gx.a GXMisc.o
 802e0c24 00000014 802e0c24 0 GXPokeDither 	gx.a GXMisc.o
@@ -9674,22 +9674,22 @@
 802e0cc0 00000014 802e0cc0 0 GXPokeDither 	gx.a GXMisc.o
 802e0cd4 0000001c 802e0cd4 0 GXPokeZMode 	gx.a GXMisc.o
 802e0cf0 00000020 802e0cf0 0 GXPeekZ 	gx.a GXMisc.o
-802e0d10 00000044 802e0d10 0 AIRegisterDMACallback 	ai.a ai.o
+802e0d10 00000044 802e0d10 0 GXSetDrawSyncCallback 	gx.a GXMisc.o
 802e0d54 00000084 802e0d54 0 GXTokenInterruptHandler 	gx.a GXMisc.o
-802e0dd8 00000044 802e0dd8 0 AIRegisterDMACallback 	ai.a ai.o
+802e0dd8 00000044 802e0dd8 0 GXSetDrawDoneCallback 	gx.a GXMisc.o
 802e0e1c 00000080 802e0e1c 0 GXFinishInterruptHandler 	gx.a GXMisc.o
 802e0e9c 00000064 802e0e9c 0 __GXPEInit 	gx.a GXMisc.o
 802e0f00 00000278 802e0f00 0 __GXSetDirtyState 	gx.a GXGeometry.o
 802e1178 0000014c 802e1178 0 GXBegin 	gx.a GXGeometry.o
 802e12c4 000000d8 802e12c4 0 __GXSendFlushPrim 	gx.a GXGeometry.o
-802e139c 00000034 802e139c 0 GXSetPointSize 	gx.a GXGeometry.o
-802e13d0 0000001c 802e13d0 0 zz_802e13d0_
+802e139c 00000034 802e139c 0 GXSetLineWidth 	gx.a GXGeometry.o
+802e13d0 0000001c 802e13d0 0 GXGetLineWidth gx.a GXGeometry.o
 802e13ec 00000034 802e13ec 0 GXSetPointSize 	gx.a GXGeometry.o
-802e1420 0000003c 802e1420 0 GXSetTevSwapMode 	gx.a GXTev.o
+802e1420 0000003c 802e1420 0 GXEnableTexOffsets 	gx.a GXGeometry.o
 802e145c 00000028 802e145c 0 GXSetCullMode 	gx.a GXGeometry.o
-802e1484 0000001c 802e1484 0 zz_802e1484_
-802e14a0 0000003c 802e14a0 0 zz_802e14a0_
-802e14dc 00000024 802e14dc 0 __GXFlushTextureState 	gx.a GXBump.o
+802e1484 0000001c 802e1484 0 GXGetCullMode 	gx.a GXGeometry.o
+802e14a0 0000003c 802e14a0 0 GXSetCoPlanar 	gx.a GXGeometry.o
+802e14dc 00000024 802e14dc 0 __GXSetGenMode 	gx.a GXGeometry.o
 802e1500 00000040 802e1500 0 GXSetTexCopySrc 	gx.a GXFrameBuf.o
 802e1540 00000040 802e1540 0 GXSetTexCopySrc 	gx.a GXFrameBuf.o
 802e1580 00000024 802e1580 0 GXSetDispCopyDst 	gx.a GXFrameBuf.o
@@ -9700,27 +9700,27 @@
 802e1938 000000cc 802e1938 0 GXSetDispCopyYScale 	gx.a GXFrameBuf.o
 802e1a04 00000078 802e1a04 0 GXSetCopyClear 	gx.a GXFrameBuf.o
 802e1a7c 000001e4 802e1a7c 0 GXSetCopyFilter 	gx.a GXFrameBuf.o
-802e1c60 00000014 802e1c60 0 GXSetDispCopyGamma
+802e1c60 00000014 802e1c60 0 GXSetDispCopyGamma 	gx.a GXFrameBuf.o
 802e1c74 0000013c 802e1c74 0 GXCopyDisp 	gx.a GXFrameBuf.o
 802e1db0 00000158 802e1db0 0 GXCopyTex 	gx.a GXFrameBuf.o
 802e1f08 00000038 802e1f08 0 GXClearBoundingBox 	gx.a GXFrameBuf.o
-802e1f40 0000001c 802e1f40 0 GXInitLightAttn
-802e1f5c 00000010 802e1f5c 0 nlVector3::Set(float, float, float)
-802e1f6c 00000010 802e1f6c 0 nlVector3::Set(float, float, float)
+802e1f40 0000001c 802e1f40 0 GXInitLightAttn 	gx.a GXLight.o
+802e1f5c 00000010 802e1f5c 0 GXInitLightAttnA 	gx.a GXLight.o
+802e1f6c 00000010 802e1f6c 0 GXInitLightAttnK 	gx.a GXLight.o
 802e1f7c 00000188 802e1f7c 0 GXInitLightSpot 	gx.a GXLight.o
 802e2104 000000d0 802e2104 0 GXInitLightDistAttn 	gx.a GXLight.o
-802e21d4 00000010 802e21d4 0 nlVector3::Set(float, float, float)
-802e21e4 0000001c 802e21e4 0 zz_802e21e4_
+802e21d4 00000010 802e21d4 0 GXInitLightPos 	gx.a GXLight.o
+802e21e4 0000001c 802e21e4 0 GXGetLightPos gx.a GXLight.o
 802e2200 0000001c 802e2200 0 GXInitLightDir 	gx.a GXLight.o
-802e221c 00000028 802e221c 0 zz_802e221c_
-802e2244 0000010c 802e2244 0 zz_802e2244_
-802e2350 0000000c 802e2350 0 GXInitLightColor
-802e235c 0000000c 802e235c 0 JStudio_JStage::TAdaptor_light::TVVOutput_direction_::operator()(float, JStudio::TAdaptor *) const 	JStudio_JStage.a object-lig
+802e221c 00000028 802e221c 0 GXGetLightDir gx.a GXLight.o
+802e2244 0000010c 802e2244 0 GXInitSpecularDir gx.a GXLight.o
+802e2350 0000000c 802e2350 0 GXInitLightColor 	gx.a GXLight.o
+802e235c 0000000c 802e235c 0 GXGetLightColor 	gx.a GXLight.o
 802e2368 0000007c 802e2368 0 GXLoadLightObjImm 	gx.a GXLight.o
-802e23e4 000000b0 802e23e4 0 GXSetChanMatColor 	gx.a GXLight.o
-802e2494 00000028 802e2494 0 zz_802e2494_
+802e23e4 000000b0 802e23e4 0 GXSetChanAmbColor 	gx.a GXLight.o
+802e2494 00000028 802e2494 0 _GXSetChanAmbColor 	gx.a GXLight.o
 802e24bc 000000b0 802e24bc 0 GXSetChanMatColor 	gx.a GXLight.o
-802e256c 00000028 802e256c 0 zz_802e256c_
+802e256c 00000028 802e256c 0 _GXSetChanMatColor 	gx.a GXLight.o
 802e2594 00000024 802e2594 0 GXSetNumChans 	gx.a GXLight.o
 802e25b8 000000a4 802e25b8 0 GXSetChanCtrl 	gx.a GXLight.o
 802e265c 00000124 802e265c 0 GXGetTexBufferSize 	gx.a GXTexture.o
