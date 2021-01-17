@@ -39,8 +39,8 @@
 80016c58 00000094 80016c58 0 zz_80016c58_
 80016c6c 00000080 80016c6c 0 zz_80016c6c_
 80016c78 00000074 80016c78 0 zz_80016c78_
-80016cec 00000004 80016cec 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-80016cf0 00000004 80016cf0 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+80016cec 00000004 80016cec 0 zz_80016cec_
+80016cf0 00000004 80016cf0 0 zz_80016cf0_
 80016cf4 00000010 80016cf4 0 zz_80016cf4_
 80016d04 00000030 80016d04 0 JSUList<Q212JUTException12JUTExMapFile>::JSUList<Q212JUTException12JUTExMapFile>(bool) 	JUtility.a JUTException.o
 80016d34 0000000c 80016d34 0 GXInitLightColor
@@ -239,18 +239,18 @@
 800273b0 000001c8 800273b0 0 zz_800273b0_
 80027578 000001c0 80027578 0 zz_80027578_
 80027738 0000003c 80027738 0 zz_80027738_
-80027774 00000004 80027774 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+80027774 00000004 80027774 0 zz_80027774_
 80027778 00000008 80027778 0 OSGetStackPointer 	os.a OSContext.o
 80027780 00000070 80027780 0 zz_80027780_
 80027784 0000006c 80027784 0 zz_80027784_
-800277f0 00000004 800277f0 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+800277f0 00000004 800277f0 0 zz_800277f0_
 800277f4 0000000c 800277f4 0 zz_800277f4_
-800277f8 00000008 800277f8 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+800277f8 00000008 800277f8 0 zz_800277f8_
 80027800 00000128 80027800 0 zz_80027800_
 80027928 00000020 80027928 0 zz_80027928_
 80027948 0000000c 80027948 0 zz_80027948_
 80027954 00000010 80027954 0 zz_80027954_
-8002795c 00000008 8002795c 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+8002795c 00000008 8002795c 0 zz_8002795c_
 80027964 00000030 80027964 0 zz_80027964_
 80027994 00000124 80027994 0 zz_80027994_
 80027ab8 00000010 80027ab8 0 zz_80027ab8_
@@ -583,7 +583,7 @@
 80031130 0000000c 80031130 0 zz_80031130_
 8003113c 00000028 8003113c 0 zz_8003113c_
 80031164 00000024 80031164 0 zz_80031164_
-80031188 00000008 80031188 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
+80031188 00000008 80031188 0 zz_80031188_
 80031190 00000014 80031190 0 zz_80031190_
 800311a4 0000006c 800311a4 0 zz_800311a4_
 80031210 00000020 80031210 0 zz_80031210_
@@ -592,12 +592,12 @@
 80031270 00000020 80031270 0 zz_80031270_
 80031290 00000020 80031290 0 zz_80031290_
 800312b0 0000005c 800312b0 0 zz_800312b0_
-8003130c 00000004 8003130c 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+8003130c 00000004 8003130c 0 zz_8003130c_
 80031310 000000dc 80031310 0 zz_80031310_
 800313ec 000000dc 800313ec 0 zz_800313ec_
 800314c8 00000054 800314c8 0 zz_800314c8_
 8003151c 0000005c 8003151c 0 zz_8003151c_
-80031578 00000004 80031578 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+80031578 00000004 80031578 0 zz_80031578_
 8003157c 00000060 8003157c 0 zz_8003157c_
 800315dc 00000030 800315dc 0 JSUList<Q212JUTException12JUTExMapFile>::JSUList<Q212JUTException12JUTExMapFile>(bool) 	JUtility.a JUTException.o
 8003160c 0000000c 8003160c 0 GXInitLightColor
@@ -8583,49 +8583,50 @@
 8029ca74 00000008 8029ca74 0 __CARDGetFontEncode 	card.a CARDBios.o
 8029ca7c 00000008 8029ca7c 0 __CARDGetFontEncode 	card.a CARDBios.o
 8029ca84 00000018 8029ca84 0 zz_8029ca84_
-8029ca9c 00000008 8029ca9c 0 AXSetAuxCReturnVolume 	ax.a AXCL.o
-8029caa4 00000008 8029caa4 0 AXSetAuxCReturnVolume 	ax.a AXCL.o
+8029ca9c 00000008 8029ca9c 0 AXSetAuxAReturnVolume 	ax.a AXCL.o
+8029caa4 00000008 8029caa4 0 AXSetAuxBReturnVolume 	ax.a AXCL.o
 8029caac 00000008 8029caac 0 AXSetAuxCReturnVolume 	ax.a AXCL.o
-8029cab4 00000260 8029cab4 0 zz_8029cab4_
-8029cd14 000000b0 8029cd14 0 zz_8029cd14_
-8029cdc4 0000000c 8029cdc4 0 FEAudio::ResetRandomVoiceToggleSFX(void)
-8029cdd0 00000054 8029cdd0 0 zz_8029cdd0_
-8029ce24 00000014 8029ce24 0 zz_8029ce24_
-8029ce38 000000f0 8029ce38 0 zz_8029ce38_
-8029cf28 000001f8 8029cf28 0 zz_8029cf28_
-8029d120 00000068 8029d120 0 zz_8029d120_
-8029d188 00000044 8029d188 0 AIRegisterDMACallback 	ai.a ai.o
-8029d1cc 0000002c 8029d1cc 0 zz_8029d1cc_
-8029d1f8 000000c4 8029d1f8 0 zz_8029d1f8_
-8029d2bc 00000058 8029d2bc 0 zz_8029d2bc_
-8029d314 0000000c 8029d314 0 GetOneTimerLeadGroundContactAnims(void)
-8029d320 0000006c 8029d320 0 zz_8029d320_
-8029d38c 0000006c 8029d38c 0 zz_8029d38c_
-8029d3f8 00000178 8029d3f8 0 zz_8029d3f8_
-8029d570 00000058 8029d570 0 zz_8029d570_
-8029d5c8 00000004 8029d5c8 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-8029d5cc 0000016c 8029d5cc 0 zz_8029d5cc_
-8029d738 00000008 8029d738 0 IPCGetBufferLo 	ipc.a ipcMain.o
-8029d740 00000550 8029d740 0 zz_8029d740_
-8029dc90 00000310 8029dc90 0 zz_8029dc90_
-8029dfa0 00000008 8029dfa0 0 IPCGetBufferLo 	ipc.a ipcMain.o
-8029dfa8 00000040 8029dfa8 0 zz_8029dfa8_
-8029dfe8 000002b8 8029dfe8 0 zz_8029dfe8_
-8029e2a0 00000018 8029e2a0 0 zz_8029e2a0_
-8029e2b8 00000070 8029e2b8 0 zz_8029e2b8_
-8029e328 000000f8 8029e328 0 zz_8029e328_
-8029e420 000000bc 8029e420 0 zz_8029e420_
-8029e4dc 00000008 8029e4dc 0 IPCGetBufferLo 	ipc.a ipcMain.o
-8029e4e4 00000040 8029e4e4 0 zz_8029e4e4_
-8029e524 00000088 8029e524 0 zz_8029e524_
-8029e588 00000024 8029e588 0 LexicalCast<PCc,f>(float &)
-8029e5ac 0000008c 8029e5ac 0 zz_8029e5ac_
-8029e5b0 00000088 8029e5b0 0 zz_8029e5b0_
+8029cab4 00000260 8029cab4 0 __AXOutNewFrame 	ax.a AXOut.o
+8029cd14 000000b0 8029cd14 0 __AXOutAiCallback 	ax.a AXOut.o
+8029cdc4 0000000c 8029cdc4 0 __AXDSPInitCallback 	ax.a AXOut.o
+8029cdd0 00000054 8029cdd0 0 __AXDSPResumeCallback 	ax.a AXOut.o
+8029ce24 00000010 8029ce24 0 __AXDSPDoneCallback 	ax.a AXOut.o
+8029ce34 00000004 8029ce34 0 __AXDSPRequestCallback 	ax.a AXOut.o
+8029ce38 000000f0 8029ce38 0 __AXOutInitDSP 	ax.a AXOut.o
+8029cf28 000001f8 8029cf28 0 __AXOutInit 	ax.a AXOut.o
+8029d120 00000068 8029d120 0 __AXOutQuit 	ax.a AXOut.o
+8029d188 00000044 8029d188 0 AXRegisterCallback 	ax.a AXOut.o
+8029d1cc 0000002c 8029d1cc 0 AXRmtGetSamplesLeft ax.a AXOut.o
+8029d1f8 000000c4 8029d1f8 0 AXRmtGetSamples 	ax.a AXOut.o
+8029d2bc 00000058 8029d2bc 0 AXRmtAdvancePtr 	ax.a AXOut.o
+8029d314 0000000c 8029d314 0 __AXGetStudio 	ax.a AXSPB.o
+8029d320 0000006c 8029d320 0 __AXDepopFadeMain 	ax.a AXSPB.o
+8029d38c 0000006c 8029d38c 0 __AXDepopFadeRmt 	ax.a AXSPB.o
+8029d3f8 00000178 8029d3f8 0 __AXPrintStudio 	ax.a AXSPB.o
+8029d570 00000058 8029d570 0 __AXSPBInit 	ax.a AXSPB.o
+8029d5c8 00000004 8029d5c8 0 __AXSPBQuit 	ax.a AXSPB.o
+8029d5cc 0000016c 8029d5cc 0 __AXDepopVoice 	ax.a AXSPB.o
+8029d738 00000008 8029d738 0 __AXGetNumVoices 	ax.a AXVPB.o
+8029d740 00000550 8029d740 0 __AXServiceVPB 	ax.a AXVPB.o
+8029dc90 00000310 8029dc90 0 __AXSyncPBs 	ax.a AXVPB.o
+8029dfa0 00000008 8029dfa0 0 __AXGetPBs 	ax.a AXVPB.o
+8029dfa8 00000040 8029dfa8 0 __AXSetPBDefault 	ax.a AXVPB.o
+8029dfe8 00000030 8029dfe8 0 __AXVPBInit 	ax.a AXVPB.o
+8029e2a0 00000018 8029e2a0 0 __AXVPBQuit 	ax.a AXVPB.o
+8029e2b8 00000070 8029e2b8 0 AXSetVoiceState 	ax.a AXVPB.o
+8029e328 000000f8 8029e328 0 AXSetVoiceAddr 	ax.a AXVPB.o
+8029e420 000000bc 8029e420 0 AXGetLpfCoefs 	ax.a AXVPB.o
+8029e4dc 00000008 8029e4dc 0 AXGetMaxVoices 	ax.a AXVPB.o
+8029e4e4 00000040 8029e4e4 0 __AXGetCurrentProfile 	ax.a AXProf.o
+8029e524 00000064 8029e524 0 AXFXReverbHiInit 	axfx.a AXFXReverbHi.o
+8029e588 00000024 8029e588 0 AXFXReverbHiShutdown 	axfx.a AXFXReverbHi.o
+8029e5ac 00000004 8029e5ac 0 AXFXReverbHiCallback 	axfx.a AXFXReverbHi.o
+8029e5b0 00000088 8029e5b0 0 AXFXReverbHiExpGetMemSize axfx.a AXFXReverbHiExp.o
 8029e638 0000019c 8029e638 0 AXFXReverbHiExpInit 	axfx.a AXFXReverbHiExp.o
-8029e7d4 000000d0 8029e7d4 0 zz_8029e7d4_
-8029e8a4 000000b4 8029e8a4 0 zz_8029e8a4_
+8029e7d4 000000d0 8029e7d4 0 AXFXReverbHiExpSettings 	axfx.a AXFXReverbHiExp.o
+8029e8a4 000000b4 8029e8a4 0 AXFXReverbHiExpSettingsUpdate 	axfx.a AXFXReverbHiExp.o
 8029e958 00000054 8029e958 0 AXFXReverbHiExpShutdown 	axfx.a AXFXReverbHiExp.o
-8029e9ac 0000051c 8029e9ac 0 zz_8029e9ac_
+8029e9ac 0000051c 8029e9ac 0 AXFXReverbHiExpCallback 	axfx.a AXFXReverbHiExp.o
 8029eec8 00000174 8029eec8 0 __AllocDelayLine 	axfx.a AXFXReverbHiExp.o
 8029f03c 00000124 8029f03c 0 __BzeroDelayLines 	axfx.a AXFXReverbHiExp.o
 8029f160 00000114 8029f160 0 __FreeDelayLine 	axfx.a AXFXReverbHiExp.o
@@ -8642,43 +8643,43 @@
 802a01fc 000000d0 802a01fc 0 zz_802a01fc_
 802a02cc 000000b4 802a02cc 0 zz_802a02cc_
 802a0380 00000054 802a0380 0 AXFXReverbHiExpShutdown 	axfx.a AXFXReverbHiExp.o
-802a03d4 0000036c 802a03d4 0 zz_802a03d4_
-802a0740 00000144 802a0740 0 zz_802a0740_
-802a0884 00000100 802a0884 0 zz_802a0884_
-802a0984 000000f0 802a0984 0 zz_802a0984_
-802a0a74 000002ac 802a0a74 0 zz_802a0a74_
-802a0d20 0000000c 802a0d20 0 GetOneTimerLeadGroundContactAnims(void)
-802a0d2c 00000258 802a0d2c 0 zz_802a0d2c_
-802a0f84 000001b0 802a0f84 0 zz_802a0f84_
-802a1134 00000090 802a1134 0 zz_802a1134_
-802a11c4 00000360 802a11c4 0 zz_802a11c4_
-802a1524 000001f8 802a1524 0 zz_802a1524_
-802a171c 00000104 802a171c 0 zz_802a171c_
-802a1820 0000000c 802a1820 0 GetOneTimerLeadGroundContactAnims(void)
-802a182c 00000014 802a182c 0 zz_802a182c_
-802a1840 00000024 802a1840 0 zz_802a1840_
+802a03d4 0000036c 802a03d4 0 AXFXReverbHiExpCallback 	axfx.a AXFXReverbHiExp.o
+802a0740 00000144 802a0740 0 __AllocDelayLine 	axfx.a AXFXReverbHiExp.o
+802a0884 00000100 802a0884 0 __BzeroDelayLines 	axfx.a AXFXReverbHiExp.o
+802a0984 000000f0 802a0984 0 __FreeDelayLine 	axfx.a AXFXReverbHiExp.o
+802a0a74 000002ac 802a0a74 0 __InitParams 	axfx.a AXFXReverbHiExp.o
+802a0d20 0000000c 802a0d20 0 AXFXChorusExpGetMemSizeDpl2 axfx.a AXFXChorusExpDpl2.o
+802a0d2c 00000258 802a0d2c 0 AXFXChorusExpInitDpl2 	axfx.a AXFXChorusExpDpl2.o
+802a0f84 000001b0 802a0f84 0 AXFXChorusExpSettingsUpdateDpl2 	axfx.a AXFXChorusExpDpl2.o
+802a1134 00000090 802a1134 0 AXFXChorusExpShutdownDpl2 	axfx.a AXFXChorusExpDpl2.o
+802a11c4 00000360 802a11c4 0 AXFXChorusExpCallbackDpl2 	axfx.a AXFXChorusExpDpl2.o
+802a1524 000001f8 802a1524 0 __InitParams 	axfx.a AXFXChorusExpDpl2.o
+802a171c 00000104 802a171c 0 __CalcLFO 	axfx.a AXFXChorusExpDpl2.o
+802a1820 0000000c 802a1820 0 __AXFXGetLfoSinTable 	axfx.a AXFXLfoTable.o
+802a182c 00000014 802a182c 0 __AXFXGetSrcCoef 	axfx.a AXFXSrcCoef.o
+802a1840 0000000c 802a1840 0 __AXFXAllocFunction 	axfx.a AXFXHooks.o
 802a1858 0000000c 802a1858 0 AXFXSetHooks 	axfx.a AXFXHooks.o
 802a1864 00000014 802a1864 0 AXFXGetHooks 	axfx.a AXFXHooks.o
-802a1878 00000008 802a1878 0 __TRK_get_MSR 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\debugger\embedded\MetroTRK\Processor\ppc\Generic\targimp
-802a1880 00000008 802a1880 0 __TRK_set_MSR 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\debugger\embedded\MetroTRK\Processor\ppc\Generic\targimp
-802a1888 00000008 802a1888 0 PPCMfhid2 	base.a PPCArch.o
-802a1890 00000008 802a1890 0 PPCMtwpar 	base.a PPCArch.o
-802a1898 00000008 802a1898 0 PPCMfhid2 	base.a PPCArch.o
-802a18a0 00000008 802a18a0 0 PPCMtwpar 	base.a PPCArch.o
-802a18a8 00000008 802a18a8 0 PPCMtwpar 	base.a PPCArch.o
+802a1878 00000008 802a1878 0 PPCMfmsr 	base.a PPCArch.o
+802a1880 00000008 802a1880 0 PPCMtmsr 	base.a PPCArch.o
+802a1888 00000008 802a1888 0 PPCMfhid0 	base.a PPCArch.o
+802a1890 00000008 802a1890 0 PPCMthid0 	base.a PPCArch.o
+802a1898 00000008 802a1898 0 PPCMfl2cr 	base.a PPCArch.o
+802a18a0 00000008 802a18a0 0 PPCMtl2cr 	base.a PPCArch.o
+802a18a8 00000008 802a18a8 0 PPCMtdec 	base.a PPCArch.o
 802a18b0 00000008 802a18b0 0 PPCSync 	base.a PPCArch.o
-802a18b8 0000001c 802a18b8 0 PPCHalt
-802a18cc 00000008 802a18cc 0 PPCMtwpar 	base.a PPCArch.o
-802a18d4 00000008 802a18d4 0 PPCMtwpar 	base.a PPCArch.o
-802a18dc 00000008 802a18dc 0 PPCMtwpar 	base.a PPCArch.o
-802a18e4 00000008 802a18e4 0 PPCMtwpar 	base.a PPCArch.o
-802a18ec 00000008 802a18ec 0 PPCMtwpar 	base.a PPCArch.o
-802a18f4 00000008 802a18f4 0 PPCMtwpar 	base.a PPCArch.o
+802a18b8 0000001c 802a18b8 0 PPCHalt 	base.a PPCArch.o
+802a18cc 00000008 802a18cc 0 PPCMtmmcr0 	base.a PPCArch.o
+802a18d4 00000008 802a18d4 0 PPCMtmmcr1 	base.a PPCArch.o
+802a18dc 00000008 802a18dc 0 PPCMtpmc1 	base.a PPCArch.o
+802a18e4 00000008 802a18e4 0 PPCMtpmc2 	base.a PPCArch.o
+802a18ec 00000008 802a18ec 0 PPCMtpmc3 	base.a PPCArch.o
+802a18f4 00000008 802a18f4 0 PPCMtpmc4 	base.a PPCArch.o
 802a18fc 00000020 802a18fc 0 PPCMffpscr 	base.a PPCArch.o
 802a191c 00000028 802a191c 0 PPCMtfpscr 	base.a PPCArch.o
 802a1944 00000008 802a1944 0 PPCMfhid2 	base.a PPCArch.o
-802a194c 00000008 802a194c 0 PPCMtwpar 	base.a PPCArch.o
-802a1954 0000000c 802a1954 0 zz_802a1954_
+802a194c 00000008 802a194c 0 PPCMthid2 	base.a PPCArch.o
+802a1954 0000000c 802a1954 0 PPCMfwpar 	base.a PPCArch.o
 802a1960 00000008 802a1960 0 PPCMtwpar 	base.a PPCArch.o
 802a1968 00000028 802a1968 0 PPCDisableSpeculation 	base.a PPCArch.o
 802a1990 00000008 802a1990 0 PPCSetFpNonIEEEMode 	base.a PPCArch.o
@@ -8696,7 +8697,7 @@
 802a26ac 00000140 802a26ac 0 GKI_enqueue_head 	bte.a gki_buffer.o
 802a27ec 000000a0 802a27ec 0 GKI_dequeue 	bte.a gki_buffer.o
 802a288c 000000c4 802a288c 0 GKI_remove_from_queue 	bte.a gki_buffer.o
-802a2950 00000008 802a2950 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802a2950 00000008 802a2950 0 GKI_getfirst 	bte.a gki_buffer.o
 802a2958 0000001c 802a2958 0 GKI_getnext 	bte.a gki_buffer.o
 802a2974 00000010 802a2974 0 GKI_queue_is_empty 	bte.a gki_buffer.o
 802a2984 00000348 802a2984 0 GKI_create_pool 	bte.a gki_buffer.o
@@ -8711,17 +8712,17 @@
 802a3260 00000124 802a3260 0 GKI_remove_from_timer_list 	bte.a gki_time.o
 802a3384 00000090 802a3384 0 GKI_init 	bte.a gki_ppc.o
 802a3414 000000a8 802a3414 0 GKI_shutdown 	bte.a gki_ppc.o
-802a34bc 00000004 802a34bc 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-802a34c0 00000004 802a34c0 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-802a34c4 00000004 802a34c4 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-802a34c8 00000004 802a34c8 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802a34bc 00000004 802a34bc 0 GKI_run 	bte.a gki_ppc.o
+802a34c0 00000004 802a34c0 0 GKI_sched_lock 	bte.a gki_ppc.o
+802a34c4 00000004 802a34c4 0 GKI_sched_unlock 	bte.a gki_ppc.o
+802a34c8 00000004 802a34c8 0 GKI_delay 	bte.a gki_ppc.o
 802a34cc 000000a4 802a34cc 0 GKI_send_event 	bte.a gki_ppc.o
-802a3570 00000008 802a3570 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-802a3578 00000068 802a3578 0 zz_802a3578_
+802a3570 00000008 802a3570 0 GKI_get_taskid 	bte.a gki_ppc.o
+802a3578 00000024 802a3578 0 GKI_enable 	bte.a gki_ppc.o
 802a359c 00000044 802a359c 0 GKI_disable 	bte.a gki_ppc.o
-802a35e0 00000004 802a35e0 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802a35e0 00000004 802a35e0 0 GKI_exception 	bte.a gki_ppc.o
 802a35e4 0000002c 802a35e4 0 GKI_os_malloc 	bte.a gki_ppc.o
-802a3610 00000028 802a3610 0 zz_802a3610_
+802a3610 00000028 802a3610 0 GKI_os_free 	bte.a gki_ppc.o
 802a3638 00000398 802a3638 0 hcisu_h2_receive_msg 	bte.a hcisu_h2.o
 802a39d0 000001ac 802a39d0 0 hcisu_h2_send_msg_now 	bte.a hcisu_h2.o
 802a3b7c 0000002c 802a3b7c 0 hcisu_h2_init 	bte.a hcisu_h2.o
@@ -8729,23 +8730,23 @@
 802a3c10 00000034 802a3c10 0 hcisu_h2_close 	bte.a hcisu_h2.o
 802a3c44 00000030 802a3c44 0 hcisu_h2_send 	bte.a hcisu_h2.o
 802a3c74 0000003c 802a3c74 0 hcisu_h2_handle_event 	bte.a hcisu_h2.o
-802a3cb0 0000000c 802a3cb0 0 GetOneTimerLeadGroundContactAnims(void)
+802a3cb0 0000000c 802a3cb0 0 __ntd_get_allocated_mem_size 	bte.a uusb_ppc.o
 802a3cbc 00000094 802a3cbc 0 uusb_CloseDeviceCB 	bte.a uusb_ppc.o
-802a3d50 00000114 802a3d50 0 zz_802a3d50_
-802a3e64 0000019c 802a3e64 0 zz_802a3e64_
-802a4000 000000cc 802a4000 0 zz_802a4000_
-802a40cc 000000ec 802a40cc 0 zz_802a40cc_
-802a41b8 000000e0 802a41b8 0 zz_802a41b8_
-802a4298 00000208 802a4298 0 zz_802a4298_
-802a44a0 00000108 802a44a0 0 zz_802a44a0_
-802a45a8 00000008 802a45a8 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-802a45b0 00000214 802a45b0 0 zz_802a45b0_
+802a3d50 00000114 802a3d50 0 uusb_ReadIntrDataCB 	bte.a uusb_ppc.o
+802a3e64 0000019c 802a3e64 0 uusb_ReadBulkDataCB 	bte.a uusb_ppc.o
+802a4000 000000cc 802a4000 0 _uusb_ReadIntrDataCB 	bte.a uusb_ppc.o
+802a40cc 000000ec 802a40cc 0 uusb_WriteCtrlDataCB 	bte.a uusb_ppc.o
+802a41b8 000000e0 802a41b8 0 uusb_WriteBulkDataCB 	bte.a uusb_ppc.o
+802a4298 00000208 802a4298 0 UUSB_Register 	bte.a uusb_ppc.o
+802a44a0 00000108 802a44a0 0 UUSB_Open 	bte.a uusb_ppc.o
+802a45a8 00000008 802a45a8 0 UUSB_Read 	bte.a uusb_ppc.o
+802a45b0 00000214 802a45b0 0 UUSB_Write 	bte.a uusb_ppc.o
 802a47c4 000000ac 802a47c4 0 UUSB_Close 	bte.a uusb_ppc.o
 802a4870 00000044 802a4870 0 UUSB_Unregister 	bte.a uusb_ppc.o
-802a48b4 00000084 802a48b4 0 zz_802a48b4_
+802a48b4 00000020 802a48b4 0 bte_hcisu_send 	bte.a bte_hcisu.o
 802a48d4 00000064 802a48d4 0 bte_hcisu_task 	bte.a bte_hcisu.o
 802a4938 00000024 802a4938 0 bte_hcisu_close 	bte.a bte_hcisu.o
-802a495c 0000003c 802a495c 0 zz_802a495c_
+802a495c 00000010 802a495c 0 bta_ci_hci_msg_handler 	bte.a bte_hcisu.o
 802a496c 0000002c 802a496c 0 btu_init_core 	bte.a btu_init.o
 802a4998 000000bc 802a4998 0 LogMsg 	bte.a bte_logmsg.o
 802a4a54 00000018 802a4a54 0 LogMsg_6 	bte.a bte_logmsg.o
@@ -8755,19 +8756,19 @@
 802a4ab4 00000018 802a4ab4 0 LogMsg_6 	bte.a bte_logmsg.o
 802a4acc 00000018 802a4acc 0 LogMsg_6 	bte.a bte_logmsg.o
 802a4ae4 00000018 802a4ae4 0 LogMsg_6 	bte.a bte_logmsg.o
-802a4afc 000000f4 802a4afc 0 zz_802a4afc_
-802a4b14 000000dc 802a4b14 0 zz_802a4b14_
+802a4afc 00000018 802a4afc 0 BTUInterruptHandler 	bte.a bte_main.o
+802a4b14 000000dc 802a4b14 0 BTA_Init 	bte.a bte_main.o
 802a4bf0 00000034 802a4bf0 0 BTA_CleanUp 	bte.a bte_main.o
 802a4c24 00000030 802a4c24 0 bta_usb_close_evt 	bte.a bte_main.o
 802a4c54 00000040 802a4c54 0 btu_task_init 	bte.a btu_task1.o
 802a4c94 0000038c 802a4c94 0 btu_task_msg_handler 	bte.a btu_task1.o
 802a5020 00000070 802a5020 0 btu_start_timer 	bte.a btu_task1.o
-802a5090 00000048 802a5090 0 zz_802a5090_
+802a5090 00000014 802a5090 0 btu_stop_timer 	bte.a btu_task1.o
 802a50a4 00000034 802a50a4 0 bdcpy 	bte.a bd.o
 802a50d8 000000a0 802a50d8 0 bdcmp 	bte.a bd.o
-802a5178 00000010 802a5178 0 TRKTargetSetInputPendingPtr
-802a5188 00000010 802a5188 0 TRKTargetSetInputPendingPtr
-802a5198 00000010 802a5198 0 TRKTargetSetInputPendingPtr
+802a5178 00000010 802a5178 0 bta_sys_rm_register 	bte.a bta_sys_conn.o
+802a5188 00000010 802a5188 0 bta_sys_compress_register 	bte.a bta_sys_conn.o
+802a5198 00000010 802a5198 0 bta_sys_pm_register 	bte.a bta_sys_conn.o
 802a51a8 000000c4 802a51a8 0 bta_sys_conn_close 	bte.a bta_sys_conn.o
 802a526c 000000c4 802a526c 0 bta_sys_conn_close 	bte.a bta_sys_conn.o
 802a5330 00000034 802a5330 0 bta_sys_busy 	bte.a bta_sys_conn.o
@@ -8777,9 +8778,9 @@
 802a5430 000000ec 802a5430 0 bta_sys_event 	bte.a bta_sys_main.o
 802a551c 00000020 802a551c 0 bta_sys_timer_update 	bte.a bta_sys_main.o
 802a553c 00000014 802a553c 0 bta_sys_register 	bte.a bta_sys_main.o
-802a5550 000000b8 802a5550 0 zz_802a5550_
-802a556c 0000009c 802a556c 0 zz_802a556c_
-802a558c 0000007c 802a558c 0 zz_802a558c_
+802a5550 0000001c 802a5550 0 bta_sys_sendmsg 	bte.a bta_sys_main.o
+802a556c 00000020 802a556c 0 bta_sys_start_timer 	bte.a bta_sys_main.o
+802a558c 00000014 802a558c 0 bta_sys_stop_timer 	bte.a bta_sys_main.o
 802a55a0 00000068 802a55a0 0 bta_sys_disable 	bte.a bta_sys_main.o
 802a5608 00000008 802a5608 0 bta_sys_set_trace_level 	bte.a bta_sys_main.o
 802a5610 0000004c 802a5610 0 ptim_init 	bte.a ptim.o
@@ -8790,7 +8791,8 @@
 802a5834 00000110 802a5834 0 bta_dm_enable 	bte.a bta_dm_act.o
 802a5944 000000b0 802a5944 0 bta_dm_disable 	bte.a bta_dm_act.o
 802a59f4 000000bc 802a59f4 0 bta_dm_disable_timer_cback 	bte.a bta_dm_act.o
-802a5ab0 00000050 802a5ab0 0 zz_802a5ab0_
+802a5ab0 00000008 802a5ab0 0 bta_dm_set_dev_name 	bte.a bta_dm_act.o
+802a5ab8 00000048 802a5ab8 0 bta_dm_set_visibility 	bte.a bta_dm_act.o
 802a5b00 00000070 802a5b00 0 bta_dm_bond 	bte.a bta_dm_act.o
 802a5b70 0000009c 802a5b70 0 bta_dm_pin_reply 	bte.a bta_dm_act.o
 802a5c0c 000000d4 802a5c0c 0 bta_dm_auth_reply 	bte.a bta_dm_act.o
@@ -8801,7 +8803,8 @@
 802a60fc 0000016c 802a60fc 0 bta_dm_rmt_name 	bte.a bta_dm_act.o
 802a6268 00000064 802a6268 0 bta_dm_disc_rmt_name 	bte.a bta_dm_act.o
 802a62cc 00000268 802a62cc 0 bta_dm_sdp_result 	bte.a bta_dm_act.o
-802a6534 00000068 802a6534 0 zz_802a6534_
+802a6534 00000018 802a6534 0 bta_dm_search_cmpl 	bte.a bta_dm_act.o
+802a654c 00000050 802a654c 0 bta_dm_disc_result 	bte.a bta_dm_act.o
 802a659c 00000088 802a659c 0 bta_dm_search_result 	bte.a bta_dm_act.o
 802a6624 0000004c 802a6624 0 bta_dm_search_timer_cback 	bte.a bta_dm_act.o
 802a6670 00000044 802a6670 0 bta_dm_search_cancel_cmpl 	bte.a bta_dm_act.o
@@ -8810,7 +8813,7 @@
 802a6744 00000044 802a6744 0 bta_dm_search_cancel_cmpl 	bte.a bta_dm_act.o
 802a6788 00000044 802a6788 0 bta_dm_search_cancel_cmpl 	bte.a bta_dm_act.o
 802a67cc 0000005c 802a67cc 0 bta_dm_search_cancel_transac_cmpl 	bte.a bta_dm_act.o
-802a6828 000001b8 802a6828 0 zz_802a6828_
+802a6828 00000018 802a6828 0 bta_dm_search_cancel_notify 	bte.a bta_dm_act.o
 802a6840 000001a0 802a6840 0 bta_dm_find_services 	bte.a bta_dm_act.o
 802a69e0 000000e0 802a69e0 0 bta_dm_discover_next_device 	bte.a bta_dm_act.o
 802a6ac0 00000048 802a6ac0 0 bta_dm_sdp_callback 	bte.a bta_dm_act.o
@@ -8819,17 +8822,20 @@
 802a6be4 00000040 802a6be4 0 bta_dm_service_search_remname_cback 	bte.a bta_dm_act.o
 802a6c24 0000008c 802a6c24 0 bta_dm_remname_cback 	bte.a bta_dm_act.o
 802a6cb0 00000088 802a6cb0 0 bta_dm_disc_remname_cback 	bte.a bta_dm_act.o
-802a6d38 000000cc 802a6d38 0 zz_802a6d38_
+802a6d38 00000004 802a6d38 0 bta_dm_cancel_rmt_name 	bte.a bta_dm_act.o
+802a6d3c 000000c8 802a6d3c 0 bta_dm_authorize_cback 	bte.a bta_dm_act.o
 802a6e04 000000c0 802a6e04 0 bta_dm_pinname_cback 	bte.a bta_dm_act.o
 802a6ec4 00000130 802a6ec4 0 bta_dm_pin_cback 	bte.a bta_dm_act.o
-802a6ff4 00000008 802a6ff4 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
+802a6ff4 00000008 802a6ff4 0 bta_dm_link_key_request_cback 	bte.a bta_dm_act.o
 802a6ffc 0000009c 802a6ffc 0 bta_dm_new_link_key_cback 	bte.a bta_dm_act.o
 802a7098 00000084 802a7098 0 bta_dm_authentication_complete_cback 	bte.a bta_dm_act.o
 802a711c 00000028 802a711c 0 bta_dm_local_addr_cback 	bte.a bta_dm_act.o
-802a7144 00000130 802a7144 0 zz_802a7144_
+802a7144 0000003c 802a7144 0 bta_dm_signal_strength 	bte.a bta_dm_act.o
+802a7180 000000f4 802a7180 0 bta_dm_signal_strength_timer_cback 	bte.a bta_dm_act.o
 802a7274 00000070 802a7274 0 bta_dm_acl_change_cback 	bte.a bta_dm_act.o
 802a72e4 00000280 802a72e4 0 bta_dm_acl_change 	bte.a bta_dm_act.o
-802a7564 00000088 802a7564 0 zz_802a7564_
+802a7564 0000001c 802a7564 0 bta_dm_disable_conn_down_timer_cback 	bte.a bta_dm_act.o
+802a7580 0000006c 802a7580 0 bta_dm_rssi_cback 	bte.a bta_dm_act.o
 802a75ec 0000006c 802a75ec 0 bta_dm_link_quality_cback 	bte.a bta_dm_act.o
 802a7658 000000e4 802a7658 0 bta_dm_l2cap_server_compress_cback 	bte.a bta_dm_act.o
 802a773c 00000238 802a773c 0 bta_dm_compress_cback 	bte.a bta_dm_act.o
@@ -8851,12 +8857,13 @@
 802a7fdc 00000098 802a7fdc 0 bta_dm_sm_execute 	bte.a bta_dm_main.o
 802a8074 000000c8 802a8074 0 bta_dm_search_sm_execute 	bte.a bta_dm_main.o
 802a813c 00000068 802a813c 0 bta_dm_init_pm 	bte.a bta_dm_pm.o
-802a81a4 00000398 802a81a4 0 zz_802a81a4_
+802a81a4 00000018 802a81a4 0 bta_dm_disable_pm 	bte.a bta_dm_pm.o
+802a81bc 00000380 802a81bc 0 bta_dm_pm_cback 	bte.a bta_dm_pm.o
 802a853c 00000380 802a853c 0 bta_dm_pm_set_mode 	bte.a bta_dm_pm.o
 802a88bc 00000078 802a88bc 0 bta_dm_pm_btm_cback 	bte.a bta_dm_pm.o
 802a8934 000000f8 802a8934 0 bta_dm_pm_timer_cback 	bte.a bta_dm_pm.o
 802a8a2c 00000120 802a8a2c 0 bta_dm_pm_btm_status 	bte.a bta_dm_pm.o
-802a8b4c 00000180 802a8b4c 0 zz_802a8b4c_
+802a8b4c 0000000c 802a8b4c 0 bta_dm_pm_timer 	bte.a bta_dm_pm.o
 802a8b58 00000174 802a8b58 0 bta_hh_api_enable 	bte.a bta_hh_act.o
 802a8ccc 00000104 802a8ccc 0 bta_hh_api_disable 	bte.a bta_hh_act.o
 802a8dd0 000000a4 802a8dd0 0 bta_hh_disc_cmpl 	bte.a bta_hh_act.o
@@ -8870,7 +8877,8 @@
 802a9544 00000268 802a9544 0 bta_hh_handsk_act 	bte.a bta_hh_act.o
 802a97ac 000001f8 802a97ac 0 bta_hh_ctrl_dat_act 	bte.a bta_hh_act.o
 802a99a4 00000200 802a99a4 0 bta_hh_close_act 	bte.a bta_hh_act.o
-802a9ba4 00000180 802a9ba4 0 zz_802a9ba4_
+802a9ba4 0000001c 802a9ba4 0 bta_hh_get_dscp_act 	bte.a bta_hh_act.o
+802a9bc0 00000164 802a9bc0 0 bta_hh_maint_dev_act 	bte.a bta_hh_act.o
 802a9d24 0000011c 802a9d24 0 bta_hh_get_acl_q_info 	bte.a bta_hh_act.o
 802a9e40 000001c8 802a9e40 0 bta_hh_write_dev_act 	bte.a bta_hh_act.o
 802aa008 00000298 802aa008 0 bta_hh_cback 	bte.a bta_hh_act.o
@@ -8892,10 +8900,10 @@
 802aae90 000000e0 802aae90 0 bta_hh_trace_dev_db 	bte.a bta_hh_utils.o
 802aaf70 0000001c 802aaf70 0 btm_acl_init 	bte.a btm_acl.o
 802aaf8c 00000084 802aaf8c 0 btm_handle_to_acl_index 	bte.a btm_acl.o
-802ab010 00000314 802ab010 0 zz_802ab010_
+802ab010 00000314 802ab010 0 btm_acl_created 	bte.a btm_acl.o
 802ab324 000000c4 802ab324 0 btm_acl_removed 	bte.a btm_acl.o
 802ab3e8 00000064 802ab3e8 0 btm_acl_device_down 	bte.a btm_acl.o
-802ab44c 0000021c 802ab44c 0 zz_802ab44c_
+802ab44c 0000021c 802ab44c 0 BTM_SwitchRole 	bte.a btm_acl.o
 802ab668 00000170 802ab668 0 btm_acl_encrypt_change 	bte.a btm_acl.o
 802ab7d8 000001f0 802ab7d8 0 BTM_SetLinkPolicy 	bte.a btm_acl.o
 802ab9c8 00000010 802ab9c8 0 BTM_SetDefaultLinkSuperTout 	bte.a btm_acl.o
@@ -8905,7 +8913,7 @@
 802abd94 00000010 802abd94 0 BTM_SetDefaultLinkSuperTout 	bte.a btm_acl.o
 802abda4 000000d8 802abda4 0 BTM_IsAclConnectionUp 	bte.a btm_acl.o
 802abe7c 0000005c 802abe7c 0 BTM_GetNumAclLinks 	bte.a btm_acl.o
-802abed8 00000010 802abed8 0 SaveLoad::DidGameIDChange(void)
+802abed8 00000010 802abed8 0 btm_get_acl_disc_reason_code 	bte.a btm_acl.o
 802abee8 0000009c 802abee8 0 BTM_GetHCIConnHandle 	bte.a btm_acl.o
 802abf84 0000009c 802abf84 0 btm_process_clk_off_comp_evt 	bte.a btm_acl.o
 802ac020 000001f4 802ac020 0 btm_acl_role_changed 	bte.a btm_acl.o
@@ -8943,8 +8951,8 @@
 802ae380 00000048 802ae380 0 btm_read_local_addr_complete 	bte.a btm_devctl.o
 802ae3c8 0000004c 802ae3c8 0 BTM_ReadLocalVersion 	bte.a btm_devctl.o
 802ae414 00000080 802ae414 0 BTM_SetDeviceClass 	bte.a btm_devctl.o
-802ae494 00000010 802ae494 0 dataARAMDefaultGetInfo
-802ae4a4 00000010 802ae4a4 0 dataARAMDefaultGetInfo
+802ae494 00000010 802ae494 0 dBTM_ReadDeviceClass 	bte.a btm_devctl.o
+802ae4a4 00000010 802ae4a4 0 dBTM_ReadLocalFeatures 	bte.a btm_devctl.o
 802ae4b4 00000018 802ae4b4 0 BTM_RegisterForDeviceStatusNotif 	bte.a btm_devctl.o
 802ae4cc 000000fc 802ae4cc 0 BTM_VendorSpecificCommand 	bte.a btm_devctl.o
 802ae5c8 0000006c 802ae5c8 0 btm_vsc_complete 	bte.a btm_devctl.o
@@ -8961,13 +8969,13 @@
 802aece8 00000020 802aece8 0 btm_report_device_status 	bte.a btm_devctl.o
 802aed08 00000078 802aed08 0 btm_discovery_db_init 	bte.a btm_discovery.o
 802aed80 000000b8 802aed80 0 btm_discovery_db_reset 	bte.a btm_discovery.o
-802aee38 00000004 802aee38 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802aee38 00000004 802aee38 0 btm_discovery_timeout 	bte.a btm_discovery.o
 802aee3c 00000284 802aee3c 0 BTM_SetDiscoverability 	bte.a btm_inq.o
 802af0c0 000000b0 802af0c0 0 BTM_SetPageScanType 	bte.a btm_inq.o
 802af170 000000b0 802af170 0 BTM_SetPageScanType 	bte.a btm_inq.o
 802af220 00000098 802af220 0 BTM_SetInquiryMode 	bte.a btm_inq.o
 802af2b8 00000188 802af2b8 0 BTM_SetConnectability 	bte.a btm_inq.o
-802af440 00000010 802af440 0 SaveLoad::DidGameIDChange(void)
+802af440 00000010 802af440 0 BTM_IsInquiryActive 	bte.a btm_inq.o
 802af450 00000108 802af450 0 BTM_CancelInquiry 	bte.a btm_inq.o
 802af558 000001b4 802af558 0 BTM_StartInquiry 	bte.a btm_inq.o
 802af70c 000000e8 802af70c 0 BTM_ReadRemoteDeviceName 	bte.a btm_inq.o
@@ -8977,7 +8985,7 @@
 802af9e4 0000013c 802af9e4 0 BTM_InqDbNext 	bte.a btm_inq.o
 802afb20 000000d0 802afb20 0 BTM_ClearInqDb 	bte.a btm_inq.o
 802afbf0 00000198 802afbf0 0 btm_inq_db_reset 	bte.a btm_inq.o
-802afd88 00000004 802afd88 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802afd88 00000004 802afd88 0 btm_inq_db_init 	bte.a btm_inq.o
 802afd8c 000000dc 802afd8c 0 btm_inq_find_bdaddr 	bte.a btm_inq.o
 802afe68 00000104 802afe68 0 btm_inq_db_new 	bte.a btm_inq.o
 802aff6c 000000e4 802aff6c 0 btm_set_inq_event_filter 	bte.a btm_inq.o
@@ -9007,7 +9015,7 @@
 802b1da8 00000084 802b1da8 0 btm_remove_sco_links 	bte.a btm_sco.o
 802b1e2c 00000114 802b1e2c 0 btm_sco_removed 	bte.a btm_sco.o
 802b1f40 000000b4 802b1f40 0 btm_sco_acl_removed 	bte.a btm_sco.o
-802b1ff4 000001ac 802b1ff4 0 zz_802b1ff4_
+802b1ff4 00000004 802b1ff4 0 btm_route_sco_data 	bte.a btm_sco.o
 802b1ff8 000001a8 802b1ff8 0 BTM_ChangeEScoLinkParms 	bte.a btm_sco.o
 802b21a0 00000104 802b21a0 0 btm_esco_proc_conn_chg 	bte.a btm_sco.o
 802b22a4 00000070 802b22a4 0 btm_is_sco_active 	bte.a btm_sco.o
@@ -9024,7 +9032,7 @@
 802b2e5c 00000464 802b2e5c 0 btm_sec_l2cap_access_req 	bte.a btm_sec.o
 802b32c0 0000029c 802b32c0 0 btm_sec_mx_access_request 	bte.a btm_sec.o
 802b355c 0000012c 802b355c 0 btm_sec_conn_req 	bte.a btm_sec.o
-802b3688 0000005c 802b3688 0 zz_802b3688_
+802b3688 0000001c 802b3688 0 btm_sec_init 	bte.a btm_sec.o
 802b36a4 00000040 802b36a4 0 btm_sec_dev_reset 	bte.a btm_sec.o
 802b36e4 000000b4 802b36e4 0 btm_sec_abort_access_req 	bte.a btm_sec.o
 802b3798 000002e8 802b3798 0 btm_sec_rmt_name_request_complete 	bte.a btm_sec.o
@@ -9069,7 +9077,9 @@
 802b70cc 00000110 802b70cc 0 gap_data_ind 	bte.a gap_conn.o
 802b71dc 00000134 802b71dc 0 gap_congestion_ind 	bte.a gap_conn.o
 802b7310 000001d8 802b7310 0 btm_cback 	bte.a gap_utils.o
-802b74e8 00000230 802b74e8 0 zz_802b74e8_
+802b74e8 0000000c 802b74e8 0 gap_btm_cback0 	bte.a gap_utils.o
+802b74f4 0000000c 802b74f4 0 gap_btm_cback1 	bte.a gap_utils.o
+802b7500 00000218 802b7500 0 gap_find_addr_name_cb 	bte.a gap_utils.o
 802b7718 000001b4 802b7718 0 gap_find_addr_inq_cb 	bte.a gap_utils.o
 802b78cc 00000060 802b78cc 0 gap_convert_btm_status 	bte.a gap_utils.o
 802b792c 000000a8 802b792c 0 btsnd_hcic_inquiry 	bte.a hcicmds.o
@@ -9078,8 +9088,8 @@
 802b7af4 000000e0 802b7af4 0 btsnd_hcic_create_conn 	bte.a hcicmds.o
 802b7bd4 00000088 802b7bd4 0 btsnd_hcic_disconnect 	bte.a hcicmds.o
 802b7c5c 0000008c 802b7c5c 0 btsnd_hcic_add_SCO_conn 	bte.a hcicmds.o
-802b7ce8 0000025c 802b7ce8 0 zz_802b7ce8_
-802b7d48 000001fc 802b7d48 0 zz_802b7d48_
+802b7ce8 00000060 802b7ce8 0 btsnd_hcic_accept_conn 	bte.a hcicmds.o
+802b7d48 0000005c 802b7d48 0 btsnd_hcic_reject_conn 	bte.a hcicmds.o
 802b7da4 000001a0 802b7da4 0 btsnd_hcic_link_key_req_reply 	bte.a hcicmds.o
 802b7f44 000000a0 802b7f44 0 btsnd_hcic_rmt_name_req_cancel 	bte.a hcicmds.o
 802b7fe4 000001e4 802b7fe4 0 btsnd_hcic_pin_code_req_reply 	bte.a hcicmds.o
@@ -9094,7 +9104,7 @@
 802b8670 0000007c 802b8670 0 btsnd_hcic_get_link_quality 	bte.a hcicmds.o
 802b86ec 000000fc 802b86ec 0 btsnd_hcic_setup_esco_conn 	bte.a hcicmds.o
 802b87e8 000000e8 802b87e8 0 btsnd_hcic_accept_esco_conn 	bte.a hcicmds.o
-802b88d0 00000114 802b88d0 0 zz_802b88d0_
+802b88d0 00000060 802b88d0 0 btsnd_hcic_reject_esco_conn 	bte.a hcicmds.o
 802b8930 000000b4 802b8930 0 btsnd_hcic_park_mode 	bte.a hcicmds.o
 802b89e4 000000cc 802b89e4 0 btsnd_hcic_sniff_mode 	bte.a hcicmds.o
 802b8ab0 00000084 802b8ab0 0 btsnd_hcic_exit_park_mode 	bte.a hcicmds.o
@@ -9103,34 +9113,34 @@
 802b8c6c 000000b0 802b8c6c 0 btsnd_hcic_delete_stored_key 	bte.a hcicmds.o
 802b8d1c 00000094 802b8d1c 0 btsnd_hcic_write_link_super_tout 	bte.a hcicmds.o
 802b8db0 0000005c 802b8db0 0 btsnd_hcic_read_local_features 	bte.a hcicmds.o
-802b8e0c 00000230 802b8e0c 0 zz_802b8e0c_
+802b8e0c 000001bc 802b8e0c 0 btsnd_hcic_set_event_filter 	bte.a hcicmds.o
 802b8fc8 00000074 802b8fc8 0 btsnd_hcic_write_encr_mode 	bte.a hcicmds.o
-802b903c 00000220 802b903c 0 zz_802b903c_
+802b903c 00000060 802b903c 0 btsnd_hcic_read_stored_key 	bte.a hcicmds.o
 802b909c 000001c0 802b909c 0 btsnd_hcic_write_stored_key 	bte.a hcicmds.o
 802b925c 000000b0 802b925c 0 btsnd_hcic_delete_stored_key 	bte.a hcicmds.o
 802b930c 00000140 802b930c 0 btsnd_hcic_change_name 	bte.a hcicmds.o
-802b944c 00000164 802b944c 0 zz_802b944c_
-802b9484 0000012c 802b9484 0 zz_802b9484_
-802b94b4 000000fc 802b94b4 0 zz_802b94b4_
-802b94f8 000000b8 802b94f8 0 zz_802b94f8_
-802b953c 00000074 802b953c 0 btsnd_hcic_write_encr_mode 	bte.a hcicmds.o
+802b944c 00000038 802b944c 0 btsnd_hcic_write_page_tout 	bte.a hcicmds.o
+802b9484 00000030 802b9484 0 btsnd_hcic_write_scan_enable 	bte.a hcicmds.o
+802b94b4 00000044 802b94b4 0 btsnd_hcic_write_pagescan_cfg 	bte.a hcicmds.o
+802b94f8 00000044 802b94f8 0 btsnd_hcic_write_inqscan_cfg 	bte.a hcicmds.o
+802b953c 00000074 802b953c 0 btsnd_hcic_write_auth_enable 	bte.a hcicmds.o
 802b95b0 00000074 802b95b0 0 btsnd_hcic_write_encr_mode 	bte.a hcicmds.o
-802b9624 00000144 802b9624 0 zz_802b9624_
-802b9668 00000100 802b9668 0 zz_802b9668_
+802b9624 00000044 802b9624 0 btsnd_hcic_write_dev_class 	bte.a hcicmds.o
+802b9668 00000044 802b9668 0 btsnd_hcic_write_auto_flush_tout 	bte.a hcicmds.o
 802b96ac 000000bc 802b96ac 0 btsnd_hcic_set_host_buf_size 	bte.a hcicmds.o
 802b9768 00000094 802b9768 0 btsnd_hcic_write_link_super_tout 	bte.a hcicmds.o
-802b97fc 000000d0 802b97fc 0 zz_802b97fc_
+802b97fc 00000070 802b97fc 0 btsnd_hcic_write_cur_iac_lap 	bte.a hcicmds.o
 802b986c 00000060 802b986c 0 btsnd_hcic_read_bd_addr 	bte.a hcicmds.o
 802b98cc 0000005c 802b98cc 0 btsnd_hcic_read_local_features 	bte.a hcicmds.o
-802b9928 00000088 802b9928 0 zz_802b9928_
+802b9928 00000028 802b9928 0 btsnd_hcic_read_buffer_size 	bte.a hcicmds.o
 802b9950 00000060 802b9950 0 btsnd_hcic_read_bd_addr 	bte.a hcicmds.o
 802b99b0 0000007c 802b99b0 0 btsnd_hcic_get_link_quality 	bte.a hcicmds.o
 802b9a2c 00000078 802b9a2c 0 btsnd_hcic_read_rssi 	bte.a hcicmds.o
 802b9aa4 00000420 802b9aa4 0 btsnd_hcic_set_afh_channels 	bte.a hcicmds.o
-802b9ec4 000001ec 802b9ec4 0 zz_802b9ec4_
-802b9ef4 000001bc 802b9ef4 0 zz_802b9ef4_
-802b9f24 0000018c 802b9f24 0 zz_802b9f24_
-802b9f54 0000015c 802b9f54 0 zz_802b9f54_
+802b9ec4 00000030 802b9ec4 0 btsnd_hcic_write_inqscan_type 	bte.a hcicmds.o
+802b9ef4 00000030 802b9ef4 0 btsnd_hcic_write_inquiry_mode 	bte.a hcicmds.o
+802b9f24 00000030 802b9f24 0 btsnd_hcic_write_pagescan_type 	bte.a hcicmds.o
+802b9f54 000000f4 802b9f54 0 btsnd_hcic_vendor_spec_cmd 	bte.a hcicmds.o
 802ba048 00000068 802ba048 0 HID_DevInit 	bte.a hidd_api.o
 802ba0b0 000000c0 802ba0b0 0 hidd_conn_initiate 	bte.a hidd_conn.o
 802ba170 000000c8 802ba170 0 hidd_proc_repage_timeout 	bte.a hidd_mgmt.o
@@ -9176,7 +9186,7 @@
 802bdd58 000000c8 802bdd58 0 L2CA_SetIdleTimeout 	bte.a l2c_api.o
 802bde20 00000100 802bde20 0 L2CA_SetIdleTimeoutByBdAddr 	bte.a l2c_api.o
 802bdf20 0000001c 802bdf20 0 L2CA_SetTraceLevel 	bte.a l2c_api.o
-802bdf3c 00000004 802bdf3c 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802bdf3c 00000004 802bdf3c 0 L2CA_RegisterCompression 	bte.a l2c_api.o
 802bdf40 0000004c 802bdf40 0 l2c_csm_execute 	bte.a l2c_csm.o
 802bdf8c 00000294 802bdf8c 0 l2c_csm_closed 	bte.a l2c_csm.o
 802be220 00000170 802be220 0 l2c_csm_orig_w4_sec_comp 	bte.a l2c_csm.o
@@ -9269,11 +9279,11 @@
 802c4c1c 00000070 802c4c1c 0 port_flow_control_user 	bte.a port_utils.o
 802c4c8c 00000068 802c4c8c 0 port_get_signal_changes 	bte.a port_utils.o
 802c4cf4 000001cc 802c4cf4 0 port_flow_control_peer 	bte.a port_utils.o
-802c4ec0 00000108 802c4ec0 0 zz_802c4ec0_
+802c4ec0 00000108 802c4ec0 0 rfcomm_l2cap_if_init 	bte.a rfc_l2cap_if.o
 802c4fc8 00000104 802c4fc8 0 RFCOMM_ConnectCnf 	bte.a rfc_l2cap_if.o
 802c50cc 00000108 802c50cc 0 RFCOMM_ConfigCnf 	bte.a rfc_l2cap_if.o
 802c51d4 00000108 802c51d4 0 RFCOMM_ConfigCnf 	bte.a rfc_l2cap_if.o
-802c52dc 00000004 802c52dc 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802c52dc 00000004 802c52dc 0 RFCOMM_QoSViolationInd 	bte.a rfc_l2cap_if.o
 802c52e0 00000124 802c52e0 0 RFCOMM_DisconnectInd 	bte.a rfc_l2cap_if.o
 802c5404 000002a0 802c5404 0 RFCOMM_BufDataInd 	bte.a rfc_l2cap_if.o
 802c56a4 00000134 802c56a4 0 RFCOMM_CongestionStatusInd 	bte.a rfc_l2cap_if.o
@@ -9299,8 +9309,8 @@
 802c6ed4 0000030c 802c6ed4 0 rfc_process_rpn 	bte.a rfc_port_fsm.o
 802c71e0 0000016c 802c71e0 0 rfc_process_msc 	bte.a rfc_port_fsm.o
 802c734c 0000008c 802c734c 0 rfc_process_rls 	bte.a rfc_port_fsm.o
-802c73d8 00000004 802c73d8 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-802c73dc 0000006c 802c73dc 0 zz_802c73dc_
+802c73d8 00000004 802c73d8 0 rfc_process_nsc 	bte.a rfc_port_fsm.o
+802c73dc 00000008 802c73dc 0 rfc_process_test_rsp 	bte.a rfc_port_fsm.o
 802c73e4 00000064 802c73e4 0 rfc_process_fcon 	bte.a rfc_port_fsm.o
 802c7448 00000064 802c7448 0 rfc_process_fcoff 	bte.a rfc_port_fsm.o
 802c74ac 00000088 802c74ac 0 rfc_process_l2cap_congestion 	bte.a rfc_port_fsm.o
@@ -9316,7 +9326,7 @@
 802c7964 000000a4 802c7964 0 RFCOMM_FlowReq 	bte.a rfc_port_if.o
 802c7a08 00000098 802c7a08 0 RFCOMM_LineStatusReq 	bte.a rfc_port_if.o
 802c7aa0 0000002c 802c7aa0 0 RFCOMM_DlcReleaseReq 	bte.a rfc_port_if.o
-802c7acc 00000038 802c7acc 0 TRKEXICallBack
+802c7acc 00000038 802c7acc 0 RFCOMM_DataReq 	bte.a rfc_port_if.o
 802c7b04 000000b0 802c7b04 0 rfc_send_disc 	bte.a rfc_ts_frames.o
 802c7bb4 000000b0 802c7bb4 0 rfc_send_disc 	bte.a rfc_ts_frames.o
 802c7c64 000000c4 802c7c64 0 rfc_send_dm 	bte.a rfc_ts_frames.o
@@ -9328,7 +9338,7 @@
 802c8160 00000120 802c8160 0 rfc_send_msc 	bte.a rfc_ts_frames.o
 802c8280 000000b0 802c8280 0 rfc_send_rls 	bte.a rfc_ts_frames.o
 802c8330 0000011c 802c8330 0 rfc_send_rpn 	bte.a rfc_ts_frames.o
-802c844c 00000168 802c844c 0 zz_802c844c_
+802c844c 000000a8 802c844c 0 rfc_send_test 	bte.a rfc_ts_frames.o
 802c84f4 000000c0 802c84f4 0 rfc_send_credit 	bte.a rfc_ts_frames.o
 802c85b4 00000574 802c85b4 0 rfc_parse_data 	bte.a rfc_ts_frames.o
 802c8b28 00000624 802c8b28 0 rfc_process_mx_message 	bte.a rfc_ts_frames.o
@@ -9368,7 +9378,7 @@
 802cb224 0000023c 802cb224 0 SDP_DeleteAttribute 	bte.a sdp_db.o
 802cb460 000000ec 802cb460 0 sdpu_build_uuid_seq 	bte.a sdp_discovery.o
 802cb54c 00000130 802cb54c 0 sdp_snd_service_search_req 	bte.a sdp_discovery.o
-802cb67c 00000174 802cb67c 0 zz_802cb67c_
+802cb67c 00000034 802cb67c 0 sdp_disc_connected 	bte.a sdp_discovery.o
 802cb6b0 00000140 802cb6b0 0 sdp_disc_server_rsp 	bte.a sdp_discovery.o
 802cb7f0 00000148 802cb7f0 0 process_service_search_rsp 	bte.a sdp_discovery.o
 802cb938 000002a8 802cb938 0 process_service_attr_rsp 	bte.a sdp_discovery.o
@@ -9397,14 +9407,8 @@
 802ce090 000001d0 802ce090 0 sdpu_build_attrib_seq 	bte.a sdp_utils.o
 802ce260 00000154 802ce260 0 sdpu_build_attrib_entry 	bte.a sdp_utils.o
 802ce3b4 0000013c 802ce3b4 0 sdpu_build_n_send_error 	bte.a sdp_utils.o
-802ce4f0 000000c0 802ce4f0 0 sdpu_extract_uid_seq 	bte.a sdp_utils.o
-802ce5b0 000000d4 802ce5b0 0 zz_802ce5b0_
-802ce684 0000018c 802ce684 0 zz_802ce684_
-802ce810 00000030 802ce810 0 zz_802ce810_
-802ce840 000000a8 802ce840 0 sdpu_extract_attr_seq 	bte.a sdp_utils.o
-802ce8e8 000000dc 802ce8e8 0 zz_802ce8e8_
-802ce9c4 0000009c 802ce9c4 0 zz_802ce9c4_
-802cea60 00000030 802cea60 0 zz_802cea60_
+802ce4f0 00000350 802ce4f0 0 sdpu_extract_uid_seq 	bte.a sdp_utils.o
+802ce840 00000250 802ce840 0 sdpu_extract_attr_seq 	bte.a sdp_utils.o
 802cea90 000000d0 802cea90 0 sdpu_get_len_from_type 	bte.a sdp_utils.o
 802ceb60 000000e0 802ceb60 0 sdpu_is_base_uuid 	bte.a sdp_utils.o
 802cec40 00000274 802cec40 0 sdpu_compare_uuid_arrays 	bte.a sdp_utils.o
@@ -9412,20 +9416,20 @@
 802cef44 00000050 802cef44 0 sdpu_sort_attr_list 	bte.a sdp_utils.o
 802cef94 00000028 802cef94 0 DBInit 	db.a db.o
 802cefbc 00000048 802cefbc 0 __DBExceptionDestinationAux 	db.a db.o
-802cf004 00000028 802cf004 0 zz_802cf004_
+802cf004 00000028 802cf004 0 __DBExceptionDestination 	db.a db.o
 802cf014 00000018 802cf014 0 __DBIsExceptionMarked 	db.a db.o
-802cf02c 00000050 802cf02c 0 ___blank(char *,...)
-802cf07c 00000010 802cf07c 0 __ARGetInterruptStatus
-802cf08c 00000010 802cf08c 0 __ARGetInterruptStatus
+802cf02c 00000050 802cf02c 0 DBPrintf 	db.a db.o
+802cf07c 00000010 802cf07c 0 DSPCheckMailToDSP 	dsp.a dsp.o
+802cf08c 00000010 802cf08c 0 DSPCheckMailFromDSP 	dsp.a dsp.o
 802cf09c 00000014 802cf09c 0 DSPReadMailFromDSP 	dsp.a dsp.o
-802cf0b0 00000014 802cf0b0 0 DSPSendMailToDSP
+802cf0b0 00000014 802cf0b0 0 DSPSendMailToDSP 	dsp.a dsp.o
 802cf0c4 000000c0 802cf0c4 0 DSPInit 	dsp.a dsp.o
-802cf184 00000008 802cf184 0 IPCGetBufferLo 	ipc.a ipcMain.o
-802cf18c 00000070 802cf18c 0 zz_802cf18c_
-802cf1fc 00000040 802cf1fc 0 zz_802cf1fc_
-802cf23c 000000bc 802cf23c 0 zz_802cf23c_
-802cf2f8 00000050 802cf2f8 0 ___blank(char *,...)
-802cf348 00000434 802cf348 0 zz_802cf348_
+802cf184 00000008 802cf184 0 DSPCheckInit 	dsp.a dsp.o
+802cf18c 00000070 802cf18c 0 DSPAddTask 	dsp.a dsp.o
+802cf1fc 00000040 802cf1fc 0 DSPCancelTask 	dsp.a dsp.o
+802cf23c 000000bc 802cf23c 0 DSPAssertTask 	dsp.a dsp.o
+802cf2f8 00000050 802cf2f8 0 __DSP_debug_printf 	dsp.a dsp_debug.o
+802cf348 00000434 802cf348 0 __DSPHandler 	dsp.a dsp_task.o
 802cf77c 000001a4 802cf77c 0 __DSP_exec_task 	dsp.a dsp_task.o
 802cf920 0000018c 802cf920 0 __DSP_boot_task 	dsp.a dsp_task.o
 802cfaac 0000009c 802cfaac 0 __DSP_insert_task 	dsp.a dsp_task.o
@@ -9434,63 +9438,65 @@
 802cfc0c 00000308 802cfc0c 0 DVDConvertPathToEntrynum 	dvd.a dvdfs.o
 802cff14 00000068 802cff14 0 DVDFastOpen 	dvd.a dvdfs.o
 802cff7c 000002ac 802cff7c 0 DVDOpen 	dvd.a dvdfs.o
-802d0228 00000024 802d0228 0 LexicalCast<PCc,f>(float &)
+802d0228 00000024 802d0228 0 DVDClose 	dvd.a dvdfs.o
 802d024c 000001c0 802d024c 0 entryToPath 	dvd.a dvdfs.o
 802d040c 000000d0 802d040c 0 DVDReadAsyncPrio 	dvd.a dvdfs.o
 802d04dc 00000018 802d04dc 0 cbForReadAsync 	dvd.a dvdfs.o
 802d04f4 00000128 802d04f4 0 DVDReadPrio 	dvd.a dvdfs.o
-802d061c 000000bc 802d061c 0 zz_802d061c_
+802d061c 00000008 802d061c 0 cbForReadSync 	dvd.a dvdfs.o
 802d0624 000000b4 802d0624 0 StampCommand 	dvd.a dvd.o
-802d06d8 00000004 802d06d8 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-802d06dc 00000154 802d06dc 0 zz_802d06dc_
+802d06d8 00000004 802d06d8 0 defaultOptionalCommandChecker 	dvd.a dvd.o
+802d06dc 00000154 802d06dc 0 DVDInit 	dvd.a dvd.o
 802d0830 00000178 802d0830 0 stateReadingFST 	dvd.a dvd.o
 802d09a8 00000184 802d09a8 0 cbForStateReadingFST 	dvd.a dvd.o
-802d0b2c 00000114 802d0b2c 0 zz_802d0b2c_
-802d0c40 00000050 802d0c40 0 zz_802d0c40_
+802d0b2c 00000004 802d0b2c 0 FatalAlarmHandler 	dvd.a dvd.o
+802d0b30 00000110 802d0b30 0 cbForStateError 	dvd.a dvd.o
+802d0c40 00000014 802d0c40 0 cbForStoreErrorCode1 	dvd.a dvd.o
+802D0C54 0000003c 802D0C54 0 cbForStoreErrorCode2 	dvd.a dvd.o
 802d0c90 000000f4 802d0c90 0 CategorizeError 	dvd.a dvd.o
 802d0d84 000000c4 802d0d84 0 cbForStoreErrorCode3 	dvd.a dvd.o
 802d0e48 00000504 802d0e48 0 cbForStateGettingError 	dvd.a dvd.o
 802d134c 000001e0 802d134c 0 cbForUnrecoveredError 	dvd.a dvd.o
 802d152c 000000d4 802d152c 0 cbForUnrecoveredErrorRetry 	dvd.a dvd.o
-802d1600 00000240 802d1600 0 zz_802d1600_
+802d1600 00000240 802d1600 0 cbForStateGoToRetry 	dvd.a dvd.o
 802d1840 00000338 802d1840 0 stateCheckID 	dvd.a dvd.o
 802d1b78 000001a0 802d1b78 0 cbForStateReadingTOC 	dvd.a dvd.o
-802d1d18 00000478 802d1d18 0 zz_802d1d18_
+802d1d18 00000478 802d1d18 0 cbForStateReadingPartitionInfo 	dvd.a dvd.o
 802d2190 00000188 802d2190 0 cbForStateOpenPartition 	dvd.a dvd.o
 802d2318 00000164 802d2318 0 cbForStateOpenPartition2 	dvd.a dvd.o
 802d247c 000001c8 802d247c 0 cbForStateCheckID1 	dvd.a dvd.o
 802d2644 00000194 802d2644 0 cbForStateCheckID2 	dvd.a dvd.o
 802d27d8 000000c4 802d27d8 0 stateCoverClosed 	dvd.a dvd.o
-802d289c 00000250 802d289c 0 zz_802d289c_
+802d289c 00000250 802d289c 0 ResetAlarmHandler 	dvd.a dvd.o
 802d2aec 000000e4 802d2aec 0 cbForStateReset 	dvd.a dvd.o
 802d2bd0 000000c8 802d2bd0 0 stateDownRotation 	dvd.a dvd.o
-802d2c98 00000240 802d2c98 0 zz_802d2c98_
-802d2ed8 00000178 802d2ed8 0 zz_802d2ed8_
+802d2c98 00000240 802d2c98 0 cbForStateDownRotation 	dvd.a dvd.o
+802d2ed8 00000178 802d2ed8 0 stateCoverClosed_CMD 	dvd.a dvd.o
 802d3050 000000d8 802d3050 0 cbForStateCoverClosed 	dvd.a dvd.o
 802d3128 00000188 802d3128 0 cbForPrepareCoverRegister 	dvd.a dvd.o
 802d32b0 00000024 802d32b0 0 CoverAlarmHandler 	dvd.a dvd.o
-802d32d4 00000328 802d32d4 0 zz_802d32d4_
-802d35fc 000005b0 802d35fc 0 zz_802d35fc_
-802d3bac 000009e0 802d3bac 0 zz_802d3bac_
+802d32d4 00000328 802d32d4 0 stateReady 	dvd.a dvd.o
+802d35fc 000005b0 802d35fc 0 stateBusy 	dvd.a dvd.o
+802d3bac 000009e0 802d3bac 0 cbForStateBusy 	dvd.a dvd.o
 802d458c 000000e4 802d458c 0 DVDReadAbsAsyncPrio 	dvd.a dvd.o
 802d4670 000000d8 802d4670 0 DVDInquiryAsync 	dvd.a dvd.o
 802d4748 000000c8 802d4748 0 DVDGetCommandBlockStatus 	dvd.a dvd.o
 802d4810 0000009c 802d4810 0 DVDGetDriveStatus 	dvd.a dvd.o
 802d48ac 00000010 802d48ac 0 DVDSetAutoInvalidation 	dvd.a dvd.o
 802d48bc 00000050 802d48bc 0 DVDResume 	dvd.a dvd.o
-802d490c 00000364 802d490c 0 zz_802d490c_
-802d4c70 000000dc 802d4c70 0 zz_802d4c70_
-802d4d4c 00000010 802d4d4c 0 zz_802d4d4c_
+802d490c 00000364 802d490c 0 DVDCancelAsync 	dvd.a dvd.o
+802d4c70 000000dc 802d4c70 0 DVDCancel 	dvd.a dvd.o
+802d4d4c 00000010 802d4d4c 0 cbForCancelSync 	dvd.a dvd.o
 802d4d54 00000008 802d4d54 0 DVDGetCurrentDiskID 	dvd.a dvd.o
-802d4d5c 00000008 802d4d5c 0 IPCSetBufferLo 	ipc.a ipcMain.o
+802d4d5c 00000008 802d4d5c 0 __BS2DVDLowCallback 	dvd.a dvd.o
 802d4d64 000000c8 802d4d64 0 __DVDGetCoverStatus 	dvd.a dvd.o
-802d4e2c 00000044 802d4e2c 0 zz_802d4e2c_
+802d4e2c 00000044 802d4e2c 0 __DVDResetWithNoSpinup 	dvd.a dvd.o
 802d4e70 0000011c 802d4e70 0 __DVDPrepareResetAsync 	dvd.a dvd.o
-802d4f8c 0000000c 802d4f8c 0 FEAudio::ResetRandomVoiceToggleSFX(void)
+802d4f8c 0000000c 802d4f8c 0 Callback 	dvd.a dvd.o
 802d4f98 00000134 802d4f98 0 __DVDPrepareReset 	dvd.a dvd.o
 802d50cc 00000020 802d50cc 0 __DVDTestAlarm 	dvd.a dvd.o
-802d50ec 00000008 802d50ec 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-802d50f4 00000004 802d50f4 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802d50ec 00000008 802d50ec 0 __DVDStopMotorAsync 	dvd.a dvd.o
+802d50f4 00000004 802d50f4 0 __DVDRestartMotor 	dvd.a dvd.o
 802d50f8 00000038 802d50f8 0 __DVDClearWaitingQueue 	dvd.a dvdqueue.o
 802d5130 00000068 802d5130 0 __DVDPushWaitingQueue 	dvd.a dvdqueue.o
 802d5198 000000a0 802d5198 0 __DVDPopWaitingQueue 	dvd.a dvdqueue.o
@@ -9499,35 +9505,35 @@
 802d52f0 00000060 802d52f0 0 __DVDDequeueWaitingQueue 	dvd.a dvdqueue.o
 802d5350 0000002c 802d5350 0 cbForNandClose 	dvd.a dvderror.o
 802d537c 0000005c 802d537c 0 cbForNandWrite 	dvd.a dvderror.o
-802d53d8 000000fc 802d53d8 0 zz_802d53d8_
-802d54d4 00000154 802d54d4 0 zz_802d54d4_
-802d5628 000000bc 802d5628 0 zz_802d5628_
-802d56e4 000000e8 802d56e4 0 zz_802d56e4_
-802d57cc 000000a0 802d57cc 0 zz_802d57cc_
-802d586c 00000100 802d586c 0 zz_802d586c_
-802d596c 0000011c 802d596c 0 zz_802d596c_
-802d5a88 000000a8 802d5a88 0 zz_802d5a88_
-802d5b30 00000094 802d5b30 0 cbForNandCreateDir 	dvd.a dvderror.o
-802d5bc4 00000090 802d5bc4 0 zz_802d5bc4_
-802d5c54 00000078 802d5c54 0 zz_802d5c54_
-802d5ccc 00000068 802d5ccc 0 zz_802d5ccc_
+802d53d8 000000fc 802d53d8 0 cbForNandSeek 	dvd.a dvderror.o
+802d54d4 00000154 802d54d4 0 cbForNandWrite0 	dvd.a dvderror.o
+802d5628 000000bc 802d5628 0 cbForNandSeek2 	dvd.a dvderror.o
+802d56e4 000000e8 802d56e4 0 cbForNandRead 	dvd.a dvderror.o
+802d57cc 000000a0 802d57cc 0 cbForNandSeek0 	dvd.a dvderror.o
+802d586c 00000100 802d586c 0 cbForNandSeek1 	dvd.a dvderror.o
+802d596c 0000011c 802d596c 0 cbForNandOpen 	dvd.a dvderror.o
+802d5a88 000000a8 802d5a88 0 cbForNandCreate 	dvd.a dvderror.o
+802d5b30 00000094 802d5b30 0 cbForNandCreateDir 	dvd.a dvderror.oderror.o
+802d5bc4 00000090 802d5bc4 0 cbForPrepareControlRegister 	dvd.a dvderror.o
+802d5c54 00000078 802d5c54 0 cbForPrepareStatusRegister 	dvd.a dvderror.o
+802d5ccc 00000068 802d5ccc 0 __DVDStoreErrorCode 	dvd.a dvderror.o
 802d5d34 000000f0 802d5d34 0 DVDCompareDiskID 	dvd.a dvdidutils.o
-802d5e24 000000f4 802d5e24 0 zz_802d5e24_
+802d5e24 000000f4 802d5e24 0 __DVDShowFatalMessage 	dvd.a dvdFatal.o
 802d5f18 0000005c 802d5f18 0 DVDSetAutoFatalMessaging 	dvd.a dvdFatal.o
-802d5f74 00000014 802d5f74 0 PlatAudio::IsEntireSampleFileInMem(void)
-802d5f88 00000018 802d5f88 0 GDOverflowed 	gd.a GDBase.o
-802d5fa0 00000010 802d5fa0 0 zz_802d5fa0_
-802d5fb0 00000288 802d5fb0 0 zz_802d5fb0_
+802d5f74 00000014 802d5f74 0 __DVDGetAutoFatalMessaging 	dvd.a dvdFatal.o
+802d5f88 00000018 802d5f88 0 __DVDPrintFatalMessage 	dvd.a dvdFatal.o
+802d5fa0 00000010 802d5fa0 0 lowCallback 	dvd.a dvdDeviceError.o
+802d5fb0 00000288 802d5fb0 0 __DVDCheckDevice 	dvd.a dvdDeviceError.o
 802d6238 000000b8 802d6238 0 doTransactionCallback 	dvd.a dvd_broadway.o
 802d62f0 000000bc 802d62f0 0 doPrepareCoverRegisterCallback 	dvd.a dvd_broadway.o
-802d63ac 00000050 802d63ac 0 zz_802d63ac_
+802d63ac 00000050 802d63ac 0 DVDLowFinalize 	dvd.a dvd_broadway.o
 802d63fc 00000264 802d63fc 0 DVDLowInit 	dvd.a dvd_broadway.o
 802d6660 00000188 802d6660 0 DVDLowReadDiskID 	dvd.a dvd_broadway.o
 802d67e8 00000268 802d67e8 0 DVDLowOpenPartition 	dvd.a dvd_broadway.o
-802d6a50 00000264 802d6a50 0 zz_802d6a50_
-802d6cb4 0000020c 802d6cb4 0 zz_802d6cb4_
-802d6ec0 00000298 802d6ec0 0 zz_802d6ec0_
-802d7158 00000164 802d7158 0 DVDLowClearCoverInterrupt 	dvd.a dvd_broadway.o
+802d6a50 00000264 802d6a50 0 DVDLowOpenPartitionWithTmdAndTicketView 	dvd.a dvd_broadway.o
+802d6cb4 0000020c 802d6cb4 0 DVDLowGetNoDiscBufferSizes 	dvd.a dvd_broadway.o
+802d6ec0 00000298 802d6ec0 0 DVDLowGetNoDiscOpenPartitionParams 	dvd.a dvd_broadway.o
+802d7158 00000164 802d7158 0 DVDLowClosePartition 	dvd.a dvd_broadway.o
 802d72bc 00000194 802d72bc 0 DVDLowUnencryptedRead 	dvd.a dvd_broadway.o
 802d7450 00000194 802d7450 0 DVDLowAudioBufferConfig 	dvd.a dvd_broadway.o
 802d75e4 00000168 802d75e4 0 DVDLowInquiry 	dvd.a dvd_broadway.o
@@ -9760,7 +9766,7 @@
 802e38fc 000000cc 802e38fc 0 GXSetIndTexOrder 	gx.a GXBump.o
 802e39c8 00000020 802e39c8 0 GXSetNumIndStages 	gx.a GXBump.o
 802e39e8 00000048 802e39e8 0 GXSetTevDirect 	gx.a GXBump.o
-802e3a30 00000004 802e3a30 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802e3a30 00000004 802e3a30 0 __GXUpdateBPMask 	gx.a GXBump.o
 802e3a34 00000030 802e3a34 0 GXSetZCompLoc 	gx.a GXPixel.o
 802e3a64 00000024 802e3a64 0 __GXFlushTextureState 	gx.a GXBump.o
 802e3a88 00000094 802e3a88 0 GXSetTevOp 	gx.a GXTev.o
@@ -9825,15 +9831,15 @@
 802e5b88 000000b0 802e5b88 0 homebutton::GroupAnmController::do_calc(void) 	homebuttonLib.a HBMAnmController.o
 802e5c38 000001c4 802e5c38 0 zz_802e5c38_
 802e5dfc 00000208 802e5dfc 0 homebutton::gui::Component::update(int, float, float, unsigned long, unsigned long, unsigned long, void *) 	homebuttonLib.a HBM
-802e6004 00000008 802e6004 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
+802e6004 00000008 802e6004 0 zz_802e6004_
 802e600c 0000000c 802e600c 0 J3DTevBlockPatched::getTevKColorSel(unsigned long) 	J3DGraphBase.a J3DMatBlock.o
-802e6018 00000004 802e6018 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802e6018 00000004 802e6018 0 zz_802e6018_
 802e601c 00000020 802e601c 0 nw4hbm::lyt::Layout::Animate(unsigned long) 	homebuttonLib.a lyt_layout.o
-802e603c 00000004 802e603c 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-802e6040 00000008 802e6040 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802e603c 00000004 802e603c 0 zz_802e603c_
+802e6040 00000008 802e6040 0 zz_802e6040_
 802e6048 0000000c 802e6048 0 J3DTevBlockPatched::setTevKColorSel(unsigned long, unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-802e6054 00000004 802e6054 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-802e6058 00000004 802e6058 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802e6054 00000004 802e6054 0 zz_802e6054_
+802e6058 00000004 802e6058 0 zz_802e6058_
 802e605c 000000bc 802e605c 0 homebutton::gui::Manager::~Manager(void) 	homebuttonLib.a HBMGUIManager.o
 802e6118 00000068 802e6118 0 homebutton::gui::Manager::draw(void) 	homebuttonLib.a HBMGUIManager.o
 802e6180 0000002c 802e6180 0 homebutton::gui::Component::init(void) 	homebuttonLib.a HBMGUIManager.o
@@ -9845,9 +9851,9 @@
 802e64e8 00000008 802e64e8 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
 802e64f0 00000030 802e64f0 0 homebutton::gui::Component::onTrig(unsigned long, Vec &) 	homebuttonLib.a HBMGUIManager.o
 802e6520 00000068 802e6520 0 homebutton::gui::Manager::draw(void) 	homebuttonLib.a HBMGUIManager.o
-802e6588 00000004 802e6588 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802e6588 00000004 802e6588 0 zz_802e6588_
 802e658c 00000068 802e658c 0 homebutton::gui::Manager::draw(void) 	homebuttonLib.a HBMGUIManager.o
-802e65f4 00000004 802e65f4 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802e65f4 00000004 802e65f4 0 zz_802e65f4_
 802e65f8 00000078 802e65f8 0 homebutton::gui::Manager::setAllComponentTriggerTarget(bool) 	homebuttonLib.a HBMGUIManager.o
 802e6670 00000008 802e6670 0 J3DColorBlockLightOff::setColorChanNum(unsigned char) 	J3DGraphBase.a J3DMatBlock.o
 802e6678 00000154 802e6678 0 homebutton::gui::PaneManager::~PaneManager(void) 	homebuttonLib.a HBMGUIManager.o
@@ -9860,21 +9866,21 @@
 802e6c60 00000078 802e6c60 0 homebutton::gui::PaneManager::getPaneComponentByPane(nw4hbm::lyt::Pane *) 	homebuttonLib.a HBMGUIManager.o
 802e6cd8 000000d0 802e6cd8 0 zz_802e6cd8_
 802e6da8 0000012c 802e6da8 0 zz_802e6da8_
-802e6ed4 00000008 802e6ed4 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802e6ed4 00000008 802e6ed4 0 zz_802e6ed4_
 802e6edc 000001a0 802e6edc 0 zz_802e6edc_
 802e707c 00000100 802e707c 0 homebutton::gui::is_visible(nw4hbm::lyt::Pane *) 	homebuttonLib.a HBMGUIManager.o
 802e717c 0000000c 802e717c 0 GXGetTexObjMipMap 	gx.a GXTexture.o
-802e7188 00000008 802e7188 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802e7188 00000008 802e7188 0 zz_802e7188_
 802e7190 000000d4 802e7190 0 homebutton::gui::PaneComponent::isVisible(void) 	homebuttonLib.a HBMGUIManager.o
-802e7264 00000004 802e7264 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-802e7268 00000004 802e7268 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-802e726c 00000008 802e726c 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
+802e7264 00000004 802e7264 0 zz_802e7264_
+802e7268 00000004 802e7268 0 zz_802e7268_
+802e726c 00000008 802e726c 0 zz_802e726c_
 802e7274 00000008 802e7274 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802e727c 00000004 802e727c 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-802e7280 00000008 802e7280 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802e727c 00000004 802e727c 0 zz_802e727c_
+802e7280 00000008 802e7280 0 zz_802e7280_
 802e7288 0000002c 802e7288 0 homebutton::gui::Manager::setEventHandler(homebutton::gui::EventHandler *) 	homebuttonLib.a HBMGUIManager.o
 802e72b4 00000008 802e72b4 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802e72bc 00000008 802e72bc 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
+802e72bc 00000008 802e72bc 0 zz_802e72bc_
 802e72c4 00000008 802e72c4 0 GXInitTexObjUserData 	gx.a GXTexture.o
 802e72cc 00000114 802e72cc 0 zz_802e72cc_
 802e73e0 00000110 802e73e0 0 homebutton::Controller::wpadExtensionCallback(long, long) 	homebuttonLib.a HBMController.o
@@ -9886,14 +9892,14 @@
 802e78b4 00000014 802e78b4 0 GKI_init_timer_list 	bte.a gki_time.o
 802e78c8 0000001c 802e78c8 0 zz_802e78c8_
 802e78e4 00000014 802e78e4 0 homebutton::Controller::isPlayReady(void) const 	homebuttonLib.a HBMController.o
-802e78f4 00000004 802e78f4 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802e78f4 00000004 802e78f4 0 zz_802e78f4_
 802e78f8 00000008 802e78f8 0 nw4hbm::ut::TextWriterBase<w>::SetCharSpace(float) 	homebuttonLib.a ut_TextWriterBase.o
 802e7900 0000009c 802e7900 0 zz_802e7900_
 802e799c 00000060 802e799c 0 homebutton::Controller::isPlayingSoundId(int) const 	homebuttonLib.a HBMController.o
 802e79fc 00000010 802e79fc 0 cGameSFX::Init(void)
 802e7a0c 00000238 802e7a0c 0 zz_802e7a0c_
 802e7c44 00000014 802e7c44 0 homebutton::Controller::isPlayReady(void) const 	homebuttonLib.a HBMController.o
-802e7c54 00000004 802e7c54 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802e7c54 00000004 802e7c54 0 zz_802e7c54_
 802e7c58 00000064 802e7c58 0 zz_802e7c58_
 802e7cbc 00000030 802e7cbc 0 homebutton::Controller::stopMotor(void) 	homebuttonLib.a HBMController.o
 802e7cec 00000084 802e7cec 0 homebutton::Controller::getInfoAsync(WPADInfo *) 	homebuttonLib.a HBMController.o
@@ -9920,7 +9926,7 @@
 802e88c4 00000258 802e88c4 0 zz_802e88c4_
 802e8b1c 00000144 802e8b1c 0 zz_802e8b1c_
 802e8c60 000001f4 802e8c60 0 zz_802e8c60_
-802e8e54 00000004 802e8e54 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802e8e54 00000004 802e8e54 0 zz_802e8e54_
 802e8e58 000001e0 802e8e58 0 zz_802e8e58_
 802e9038 00000120 802e9038 0 zz_802e9038_
 802e9158 0000014c 802e9158 0 zz_802e9158_
@@ -10053,13 +10059,13 @@
 802f7b4c 00000050 802f7b4c 0 nw4hbm::lyt::Pane::AppendChild(nw4hbm::lyt::Pane *) 	homebuttonLib.a lyt_pane.o
 802f7b9c 000000d0 802f7b9c 0 zz_802f7b9c_
 802f7c6c 0000000c 802f7c6c 0 cAIPad::__ct(void)
-802f7c78 00000004 802f7c78 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802f7c78 00000004 802f7c78 0 zz_802f7c78_
 802f7c7c 00000014 802f7c7c 0 nw4hbm::lyt::Pane::GetColorElement(unsigned long) const 	homebuttonLib.a lyt_pane.o
 802f7c90 00000014 802f7c90 0 J2DPane::setAnimationVC(J2DAnmVtxColor *) 	J2DGraph.a J2DPane.o
 802f7ca4 00000014 802f7ca4 0 nw4hbm::lyt::Pane::SetColorElement(unsigned long, unsigned char) 	homebuttonLib.a lyt_pane.o
 802f7cb8 00000014 802f7cb8 0 J2DPane::setAnimationVC(J2DAnmVtxColor *) 	J2DGraph.a J2DPane.o
-802f7ccc 00000008 802f7ccc 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-802f7cd4 00000004 802f7cd4 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+802f7ccc 00000008 802f7ccc 0 zz_802f7ccc_
+802f7cd4 00000004 802f7cd4 0 zz_802f7cd4_
 802f7cd8 000000ac 802f7cd8 0 nw4hbm::lyt::Pane::FindPaneByName(char const *, bool) 	homebuttonLib.a lyt_pane.o
 802f7d84 000000b8 802f7d84 0 nw4hbm::lyt::Pane::FindMaterialByName(char const *, bool) 	homebuttonLib.a lyt_pane.o
 802f7e3c 00000300 802f7e3c 0 zz_802f7e3c_
@@ -10075,7 +10081,7 @@
 802f858c 000000b8 802f858c 0 nw4hbm::lyt::Pane::SetAnimationEnable(nw4hbm::lyt::AnimTransform *, bool, bool) 	homebuttonLib.a lyt_pane.o
 802f8644 00000108 802f8644 0 zz_802f8644_
 802f874c 00000100 802f874c 0 zz_802f874c_
-802f884c 00000008 802f884c 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802f884c 00000008 802f884c 0 zz_802f884c_
 802f8854 00000010 802f8854 0 zz_802f8854_
 802f8864 00000128 802f8864 0 zz_802f8864_
 802f898c 000000d0 802f898c 0 zz_802f898c_
@@ -10214,16 +10220,16 @@
 802ff83c 00000160 802ff83c 0 zz_802ff83c_
 802ff99c 00000238 802ff99c 0 zz_802ff99c_
 802ffbd4 0000008c 802ffbd4 0 zz_802ffbd4_
-802ffc60 00000008 802ffc60 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802ffc60 00000008 802ffc60 0 zz_802ffc60_
 802ffc68 0000005c 802ffc68 0 zz_802ffc68_
 802ffcc4 00000058 802ffcc4 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
 802ffd1c 0000008c 802ffd1c 0 zz_802ffd1c_
 802ffda8 00000008 802ffda8 0 nw4hbm::ut::TextWriterBase<w>::SetCharSpace(float) 	homebuttonLib.a ut_TextWriterBase.o
 802ffdb0 00000008 802ffdb0 0 nw4hbm::ut::TextWriterBase<w>::SetCharSpace(float) 	homebuttonLib.a ut_TextWriterBase.o
 802ffdb8 00000008 802ffdb8 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-802ffdc0 00000008 802ffdc0 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802ffdc0 00000008 802ffdc0 0 zz_802ffdc0_
 802ffdc8 00000008 802ffdc8 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802ffdd0 00000008 802ffdd0 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+802ffdd0 00000008 802ffdd0 0 zz_802ffdd0_
 802ffdd8 0000021c 802ffdd8 0 nw4hbm::ut::TextWriterBase<w>::Print(wchar_t const *, int) 	homebuttonLib.a ut_TextWriterBase.o
 802ffff4 00000238 802ffff4 0 nw4hbm::ut::TextWriterBase<w>::Print(wchar_t const *) 	homebuttonLib.a ut_TextWriterBase.o
 8030022c 000003dc 8030022c 0 zz_8030022c_
@@ -10283,7 +10289,7 @@
 80304c14 00000090 80304c14 0 zz_80304c14_
 80304ca4 00000098 80304ca4 0 zz_80304ca4_
 80304d3c 00000138 80304d3c 0 zz_80304d3c_
-80304e74 00000008 80304e74 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
+80304e74 00000008 80304e74 0 zz_80304e74_
 80304e7c 00000054 80304e7c 0 zz_80304e7c_
 80304e84 0000004c 80304e84 0 IPCInit 	ipc.a ipcMain.o
 80304ed0 00000048 80304ed0 0 IPCReInit 	ipc.a ipcMain.o
@@ -10693,7 +10699,7 @@
 8031bab0 00000110 8031bab0 0 __OSClearRTCFlags 	os.a OSRtc.o
 8031bbc0 0000001c 8031bbc0 0 SystemCallVector 	os.a OSSync.o
 8031bbe0 00000060 8031bbe0 0 __OSInitSystemCall 	os.a OSSync.o
-8031bc40 00000004 8031bc40 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+8031bc40 00000004 8031bc40 0 DefaultSwitchThreadCallback 	os.a OSThread.o
 8031bc44 00000284 8031bc44 0 __OSThreadInit 	os.a OSThread.o
 8031bec8 00000010 8031bec8 0 OSInitThreadQueue 	os.a OSThread.o
 8031bed8 0000000c 8031bed8 0 OSGetCurrentThread 	os.a OSThread.o
@@ -11148,7 +11154,7 @@
 80337d7c 00000128 80337d7c 0 VFipdm_init_diskmanager 	vf.a pdm_dskmng.o
 80337ea4 00000190 80337ea4 0 VFiPFVOL_InitModule 	vf.a pf_volume.o
 80338034 000001bc 80338034 0 VFiPFCODE_CP932_OEM2Unicode 	vf.a pf_cp932.o
-80338034 00000268 803381f0 0 VFiPFCODE_CP932_Unicode2OEM 	vf.a pf_cp932.o
+803381f0 00000268 803381f0 0 VFiPFCODE_CP932_Unicode2OEM 	vf.a pf_cp932.o
 80338458 00000034 80338458 0 VFiPFCODE_CP932_OEMCharWidth 	vf.a pf_cp932.o
 8033848C 0000007c 8033848C 0 VFiPFCODE_CP932_isOEMMBchar 	vf.a pf_cp932.o
 80338508 00000008 80338508 0 VFiPFCODE_CP932_UnicodeCharWidth 	vf.a pf_cp932.o
