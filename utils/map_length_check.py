@@ -17,6 +17,6 @@ for count, line in enumerate(lines):
             previousAddr = int(previous[0], 16)
             diff = addr - previousAddr
             if (diff < previousLength):
-                print('Function: {}'.format(previous[4]))
+                print('Function: {} ({:02X})'.format(previous[4].strip(), previousAddr))
                 print('  Expected: {:02X} Actual: {:02X}'.format(previousLength, diff))
         previous = parts
