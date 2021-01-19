@@ -7890,169 +7890,170 @@
 802625dc 0000000c 802625dc 0 gpiRemoveProfile 	gs.a gpiProfile.o
 80262674 00000088 80262674 0 gpiFindProfileByUser 	gs.a gpiProfile.o
 802626fc 00000020 802626fc 0 gpiProfileMapCallback 	gs.a gpiProfile.o
-8026271c 00000048 8026271c 0 gpiFindBuddy 	gs.a gpiProfile.o
-80262764 00000058 80262764 0 zz_80262764_
-802627bc 0000005c 802627bc 0 zz_802627bc_
-80262818 00000054 80262818 0 zz_80262818_
-8026286c 00000078 8026286c 0 zz_8026286c_
-802628e4 00000068 802628e4 0 zz_802628e4_
-8026294c 00000208 8026294c 0 zz_8026294c_
-80262b54 000001d0 80262b54 0 zz_80262b54_
-80262d24 000000ec 80262d24 0 zz_80262d24_
-80262e10 00000290 80262e10 0 zz_80262e10_
-802630a0 00000100 802630a0 0 gpiFindPlayers
-802631a0 00001e20 802631a0 0 zz_802631a0_
-80264fc0 00000150 80264fc0 0 zz_80264fc0_
-80265110 000000e8 80265110 0 zz_80265110_
-802651f8 0000012c 802651f8 0 zz_802651f8_
-80265324 0000012c 80265324 0 zz_80265324_
-80265450 00000044 80265450 0 zz_80265450_
-80265494 000000f8 80265494 0 zz_80265494_
-8026558c 000000dc 8026558c 0 zz_8026558c_
-80265668 000000ac 80265668 0 zz_80265668_
-80265714 000000ec 80265714 0 zz_80265714_
-80265800 000001e4 80265800 0 zz_80265800_
-802659e4 00000050 802659e4 0 zz_802659e4_
-80265a34 0000003c 80265a34 0 Error
-80265a70 000000a0 80265a70 0 zz_80265a70_
-80265b10 00000110 80265b10 0 zz_80265b10_
-80265c20 000001f0 80265c20 0 zz_80265c20_
-80265e10 000000c4 80265e10 0 zz_80265e10_
-80265ed4 00000058 80265ed4 0 zz_80265ed4_
-80265f2c 00000010 80265f2c 0 zz_80265f2c_
-80265f3c 00000018 80265f3c 0 zz_80265f3c_
-80265f54 0000002c 80265f54 0 zz_80265f54_
-80265f80 0000008c 80265f80 0 zz_80265f80_
-8026600c 0000006c 8026600c 0 zz_8026600c_
-80266078 00000094 80266078 0 zz_80266078_
-8026610c 000000e8 8026610c 0 zz_8026610c_
-802661f4 000000dc 802661f4 0 zz_802661f4_
-802662d0 000000d8 802662d0 0 zz_802662d0_
-802663a8 000000bc 802663a8 0 zz_802663a8_
-80266464 000000bc 80266464 0 zz_80266464_
-80266520 00000108 80266520 0 zz_80266520_
-80266628 00000108 80266628 0 zz_80266628_
-80266730 000000fc 80266730 0 zz_80266730_
-8026682c 000000cc 8026682c 0 zz_8026682c_
-802668f8 00000054 802668f8 0 zz_802668f8_
-8026694c 00000054 8026694c 0 zz_8026694c_
-802669a0 000000d4 802669a0 0 zz_802669a0_
-80266a74 000000a4 80266a74 0 zz_80266a74_
-80266b18 00000068 80266b18 0 zz_80266b18_
-80266b80 0000005c 80266b80 0 zz_80266b80_
-80266bdc 000000fc 80266bdc 0 zz_80266bdc_
-80266cd8 0000014c 80266cd8 0 zz_80266cd8_
-80266e24 000000a8 80266e24 0 zz_80266e24_
-80266ecc 0000005c 80266ecc 0 zz_80266ecc_
-80266f28 000000a4 80266f28 0 zz_80266f28_
-80266fcc 00000008 80266fcc 0 zz_80266fcc_
-80266fd4 00000044 80266fd4 0 zz_80266fd4_
-80267018 0000004c 80267018 0 zz_80267018_
-80267064 00000004 80267064 0 zz_80267064_
-80267068 00000004 80267068 0 zz_80267068_
-8026706c 00000004 8026706c 0 zz_8026706c_
-80267070 000001a8 80267070 0 zz_80267070_
-80267218 000000fc 80267218 0 zz_80267218_
-80267314 00000014 80267314 0 zz_80267314_
-80267328 00000014 80267328 0 zz_80267328_
-8026733c 00000034 8026733c 0 zz_8026733c_
-80267370 00000008 80267370 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-80267378 00000008 80267378 0 J3DShapeMtxMulti::getUseMtxNum(void) const 	J3DGraphBase.a J3DShapeMtx.o
-80267380 00000008 80267380 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-80267388 00000008 80267388 0 J3DShapeMtxMulti::getUseMtxNum(void) const 	J3DGraphBase.a J3DShapeMtx.o
-80267390 00000010 80267390 0 zz_80267390_
-802673a0 00000008 802673a0 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-802673a8 00000010 802673a8 0 zz_802673a8_
-802673b8 00000008 802673b8 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-802673c0 00000008 802673c0 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802673c8 00000008 802673c8 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802673d0 00000008 802673d0 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-802673d8 00000130 802673d8 0 zz_802673d8_
-80267508 00000334 80267508 0 zz_80267508_
-8026783c 00000308 8026783c 0 zz_8026783c_
-80267b44 000007bc 80267b44 0 zz_80267b44_
-80268300 00000014 80268300 0 zz_80268300_
-80268314 000001ac 80268314 0 zz_80268314_
-802684c0 00000450 802684c0 0 zz_802684c0_
-80268910 000001e8 80268910 0 zz_80268910_
-80268af8 000002c8 80268af8 0 zz_80268af8_
-80268dc0 0000048c 80268dc0 0 zz_80268dc0_
-8026924c 00000218 8026924c 0 zz_8026924c_
-80269464 00000130 80269464 0 zz_80269464_
-80269594 00000234 80269594 0 zz_80269594_
-802697c8 00000394 802697c8 0 zz_802697c8_
-80269b5c 000000e4 80269b5c 0 zz_80269b5c_
-80269c40 000000c8 80269c40 0 zz_80269c40_
-80269d08 000000f4 80269d08 0 zz_80269d08_
-80269dfc 000000c8 80269dfc 0 zz_80269dfc_
-80269ec4 000000c8 80269ec4 0 zz_80269ec4_
-80269f8c 0000012c 80269f8c 0 zz_80269f8c_
-8026a0b8 000000c4 8026a0b8 0 zz_8026a0b8_
-8026a17c 000000f4 8026a17c 0 zz_8026a17c_
-8026a270 000000b8 8026a270 0 zz_8026a270_
-8026a328 000000bc 8026a328 0 zz_8026a328_
-8026a3e4 000000f0 8026a3e4 0 zz_8026a3e4_
-8026a4d4 00000020 8026a4d4 0 zz_8026a4d4_
-8026a4f4 00000034 8026a4f4 0 zz_8026a4f4_
-8026a528 00000008 8026a528 0 zz_8026a528_
-8026a530 0000004c 8026a530 0 zz_8026a530_
-8026a57c 00000238 8026a57c 0 zz_8026a57c_
-8026a7b4 00000064 8026a7b4 0 zz_8026a7b4_
-8026a818 00000008 8026a818 0 GXInitTexObjUserData 	gx.a GXTexture.o
-8026a820 00000274 8026a820 0 zz_8026a820_
-8026aa94 000000cc 8026aa94 0 zz_8026aa94_
-8026ab60 0000021c 8026ab60 0 zz_8026ab60_
-8026ad7c 0000011c 8026ad7c 0 zz_8026ad7c_
-8026ae98 0000004c 8026ae98 0 zz_8026ae98_
-8026aee4 000000f0 8026aee4 0 zz_8026aee4_
-8026afd4 00000090 8026afd4 0 zz_8026afd4_
-8026b064 000000e4 8026b064 0 zz_8026b064_
-8026b148 000001a4 8026b148 0 zz_8026b148_
-8026b2ec 00000064 8026b2ec 0 zz_8026b2ec_
-8026b350 00000270 8026b350 0 zz_8026b350_
-8026b5c0 00000014 8026b5c0 0 zz_8026b5c0_
-8026b5d4 00000014 8026b5d4 0 zz_8026b5d4_
-8026b5e8 00000014 8026b5e8 0 zz_8026b5e8_
-8026b5fc 00000118 8026b5fc 0 zz_8026b5fc_
-8026b714 000000bc 8026b714 0 zz_8026b714_
-8026b7d0 00000114 8026b7d0 0 zz_8026b7d0_
-8026b8e4 00000074 8026b8e4 0 zz_8026b8e4_
-8026b958 000000a0 8026b958 0 zz_8026b958_
-8026b9f8 00000040 8026b9f8 0 zz_8026b9f8_
-8026ba38 000000a0 8026ba38 0 zz_8026ba38_
-8026bad8 00000098 8026bad8 0 zz_8026bad8_
-8026bb70 000000e4 8026bb70 0 zz_8026bb70_
-8026bc54 00000198 8026bc54 0 zz_8026bc54_
-8026bdec 000003ec 8026bdec 0 zz_8026bdec_
-8026c1d8 00000314 8026c1d8 0 zz_8026c1d8_
-8026c4ec 00000348 8026c4ec 0 zz_8026c4ec_
-8026c834 000001c0 8026c834 0 zz_8026c834_
-8026c9f4 00000144 8026c9f4 0 zz_8026c9f4_
-8026cb38 0000028c 8026cb38 0 zz_8026cb38_
-8026cdc4 00000698 8026cdc4 0 zz_8026cdc4_
-8026d45c 00000074 8026d45c 0 zz_8026d45c_
-8026d4d0 00000740 8026d4d0 0 zz_8026d4d0_
-8026dc10 00000068 8026dc10 0 zz_8026dc10_
-8026dc78 00000028 8026dc78 0 zz_8026dc78_
-8026dca0 00000080 8026dca0 0 zz_8026dca0_
-8026dd20 000000fc 8026dd20 0 zz_8026dd20_
-8026de1c 00000078 8026de1c 0 zz_8026de1c_
-8026de94 00000060 8026de94 0 zz_8026de94_
-8026def4 00000170 8026def4 0 zz_8026def4_
-8026e064 000001d8 8026e064 0 zz_8026e064_
-8026e23c 000000a8 8026e23c 0 zz_8026e23c_
-8026e2e4 00000138 8026e2e4 0 zz_8026e2e4_
-8026e41c 0000004c 8026e41c 0 zz_8026e41c_
-8026e468 00000024 8026e468 0 zz_8026e468_
-8026e48c 00000124 8026e48c 0 zz_8026e48c_
-8026e5b0 00000088 8026e5b0 0 zz_8026e5b0_
-8026e638 00000038 8026e638 0 zz_8026e638_
-8026e670 00000060 8026e670 0 zz_8026e670_
-8026e6d0 00000004 8026e6d0 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-8026e6d4 00000004 8026e6d4 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-8026e6d8 00000004 8026e6d8 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-8026e6dc 00000004 8026e6dc 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-8026e6e0 00000150 8026e6e0 0 zz_8026e6e0_
+8026271c 00000048 8026271c 0 gpiProfileMap 	gs.a gpiProfile.o
+80262764 00000058 80262764 0 gpiCheckForBuddy 	gs.a gpiProfile.o
+802627bc 0000005c 802627bc 0 gpiFindBuddy 	gs.a gpiProfile.o
+80262818 00000054 80262818 0 gpiRemoveBuddyStatus 	gs.a gpiProfile.o
+8026286c 00000078 8026286c 0 gpiRemoveBuddyStatusInfo 	gs.a gpiProfile.o
+802628e4 00000068 802628e4 0 gpiCanFreeProfile 	gs.a gpiProfile.o
+8026294c 00000208 8026294c 0 gpiProcessRecvBlockedList 	gs.a gpiProfile.o
+80262b54 000001d0 80262b54 0 gpiStartProfileSearch 	gs.a gpiSearch.o
+80262d24 000000ec 80262d24 0 gpiInitSearchData 	gs.a gpiSearch.o
+80262e10 00000290 80262e10 0 gpiProfileSearch 	gs.a gpiSearch.o
+802630a0 00000100 802630a0 0 gpiFindPlayers 	gs.a gpiSearch.o
+802631a0 00001e20 802631a0 0 gpiProcessSearch 	gs.a gpiSearch.o
+80264fc0 00000150 80264fc0 0 gpiProcessSearches 	gs.a gpiSearch.o
+80265110 000000e8 80265110 0 gpiHandleTransferMessage 	gs.a gpiTransfer.o
+802651f8 0000012c 802651f8 0 gpiProcessRegisterUniqueNick 	gs.a gpiUnique.o
+80265324 0000012c 80265324 0 gpiProcessRegisterCdKey 	gs.a gpiUnique.o
+80265450 00000044 80265450 0 strzcpy 	gs.a gpiUtility.o
+80265494 000000f8 80265494 0 gpiCheckForError 	gs.a gpiUtility.o
+8026558c 000000dc 8026558c 0 gpiValueForKeyWithIndex 	gs.a gpiUtility.o
+80265668 000000ac 80265668 0 gpiValueForKey 	gs.a gpiUtility.o
+80265714 000000ec 80265714 0 gpiCheckSocketConnect 	gs.a gpiUtility.o
+80265800 000001e4 80265800 0 gpiReadKeyAndValue 	gs.a gpiUtility.o
+802659e4 00000050 802659e4 0 gpiSetError 	gs.a gpiUtility.o
+80265a34 0000003c 80265a34 0 gpiSetErrorString 	gs.a gpiUtility.o
+80265a70 000000a0 80265a70 0 gpiEncodeString 	gs.a gpiUtility.o
+80265b10 00000110 80265b10 0 gti2GetChallenge 	gs.a gt2Auth.o
+80265c20 000001f0 80265c20 0 gti2GetResponse 	gs.a gt2Auth.o
+80265e10 000000c4 80265e10 0 gti2CheckResponse 	gs.a gt2Auth.o
+80265ed4 00000058 80265ed4 0 gti2AllocateBuffer 	gs.a gt2Buffer.o
+80265f2c 00000010 80265f2c 0 gti2GetBufferFreeSpace 	gs.a gt2Buffer.o
+80265f3c 00000018 80265f3c 0 gti2BufferWriteByte 	gs.a gt2Buffer.o
+80265f54 0000002c 80265f54 0 gti2BufferWriteUShort 	gs.a gt2Buffer.o
+80265f80 0000008c 80265f80 0 gti2BufferWriteData 	gs.a gt2Buffer.o
+8026600c 0000006c 8026600c 0 gti2BufferShorten 	gs.a gt2Buffer.o
+80266078 00000094 80266078 0 gti2SocketErrorCallback 	gs.a gt2Callback.o
+8026610c 000000e8 8026610c 0 gti2ConnectAttemptCallback 	gs.a gt2Callback.o
+802661f4 000000dc 802661f4 0 gti2ConnectedCallback 	gs.a gt2Callback.o
+802662d0 000000d8 802662d0 0 gti2ReceivedCallback 	gs.a gt2Callback.o
+802663a8 000000bc 802663a8 0 gti2ClosedCallback 	gs.a gt2Callback.o
+80266464 000000bc 80266464 0 gti2PingCallback 	gs.a gt2Callback.o
+80266520 00000108 80266520 0 gti2SendFilterCallback 	gs.a gt2Callback.o
+80266628 00000108 80266628 0 gti2ReceiveFilterCallback 	gs.a gt2Callback.o
+80266730 000000fc 80266730 0 gti2DumpCallback 	gs.a gt2Callback.o
+8026682c 000000cc 8026682c 0 gti2UnrecognizedMessageCallback 	gs.a gt2Callback.o
+802668f8 00000054 802668f8 0 gti2NewOutgoingConnection 	gs.a gt2Connection.o
+8026694c 00000054 8026694c 0 gti2NewIncomingConnection 	gs.a gt2Connection.o
+802669a0 000000d4 802669a0 0 gti2StartConnectionAttempt 	gs.a gt2Connection.o
+80266a74 000000a4 80266a74 0 gti2AcceptConnection 	gs.a gt2Connection.o
+80266b18 00000068 80266b18 0 gti2RejectConnection 	gs.a gt2Connection.o
+80266b80 0000005c 80266b80 0 gti2ConnectionSendData 	gs.a gt2Connection.o
+80266bdc 000000fc 80266bdc 0 gti2CheckTimeout 	gs.a gt2Connection.o
+80266cd8 0000014c 80266cd8 0 gti2ConnectionThink 	gs.a gt2Connection.o
+80266e24 000000a8 80266e24 0 gti2CloseConnection 	gs.a gt2Connection.o
+80266ecc 0000005c 80266ecc 0 gti2ConnectionClosed 	gs.a gt2Connection.o
+80266f28 000000a4 80266f28 0 gti2ConnectionCleanup 	gs.a gt2Connection.o
+80266fcc 00000008 80266fcc 0 gt2CreateSocket 	gs.a gt2Main.o
+80266fd4 00000044 80266fd4 0 gt2CloseSocket 	gs.a gt2Main.o
+80267018 0000004c 80267018 0 gt2Think 	gs.a gt2Main.o
+80267064 00000004 80267064 0 gt2Listen 	gs.a gt2Main.o
+80267068 00000004 80267068 0 gt2Accept 	gs.a gt2Main.o
+8026706c 00000004 8026706c 0 gt2Reject 	gs.a gt2Main.o
+80267070 000001a8 80267070 0 gt2Connect 	gs.a gt2Main.o
+80267218 000000fc 80267218 0 gt2Send 	gs.a gt2Main.o
+80267314 00000008 80267314 0 gt2CloseConnectionHard 	gs.a gt2Main.o
+80267314 0000000c 8026731c 0 gti2CloseAllConnectionsHardMap 	gs.a gt2Main.o
+80267328 00000014 80267328 0 gt2CloseAllConnectionsHard 	gs.a gt2Main.o
+8026733c 00000034 8026733c 0 gt2GetConnectionState 	gs.a gt2Main.o
+80267370 00000008 80267370 0 gt2GetRemoteIP 	gs.a gt2Main.o
+80267378 00000008 80267378 0 gt2GetRemotePort 	gs.a gt2Main.o
+80267380 00000008 80267380 0 gt2GetLocalIP 	gs.a gt2Main.o
+80267388 00000008 80267388 0 gt2GetLocalPort 	gs.a gt2Main.o
+80267390 00000010 80267390 0 gt2GetIncomingBufferFreeSpace 	gs.a gt2Main.o
+802673a0 00000008 802673a0 0 gt2GetOutgoingBufferSize 	gs.a gt2Main.o
+802673a8 00000010 802673a8 0 gt2GetOutgoingBufferFreeSpace 	gs.a gt2Main.o
+802673b8 00000008 802673b8 0 gt2GetSocketSOCKET 	gs.a gt2Main.o
+802673c0 00000008 802673c0 0 gt2SetUnrecognizedMessage 	gs.a gt2Main.o
+802673c8 00000008 802673c8 0 gt2SetConnectionData 	gs.a gt2Main.o
+802673d0 00000008 802673d0 0 gt2GetConnectionData 	gs.a gt2Main.o
+802673d8 00000130 802673d8 0 gti2HandleESN 	gs.a gt2Message.o
+80267508 00000334 80267508 0 gti2HandleServerChallenge 	gs.a gt2Message.o
+8026783c 00000308 8026783c 0 gti2HandleClientResponse 	gs.a gt2Message.o
+80267b44 000007bc 80267b44 0 gti2DeliverReliableMessage 	gs.a gt2Message.o
+80268300 00000014 80268300 0 gti2IncomingBufferMessageCompare 	gs.a gt2Message.o
+80268314 000001ac 80268314 0 gti2BufferIncomingMessage 	gs.a gt2Message.o
+802684c0 00000450 802684c0 0 gti2HandleReliableMessage 	gs.a gt2Message.o
+80268910 000001e8 80268910 0 gti2HandleNack 	gs.a gt2Message.o
+80268af8 000002c8 80268af8 0 gti2HandleUnreliableMessage 	gs.a gt2Message.o
+80268dc0 0000048c 80268dc0 0 gti2HandleMessage 	gs.a gt2Message.o
+8026924c 00000218 8026924c 0 gti2HandleConnectionReset 	gs.a gt2Message.o
+80269464 00000130 80269464 0 gti2HandleHostUnreachable 	gs.a gt2Message.o
+80269594 00000234 80269594 0 gti2ReceiveMessages 	gs.a gt2Message.o
+802697c8 00000394 802697c8 0 gti2BeginReliableMessage 	gs.a gt2Message.o
+80269b5c 000000e4 80269b5c 0 gti2SendClientChallenge 	gs.a gt2Message.o
+80269c40 000000c8 80269c40 0 gti2SendAccept 	gs.a gt2Message.o
+80269d08 000000f4 80269d08 0 gti2SendReject 	gs.a gt2Message.o
+80269dfc 000000c8 80269dfc 0 gti2SendClose 	gs.a gt2Message.o
+80269ec4 000000c8 80269ec4 0 gti2SendKeepAlive 	gs.a gt2Message.o
+80269f8c 0000012c 80269f8c 0 gti2SendAppUnreliable 	gs.a gt2Message.o
+8026a0b8 000000c4 8026a0b8 0 gti2SendAck 	gs.a gt2Message.o
+8026a17c 000000f4 8026a17c 0 gti2SendNack 	gs.a gt2Message.o
+8026a270 000000b8 8026a270 0 gti2SendClosed 	gs.a gt2Message.o
+8026a328 000000bc 8026a328 0 gti2ResendMessage 	gs.a gt2Message.o
+8026a3e4 000000f0 8026a3e4 0 gti2Send 	gs.a gt2Message.o
+8026a4d4 00000020 8026a4d4 0 gti2ConnectionHash 	gs.a gt2Socket.o
+8026a4f4 00000034 8026a4f4 0 gti2ConnectionCompare 	gs.a gt2Socket.o
+8026a528 00000008 8026a528 0 gti2ConnectionFree 	gs.a gt2Socket.o
+8026a530 0000004c 8026a530 0 gti2SocketFindConnection 	gs.a gt2Socket.o
+8026a57c 00000238 8026a57c 0 gti2CreateSocket 	gs.a gt2Socket.o
+8026a7b4 00000064 8026a7b4 0 gti2CloseSocket 	gs.a gt2Socket.o
+8026a818 00000008 8026a818 0 gti2Listen 	gs.a gt2Socket.o
+8026a820 00000274 8026a820 0 gti2NewSocketConnection 	gs.a gt2Socket.o
+8026aa94 000000cc 8026aa94 0 gti2FreeSocketConnection 	gs.a gt2Socket.o
+8026ab60 0000021c 8026ab60 0 gti2SocketSend 	gs.a gt2Socket.o
+8026ad7c 0000011c 8026ad7c 0 gti2SocketConnectionsThinkMap 	gs.a gt2Socket.o
+8026ae98 0000004c 8026ae98 0 gti2SocketConnectionsThink 	gs.a gt2Socket.o
+8026aee4 000000f0 8026aee4 0 gti2FreeClosedConnections 	gs.a gt2Socket.o
+8026afd4 00000090 8026afd4 0 gti2SocketError 	gs.a gt2Socket.o
+8026b064 000000e4 8026b064 0 gt2AddressToString 	gs.a gt2Utility.o
+8026b148 000001a4 8026b148 0 gt2StringToAddress 	gs.a gt2Utility.o
+8026b2ec 00000064 8026b2ec 0 gti2MessageCheck 	gs.a gt2Utility.o
+8026b350 00000270 8026b350 0 qr2_init_socketA 	gs.a qr2.o
+8026b5c0 00000014 8026b5c0 0 qr2_register_natneg_callback 	gs.a qr2.o
+8026b5d4 00000014 8026b5d4 0 qr2_register_clientmessage_callback 	gs.a qr2.o
+8026b5e8 00000014 8026b5e8 0 qr2_register_publicaddress_callback 	gs.a qr2.o
+8026b5fc 00000118 8026b5fc 0 qr2_think 	gs.a qr2.o
+8026b714 000000bc 8026b714 0 qr2_check_queries 	gs.a qr2.o
+8026b7d0 00000114 8026b7d0 0 qr2_check_send_heartbeat 	gs.a qr2.o
+8026b8e4 00000074 8026b8e4 0 qr2_send_statechanged 	gs.a qr2.o
+8026b958 000000a0 8026b958 0 qr2_shutdown 	gs.a qr2.o
+8026b9f8 00000040 8026b9f8 0 qr2_keybuffer_add 	gs.a qr2.o
+8026ba38 000000a0 8026ba38 0 qr2_buffer_add_int 	gs.a qr2.o
+8026bad8 00000098 8026bad8 0 qr2_buffer_addA 	gs.a qr2.o
+8026bb70 000000e4 8026bb70 0 get_sockaddrin 	gs.a qr2.o
+8026bc54 00000198 8026bc54 0 gs_encode 	gs.a qr2.o
+8026bdec 000003ec 8026bdec 0 gs_encrypt 	gs.a qr2.o
+8026c1d8 00000314 8026c1d8 0 qr_build_partial_query_reply 	gs.a qr2.o
+8026c4ec 00000348 8026c4ec 0 qr_build_split_query_reply 	gs.a qr2.o
+8026c834 000001c0 8026c834 0 qr_process_query 	gs.a qr2.o
+8026c9f4 00000144 8026c9f4 0 qr_process_client_message 	gs.a qr2.o
+8026cb38 0000028c 8026cb38 0 qr2_process_ip_verify 	gs.a qr2.o
+8026cdc4 00000698 8026cdc4 0 qr2_parse_queryA 	gs.a qr2.o
+8026d45c 00000074 8026d45c 0 send_keepalive 	gs.a qr2.o
+8026d4d0 00000740 8026d4d0 0 send_heartbeat 	gs.a qr2.o
+8026dc10 00000068 8026dc10 0 qr2_internal_is_master_only_key 	gs.a qr2regkeys.o
+8026dc78 00000028 8026dc78 0 qr2_register_keyA 	gs.a qr2regkeys.o
+8026dca0 00000080 8026dca0 0 ghiResizeBuffer 	gs.a ghttpBuffer.o
+8026dd20 000000fc 8026dd20 0 ghiInitBuffer 	gs.a ghttpBuffer.o
+8026de1c 00000078 8026de1c 0 ghiInitFixedBuffer 	gs.a ghttpBuffer.o
+8026de94 00000060 8026de94 0 ghiFreeBuffer 	gs.a ghttpBuffer.o
+8026def4 00000170 8026def4 0 ghiAppendDataToBuffer 	gs.a ghttpBuffer.o
+8026e064 000001d8 8026e064 0 ghiEncryptDataToBuffer 	gs.a ghttpBuffer.o
+8026e23c 000000a8 8026e23c 0 ghiAppendHeaderToBuffer 	gs.a ghttpBuffer.o
+8026e2e4 00000138 8026e2e4 0 ghiAppendCharToBuffer 	gs.a ghttpBuffer.o
+8026e41c 0000004c 8026e41c 0 ghiAppendIntToBuffer 	gs.a ghttpBuffer.o
+8026e468 00000024 8026e468 0 ghiResetBuffer 	gs.a ghttpBuffer.o
+8026e48c 00000124 8026e48c 0 ghiSendBufferedData 	gs.a ghttpBuffer.o
+8026e5b0 00000088 8026e5b0 0 ghiCallCompletedCallback 	gs.a ghttpCallbacks.o
+8026e638 00000038 8026e638 0 ghiCallProgressCallback 	gs.a ghttpCallbacks.o
+8026e670 00000060 8026e670 0 ghiCallPostCallback 	gs.a ghttpCallbacks.o
+8026e6d0 00000004 8026e6d0 0 ghiCreateLock 	gs.a ghttpCommon.o
+8026e6d4 00000004 8026e6d4 0 ghiFreeLock 	gs.a ghttpCommon.o
+8026e6d8 00000004 8026e6d8 0 ghiLock 	gs.a ghttpCommon.o
+8026e6dc 00000004 8026e6dc 0 ghiUnlock 	gs.a ghttpCommon.o
+8026e6e0 00000150 8026e6e0 0 ghiDecryptReceivedData 	gs.a ghttpCommon.o
 8026e830 000001bc 8026e830 0 zz_8026e830_
 8026e9ec 00000144 8026e9ec 0 zz_8026e9ec_
 8026eb30 0000013c 8026eb30 0 zz_8026eb30_
@@ -8078,22 +8079,22 @@
 8026faec 00000218 8026faec 0 zz_8026faec_
 8026fd04 0000000c 8026fd04 0 zz_8026fd04_
 8026fd10 00000090 8026fd10 0 zz_8026fd10_
-8026fda0 00000038 8026fda0 0 zz_8026fda0_
-8026fdd8 00000008 8026fdd8 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-8026fde0 00000038 8026fde0 0 JAUAudioArcLoader::newDynamicSeqBlock(unsigned long) 	JAudio2.a JAUAudioArcLoader.o
-8026fe18 0000005c 8026fe18 0 zz_8026fe18_
-8026fe74 000000c4 8026fe74 0 zz_8026fe74_
-8026ff38 00000380 8026ff38 0 zz_8026ff38_
-802702b8 000000bc 802702b8 0 zz_802702b8_
-80270374 000001cc 80270374 0 zz_80270374_
-80270540 000000dc 80270540 0 zz_80270540_
-8027061c 000001ac 8027061c 0 zz_8027061c_
-802707c8 000001a0 802707c8 0 zz_802707c8_
-80270968 00000140 80270968 0 zz_80270968_
-80270aa8 0000021c 80270aa8 0 zz_80270aa8_
-80270cc4 0000061c 80270cc4 0 zz_80270cc4_
-802712e0 0000024c 802712e0 0 zz_802712e0_
-8027152c 000001ac 8027152c 0 zz_8027152c_
+8026fda0 00000038 8026fda0 0 ghttpSetMaxRecvTime 	gs.a ghttpMain.o
+8026fdd8 00000008 8026fdd8 0 ghiIsPostAutoFree 	gs.a ghttpPost.o
+8026fde0 00000038 8026fde0 0 ghiFreePost 	gs.a ghttpPost.o
+8026fe18 0000005c 8026fe18 0 ghiPostGetContentType 	gs.a ghttpPost.o
+8026fe74 000000c4 8026fe74 0 ghiPostGetNoFilesContentLength 	gs.a ghttpPost.o
+8026ff38 00000380 8026ff38 0 ghiPostGetHasFilesContentLength 	gs.a ghttpPost.o
+802702b8 000000bc 802702b8 0 ghiPostStateInit 	gs.a ghttpPost.o
+80270374 000001cc 80270374 0 ghiPostInitState 	gs.a ghttpPost.o
+80270540 000000dc 80270540 0 ghiPostCleanupState 	gs.a ghttpPost.o
+8027061c 000001ac 8027061c 0 ghiPostStringStateDoPosting 	gs.a ghttpPost.o
+802707c8 000001a0 802707c8 0 ghiPostXmlStateDoPosting 	gs.a ghttpPost.o
+80270968 00000140 80270968 0 ghiPostFileDiskStateDoPosting 	gs.a ghttpPost.o
+80270aa8 0000021c 80270aa8 0 ghiPostFileMemoryStateDoPosting 	gs.a ghttpPost.o
+80270cc4 0000061c 80270cc4 0 ghiPostStateDoPosting 	gs.a ghttpPost.o
+802712e0 0000024c 802712e0 0 ghiPostDoPosting 	gs.a ghttpPost.o
+8027152c 000001ac 8027152c 0 ghiParseURL 	gs.a ghttpProcess.o
 802716d8 00000104 802716d8 0 zz_802716d8_
 802717dc 00000104 802717dc 0 zz_802717dc_
 802718e0 000000a0 802718e0 0 zz_802718e0_
@@ -8166,113 +8167,114 @@
 8027b7ec 000002ac 8027b7ec 0 zz_8027b7ec_
 8027ba98 000000e0 8027ba98 0 zz_8027ba98_
 8027bb78 00000074 8027bb78 0 zz_8027bb78_
-8027bbec 00000280 8027bbec 0 zz_8027bbec_
-8027be6c 000000a0 8027be6c 0 zz_8027be6c_
-8027bf0c 00000008 8027bf0c 0 GXInitTexObjUserData 	gx.a GXTexture.o
-8027bf14 00000020 8027bf14 0 zz_8027bf14_
-8027bf34 00000054 8027bf34 0 zz_8027bf34_
-8027bf88 0000005c 8027bf88 0 zz_8027bf88_
-8027bfe4 000000a0 8027bfe4 0 zz_8027bfe4_
-8027c084 000001f0 8027c084 0 zz_8027c084_
-8027c274 000001fc 8027c274 0 zz_8027c274_
-8027c470 0000017c 8027c470 0 zz_8027c470_
-8027c5ec 00000020 8027c5ec 0 zz_8027c5ec_
-8027c60c 00000050 8027c60c 0 zz_8027c60c_
-8027c65c 00000074 8027c65c 0 zz_8027c65c_
-8027c6d0 00000014 8027c6d0 0 zz_8027c6d0_
-8027c6e4 00000058 8027c6e4 0 zz_8027c6e4_
-8027c73c 00000044 8027c73c 0 zz_8027c73c_
-8027c780 00000040 8027c780 0 zz_8027c780_
-8027c7c0 0000005c 8027c7c0 0 zz_8027c7c0_
-8027c81c 00000070 8027c81c 0 zz_8027c81c_
-8027c88c 00000078 8027c88c 0 zz_8027c88c_
-8027c904 00000134 8027c904 0 zz_8027c904_
-8027ca38 0000008c 8027ca38 0 zz_8027ca38_
-8027cac4 0000002c 8027cac4 0 zz_8027cac4_
-8027caf0 00000008 8027caf0 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-8027caf8 00000008 8027caf8 0 zz_8027caf8_
-8027cb00 00000008 8027cb00 0 J3DShapeMtxMulti::getUseMtxNum(void) const 	J3DGraphBase.a J3DShapeMtx.o
-8027cb08 0000000c 8027cb08 0 GXGetTexObjMipMap 	gx.a GXTexture.o
-8027cb14 0000002c 8027cb14 0 zz_8027cb14_
-8027cb40 00000008 8027cb40 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-8027cb48 00000008 8027cb48 0 zz_8027cb48_
-8027cb50 00000008 8027cb50 0 GXInitTexObjUserData 	gx.a GXTexture.o
-8027cb58 00000008 8027cb58 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-8027cb60 000001cc 8027cb60 0 zz_8027cb60_
-8027cd2c 000001f4 8027cd2c 0 zz_8027cd2c_
-8027cf20 0000027c 8027cf20 0 zz_8027cf20_
-8027d19c 00000040 8027d19c 0 zz_8027d19c_
-8027d1dc 00000074 8027d1dc 0 zz_8027d1dc_
-8027d250 00000028 8027d250 0 zz_8027d250_
-8027d278 000000c8 8027d278 0 zz_8027d278_
-8027d340 00000008 8027d340 0 J3DColorBlockLightOff::setColorChanNum(unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-8027d348 0000000c 8027d348 0 zz_8027d348_
-8027d354 00000008 8027d354 0 GXInitTexObjUserData 	gx.a GXTexture.o
-8027d35c 00000008 8027d35c 0 J3DColorBlockLightOff::setColorChanNum(unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-8027d364 00000008 8027d364 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
-8027d36c 00000014 8027d36c 0 zz_8027d36c_
-8027d380 00000238 8027d380 0 zz_8027d380_
-8027d5b8 000000fc 8027d5b8 0 zz_8027d5b8_
-8027d6b4 000000e4 8027d6b4 0 zz_8027d6b4_
-8027d798 00000040 8027d798 0 zz_8027d798_
-8027d7d8 00000144 8027d7d8 0 zz_8027d7d8_
-8027d91c 0000000c 8027d91c 0 zz_8027d91c_
-8027d928 00000068 8027d928 0 zz_8027d928_
-8027d990 00000070 8027d990 0 zz_8027d990_
-8027da00 00000044 8027da00 0 zz_8027da00_
-8027da44 00000034 8027da44 0 zz_8027da44_
-8027da78 00000040 8027da78 0 zz_8027da78_
-8027dab8 00000044 8027dab8 0 zz_8027dab8_
-8027dafc 00000008 8027dafc 0 zz_8027dafc_
-8027db04 00000008 8027db04 0 zz_8027db04_
-8027db0c 00000080 8027db0c 0 zz_8027db0c_
-8027db8c 00000008 8027db8c 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-8027db94 00000190 8027db94 0 zz_8027db94_
-8027dd24 0000009c 8027dd24 0 zz_8027dd24_
-8027ddc0 000000d8 8027ddc0 0 zz_8027ddc0_
-8027de98 000000a4 8027de98 0 zz_8027de98_
-8027df3c 000000a4 8027df3c 0 zz_8027df3c_
-8027dfe0 0000016c 8027dfe0 0 zz_8027dfe0_
-8027e14c 00000088 8027e14c 0 zz_8027e14c_
-8027e1d4 00000098 8027e1d4 0 zz_8027e1d4_
-8027e26c 00000030 8027e26c 0 zz_8027e26c_
-8027e29c 000000dc 8027e29c 0 SBServerListClear
-8027e378 00000088 8027e378 0 SBRefStr
-8027e400 00000060 8027e400 0 SBReleaseStr
-8027e460 00000038 8027e460 0 NTSLengthSB
-8027e498 00000118 8027e498 0 SBServerListInit
-8027e5b0 0000018c 8027e5b0 0 ServerListConnect
-8027e73c 0000039c 8027e73c 0 SendWithRetry
-8027ead8 00000500 8027ead8 0 SBServerListConnectAndQuery
-8027efd8 0000016c 8027efd8 0 SBServerListDisconnect
-8027f144 00000230 8027f144 0 SBServerListCleanup
-8027f374 000000d8 8027f374 0 FullRulesPresent
-8027f44c 00000138 8027f44c 0 AllKeysPresent
-8027f584 000002d0 8027f584 0 ParseServer
-8027f854 000001bc 8027f854 0 IncomingListParseServer
-8027fa10 00000924 8027fa10 0 ProcessMainListData
-80280334 000001d8 80280334 0 ProcessPushKeyList
-8028050c 000001c4 8028050c 0 ProcessPlayerSearch
-802806d0 000001d0 802806d0 0 ProcessMaploop
-802808a0 000001b0 802808a0 0 ProcessPushServer
-80280a50 00000450 80280a50 0 ProcessAdHocData
-80280ea0 000002d8 80280ea0 0 ProcessIncomingData
-80281178 00000104 80281178 0 SBSendMessageToServer
-8028127c 000000a8 8028127c 0 SBSendNatNegotiateCookieToServer
-80281324 00000198 80281324 0 ProcessLanData
-802814bc 000000ac 802814bc 0 SBListThink
+8027bbec 00000280 8027bbec 0 QEStartQuery
+8027be6c 000000a0 8027be6c 0 SBQueryEngineInit 	gs.a sb_queryengine.o
+8027bf0c 00000008 8027bf0c 0 SBQueryEngineSetPublicIP 	gs.a sb_queryengine.o
+8027bf14 00000020 8027bf14 0 SBEngineHaltUpdates 	gs.a sb_queryengine.o
+8027bf34 00000054 8027bf34 0 SBEngineCleanup 	gs.a sb_queryengine.o
+8027bf88 0000005c 8027bf88 0 SBQueryEngineUpdateServer 	gs.a sb_queryengine.o
+8027bfe4 000000a0 8027bfe4 0 _SBQueryEngineUpdateServer 	gs.a sb_queryengine.o
+8027c084 000001f0 8027c084 0 ParseSingleQR2Reply 	gs.a sb_queryengine.o
+8027c274 000001fc 8027c274 0 ProcessIncomingReplies 	gs.a sb_queryengine.o
+8027c470 0000017c 8027c470 0 SBQueryEngineThink 	gs.a sb_queryengine.o
+8027c5ec 00000020 8027c5ec 0 SBQueryEngineAddQueryKey 	gs.a sb_queryengine.o
+8027c60c 00000050 8027c60c 0 SBQueryEngineRemoveServerFromFIFOs 	gs.a sb_queryengine.o
+8027c65c 00000074 8027c65c 0 RefStringHash 	gs.a sb_server.o
+8027c6d0 0000000c 8027c6d0 0 RefStringCompare 	gs.a sb_server.o
+8027c6d0 00000008 8027c6dc 0 RefStringFree 	gs.a sb_server.o
+8027c6e4 00000058 8027c6e4 0 SBRefStrHash 	gs.a sb_server.o
+8027c73c 00000044 8027c73c 0 SBRefStrHashCleanup 	gs.a sb_server.o
+8027c780 00000040 8027c780 0 SBServerFree 	gs.a sb_server.o
+8027c7c0 0000005c 8027c7c0 0 SBServerAddKeyValue 	gs.a sb_server.o
+8027c81c 00000070 8027c81c 0 SBServerAddIntKeyValue 	gs.a sb_server.o
+8027c88c 00000078 8027c88c 0 SBServerGetStringValueA 	gs.a sb_server.o
+8027c904 00000134 8027c904 0 SBServerGetIntValueA 	gs.a sb_server.o
+8027ca38 0000008c 8027ca38 0 SBServerGetFloatValueA 	gs.a sb_server.o
+8027cac4 0000002c 8027cac4 0 SBServerGetPublicAddress 	gs.a sb_server.o
+8027caf0 00000008 8027caf0 0 SBServerGetPublicInetAddress 	gs.a sb_server.o
+8027caf8 00000008 8027caf8 0 SBServerGetPublicQueryPort 	gs.a sb_server.o
+8027cb00 00000008 8027cb00 0 SBServerGetPublicQueryPortNBO 	gs.a sb_server.o
+8027cb08 0000000c 8027cb08 0 SBServerHasPrivateAddress 	gs.a sb_server.o
+8027cb14 0000002c 8027cb14 0 SBServerGetPrivateAddress 	gs.a sb_server.o
+8027cb40 00000008 8027cb40 0 SBServerGetPrivateInetAddress 	gs.a sb_server.o
+8027cb48 00000008 8027cb48 0 SBServerGetPrivateQueryPort 	gs.a sb_server.o
+8027cb50 00000008 8027cb50 0 SBServerSetNext 	gs.a sb_server.o
+8027cb58 00000008 8027cb58 0 SBServerGetNext 	gs.a sb_server.o
+8027cb60 000001cc 8027cb60 0 SBServerParseKeyVals 	gs.a sb_server.o
+8027cd2c 000001f4 8027cd2c 0 SBServerParseQR2FullKeysSingle 	gs.a sb_server.o
+8027cf20 0000027c 8027cf20 0 SBServerParseQR2FullKeysSplit 	gs.a sb_server.o
+8027d19c 00000040 8027d19c 0 KeyValFree 	gs.a sb_server.o
+8027d1dc 00000074 8027d1dc 0 KeyValHashKey 	gs.a sb_server.o
+8027d250 00000028 8027d250 0 KeyValCompareKey 	gs.a sb_server.o
+8027d278 000000c8 8027d278 0 SBAllocServer 	gs.a sb_server.o
+8027d340 00000008 8027d340 0 SBServerSetFlags 	gs.a sb_server.o
+8027d348 0000000c 8027d348 0 SBServerSetPrivateAddr 	gs.a sb_server.o
+8027d354 00000008 8027d354 0 SBServerSetICMPIP 	gs.a sb_server.o
+8027d35c 00000008 8027d35c 0 SBServerSetState 	gs.a sb_server.o
+8027d364 00000008 8027d364 0 SBServerGetState 	gs.a sb_server.o
+8027d36c 00000014 8027d36c 0 SBIsNullServer 	gs.a sb_server.o
+8027d380 00000238 8027d380 0 ListCallback 	gs.a sb_serverbrowsing.o
+8027d5b8 000000fc 8027d5b8 0 EngineCallback 	gs.a sb_serverbrowsing.o
+8027d6b4 000000e4 8027d6b4 0 ServerBrowserNewA 	gs.a sb_serverbrowsing.o
+8027d798 00000040 8027d798 0 ServerBrowserFree 	gs.a sb_serverbrowsing.o
+8027d7d8 00000144 8027d7d8 0 ServerBrowserBeginUpdate2 	gs.a sb_serverbrowsing.o
+8027d91c 0000000c 8027d91c 0 ServerBrowserLimitUpdateA 	gs.a sb_serverbrowsing.o
+8027d928 00000068 8027d928 0 ServerBrowserSendMessageToServerA 	gs.a sb_serverbrowsing.o
+8027d990 00000070 8027d990 0 ServerBrowserSendNatNegotiateCookieToServerA 	gs.a sb_serverbrowsing.o
+8027da00 00000044 8027da00 0 ServerBrowserRemoveServer 	gs.a sb_serverbrowsing.o
+8027da44 00000034 8027da44 0 ServerBrowserThink 	gs.a sb_serverbrowsing.o
+8027da78 00000040 8027da78 0 ServerBrowserClear 	gs.a sb_serverbrowsing.o
+8027dab8 00000044 8027dab8 0 ServerBrowserState 	gs.a sb_serverbrowsing.o
+8027dafc 00000008 8027dafc 0 ServerBrowserGetServer 	gs.a sb_serverbrowsing.o
+8027db04 00000008 8027db04 0 ServerBrowserCount 	gs.a sb_serverbrowsing.o
+8027db0c 00000080 8027db0c 0 ServerBrowserSortA 	gs.a sb_serverbrowsing.o
+8027db8c 00000008 8027db8c 0 ServerBrowserGetMyPublicIPAddr 	gs.a sb_serverbrowsing.o
+8027db94 00000190 8027db94 0 prevKeyCompare 	gs.a sb_serverlist.o
+8027dd24 0000009c 8027dd24 0 IntKeyCompare 	gs.a sb_serverlist.o
+8027ddc0 000000d8 8027ddc0 0 FloatKeyCompare 	gs.a sb_serverlist.o
+8027de98 000000a4 8027de98 0 StrCaseKeyCompare 	gs.a sb_serverlist.o
+8027df3c 000000a4 8027df3c 0 StrNoCaseKeyCompare 	gs.a sb_serverlist.o
+8027dfe0 0000016c 8027dfe0 0 SBServerListSort 	gs.a sb_serverlist.o
+8027e14c 00000088 8027e14c 0 SBServerListFindServer 	gs.a sb_serverlist.o
+8027e1d4 00000098 8027e1d4 0 SBServerListRemoveAt 	gs.a sb_serverlist.o
+8027e26c 00000030 8027e26c 0 SBServerListCount 	gs.a sb_serverlist.o
+8027e29c 000000dc 8027e29c 0 SBServerListClear 	gs.a sb_serverlist.o
+8027e378 00000088 8027e378 0 SBRefStr 	gs.a sb_serverlist.o
+8027e400 00000060 8027e400 0 SBReleaseStr 	gs.a sb_serverlist.o
+8027e460 00000038 8027e460 0 NTSLengthSB 	gs.a sb_serverlist.o
+8027e498 00000118 8027e498 0 SBServerListInit 	gs.a sb_serverlist.o
+8027e5b0 0000018c 8027e5b0 0 ServerListConnect 	gs.a sb_serverlist.o
+8027e73c 0000039c 8027e73c 0 SendWithRetry 	gs.a sb_serverlist.o
+8027ead8 00000500 8027ead8 0 SBServerListConnectAndQuery 	gs.a sb_serverlist.o
+8027efd8 0000016c 8027efd8 0 SBServerListDisconnect 	gs.a sb_serverlist.o
+8027f144 00000230 8027f144 0 SBServerListCleanup 	gs.a sb_serverlist.o
+8027f374 000000d8 8027f374 0 FullRulesPresent 	gs.a sb_serverlist.o
+8027f44c 00000138 8027f44c 0 AllKeysPresent 	gs.a sb_serverlist.o
+8027f584 000002d0 8027f584 0 ParseServer 	gs.a sb_serverlist.o
+8027f854 000001bc 8027f854 0 IncomingListParseServer 	gs.a sb_serverlist.o
+8027fa10 00000924 8027fa10 0 ProcessMainListData 	gs.a sb_serverlist.o
+80280334 000001d8 80280334 0 ProcessPushKeyList 	gs.a sb_serverlist.o
+8028050c 000001c4 8028050c 0 ProcessPlayerSearch 	gs.a sb_serverlist.o
+802806d0 000001d0 802806d0 0 ProcessMaploop 	gs.a sb_serverlist.o
+802808a0 000001b0 802808a0 0 ProcessPushServer 	gs.a sb_serverlist.o
+80280a50 00000450 80280a50 0 ProcessAdHocData 	gs.a sb_serverlist.o
+80280ea0 000002d8 80280ea0 0 ProcessIncomingData 	gs.a sb_serverlist.o
+80281178 00000104 80281178 0 SBSendMessageToServer 	gs.a sb_serverlist.o
+8028127c 000000a8 8028127c 0 SBSendNatNegotiateCookieToServer 	gs.a sb_serverlist.o
+80281324 00000198 80281324 0 ProcessLanData 	gs.a sb_serverlist.o
+802814bc 000000ac 802814bc 0 SBListThink 	gs.a sb_serverlist.o
 80281568 00000198 80281568 0 OnShutdown 	vi.a vi.o
 80281700 00000810 80281700 0 __VIRetraceHandler 	vi.a vi.o
 80281f10 00000044 80281f10 0 VISetPreRetraceCallback 	vi.a vi.o
 80281f54 00000044 80281f54 0 VISetPostRetraceCallback 	vi.a vi.o
 80281f98 00000118 80281f98 0 getTiming 	vi.a vi.o
 802820b0 00000210 802820b0 0 __VIInit 	vi.a vi.o
-802822c0 00000548 802822c0 0 zz_802822c0_
+802822c0 00000548 802822c0 0 VIInit 	vi.a vi.o
 80282808 00000054 80282808 0 VIWaitForRetrace 	vi.a vi.o
-8028285c 000002b8 8028285c 0 zz_8028285c_
-80282b14 000000e0 80282b14 0 zz_80282b14_
-80282bf4 00000194 80282bf4 0 zz_80282bf4_
-80282d88 000006e4 80282d88 0 zz_80282d88_
+8028285c 000002b8 8028285c 0 setFbbRegs 	vi.a vi.o
+80282b14 000000e0 80282b14 0 setHorizontalRegs 	vi.a vi.o
+80282bf4 00000194 80282bf4 0 setVerticalRegs 	vi.a vi.o
+80282d88 000006e4 80282d88 0 VIConfigure 	vi.a vi.o
 8028346c 00000354 8028346c 0 VIConfigurePan 	vi.a vi.o
 802837c0 00000114 802837c0 0 VIFlush 	vi.a vi.o
 802838d4 0000006c 802838d4 0 VISetNextFrameBuffer 	vi.a vi.o
@@ -8281,18 +8283,18 @@
 802839c0 0000009c 802839c0 0 VIGetNextField 	vi.a vi.o
 80283a5c 00000090 80283a5c 0 VIGetCurrentLine 	vi.a vi.o
 80283aec 00000060 80283aec 0 VIGetTvFormat 	vi.a vi.o
-80283b4c 00000060 80283b4c 0 zz_80283b4c_
+80283b4c 00000060 80283b4c 0 VIGetScanMode 	vi.a vi.o
 80283bac 0000003c 80283bac 0 VIGetDTVStatus 	vi.a vi.o
 80283be8 00000234 80283be8 0 __VIDisplayPositionToXY 	vi.a vi.o
-80283e1c 00000028 80283e1c 0 zz_80283e1c_
+80283e1c 00000028 80283e1c 0 VIGetDimmingCount 	vi.a vi.o
 80283e44 00000054 80283e44 0 VIEnableDimming 	vi.a vi.o
-80283e98 00000104 80283e98 0 zz_80283e98_
-80283f9c 00000014 80283f9c 0 zz_80283f9c_
-80283fb0 00000010 80283fb0 0 __VIResetSIIdle 	vi.a vi.o
+80283e98 00000104 80283e98 0 VISetTimeToDimming 	vi.a vi.o
+80283f9c 00000014 80283f9c 0 VIResetDimmingCount 	vi.a vi.o
+80283fb0 00000010 80283fb0 0 __VIResetRFIdle 	vi.a vi.o
 80283fc0 00000010 80283fc0 0 __VIResetSIIdle 	vi.a vi.o
-80283fd0 00000088 80283fd0 0 zz_80283fd0_
-80284058 00000348 80284058 0 zz_80284058_
-802843a0 00000534 802843a0 0 zz_802843a0_
+80283fd0 00000088 80283fd0 0 WaitMicroTime 	vi.a vi.o
+80284058 00000348 80284058 0 sendSlaveAddr 	vi.a vi.o
+802843a0 00000534 802843a0 0 __VISendI2CData 	vi.a vi.o
 802848d4 000000a4 802848d4 0 __VISetYUVSEL 	vi.a vi3in1.o
 80284978 00000040 80284978 0 __VISetFilter4EURGB60 	vi.a vi3in1.o
 802849b8 00000058 802849b8 0 __VISetCGMS 	vi.a vi3in1.o
@@ -8300,11 +8302,11 @@
 80284a74 0000006c 80284a74 0 __VISetClosedCaption 	vi.a vi3in1.o
 80284ae0 00000d88 80284ae0 0 __VISetMacrovision 	vi.a vi3in1.o
 80285868 00000194 80285868 0 __VISetGammaImm 	vi.a vi3in1.o
-802859fc 00000010 802859fc 0 zz_802859fc_
-80285a0c 00000018 80285a0c 0 zz_80285a0c_
+802859fc 00000010 802859fc 0 __VISetGamma1_0 	vi.a vi3in1.o
+80285a0c 00000018 80285a0c 0 __VISetGamma 	vi.a vi3in1.o
 80285a24 0000005c 80285a24 0 __VISetTrapFilter 	vi.a vi3in1.o
 80285a80 00000084 80285a80 0 __VISetRGBOverDrive 	vi.a vi3in1.o
-80285b04 00000010 80285b04 0 zz_80285b04_
+80285b04 00000010 80285b04 0 VISetRGBModeImm 	vi.a vi3in1.o
 80285b14 00000048 80285b14 0 __VISetRGBModeImm 	vi.a vi3in1.o
 80285b5c 00000434 80285b5c 0 zz_80285b5c_
 80285f90 000000d0 80285f90 0 zz_80285f90_
