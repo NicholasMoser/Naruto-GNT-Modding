@@ -7769,8 +7769,8 @@
 80257720 00000048 80257720 0 gsUdpEngineNoMoreMsgHandlers 	gs.a gsUdpEngine.o
 80257768 00000080 80257768 0 gsUdpEngineNoApp 	gs.a gsUdpEngine.o
 802577e8 00000088 802577e8 0 gsUdpEngineGetPeerOutBufferFreeSpace 	gs.a gsUdpEngine.o
-80257870 00000008 80257870 0 zz_80257870_
-80257878 00000008 80257878 0 zz_80257878_
+80257870 00000008 80257870 0 gsXmlWriterGetData 	gs.a gsXML.o
+80257878 00000008 80257878 0 gsXmlWriterGetDataLength 	gs.a gsXML.o
 80257880 0000002c 80257880 0 gpInitialize 	gs.a gp.o
 802578ac 00000020 802578ac 0 gpDestroy 	gs.a gp.o
 802578cc 0000003c 802578cc 0 gpProcess 	gs.a gp.o
@@ -8054,31 +8054,31 @@
 8026e6d8 00000004 8026e6d8 0 ghiLock 	gs.a ghttpCommon.o
 8026e6dc 00000004 8026e6dc 0 ghiUnlock 	gs.a ghttpCommon.o
 8026e6e0 00000150 8026e6e0 0 ghiDecryptReceivedData 	gs.a ghttpCommon.o
-8026e830 000001bc 8026e830 0 zz_8026e830_
-8026e9ec 00000144 8026e9ec 0 zz_8026e9ec_
-8026eb30 0000013c 8026eb30 0 zz_8026eb30_
-8026ec6c 0000010c 8026ec6c 0 zz_8026ec6c_
-8026ed78 000001c4 8026ed78 0 zz_8026ed78_
-8026ef3c 00000174 8026ef3c 0 zz_8026ef3c_
-8026f0b0 00000070 8026f0b0 0 zz_8026f0b0_
-8026f120 0000008c 8026f120 0 zz_8026f120_
-8026f1ac 00000144 8026f1ac 0 zz_8026f1ac_
-8026f2f0 000000c8 8026f2f0 0 zz_8026f2f0_
-8026f3b8 0000012c 8026f3b8 0 zz_8026f3b8_
-8026f4e4 000000e0 8026f4e4 0 zz_8026f4e4_
-8026f5c4 00000070 8026f5c4 0 zz_8026f5c4_
-8026f634 000000a0 8026f634 0 zz_8026f634_
-8026f6d4 00000080 8026f6d4 0 zz_8026f6d4_
-8026f754 00000080 8026f754 0 zz_8026f754_
-8026f7d4 00000008 8026f7d4 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-8026f7dc 00000008 8026f7dc 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-8026f7e4 000000c0 8026f7e4 0 zz_8026f7e4_
-8026f8a4 0000019c 8026f8a4 0 zz_8026f8a4_
-8026fa40 00000050 8026fa40 0 zz_8026fa40_
-8026fa90 0000005c 8026fa90 0 zz_8026fa90_
-8026faec 00000218 8026faec 0 zz_8026faec_
-8026fd04 0000000c 8026fd04 0 zz_8026fd04_
-8026fd10 00000090 8026fd10 0 zz_8026fd10_
+8026e830 000001bc 8026e830 0 ghiDoReceive 	gs.a ghttpCommon.o
+8026e9ec 00000144 8026e9ec 0 ghiDoSend 	gs.a ghttpCommon.o
+8026eb30 0000013c 8026eb30 0 ghiTrySendThenBuffer 	gs.a ghttpCommon.o
+8026ec6c 0000010c 8026ec6c 0 ghiFindFreeSlot 	gs.a ghttpConnection.o
+8026ed78 000001c4 8026ed78 0 ghiNewConnection 	gs.a ghttpConnection.o
+8026ef3c 00000174 8026ef3c 0 ghiFreeConnection 	gs.a ghttpConnection.o
+8026f0b0 00000070 8026f0b0 0 ghiRequestToConnection 	gs.a ghttpConnection.o
+8026f120 0000008c 8026f120 0 ghiEnumConnections 	gs.a ghttpConnection.o
+8026f1ac 00000144 8026f1ac 0 ghiRedirectConnection 	gs.a ghttpConnection.o
+8026f2f0 000000c8 8026f2f0 0 ghiCleanupConnections 	gs.a ghttpConnection.o
+8026f3b8 0000012c 8026f3b8 0 ghttpSetRequestEncryptionEngine 	gs.a ghttpEncryption.o
+8026f4e4 000000e0 8026f4e4 0 ghiEncryptorSslInitFunc 	gs.a ghttpEncryption.o
+8026f5c4 00000070 8026f5c4 0 ghiEncryptorSslCleanupFunc 	gs.a ghttpEncryption.o
+8026f634 000000a0 8026f634 0 ghiEncryptorSslStartFunc 	gs.a ghttpEncryption.o
+8026f6d4 00000080 8026f6d4 0 ghiEncryptorSslEncryptSend 	gs.a ghttpEncryption.o
+8026f754 00000080 8026f754 0 ghiEncryptorSslDecryptRecv 	gs.a ghttpEncryption.o
+8026f7d4 00000008 8026f7d4 0 ghiEncryptorSslEncryptFunc 	gs.a ghttpEncryption.o
+8026f7dc 00000008 8026f7dc 0 ghiEncryptorSslDecryptFunc 	gs.a ghttpEncryption.o
+8026f7e4 000000c0 8026f7e4 0 ghiHandleStatus 	gs.a ghttpMain.o
+8026f8a4 0000019c 8026f8a4 0 ghiProcessConnection 	gs.a ghttpMain.o
+8026fa40 00000050 8026fa40 0 ghttpStartup 	gs.a ghttpMain.o
+8026fa90 0000005c 8026fa90 0 ghttpCleanup 	gs.a ghttpMain.o
+8026faec 00000218 8026faec 0 ghttpGetExA 	gs.a ghttpMain.o
+8026fd04 0000000c 8026fd04 0 ghttpThink 	gs.a ghttpMain.o
+8026fd10 00000090 8026fd10 0 zz_8026fd10_ 	gs.a ghttpMain.o
 8026fda0 00000038 8026fda0 0 ghttpSetMaxRecvTime 	gs.a ghttpMain.o
 8026fdd8 00000008 8026fdd8 0 ghiIsPostAutoFree 	gs.a ghttpPost.o
 8026fde0 00000038 8026fde0 0 ghiFreePost 	gs.a ghttpPost.o
@@ -8095,79 +8095,79 @@
 80270cc4 0000061c 80270cc4 0 ghiPostStateDoPosting 	gs.a ghttpPost.o
 802712e0 0000024c 802712e0 0 ghiPostDoPosting 	gs.a ghttpPost.o
 8027152c 000001ac 8027152c 0 ghiParseURL 	gs.a ghttpProcess.o
-802716d8 00000104 802716d8 0 zz_802716d8_
-802717dc 00000104 802717dc 0 zz_802717dc_
-802718e0 000000a0 802718e0 0 zz_802718e0_
-80271980 0000025c 80271980 0 zz_80271980_
-80271bdc 000001d4 80271bdc 0 zz_80271bdc_
-80271db0 000002ec 80271db0 0 zz_80271db0_
-8027209c 000000f8 8027209c 0 zz_8027209c_
-80272194 000000b8 80272194 0 zz_80272194_
-8027224c 00000118 8027224c 0 zz_8027224c_
-80272364 00000190 80272364 0 zz_80272364_
-802724f4 000000e4 802724f4 0 zz_802724f4_
-802725d8 0000026c 802725d8 0 zz_802725d8_
-80272844 000005b0 80272844 0 zz_80272844_
-80272df4 00000188 80272df4 0 zz_80272df4_
-80272f7c 00000150 80272f7c 0 zz_80272f7c_
-802730cc 0000011c 802730cc 0 zz_802730cc_
-802731e8 000003a4 802731e8 0 zz_802731e8_
-8027358c 0000026c 8027358c 0 zz_8027358c_
-802737f8 00000264 802737f8 0 zz_802737f8_
-80273a5c 0000026c 80273a5c 0 zz_80273a5c_
-80273cc8 00000188 80273cc8 0 zz_80273cc8_
-80273e50 000002c4 80273e50 0 zz_80273e50_
-80274114 000000b4 80274114 0 zz_80274114_
-802741c8 000003c0 802741c8 0 zz_802741c8_
-80274588 00001574 80274588 0 zz_80274588_
-80275afc 00000050 80275afc 0 zz_80275afc_
-80275b4c 00000228 80275b4c 0 zz_80275b4c_
-80275d74 00000018 80275d74 0 zz_80275d74_
-80275d8c 00000098 80275d8c 0 zz_80275d8c_
-80275e24 000006dc 80275e24 0 zz_80275e24_
-80276500 000006fc 80276500 0 zz_80276500_
-80276bfc 00000034 80276bfc 0 zz_80276bfc_
-80276c30 00000080 80276c30 0 zz_80276c30_
-80276cb0 000004b4 80276cb0 0 zz_80276cb0_
-80277164 000001c0 80277164 0 zz_80277164_
-80277324 000000fc 80277324 0 zz_80277324_
-80277420 000000d0 80277420 0 zz_80277420_
-802774f0 000007a8 802774f0 0 zz_802774f0_
-80277c98 0000052c 80277c98 0 zz_80277c98_
-802781c4 00000c8c 802781c4 0 zz_802781c4_
-80278e50 00000154 80278e50 0 zz_80278e50_
-80278fa4 0000008c 80278fa4 0 zz_80278fa4_
-80279030 0000008c 80279030 0 zz_80279030_
-802790bc 00000090 802790bc 0 zz_802790bc_
-8027914c 000000e4 8027914c 0 zz_8027914c_
-80279230 000000e0 80279230 0 zz_80279230_
-80279310 000000dc 80279310 0 zz_80279310_
-802793ec 000000e4 802793ec 0 zz_802793ec_
-802794d0 000000e0 802794d0 0 zz_802794d0_
-802795b0 000000dc 802795b0 0 zz_802795b0_
-8027968c 000000e4 8027968c 0 zz_8027968c_
-80279770 0000009c 80279770 0 zz_80279770_
-8027980c 0000032c 8027980c 0 zz_8027980c_
-80279b38 00000004 80279b38 0 zz_80279b38_
-80279b3c 000002c0 80279b3c 0 zz_80279b3c_
-80279dfc 00000034 80279dfc 0 __fini_cpp_exceptions
-80279e30 0000009c 80279e30 0 zz_80279e30_
-80279ecc 000001f4 80279ecc 0 zz_80279ecc_
-8027a0c0 000002b0 8027a0c0 0 zz_8027a0c0_
-8027a370 00000104 8027a370 0 zz_8027a370_
-8027a474 0000031c 8027a474 0 zz_8027a474_
-8027a790 000000ac 8027a790 0 zz_8027a790_
-8027a83c 00000514 8027a83c 0 zz_8027a83c_
-8027ad50 00000074 8027ad50 0 zz_8027ad50_
-8027adc4 0000024c 8027adc4 0 zz_8027adc4_
-8027b010 00000378 8027b010 0 zz_8027b010_
-8027b388 00000204 8027b388 0 zz_8027b388_
-8027b58c 000001b8 8027b58c 0 zz_8027b58c_
-8027b744 000000a8 8027b744 0 zz_8027b744_
-8027b7ec 000002ac 8027b7ec 0 zz_8027b7ec_
-8027ba98 000000e0 8027ba98 0 zz_8027ba98_
-8027bb78 00000074 8027bb78 0 zz_8027bb78_
-8027bbec 00000280 8027bbec 0 QEStartQuery
+802716d8 00000104 802716d8 0 ghiDoSocketInit 	gs.a ghttpProcess.o
+802717dc 00000104 802717dc 0 ghiDoHostLookup 	gs.a ghttpProcess.o
+802718e0 000000a0 802718e0 0 ghiDoLookupPending 	gs.a ghttpProcess.o
+80271980 0000025c 80271980 0 ghiDoConnecting 	gs.a ghttpProcess.o
+80271bdc 000001d4 80271bdc 0 ghiDoSecuringSession 	gs.a ghttpProcess.o
+80271db0 000002ec 80271db0 0 ghiDoSendingRequest 	gs.a ghttpProcess.o
+8027209c 000000f8 8027209c 0 ghiDoPosting 	gs.a ghttpProcess.o
+80272194 000000b8 80272194 0 ghiDoWaiting 	gs.a ghttpProcess.o
+8027224c 00000118 8027224c 0 ghiParseStatus 	gs.a ghttpProcess.o
+80272364 00000190 80272364 0 ghiDoReceivingStatus 	gs.a ghttpProcess.o
+802724f4 000000e4 802724f4 0 ghiDeliverIncomingFileData 	gs.a ghttpProcess.o
+802725d8 0000026c 802725d8 0 ghiProcessIncomingFileData 	gs.a ghttpProcess.o
+80272844 000005b0 80272844 0 ghiDoReceivingHeaders 	gs.a ghttpProcess.o
+80272df4 00000188 80272df4 0 ghiDoReceivingFile 	gs.a ghttpProcess.o
+80272f7c 00000150 80272f7c 0 BucketNew 	gs.a gbucket.o
+802730cc 0000011c 802730cc 0 BucketSet 	gs.a gbucket.o
+802731e8 000003a4 802731e8 0 BucketAdd 	gs.a gbucket.o
+8027358c 0000026c 8027358c 0 BucketSub 	gs.a gbucket.o
+802737f8 00000264 802737f8 0 BucketMult 	gs.a gbucket.o
+80273a5c 0000026c 80273a5c 0 BucketDiv 	gs.a gbucket.o
+80273cc8 00000188 80273cc8 0 BucketConcat 	gs.a gbucket.o
+80273e50 000002c4 80273e50 0 BucketAvg 	gs.a gbucket.o
+80274114 000000b4 80274114 0 GenerateAuthA 	gs.a gstats.o
+802741c8 000003c0 802741c8 0 InitStatsAsync 	gs.a gstats.o
+80274588 00001574 80274588 0 InitStatsThink 	gs.a gstats.o
+80275afc 00000050 80275afc 0 InitStatsConnection 	gs.a gstats.o
+80275b4c 00000228 80275b4c 0 CloseStatsConnection 	gs.a gstats.o
+80275d74 00000018 80275d74 0 IsStatsConnected 	gs.a gstats.o
+80275d8c 00000098 80275d8c 0 GetChallenge 	gs.a gstats.o
+80275e24 000006dc 80275e24 0 PreAuthenticatePlayerPartner 	gs.a gstats.o
+80276500 000006fc 80276500 0 GetPersistDataValuesModifiedA 	gs.a gstats.o
+80276bfc 00000034 80276bfc 0 GetPersistDataValuesA 	gs.a gstats.o
+80276c30 00000080 80276c30 0 SetPersistDataValuesA 	gs.a gstats.o
+80276cb0 000004b4 80276cb0 0 PersistThink 	gs.a gstats.o
+80277164 000001c0 80277164 0 RecvSessionKey 	gs.a gstats.o
+80277324 000000fc 80277324 0 DoSend 	gs.a gstats.o
+80277420 000000d0 80277420 0 get_sockaddrin 	gs.a gstats.o
+802774f0 000007a8 802774f0 0 SetPersistDataHelper 	gs.a gstats.o
+80277c98 0000052c 80277c98 0 ProcessGetData 	gs.a gstats.o
+802781c4 00000c8c 802781c4 0 ProcessStatement 	gs.a gstats.o
+80278e50 00000154 80278e50 0 CallReqCallback 	gs.a gstats.o
+80278fa4 0000008c 80278fa4 0 ServerOpInt 	gs.a gstats.o
+80279030 0000008c 80279030 0 ServerOpFloat 	gs.a gstats.o
+802790bc 00000090 802790bc 0 ServerOpString 	gs.a gstats.o
+8027914c 000000e4 8027914c 0 TeamOpInt 	gs.a gstats.o
+80279230 000000e0 80279230 0 TeamOpFloat 	gs.a gstats.o
+80279310 000000dc 80279310 0 TeamOpString 	gs.a gstats.o
+802793ec 000000e4 802793ec 0 PlayerOpInt 	gs.a gstats.o
+802794d0 000000e0 802794d0 0 PlayerOpFloat 	gs.a gstats.o
+802795b0 000000dc 802795b0 0 PlayerOpString 	gs.a gstats.o
+8027968c 000000e4 8027968c 0 AddressToString 	gs.a NATify.o
+80279770 0000009c 80279770 0 GetLocalIP 	gs.a NATify.o
+8027980c 0000032c 8027980c 0 Think 	gs.a NATify.o
+80279b38 00000004 80279b38 0 NatifyThink 	gs.a NATify.o
+80279b3c 000002c0 80279b3c 0 DetermineNatType 	gs.a NATify.o
+80279dfc 00000034 80279dfc 0 NNFreeNegotiateList 	gs.a natneg.o
+80279e30 0000009c 80279e30 0 GetLocalIP_12389 	gs.a natneg.o
+80279ecc 000001f4 80279ecc 0 StartReport 	gs.a natneg.o
+8027a0c0 000002b0 8027a0c0 0 SendInitPackets 	gs.a natneg.o
+8027a370 00000104 8027a370 0 CheckNatifyStatus 	gs.a natneg.o
+8027a474 0000031c 8027a474 0 NNBeginNegotiationWithSocket 	gs.a natneg.o
+8027a790 000000ac 8027a790 0 NNCancel 	gs.a natneg.o
+8027a83c 00000514 8027a83c 0 NegotiateThinkNegotiateThink 	gs.a natneg.o
+8027ad50 00000074 8027ad50 0 NNThinkNNThink 	gs.a natneg.o
+8027adc4 0000024c 8027adc4 0 ProcessConnectPacket 	gs.a natneg.o
+8027b010 00000378 8027b010 0 ProcessPingPacket 	gs.a natneg.o
+8027b388 00000204 8027b388 0 ProcessInitPacket 	gs.a natneg.o
+8027b58c 000001b8 8027b58c 0 NNProcessData 	gs.a natneg.o
+8027b744 000000a8 8027b744 0 keyrand 	gs.a sb_crypt.o
+8027b7ec 000002ac 8027b7ec 0 GOACryptInit 	gs.a sb_crypt.o
+8027ba98 000000e0 8027ba98 0 GOADecrypt 	gs.a sb_crypt.o
+8027bb78 00000074 8027bb78 0 FIFORemove 	gs.a sb_queryengine.o
+8027bbec 00000280 8027bbec 0 QEStartQuery 	gs.a sb_queryengine.o
 8027be6c 000000a0 8027be6c 0 SBQueryEngineInit 	gs.a sb_queryengine.o
 8027bf0c 00000008 8027bf0c 0 SBQueryEngineSetPublicIP 	gs.a sb_queryengine.o
 8027bf14 00000020 8027bf14 0 SBEngineHaltUpdates 	gs.a sb_queryengine.o
