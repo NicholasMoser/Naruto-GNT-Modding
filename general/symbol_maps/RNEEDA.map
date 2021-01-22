@@ -9,23 +9,22 @@
 80000800 00000098 80000800 0 floating_point_unavailable_exception_handler
 80000900 00000098 80000900 0 decrementer_exception_handler
 80000c00 0000001c 80000c00 0 system_call_exception_handler
-80000c1c 0000007c 80000c1c 0 zz_80000c1c_
 80000d00 00000098 80000d00 0 trace_exception_handler
 80000f00 00000098 80000f00 0 performance_monitor_interrupt_handler
 80001300 00000098 80001300 0 instruction_address_breakpoint_exception_handler
 80001400 00000098 80001400 0 system_management_interrupt_handler
 80001700 00000098 80001700 0 thermal_management_interrupt_exception_handler
-80004000 0000029c 80004000 0 memcpy
-8000429c 000000b4 8000429c 0 __fill_mem
-80004350 00000030 80004350 0 JSUList<Q212JUTException12JUTExMapFile>::JSUList<Q212JUTException12JUTExMapFile>(bool) 	JUtility.a JUTException.o
-800062b4 00000028 800062b4 0 __check_pad3
-800062dc 0000000c 800062dc 0 __set_debug_bba
-800062e8 00000008 800062e8 0 WPADGetDpdSensitivity 	wpad.a WPAD.o
-800062f0 000001fc 800062f0 0 zz_800062f0_
-8000645c 00000090 8000645c 0 __init_registers
-800064ec 000000a8 800064ec 0 __init_data
-80006594 00000024 80006594 0 __init_hardware
-800065b8 00000034 800065b8 0 __flush_cache
+80004000 0000029c 80004000 0 memcpy 	Runtime.PPCEABI.H.a __mem.o
+8000429c 000000b4 8000429c 0 __fill_mem 	Runtime.PPCEABI.H.a __mem.o
+80004350 00000030 80004350 0 memset 	Runtime.PPCEABI.H.a __mem.o
+800062b4 00000028 800062b4 0 __check_pad3 	os.a __start.o
+800062dc 0000000c 800062dc 0 __set_debug_bba 	os.a __start.o
+800062e8 00000008 800062e8 0 __get_debug_bba 	os.a __start.o
+800062f0 000001fc 800062f0 0 __start 	os.a __start.o
+8000645c 00000090 8000645c 0 __init_registers 	os.a __start.o
+800064ec 000000a8 800064ec 0 __init_data 	os.a __start.o
+80006594 00000024 80006594 0 __init_hardware 	os.a __ppc_eabi_init.o
+800065b8 00000034 800065b8 0 __flush_cache 	os.a __ppc_eabi_init.o
 80016320 00000054 80016320 0 zz_80016320_
 80016374 00000050 80016374 0 zz_80016374_
 800163c4 00000580 800163c4 0 zz_800163c4_
@@ -10238,67 +10237,66 @@
 802ffdc0 00000008 802ffdc0 0 zz_802ffdc0_
 802ffdc8 00000008 802ffdc8 0 GXInitTexObjUserData 	gx.a GXTexture.o
 802ffdd0 00000008 802ffdd0 0 zz_802ffdd0_
-802ffdd8 0000021c 802ffdd8 0 nw4hbm::ut::TextWriterBase<w>::Print(wchar_t const *, int) 	homebuttonLib.a ut_TextWriterBase.o
-802ffff4 00000238 802ffff4 0 nw4hbm::ut::TextWriterBase<w>::Print(wchar_t const *) 	homebuttonLib.a ut_TextWriterBase.o
-8030022c 000003dc 8030022c 0 zz_8030022c_
-80300608 00000118 80300608 0 zz_80300608_
+802ffdd8 0000021c 802ffdd8 0 Print__Q36nw4hbm2ut17TextWriterBase<w>FPCwi 	homebuttonLib.a ut_TextWriterBase.o
+802ffff4 00000238 802ffff4 0 Print__Q36nw4hbm2ut17TextWriterBase<w>FPCw 	homebuttonLib.a ut_TextWriterBase.o
+8030022c 000003dc 8030022c 0 CalcLineRectImpl__Q36nw4hbm2ut17TextWriterBase<w>FPQ36nw4hbm2ut4RectPCwi 	homebuttonLib.a ut_TextWriterBase.o
+80300608 00000118 80300608 0 CalcStringRectImpl__Q36nw4hbm2ut17TextWriterBase<w>FPQ36nw4hbm2ut4RectPCwi 	homebuttonLib.a ut_TextWriterBase.o
 80300720 00000750 80300720 0 zz_80300720_
-80300e70 00000750 80300e70 0 zz_80300e70_
-803015c0 000000a4 803015c0 0 zz_803015c0_
-80301664 000000a0 80301664 0 zz_80301664_
-80301704 00000200 80301704 0 zz_80301704_
-80301904 0000000c 80301904 0 SetTRKConnected
-80301910 00000950 80301910 0 zz_80301910_
-80302260 0000002c 80302260 0 zz_80302260_
-8030228c 00000038 8030228c 0 zz_8030228c_
-803022c4 00000038 803022c4 0 zz_803022c4_
-803022fc 00000080 803022fc 0 zz_803022fc_
-8030237c 00000038 8030237c 0 zz_8030237c_
-803023b4 00000afc 803023b4 0 zz_803023b4_
-80302eb0 00000054 80302eb0 0 zz_80302eb0_
-80302f04 00000014 80302f04 0 zz_80302f04_
-80302f18 00000028 80302f18 0 zz_80302f18_
-80302f40 0000002c 80302f40 0 zz_80302f40_
-80302f6c 0000008c 80302f6c 0 zz_80302f6c_
-80302ff8 000000d8 80302ff8 0 zz_80302ff8_
-803030d0 0000006c 803030d0 0 zz_803030d0_
-8030313c 00000188 8030313c 0 zz_8030313c_
-803032c4 000000a8 803032c4 0 zz_803032c4_
-8030336c 00000050 8030336c 0 zz_8030336c_
-803033bc 0000000c 803033bc 0 zz_803033bc_
-803033c8 000000dc 803033c8 0 zz_803033c8_
-803034a4 0000022c 803034a4 0 zz_803034a4_
-803036d0 00000128 803036d0 0 zz_803036d0_
-803037f8 00000068 803037f8 0 zz_803037f8_
-80303860 000002cc 80303860 0 zz_80303860_
-80303b2c 000000ec 80303b2c 0 zz_80303b2c_
-80303c18 0000002c 80303c18 0 zz_80303c18_
-80303c44 00000028 80303c44 0 zz_80303c44_
-80303c6c 00000018 80303c6c 0 zz_80303c6c_
-80303c84 00000014 80303c84 0 zz_80303c84_
-80303c98 00000024 80303c98 0 zz_80303c98_
-80303cbc 000000a0 80303cbc 0 zz_80303cbc_
-80303d5c 00000110 80303d5c 0 zz_80303d5c_
-80303e6c 00000068 80303e6c 0 zz_80303e6c_
-80303ed4 0000009c 80303ed4 0 zz_80303ed4_
-80303f70 0000005c 80303f70 0 zz_80303f70_
-80303fcc 00000214 80303fcc 0 zz_80303fcc_
-803041e0 00000110 803041e0 0 zz_803041e0_
-803042f0 00000110 803042f0 0 zz_803042f0_
-80304400 0000003c 80304400 0 zz_80304400_
-8030443c 000000a4 8030443c 0 zz_8030443c_
-803044e0 0000000c 803044e0 0 cAIPad::__ct(void)
-803044ec 000000f0 803044ec 0 zz_803044ec_
-803045dc 000002e4 803045dc 0 zz_803045dc_
-803048c0 0000011c 803048c0 0 zz_803048c0_
-803049dc 0000008c 803049dc 0 zz_803049dc_
-80304a68 00000028 80304a68 0 zz_80304a68_
-80304a90 00000184 80304a90 0 zz_80304a90_
-80304c14 00000090 80304c14 0 zz_80304c14_
-80304ca4 00000098 80304ca4 0 zz_80304ca4_
-80304d3c 00000138 80304d3c 0 zz_80304d3c_
-80304e74 00000008 80304e74 0 zz_80304e74_
-80304e7c 00000008 80304e7c 0 zz_80304e7c_
+80300e70 00000750 80300e70 0 AdjustCursor__Q36nw4hbm2ut17TextWriterBase<c>FPfPfPCci 	homebuttonLib.a ut_TextWriterBase.o
+803015c0 000000a4 803015c0 0 __sinit_\ut_TextWriterBase_cpp 	homebuttonLib.a ut_TextWriterBase.o
+80301664 000000a0 80301664 0 __HBMMIXSetPan__FP13HBMMIXChannel 	homebuttonLib.a mix.o
+80301704 00000200 80301704 0 HBMMIXInit 	homebuttonLib.a mix.o
+80301904 0000000c 80301904 0 HBMMIXSetSoundMode 	homebuttonLib.a mix.o
+80301910 00000950 80301910 0 HBMMIXInitChannel 	homebuttonLib.a mix.o
+80302260 0000002c 80302260 0 HBMMIXReleaseChannel 	homebuttonLib.a mix.o
+8030228c 00000038 8030228c 0 HBMMIXSetInput 	homebuttonLib.a mix.o
+803022c4 00000038 803022c4 0 HBMMIXSetAuxA 	homebuttonLib.a mix.o
+803022fc 00000080 803022fc 0 HBMMIXSetPan 	homebuttonLib.a mix.o
+8030237c 00000038 8030237c 0 HBMMIXSetFader 	homebuttonLib.a mix.o
+803023b4 00000afc 803023b4 0 HBMMIXUpdateSettings 	homebuttonLib.a mix.o
+80302eb0 00000054 80302eb0 0 HBMAllocIndex 	homebuttonLib.a mix.o
+80302f04 00000014 80302f04 0 HBMGetIndex 	homebuttonLib.a mix.o
+80302f18 00000028 80302f18 0 HBMFreeIndex 	homebuttonLib.a mix.o
+80302f40 0000002c 80302f40 0 HBMFreeIndexByKey 	homebuttonLib.a mix.o
+80302f6c 0000008c 80302f6c 0 __HBMSYNRemoveSynthFromList__FP11HBMSYNSYNTH 	homebuttonLib.a syn.o
+80302ff8 000000d8 80302ff8 0 HBMSYNInit 	homebuttonLib.a syn.o
+803030d0 0000006c 803030d0 0 HBMSYNRunAudioFrame 	homebuttonLib.a syn.o
+8030313c 00000188 8030313c 0 HBMSYNInitSynth 	homebuttonLib.a syn.o
+803032c4 000000a8 803032c4 0 HBMSYNQuitSynth 	homebuttonLib.a syn.o
+8030336c 00000050 8030336c 0 HBMSYNMidiInput 	homebuttonLib.a syn.o
+803033bc 0000000c 803033bc 0 HBMSYNSetMasterVolume 	homebuttonLib.a syn.o
+803033c8 000000dc 803033c8 0 __HBMSYNResetAllControllers 	homebuttonLib.a synctrl.o
+803034a4 0000022c 803034a4 0 __HBMSYNNoteOn__FP11HBMSYNSYNTHUcUcUc 	homebuttonLib.a synctrl.o
+803036d0 00000128 803036d0 0 __HBMSYNMidiIn__FP11HBMSYNSYNTHPUc 	homebuttonLib.a synctrl.o
+803037f8 00000068 803037f8 0 __HBMSYNRunInputBufferEvents 	homebuttonLib.a synctrl.o
+80303860 000002cc 80303860 0 __HBMSYNSetupVolumeEnvelope 	homebuttonLib.a synenv.o
+80303b2c 00000118 80303b2c 0 __HBMSYNRunVolumeEnvelope 	homebuttonLib.a synenv.o
+80303c44 00000028 80303c44 0 __HBMSYNSetupVolume 	homebuttonLib.a synmix.o
+80303c6c 00000018 80303c6c 0 __HBMSYNSetupPan 	homebuttonLib.a synmix.o
+80303c84 00000014 80303c84 0 __HBMSYNGetVoiceInput 	homebuttonLib.a synmix.o
+80303c98 00000024 80303c98 0 __HBMSYNGetVoiceFader 	homebuttonLib.a synmix.o
+80303cbc 000000a0 80303cbc 0 __HBMSYNUpdateMix 	homebuttonLib.a synmix.o
+80303d5c 00000110 80303d5c 0 __HBMSYNGetRelativePitch 	homebuttonLib.a synpitch.o
+80303e6c 00000068 80303e6c 0 __HBMSYNSetupPitch 	homebuttonLib.a synpitch.o
+80303ed4 0000009c 80303ed4 0 __HBMSYNSetupSrc 	homebuttonLib.a synpitch.o
+80303f70 0000005c 80303f70 0 __HBMSYNUpdateSrc 	homebuttonLib.a synpitch.o
+80303fcc 00000214 80303fcc 0 __HBMSYNSetupAdpcm__FP11HBMSYNVOICE 	homebuttonLib.a synsample.o
+803041e0 00000110 803041e0 0 __HBMSYNSetupPcm16__FP11HBMSYNVOICE 	homebuttonLib.a synsample.o
+803042f0 00000110 803042f0 0 __HBMSYNSetupPcm8__FP11HBMSYNVOICE 	homebuttonLib.a synsample.o
+80304400 0000003c 80304400 0 __HBMSYNSetupSample 	homebuttonLib.a synsample.o
+8030443c 000000a4 8030443c 0 __HBMSYNClearVoiceReferences 	homebuttonLib.a synvoice.o
+803044e0 0000000c 803044e0 0 __HBMSYNSetVoiceToRelease 	homebuttonLib.a synvoice.o
+803044ec 000000f0 803044ec 0 __HBMSYNServiceVoice 	homebuttonLib.a synvoice.o
+803045dc 000002e4 803045dc 0 __HBMSEQRunEvent__FP11HBMSYNSYNTHP12_HBMSEQTRACK 	homebuttonLib.a seq.o
+803048c0 0000011c 803048c0 0 __HBMSEQInitTracks__FP15_HBMSEQSEQUENCEPUci 	homebuttonLib.a seq.o
+803049dc 0000008c 803049dc 0 __HBMSEQReadHeader__FP15_HBMSEQSEQUENCEPUc 	homebuttonLib.a seq.o
+80304a68 00000028 80304a68 0 HBMSEQInit 	homebuttonLib.a seq.o
+80304a90 00000184 80304a90 0 HBMSEQRunAudioFrame 	homebuttonLib.a seq.o
+80304c14 00000090 80304c14 0 HBMSEQAddSequence 	homebuttonLib.a seq.o
+80304ca4 00000098 80304ca4 0 HBMSEQRemoveSequence 	homebuttonLib.a seq.o
+80304d3c 00000138 80304d3c 0 HBMSEQSetState 	homebuttonLib.a seq.o
+80304e74 00000008 80304e74 0 HBMSEQGetState 	homebuttonLib.a seq.o
+80304e7c 00000008 80304e7c 0 HBMSEQSetVolume 	homebuttonLib.a seq.o
 80304e84 0000004c 80304e84 0 IPCInit 	ipc.a ipcMain.o
 80304ed0 00000048 80304ed0 0 IPCReInit 	ipc.a ipcMain.o
 80304f18 00000010 80304f18 0 IPCReadReg 	ipc.a ipcMain.o
@@ -10356,17 +10354,17 @@
 80308984 0000046c 80308984 0 read_kpad_dpd 	kpad.a KPAD.o
 80308df0 00000128 80308df0 0 clamp_stick_circle 	kpad.a KPAD.o
 80308f18 00000224 80308f18 0 clamp_stick_cross 	kpad.a KPAD.o
-8030913c 000008d4 8030913c 0 zz_8030913c_ 	kpad.a KPAD.o
-80309a10 00000914 80309a10 0 zz_80309a10_ 	kpad.a KPAD.o
-8030a324 0000044c 8030a324 0 zz_8030a324_ 	kpad.a KPAD.o
-8030a770 000000a0 8030a770 0 zz_8030a770_ 	kpad.a KPAD.o
-8030a810 00000168 8030a810 0 zz_8030a810_ 	kpad.a KPAD.o
+8030913c 000008d4 8030913c 0 read_kpad_ext 	kpad.a KPAD.o
+80309a10 00000914 80309a10 0 KPADiRead 	kpad.a KPAD.o
+8030a324 0000044c 8030a324 0 KPADInit 	kpad.a KPAD.o
+8030a770 000000a0 8030a770 0 KPADReset 	kpad.a KPAD.o
+8030a810 00000168 8030a810 0 KPADiConnectCallback 	kpad.a KPAD.o
 8030a978 00000058 8030a978 0 KPADSetConnectCallback 	kpad.a KPAD.o
 8030a9d0 00000018 8030a9d0 0 KPADiControlWbcCallback 	kpad.a KPAD.o
 8030a9e8 00000018 8030a9e8 0 KPADiUpdateTempWbcCallback 	kpad.a KPAD.o
 8030aa00 0000001c 8030aa00 0 KPADDisableDPD 	kpad.a KPAD.o
 8030aa1c 0000001c 8030aa1c 0 KPADEnableDPD 	kpad.a KPAD.o
-8030aa38 00000094 8030aa38 0 zz_8030aa38_ 	kpad.a KPAD.o
+8030aa38 00000094 8030aa38 0 KPADiControlDpdCallback 	kpad.a KPAD.o
 8030aacc 00000614 8030aacc 0 KPADiSamplingCallback 	kpad.a KPAD.o
 8030b0e0 00000140 8030b0e0 0 FindContainHeap_ 	mem.a mem_heapCommon.o
 8030b220 000001c0 8030b220 0 MEMiInitHeapHead 	mem.a mem_heapCommon.o
@@ -10922,14 +10920,14 @@
 8032b3d4 00000004 8032b3d4 0 NETGetWirelessMacAddress 	net.a wireless_macaddr.o
 8032b3d8 000003a8 8032b3d8 0 NETMemCpy 	net.a netmemcpy.o
 8032b780 00000100 8032b780 0 NETMemSet 	net.a netmemset.o
-8032b880 00000040 8032b880 0 NETMD5Init 	net.a
-8032b8c0 000000f0 8032b8c0 0 NETMD5Update 	net.a
-8032b9b0 00000128 8032b9b0 0 NETMD5GetDigest 	net.a
-8032bad8 0000000c 8032bad8 0 zz_8032bad8_ 	net.a
+8032b880 00000040 8032b880 0 NETMD5Init 	net.a md5.c
+8032b8c0 000000f0 8032b8c0 0 NETMD5Update 	net.a md5.c
+8032b9b0 00000128 8032b9b0 0 NETMD5GetDigest 	net.a md5.c
+8032bad8 0000000c 8032bad8 0 NETGetMD5Interface 	net.a md5.c
 8032bae4 000004c8 8032bae4 0 ProcessBlock 	net.a md5.c
-8032bfac 0000023c 8032bfac 0 NETHMACInit 	net.a
-8032c1e8 00000010 8032c1e8 0 NETHMACUpdate 	net.a
-8032c1f8 000001a4 8032c1f8 0 zz_8032c1f8_ 	net.a
+8032bfac 0000023c 8032bfac 0 NETHMACInit 	net.a hmac.c
+8032c1e8 00000010 8032c1e8 0 NETHMACUpdate 	net.a hmac.c
+8032c1f8 000001a4 8032c1f8 0 NETHMACGetDigest 	net.a hmac.c
 8032c39c 00000030 8032c39c 0 NHTTPi_InitBgnEndInfo 	nhttp.a NHTTP_bgnend.o
 8032c3cc 0000005c 8032c3cc 0 NHTTPi_alloc 	nhttp.a NHTTP_bgnend.o
 8032c428 00000044 8032c428 0 NHTTPi_free 	nhttp.a NHTTP_bgnend.o
