@@ -5028,7 +5028,7 @@
 8019a754 0000007c 8019a754 0 zz_8019a754_
 8019a7d0 00000088 8019a7d0 0 zz_8019a7d0_
 8019a858 00000084 8019a858 0 zz_8019a858_
-8019a8dc 000000f4 8019a8dc 0 zz_8019a8dc_
+8019a8dc 000000f4 8019a8dc 0 snprintf
 8019a9d0 000000d4 8019a9d0 0 zz_8019a9d0_
 8019aaa4 00000170 8019aaa4 0 zz_8019aaa4_
 8019ac14 00000020 8019ac14 0 zz_8019ac14_
@@ -7379,23 +7379,23 @@
 802291b4 000000d8 802291b4 0 DWC_DeleteBuddyFriendData 	dwc.a dwc_friend.o
 8022928c 000001a4 8022928c 0 zz_8022928c_ 	dwc.a dwc_friend.o
 80229430 0000006c 80229430 0 zz_80229430_ 	dwc.a dwc_friend.o
-8022949c 00000028 8022949c 0 zz_8022949c_ 	dwc.a dwc_friend.o
+8022949c 00000028 8022949c 0 DWC_SetBuddyFriendCallback 	dwc.a dwc_friend.o
 802294c4 00000150 802294c4 0 zz_802294c4_ 	dwc.a dwc_friend.o
 80229614 00000150 80229614 0 zz_80229614_ 	dwc.a dwc_friend.o
 80229764 00000150 80229764 0 zz_80229764_ 	dwc.a dwc_friend.o
 802298b4 00000150 802298b4 0 zz_802298b4_ 	dwc.a dwc_friend.o
 80229a04 000001e4 80229a04 0 zz_80229a04_ 	dwc.a dwc_friend.o
-80229be8 0000013c 80229be8 0 zz_80229be8_ 	dwc.a dwc_friend.o
-80229d24 000004b4 80229d24 0 zz_80229d24_ 	dwc.a dwc_friend.o
+80229be8 0000013c 80229be8 0 DWCi_FriendInit 	dwc.a dwc_friend.o
+80229d24 000004b4 80229d24 0 DWCi_FriendProcess 	dwc.a dwc_friend.o
 8022a1d8 00000024 8022a1d8 0 zz_8022a1d8_ 	dwc.a dwc_friend.o
-8022a1fc 00000090 8022a1fc 0 zz_8022a1fc_ 	dwc.a dwc_friend.o
-8022a28c 000000d0 8022a28c 0 zz_8022a28c_ 	dwc.a dwc_friend.o
-8022a35c 00000090 8022a35c 0 zz_8022a35c_ 	dwc.a dwc_friend.o
-8022a3ec 00000084 8022a3ec 0 zz_8022a3ec_ 	dwc.a dwc_friend.o
-8022a470 00000168 8022a470 0 zz_8022a470_ 	dwc.a dwc_friend.o
+8022a1fc 00000090 8022a1fc 0 DWCi_UpdateServersAsync 	dwc.a dwc_friend.o
+8022a28c 000000d0 8022a28c 0 DWCi_StopFriendProcess 	dwc.a dwc_friend.o
+8022a35c 00000090 8022a35c 0 DWCi_GPRecvBuddyRequestCallback 	dwc.a dwc_friend.o
+8022a3ec 00000084 8022a3ec 0 DWCi_GPRecvBuddyAuthCallback 	dwc.a dwc_friend.o
+8022a470 00000168 8022a470 0 DWCi_GPRecvBuddyStatusCallback 	dwc.a dwc_friend.o
 8022a5d8 0000001c 8022a5d8 0 zz_8022a5d8_ 	dwc.a dwc_friend.o
-8022a5f4 0000006c 8022a5f4 0 zz_8022a5f4_ 	dwc.a dwc_friend.o
-8022a660 000000c8 8022a660 0 zz_8022a660_ 	dwc.a dwc_friend.o
+8022a5f4 0000006c 8022a5f4 0 DWCi_GetProfileIDFromList 	dwc.a dwc_friend.o
+8022a660 000000c8 8022a660 0 DWCi_GetFriendListIndex 	dwc.a dwc_friend.o
 8022a728 00000040 8022a728 0 DWCi_InitGPProcessCount 	dwc.a dwc_friend.o
 8022a768 00000118 8022a768 0 DWCi_SetGPStatus 	dwc.a dwc_friend.o
 8022a880 0000000c 8022a880 0 DWCi_ShutdownFriend 	dwc.a dwc_friend.o
@@ -7403,177 +7403,178 @@
 8022abf8 000001a8 8022abf8 0 DWCi_RefreshFriendListForth 	dwc.a dwc_friend.o
 8022ada0 00000210 8022ada0 0 DWCi_RefreshFriendListAll 	dwc.a dwc_friend.o
 8022afb0 000000cc 8022afb0 0 DWCi_GetFriendBuddyStatus 	dwc.a dwc_friend.o
-8022b07c 00000160 8022b07c 0 zz_8022b07c_
-8022b1dc 00000154 8022b1dc 0 zz_8022b1dc_
-8022b330 00000360 8022b330 0 zz_8022b330_
-8022b690 000002b0 8022b690 0 zz_8022b690_
-8022b940 00000344 8022b940 0 zz_8022b940_
-8022bc84 00000218 8022bc84 0 zz_8022bc84_
-8022be9c 000001b0 8022be9c 0 zz_8022be9c_
-8022c04c 00000198 8022c04c 0 zz_8022c04c_
-8022c1e4 0000000c 8022c1e4 0 zz_8022c1e4_
-8022c1f0 0000000c 8022c1f0 0 zz_8022c1f0_
-8022c1fc 00000278 8022c1fc 0 zz_8022c1fc_
+8022b07c 00000160 8022b07c 0 DWCi_HandleGPError 	dwc.a dwc_friend.o
+8022b1dc 00000154 8022b1dc 0 DWCi_HandlePersError 	dwc.a dwc_friend.o
+8022b330 00000360 8022b330 0 DWCi_GPProfileSearchCallback 	dwc.a dwc_friend.o
+8022b690 000002b0 8022b690 0 DWCi_GPGetInfoCallback_RecvBuddyRequest 	dwc.a dwc_friend.o
+8022b940 00000344 8022b940 0 DWCi_GPGetInfoCallback_RecvAuthMessage 	dwc.a dwc_friend.o
+8022bc84 00000218 8022bc84 0 DWCi_PersAuthCallback 	dwc.a dwc_friend.o
+8022be9c 000001b0 8022be9c 0 DWCi_PersDataCallback 	dwc.a dwc_friend.o
+8022c04c 00000198 8022c04c 0 DWCi_PersDataSaveCallback 	dwc.a dwc_friend.o
+8022c1e4 0000000c 8022c1e4 0 zz_8022c1e4_ 	dwc.a code_8022C1E4.o
+8022c1f0 0000000c 8022c1f0 0 zz_8022c1f0_ 	dwc.a code_8022C1E4.o
+8022c1fc 00000278 8022c1fc 0 zz_8022c1fc_ 	dwc.a code_8022C1E4.o
 8022c474 00000154 8022c474 0 DWCi_LoginInit 	dwc.a dwc_login.o
-8022c5c8 0000004c 8022c5c8 0 zz_8022c5c8_
-8022c614 00000184 8022c614 0 zz_8022c614_
-8022c798 0000001c 8022c798 0 zz_8022c798_
-8022c7b4 0000008c 8022c7b4 0 zz_8022c7b4_
-8022c840 00000034 8022c840 0 zz_8022c840_
-8022c874 0000011c 8022c874 0 zz_8022c874_
-8022c990 00000268 8022c990 0 zz_8022c990_
-8022cbf8 000001cc 8022cbf8 0 zz_8022cbf8_
-8022cdc4 00000260 8022cdc4 0 zz_8022cdc4_
-8022d024 00000268 8022d024 0 zz_8022d024_
-8022d28c 00000028 8022d28c 0 zz_8022d28c_
-8022d2b4 00000050 8022d2b4 0 zz_8022d2b4_
-8022d304 00000270 8022d304 0 zz_8022d304_
-8022d574 00000170 8022d574 0 zz_8022d574_
-8022d6e4 000002f8 8022d6e4 0 zz_8022d6e4_
-8022d9dc 000003b8 8022d9dc 0 zz_8022d9dc_
-8022dd94 000000dc 8022dd94 0 zz_8022dd94_
-8022de70 000001a8 8022de70 0 zz_8022de70_
-8022e018 00000294 8022e018 0 zz_8022e018_
-8022e2ac 00000028 8022e2ac 0 zz_8022e2ac_
-8022e2d4 00000348 8022e2d4 0 zz_8022e2d4_
-8022e61c 00000044 8022e61c 0 zz_8022e61c_
-8022e660 00000074 8022e660 0 zz_8022e660_
-8022e6d4 000000c8 8022e6d4 0 zz_8022e6d4_
-8022e79c 000001e4 8022e79c 0 zz_8022e79c_
-8022e980 000000b0 8022e980 0 zz_8022e980_
-8022ea30 0000001c 8022ea30 0 zz_8022ea30_
-8022ea4c 000000cc 8022ea4c 0 zz_8022ea4c_
-8022eb18 000000f8 8022eb18 0 zz_8022eb18_
-8022ec10 0000009c 8022ec10 0 zz_8022ec10_
-8022ecac 00000034 8022ecac 0 zz_8022ecac_
+8022c5c8 0000004c 8022c5c8 0 DWCi_LoginAsync 	dwc.a dwc_login.o
+8022c614 00000184 8022c614 0 DWCi_LoginProcess 	dwc.a dwc_login.o
+8022c798 0000001c 8022c798 0 DWCi_GetUserData 	dwc.a dwc_login.o
+8022c7b4 0000008c 8022c7b4 0 DWCi_StopLogin 	dwc.a dwc_login.o
+8022c840 00000034 8022c840 0 DWCi_ShutdownLogin 	dwc.a dwc_login.o
+8022c874 0000011c 8022c874 0 DWCi_HandleGPError_11604 	dwc.a dwc_login.o
+8022c990 00000268 8022c990 0 zz_8022c990_ 	dwc.a dwc_login.o
+8022cbf8 000001cc 8022cbf8 0 zz_8022cbf8_ 	dwc.a dwc_login.o
+8022cdc4 00000260 8022cdc4 0 DWCi_RemoteLoginProcess 	dwc.a dwc_login.o
+8022d024 00000268 8022d024 0 DWCi_GPGetInfoCallback 	dwc.a dwc_login.o
+8022d28c 00000028 8022d28c 0 DWCi_CheckLogin 	dwc.a dwc_login.o
+8022d2b4 00000050 8022d2b4 0 zz_8022d2b4_ 	dwc.a dwc_main.o
+8022d304 00000270 8022d304 0 DWC_InitFriendsMatch 	dwc.a dwc_main.o
+8022d574 00000170 8022d574 0 DWC_ShutdownFriendsMatch 	dwc.a dwc_main.o
+8022d6e4 000002f8 8022d6e4 0 DWC_ProcessFriendsMatch 	dwc.a dwc_main.o
+8022d9dc 000003b8 8022d9dc 0 DWC_LoginAsync 	dwc.a dwc_main.o
+8022dd94 000000dc 8022dd94 0 DWCi_ClearQR2Key 	dwc.a dwc_main.o
+8022de70 000001a8 8022de70 0 DWC_ConnectToAnybodyAsync 	dwc.a dwc_main.o
+8022e018 00000294 8022e018 0 DWC_ConnectToGameServerAsync 	dwc.a dwc_main.o
+8022e2ac 00000028 8022e2ac 0 DWC_SetConnectionClosedCallback 	dwc.a dwc_main.o
+8022e2d4 00000348 8022e2d4 0 zz_8022e2d4_ 	dwc.a dwc_main.o
+8022e61c 00000044 8022e61c 0 zz_8022e61c_ 	dwc.a dwc_main.o
+8022e660 00000074 8022e660 0 zz_8022e660_ 	dwc.a dwc_main.o
+8022e6d4 000000c8 8022e6d4 0 zz_8022e6d4_ 	dwc.a dwc_main.o
+8022e79c 000001e4 8022e79c 0 zz_8022e79c_ 	dwc.a dwc_main.o
+8022e980 000000b0 8022e980 0 zz_8022e980_ 	dwc.a dwc_main.o
+8022ea30 0000001c 8022ea30 0 zz_8022ea30_ 	dwc.a dwc_main.o
+8022ea4c 000000cc 8022ea4c 0 zz_8022ea4c_ 	dwc.a dwc_main.o
+8022eb18 000000f8 8022eb18 0 DWCi_GT2Startup 	dwc.a dwc_main.o
+8022ec10 0000009c 8022ec10 0 DWCi_GetGT2Connection 	dwc.a dwc_main.o
+8022ecac 00000034 8022ecac 0 DWCi_GetConnectionAID 	dwc.a dwc_main.o
 8022ece0 000000a4 8022ece0 0 DWCi_GT2GetConnectionListIdx 	dwc.a dwc_main.o
-8022ed84 00000014 8022ed84 0 zz_8022ed84_
-8022ed98 00000088 8022ed98 0 zz_8022ed98_
-8022ee20 00000014 8022ee20 0 zz_8022ee20_
-8022ee34 0000007c 8022ee34 0 zz_8022ee34_
-8022eeb0 00000168 8022eeb0 0 zz_8022eeb0_
-8022f018 000000d0 8022f018 0 zz_8022f018_
-8022f0e8 00000158 8022f0e8 0 zz_8022f0e8_
-8022f240 0000015c 8022f240 0 zz_8022f240_
-8022f39c 00000300 8022f39c 0 zz_8022f39c_
-8022f69c 00000470 8022f69c 0 zz_8022f69c_
-8022fb0c 00000170 8022fb0c 0 zz_8022fb0c_
-8022fc7c 00000004 8022fc7c 0 zz_8022fc7c_
-8022fc80 00000980 8022fc80 0 zz_8022fc80_
-80230600 00000064 80230600 0 zz_80230600_
-80230664 0000005c 80230664 0 zz_80230664_
-802306c0 000000c4 802306c0 0 zz_802306c0_
-80230784 0000001c 80230784 0 zz_80230784_
-802307a0 000000ac 802307a0 0 zz_802307a0_
-8023084c 00000448 8023084c 0 zz_8023084c_
-80230c94 0000044c 80230c94 0 zz_80230c94_
-802310e0 0000008c 802310e0 0 zz_802310e0_
-8023116c 0000008c 8023116c 0 zz_8023116c_
-802311f8 00000114 802311f8 0 zz_802311f8_
-8023130c 000002b4 8023130c 0 zz_8023130c_
-802315c0 000001e4 802315c0 0 zz_802315c0_
-802317a4 00000624 802317a4 0 zz_802317a4_
-80231dc8 0000059c 80231dc8 0 zz_80231dc8_
-80232364 00000ad4 80232364 0 zz_80232364_
-80232e38 00002aac 80232e38 0 zz_80232e38_
-802358e4 00000174 802358e4 0 zz_802358e4_
-80235a58 00000778 80235a58 0 zz_80235a58_
-802361d0 00000678 802361d0 0 zz_802361d0_
-80236848 000000f0 80236848 0 zz_80236848_
-80236938 0000021c 80236938 0 zz_80236938_
-80236b54 00000060 80236b54 0 zz_80236b54_
-80236bb4 0000006c 80236bb4 0 zz_80236bb4_
-80236c20 00001438 80236c20 0 zz_80236c20_
-80238058 00000184 80238058 0 zz_80238058_
-802381dc 000005b8 802381dc 0 zz_802381dc_
-80238794 00000044 80238794 0 zz_80238794_
-802387d8 00000178 802387d8 0 zz_802387d8_
-80238950 000000a8 80238950 0 zz_80238950_
-802389f8 00000010 802389f8 0 zz_802389f8_
-80238a08 000004c0 80238a08 0 zz_80238a08_
-80238ec8 000000e8 80238ec8 0 zz_80238ec8_
-80238fb0 00000354 80238fb0 0 zz_80238fb0_
-80239304 000003e0 80239304 0 zz_80239304_
-802396e4 00000370 802396e4 0 zz_802396e4_
-80239a54 000004b8 80239a54 0 zz_80239a54_
-80239f0c 00002c50 80239f0c 0 zz_80239f0c_
-8023cb5c 000002d8 8023cb5c 0 zz_8023cb5c_
-8023ce34 000004c4 8023ce34 0 zz_8023ce34_
-8023d2f8 000001b8 8023d2f8 0 zz_8023d2f8_
-8023d4b0 00000364 8023d4b0 0 zz_8023d4b0_
-8023d814 00000280 8023d814 0 DWCi_CancelPreConnectedServerProcessWithResetLevel
-8023da94 00000460 8023da94 0 zz_8023da94_
-8023def4 00000350 8023def4 0 zz_8023def4_
-8023e244 00000654 8023e244 0 zz_8023e244_
-8023e898 000018b8 8023e898 0 zz_8023e898_
-80240150 000002d0 80240150 0 zz_80240150_
-80240420 000003e0 80240420 0 zz_80240420_
-80240800 00000820 80240800 0 zz_80240800_
-80241020 000004fc 80241020 0 zz_80241020_
-8024151c 000002f0 8024151c 0 zz_8024151c_
-8024180c 000003d0 8024180c 0 zz_8024180c_
-80241bdc 00000550 80241bdc 0 zz_80241bdc_
-8024212c 0000070c 8024212c 0 zz_8024212c_
-80242838 00000408 80242838 0 zz_80242838_
-80242c40 000002a0 80242c40 0 zz_80242c40_
-80242ee0 000002c4 80242ee0 0 zz_80242ee0_
-802431a4 00000300 802431a4 0 zz_802431a4_
-802434a4 00000290 802434a4 0 zz_802434a4_
-80243734 000002b8 80243734 0 zz_80243734_
-802439ec 00001c88 802439ec 0 zz_802439ec_
-80245674 000002c8 80245674 0 zz_80245674_
-8024593c 00000208 8024593c 0 zz_8024593c_
-80245b44 000001b8 80245b44 0 zz_80245b44_
-80245cfc 00000894 80245cfc 0 zz_80245cfc_
-80246590 00000004 80246590 0 zz_80246590_
-80246594 00000004 80246594 0 zz_80246594_
-80246598 00000108 80246598 0 zz_80246598_
-802466a0 00000008 802466a0 0 zz_802466a0_
-802466a8 00000068 802466a8 0 zz_802466a8_
-80246710 0000006c 80246710 0 zz_80246710_
-8024677c 000001ec 8024677c 0 zz_8024677c_
-80246968 00000170 80246968 0 zz_80246968_
-80246ad8 000001b8 80246ad8 0 zz_80246ad8_
-80246c90 00000018 80246c90 0 zz_80246c90_
-80246ca8 00001014 80246ca8 0 zz_80246ca8_
-80247cbc 00000118 80247cbc 0 zz_80247cbc_
-80247dd4 00000084 80247dd4 0 zz_80247dd4_
-80247e58 00000368 80247e58 0 DWCi_SetupGameServer_InterChange
-802481c0 00000210 802481c0 0 DWCi_SendServerPolling
-802483d0 000004d8 802483d0 0 DWCi_ProcessRequestMatch
-802488a8 00000500 802488a8 0 zz_802488a8_
-80248da8 0000015c 80248da8 0 DWCi_RequestSuspendMatchP?
-80248f04 000002d0 80248f04 0 DWCi_RequestSuspendMatch
-802491d4 00000028 802491d4 0 DWCi_IsServerChanging
+8022ed84 00000014 8022ed84 0 DWCi_GetGT2ConnectionByIdx 	dwc.a dwc_main.o
+8022ed98 00000088 8022ed98 0 DWCi_GetGT2ConnectionByProfileID 	dwc.a dwc_main.o
+8022ee20 00000014 8022ee20 0 DWCi_GetConnectionInfoByIdx 	dwc.a dwc_main.o
+8022ee34 0000007c 8022ee34 0 DWCi_IsValidAID 	dwc.a dwc_main.o
+8022eeb0 00000168 8022eeb0 0 DWCi_HandleGPError_11637 	dwc.a dwc_main.o
+8022f018 000000d0 8022f018 0 DWCi_HandleGT2Error 	dwc.a dwc_main.o
+8022f0e8 00000158 8022f0e8 0 zz_8022f0e8_ 	dwc.a dwc_main.o
+8022f240 0000015c 8022f240 0 zz_8022f240_ 	dwc.a dwc_main.o
+8022f39c 00000300 8022f39c 0 zz_8022f39c_ 	dwc.a dwc_main.o
+8022f69c 00000470 8022f69c 0 DWCi_GPErrorCallback 	dwc.a dwc_main.o
+8022fb0c 00000170 8022fb0c 0 DWCi_GPRecvBuddyMessageCallback 	dwc.a dwc_main.o
+8022fc7c 00000004 8022fc7c 0 DWCi_GT2ReceivedCallback 	dwc.a dwc_main.o
+8022fc80 00000980 8022fc80 0 DWCi_GT2ClosedCallback 	dwc.a dwc_main.o
+80230600 0000000c 80230600 0 zz_80230600_ 	dwc.a dwc_main.o
+8023060c 00000058 8023060c 0 DWCi_GT2PingCallback 	dwc.a dwc_main.o
+80230664 0000005c 80230664 0 DWCi_GT2SocketErrorCallback 	dwc.a dwc_main.o
+802306c0 000000c4 802306c0 0 zz_802306c0_ 	dwc.a dwc_main.o
+80230784 0000001c 80230784 0 DWCi_NNFreeNegotiateList 	dwc.a dwc_match.s
+802307a0 000000ac 802307a0 0 DWC_CancelMatching 	dwc.a dwc_match.s
+8023084c 00000448 8023084c 0 DWC_AddMatchKeyInt 	dwc.a dwc_match.s
+80230c94 0000044c 80230c94 0 DWC_AddMatchKeyString 	dwc.a dwc_match.s
+802310e0 0000008c 802310e0 0 DWC_GetMatchIntValue 	dwc.a dwc_match.s
+8023116c 0000008c 8023116c 0 DWC_GetMatchStringValue 	dwc.a dwc_match.s
+802311f8 00000114 802311f8 0 zz_802311f8_ 	dwc.a dwc_match.s
+8023130c 000002b4 8023130c 0 DWCi_MatchInit 	dwc.a dwc_match.s
+802315c0 000001e4 802315c0 0 DWCi_QR2Startup 	dwc.a dwc_match.s
+802317a4 00000624 802317a4 0 DWCi_ConnectToAnybodyAsync 	dwc.a dwc_match.s
+80231dc8 0000059c 80231dc8 0 zz_80231dc8_ 	dwc.a dwc_match.s
+80232364 00000ad4 80232364 0 zz_80232364_ 	dwc.a dwc_match.s
+80232e38 00002aac 80232e38 0 DWCi_MatchProcess 	dwc.a dwc_match.s
+802358e4 00000174 802358e4 0 zz_802358e4_ 	dwc.a dwc_match.s
+80235a58 00000778 80235a58 0 zz_80235a58_ 	dwc.a dwc_match.s
+802361d0 00000678 802361d0 0 zz_802361d0_ 	dwc.a dwc_match.s
+80236848 000000f0 80236848 0 zz_80236848_ 	dwc.a dwc_match.s
+80236938 0000021c 80236938 0 zz_80236938_ 	dwc.a dwc_match.s
+80236b54 00000060 80236b54 0 zz_80236b54_ 	dwc.a dwc_match.s
+80236bb4 0000006c 80236bb4 0 zz_80236bb4_ 	dwc.a dwc_match.s
+80236c20 00001438 80236c20 0 zz_80236c20_ 	dwc.a dwc_match.s
+80238058 00000184 80238058 0 zz_80238058_ 	dwc.a dwc_match.s
+802381dc 000005b8 802381dc 0 zz_802381dc_ 	dwc.a dwc_match.s
+80238794 00000044 80238794 0 zz_80238794_ 	dwc.a dwc_match.s
+802387d8 00000178 802387d8 0 DWCi_GPSetServerStatus 	dwc.a dwc_match.s
+80238950 000000a8 80238950 0 zz_80238950_ 	dwc.a dwc_match.s
+802389f8 00000010 802389f8 0 zz_802389f8_ 	dwc.a dwc_match.s
+80238a08 000004c0 80238a08 0 zz_80238a08_ 	dwc.a dwc_match.s
+80238ec8 000000e8 80238ec8 0 zz_80238ec8_ 	dwc.a dwc_match.s
+80238fb0 00000354 80238fb0 0 DWCi_CloseMatching 	dwc.a dwc_match.s
+80239304 000003e0 80239304 0 DWCi_SBUpdateAsync 	dwc.a dwc_match.s
+802396e4 00000370 802396e4 0 DWCi_NNStartupAsync 	dwc.a dwc_match.s
+80239a54 000004b8 80239a54 0 DWCi_SendMatchCommand 	dwc.a dwc_match.s
+80239f0c 00002c50 80239f0c 0 DWCi_ProcessRecvMatchCommand 	dwc.a dwc_match.s
+8023cb5c 000002d8 8023cb5c 0 DWCi_CheckResvCommand 	dwc.a dwc_match.s
+8023ce34 000004c4 8023ce34 0 DWCi_CheckResvCommand_Sub 	dwc.a dwc_match.s
+8023d2f8 000001b8 8023d2f8 0 zz_8023d2f8_ 	dwc.a dwc_match.s
+8023d4b0 00000364 8023d4b0 0 zz_8023d4b0_ 	dwc.a dwc_match.s
+8023d814 00000280 8023d814 0 DWCi_CancelPreConnectedServerProcessWithResetLevel 	dwc.a dwc_match.s
+8023da94 00000460 8023da94 0 zz_8023da94_ 	dwc.a dwc_match.s
+8023def4 00000350 8023def4 0 zz_8023def4_ 	dwc.a dwc_match.s
+8023e244 00000654 8023e244 0 zz_8023e244_ 	dwc.a dwc_match.s
+8023e898 000018b8 8023e898 0 zz_8023e898_ 	dwc.a dwc_match.s
+80240150 000002d0 80240150 0 zz_80240150_ 	dwc.a dwc_match.s
+80240420 000003e0 80240420 0 zz_80240420_ 	dwc.a dwc_match.s
+80240800 00000820 80240800 0 zz_80240800_ 	dwc.a dwc_match.s
+80241020 000004fc 80241020 0 zz_80241020_ 	dwc.a dwc_match.s
+8024151c 000002f0 8024151c 0 zz_8024151c_ 	dwc.a dwc_match.s
+8024180c 000003d0 8024180c 0 zz_8024180c_ 	dwc.a dwc_match.s
+80241bdc 00000550 80241bdc 0 zz_80241bdc_ 	dwc.a dwc_match.s
+8024212c 0000070c 8024212c 0 zz_8024212c_ 	dwc.a dwc_match.s
+80242838 00000408 80242838 0 zz_80242838_ 	dwc.a dwc_match.s
+80242c40 000002a0 80242c40 0 zz_80242c40_ 	dwc.a dwc_match.s
+80242ee0 000002c4 80242ee0 0 DWCi_HandleSBError 	dwc.a dwc_match.s
+802431a4 00000300 802431a4 0 zz_802431a4_ 	dwc.a dwc_match.s
+802434a4 00000290 802434a4 0 DWCi_HandleNNError 	dwc.a dwc_match.s
+80243734 000002b8 80243734 0 zz_80243734_ 	dwc.a dwc_match.s
+802439ec 00001c88 802439ec 0 zz_802439ec_ 	dwc.a dwc_match.s
+80245674 000002c8 80245674 0 zz_80245674_ 	dwc.a dwc_match.s
+8024593c 00000208 8024593c 0 zz_8024593c_ 	dwc.a dwc_match.s
+80245b44 000001b8 80245b44 0 zz_80245b44_ 	dwc.a dwc_match.s
+80245cfc 00000894 80245cfc 0 zz_80245cfc_ 	dwc.a dwc_match.s
+80246590 00000004 80246590 0 zz_80246590_ 	dwc.a dwc_match.s
+80246594 00000004 80246594 0 zz_80246594_ 	dwc.a dwc_match.s
+80246598 00000108 80246598 0 zz_80246598_ 	dwc.a dwc_match.s
+802466a0 00000008 802466a0 0 zz_802466a0_ 	dwc.a dwc_match.s
+802466a8 00000068 802466a8 0 zz_802466a8_ 	dwc.a dwc_match.s
+80246710 0000006c 80246710 0 zz_80246710_ 	dwc.a dwc_match.s
+8024677c 000001ec 8024677c 0 zz_8024677c_ 	dwc.a dwc_match.s
+80246968 00000170 80246968 0 zz_80246968_ 	dwc.a dwc_match.s
+80246ad8 000001b8 80246ad8 0 zz_80246ad8_ 	dwc.a dwc_match.s
+80246c90 00000018 80246c90 0 DWCi_NNProgressCallback 	dwc.a dwc_match.s
+80246ca8 00001014 80246ca8 0 zz_80246ca8_ 	dwc.a dwc_match.s
+80247cbc 00000118 80247cbc 0 zz_80247cbc_ 	dwc.a dwc_match.s
+80247dd4 00000084 80247dd4 0 zz_80247dd4_ 	dwc.a dwc_match.s
+80247e58 00000368 80247e58 0 DWCi_SetupGameServer_InterChange 	dwc.a dwc_match.s
+802481c0 00000210 802481c0 0 DWCi_SendServerPolling 	dwc.a dwc_match.s
+802483d0 000004d8 802483d0 0 DWCi_ProcessRequestMatch 	dwc.a dwc_match.s
+802488a8 00000500 802488a8 0 zz_802488a8_ 	dwc.a dwc_match.s
+80248da8 0000015c 80248da8 0 DWCi_RequestSuspendMatchP? 	dwc.a dwc_match.s
+80248f04 000002d0 80248f04 0 DWCi_RequestSuspendMatch 	dwc.a dwc_match.s
+802491d4 00000028 802491d4 0 DWCi_IsServerChanging 	dwc.a dwc_match.s
 802491fc 000000e8 802491fc 0 DWCi_SetMatchStatus 	dwc.a dwc_match.s
-802492e4 0000001c 802492e4 0 DWCi_IsServerChangeEnable?
-80249300 00000014 80249300 0 DWCi_NodeInfoList_Clear
-80249314 0000000c 80249314 0 DWCi_NodeInfoList_GetCoun?
-80249320 000000e4 80249320 0 DWCi_NodeInfoList_RemoveA?
-80249404 000000e4 80249404 0 DWCi_NodeInfoList_RemoveP?
-802494e8 00000020 802494e8 0 DWCi_NodeInfoList_GetServ?
-80249508 00000028 80249508 0 DWCi_NodeInfoList_GetNode?
-80249530 0000004c 80249530 0 DWCi_NodeInfoList_GetNode?
-8024957c 0000004c 8024957c 0 DWCi_NodeInfoList_GetNode?
-802495c8 0000006c 802495c8 0 DWCi_NodeInfoList_GetFree?
-80249634 000001a0 80249634 0 DWCi_GetNextMeshMakeTryTi?
-802497d4 00000248 802497d4 0 DWCi_StopMeshMaking
-80249a1c 00000018 80249a1c 0 DWCi_IsFullMesh
-80249a34 00000060 80249a34 0 DWCi_IsLockedBuddyStatus
-80249a94 00000014 80249a94 0 DWCi_InitReliableQueue
-80249aa8 00000070 80249aa8 0 DWCi_CleanupReliableQueue?
-80249b18 00000020 80249b18 0 DWCi_IsReliableQueueFree
-80249b38 0000000c 80249b38 0 DWCi_ProcessReliableQueue?
-80249b44 00000110 80249b44 0 DWCi_ProcessReliableQueue?
-80249c54 00000128 80249c54 0 DWCi_InsertReliableQueue
-80249d7c 00000210 80249d7c 0 DWCi_IsSendableReliable
+802492e4 0000001c 802492e4 0 DWCi_IsServerChangeEnable? 	dwc.a dwc_match.s
+80249300 00000014 80249300 0 DWCi_NodeInfoList_Clear 	dwc.a dwc_match.s
+80249314 0000000c 80249314 0 DWCi_NodeInfoList_GetCoun? 	dwc.a dwc_match.s
+80249320 000000e4 80249320 0 DWCi_NodeInfoList_RemoveA? 	dwc.a dwc_match.s
+80249404 000000e4 80249404 0 DWCi_NodeInfoList_RemoveP? 	dwc.a dwc_match.s
+802494e8 00000020 802494e8 0 DWCi_NodeInfoList_GetServ? 	dwc.a dwc_match.s
+80249508 00000028 80249508 0 DWCi_NodeInfoList_GetNode? 	dwc.a dwc_match.s
+80249530 0000004c 80249530 0 DWCi_NodeInfoList_GetNode? 	dwc.a dwc_match.s
+8024957c 0000004c 8024957c 0 DWCi_NodeInfoList_GetNode? 	dwc.a dwc_match.s
+802495c8 0000006c 802495c8 0 DWCi_NodeInfoList_GetFree? 	dwc.a dwc_match.s
+80249634 000001a0 80249634 0 DWCi_GetNextMeshMakeTryTi? 	dwc.a dwc_match.s
+802497d4 00000248 802497d4 0 DWCi_StopMeshMaking 	dwc.a dwc_match.s
+80249a1c 00000018 80249a1c 0 DWCi_IsFullMesh 	dwc.a dwc_match.s
+80249a34 00000060 80249a34 0 DWCi_IsLockedBuddyStatus 	dwc.a dwc_match.s
+80249a94 00000014 80249a94 0 DWCi_InitReliableQueue 	dwc.a dwc_reliable.s
+80249aa8 00000070 80249aa8 0 DWCi_CleanupReliableQueue? 	dwc.a dwc_reliable.s
+80249b18 00000020 80249b18 0 DWCi_IsReliableQueueFree 	dwc.a dwc_reliable.s
+80249b38 0000000c 80249b38 0 DWCi_ProcessReliableQueue? 	dwc.a dwc_reliable.s
+80249b44 00000110 80249b44 0 DWCi_ProcessReliableQueue? 	dwc.a dwc_reliable.s
+80249c54 00000128 80249c54 0 DWCi_InsertReliableQueue 	dwc.a dwc_reliable.s
+80249d7c 00000210 80249d7c 0 DWCi_IsSendableReliable 	dwc.a dwc_transport.s
 80249f8c 00000240 80249f8c 0 DWCi_SendReliable 	dwc.a dwc_transport.s
 8024a1cc 000000f8 8024a1cc 0 DWC_SendUnreliable 	dwc.a dwc_transport.s
 8024a2c4 00000070 8024a2c4 0 DWC_SetRecvBuffer 	dwc.a dwc_transport.s
 8024a334 00000028 8024a334 0 zz_8024a334_ 	dwc.a dwc_transport.s
 8024a35c 00000028 8024a35c 0 zz_8024a35c_ 	dwc.a dwc_transport.s
 8024a384 00000028 8024a384 0 zz_8024a384_ 	dwc.a dwc_transport.s
-8024a3ac 00000050 8024a3ac 0 zz_8024a3ac_ 	dwc.a dwc_transport.s
+8024a3ac 00000050 8024a3ac 0 DWCi_InitTransport 	dwc.a dwc_transport.s
 8024a3fc 000000e4 8024a3fc 0 DWCi_RecvCallback 	dwc.a dwc_transport.c
 8024a4e0 0000005c 8024a4e0 0 DWCi_PingCallbackDWCi_PingCallback 	dwc.a dwc_transport.c
 8024a53c 00000400 8024a53c 0 DWCi_TransportProcess 	dwc.a dwc_transport.c
@@ -7661,24 +7662,24 @@
 80251b78 00000018 80251b78 0 DWCi_EncSessionGetResponse 	dwc.a dwc_encsession.o
 80251b90 00000270 80251b90 0 DWCi_EncSessionGetAsync 	dwc.a dwc_encsession.o
 80251e00 00000008 80251e00 0 DWC_GetDateTime 	dwc.a dwc_nastime.o
-80251e08 00000004 80251e08 0 zz_80251e08_
-80251e0c 000000c4 80251e0c 0 zz_80251e0c_
-80251ed0 0000002c 80251ed0 0 zz_80251ed0_
-80251efc 00000114 80251efc 0 zz_80251efc_
-80252010 00000248 80252010 0 zz_80252010_
-80252258 0000014c 80252258 0 zz_80252258_
-802523a4 00000008 802523a4 0 zz_802523a4_
-802523ac 000001e4 802523ac 0 zz_802523ac_
-80252590 000000dc 80252590 0 zz_80252590_
-8025266c 000000d4 8025266c 0 zz_8025266c_
-80252740 0000000c 80252740 0 zz_80252740_
-8025274c 00000004 8025274c 0 zz_8025274c_
-80252750 00000004 80252750 0 zz_80252750_
-80252754 00000004 80252754 0 zz_80252754_
-80252758 00000004 80252758 0 zz_80252758_
-8025275c 00000118 8025275c 0 zz_8025275c_
-80252874 00000178 80252874 0 zz_80252874_
-802529ec 000001f8 802529ec 0 zz_802529ec_
+80251e08 00000004 80251e08 0 zz_80251e08_ 	dwc.a code_80251E08.o
+80251e0c 000000c4 80251e0c 0 zz_80251e0c_ 	dwc.a code_80251E08.o
+80251ed0 0000002c 80251ed0 0 zz_80251ed0_ 	dwc.a code_80251E08.o
+80251efc 00000114 80251efc 0 zz_80251efc_ 	dwc.a code_80251E08.o
+80252010 00000248 80252010 0 zz_80252010_ 	dwc.a code_80251E08.o
+80252258 0000014c 80252258 0 zz_80252258_ 	dwc.a code_80251E08.o
+802523a4 00000008 802523a4 0 zz_802523a4_ 	dwc.a code_80251E08.o
+802523ac 000001e4 802523ac 0 zz_802523ac_ 	dwc.a code_80251E08.o
+80252590 000000dc 80252590 0 zz_80252590_ 	dwc.a code_80251E08.o
+8025266c 000000d4 8025266c 0 zz_8025266c_ 	dwc.a code_80251E08.o
+80252740 0000000c 80252740 0 zz_80252740_ 	dwc.a code_80251E08.o
+8025274c 00000004 8025274c 0 zz_8025274c_ 	dwc.a code_80251E08.o
+80252750 00000004 80252750 0 zz_80252750_ 	dwc.a code_80251E08.o
+80252754 00000004 80252754 0 zz_80252754_ 	dwc.a code_80251E08.o
+80252758 00000004 80252758 0 zz_80252758_ 	dwc.a code_80251E08.o
+8025275c 00000118 8025275c 0 zz_8025275c_ 	dwc.a code_80251E08.o
+80252874 00000178 80252874 0 zz_80252874_ 	dwc.a code_80251E08.o
+802529ec 000001f8 802529ec 0 zz_802529ec_ 	dwc.a code_80251E08.o
 80252be4 0000009c 80252be4 0 ArrayNew 	gs.a darray.o
 80252c80 00000094 80252c80 0 ArrayFree 	gs.a darray.o
 80252d14 00000008 80252d14 0 ArrayLength 	gs.a darray.o
@@ -8312,21 +8313,21 @@
 80285b04 00000010 80285b04 0 VISetRGBModeImm 	vi.a vi3in1.o
 80285b14 00000048 80285b14 0 __VISetRGBModeImm 	vi.a vi3in1.o
 80285b5c 00000434 80285b5c 0 __VISetRevolutionModeSimple 	vi.a vi3in1.o
-80285f90 000000d0 80285f90 0 zz_80285f90_
-80286060 00000184 80286060 0 zz_80286060_
-802861e4 000001dc 802861e4 0 zz_802861e4_
-802863c0 0000003c 802863c0 0 zz_802863c0_
-802863fc 0000004c 802863fc 0 zz_802863fc_
-80286448 0000008c 80286448 0 zz_80286448_
-802864d4 000000a8 802864d4 0 zz_802864d4_
-8028657c 00000100 8028657c 0 zz_8028657c_
-8028667c 000000f0 8028667c 0 zz_8028667c_
-8028676c 00000068 8028676c 0 zz_8028676c_
-802867d4 00000008 802867d4 0 zz_802867d4_
-802867dc 0000005c 802867dc 0 zz_802867dc_
-80286838 00000128 80286838 0 zz_80286838_
-80286960 00000070 80286960 0 zz_80286960_
-802869d0 000000e4 802869d0 0 zz_802869d0_
+80285f90 000000d0 80285f90 0 zz_80285f90_ 	code_80285F90.a code_80285F90.o
+80286060 00000184 80286060 0 zz_80286060_ 	code_80285F90.a code_80285F90.o
+802861e4 000001dc 802861e4 0 zz_802861e4_ 	code_80285F90.a code_80285F90.o
+802863c0 0000003c 802863c0 0 zz_802863c0_ 	code_80285F90.a code_80285F90.o
+802863fc 0000004c 802863fc 0 zz_802863fc_ 	code_80285F90.a code_80285F90.o
+80286448 0000008c 80286448 0 zz_80286448_ 	code_80285F90.a code_80285F90.o
+802864d4 000000a8 802864d4 0 zz_802864d4_ 	code_80285F90.a code_80285F90.o
+8028657c 00000100 8028657c 0 zz_8028657c_ 	code_80285F90.a code_80285F90.o
+8028667c 000000f0 8028667c 0 zz_8028667c_ 	code_80285F90.a code_80285F90.o
+8028676c 00000068 8028676c 0 zz_8028676c_ 	code_80285F90.a code_80285F90.o
+802867d4 00000008 802867d4 0 zz_802867d4_ 	code_80285F90.a code_80285F90.o
+802867dc 0000005c 802867dc 0 zz_802867dc_ 	code_80285F90.a code_80285F90.o
+80286838 00000128 80286838 0 zz_80286838_ 	code_80285F90.a code_80285F90.o
+80286960 00000070 80286960 0 zz_80286960_ 	code_80285F90.a code_80285F90.o
+802869d0 000000e4 802869d0 0 zz_802869d0_ 	code_80285F90.a code_80285F90.o
 80286ab4 000002d8 80286ab4 0 WENCGetEncodeData 	wenc.a wenc.o
 80286d8c 00000008 80286d8c 0 __wpadNoAlloc 	wpad.a WPAD.o
 80286d94 00000008 80286d94 0 __wpadNoFree 	wpad.a WPAD.o
@@ -9833,238 +9834,243 @@
 802e50c0 00000088 802e50c0 0 __GXSetMatrixIndex 	gx.a GXTransform.o
 802e5148 0000082c 802e5148 0 GXSetGPMetric 	gx.a GXPerf.o
 802e5974 00000010 802e5974 0 GXClearGPMetric 	gx.a GXPerf.o
-802e5984 00000038 802e5984 0 homebutton::FrameController::init(int, float, float, float) 	homebuttonLib.a HBMFrameController.o
-802e59bc 00000020 802e59bc 0 homebutton::FrameController::initFrame(void) 	homebuttonLib.a HBMFrameController.o
-802e59dc 000000d8 802e59dc 0 zz_802e59dc_
-802e5ab4 00000078 802e5ab4 0 zz_802e5ab4_
-802e5b2c 0000001c 802e5b2c 0 homebutton::GroupAnmController::GroupAnmController(void) 	homebuttonLib.a HBMAnmController.o
-802e5b48 00000040 802e5b48 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802e5b88 000000b0 802e5b88 0 homebutton::GroupAnmController::do_calc(void) 	homebuttonLib.a HBMAnmController.o
-802e5c38 000001c4 802e5c38 0 zz_802e5c38_
-802e5dfc 00000208 802e5dfc 0 homebutton::gui::Component::update(int, float, float, unsigned long, unsigned long, unsigned long, void *) 	homebuttonLib.a HBM
-802e6004 00000008 802e6004 0 zz_802e6004_
-802e600c 0000000c 802e600c 0 J3DTevBlockPatched::getTevKColorSel(unsigned long) 	J3DGraphBase.a J3DMatBlock.o
-802e6018 00000004 802e6018 0 zz_802e6018_
-802e601c 00000020 802e601c 0 nw4hbm::lyt::Layout::Animate(unsigned long) 	homebuttonLib.a lyt_layout.o
-802e603c 00000004 802e603c 0 zz_802e603c_
-802e6040 00000008 802e6040 0 zz_802e6040_
-802e6048 0000000c 802e6048 0 J3DTevBlockPatched::setTevKColorSel(unsigned long, unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-802e6054 00000004 802e6054 0 zz_802e6054_
-802e6058 00000004 802e6058 0 zz_802e6058_
-802e605c 000000bc 802e605c 0 homebutton::gui::Manager::~Manager(void) 	homebuttonLib.a HBMGUIManager.o
-802e6118 00000068 802e6118 0 homebutton::gui::Manager::draw(void) 	homebuttonLib.a HBMGUIManager.o
-802e6180 0000002c 802e6180 0 homebutton::gui::Component::init(void) 	homebuttonLib.a HBMGUIManager.o
-802e61ac 000000c4 802e61ac 0 homebutton::gui::Manager::addComponent(homebutton::gui::Component *) 	homebuttonLib.a HBMGUIManager.o
-802e6270 00000008 802e6270 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802e6278 000000a0 802e6278 0 zz_802e6278_
-802e6318 0000002c 802e6318 0 homebutton::gui::Manager::getComponent(unsigned long) 	homebuttonLib.a HBMGUIManager.o
-802e6344 000001a4 802e6344 0 homebutton::gui::Manager::update(int, float, float, unsigned long, unsigned long, unsigned long, void *) 	homebuttonLib.a HBMGU
-802e64e8 00000008 802e64e8 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
-802e64f0 00000030 802e64f0 0 homebutton::gui::Component::onTrig(unsigned long, Vec &) 	homebuttonLib.a HBMGUIManager.o
-802e6520 00000068 802e6520 0 homebutton::gui::Manager::draw(void) 	homebuttonLib.a HBMGUIManager.o
-802e6588 00000004 802e6588 0 zz_802e6588_
-802e658c 00000068 802e658c 0 homebutton::gui::Manager::draw(void) 	homebuttonLib.a HBMGUIManager.o
-802e65f4 00000004 802e65f4 0 zz_802e65f4_
-802e65f8 00000078 802e65f8 0 homebutton::gui::Manager::setAllComponentTriggerTarget(bool) 	homebuttonLib.a HBMGUIManager.o
-802e6670 00000008 802e6670 0 J3DColorBlockLightOff::setColorChanNum(unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-802e6678 00000154 802e6678 0 homebutton::gui::PaneManager::~PaneManager(void) 	homebuttonLib.a HBMGUIManager.o
-802e67cc 00000040 802e67cc 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802e680c 00000040 802e680c 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802e684c 000002cc 802e684c 0 zz_802e684c_
-802e6b18 00000008 802e6b18 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802e6b20 0000000c 802e6b20 0 GetOneTimerLeadGroundContactAnims(void)
-802e6b2c 00000134 802e6b2c 0 zz_802e6b2c_
-802e6c60 00000078 802e6c60 0 homebutton::gui::PaneManager::getPaneComponentByPane(nw4hbm::lyt::Pane *) 	homebuttonLib.a HBMGUIManager.o
-802e6cd8 000000d0 802e6cd8 0 zz_802e6cd8_
-802e6da8 0000012c 802e6da8 0 zz_802e6da8_
-802e6ed4 00000008 802e6ed4 0 zz_802e6ed4_
-802e6edc 000001a0 802e6edc 0 zz_802e6edc_
-802e707c 00000100 802e707c 0 homebutton::gui::is_visible(nw4hbm::lyt::Pane *) 	homebuttonLib.a HBMGUIManager.o
-802e717c 0000000c 802e717c 0 GXGetTexObjMipMap 	gx.a GXTexture.o
-802e7188 00000008 802e7188 0 zz_802e7188_
-802e7190 000000d4 802e7190 0 homebutton::gui::PaneComponent::isVisible(void) 	homebuttonLib.a HBMGUIManager.o
-802e7264 00000004 802e7264 0 zz_802e7264_
-802e7268 00000004 802e7268 0 zz_802e7268_
-802e726c 00000008 802e726c 0 zz_802e726c_
-802e7274 00000008 802e7274 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802e727c 00000004 802e727c 0 zz_802e727c_
-802e7280 00000008 802e7280 0 zz_802e7280_
-802e7288 0000002c 802e7288 0 homebutton::gui::Manager::setEventHandler(homebutton::gui::EventHandler *) 	homebuttonLib.a HBMGUIManager.o
-802e72b4 00000008 802e72b4 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802e72bc 00000008 802e72bc 0 zz_802e72bc_
-802e72c4 00000008 802e72c4 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802e72cc 00000114 802e72cc 0 zz_802e72cc_
-802e73e0 00000110 802e73e0 0 homebutton::Controller::wpadExtensionCallback(long, long) 	homebuttonLib.a HBMController.o
-802e74f0 0000006c 802e74f0 0 homebutton::Controller::soundOnCallback(OSAlarm *, OSContext *) 	homebuttonLib.a HBMController.o
-802e755c 000000bc 802e755c 0 zz_802e755c_
-802e7618 000000a4 802e7618 0 zz_802e7618_
-802e76bc 00000074 802e76bc 0 zz_802e76bc_
-802e7730 00000184 802e7730 0 zz_802e7730_
-802e78b4 00000014 802e78b4 0 GKI_init_timer_list 	bte.a gki_time.o
-802e78c8 0000001c 802e78c8 0 zz_802e78c8_
-802e78e4 00000010 802e78e4 0 homebutton::Controller::isPlayReady(void) const 	homebuttonLib.a HBMController.o
-802e78f4 00000004 802e78f4 0 zz_802e78f4_
-802e78f8 00000008 802e78f8 0 nw4hbm::ut::TextWriterBase<w>::SetCharSpace(float) 	homebuttonLib.a ut_TextWriterBase.o
-802e7900 0000009c 802e7900 0 zz_802e7900_
-802e799c 00000060 802e799c 0 homebutton::Controller::isPlayingSoundId(int) const 	homebuttonLib.a HBMController.o
-802e79fc 00000010 802e79fc 0 cGameSFX::Init(void)
-802e7a0c 00000238 802e7a0c 0 zz_802e7a0c_
-802e7c44 00000010 802e7c44 0 homebutton::Controller::isPlayReady(void) const 	homebuttonLib.a HBMController.o
-802e7c54 00000004 802e7c54 0 zz_802e7c54_
-802e7c58 00000064 802e7c58 0 zz_802e7c58_
-802e7cbc 00000030 802e7cbc 0 homebutton::Controller::stopMotor(void) 	homebuttonLib.a HBMController.o
-802e7cec 00000084 802e7cec 0 homebutton::Controller::getInfoAsync(WPADInfo *) 	homebuttonLib.a HBMController.o
+802e5984 00000038 802e5984 0 init__Q210homebutton15FrameControllerFifff 	homebuttonLib.a HBMFrameController.o
+802e59bc 00000020 802e59bc 0 initFrame__Q210homebutton15FrameControllerFv 	homebuttonLib.a HBMFrameController.o
+802e59dc 00000150 802e59dc 0 calc__Q210homebutton15FrameControllerFv 	homebuttonLib.a HBMFrameController.o
+802e5b2c 0000001c 802e5b2c 0 homebutton18GroupAnmControllerFv.__ct 	homebuttonLib.a HBMAnmController.o
+802e5b48 00000040 802e5b48 0 __dt__Q210homebutton18GroupAnmControllerFv 	homebuttonLib.a HBMAnmController.o
+802e5b88 000000b0 802e5b88 0 do_calc__Q210homebutton18GroupAnmControllerFv 	homebuttonLib.a HBMAnmController.o
+802e5c38 000001c4 802e5c38 0 drawLine___Q210homebutton3guiFfffffUcR8_GXColor 	homebuttonLib.a HBMGUIManager.o
+802e5dfc 00000208 802e5dfc 0 update__Q310homebutton3gui9ComponentFiffUlUlUlPv 	homebuttonLib.a HBMGUIManager.o
+802e6004 00000008 802e6004 0 isVisible__Q310homebutton3gui9ComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e600c 0000000c 802e600c 0 isPointed__Q310homebutton3gui9ComponentFi 	homebuttonLib.a HBMGUIManager.o
+802e6018 00000004 802e6018 0 onMove__Q310homebutton3gui9ComponentFff 	homebuttonLib.a HBMGUIManager.o
+802e601c 00000020 802e601c 0 onEvent__Q310homebutton3gui7ManagerFUlUlPv 	homebuttonLib.a HBMGUIManager.o
+802e603c 00000004 802e603c 0 onEvent__Q310homebutton3gui12EventHandlerFUlUlPv 	homebuttonLib.a HBMGUIManager.o
+802e6040 00000008 802e6040 0 getID__Q310homebutton3gui9ComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e6048 0000000c 802e6048 0 setPointed__Q310homebutton3gui9ComponentFib 	homebuttonLib.a HBMGUIManager.o
+802e6054 00000004 802e6054 0 onPoint__Q310homebutton3gui9ComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e6058 00000004 802e6058 0 offPoint__Q310homebutton3gui9ComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e605c 000000bc 802e605c 0 __dt__Q310homebutton3gui7ManagerFv 	homebuttonLib.a HBMGUIManager.o
+802e6118 00000068 802e6118 0 init__Q310homebutton3gui7ManagerFv 	homebuttonLib.a HBMGUIManager.o
+802e6180 0000002c 802e6180 0 init__Q310homebutton3gui9ComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e61ac 000000c4 802e61ac 0 addComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component 	homebuttonLib.a HBMGUIManager.o
+802e6270 00000008 802e6270 0 setManager__Q310homebutton3gui9ComponentFPQ310homebutton3gui7Manager 	homebuttonLib.a HBMGUIManager.o
+802e6278 000000a0 802e6278 0 delComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component 	homebuttonLib.a HBMGUIManager.o
+802e6318 0000002c 802e6318 0 getComponent__Q310homebutton3gui7ManagerFUl 	homebuttonLib.a HBMGUIManager.o
+802e6344 000001a4 802e6344 0 update__Q310homebutton3gui7ManagerFiffUlUlUlPv 	homebuttonLib.a HBMGUIManager.o
+802e64e8 00000008 802e64e8 0 isTriggerTarger__Q310homebutton3gui9ComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e64f0 00000030 802e64f0 0 onTrig__Q310homebutton3gui9ComponentFUlR3Vec 	homebuttonLib.a HBMGUIManager.o
+802e6520 00000068 802e6520 0 calc__Q310homebutton3gui7ManagerFv 	homebuttonLib.a HBMGUIManager.o
+802e6588 00000004 802e6588 0 calc__Q310homebutton3gui9InterfaceFv 	homebuttonLib.a HBMGUIManager.o
+802e658c 00000068 802e658c 0 draw__Q310homebutton3gui7ManagerFv 	homebuttonLib.a HBMGUIManager.o
+802e65f4 00000004 802e65f4 0 draw__Q310homebutton3gui9InterfaceFv 	homebuttonLib.a HBMGUIManager.o
+802e65f8 00000078 802e65f8 0 setAllComponentTriggerTarget__Q310homebutton3gui7ManagerFb 	homebuttonLib.a HBMGUIManager.o
+802e6670 00000008 802e6670 0 setTriggerTarget__Q310homebutton3gui9ComponentFb 	homebuttonLib.a HBMGUIManager.o
+802e6678 00000154 802e6678 0 __dt__Q310homebutton3gui11PaneManagerFv 	homebuttonLib.a HBMGUIManager.o
+802e67cc 00000040 802e67cc 0 __dt__Q310homebutton3gui13PaneComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e680c 00000040 802e680c 0 __dt__Q310homebutton3gui9ComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e684c 00000024 802e684c 0 createLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout 	homebuttonLib.a HBMGUIManager.o
+802e6870 00000018 802e6870 0 addLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout 	homebuttonLib.a HBMGUIManager.o
+802E6888 00000290 802E6888 0 walkInChildren__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4> 	homebuttonLib.a HBMGUIManager.o
+802e6b18 00000008 802e6b18 0 setPane__Q310homebutton3gui13PaneComponentFPQ36nw4hbm3lyt4Pane 	homebuttonLib.a HBMGUIManager.o
+802e6b20 0000000c 802e6b20 0 GetRuntimeTypeInfo__Q36nw4hbm3lyt4PaneCFv 	homebuttonLib.a HBMGUIManager.o
+802e6b2c 00000018 802e6b2c 0 delLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout 	homebuttonLib.a HBMGUIManager.o
+802e6b44 0000011C 802e6b44 0 walkInChildrenDel__Q310homebutton3gui11PaneManagerFRQ36nw4hbm2ut30LinkList<Q36nw4hbm3lyt4Pane,4> 	homebuttonLib.a HBMGUIManager.o
+802e6c60 00000078 802e6c60 0 getPaneComponentByPane__Q310homebutton3gui11PaneManagerFPQ36nw4hbm3lyt4Pane 	homebuttonLib.a HBMGUIManager.o
+802e6cd8 000000d0 802e6cd8 0 setAllBoundingBoxComponentTriggerTarget__Q310homebutton3gui11PaneManagerFb 	homebuttonLib.a HBMGUIManager.o
+802e6da8 0000012c 802e6da8 0 contain__Q310homebutton3gui13PaneComponentFff 	homebuttonLib.a HBMGUIManager.o
+802e6ed4 00000008 802e6ed4 0 getDrawInfo__Q310homebutton3gui11PaneManagerFv 	homebuttonLib.a HBMGUIManager.o
+802e6edc 000001a0 802e6edc 0 draw__Q310homebutton3gui13PaneComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e707c 00000100 802e707c 0 is_visible__Q210homebutton3guiFPQ36nw4hbm3lyt4Pane 	homebuttonLib.a HBMGUIManager.o
+802e717c 0000000c 802e717c 0 IsVisible__Q36nw4hbm3lyt4PaneCFv 	homebuttonLib.a HBMGUIManager.o
+802e7188 00000008 802e7188 0 GetParent__Q36nw4hbm3lyt4PaneCFv 	homebuttonLib.a HBMGUIManager.o
+802e7190 000000d4 802e7190 0 isVisible__Q310homebutton3gui13PaneComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e7264 00000004 802e7264 0 draw__Q310homebutton3gui9InterfaceFRA3_A4_f 	homebuttonLib.a HBMGUIManager.o
+802e7268 00000004 802e7268 0 create__Q310homebutton3gui9InterfaceFv 	homebuttonLib.a HBMGUIManager.o
+802e726c 00000008 802e726c 0 update__Q310homebutton3gui9ComponentFiPC10KPADStatusffPv 	homebuttonLib.a HBMGUIManager.o
+802e7274 00000008 802e7274 0 setDraggingButton__Q310homebutton3gui9ComponentFUl 	homebuttonLib.a HBMGUIManager.o
+802e727c 00000004 802e727c 0 onDrag__Q310homebutton3gui9ComponentFff 	homebuttonLib.a HBMGUIManager.o
+802e7280 00000008 802e7280 0 getPane__Q310homebutton3gui13PaneComponentFv 	homebuttonLib.a HBMGUIManager.o
+802e7288 0000002c 802e7288 0 setEventHandler__Q310homebutton3gui7ManagerFPQ310homebutton3gui12EventHandler 	homebuttonLib.a HBMGUIManager.o
+802e72b4 00000008 802e72b4 0 setManager__Q310homebutton3gui12EventHandlerFPQ310homebutton3gui7Manager 	homebuttonLib.a HBMGUIManager.o
+802e72bc 00000008 802e72bc 0 update__Q310homebutton3gui7ManagerFiPC10KPADStatusffPv 	homebuttonLib.a HBMGUIManager.o
+802e72c4 00000008 802e72c4 0 setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo 	homebuttonLib.a HBMGUIManager.o
+802e72cc 00000114 802e72cc 0 wpadConnectCallback__Q210homebutton10ControllerFll 	homebuttonLib.a HBMController.o
+802e73e0 00000110 802e73e0 0 wpadExtensionCallback__Q210homebutton10ControllerFll 	homebuttonLib.a HBMController.o
+802e74f0 0000006c 802e74f0 0 soundOnCallback__Q210homebutton10ControllerFP7OSAlarmP9OSContext 	homebuttonLib.a HBMController.o
+802e755c 000000bc 802e755c 0 __ct__Q210homebutton10ControllerFiPQ210homebutton9RemoteSpk 	homebuttonLib.a HBMController.o
+802e7618 000000a4 802e7618 0 initCallback__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e76bc 00000074 802e76bc 0 clearCallback__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e7730 00000184 802e7730 0 setKpad__Q210homebutton10ControllerFPC11HBMKPadDatab 	homebuttonLib.a HBMController.o
+802e78b4 00000014 802e78b4 0 clrKpadButton__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e78c8 0000001c 802e78c8 0 setInValidPos__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e78e4 00000010 802e78e4 0 connect__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e78f4 00000004 802e78f4 0 disconnect__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e78f8 00000008 802e78f8 0 setSpeakerVol__Q210homebutton10ControllerFf 	homebuttonLib.a HBMController.o
+802e7900 0000009c 802e7900 0 playSound__Q210homebutton10ControllerFi 	homebuttonLib.a HBMController.o
+802e799c 00000060 802e799c 0 isPlayingSoundId__Q210homebutton10ControllerCFi 	homebuttonLib.a HBMController.o
+802e79fc 00000010 802e79fc 0 initSound__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e7a0c 00000238 802e7a0c 0 updateSound__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e7c44 00000010 802e7c44 0 isPlayReady__Q210homebutton10ControllerCFv 	homebuttonLib.a HBMController.o
+802e7c54 00000004 802e7c54 0 getController__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e7c58 00000064 802e7c58 0 startMotor__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e7cbc 00000030 802e7cbc 0 stopMotor__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e7cec 00000084 802e7cec 0 getInfoAsync__Q210homebutton10ControllerFP8WPADInfo 	homebuttonLib.a HBMController.o
 802e7d70 00000024 802e7d70 0 zz_802e7d70_
-802e7d94 00000024 802e7d94 0 zz_802e7d94_
-802e7db8 00000020 802e7db8 0 zz_802e7db8_
-802e7dd8 00000268 802e7dd8 0 zz_802e7dd8_
-802e8040 0000002c 802e8040 0 zz_802e8040_
-802e806c 000000bc 802e806c 0 zz_802e806c_
-802e8128 000000a4 802e8128 0 zz_802e8128_
-802e81cc 000000d4 802e81cc 0 zz_802e81cc_
-802e82a0 00000054 802e82a0 0 zz_802e82a0_
-802e82f4 00000030 802e82f4 0 homebutton::RemoteSpk::DelaySpeakerPlayCallback(OSAlarm *, OSContext *) 	homebuttonLib.a HBMRemoteSpk.o
-802e8324 000000e0 802e8324 0 zz_802e8324_
-802e8404 00000030 802e8404 0 homebutton::RemoteSpk::DelaySpeakerPlayCallback(OSAlarm *, OSContext *) 	homebuttonLib.a HBMRemoteSpk.o
-802e8434 000000e4 802e8434 0 zz_802e8434_
-802e8518 0000008c 802e8518 0 zz_802e8518_
-802e85a4 00000098 802e85a4 0 homebutton::RemoteSpk::Play(long, int, signed char) 	homebuttonLib.a HBMRemoteSpk.o
-802e863c 0000001c 802e863c 0 homebutton::RemoteSpk::isPlaying(long) const 	homebuttonLib.a HBMRemoteSpk.o
-802e8658 00000030 802e8658 0 homebutton::RemoteSpk::isPlayingId(long, int) const 	homebuttonLib.a HBMRemoteSpk.o
-802e8688 0000001c 802e8688 0 homebutton::RemoteSpk::isPlayReady(long) const 	homebuttonLib.a HBMRemoteSpk.o
-802e86a4 000001bc 802e86a4 0 zz_802e86a4_
-802e8860 00000064 802e8860 0 zz_802e8860_
-802e88c4 00000258 802e88c4 0 zz_802e88c4_
-802e8b1c 00000144 802e8b1c 0 zz_802e8b1c_
-802e8c60 000001f4 802e8c60 0 zz_802e8c60_
-802e8e54 00000004 802e8e54 0 zz_802e8e54_
-802e8e58 000001e0 802e8e58 0 zz_802e8e58_
-802e9038 00000120 802e9038 0 zz_802e9038_
-802e9158 00000004 802e9158 0 zz_802e9158_
-802e915c 00000020 802e915c 0 zz_802e915c_
-802e917c 00000128 802e917c 0 zz_802e917c_
-802e92a4 00000030 802e92a4 0 zz_802e92a4_
-802e92d4 0000003c 802e92d4 0 zz_802e92d4_
-802e9310 00000024 802e9310 0 homebutton::MotorCallback(OSAlarm *, OSContext *) 	homebuttonLib.a HBMBase.o
-802e9334 00000024 802e9334 0 homebutton::MotorCallback(OSAlarm *, OSContext *) 	homebuttonLib.a HBMBase.o
-802e9358 00000034 802e9358 0 cCharacter::IsPlayingEffect( (EffectsGroup *))
-802e938c 00000024 802e938c 0 homebutton::MotorCallback(OSAlarm *, OSContext *) 	homebuttonLib.a HBMBase.o
-802e93b0 00000054 802e93b0 0 zz_802e93b0_
-802e9404 00000024 802e9404 0 homebutton::MotorCallback(OSAlarm *, OSContext *) 	homebuttonLib.a HBMBase.o
-802e9428 000001b8 802e9428 0 zz_802e9428_
-802e95e0 0000010c 802e95e0 0 zz_802e95e0_
-802e96ec 0000006c 802e96ec 0 nw4hbm::lyt::ArcResourceAccessor::~ArcResourceAccessor(void) 	homebuttonLib.a HBMBase.o
-802e9758 0000004c 802e9758 0 zz_802e9758_
-802e97a4 0000000c 802e97a4 0 OSGetCurrentContext
-802e97b0 00000860 802e97b0 0 zz_802e97b0_
-802ea010 00000158 802ea010 0 zz_802ea010_
-802ea168 00000084 802ea168 0 zz_802ea168_
-802ea1ec 000004a0 802ea1ec 0 zz_802ea1ec_
-802ea68c 00000200 802ea68c 0 zz_802ea68c_
-802ea88c 00000130 802ea88c 0 zz_802ea88c_
-802ea9bc 00000268 802ea9bc 0 zz_802ea9bc_
-802eac24 00001cd0 802eac24 0 zz_802eac24_
-802ec8f4 00000200 802ec8f4 0 homebutton::HomeButton::calc_battery(int) 	homebuttonLib.a HBMBase.o
-802ecaf4 00000158 802ecaf4 0 zz_802ecaf4_
-802ecc4c 000000e4 802ecc4c 0 zz_802ecc4c_
-802ecd30 00000024 802ecd30 0 homebutton::MotorCallback(OSAlarm *, OSContext *) 	homebuttonLib.a HBMBase.o
-802ecd54 000000cc 802ecd54 0 zz_802ecd54_
-802ece20 00000038 802ece20 0 zz_802ece20_
-802ece58 0000094c 802ece58 0 zz_802ece58_
-802ed7a4 00000898 802ed7a4 0 zz_802ed7a4_
-802ee03c 000002c8 802ee03c 0 homebutton::HomeButton::updateTrigPane(void) 	homebuttonLib.a HBMBase.o
-802ee304 00000e30 802ee304 0 zz_802ee304_
-802ef134 00000ac0 802ef134 0 homebutton::HomeButton::startLeftEvent(char const *) 	homebuttonLib.a HBMBase.o
-802efbf4 0000123c 802efbf4 0 zz_802efbf4_
-802f0e30 00000260 802f0e30 0 homebutton::HomeButton::reset_btn(void) 	homebuttonLib.a HBMBase.o
-802f1090 000000b0 802f1090 0 zz_802f1090_
-802f1140 0000001c 802f1140 0 GameInfoManager::GetCustomPowerups( (void))
-802f115c 00000124 802f115c 0 zz_802f115c_
-802f1280 000000c0 802f1280 0 zz_802f1280_
-802f1340 000001f8 802f1340 0 zz_802f1340_
-802f1538 00000050 802f1538 0 zz_802f1538_
-802f1588 000000f0 802f1588 0 zz_802f1588_
-802f1678 000001c4 802f1678 0 zz_802f1678_
-802f183c 0000000c 802f183c 0 JUTResFont::getFontType(void) const 	JUtility.a JUTCacheFont.o
-802f1848 00000038 802f1848 0 zz_802f1848_
-802f1880 0000008c 802f1880 0 zz_802f1880_
-802f190c 00000148 802f190c 0 zz_802f190c_
-802f1a54 00000100 802f1a54 0 nw4hbm::lyt::AnimTransformBasic::Bind(nw4hbm::lyt::Pane *, bool) 	homebuttonLib.a lyt_animation.o
-802f1b54 000000bc 802f1b54 0 nw4hbm::lyt::AnimTransformBasic::Bind(nw4hbm::lyt::Material *) 	homebuttonLib.a lyt_animation.o
-802f1c10 000001f0 802f1c10 0 zz_802f1c10_
-802f1e00 000002f0 802f1e00 0 zz_802f1e00_
-802f20f0 00000034 802f20f0 0 nw4hbm::lyt::detail::FindAnimationLink(nw4hbm::ut::LinkList<Q36nw4hbm3lyt13AnimationLink,0> *, nw4hbm::lyt::AnimTransform *) 	h
-802f2124 000000dc 802f2124 0 zz_802f2124_
-802f2200 00000148 802f2200 0 zz_802f2200_
-802f2348 0000005c 802f2348 0 nw4hbm::lyt::ArcResourceAccessor::ArcResourceAccessor(void) 	homebuttonLib.a lyt_arcResourceAccessor.o
-802f23a4 0000007c 802f23a4 0 nw4hbm::lyt::ArcResourceAccessor::Attach(void *, char const *) 	homebuttonLib.a lyt_arcResourceAccessor.o
-802f2420 00000090 802f2420 0 zz_802f2420_
-802f24b0 0000003c 802f24b0 0 J3DModelLoader_v26::J3DModelLoader_v26(void) 	J3DGraphLoader.a J3DModelLoader.o
-802f24ec 00000058 802f24ec 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
-802f2544 00000070 802f2544 0 nw4hbm::lyt::Bounding::DrawSelf(nw4hbm::lyt::DrawInfo const &) 	homebuttonLib.a lyt_bounding.o
-802f25b4 00000040 802f25b4 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802f25f4 0000000c 802f25f4 0 GetOneTimerLeadGroundContactAnims(void)
-802f2600 00000014 802f2600 0 zz_802f2600_
-802f2614 0000002c 802f2614 0 nw4hbm::lyt::detail::EqualsMaterialName(char const *, char const *) 	homebuttonLib.a lyt_common.o
-802f2640 0000002c 802f2640 0 nw4hbm::lyt::detail::EqualsMaterialName(char const *, char const *) 	homebuttonLib.a lyt_common.o
-802f266c 00000028 802f266c 0 nw4hbm::lyt::detail::TestFileHeader(nw4hbm::lyt::res::BinaryFileHeader const &) 	homebuttonLib.a lyt_common.o
-802f2694 00000034 802f2694 0 nw4hbm::lyt::detail::TestFileHeader(nw4hbm::lyt::res::BinaryFileHeader const &, unsigned long) 	homebuttonLib.a lyt_common.o
-802f26c8 00000014 802f26c8 0 nw4hbm::lyt::detail::TexCoordAry::TexCoordAry(void) 	homebuttonLib.a lyt_common.o
-802f26dc 00000050 802f26dc 0 zz_802f26dc_
-802f272c 00000088 802f272c 0 zz_802f272c_
-802f27b4 000000f8 802f27b4 0 zz_802f27b4_
-802f28ac 00000094 802f28ac 0 nw4hbm::lyt::detail::TexCoordAry::Copy(void const *, unsigned char) 	homebuttonLib.a lyt_common.o
-802f2940 00000068 802f2940 0 nw4hbm::lyt::detail::IsModulateVertexColor(nw4hbm::ut::Color *, unsigned char) 	homebuttonLib.a lyt_common.o
-802f29a8 00000054 802f29a8 0 nw4hbm::lyt::detail::MultipleAlpha(nw4hbm::ut::Color, unsigned char) 	homebuttonLib.a lyt_common.o
-802f29fc 000000e4 802f29fc 0 nw4hbm::lyt::detail::SetVertexFormat(bool, unsigned char) 	homebuttonLib.a lyt_common.o
-802f2ae0 00000560 802f2ae0 0 nw4hbm::lyt::detail::DrawQuad(nw4hbm::math::VEC2 const &, nw4hbm::lyt::Size const &, unsigned char, nw4hbm::math::VEC2 const (*
-802f3040 000000f8 802f3040 0 nw4hbm::lyt::detail::DrawQuad(nw4hbm::math::VEC2 const &, nw4hbm::lyt::Size const &, unsigned char, nw4hbm::math::VEC2 const (*
-802f3138 000001b0 802f3138 0 nw4hbm::lyt::detail::DrawLine(nw4hbm::math::VEC2 const &, nw4hbm::lyt::Size const &, nw4hbm::ut::Color) 	homebuttonLib.a lyt_co
-802f32e8 00000140 802f32e8 0 zz_802f32e8_
-802f3428 0000007c 802f3428 0 zz_802f3428_
-802f34a4 00000040 802f34a4 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802f34e4 0000010c 802f34e4 0 zz_802f34e4_
-802f35f0 000000a8 802f35f0 0 zz_802f35f0_
-802f3698 000000c8 802f3698 0 zz_802f3698_
-802f3760 00000034 802f3760 0 nw4hbm::lyt::GroupContainer::AppendGroup(nw4hbm::lyt::Group *) 	homebuttonLib.a lyt_group.o
-802f3794 0000007c 802f3794 0 nw4hbm::lyt::GroupContainer::FindGroupByName(char const *) 	homebuttonLib.a lyt_group.o
-802f3810 000001a0 802f3810 0 zz_802f3810_
-802f39b0 00000048 802f39b0 0 zz_802f39b0_
-802f39f8 00000128 802f39f8 0 zz_802f39f8_
-802f3b20 00000304 802f3b20 0 zz_802f3b20_
-802f3e24 00000188 802f3e24 0 zz_802f3e24_
-802f3fac 00000024 802f3fac 0 nw4hbm::lyt::Layout::UnbindAnimation(nw4hbm::lyt::AnimTransform *) 	homebuttonLib.a lyt_layout.o
-802f3fd0 00000024 802f3fd0 0 nw4hbm::lyt::Layout::UnbindAnimation(nw4hbm::lyt::AnimTransform *) 	homebuttonLib.a lyt_layout.o
-802f3ff4 00000038 802f3ff4 0 zz_802f3ff4_
-802f402c 00000020 802f402c 0 nw4hbm::lyt::Layout::Animate(unsigned long) 	homebuttonLib.a lyt_layout.o
-802f404c 00000020 802f404c 0 nw4hbm::lyt::Layout::Animate(unsigned long) 	homebuttonLib.a lyt_layout.o
-802f406c 00000020 802f406c 0 nw4hbm::lyt::Layout::Animate(unsigned long) 	homebuttonLib.a lyt_layout.o
-802f408c 0000006c 802f408c 0 zz_802f408c_
-802f40f8 000001a4 802f40f8 0 zz_802f40f8_
-802f429c 00000220 802f429c 0 zz_802f429c_
-802f44bc 00000118 802f44bc 0 zz_802f44bc_
-802f45d4 00000204 802f45d4 0 zz_802f45d4_
-802f47d8 0000000c 802f47d8 0 cAIPad::__ct(void)
-802f47e4 0000124c 802f47e4 0 zz_802f47e4_
-802f5a30 000000b0 802f5a30 0 zz_802f5a30_
-802f5ae0 00000778 802f5ae0 0 zz_802f5ae0_
-802f6258 00000014 802f6258 0 nw4hbm::lyt::Material::GetTexSRTAry(void) 	homebuttonLib.a lyt_material.o
-802f626c 00000020 802f626c 0 nw4hbm::lyt::Material::GetTexCoordGenAry(void) 	homebuttonLib.a lyt_material.o
-802f628c 00000058 802f628c 0 nw4hbm::lyt::Material::GetIndTexSRTAry(void) 	homebuttonLib.a lyt_material.o
-802f62e4 00000090 802f62e4 0 nw4hbm::lyt::Material::SetTextureNum(unsigned char) 	homebuttonLib.a lyt_material.o
-802f6374 00000154 802f6374 0 nw4hbm::lyt::Material::SetTexCoordGenNum(unsigned char) 	homebuttonLib.a lyt_material.o
-802f64c8 00000084 802f64c8 0 nw4hbm::lyt::Material::SetTextureNoWrap(unsigned char, TPLPalette *) 	homebuttonLib.a lyt_material.o
-802f654c 00000054 802f654c 0 zz_802f654c_
-802f65a0 00000134 802f65a0 0 nw4hbm::lyt::Material::SetColorElement(unsigned long, short) 	homebuttonLib.a lyt_material.o
-802f66d4 00000010 802f66d4 0 J3DTevBlockPatched::setTexNo(unsigned long, unsigned short) 	J3DGraphBase.a J3DMatBlock.o
-802f66e4 00000088 802f66e4 0 zz_802f66e4_
-802f676c 00000010 802f676c 0 zz_802f676c_
-802f677c 00000eb4 802f677c 0 zz_802f677c_
-802f7630 0000009c 802f7630 0 zz_802f7630_
-802f76cc 0000008c 802f76cc 0 zz_802f76cc_
-802f7758 00000034 802f7758 0 nw4hbm::lyt::Pane::AddAnimationLink(nw4hbm::lyt::AnimationLink *) 	homebuttonLib.a lyt_pane.o
-802f778c 00000054 802f778c 0 zz_802f778c_
-802f77e0 00000110 802f77e0 0 zz_802f77e0_
+802e7d94 00000024 802e7d94 0 getBatteryFlag__Q210homebutton10ControllerCFv 	homebuttonLib.a HBMController.o
+802e7db8 00000020 802e7db8 0 clrBatteryFlag__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
+802e7dd8 00000268 802e7dd8 0 UpdateSpeaker__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext 	homebuttonLib.a HBMRemoteSpk.o
+802e8040 0000002c 802e8040 0 ClearPcm__Q210homebutton9RemoteSpkFv 	homebuttonLib.a HBMRemoteSpk.o
+802e806c 000000bc 802e806c 0 __ct__Q210homebutton9RemoteSpkFPv 	homebuttonLib.a HBMRemoteSpk.o
+802e8128 000000a4 802e8128 0 __dt__Q210homebutton9RemoteSpkFv 	homebuttonLib.a HBMRemoteSpk.o
+802e81cc 000000d4 802e81cc 0 Start__Q210homebutton9RemoteSpkFv 	homebuttonLib.a HBMRemoteSpk.o
+802e82a0 00000054 802e82a0 0 Stop__Q210homebutton9RemoteSpkFv 	homebuttonLib.a HBMRemoteSpk.o
+802e82f4 00000030 802e82f4 0 DelaySpeakerOnCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext 	homebuttonLib.a HBMRemoteSpk.o
+802e8324 000000e0 802e8324 0 SpeakerOnCallback__Q210homebutton9RemoteSpkFll 	homebuttonLib.a HBMRemoteSpk.o
+802e8404 00000030 802e8404 0 DelaySpeakerPlayCallback__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext 	homebuttonLib.a HBMRemoteSpk.o
+802e8434 000000e4 802e8434 0 SpeakerPlayCallback__Q210homebutton9RemoteSpkFll 	homebuttonLib.a HBMRemoteSpk.o
+802e8518 0000008c 802e8518 0 Connect__Q210homebutton9RemoteSpkFl 	homebuttonLib.a HBMRemoteSpk.o
+802e85a4 00000098 802e85a4 0 Play__Q210homebutton9RemoteSpkFliSc 	homebuttonLib.a HBMRemoteSpk.o
+802e863c 0000001c 802e863c 0 isPlaying__Q210homebutton9RemoteSpkCFl 	homebuttonLib.a HBMRemoteSpk.o
+802e8658 00000030 802e8658 0 isPlayingId__Q210homebutton9RemoteSpkCFli 	homebuttonLib.a HBMRemoteSpk.o
+802e8688 0000001c 802e8688 0 isPlayReady__Q210homebutton9RemoteSpkCFl 	homebuttonLib.a HBMRemoteSpk.o
+802e86a4 000001bc 802e86a4 0 GetFreePlayer__24@unnamed@HBMAxSound_cpp@Fi 	homebuttonLib.a HBMAxSound.o
+802e8860 00000064 802e8860 0 AudioFrameCallback__24@unnamed@HBMAxSound_cpp@Fv 	homebuttonLib.a HBMAxSound.o
+802e88c4 00000258 802e88c4 0 AudioSoundThreadProc__24@unnamed@HBMAxSound_cpp@FPv 	homebuttonLib.a HBMAxSound.o
+802e8b1c 00000144 802e8b1c 0 PlaySeq__10homebuttonFi 	homebuttonLib.a HBMAxSound.o
+802e8c60 000001f4 802e8c60 0 InitAxSound__10homebuttonFPCvPvUl 	homebuttonLib.a HBMAxSound.o
+802e8e54 00000004 802e8e54 0 AxSoundMain__10homebuttonFv 	homebuttonLib.a HBMAxSound.o
+802e8e58 000001e0 802e8e58 0 StopAllSeq__10homebuttonFv 	homebuttonLib.a HBMAxSound.o
+802e9038 00000120 802e9038 0 SetVolumeAllSeq__10homebuttonFf 	homebuttonLib.a HBMAxSound.o
+802e9158 00000004 802e9158 0 SetSoundMode__10homebuttonFUl 	homebuttonLib.a HBMAxSound.o
+802e915c 00000010 802e915c 0 HBMAllocMem__FUl 	homebuttonLib.a HBMCommon.o
+802e915c 00000010 802e916c 0 HBMFreeMem__FPv 	homebuttonLib.a HBMCommon.o
+802e917c 00000128 802e917c 0 HBMCreate 	homebuttonLib.a HBMCommon.o
+802e92a4 00000030 802e92a4 0 HBMInit 	homebuttonLib.a HBMCommon.o
+802e92d4 0000003c 802e92d4 0 HBMCalc 	homebuttonLib.a HBMCommon.o
+802e9310 00000024 802e9310 0 HBMDraw 	homebuttonLib.a HBMCommon.o
+802e9334 00000024 802e9334 0 HBMGetSelectBtnNum homebuttonLib.a HBMCommon.o
+802e9358 00000034 802e9358 0 HBMSetAdjustFlag 	homebuttonLib.a HBMCommon.o
+802e938c 00000024 802e938c 0 HBMStartBlackOut 	homebuttonLib.a HBMCommon.o
+802e93b0 00000054 802e93b0 0 HBMCreateSound 	homebuttonLib.a HBMCommon.o
+802e9404 00000024 802e9404 0 HBMUpdateSound 	homebuttonLib.a HBMCommon.o
+802e9428 000001b8 802e9428 0 initgx__10homebuttonFv 	homebuttonLib.a HBMBase.o
+802e95e0 0000010c 802e95e0 0 __ct__Q210homebutton10HomeButtonFPC11HBMDataInfo 	homebuttonLib.a HBMBase.o
+802e96ec 0000006c 802e96ec 0 __dt__Q36nw4hbm3lyt19ArcResourceAccessorFv 	homebuttonLib.a HBMBase.o
+802e9758 0000004c 802e9758 0 createInstance__Q210homebutton10HomeButtonFPC11HBMDataInfo 	homebuttonLib.a HBMBase.o
+802e97a4 0000000c 802e97a4 0 getInstance__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802e97b0 00000860 802e97b0 0 create__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802ea010 00000158 802ea010 0 set_config__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802ea168 00000084 802ea168 0 set_text__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802ea1ec 000004a0 802ea1ec 0 init__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802ea68c 00000200 802ea68c 0 init_volume__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802ea88c 00000130 802ea88c 0 init_sound__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802ea9bc 00000268 802ea9bc 0 init_battery__Q210homebutton10HomeButtonFPC17HBMControllerData 	homebuttonLib.a HBMBase.o
+802eac24 00001cd0 802eac24 0 calc__Q210homebutton10HomeButtonFPC17HBMControllerData 	homebuttonLib.a HBMBase.o
+802ec8f4 00000200 802ec8f4 0 calc_battery__Q210homebutton10HomeButtonFi 	homebuttonLib.a HBMBase.o
+802ecaf4 00000158 802ecaf4 0 draw__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802ecc4c 000000e4 802ecc4c 0 SpeakerCallback__10homebuttonFP7OSAlarmP9OSContext 	homebuttonLib.a HBMBase.o
+802ecd30 00000024 802ecd30 0 MotorCallback__10homebuttonFP7OSAlarmP9OSContext 	homebuttonLib.a HBMBase.o
+802ecd54 000000cc 802ecd54 0 RetrySimpleSyncCallback__10homebuttonFP7OSAlarmP9OSContext 	homebuttonLib.a HBMBase.o
+802ece20 00000038 802ece20 0 SimpleSyncCallback__10homebuttonFll 	homebuttonLib.a HBMBase.o
+802ece58 0000094c 802ece58 0 update__Q210homebutton10HomeButtonFPC17HBMControllerData 	homebuttonLib.a HBMBase.o
+802ed7a4 00000898 802ed7a4 0 update_controller__Q210homebutton10HomeButtonFi 	homebuttonLib.a HBMBase.o
+802ee03c 000002c8 802ee03c 0 updateTrigPane__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802ee304 00000e30 802ee304 0 startPointEvent__Q210homebutton10HomeButtonFPCQ36nw4hbm3lyt4PanePv 	homebuttonLib.a HBMBase.o
+802ef134 00000ac0 802ef134 0 startLeftEvent__Q210homebutton10HomeButtonFPCQ36nw4hbm3lyt4Pane 	homebuttonLib.a HBMBase.o
+802efbf4 0000123c 802efbf4 0 startTrigEvent__Q210homebutton10HomeButtonFPCQ36nw4hbm3lyt4Pane 	homebuttonLib.a HBMBase.o
+802f0e30 00000260 802f0e30 0 reset_btn__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802f1090 000000b0 802f1090 0 getPaneNo__Q210homebutton10HomeButtonFPCQ36nw4hbm3lyt4Pane 	homebuttonLib.a HBMBase.o
+802f1140 0000001c 802f1140 0 getSelectBtnNum__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802f115c 00000124 802f115c 0 setAdjustFlag__Q210homebutton10HomeButtonFi 	homebuttonLib.a HBMBase.o
+802f1280 000000c0 802f1280 0 onEvent__Q210homebutton22HomeButtonEventHandlerFUlUlPv 	homebuttonLib.a HBMBase.o
+802f1340 000001f8 802f1340 0 startBlackOut__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802f1538 00000050 802f1538 0 update_sound__Q210homebutton10HomeButtonFv 	homebuttonLib.a HBMBase.o
+802f1588 000000f0 802f1588 0 GetStepCurveValue__27@unnamed@lyt_animation_cpp@FfPCQ46nw4hbm3lyt3res7StepKeyUl 	homebuttonLib.a lyt_animation.o
+802f1678 000001c4 802f1678 0 GetHermiteCurveValue__27@unnamed@lyt_animation_cpp@FfPCQ46nw4hbm3lyt3res10HermiteKeyUl 	homebuttonLib.a lyt_animation.o
+802f183c 0000000c 802f183c 0 GetFrameSize__Q36nw4hbm3lyt13AnimTransformCFv 	homebuttonLib.a lyt_animation.o
+802f1848 00000038 802f1848 0 __ct__Q36nw4hbm3lyt18AnimTransformBasicFv 	homebuttonLib.a lyt_animation.o
+802f1880 0000008c 802f1880 0 __dt__Q36nw4hbm3lyt18AnimTransformBasicFv 	homebuttonLib.a lyt_animation.o
+802f190c 00000148 802f190c 0 SetResource__Q36nw4hbm3lyt18AnimTransformBasicFPCQ46nw4hbm3lyt3res14AnimationBlockPQ36nw4hbm3lyt16ResourceAccessor 	homebuttonLib.a lyt_animation.o
+802f1a54 00000100 802f1a54 0 Bind__Q36nw4hbm3lyt18AnimTransformBasicFPQ36nw4hbm3lyt4Paneb 	homebuttonLib.a lyt_animation.o
+802f1b54 000000bc 802f1b54 0 Bind__Q36nw4hbm3lyt18AnimTransformBasicFPQ36nw4hbm3lyt8Material 	homebuttonLib.a lyt_animation.o
+802f1c10 000001f0 802f1c10 0 Animate__Q36nw4hbm3lyt18AnimTransformBasicFUlPQ36nw4hbm3lyt4Pane 	homebuttonLib.a lyt_animation.o
+802f1e00 000002f0 802f1e00 0 Animate__Q36nw4hbm3lyt18AnimTransformBasicFUlPQ36nw4hbm3lyt8Material 	homebuttonLib.a lyt_animation.o
+802f20f0 00000034 802f20f0 0 FindAnimationLink__Q36nw4hbm3lyt6detailFPQ36nw4hbm2ut40LinkList<Q36nw4hbm3lyt13AnimationLink,0>PQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_animation.o
+802f2124 000000dc 802f2124 0 FindNameResource__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCc 	homebuttonLib.a lyt_arcResourceAccessor.o
+802f2200 00000148 802f2200 0 GetResourceSub__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCcUlPCcPUl 	homebuttonLib.a lyt_arcResourceAccessor.o
+802f2348 0000005c 802f2348 0 __ct__Q36nw4hbm3lyt19ArcResourceAccessorFv 	homebuttonLib.a lyt_arcResourceAccessor.o
+802f23a4 0000007c 802f23a4 0 Attach__Q36nw4hbm3lyt19ArcResourceAccessorFPvPCc 	homebuttonLib.a lyt_arcResourceAccessor.o
+802f2420 00000020 802f2420 0 GetResource__Q36nw4hbm3lyt19ArcResourceAccessorFUlPCcPUl 	homebuttonLib.a lyt_arcResourceAccessor.o
+802f2420 00000070 802f2440 0 GetFont__Q36nw4hbm3lyt19ArcResourceAccessorFPCc 	homebuttonLib.a lyt_arcResourceAccessor.o
+802f24b0 0000003c 802f24b0 0 __ct__Q36nw4hbm3lyt8BoundingFPCQ46nw4hbm3lyt3res8BoundingRCQ36nw4hbm3lyt11ResBlockSet 	homebuttonLib.a lyt_bounding.o
+802f24ec 00000058 802f24ec 0 __dt__Q36nw4hbm3lyt8BoundingFv 	homebuttonLib.a lyt_bounding.o
+802f2544 00000070 802f2544 0 DrawSelf__Q36nw4hbm3lyt8BoundingFRCQ36nw4hbm3lyt8DrawInfo 	homebuttonLib.a lyt_bounding.o
+802f25b4 00000040 802f25b4 0 __dt__Q36nw4hbm2ut5ColorFv 	homebuttonLib.a lyt_bounding.o
+802f25f4 0000000c 802f25f4 0 GetRuntimeTypeInfo__Q36nw4hbm3lyt8BoundingCFv 	homebuttonLib.a lyt_bounding.o
+802f2600 00000014 802f2600 0 __sinit_\lyt_bounding_cpp 	homebuttonLib.a lyt_bounding.o
+802f2614 0000002c 802f2614 0 EqualsPaneName__Q36nw4hbm3lyt6detailFPCcPCc 	homebuttonLib.a lyt_common.o
+802f2640 0000002c 802f2640 0 EqualsMaterialName__Q36nw4hbm3lyt6detailFPCcPCc 	homebuttonLib.a lyt_common.o
+802f266c 00000028 802f266c 0 TestFileHeader__Q36nw4hbm3lyt6detailFRCQ46nw4hbm3lyt3res16BinaryFileHeader 	homebuttonLib.a lyt_common.o
+802f2694 00000034 802f2694 0 TestFileHeader__Q36nw4hbm3lyt6detailFRCQ46nw4hbm3lyt3res16BinaryFileHeaderUl 	homebuttonLib.a lyt_common.o
+802f26c8 00000014 802f26c8 0 __ct__Q46nw4hbm3lyt6detail11TexCoordAryFv 	homebuttonLib.a lyt_common.o
+802f26dc 00000050 802f26dc 0 Free__Q46nw4hbm3lyt6detail11TexCoordAryFv 	homebuttonLib.a lyt_common.o
+802f272c 00000088 802f272c 0 Reserve__Q46nw4hbm3lyt6detail11TexCoordAryFUc 	homebuttonLib.a lyt_common.o
+802f27b4 000000f8 802f27b4 0 SetSize__Q46nw4hbm3lyt6detail11TexCoordAryFUc 	homebuttonLib.a lyt_common.o
+802f28ac 00000094 802f28ac 0 Copy__Q46nw4hbm3lyt6detail11TexCoordAryFPCvUc 	homebuttonLib.a lyt_common.o
+802f2940 00000068 802f2940 0 IsModulateVertexColor__Q36nw4hbm3lyt6detailFPQ36nw4hbm2ut5ColorUc 	homebuttonLib.a lyt_common.o
+802f29a8 00000054 802f29a8 0 MultipleAlpha__Q36nw4hbm3lyt6detailFQ36nw4hbm2ut5ColorUc 	homebuttonLib.a lyt_common.o
+802f29fc 000000e4 802f29fc 0 SetVertexFormat__Q36nw4hbm3lyt6detailFbUc 	homebuttonLib.a lyt_common.o
+802f2ae0 00000560 802f2ae0 0 DrawQuad__Q36nw4hbm3lyt6detailFRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeUcPA4_CQ36nw4hbm4math4VEC2PCQ36nw4hbm2ut5Color 	homebuttonLib.a lyt_common.o
+802f3040 000000f8 802f3040 0 DrawQuad__Q36nw4hbm3lyt6detailFRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeUcPA4_CQ36nw4hbm4math4VEC2PCQ36nw4hbm2ut5ColorUc 	homebuttonLib.a lyt_common.o
+802f3138 000001b0 802f3138 0 DrawLine__Q36nw4hbm3lyt6detailFRCQ36nw4hbm4math4VEC2RCQ36nw4hbm3lyt4SizeQ36nw4hbm2ut5Color 	homebuttonLib.a lyt_common.o
+802f32e8 00000140 802f32e8 0 InitGXTexObjFromTPL__Q36nw4hbm3lyt6detailFP9_GXTexObjP10TPLPaletteUl 	homebuttonLib.a lyt_common.o
+802f3428 0000007c 802f3428 0 __ct__Q36nw4hbm3lyt8DrawInfoFv 	homebuttonLib.a lyt_drawInfo.o
+802f34a4 00000040 802f34a4 0 __dt__Q36nw4hbm3lyt8DrawInfoFv 	homebuttonLib.a lyt_drawInfo.o
+802f34e4 0000010c 802f34e4 0 __ct__Q36nw4hbm3lyt5GroupFPCQ46nw4hbm3lyt3res5GroupPQ36nw4hbm3lyt4Pane 	homebuttonLib.a lyt_group.o
+802f35f0 000000a8 802f35f0 0 __dt__Q36nw4hbm3lyt5GroupFv 	homebuttonLib.a lyt_group.o
+802f3698 000000c8 802f3698 0 __dt__Q36nw4hbm3lyt14GroupContainerFv 	homebuttonLib.a lyt_group.o
+802f3760 00000034 802f3760 0 AppendGroup__Q36nw4hbm3lyt14GroupContainerFPQ36nw4hbm3lyt5Group 	homebuttonLib.a lyt_group.o
+802f3794 0000007c 802f3794 0 FindGroupByName__Q36nw4hbm3lyt14GroupContainerFPCc 	homebuttonLib.a lyt_group.o
+802f3810 000001a0 802f3810 0 SetTagProcessorImpl__24@unnamed@lyt_layout_cpp@FPQ36nw4hbm3lyt4PanePQ36nw4hbm2ut19TagProcessorBase<w> 	homebuttonLib.a lyt_layout.o
+802f39b0 00000048 802f39b0 0 __ct__Q36nw4hbm3lyt6LayoutFv 	homebuttonLib.a lyt_layout.o
+802f39f8 00000128 802f39f8 0 __dt__Q36nw4hbm3lyt6LayoutFv 	homebuttonLib.a lyt_layout.o
+802f3b20 00000304 802f3b20 0 Build__Q36nw4hbm3lyt6LayoutFPCvPQ36nw4hbm3lyt16ResourceAccessor 	homebuttonLib.a lyt_layout.o
+802f3e24 00000188 802f3e24 0 CreateAnimTransform__Q36nw4hbm3lyt6LayoutFPCvPQ36nw4hbm3lyt16ResourceAccessor 	homebuttonLib.a lyt_layout.o
+802f3fac 00000024 802f3fac 0 BindAnimation__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_layout.o
+802f3fd0 00000024 802f3fd0 0 UnbindAnimation__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_layout.o
+802f3ff4 00000014 802f3ff4 0 UnbindAllAnimation__Q36nw4hbm3lyt6LayoutFv 	homebuttonLib.a lyt_layout.o
+802f4008 00000024 802f4008 0 SetAnimationEnable__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm3lyt13AnimTransformb 	homebuttonLib.a lyt_layout.o
+802f402c 00000020 802f402c 0 CalculateMtx__Q36nw4hbm3lyt6LayoutFRCQ36nw4hbm3lyt8DrawInfo 	homebuttonLib.a lyt_layout.o
+802f404c 00000020 802f404c 0 Draw__Q36nw4hbm3lyt6LayoutFRCQ36nw4hbm3lyt8DrawInfo 	homebuttonLib.a lyt_layout.o
+802f406c 00000020 802f406c 0 Animate__Q36nw4hbm3lyt6LayoutFUl 	homebuttonLib.a lyt_layout.o
+802f408c 0000006c 802f408c 0 GetLayoutRect__Q36nw4hbm3lyt6LayoutCFv 	homebuttonLib.a lyt_layout.o
+802f40f8 000001a4 802f40f8 0 SetTagProcessor__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm2ut19TagProcessorBase<w> 	homebuttonLib.a lyt_layout.o
+802f429c 00000220 802f429c 0 BuildPaneObj__Q36nw4hbm3lyt6LayoutFlPCvRCQ36nw4hbm3lyt11ResBlockSet 	homebuttonLib.a lyt_layout.o
+802f44bc 00000118 802f44bc 0 CalcTextureMtx__26@unnamed@lyt_material_cpp@FPQ36nw4hbm4math5MTX34RCQ36nw4hbm3lyt6TexSRT 	homebuttonLib.a lyt_material.o
+802f45d4 00000204 802f45d4 0 SetIndTexMtx__26@unnamed@lyt_material_cpp@F14_GXIndTexMtxIDPA3_Cf 	homebuttonLib.a lyt_material.o
+802f47d8 0000000c 802f47d8 0 __ct__Q36nw4hbm2ut5ColorFv 	homebuttonLib.a lyt_material.o
+802f47e4 0000124c 802f47e4 0 __ct__Q36nw4hbm3lyt8MaterialFPCQ46nw4hbm3lyt3res8MaterialRCQ36nw4hbm3lyt11ResBlockSet 	homebuttonLib.a lyt_material.o
+802f5a30 000000b0 802f5a30 0 __dt__Q36nw4hbm3lyt8MaterialFv 	homebuttonLib.a lyt_material.o
+802f5ae0 00000778 802f5ae0 0 ReserveGXMem__Q36nw4hbm3lyt8MaterialFUcUcUcUcbUcUcbbbb 	homebuttonLib.a lyt_material.o
+802f6258 00000014 802f6258 0 GetTexSRTAry__Q36nw4hbm3lyt8MaterialFv 	homebuttonLib.a lyt_material.o
+802f626c 00000020 802f626c 0 GetTexCoordGenAry__Q36nw4hbm3lyt8MaterialFv 	homebuttonLib.a lyt_material.o
+802f628c 00000058 802f628c 0 GetIndTexSRTAry__Q36nw4hbm3lyt8MaterialFv 	homebuttonLib.a lyt_material.o
+802f62e4 00000090 802f62e4 0 SetTextureNum__Q36nw4hbm3lyt8MaterialFUc 	homebuttonLib.a lyt_material.o
+802f6374 00000154 802f6374 0 SetTexCoordGenNum__Q36nw4hbm3lyt8MaterialFUc 	homebuttonLib.a lyt_material.o
+802f64c8 00000084 802f64c8 0 SetTextureNoWrap__Q36nw4hbm3lyt8MaterialFUcP10TPLPalette 	homebuttonLib.a lyt_material.o
+802f654c 00000054 802f654c 0 SetTexture__Q36nw4hbm3lyt8MaterialFUcRC9_GXTexObj 	homebuttonLib.a lyt_material.o
+802f65a0 000001dc 802f65a0 0 SetColorElement__Q36nw4hbm3lyt8MaterialFUls 	homebuttonLib.a lyt_material.o
+802f677c 00000eb4 802f677c 0 SetupGX__Q36nw4hbm3lyt8MaterialFbUc 	homebuttonLib.a lyt_material.o
+802f7630 00000018 802f7630 0 BindAnimation__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_material.o
+802F7648 00000084 802F7648 0 UnbindAnimation__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_material.o
+802f76cc 00000014 802f76cc 0 UnbindAllAnimation__Q36nw4hbm3lyt8MaterialFv 	homebuttonLib.a lyt_material.o
+802f76cc 00000078 802f76cc 0 Animate__Q36nw4hbm3lyt8MaterialFv 	homebuttonLib.a lyt_material.o
+802f7758 00000034 802f7758 0 AddAnimationLink__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimationLink 	homebuttonLib.a lyt_material.o
+802f778c 00000008 802f778c 0 FindAnimationLink__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_material.o
+802F7794 0000004c 802F7794 0 SetAnimationEnable__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransformb 	homebuttonLib.a lyt_material.o
+802f77e0 00000110 802f77e0 0 GetTextureSize__Q36nw4hbm3lyt6detailFPQ36nw4hbm3lyt8MaterialUc 	homebuttonLib.a lyt_material.o
 802f78f0 00000128 802f78f0 0 zz_802f78f0_
 802f7a18 00000134 802f7a18 0 zz_802f7a18_
 802f7b4c 00000050 802f7b4c 0 nw4hbm::lyt::Pane::AppendChild(nw4hbm::lyt::Pane *) 	homebuttonLib.a lyt_pane.o
