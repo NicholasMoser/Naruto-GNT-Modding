@@ -5118,93 +5118,95 @@
 801a2d54 00000024 801a2d54 0 gdev_cc_post_stop 	TRK_Hollywood_Revolution.a cc_gdev.o
 801a2d78 00000074 801a2d78 0 gdev_cc_peek 	TRK_Hollywood_Revolution.a cc_gdev.o
 801a2dec 00000024 801a2dec 0 gdev_cc_initinterrupts 	TRK_Hollywood_Revolution.a cc_gdev.o
-801a2e10 00000004 801a2e10 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801a2e14 00000030 801a2e14 0 zz_801a2e14_
-801a2e44 00000008 801a2e44 0 zz_801a2e44_
-801a2e4c 00000008 801a2e4c 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-801a2e54 00000024 801a2e54 0 zz_801a2e54_
-801a2e78 00000108 801a2e78 0 zz_801a2e78_
-801a2f80 00000108 801a2f80 0 zz_801a2f80_
-801a3088 00000038 801a3088 0 TRK_flush_cache
-801a30c0 0000003c 801a30c0 0 zz_801a30c0_
-801a30fc 000000ec 801a30fc 0 zz_801a30fc_
-801a31e8 0000013c 801a31e8 0 zz_801a31e8_
-801a3324 00000128 801a3324 0 zz_801a3324_
-801a344c 00000120 801a344c 0 zz_801a344c_
-801a356c 00000098 801a356c 0 InitMetroTRK
-801a3604 00000094 801a3604 0 InitMetroTRK_BBA
-801a3698 00000004 801a3698 0 zz_801a3698_
-801a369c 00000068 801a369c 0 zz_801a369c_
-801a3704 00000134 801a3704 0 zz_801a3704_
-801a3838 00000048 801a3838 0 zz_801a3838_
-801a3880 00000010 801a3880 0 zz_801a3880_
-801a3890 000000c0 801a3890 0 zz_801a3890_
-801a3950 00000138 801a3950 0 zz_801a3950_
-801a3a88 00000004 801a3a88 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801a3a8c 00000054 801a3a8c 0 zz_801a3a8c_
-801a3ae0 0000002c 801a3ae0 0 zz_801a3ae0_
-801a3b0c 00000014 801a3b0c 0 zz_801a3b0c_
-801a3b20 0000003c 801a3b20 0 TRKWriteUARTN
-801a3b5c 0000003c 801a3b5c 0 TRKWriteUARTN
-801a3b98 00000014 801a3b98 0 zz_801a3b98_
-801a3bac 0000002c 801a3bac 0 zz_801a3bac_
-801a3bd8 00000054 801a3bd8 0 zz_801a3bd8_
-801a3c2c 00000090 801a3c2c 0 zz_801a3c2c_
-801a3cbc 00000024 801a3cbc 0 zz_801a3cbc_
-801a3ce0 0000008c 801a3ce0 0 zz_801a3ce0_
-801a3d6c 000000cc 801a3d6c 0 zz_801a3d6c_
-801a3e38 00000018 801a3e38 0 zz_801a3e38_
-801a3e50 00000008 801a3e50 0 zz_801a3e50_
-801a3e58 000000ac 801a3e58 0 zz_801a3e58_
-801a3f04 00000024 801a3f04 0 LexicalCast<PCc,f>(float &)
-801a3f28 0000000c 801a3f28 0 zz_801a3f28_
-801a3f34 00000074 801a3f34 0 zz_801a3f34_
-801a3fa8 000000cc 801a3fa8 0 zz_801a3fa8_
-801a4074 0000002c 801a4074 0 zz_801a4074_
-801a40a0 00000040 801a40a0 0 zz_801a40a0_
-801a40e0 00000008 801a40e0 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801a40e8 00000008 801a40e8 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801a40f0 0000001c 801a40f0 0 strlen 	Runtime.PPCEABI.H.a __mem.o
-801a410c 000001f4 801a410c 0 zz_801a410c_
-801a4300 00000128 801a4300 0 zz_801a4300_
-801a4428 00000118 801a4428 0 zz_801a4428_
-801a4540 000000e4 801a4540 0 zz_801a4540_
-801a4624 0000010c 801a4624 0 zz_801a4624_
-801a4730 00000034 801a4730 0 TRKTargetContinue
-801a4764 000001c4 801a4764 0 zz_801a4764_
-801a4928 00000164 801a4928 0 zz_801a4928_
-801a4a8c 00000064 801a4a8c 0 zz_801a4a8c_
-801a4af0 00000020 801a4af0 0 zz_801a4af0_
-801a4b10 0000009c 801a4b10 0 zz_801a4b10_
-801a4bac 00000024 801a4bac 0 zz_801a4bac_
-801a4bd0 00000028 801a4bd0 0 zz_801a4bd0_
-801a4bf8 00000028 801a4bf8 0 zz_801a4bf8_
-801a4c20 00000030 801a4c20 0 zz_801a4c20_
-801a4c50 000000a4 801a4c50 0 zz_801a4c50_
-801a4cf4 00000090 801a4cf4 0 zz_801a4cf4_
-801a4d84 000000d0 801a4d84 0 zz_801a4d84_
-801a4e54 000000f4 801a4e54 0 zz_801a4e54_
-801a4f48 00000064 801a4f48 0 zz_801a4f48_
-801a4fac 000000f0 801a4fac 0 zz_801a4fac_
-801a509c 000000e0 801a509c 0 zz_801a509c_
-801a517c 00000098 801a517c 0 zz_801a517c_
-801a5214 000000e8 801a5214 0 zz_801a5214_
-801a52fc 00000008 801a52fc 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801a5304 00000070 801a5304 0 zz_801a5304_
-801a5374 00000088 801a5374 0 zz_801a5374_
-801a53fc 0000006c 801a53fc 0 zz_801a53fc_
-801a5468 0000006c 801a5468 0 zz_801a5468_
-801a54d4 00000234 801a54d4 0 zz_801a54d4_
-801a5708 00000210 801a5708 0 zz_801a5708_
-801a5918 000001fc 801a5918 0 zz_801a5918_
-801a5b14 000002a0 801a5b14 0 zz_801a5b14_
-801a5db4 000000c4 801a5db4 0 zz_801a5db4_
-801a5e78 00000284 801a5e78 0 zz_801a5e78_
-801a60fc 000000b8 801a60fc 0 zz_801a60fc_
-801a61b4 000000cc 801a61b4 0 zz_801a61b4_
-801a6280 00000068 801a6280 0 zz_801a6280_
-801a62e8 00000068 801a62e8 0 zz_801a62e8_
-801a6350 00000008 801a6350 0 zz_801a6350_
+801a2e10 00000004 801a2e10 0 MWInitializeCriticalSection 	TRK_Hollywood_Revolution.a custconn\MWCriticalSection_gc.o
+801a2e14 00000030 801a2e14 0 MWEnterCriticalSection 	TRK_Hollywood_Revolution.a custconn\MWCriticalSection_gc.o
+801a2e44 00000008 801a2e44 0 MWExitCriticalSection 	TRK_Hollywood_Revolution.a custconn\MWCriticalSection_gc.o
+801a2e4c 00000008 801a2e4c 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a custconn\CircleBuffer.o
+801a2e54 00000024 801a2e54 0 CircleBufferInitialize 	TRK_Hollywood_Revolution.a custconn\CircleBuffer.o
+801a2e78 00000108 801a2e78 0 CircleBufferWriteBytes 	TRK_Hollywood_Revolution.a custconn\CircleBuffer.o
+801a2f80 00000108 801a2f80 0 CircleBufferReadBytes 	TRK_Hollywood_Revolution.a custconn\CircleBuffer.o
+801a3088 00000038 801a3088 0 TRK_flush_cache 	TRK_Hollywood_Revolution.a flush_cache.o
+801a30c0 0000003c 801a30c0 0 TRK_main 	TRK_Hollywood_Revolution.a main_TRK.o
+801a30fc 000000ec 801a30fc 0 TRK_NubMainLoop 	TRK_Hollywood_Revolution.a mainloop.o
+801a31e8 0000013c 801a31e8 0 TRK_memcpy 	TRK_Hollywood_Revolution.a mem_TRK.o
+801a3324 00000128 801a3324 0 TRK_memset 	TRK_Hollywood_Revolution.a mem_TRK.o
+801a344c 00000120 801a344c 0 TRK_DispatchMessage 	TRK_Hollywood_Revolution.a dispatch.o
+801a356c 00000098 801a356c 0 InitMetroTRK 	TRK_Hollywood_Revolution.a dolphin_trk.o
+801a3604 00000094 801a3604 0 InitMetroTRK_BBA 	TRK_Hollywood_Revolution.a dolphin_trk.o
+801a3698 00000004 801a3698 0 EnableMetroTRKInterrupts 	TRK_Hollywood_Revolution.a dolphin_trk.o
+801a369c 00000068 801a369c 0 TRKTargetTranslate 	TRK_Hollywood_Revolution.a dolphin_trk.o
+801a3704 00000134 801a3704 0 __TRK_copy_vectors 	TRK_Hollywood_Revolution.a dolphin_trk.o
+801a3838 00000048 801a3838 0 TRKInitializeTarget 	TRK_Hollywood_Revolution.a dolphin_trk.o
+801a3880 00000010 801a3880 0 __TRKreset 	TRK_Hollywood_Revolution.a dolphin_trk.o
+801a3890 00000088 801a3890 0 TRKLoadContext 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3918 00000038 801a3918 0 TRKEXICallBack 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3950 00000138 801a3950 0 InitMetroTRKCommTable 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3a88 00000004 801a3a88 0 TRKUARTInterruptHandler 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3a8c 00000054 801a3a8c 0 TRK_InitializeIntDrivenUART 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3ae0 0000002c 801a3ae0 0 EnableEXI2Interrupts 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3b0c 00000014 801a3b0c 0 TRKPollUART 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3b20 0000003c 801a3b20 0 TRKReadUARTN 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3b5c 0000003c 801a3b5c 0 TRK_WriteUARTN 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3b98 00000014 801a3b98 0 ReserveEXI2Port 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3bac 00000014 801a3bac 0 UnreserveEXI2Port 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3bc0 00000018 801a3bc0 0 TRK_board_display 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3bd8 00000054 801a3bd8 0 InitializeProgramEndTrap 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\dolphin_trk_glue.o
+801a3c2c 00000090 801a3c2c 0 TRKDoNotifyStopped 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\notify.o
+801a3cbc 00000024 801a3cbc 0 TRKInitializeEventQueue 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\nubevent.o
+801a3ce0 0000008c 801a3ce0 0 TRKGetNextEvent 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\nubevent.o
+801a3d6c 000000cc 801a3d6c 0 TRKPostEvent 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\nubevent.o
+801a3e38 00000018 801a3e38 0 TRKConstructEvent 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\nubevent.o
+801a3e50 00000008 801a3e50 0 TRKDestructEvent 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\nubevent.o
+801a3e58 000000ac 801a3e58 0 TRK_InitializeNub 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\nubinit.o
+801a3f04 00000024 801a3f04 0 TRK_TerminateNub 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\nubinit.o
+801a3f28 0000000c 801a3f28 0 TRK_NubWelcome 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\nubinit.o
+801a3f34 00000074 801a3f34 0 TRK_InitializeEndian 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\nubinit.o
+801a3fa8 000000cc 801a3fa8 0 TRKTestForPacket 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\serpoll.o
+801a4074 0000002c 801a4074 0 TRKGetInput 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\serpoll.o
+801a40a0 00000040 801a40a0 0 TRKProcessInput 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\serpoll.o
+801a40e0 00000008 801a40e0 0 TRKInitializeSerialHandler 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\serpoll.o
+801a40e8 00000008 801a40e8 0 TRKTerminateSerialHandler 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\serpoll.o
+801a40f0 0000001c 801a40f0 0 TRK_strlen 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\string_TRK.o
+801a410c 000001f4 801a410c 0 TRK_SuppAccessFile 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\support.o
+801a4300 00000128 801a4300 0 TRK_RequestSend 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\support.o
+801a4428 00000118 801a4428 0 HandleOpenFileSupportRequest 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\support.o
+801a4540 000000e4 801a4540 0 HandleCloseFileSupportRequest 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\support.o
+801a4624 0000010c 801a4624 0 HandlePositionFileSupportRequest 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\support.o
+801a4730 00000034 801a4730 0 TRKTargetContinue 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\targcont.o
+801a4764 000001c4 801a4764 0 TRKSaveExtended1Block 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\mpc_7xx_603e.o
+801a4928 00000164 801a4928 0 TRKRestoreExtended1Block 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\mpc_7xx_603e.o
+801a4a8c 00000064 801a4a8c 0 TRK_MessageSend 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msg.o
+801a4af0 00000020 801a4af0 0 TRK_InitializeMessageBuffers 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4b10 0000009c 801a4b10 0 TRK_GetFreeBuffer 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4bac 00000024 801a4bac 0 TRKGetBuffer 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4bd0 00000028 801a4bd0 0 TRK_ReleaseBuffer 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4bf8 00000028 801a4bf8 0 TRKResetBuffer 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4c20 00000030 801a4c20 0 TRK_SetBufferPosition 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4c50 000000a4 801a4c50 0 TRK_AppendBuffer 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4cf4 00000090 801a4cf4 0 TRK_ReadBuffer 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4d84 000000d0 801a4d84 0 TRKAppendBuffer1_ui32 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4e54 000000f4 801a4e54 0 TRKAppendBuffer1_ui64 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4f48 00000064 801a4f48 0 TRKAppendBuffer_ui8 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a4fac 000000f0 801a4fac 0 TRKAppendBuffer_ui32 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a509c 000000e0 801a509c 0 TRKReadBuffer1_ui64 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a517c 00000098 801a517c 0 TRKReadBuffer_ui8 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a5214 000000e8 801a5214 0 TRKReadBuffer_ui32 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msgbuf.o
+801a52fc 00000008 801a52fc 0 GetTRKConnected 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a5304 00000070 801a5304 0 TRK_DoConnect 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a5374 00000088 801a5374 0 TRKDoDisconnect 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a53fc 0000006c 801a53fc 0 TRKDoReset 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a5468 0000006c 801a5468 0 TRKDoOverride 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a54d4 00000234 801a54d4 0 TRKDoReadMemory 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a5708 00000210 801a5708 0 TRKDoWriteMemory 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a5918 000001fc 801a5918 0 TRKDoReadRegisters 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a5b14 000002a0 801a5b14 0 TRKDoWriteRegisters 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a5db4 000000c4 801a5db4 0 TRKDoContinue 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a5e78 00000284 801a5e78 0 TRKDoStep 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a60fc 000000b8 801a60fc 0 TRKDoStop 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a61b4 000000cc 801a61b4 0 TRKDoSetOption 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\msghndlr.o
+801a6280 00000068 801a6280 0 __read_console 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\mslsupp.o
+801a62e8 00000068 801a62e8 0 __TRK_write_console 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\mslsupp.o
+801a6350 00000008 801a6350 0 __read_file 	TRK_Hollywood_Revolution.a D:\Data\wiiProj\metrotrk\metrotrk\mslsupp.o
 801a6358 000000b4 801a6358 0 zz_801a6358_
 801a640c 00000008 801a640c 0 __TRK_get_MSR 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\debugger\embedded\MetroTRK\Processor\ppc\Generic\targimp
 801a6414 00000008 801a6414 0 __TRK_set_MSR 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\debugger\embedded\MetroTRK\Processor\ppc\Generic\targimp
