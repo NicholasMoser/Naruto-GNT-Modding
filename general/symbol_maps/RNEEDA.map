@@ -4879,248 +4879,250 @@
 80192998 00000034 80192998 0 zz_80192998_
 801929cc 00000084 801929cc 0 zz_801929cc_
 80192a50 00000078 80192a50 0 zz_80192a50_
-80192ac8 00000070 80192ac8 0 zz_80192ac8_
+80192ac8 00000070 80192ac8 0 setTevColor__Q23lyt16MaterialAccessorCFUlRCQ33hel6common5Color 	src.a MaterialAccessor.o
 80192b38 00000024 80192b38 0 zz_80192b38_
 80192b5c 00000050 80192b5c 0 zz_80192b5c_
 80192bac 0000004c 80192bac 0 zz_80192bac_
 80192bf8 00000030 80192bf8 0 zz_80192bf8_
 80192c28 00000020 80192c28 0 zz_80192c28_
-80192c48 00000010 80192c48 0 homebutton::Controller::setInValidPos(void) 	homebuttonLib.a HBMController.o
+80192c48 00000010 80192c48 0 zz_80192c48_
 80192c58 0000001c 80192c58 0 strlen 	Runtime.PPCEABI.H.a __mem.o
-80192c74 000000c8 80192c74 0 zz_80192c74_
-80192d3c 00000018 80192d3c 0 __register_global_object
+80192c74 000000c8 80192c74 0 __va_arg 	Runtime.PPCEABI.H.a __va_arg.o
+80192d3c 00000018 80192d3c 0 __register_global_object 	Runtime.PPCEABI.H.a global_destructor_chain.o
 80192d54 00000048 80192d54 0 __destroy_global_chain 	Runtime.PPCEABI.H.a global_destructor_chain.o
-80192d9c 00000254 80192d9c 0 zz_80192d9c_
-80192da4 0000024c 80192da4 0 zz_80192da4_
-80192db0 00000240 80192db0 0 zz_80192db0_
-80192dbc 00000234 80192dbc 0 zz_80192dbc_
+80192d9c 00000004 80192d9c 0 dthandler__3stdFv 	Runtime.PPCEABI.H.a NMWException.o
+80192da0 00000004 80192da0 0 duhandler__3stdFv 	Runtime.PPCEABI.H.a NMWException.o
+80192da4 0000000c 80192da4 0 terminate__3stdFv 	Runtime.PPCEABI.H.a NMWException.o
+80192db0 0000000c 80192db0 0 unexpected__3stdFv 	Runtime.PPCEABI.H.a NMWException.o
+80192dbc 00000234 80192dbc 0 __throw_catch_compare 	Runtime.PPCEABI.H.a NMWException.o
 80192ff0 00000104 80192ff0 0 __construct_new_array 	Runtime.PPCEABI.H.a NMWException.o
 801930f4 000000bc 801930f4 0 __partial_array_destructor::~__partial_array_destructor(void) 	Runtime.PPCEABI.H.a NMWException.o
 801931b0 000000f8 801931b0 0 __construct_array 	Runtime.PPCEABI.H.a NMWException.o
 801932a8 00000078 801932a8 0 __destroy_arr 	Runtime.PPCEABI.H.a NMWException.o
-80193320 00000084 80193320 0 zz_80193320_
+80193320 00000028 80193320 0 __ptmf_scall 	Runtime.PPCEABI.H.a ptmf.o
 80193348 0000005c 80193348 0 __cvt_fp2unsigned 	Runtime.PPCEABI.H.a runtime.o
-801933a4 0000004c 801933a4 0 __save_fpr
-801933c8 00000028 801933c8 0 _savefpr_23 (entry of __save_fpr) 	Runtime.PPCEABI.H.a runtime.o
-801933d4 0000001c 801933d4 0 _savefpr_26 (entry of __save_fpr) 	Runtime.PPCEABI.H.a runtime.o
-801933dc 00000014 801933dc 0 _savefpr_28 (entry of __save_fpr) 	Runtime.PPCEABI.H.a runtime.o
+801933a4 00000024 801933a4 0 __save_fpr 	Runtime.PPCEABI.H.a runtime.o
+801933c8 0000000c 801933c8 0 _savefpr_23 (entry of __save_fpr) 	Runtime.PPCEABI.H.a runtime.o
+801933d4 00000008 801933d4 0 _savefpr_26 (entry of __save_fpr) 	Runtime.PPCEABI.H.a runtime.o
+801933dc 00000004 801933dc 0 _savefpr_28 (entry of __save_fpr) 	Runtime.PPCEABI.H.a runtime.o
 801933e0 00000010 801933e0 0 _savefpr_29 (entry of __save_fpr) 	Runtime.PPCEABI.H.a runtime.o
-801933f0 0000004c 801933f0 0 __restore_fpr
-80193414 00000028 80193414 0 _restfpr_23 (entry of __restore_fpr) 	Runtime.PPCEABI.H.a runtime.o
-80193420 0000001c 80193420 0 _restfpr_26 (entry of __restore_fpr) 	Runtime.PPCEABI.H.a runtime.o
-80193428 00000014 80193428 0 _restfpr_28 (entry of __restore_fpr) 	Runtime.PPCEABI.H.a runtime.o
+801933f0 00000024 801933f0 0 __restore_fpr 	Runtime.PPCEABI.H.a runtime.o
+80193414 0000000c 80193414 0 _restfpr_23 (entry of __restore_fpr) 	Runtime.PPCEABI.H.a runtime.o
+80193420 00000008 80193420 0 _restfpr_26 (entry of __restore_fpr) 	Runtime.PPCEABI.H.a runtime.o
+80193428 00000004 80193428 0 _restfpr_28 (entry of __restore_fpr) 	Runtime.PPCEABI.H.a runtime.o
 8019342c 00000010 8019342c 0 _restfpr_29 (entry of __restore_fpr) 	Runtime.PPCEABI.H.a runtime.o
-8019343c 0000004c 8019343c 0 __save_gpr
-80193440 00000048 80193440 0 _savegpr_15 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193444 00000044 80193444 0 _savegpr_16 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193448 00000040 80193448 0 _savegpr_17 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-8019344c 0000003c 8019344c 0 _savegpr_18 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193450 00000038 80193450 0 _savegpr_19 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193454 00000034 80193454 0 _savegpr_20 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193458 00000030 80193458 0 _savegpr_21 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-8019345c 0000002c 8019345c 0 _savegpr_22 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193460 00000028 80193460 0 _savegpr_23 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193464 00000024 80193464 0 _savegpr_24 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193468 00000020 80193468 0 _savegpr_25 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-8019346c 0000001c 8019346c 0 _savegpr_26 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193470 00000018 80193470 0 _savegpr_27 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193474 00000014 80193474 0 _savegpr_28 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+8019343c 00000004 8019343c 0 __save_gpr 	Runtime.PPCEABI.H.a runtime.o
+80193440 00000004 80193440 0 _savegpr_15 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193444 00000004 80193444 0 _savegpr_16 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193448 00000004 80193448 0 _savegpr_17 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+8019344c 00000004 8019344c 0 _savegpr_18 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193450 00000004 80193450 0 _savegpr_19 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193454 00000004 80193454 0 _savegpr_20 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193458 00000004 80193458 0 _savegpr_21 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+8019345c 00000004 8019345c 0 _savegpr_22 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193460 00000004 80193460 0 _savegpr_23 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193464 00000004 80193464 0 _savegpr_24 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193468 00000004 80193468 0 _savegpr_25 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+8019346c 00000004 8019346c 0 _savegpr_26 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193470 00000004 80193470 0 _savegpr_27 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193474 00000004 80193474 0 _savegpr_28 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
 80193478 00000010 80193478 0 _savegpr_29 (entry of __save_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193488 0000004c 80193488 0 __restore_gpr
-8019348c 00000048 8019348c 0 _restgpr_15 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193490 00000044 80193490 0 _restgpr_16 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193494 00000040 80193494 0 _restgpr_17 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-80193498 0000003c 80193498 0 _restgpr_18 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-8019349c 00000038 8019349c 0 _restgpr_19 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-801934a0 00000034 801934a0 0 _restgpr_20 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-801934a4 00000030 801934a4 0 _restgpr_21 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-801934a8 0000002c 801934a8 0 _restgpr_22 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-801934ac 00000028 801934ac 0 _restgpr_23 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-801934b0 00000024 801934b0 0 _restgpr_24 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-801934b4 00000020 801934b4 0 _restgpr_25 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-801934b8 0000001c 801934b8 0 _restgpr_26 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-801934bc 00000018 801934bc 0 _restgpr_27 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-801934c0 00000014 801934c0 0 _restgpr_28 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193488 00000004 80193488 0 __restore_gpr 	Runtime.PPCEABI.H.a runtime.o
+8019348c 00000004 8019348c 0 _restgpr_15 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193490 00000004 80193490 0 _restgpr_16 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193494 00000004 80193494 0 _restgpr_17 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+80193498 00000004 80193498 0 _restgpr_18 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+8019349c 00000004 8019349c 0 _restgpr_19 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+801934a0 00000004 801934a0 0 _restgpr_20 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+801934a4 00000004 801934a4 0 _restgpr_21 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+801934a8 00000004 801934a8 0 _restgpr_22 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+801934ac 00000004 801934ac 0 _restgpr_23 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+801934b0 00000004 801934b0 0 _restgpr_24 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+801934b4 00000004 801934b4 0 _restgpr_25 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+801934b8 00000004 801934b8 0 _restgpr_26 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+801934bc 00000004 801934bc 0 _restgpr_27 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
+801934c0 00000004 801934c0 0 _restgpr_28 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
 801934c4 00000010 801934c4 0 _restgpr_29 (entry of __restore_gpr) 	Runtime.PPCEABI.H.a runtime.o
-801934d4 000000ec 801934d4 0 __div2u
-801935c0 00000138 801935c0 0 __div2i
+801934d4 000000ec 801934d4 0 __div2u 	Runtime.PPCEABI.H.a runtime.o
+801935c0 00000138 801935c0 0 __div2i 	Runtime.PPCEABI.H.a runtime.o
 801936f8 000000e4 801936f8 0 __mod2u 	Runtime.PPCEABI.H.a runtime.o
 801937dc 0000010c 801937dc 0 __mod2i 	Runtime.PPCEABI.H.a runtime.o
-801938e8 00000024 801938e8 0 __shl2i
-8019390c 00000024 8019390c 0 __shr2u
+801938e8 00000024 801938e8 0 __shl2i 	Runtime.PPCEABI.H.a runtime.o
+8019390c 00000024 8019390c 0 __shr2u 	Runtime.PPCEABI.H.a runtime.o
 80193930 000000a8 80193930 0 __cvt_dbl_ull 	Runtime.PPCEABI.H.a runtime.o
 801939d8 0000003c 801939d8 0 __init_cpp_exceptions 	Runtime.PPCEABI.H.a __init_cpp_exceptions.o
-80193a14 00000034 80193a14 0 __fini_cpp_exceptions
-80193a48 00000034 80193a48 0 __register_fragment
-80193a7c 00000028 80193a7c 0 zz_80193a7c_
-80193aa4 00000088 80193aa4 0 zz_80193aa4_
-80193b2c 000001b0 80193b2c 0 zz_80193b2c_
-80193cdc 000001b0 80193cdc 0 zz_80193cdc_
-80193e8c 00000554 80193e8c 0 zz_80193e8c_
-801943e0 0000050c 801943e0 0 zz_801943e0_
-801948ec 000001b8 801948ec 0 zz_801948ec_
-80194aa4 00000040 80194aa4 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-80194ae4 00000104 80194ae4 0 zz_80194ae4_
-80194be8 00000408 80194be8 0 zz_80194be8_
-80194ff0 00000144 80194ff0 0 zz_80194ff0_
-80195134 0000002c 80195134 0 zz_80195134_
-80195160 0000000c 80195160 0 GetOneTimerLeadGroundContactAnims(void)
+80193a14 00000034 80193a14 0 __fini_cpp_exceptions 	Runtime.PPCEABI.H.a __init_cpp_exceptions.o
+80193a48 00000034 80193a48 0 __register_fragment 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80193a7c 00000028 80193a7c 0 __unregister_fragment 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80193aa4 00000088 80193aa4 0 ExPPC_FindExceptionFragment__FPcP12FragmentInfo 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80193b2c 000001b0 80193b2c 0 ExPPC_FindExceptionRecord__FPcP15MWExceptionInfo 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80193cdc 000001b0 80193cdc 0 ExPPC_NextAction__FP14ActionIterator 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80193e8c 00000554 80193e8c 0 ExPPC_PopStackFrame__FP12ThrowContextP15MWExceptionInfo 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+801943e0 0000050c 801943e0 0 ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+801948ec 000001b8 801948ec 0 __unexpected 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80194aa4 00000040 80194aa4 0 __dt__Q23std13bad_exceptionFv 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80194ae4 00000104 80194ae4 0 ExPPC_LongJump__FP12ThrowContextPvPv 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80194be8 00000408 80194be8 0 ExPPC_ThrowHandler__FP12ThrowContext 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80194ff0 00000144 80194ff0 0 __throw 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80195134 0000002c 80195134 0 __end__catch 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
+80195160 0000000c 80195160 0 what__Q23std13bad_exceptionCFv 	Runtime.PPCEABI.H.a Gecko_ExceptionPPC.o
 8019516c 000000b8 8019516c 0 __sys_free 	Runtime.PPCEABI.H.a GCN_mem_alloc.o
-80195224 00000034 80195224 0 zz_80195224_
-80195258 00000018 80195258 0 GDOverflowed 	gd.a GDBase.o
-80195270 00000060 80195270 0 zz_80195270_
+80195224 00000034 80195224 0 abort 	MSL_C.PPCEABI.bare.H.a abort_exit_ppc_eabi.o
+80195258 00000018 80195258 0 __signbitf 	MSL_C.PPCEABI.bare.H.a math_api.o
+80195270 00000060 80195270 0 __fpclassifyf 	MSL_C.PPCEABI.bare.H.a math_api.o
 801952d0 00000018 801952d0 0 __signbitd 	MSL_C.PPCEABI.bare.H.a math_api.o
-801952e8 0000007c 801952e8 0 zz_801952e8_
-80195364 00000150 80195364 0 zz_80195364_
-801954b4 000000a8 801954b4 0 zz_801954b4_
-8019555c 000001ec 8019555c 0 zz_8019555c_
-80195748 00000130 80195748 0 zz_80195748_
-80195878 000000a4 80195878 0 zz_80195878_
-8019591c 00000084 8019591c 0 zz_8019591c_
+801952e8 0000007c 801952e8 0 __fpclassifyd 	MSL_C.PPCEABI.bare.H.a math_api.o
+80195364 00000150 80195364 0 Block_link 	MSL_C.PPCEABI.bare.H.a alloc.o
+801954b4 000000a8 801954b4 0 SubBlock_merge_next 	MSL_C.PPCEABI.bare.H.a alloc.o
+8019555c 000001ec 8019555c 0 deallocate_from_fixed_pools 	MSL_C.PPCEABI.bare.H.a alloc.o
+80195748 00000130 80195748 0 free 	MSL_C.PPCEABI.bare.H.a alloc.o
+80195878 000000a4 80195878 0 __close_all 	MSL_C.PPCEABI.bare.H.a ansi_files.o
+8019591c 00000084 8019591c 0 __flush_line_buffered_output_files 	MSL_C.PPCEABI.bare.H.a ansi_files.o
 801959a0 0000006c 801959a0 0 __flush_all 	MSL_C.PPCEABI.bare.H.a ansi_files.o
 80195a0c 000000dc 80195a0c 0 __ull2dec 	MSL_C.PPCEABI.bare.H.a ansi_fp.o
-80195ae8 00000288 80195ae8 0 zz_80195ae8_
+80195ae8 00000288 80195ae8 0 __timesdec 	MSL_C.PPCEABI.bare.H.a ansi_fp.o
 80195d70 000000ec 80195d70 0 __str2dec 	MSL_C.PPCEABI.bare.H.a ansi_fp.o
-80195e5c 0000031c 80195e5c 0 zz_80195e5c_
-80196178 000000e4 80196178 0 zz_80196178_
-8019625c 00000100 8019625c 0 zz_8019625c_
-8019635c 000004dc 8019635c 0 zz_8019635c_
-80196838 00000164 80196838 0 zz_80196838_
+80195e5c 0000031c 80195e5c 0 __two_exp 	MSL_C.PPCEABI.bare.H.a ansi_fp.o
+80196178 000000e4 80196178 0 __equals_dec MSL_C.PPCEABI.bare.H.a ansi_fp.o
+8019625c 00000100 8019625c 0 __less_dec MSL_C.PPCEABI.bare.H.a ansi_fp.o
+8019635c 000004dc 8019635c 0 __minus_dec MSL_C.PPCEABI.bare.H.a ansi_fp.o
+80196838 00000164 80196838 0 __num2dec_internal 	MSL_C.PPCEABI.bare.H.a ansi_fp.o
 8019699c 000001a0 8019699c 0 __num2dec 	MSL_C.PPCEABI.bare.H.a ansi_fp.o
-80196b3c 00000748 80196b3c 0 zz_80196b3c_
-80197284 00000010 80197284 0 abs
+80196b3c 00000748 80196b3c 0 __dec2num MSL_C.PPCEABI.bare.H.a ansi_fp.o
+80197284 00000010 80197284 0 abs 	MSL_C.PPCEABI.bare.H.a arith.o
 80197294 00000028 80197294 0 __prep_buffer 	MSL_C.PPCEABI.bare.H.a buffer_io.o
-801972bc 000000fc 801972bc 0 zz_801972bc_
+801972bc 000000fc 801972bc 0 __load_buffer MSL_C.PPCEABI.bare.H.a buffer_io.o
 801973b8 000000b8 801973b8 0 __flush_buffer 	MSL_C.PPCEABI.bare.H.a buffer_io.o
-80197470 00000030 80197470 0 zz_80197470_
-801974a0 00000344 801974a0 0 zz_801974a0_
-801977e4 0000030c 801977e4 0 zz_801977e4_
+80197470 00000030 80197470 0 toupper 	MSL_C.PPCEABI.bare.H.a ctype.o
+801974a0 00000344 801974a0 0 __fread MSL_C.PPCEABI.bare.H.a direct_io.o
+801977e4 0000030c 801977e4 0 __fwrite 	MSL_C.PPCEABI.bare.H.a direct_io.o
 80197af0 000000bc 80197af0 0 fclose 	MSL_C.PPCEABI.bare.H.a file_io.o
 80197bac 00000134 80197bac 0 fflush 	MSL_C.PPCEABI.bare.H.a file_io.o
-80197ce0 000000b8 80197ce0 0 zz_80197ce0_
-80197d98 000000a8 80197d98 0 zz_80197d98_
-80197e40 000001c8 80197e40 0 zz_80197e40_
-80197e44 000001c4 80197e44 0 zz_80197e44_
-80198008 0000004c 80198008 0 zz_80198008_
-8019800c 00000048 8019800c 0 zz_8019800c_
-80198054 00000064 80198054 0 zz_80198054_
+80197ce0 000000b8 80197ce0 0 __msl_strnicmp 	MSL_C.PPCEABI.bare.H.a file_io.o
+80197d98 000000a8 80197d98 0 _ftell 	MSL_C.PPCEABI.bare.H.a FILE_POS.o
+80197e40 00000004 80197e40 0 ftell 	MSL_C.PPCEABI.bare.H.a FILE_POS.o
+80197e44 000001c4 80197e44 0 _fseek 	MSL_C.PPCEABI.bare.H.a FILE_POS.o
+80198008 00000004 80198008 0 fseek 	MSL_C.PPCEABI.bare.H.a FILE_POS.o
+8019800c 00000048 8019800c 0 rewind 	MSL_C.PPCEABI.bare.H.a FILE_POS.o
+80198054 00000018 80198054 0 mbtowc 	MSL_C.PPCEABI.bare.H.a mbstring.o
+8019806c 0000004c 8019806c 0 __mbtowc_noconv 	MSL_C.PPCEABI.bare.H.a mbstring.o
 801980b8 0000001c 801980b8 0 __wctomb_noconv 	MSL_C.PPCEABI.bare.H.a mbstring.o
 801980d4 000000b8 801980d4 0 wcstombs 	MSL_C.PPCEABI.bare.H.a mbstring.o
 8019818c 000000cc 8019818c 0 memmove 	MSL_C.PPCEABI.bare.H.a mem.o
-80198258 0000002c 80198258 0 memchr
+80198258 0000002c 80198258 0 memchr 	MSL_C.PPCEABI.bare.H.a mem.o
 80198284 0000002c 80198284 0 __memrchr 	MSL_C.PPCEABI.bare.H.a mem.o
 801982b0 0000004c 801982b0 0 memcmp 	MSL_C.PPCEABI.bare.H.a mem.o
-801982fc 000000bc 801982fc 0 zz_801982fc_
-801983b8 000000a8 801983b8 0 zz_801983b8_
-80198460 000000c0 80198460 0 zz_80198460_
-80198520 000000ac 80198520 0 zz_80198520_
+801982fc 000000bc 801982fc 0 __copy_longs_aligned 	MSL_C.PPCEABI.bare.H.a mem_funcs.o
+801983b8 000000a8 801983b8 0 __copy_longs_rev_aligned 	MSL_C.PPCEABI.bare.H.a mem_funcs.o
+80198460 000000c0 80198460 0 __copy_longs_unaligned 	MSL_C.PPCEABI.bare.H.a mem_funcs.o
+80198520 000000ac 80198520 0 __copy_longs_rev_unaligned 	MSL_C.PPCEABI.bare.H.a mem_funcs.o
 801985cc 00000010 801985cc 0 __stdio_atexit 	MSL_C.PPCEABI.bare.H.a misc_io.o
-801985dc 000005bc 801985dc 0 zz_801985dc_
-80198b98 00000240 80198b98 0 zz_80198b98_
-80198dd8 000002b0 80198dd8 0 zz_80198dd8_
-80199088 000003d0 80199088 0 zz_80199088_
+801985dc 000005bc 801985dc 0 parse_format 	MSL_C.PPCEABI.bare.H.a printf.o
+80198b98 00000240 80198b98 0 long2str 	MSL_C.PPCEABI.bare.H.a printf.o
+80198dd8 000002b0 80198dd8 0 longlong2str 	MSL_C.PPCEABI.bare.H.a printf.o
+80199088 000003d0 80199088 0 double2hex 	MSL_C.PPCEABI.bare.H.a printf.o
 80199458 00000128 80199458 0 round_decimal 	MSL_C.PPCEABI.bare.H.a printf.o
-80199580 00000798 80199580 0 zz_80199580_
-80199d18 000008ac 80199d18 0 zz_80199d18_
+80199580 00000798 80199580 0 float2str 	MSL_C.PPCEABI.bare.H.a printf.o
+80199d18 000008ac 80199d18 0 __pformatter 	MSL_C.PPCEABI.bare.H.a printf.o
 8019a5c4 00000058 8019a5c4 0 __FileWrite 	MSL_C.PPCEABI.bare.H.a printf.o
 8019a61c 0000006c 8019a61c 0 __StringWrite 	MSL_C.PPCEABI.bare.H.a printf.o
-8019a688 000000cc 8019a688 0 zz_8019a688_
-8019a754 0000007c 8019a754 0 zz_8019a754_
-8019a7d0 00000088 8019a7d0 0 zz_8019a7d0_
-8019a858 00000084 8019a858 0 zz_8019a858_
-8019a8dc 000000f4 8019a8dc 0 snprintf
-8019a9d0 000000d4 8019a9d0 0 zz_8019a9d0_
-8019aaa4 00000170 8019aaa4 0 zz_8019aaa4_
-8019ac14 00000020 8019ac14 0 zz_8019ac14_
-8019ac34 00000008 8019ac34 0 IPCSetBufferLo 	ipc.a ipcMain.o
-8019ac3c 00000688 8019ac3c 0 zz_8019ac3c_
-8019b2c4 00000c98 8019b2c4 0 zz_8019b2c4_
-8019bf5c 00000080 8019bf5c 0 zz_8019bf5c_
-8019bfdc 00000008 8019bfdc 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-8019bfe4 00000130 8019bfe4 0 zz_8019bfe4_
-8019c114 000000a8 8019c114 0 zz_8019c114_
-8019c1bc 000000c0 8019c1bc 0 zz_8019c1bc_
-8019c27c 00000044 8019c27c 0 zz_8019c27c_
-8019c2c0 0000002c 8019c2c0 0 zz_8019c2c0_
-8019c2ec 0000004c 8019c2ec 0 zz_8019c2ec_
+8019a688 000000cc 8019a688 0 printf 	MSL_C.PPCEABI.bare.H.a printf.o
+8019a754 0000007c 8019a754 0 vprintf 	MSL_C.PPCEABI.bare.H.a printf.o
+8019a7d0 00000088 8019a7d0 0 vsnprintf 	MSL_C.PPCEABI.bare.H.a printf.o
+8019a858 00000084 8019a858 0 vsprintf 	MSL_C.PPCEABI.bare.H.a printf.o
+8019a8dc 000000f4 8019a8dc 0 snprintf 	MSL_C.PPCEABI.bare.H.a printf.o
+8019a9d0 000000d4 8019a9d0 0 sprintf 	MSL_C.PPCEABI.bare.H.a printf.o
+8019aaa4 00000170 8019aaa4 0 qsort 	MSL_C.PPCEABI.bare.H.a qsort.o
+8019ac14 00000020 8019ac14 0 rand 	MSL_C.PPCEABI.bare.H.a rand.o
+8019ac34 00000008 8019ac34 0 srand 	MSL_C.PPCEABI.bare.H.a rand.o
+8019ac3c 00000688 8019ac3c 0 parse_format 	scanf.o
+8019b2c4 00000c98 8019b2c4 0 __sformatter 	scanf.o
+8019bf5c 00000088 8019bf5c 0 __StringRead 	MSL_C.PPCEABI.bare.H.a Escanf.o
+8019bfe4 00000130 8019bfe4 0 sscanf 	MSL_C.PPCEABI.bare.H.a scanf.o
+8019c114 000000a8 8019c114 0 raise 	MSL_C.PPCEABI.bare.H.a signal.o
+8019c1bc 000000c0 8019c1bc 0 strcpy 	MSL_C.PPCEABI.bare.H.a string.o
+8019c27c 00000044 8019c27c 0 strncpy 	MSL_C.PPCEABI.bare.H.a string.o
+8019c2c0 0000002c 8019c2c0 0 strcat 	MSL_C.PPCEABI.bare.H.a string.o
+8019c2ec 0000004c 8019c2ec 0 strncat 	MSL_C.PPCEABI.bare.H.a string.o
 8019c338 0000011c 8019c338 0 strcmp 	MSL_C.PPCEABI.bare.H.a string.o
 8019c454 00000040 8019c454 0 strncmp 	MSL_C.PPCEABI.bare.H.a string.o
 8019c494 00000030 8019c494 0 strchr 	MSL_C.PPCEABI.bare.H.a string.o
-8019c4c4 000000a4 8019c4c4 0 zz_8019c4c4_
-8019c568 00000124 8019c568 0 zz_8019c568_
-8019c68c 0000006c 8019c68c 0 zz_8019c68c_
-8019c6f8 00001320 8019c6f8 0 zz_8019c6f8_
-8019da18 0000005c 8019da18 0 zz_8019da18_
-8019da74 00000414 8019da74 0 zz_8019da74_
-8019de88 000004a8 8019de88 0 zz_8019de88_
-8019e330 000000a8 8019e330 0 zz_8019e330_
-8019e3d8 000000ec 8019e3d8 0 zz_8019e3d8_
-8019e4c4 000000c4 8019e4c4 0 zz_8019e4c4_
+8019c4c4 000000a4 8019c4c4 0 strcspn 	MSL_C.PPCEABI.bare.H.a string.o
+8019c568 00000124 8019c568 0 strtok 	MSL_C.PPCEABI.bare.H.a string.o
+8019c68c 0000006c 8019c68c 0 strstr 	MSL_C.PPCEABI.bare.H.a string.o
+8019c6f8 00001320 8019c6f8 0 __strtold 	MSL_C.PPCEABI.bare.H.a strtold.o
+8019da18 0000005c 8019da18 0 atof 	MSL_C.PPCEABI.bare.H.a strtold.o
+8019da74 00000414 8019da74 0 __strtoul 	MSL_C.PPCEABI.bare.H.a strtoul.o
+8019de88 000004a8 8019de88 0 __strtoull 	MSL_C.PPCEABI.bare.H.a strtoul.o
+8019e330 000000a8 8019e330 0 strtoul 	MSL_C.PPCEABI.bare.H.a strtoul.o
+8019e3d8 000000ec 8019e3d8 0 strtol 	MSL_C.PPCEABI.bare.H.a strtoul.o
+8019e4c4 000000c4 8019e4c4 0 atoi 	MSL_C.PPCEABI.bare.H.a strtoul.o
 8019e588 0000001c 8019e588 0 wcslen 	MSL_C.PPCEABI.bare.H.a wstring.o
-8019e5a4 00000044 8019e5a4 0 zz_8019e5a4_
-8019e5e8 00000034 8019e5e8 0 zz_8019e5e8_
-8019e61c 00000078 8019e61c 0 zz_8019e61c_
-8019e694 000000d0 8019e694 0 zz_8019e694_
-8019e764 00000008 8019e764 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-8019e76c 000002cc 8019e76c 0 zz_8019e76c_
-8019ea38 00000298 8019ea38 0 zz_8019ea38_
-8019ecd0 00000258 8019ecd0 0 zz_8019ecd0_
-8019ef28 00000380 8019ef28 0 zz_8019ef28_
-8019f2a8 000002b4 8019f2a8 0 zz_8019f2a8_
-8019f55c 00000114 8019f55c 0 zz_8019f55c_
-8019f670 00000814 8019f670 0 zz_8019f670_
-8019fe84 00000384 8019fe84 0 zz_8019fe84_
-801a0208 00000110 801a0208 0 __kernel_cos 	MSL_C.PPCEABI.bare.H.a D:\layout\RVL_1.0\Layout\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_pr
-801a0318 000016b8 801a0318 0 zz_801a0318_
-801a19d0 000000c0 801a19d0 0 __kernel_sin 	MSL_C.PPCEABI.bare.H.a D:\layout\RVL_1.0\Layout\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_pr
-801a1a90 00000250 801a1a90 0 zz_801a1a90_
-801a1ce0 00000230 801a1ce0 0 zz_801a1ce0_
-801a1f10 0000014c 801a1f10 0 zz_801a1f10_
-801a205c 0000002c 801a205c 0 copysign 	MSL_C.PPCEABI.bare.H.a D:\layout\RVL_1.0\Layout\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precis
-801a2088 000000c8 801a2088 0 zz_801a2088_
-801a2150 00000150 801a2150 0 zz_801a2150_
-801a22a0 00000088 801a22a0 0 frexp 	MSL_C.PPCEABI.bare.H.a D:\layout\RVL_1.0\Layout\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision
-801a2328 0000016c 801a2328 0 ldexp 	MSL_C.PPCEABI.bare.H.a D:\layout\RVL_1.0\Layout\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision
-801a2494 000000fc 801a2494 0 zz_801a2494_
-801a2590 000000cc 801a2590 0 zz_801a2590_
-801a265c 00000078 801a265c 0 tan 	MSL_C.PPCEABI.bare.H.a D:\layout\RVL_1.0\Layout\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\s
-801a26d4 00000260 801a26d4 0 zz_801a26d4_
-801a26d8 0000025c 801a26d8 0 zz_801a26d8_
-801a26dc 00000258 801a26dc 0 zz_801a26dc_
-801a26e0 00000254 801a26e0 0 zz_801a26e0_
-801a26e4 00000250 801a26e4 0 zz_801a26e4_
-801a26e8 0000024c 801a26e8 0 zz_801a26e8_
-801a2934 00000028 801a2934 0 zz_801a2934_
-801a295c 0000002c 801a295c 0 zz_801a295c_
-801a2988 00000028 801a2988 0 zz_801a2988_
-801a29b0 00000028 801a29b0 0 zz_801a29b0_
-801a29d8 00000028 801a29d8 0 zz_801a29d8_
-801a2a00 00000028 801a2a00 0 zz_801a2a00_
-801a2a28 00000004 801a2a28 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801a2a2c 000000a8 801a2a2c 0 zz_801a2a2c_
-801a2a30 000000a4 801a2a30 0 zz_801a2a30_
-801a2a34 000000a0 801a2a34 0 zz_801a2a34_
-801a2ad4 000000a4 801a2ad4 0 zz_801a2ad4_
-801a2ad8 000000a0 801a2ad8 0 zz_801a2ad8_
-801a2b78 00000008 801a2b78 0 TRKPositionFile (entry of .text) 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\debugger\embedded\MetroTRK\Processor\
-801a2b80 00000008 801a2b80 0 TRKPositionFile (entry of .text) 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\debugger\embedded\MetroTRK\Processor\
-801a2b88 00000008 801a2b88 0 TRKPositionFile (entry of .text) 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\debugger\embedded\MetroTRK\Processor\
-801a2b90 00000008 801a2b90 0 TRKPositionFile (entry of .text) 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\debugger\embedded\MetroTRK\Processor\
-801a2b98 0000003c 801a2b98 0 gdev_cc_initialize 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\m
-801a2bd4 00000008 801a2bd4 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801a2bdc 00000024 801a2bdc 0 zz_801a2bdc_
-801a2c00 00000008 801a2c00 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801a2c08 000000b4 801a2c08 0 zz_801a2c08_
-801a2cbc 00000074 801a2cbc 0 gdev_cc_write 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\main.o
-801a2d30 00000024 801a2d30 0 LexicalCast<PCc,f>(float &)
-801a2d54 00000024 801a2d54 0 LexicalCast<PCc,f>(float &)
-801a2d78 00000074 801a2d78 0 zz_801a2d78_
-801a2dec 00000024 801a2dec 0 LexicalCast<PCc,f>(float &)
+8019e5a4 00000044 8019e5a4 0 wcsncpy 	MSL_C.PPCEABI.bare.H.a wstring.o
+8019e5e8 00000034 8019e5e8 0 wcscmp 	MSL_C.PPCEABI.bare.H.a wstring.o
+8019e61c 00000078 8019e61c 0 fwide 	MSL_C.PPCEABI.bare.H.a wchar_io.o
+8019e694 000000d0 8019e694 0 __write_console 	MSL_C.PPCEABI.bare.H.a uart_console_io_gcn.o
+8019e764 00000008 8019e764 0 __close_console 	MSL_C.PPCEABI.bare.H.a uart_console_io_gcn.o
+8019e76c 000002cc 8019e76c 0 __ieee754_acos 	MSL_C.PPCEABI.bare.H.a e_acos.o
+8019ea38 00000298 8019ea38 0 __ieee754_asin 	MSL_C.PPCEABI.bare.H.a e_asin.o
+8019ecd0 00000258 8019ecd0 0 __ieee754_atan2 	MSL_C.PPCEABI.bare.H.a e_atan2.o
+8019ef28 00000380 8019ef28 0 __ieee754_fmod 	MSL_C.PPCEABI.bare.H.a e_fmod.o
+8019f2a8 000002b4 8019f2a8 0 __ieee754_log 	MSL_C.PPCEABI.bare.H.a e_log.o
+8019f55c 00000114 8019f55c 0 __ieee754_log10 	MSL_C.PPCEABI.bare.H.a e_log10.o
+8019f670 00000814 8019f670 0 __ieee754_pow 	MSL_C.PPCEABI.bare.H.a e_pow.o
+8019fe84 00000384 8019fe84 0 __ieee754_rem_pio2 	MSL_C.PPCEABI.bare.H.a e_rem_pio2.o
+801a0208 00000110 801a0208 0 __kernel_cos 	MSL_C.PPCEABI.bare.H.a k_cos.o
+801a0318 000016b8 801a0318 0 __kernel_rem_pio2 	MSL_C.PPCEABI.bare.H.a k_rem_pio2.o
+801a19d0 000000c0 801a19d0 0 __kernel_sin 	MSL_C.PPCEABI.bare.H.a k_sin.o
+801a1a90 00000250 801a1a90 0 __kernel_tan 	MSL_C.PPCEABI.bare.H.a k_tan.o
+801a1ce0 00000230 801a1ce0 0 atan 	MSL_C.PPCEABI.bare.H.a s_atan.o
+801a1f10 0000014c 801a1f10 0 ceil 	MSL_C.PPCEABI.bare.H.a s_ceil.o
+801a205c 0000002c 801a205c 0 copysign 	MSL_C.PPCEABI.bare.H.a s_copysign.o
+801a2088 000000c8 801a2088 0 cos 	MSL_C.PPCEABI.bare.H.a s_cos.o
+801a2150 00000150 801a2150 0 floor 	MSL_C.PPCEABI.bare.H.a s_floor.o
+801a22a0 00000088 801a22a0 0 frexp 	MSL_C.PPCEABI.bare.H.a s_frexp.o
+801a2328 0000016c 801a2328 0 ldexp 	MSL_C.PPCEABI.bare.H.a s_ldexp.o
+801a2494 000000fc 801a2494 0 modf 	MSL_C.PPCEABI.bare.H.a s_modf.o
+801a2590 000000cc 801a2590 0 sin 	MSL_C.PPCEABI.bare.H.a s_sin.o
+801a265c 00000078 801a265c 0 tan 	MSL_C.PPCEABI.bare.H.a s_tan.o
+801a26d4 00000004 801a26d4 0 acos 	MSL_C.PPCEABI.bare.H.a w_acos.o
+801a26d8 00000004 801a26d8 0 asin 	MSL_C.PPCEABI.bare.H.a w_asin.o
+801a26dc 00000004 801a26dc 0 atan2 	MSL_C.PPCEABI.bare.H.a w_atan2.o
+801a26e0 00000004 801a26e0 0 fmod 	MSL_C.PPCEABI.bare.H.a w_fmod.o
+801a26e4 00000004 801a26e4 0 log10 	MSL_C.PPCEABI.bare.H.a w_log10.o
+801a26e8 00000004 801a26e8 0 pow 	MSL_C.PPCEABI.bare.H.a w_pow.o
+801a26ec 00000244 801a26ec 0 __ieee754_sqrt 	MSL_C.PPCEABI.bare.H.a e_sqrt.o
+801a2934 00000028 801a2934 0 acosf 	MSL_C.PPCEABI.bare.H.a math_double.o
+801a295c 0000002c 801a295c 0 atanf MSL_C.PPCEABI.bare.H.a math_double.o
+801a2988 00000028 801a2988 0 cosf MSL_C.PPCEABI.bare.H.a math_double.o
+801a29b0 00000028 801a29b0 0 sinf 	MSL_C.PPCEABI.bare.H.a math_double.o
+801a29d8 00000028 801a29d8 0 sqrtf MSL_C.PPCEABI.bare.H.a math_double.o
+801a2a00 00000028 801a2a00 0 tanf MSL_C.PPCEABI.bare.H.a math_double.o
+801a2a28 00000004 801a2a28 0 nan 	MSL_C.PPCEABI.bare.H.a math_ppc.o
+801a2a2c 00000004 801a2a2c 0 scalbln MSL_C.PPCEABI.bare.H.a math_ppc.o
+801a2a30 00000004 801a2a30 0 sqrt 	MSL_C.PPCEABI.bare.H.a w_sqrt.o
+801a2a34 000000a0 801a2a34 0 stricmp 	MSL_C.PPCEABI.bare.H.a extras.o
+801a2ad4 00000004 801a2ad4 0 strncasecmp 	MSL_C.PPCEABI.bare.H.a extras.o
+801a2ad8 000000a0 801a2ad8 0 strcasecmp 	MSL_C.PPCEABI.bare.H.a extras.o
+801a2b78 00000008 801a2b78 0 TRKAccessFile 	TRK_Hollywood_Revolution.a targsupp.o
+801a2b80 00000008 801a2b80 0 TRKOpenFile 	TRK_Hollywood_Revolution.a targsupp.o
+801a2b88 00000008 801a2b88 0 TRKCloseFile 	TRK_Hollywood_Revolution.a targsupp.o
+801a2b90 00000008 801a2b90 0 TRKPositionFile 	TRK_Hollywood_Revolution.a targsupp.o
+801a2b98 0000003c 801a2b98 0 gdev_cc_initialize 	TRK_Hollywood_Revolution.a cc_gdev.o
+801a2bd4 00000008 801a2bd4 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a cc_gdev.o
+801a2bdc 00000024 801a2bdc 0 gdev_cc_open 	TRK_Hollywood_Revolution.a cc_gdev.o
+801a2c00 00000008 801a2c00 0 gdev_cc_close 	TRK_Hollywood_Revolution.a cc_gdev.o
+801a2c08 000000b4 801a2c08 0 gdev_cc_read 	TRK_Hollywood_Revolution.a cc_gdev.o
+801a2cbc 00000074 801a2cbc 0 gdev_cc_write 	TRK_Hollywood_Revolution.a cc_gdev.o
+801a2d30 00000024 801a2d30 0 gdev_cc_pre_continue 	TRK_Hollywood_Revolution.a cc_gdev.o
+801a2d54 00000024 801a2d54 0 gdev_cc_post_stop 	TRK_Hollywood_Revolution.a cc_gdev.o
+801a2d78 00000074 801a2d78 0 gdev_cc_peek 	TRK_Hollywood_Revolution.a cc_gdev.o
+801a2dec 00000024 801a2dec 0 gdev_cc_initinterrupts 	TRK_Hollywood_Revolution.a cc_gdev.o
 801a2e10 00000004 801a2e10 0 DBClose 	NdevExi2A.a DebuggerDriver.o
 801a2e14 00000030 801a2e14 0 zz_801a2e14_
-801a2e44 00000010 801a2e44 0 zz_801a2e44_
+801a2e44 00000008 801a2e44 0 zz_801a2e44_
 801a2e4c 00000008 801a2e4c 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-801a2e54 0000012c 801a2e54 0 zz_801a2e54_
+801a2e54 00000024 801a2e54 0 zz_801a2e54_
 801a2e78 00000108 801a2e78 0 zz_801a2e78_
 801a2f80 00000108 801a2f80 0 zz_801a2f80_
 801a3088 00000038 801a3088 0 TRK_flush_cache
@@ -5131,31 +5133,31 @@
 801a344c 00000120 801a344c 0 zz_801a344c_
 801a356c 00000098 801a356c 0 InitMetroTRK
 801a3604 00000094 801a3604 0 InitMetroTRK_BBA
-801a3698 0000006c 801a3698 0 zz_801a3698_
+801a3698 00000004 801a3698 0 zz_801a3698_
 801a369c 00000068 801a369c 0 zz_801a369c_
 801a3704 00000134 801a3704 0 zz_801a3704_
 801a3838 00000048 801a3838 0 zz_801a3838_
-801a3880 000000d0 801a3880 0 zz_801a3880_
+801a3880 00000010 801a3880 0 zz_801a3880_
 801a3890 000000c0 801a3890 0 zz_801a3890_
 801a3950 00000138 801a3950 0 zz_801a3950_
 801a3a88 00000004 801a3a88 0 DBClose 	NdevExi2A.a DebuggerDriver.o
 801a3a8c 00000054 801a3a8c 0 zz_801a3a8c_
 801a3ae0 0000002c 801a3ae0 0 zz_801a3ae0_
-801a3b0c 00000050 801a3b0c 0 zz_801a3b0c_
+801a3b0c 00000014 801a3b0c 0 zz_801a3b0c_
 801a3b20 0000003c 801a3b20 0 TRKWriteUARTN
 801a3b5c 0000003c 801a3b5c 0 TRKWriteUARTN
-801a3b98 00000094 801a3b98 0 zz_801a3b98_
-801a3bac 00000080 801a3bac 0 zz_801a3bac_
+801a3b98 00000014 801a3b98 0 zz_801a3b98_
+801a3bac 0000002c 801a3bac 0 zz_801a3bac_
 801a3bd8 00000054 801a3bd8 0 zz_801a3bd8_
 801a3c2c 00000090 801a3c2c 0 zz_801a3c2c_
 801a3cbc 00000024 801a3cbc 0 zz_801a3cbc_
 801a3ce0 0000008c 801a3ce0 0 zz_801a3ce0_
 801a3d6c 000000cc 801a3d6c 0 zz_801a3d6c_
 801a3e38 00000018 801a3e38 0 zz_801a3e38_
-801a3e50 000000b4 801a3e50 0 zz_801a3e50_
+801a3e50 00000008 801a3e50 0 zz_801a3e50_
 801a3e58 000000ac 801a3e58 0 zz_801a3e58_
 801a3f04 00000024 801a3f04 0 LexicalCast<PCc,f>(float &)
-801a3f28 00000080 801a3f28 0 zz_801a3f28_
+801a3f28 0000000c 801a3f28 0 zz_801a3f28_
 801a3f34 00000074 801a3f34 0 zz_801a3f34_
 801a3fa8 000000cc 801a3fa8 0 zz_801a3fa8_
 801a4074 0000002c 801a4074 0 zz_801a4074_
@@ -5202,7 +5204,7 @@
 801a61b4 000000cc 801a61b4 0 zz_801a61b4_
 801a6280 00000068 801a6280 0 zz_801a6280_
 801a62e8 00000068 801a62e8 0 zz_801a62e8_
-801a6350 000000bc 801a6350 0 zz_801a6350_
+801a6350 00000008 801a6350 0 zz_801a6350_
 801a6358 000000b4 801a6358 0 zz_801a6358_
 801a640c 00000008 801a640c 0 __TRK_get_MSR 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\debugger\embedded\MetroTRK\Processor\ppc\Generic\targimp
 801a6414 00000008 801a6414 0 __TRK_set_MSR 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\debugger\embedded\MetroTRK\Processor\ppc\Generic\targimp
@@ -5216,7 +5218,7 @@
 801a6c38 00000230 801a6c38 0 zz_801a6c38_
 801a6e68 000000b8 801a6e68 0 zz_801a6e68_
 801a6f20 000000c4 801a6f20 0 zz_801a6f20_
-801a6fe4 000000b0 801a6fe4 0 zz_801a6fe4_
+801a6fe4 00000054 801a6fe4 0 zz_801a6fe4_
 801a7038 0000005c 801a7038 0 zz_801a7038_
 801a7094 00000200 801a7094 0 zz_801a7094_
 801a7294 0000009c 801a7294 0 zz_801a7294_
@@ -5256,7 +5258,7 @@
 801a8620 000000e0 801a8620 0 __DBEXIWriteRam 	NdevExi2A.a exi2.o
 801a8700 00000068 801a8700 0 zz_801a8700_
 801a8768 0000006c 801a8768 0 zz_801a8768_
-801a87d4 000000bc 801a87d4 0 zz_801a87d4_
+801a87d4 00000024 801a87d4 0 zz_801a87d4_
 801a87f8 00000098 801a87f8 0 zz_801a87f8_
 801a8890 000000ac 801a8890 0 zz_801a8890_
 801a893c 00000104 801a893c 0 zz_801a893c_
@@ -5614,11 +5616,11 @@
 801d1df0 00000064 801d1df0 0 zz_801d1df0_
 801d1e54 00000058 801d1e54 0 zz_801d1e54_
 801d1eac 00000064 801d1eac 0 zz_801d1eac_
-801d1f10 00000038 801d1f10 0 zz_801d1f10_
+801d1f10 00000018 801d1f10 0 zz_801d1f10_
 801d1f28 00000020 801d1f28 0 zz_801d1f28_
-801d1f48 000000a0 801d1f48 0 zz_801d1f48_
-801d1f64 00000084 801d1f64 0 zz_801d1f64_
-801d1f80 00000068 801d1f80 0 zz_801d1f80_
+801d1f48 0000001c 801d1f48 0 zz_801d1f48_
+801d1f64 0000001c 801d1f64 0 zz_801d1f64_
+801d1f80 0000001c 801d1f80 0 zz_801d1f80_
 801d1f9c 0000004c 801d1f9c 0 zz_801d1f9c_
 801d1fe8 00000030 801d1fe8 0 zz_801d1fe8_
 801d2018 0000003c 801d2018 0 zz_801d2018_
@@ -5646,7 +5648,7 @@
 801d2650 00000048 801d2650 0 zz_801d2650_
 801d2698 0000006c 801d2698 0 zz_801d2698_
 801d2704 000000bc 801d2704 0 zz_801d2704_
-801d27c0 000000d4 801d27c0 0 zz_801d27c0_
+801d27c0 00000018 801d27c0 0 zz_801d27c0_
 801d27d8 000000bc 801d27d8 0 zz_801d27d8_
 801d2894 00000094 801d2894 0 zz_801d2894_
 801d2928 000000b8 801d2928 0 zz_801d2928_
@@ -5664,7 +5666,7 @@
 801d32f0 000000d0 801d32f0 0 zz_801d32f0_
 801d33c0 000000c8 801d33c0 0 zz_801d33c0_
 801d3488 000000b0 801d3488 0 zz_801d3488_
-801d3538 00000044 801d3538 0 zz_801d3538_
+801d3538 00000024 801d3538 0 zz_801d3538_
 801d355c 00000020 801d355c 0 zz_801d355c_
 801d357c 00000020 801d357c 0 zz_801d357c_
 801d359c 000002dc 801d359c 0 zz_801d359c_
@@ -5680,11 +5682,11 @@
 801d3ad0 0000005c 801d3ad0 0 zz_801d3ad0_
 801d3b2c 00000040 801d3b2c 0 zz_801d3b2c_
 801d3b6c 00000074 801d3b6c 0 zz_801d3b6c_
-801d3be0 000000cc 801d3be0 0 zz_801d3be0_
-801d3bf8 000000b4 801d3bf8 0 zz_801d3bf8_
-801d3c10 0000009c 801d3c10 0 zz_801d3c10_
-801d3c28 00000084 801d3c28 0 zz_801d3c28_
-801d3c40 0000006c 801d3c40 0 zz_801d3c40_
+801d3be0 00000018 801d3be0 0 zz_801d3be0_
+801d3bf8 00000018 801d3bf8 0 zz_801d3bf8_
+801d3c10 00000018 801d3c10 0 zz_801d3c10_
+801d3c28 00000018 801d3c28 0 zz_801d3c28_
+801d3c40 00000018 801d3c40 0 zz_801d3c40_
 801d3c58 00000018 801d3c58 0 zz_801d3c58_
 801d3c70 00000018 801d3c70 0 zz_801d3c70_
 801d3c88 00000024 801d3c88 0 zz_801d3c88_
@@ -6470,7 +6472,7 @@
 801fe26c 0000004c 801fe26c 0 nw4hbm::lyt::Material::SetAnimationEnable(nw4hbm::lyt::AnimTransform *, bool) 	homebuttonLib.a lyt_material.o
 801fe2b8 00000070 801fe2b8 0 zz_801fe2b8_
 801fe328 000000ec 801fe328 0 zz_801fe328_
-801fe414 0000008c 801fe414 0 zz_801fe414_
+801fe414 0000001c 801fe414 0 zz_801fe414_
 801fe430 00000070 801fe430 0 zz_801fe430_
 801fe4a0 00000124 801fe4a0 0 zz_801fe4a0_
 801fe5c4 000000d0 801fe5c4 0 zz_801fe5c4_
@@ -6640,7 +6642,7 @@
 8020791c 00000254 8020791c 0 zz_8020791c_
 80207b70 000000e4 80207b70 0 zz_80207b70_
 80207c54 00000254 80207c54 0 zz_80207c54_
-80207ea8 00000018 80207ea8 0 zz_80207ea8_
+80207ea8 00000008 80207ea8 0 zz_80207ea8_
 80207eb0 00000010 80207eb0 0 zz_80207eb0_
 80207ec0 00000010 80207ec0 0 zz_80207ec0_
 80207ed0 0000000c 80207ed0 0 zz_80207ed0_
@@ -6683,7 +6685,7 @@
 8020954c 000000cc 8020954c 0 zz_8020954c_
 80209618 00000038 80209618 0 zz_80209618_
 80209650 00000014 80209650 0 LexicalCast<b,i>(int &)
-80209664 00000048 80209664 0 zz_80209664_
+80209664 00000008 80209664 0 zz_80209664_
 8020966c 00000040 8020966c 0 zz_8020966c_
 802096ac 00000040 802096ac 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
 802096ec 00000008 802096ec 0 nw4hbm::lyt::Window::GetRuntimeTypeInfo(void) const 	homebuttonLib.a lyt_window.o
@@ -6713,7 +6715,7 @@
 8020aaa4 00000088 8020aaa4 0 zz_8020aaa4_
 8020ab2c 0000005c 8020ab2c 0 JSUFileInputStream::~JSUFileInputStream(void) 	JKernel.a JKRDvdAramRipper.o
 8020ab88 00000030 8020ab88 0 zz_8020ab88_
-8020abb8 00000140 8020abb8 0 zz_8020abb8_
+8020abb8 00000004 8020abb8 0 zz_8020abb8_
 8020abbc 0000013c 8020abbc 0 zz_8020abbc_
 8020acf8 0000013c 8020acf8 0 zz_8020acf8_
 8020ae34 0000004c 8020ae34 0 zz_8020ae34_
@@ -6810,14 +6812,14 @@
 8020dad0 00000008 8020dad0 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
 8020dad8 000006f0 8020dad8 0 zz_8020dad8_
 8020e1c8 00000914 8020e1c8 0 zz_8020e1c8_
-8020eadc 00000184 8020eadc 0 zz_8020eadc_
+8020eadc 00000018 8020eadc 0 zz_8020eadc_
 8020eaf4 0000016c 8020eaf4 0 zz_8020eaf4_
 8020ec60 0000003c 8020ec60 0 zz_8020ec60_
 8020ec9c 0000003c 8020ec9c 0 J3DModelLoader_v26::J3DModelLoader_v26(void) 	J3DGraphLoader.a J3DModelLoader.o
 8020ecd8 0000006c 8020ecd8 0 zz_8020ecd8_
 8020ed44 00000068 8020ed44 0 zz_8020ed44_
 8020edac 00000068 8020edac 0 zz_8020edac_
-8020ee14 0000005c 8020ee14 0 zz_8020ee14_
+8020ee14 0000000c 8020ee14 0 zz_8020ee14_
 8020ee20 00000050 8020ee20 0 zz_8020ee20_
 8020ee70 00000030 8020ee70 0 zz_8020ee70_
 8020eea0 000000c4 8020eea0 0 zz_8020eea0_
@@ -6868,7 +6870,8 @@
 80210ccc 00000264 80210ccc 0 zz_80210ccc_
 80210f30 000002a0 80210f30 0 zz_80210f30_
 802111d0 0000002c 802111d0 0 zz_802111d0_
-802111fc 000000ac 802111fc 0 zz_802111fc_
+802111fc 00000008 802111fc 0 zz_802111fc_
+80211204 00000008 80211204 0 zz_802111fc_
 8021120c 0000009c 8021120c 0 zz_8021120c_
 802112a8 00000058 802112a8 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
 80211300 00000034 80211300 0 zz_80211300_
@@ -9945,7 +9948,7 @@
 802e9038 00000120 802e9038 0 SetVolumeAllSeq__10homebuttonFf 	homebuttonLib.a HBMAxSound.o
 802e9158 00000004 802e9158 0 SetSoundMode__10homebuttonFUl 	homebuttonLib.a HBMAxSound.o
 802e915c 00000010 802e915c 0 HBMAllocMem__FUl 	homebuttonLib.a HBMCommon.o
-802e915c 00000010 802e916c 0 HBMFreeMem__FPv 	homebuttonLib.a HBMCommon.o
+802e916c 00000010 802e916c 0 HBMFreeMem__FPv 	homebuttonLib.a HBMCommon.o
 802e917c 00000128 802e917c 0 HBMCreate 	homebuttonLib.a HBMCommon.o
 802e92a4 00000030 802e92a4 0 HBMInit 	homebuttonLib.a HBMCommon.o
 802e92d4 0000003c 802e92d4 0 HBMCalc 	homebuttonLib.a HBMCommon.o
@@ -10003,7 +10006,7 @@
 802f2348 0000005c 802f2348 0 __ct__Q36nw4hbm3lyt19ArcResourceAccessorFv 	homebuttonLib.a lyt_arcResourceAccessor.o
 802f23a4 0000007c 802f23a4 0 Attach__Q36nw4hbm3lyt19ArcResourceAccessorFPvPCc 	homebuttonLib.a lyt_arcResourceAccessor.o
 802f2420 00000020 802f2420 0 GetResource__Q36nw4hbm3lyt19ArcResourceAccessorFUlPCcPUl 	homebuttonLib.a lyt_arcResourceAccessor.o
-802f2420 00000070 802f2440 0 GetFont__Q36nw4hbm3lyt19ArcResourceAccessorFPCc 	homebuttonLib.a lyt_arcResourceAccessor.o
+802f2440 00000070 802f2440 0 GetFont__Q36nw4hbm3lyt19ArcResourceAccessorFPCc 	homebuttonLib.a lyt_arcResourceAccessor.o
 802f24b0 0000003c 802f24b0 0 __ct__Q36nw4hbm3lyt8BoundingFPCQ46nw4hbm3lyt3res8BoundingRCQ36nw4hbm3lyt11ResBlockSet 	homebuttonLib.a lyt_bounding.o
 802f24ec 00000058 802f24ec 0 __dt__Q36nw4hbm3lyt8BoundingFv 	homebuttonLib.a lyt_bounding.o
 802f2544 00000070 802f2544 0 DrawSelf__Q36nw4hbm3lyt8BoundingFRCQ36nw4hbm3lyt8DrawInfo 	homebuttonLib.a lyt_bounding.o
@@ -10066,7 +10069,7 @@
 802f7630 00000018 802f7630 0 BindAnimation__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_material.o
 802F7648 00000084 802F7648 0 UnbindAnimation__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_material.o
 802f76cc 00000014 802f76cc 0 UnbindAllAnimation__Q36nw4hbm3lyt8MaterialFv 	homebuttonLib.a lyt_material.o
-802f76cc 00000078 802f76cc 0 Animate__Q36nw4hbm3lyt8MaterialFv 	homebuttonLib.a lyt_material.o
+802f76e0 00000078 802f76e0 0 Animate__Q36nw4hbm3lyt8MaterialFv 	homebuttonLib.a lyt_material.o
 802f7758 00000034 802f7758 0 AddAnimationLink__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimationLink 	homebuttonLib.a lyt_material.o
 802f778c 00000008 802f778c 0 FindAnimationLink__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_material.o
 802F7794 0000004c 802F7794 0 SetAnimationEnable__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransformb 	homebuttonLib.a lyt_material.o
