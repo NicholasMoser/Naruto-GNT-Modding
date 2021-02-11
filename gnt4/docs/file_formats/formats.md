@@ -8,7 +8,7 @@ There are a variety of file formats that can be found in the game data. You can 
 | [.fpk](/gnt4/docs/file_formats/fpk.md)        | Compressed archives for files in the game.                           |
 | [.seq](/gnt4/docs/file_formats/seq.md)        | Values and logic for the game. Think character health, attacks, etc. |
 | [.dat](/gnt4/docs/file_formats/dat.md)        | HAL Labs HSD Model format.                                           |
-| .jcv                                          | Bones/armature for associated DAT files.                             |
+| [.jcv](/gnt4/docs/file_formats/jcv.md)        | Bones/armature for associated DAT files.                             |
 | [.txg](/gnt4/docs/file_formats/txg.md)        | Archive of one or more .tpl files.                                   |
 | [.mot](/gnt4/docs/file_formats/mot.md)        | Archive of one or more animations.                                   |
 | [.trk](/gnt4/docs/file_formats/trk.md)        | Used for music (also known as .adp).                                 |
