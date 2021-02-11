@@ -5035,9 +5035,9 @@
 8019aaa4 00000170 8019aaa4 0 qsort 	MSL_C.PPCEABI.bare.H.a qsort.o
 8019ac14 00000020 8019ac14 0 rand 	MSL_C.PPCEABI.bare.H.a rand.o
 8019ac34 00000008 8019ac34 0 srand 	MSL_C.PPCEABI.bare.H.a rand.o
-8019ac3c 00000688 8019ac3c 0 parse_format 	scanf.o
-8019b2c4 00000c98 8019b2c4 0 __sformatter 	scanf.o
-8019bf5c 00000088 8019bf5c 0 __StringRead 	MSL_C.PPCEABI.bare.H.a Escanf.o
+8019ac3c 00000688 8019ac3c 0 parse_format 	MSL_C.PPCEABI.bare.H.a scanf.o
+8019b2c4 00000c98 8019b2c4 0 __sformatter 	MSL_C.PPCEABI.bare.H.a scanf.o
+8019bf5c 00000088 8019bf5c 0 __StringRead 	MSL_C.PPCEABI.bare.H.a scanf.o
 8019bfe4 00000130 8019bfe4 0 sscanf 	MSL_C.PPCEABI.bare.H.a scanf.o
 8019c114 000000a8 8019c114 0 raise 	MSL_C.PPCEABI.bare.H.a signal.o
 8019c1bc 000000c0 8019c1bc 0 strcpy 	MSL_C.PPCEABI.bare.H.a string.o
@@ -5260,77 +5260,82 @@
 801a843c 00000104 801a843c 0 __DBEXIWriteReg 	NdevExi2A.a exi2.o
 801a8540 000000e0 801a8540 0 __DBEXIReadRam 	NdevExi2A.a exi2.o
 801a8620 000000e0 801a8620 0 __DBEXIWriteRam 	NdevExi2A.a exi2.o
-801a8700 00000068 801a8700 0 zz_801a8700_
+801a8700 00000068 801a8700 0 Console_Printf__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHeadPCce 	libnw4r_db.a db_console.o
 801a8768 0000006c 801a8768 0 Console_GetTotalLines__Q24nw4r2dbFPQ44nw4r2db6detail11ConsoleHead 	libnw4r_db.a db_console.o
 801a87d4 00000024 801a87d4 0 zz_801a87d4_
-801a87f8 00000098 801a87f8 0 zz_801a87f8_
-801a8890 000000ac 801a8890 0 zz_801a8890_
-801a893c 00000104 801a893c 0 VPanic__Q24nw4r2dbFPCciPCcP16__va_list_structb 	src.a NW4RAssert.o
-801a8a40 00000094 801a8a40 0 zz_801a8a40_
-801a8ad4 0000019c 801a8ad4 0 zz_801a8ad4_
-801a8c70 00000018 801a8c70 0 zz_801a8c70_
-801a8c88 000000c8 801a8c88 0 zz_801a8c88_
-801a8d50 00000078 801a8d50 0 zz_801a8d50_
-801a8dc8 00000074 801a8dc8 0 zz_801a8dc8_
-801a8e3c 00000060 801a8e3c 0 zz_801a8e3c_
-801a8e9c 00000134 801a8e9c 0 zz_801a8e9c_
-801a8fd0 00000114 801a8fd0 0 zz_801a8fd0_
-801a90e4 000000f4 801a90e4 0 zz_801a90e4_
-801a91d8 00000088 801a91d8 0 zz_801a91d8_
-801a9260 000000d8 801a9260 0 zz_801a9260_
-801a9338 00000084 801a9338 0 zz_801a9338_
-801a93bc 00000430 801a93bc 0 zz_801a93bc_
-801a97ec 00000030 801a97ec 0 zz_801a97ec_
-801a981c 00000008 801a981c 0 zz_801a981c_
-801a9824 000000a0 801a9824 0 zz_801a9824_
-801a98c4 00000090 801a98c4 0 zz_801a98c4_
-801a9954 000000d8 801a9954 0 zz_801a9954_
-801a9a2c 00000070 801a9a2c 0 zz_801a9a2c_
-801a9a9c 000000f4 801a9a9c 0 zz_801a9a9c_
-801a9b90 00000088 801a9b90 0 zz_801a9b90_
-801a9c18 0000000c 801a9c18 0 zz_801a9c18_
-801a9c24 00000108 801a9c24 0 zz_801a9c24_
-801a9d2c 00000048 801a9d2c 0 zz_801a9d2c_
-801a9d74 00000064 801a9d74 0 zz_801a9d74_
-801a9dd8 00000070 801a9dd8 0 zz_801a9dd8_
-801a9e48 00000124 801a9e48 0 zz_801a9e48_
-801a9f6c 0000009c 801a9f6c 0 zz_801a9f6c_
-801aa008 000000f8 801aa008 0 zz_801aa008_
-801aa100 00000090 801aa100 0 zz_801aa100_
-801aa190 00000090 801aa190 0 zz_801aa190_
-801aa220 000000a0 801aa220 0 zz_801aa220_
-801aa2c0 00000088 801aa2c0 0 zz_801aa2c0_
-801aa348 00000128 801aa348 0 zz_801aa348_
-801aa470 00000058 801aa470 0 zz_801aa470_
-801aa4c8 00000040 801aa4c8 0 zz_801aa4c8_
-801aa508 00000084 801aa508 0 zz_801aa508_
-801aa58c 000000f4 801aa58c 0 zz_801aa58c_
-801aa680 000000a8 801aa680 0 zz_801aa680_
-801aa728 000000d8 801aa728 0 zz_801aa728_
-801aa800 000002e0 801aa800 0 zz_801aa800_
-801aaae0 00000170 801aaae0 0 zz_801aaae0_
-801aac50 000002dc 801aac50 0 zz_801aac50_
-801aaf2c 00000738 801aaf2c 0 zz_801aaf2c_
-801ab664 000000fc 801ab664 0 zz_801ab664_
-801ab760 00000444 801ab760 0 zz_801ab760_
-801abba4 000001b8 801abba4 0 zz_801abba4_
-801abd5c 00000088 801abd5c 0 zz_801abd5c_
-801abde4 00000114 801abde4 0 zz_801abde4_
-801abef8 000001d8 801abef8 0 zz_801abef8_
-801ac0d0 00000234 801ac0d0 0 zz_801ac0d0_
-801ac304 00000150 801ac304 0 zz_801ac304_
-801ac454 00000110 801ac454 0 zz_801ac454_
-801ac564 00000048 801ac564 0 zz_801ac564_
-801ac5ac 000000e4 801ac5ac 0 zz_801ac5ac_
-801ac690 0000000c 801ac690 0 zz_801ac690_
-801ac69c 000012f8 801ac69c 0 zz_801ac69c_
-801ad994 00000fec 801ad994 0 zz_801ad994_
-801ae980 000010f8 801ae980 0 zz_801ae980_
-801afa78 000005d4 801afa78 0 zz_801afa78_
-801b004c 00000164 801b004c 0 zz_801b004c_
-801b01b0 00000da0 801b01b0 0 zz_801b01b0_
-801b0f50 00000348 801b0f50 0 zz_801b0f50_
-801b1298 0000034c 801b1298 0 zz_801b1298_
+801a87f8 00000098 801a87f8 0 Assertion_Printf___Q24nw4r2dbFPCce libnw4r_db.a db_assert.o
+801a8890 000000ac 801a8890 0 ShowStack___Q24nw4r2dbFUl libnw4r_db.a db_assert.o
+801a893c 00000104 801a893c 0 VPanic__Q24nw4r2dbFPCciPCcP16__va_list_structb 	libnw4r_db.a db_assert.o
+801a8a40 00000094 801a8a40 0 Panic__Q24nw4r2dbFPCciPCce 	libnw4r_db.a db_assert.o
+801a8ad4 0000019c 801a8ad4 0 Warning__Q24nw4r2dbFPCciPCce 	libnw4r_db.a db_assert.o
+801a8c70 00000018 801a8c70 0 WarningAlarmFunc___Q24nw4r2dbFP7OSAlarmP9OSContext 	libnw4r_db.a db_assert.o
+801a8c88 00000044 801a8c88 0 nw4r2ut10CharWriterFQ34nw4r2ut5Col.SetTextColor_4968
+801a8ccc 00000084 801a8ccc 0 Draw__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectRCQ34nw4r2ef8DrawInfo 	libnw4r_ef.a ef_draworder.o
+801a8d50 00000078 801a8d50 0 Add__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectPQ34nw4r2ef15ParticleManager 	libnw4r_ef.a ef_draworder.o
+801a8dc8 00000010 801a8dc8 0 Remove__Q34nw4r2ef9DrawOrderFPQ34nw4r2ef6EffectPQ34nw4r2ef15ParticleManager 	libnw4r_ef.a ef_draworder.o
+801a8dd8 00000064 801a8dd8 0 __ct__Q34nw4r2ef6EffectFv 	libnw4r_ef.a ef_effect.o
+801a8e3c 00000060 801a8e3c 0 __dt__Q34nw4r2ef6EffectFv 	libnw4r_ef.a ef_effect.o
+801a8e9c 00000134 801a8e9c 0 Initialize__Q34nw4r2ef6EffectFPQ34nw4r2ef12EffectSystemPQ34nw4r2ef15EmitterResourceUs 	libnw4r_ef.a ef_effect.o
+801a8fd0 0000000c 801a8fd0 0 SendClosing__Q34nw4r2ef6EffectFv 	libnw4r_ef.a ef_effect.o
+801a8fdc 00000004 801a8fdc 0 DestroyFunc__Q34nw4r2ef6EffectFv 	libnw4r_ef.a ef_effect.o
+801a8fe0 00000104 801a8fe0 0 Closing__Q34nw4r2ef6EffectFPQ34nw4r2ef7Emitter 	libnw4r_ef.a ef_effect.o
+801a90e4 000000f4 801a90e4 0 CreateEmitter__Q34nw4r2ef6EffectFPQ34nw4r2ef15EmitterResourceUcUs 	libnw4r_ef.a ef_effect.o
+801a91d8 00000088 801a91d8 0 RetireEmitter__Q34nw4r2ef6EffectFPQ34nw4r2ef7Emitter 	libnw4r_ef.a ef_effect.o
+801a9260 000000d8 801a9260 0 RetireEmitterAll__Q34nw4r2ef6EffectFv 	libnw4r_ef.a ef_effect.o
+801a9338 00000084 801a9338 0 RetireParticleAll__Q34nw4r2ef6EffectFv 	libnw4r_ef.a ef_effect.o
+801a93bc 00000430 801a93bc 0 Calc__Q34nw4r2ef6EffectFQ34nw4r2ef10CalcOption 	libnw4r_ef.a ef_effect.o
+801a97ec 00000030 801a97ec 0 Draw__Q34nw4r2ef6EffectFRCQ34nw4r2ef8DrawInfo 	libnw4r_ef.a ef_effect.o
+801a981c 00000008 801a981c 0 GetRootEmitter__Q34nw4r2ef6EffectCFv libnw4r_ef.a ef_effect.o
+801a9824 000000a0 801a9824 0 ForeachEmitter__Q34nw4r2ef6EffectFPFPvUl_vUlb libnw4r_ef.a ef_effect.o
+801a98c4 00000090 801a98c4 0 ForeachParticleManager__Q34nw4r2ef6EffectFPFPvUl_vUlb libnw4r_ef.a ef_effect.o
+801a9954 000000d8 801a9954 0 ForeachEmitterFrom__Q34nw4r2ef6EffectFPFPvUl_vUlbPQ34nw4r2ef7Emitter libnw4r_ef.a ef_effect.o
+801a9a2c 00000070 801a9a2c 0 SetRootMtx__Q34nw4r2ef6EffectFRCQ34nw4r4math5MTX34 	libnw4r_ef.a ef_effect.o
+801a9a9c 000000f4 801a9a9c 0 CreateEmitter__Q34nw4r2ef6EffectFQ34nw4r2ef10ResEmitterUcUs 	libnw4r_ef.a ef_effect.o
+801a9b90 00000088 801a9b90 0 __dt__Q34nw4r2ef12EffectSystemFv 	libnw4r_ef.a ef_effectsystem.o
+801a9c18 0000000c 801a9c18 0 GetInstance__Q34nw4r2ef12EffectSystemFv 	libnw4r_ef.a ef_effectsystem.o
+801a9c24 00000108 801a9c24 0 Initialize__Q34nw4r2ef12EffectSystemFUl 	libnw4r_ef.a ef_effectsystem.o
+801a9d2c 00000048 801a9d2c 0 __ct__Q34nw4r2ef12ActivityListFv 	libnw4r_ef.a ef_effectsystem.o
+801a9d74 00000064 801a9d74 0 Closing__Q34nw4r2ef12EffectSystemFPQ34nw4r2ef6Effect 	libnw4r_ef.a ef_effectsystem.o
+801a9dd8 00000070 801a9dd8 0 CreateEffect__Q34nw4r2ef12EffectSystemFPCcUlUs libnw4r_ef.a ef_effectsystem.o
+801a9e48 00000124 801a9e48 0 CreateEffect__Q34nw4r2ef12EffectSystemFPQ34nw4r2ef15EmitterResourceUlUs 	libnw4r_ef.a ef_effectsystem.o
+801a9f6c 0000009c 801a9f6c 0 RetireEffect__Q34nw4r2ef12EffectSystemFPQ34nw4r2ef6Effect libnw4r_ef.a ef_effectsystem.o
+801aa008 000000f8 801aa008 0 RetireEffectAll__Q34nw4r2ef12EffectSystemFUl 	libnw4r_ef.a ef_effectsystem.o
+801aa100 00000090 801aa100 0 RetireEmitterAll__Q34nw4r2ef12EffectSystemFUl libnw4r_ef.a ef_effectsystem.o
+801aa190 00000090 801aa190 0 RetireParticleAll__Q34nw4r2ef12EffectSystemFUl libnw4r_ef.a ef_effectsystem.o
+801aa220 000000a0 801aa220 0 Calc__Q34nw4r2ef12EffectSystemFUlQ34nw4r2ef10CalcOption libnw4r_ef.a ef_effectsystem.o
+801aa2c0 00000088 801aa2c0 0 SetProcessCamera__Q34nw4r2ef12EffectSystemFRCQ34nw4r4math4VEC3RCQ34nw4r4math5MTX34ff 	libnw4r_ef.a ef_effectsystem.o
+801aa348 00000128 801aa348 0 __sinit_\ef_effectsystem_cpp 	libnw4r_ef.a ef_effectsystem.o
+801aa470 00000058 801aa470 0 __ct__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801aa4c8 00000040 801aa4c8 0 __dt__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801aa508 00000084 801aa508 0 RetireParticleAll__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801aa58c 0000000c 801aa58c 0 SendClosing__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801aa598 000000e8 801aa598 0 DestroyFunc__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801aa680 000000a8 801aa680 0 Closing__Q34nw4r2ef7EmitterFPQ34nw4r2ef15ParticleManager 	libnw4r_ef.a ef_emitter.o
+801aa728 000000d8 801aa728 0 RetireParticleManagerAll__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801aa800 000002e0 801aa800 0 InitializeDatas__Q34nw4r2ef7EmitterFPQ34nw4r2ef15EmitterResourcePQ34nw4r2ef6Effect 	libnw4r_ef.a ef_emitter.o
+801aaae0 00000170 801aaae0 0 Initialize__Q34nw4r2ef7EmitterFPQ34nw4r2ef6EffectPQ34nw4r2ef15EmitterResourceUc 	libnw4r_ef.a ef_emitter.o
+801aac50 000002dc 801aac50 0 CreateEmitter__Q34nw4r2ef7EmitterFPQ34nw4r2ef15EmitterResourcePQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticleUsPQ34nw4r4math4VEC3 	libnw4r_ef.a ef_emitter.o
+801aaf2c 00000738 801aaf2c 0 CreateEmitterTmp__Q34nw4r2ef7EmitterFPQ34nw4r2ef15EmitterResourcePQ34nw4r2ef21EmitterInheritSettingPQ34nw4r2ef8ParticleUsPQ34nw4r4math4VEC3 	libnw4r_ef.a ef_emitter.o
+801ab664 000000fc 801ab664 0 GetLODratio__Q24nw4r2efFRQ34nw4r4math4VEC3RQ34nw4r4math4VEC3ffff 	libnw4r_ef.a ef_emitter.o
+801ab760 00000444 801ab760 0 Emission__Q34nw4r2ef7EmitterFPQ34nw4r2ef15ParticleManagerPCQ34nw4r4math5MTX34 	libnw4r_ef.a ef_emitter.o
+801abba4 000001b8 801abba4 0 CalcEmitter__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801abd5c 00000088 801abd5c 0 CalcParticle__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801abde4 00000114 801abde4 0 CalcEmission__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801abef8 000001d8 801abef8 0 CalcBillboard__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801ac0d0 00000234 801ac0d0 0 RestructMatrix__Q34nw4r2ef7EmitterFPQ34nw4r4math5MTX34PQ34nw4r4math5MTX34bbScb 	libnw4r_ef.a ef_emitter.o
+801ac304 00000150 801ac304 0 CalcGlobalMtx__Q34nw4r2ef7EmitterFPQ34nw4r4math5MTX34 	libnw4r_ef.a ef_emitter.o
+801ac454 00000110 801ac454 0 SetMtxDirty__Q34nw4r2ef7EmitterFv 	libnw4r_ef.a ef_emitter.o
+801ac564 00000048 801ac564 0 foreachParticleManagerSub__Q24nw4r2efFPvUl libnw4r_ef.a ef_emitter.o
+801ac5ac 000000e4 801ac5ac 0 ForeachParticleManager__Q34nw4r2ef7EmitterFPFPvUl_vUlbb libnw4r_ef.a ef_emitter.o
+801ac690 0000000c 801ac690 0 GetResource__Q34nw4r2ef7EmitterCFv libnw4r_ef.a ef_emitter.o
+801ac69c 000012f8 801ac69c 0 AnimCurveExecuteU8__Q24nw4r2efFPUcPUcUlUsUl 	libnw4r_ef.a ef_animcurve.o
+801ad994 00000fec 801ad994 0 AnimCurveExecuteF32__Q24nw4r2efFPUcPfUlUsUl 	libnw4r_ef.a ef_animcurve.o
+801ae980 000010f8 801ae980 0 AnimCurveExecuteRotate__Q24nw4r2efFPUcPfUlUsUl 	libnw4r_ef.a ef_animcurve.o
+801afa78 000005d4 801afa78 0 AnimCurveExecuteTexture__Q24nw4r2efFPUcPQ34nw4r2ef8ParticleUlUsUl 	libnw4r_ef.a ef_animcurve.o
+801b004c 00000164 801b004c 0 createChild__Q24nw4r2efFPUcUsPQ34nw4r2ef15AnimCurveHeaderPQ34nw4r2ef18AnimCurveNameTablePQ34nw4r2ef20AnimCurveRandomTablePQ34nw4r2ef8ParticleUl 	libnw4r_ef.a ef_animcurve.o
+801b01b0 00000da0 801b01b0 0 AnimCurveExecuteChild__Q24nw4r2efFPUcPQ34nw4r2ef8ParticleUlUsUl 	libnw4r_ef.a ef_animcurve.o
+801b0f50 00000348 801b0f50 0 AnimBakedExecuteU8__Q24nw4r2efFPUcPUcUlUl 	libnw4r_ef.a ef_animcurve.o
+801b1298 0000034c 801b1298 0 AnimBakedExecuteF32__Q24nw4r2efFPUcPfUlUl 	libnw4r_ef.a ef_animcurve.o
 801b15e4 00000118 801b15e4 0 GetTypePositionSphere__Q24nw4r2efFRCQ34nw4r4math4VEC3Uc 	libnw4r_ef.a ef_postfield.o
 801b16fc 000000e0 801b16fc 0 GetTypePositionCube__Q24nw4r2efFRCQ34nw4r4math4VEC3Uc 	libnw4r_ef.a ef_postfield.o
 801b17dc 000000c8 801b17dc 0 GetTypePositionCylinder__Q24nw4r2efFRCQ34nw4r4math4VEC3Uc 	libnw4r_ef.a ef_postfield.o
