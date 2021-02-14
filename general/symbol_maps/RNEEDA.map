@@ -7119,238 +7119,248 @@
 8021c938 00000058 8021c938 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
 8021c990 00000020 8021c990 0 zz_8021c990_
 8021c9b0 0000007c 8021c9b0 0 zz_8021c9b0_
-8021ca2c 0000015c 8021ca2c 0 zz_8021ca2c_
-8021cb88 0000010c 8021cb88 0 zz_8021cb88_
-8021cc94 0000007c 8021cc94 0 zz_8021cc94_
-8021cd10 000000f0 8021cd10 0 zz_8021cd10_
-8021ce00 00000070 8021ce00 0 zz_8021ce00_
-8021ce70 00000050 8021ce70 0 zz_8021ce70_
-8021cec0 00000014 8021cec0 0 zz_8021cec0_
-8021ced4 00000084 8021ced4 0 zz_8021ced4_
-8021cf58 000000d4 8021cf58 0 zz_8021cf58_
-8021d02c 00000058 8021d02c 0 zz_8021d02c_
+8021ca2c 0000015c 8021ca2c 0 PopTask__Q44nw4r3snd6detail11TaskManagerFv 	libnw4r_snd.a snd_TaskManager.o
+8021cb88 0000010c 8021cb88 0 GetNextTask__Q44nw4r3snd6detail11TaskManagerFv 	libnw4r_snd.a snd_TaskManager.o
+8021cc94 0000007c 8021cc94 0 ExecuteTask__Q44nw4r3snd6detail11TaskManagerFv 	libnw4r_snd.a snd_TaskManager.o
+8021cd10 000000f0 8021cd10 0 CancelTask__Q44nw4r3snd6detail11TaskManagerFPQ44nw4r3snd6detail4Task 	libnw4r_snd.a snd_TaskManager.o
+8021ce00 00000070 8021ce00 0 WaitTask__Q44nw4r3snd6detail11TaskManagerFv 	libnw4r_snd.a snd_TaskManager.o
+8021ce70 00000050 8021ce70 0 CancelWaitTask__Q44nw4r3snd6detail11TaskManagerFv 	libnw4r_snd.a snd_TaskManager.o
+8021cec0 00000014 8021cec0 0 __ct__Q44nw4r3snd6detail10TaskThreadFv 	libnw4r_snd.a snd_TaskThread.o
+8021ced4 00000084 8021ced4 0 __dt__Q44nw4r3snd6detail10TaskThreadFv 	libnw4r_snd.a snd_TaskThread.o
+8021cf58 000000d4 8021cf58 0 Create__Q44nw4r3snd6detail10TaskThreadFlPvUl 	libnw4r_snd.a snd_TaskThread.o
+8021d02c 00000058 8021d02c 0 ThreadFunc__Q44nw4r3snd6detail10TaskThreadFPv 	libnw4r_snd.a snd_TaskThread.o
 8021d084 00000264 8021d084 0 zz_8021d084_
 8021d2e8 000000a4 8021d2e8 0 zz_8021d2e8_
 8021d38c 000000b0 8021d38c 0 zz_8021d38c_
 8021d43c 0000009c 8021d43c 0 zz_8021d43c_
-8021d4d8 00000288 8021d4d8 0 zz_8021d4d8_
-8021d760 000002c0 8021d760 0 zz_8021d760_
-8021da20 0000023c 8021da20 0 zz_8021da20_
-8021dc5c 000000cc 8021dc5c 0 zz_8021dc5c_
-8021dd28 00000278 8021dd28 0 zz_8021dd28_
-8021dfa0 00000020 8021dfa0 0 zz_8021dfa0_
-8021dfc0 000000d0 8021dfc0 0 zz_8021dfc0_
-8021e090 00000020 8021e090 0 zz_8021e090_
-8021e0b0 0000001c 8021e0b0 0 zz_8021e0b0_
-8021e0cc 00000044 8021e0cc 0 zz_8021e0cc_
-8021e110 000000a4 8021e110 0 zz_8021e110_
-8021e1b4 00000020 8021e1b4 0 zz_8021e1b4_
-8021e1d4 00000020 8021e1d4 0 zz_8021e1d4_
-8021e1f4 00000020 8021e1f4 0 zz_8021e1f4_
-8021e214 00000020 8021e214 0 zz_8021e214_
-8021e234 00000020 8021e234 0 zz_8021e234_
-8021e254 00000020 8021e254 0 zz_8021e254_
-8021e274 00000068 8021e274 0 zz_8021e274_
-8021e2dc 00000038 8021e2dc 0 zz_8021e2dc_
-8021e314 00000020 8021e314 0 zz_8021e314_
-8021e334 00000044 8021e334 0 zz_8021e334_
-8021e378 00000048 8021e378 0 zz_8021e378_
-8021e3c0 0000004c 8021e3c0 0 zz_8021e3c0_
-8021e40c 0000004c 8021e40c 0 zz_8021e40c_
-8021e458 00000050 8021e458 0 zz_8021e458_
-8021e4a8 0000004c 8021e4a8 0 zz_8021e4a8_
-8021e4f4 00000048 8021e4f4 0 zz_8021e4f4_
-8021e53c 000000a0 8021e53c 0 zz_8021e53c_
-8021e5dc 00000090 8021e5dc 0 zz_8021e5dc_
-8021e66c 0000007c 8021e66c 0 zz_8021e66c_
-8021e6e8 00000018 8021e6e8 0 zz_8021e6e8_
-8021e700 00000074 8021e700 0 zz_8021e700_
-8021e774 00000074 8021e774 0 zz_8021e774_
-8021e7e8 00000088 8021e7e8 0 zz_8021e7e8_
-8021e870 00000074 8021e870 0 zz_8021e870_
-8021e8e4 00000088 8021e8e4 0 zz_8021e8e4_
-8021e96c 000000f0 8021e96c 0 zz_8021e96c_
-8021ea5c 000000ec 8021ea5c 0 zz_8021ea5c_
-8021eb48 00000080 8021eb48 0 zz_8021eb48_
-8021ebc8 00000150 8021ebc8 0 zz_8021ebc8_
-8021ed18 000001a0 8021ed18 0 zz_8021ed18_
-8021eeb8 00000b88 8021eeb8 0 zz_8021eeb8_
-8021fa40 0000014c 8021fa40 0 zz_8021fa40_
-8021fb8c 00000004 8021fb8c 0 zz_8021fb8c_
-8021fb90 0000008c 8021fb90 0 zz_8021fb90_
-8021fc1c 00000070 8021fc1c 0 zz_8021fc1c_
-8021fc8c 00000008 8021fc8c 0 zz_8021fc8c_
-8021fc94 000000b0 8021fc94 0 zz_8021fc94_
-8021fd44 000001bc 8021fd44 0 zz_8021fd44_
-8021ff00 00000098 8021ff00 0 zz_8021ff00_
-8021ff98 000000b0 8021ff98 0 zz_8021ff98_
-80220048 00000068 80220048 0 zz_80220048_
-802200b0 00000108 802200b0 0 zz_802200b0_
-802201b8 00000070 802201b8 0 zz_802201b8_
-80220228 00000190 80220228 0 zz_80220228_
-802203b8 00000058 802203b8 0 zz_802203b8_
-80220410 000000e0 80220410 0 zz_80220410_
-802204f0 00000094 802204f0 0 zz_802204f0_
-80220584 00000084 80220584 0 zz_80220584_
-80220608 00000054 80220608 0 zz_80220608_
-8022065c 00000024 8022065c 0 zz_8022065c_
-80220680 00000024 80220680 0 zz_80220680_
-802206a4 00000074 802206a4 0 zz_802206a4_
-80220718 00000088 80220718 0 zz_80220718_
-802207a0 00000020 802207a0 0 zz_802207a0_
-802207c0 00000008 802207c0 0 GXInitTexObjUserData 	gx.a GXTexture.o
-802207c8 00000200 802207c8 0 zz_802207c8_
+8021d4d8 00000288 8021d4d8 0 Calc__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021d760 000002c0 8021d760 0 Update__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021da20 0000023c 8021da20 0 Acquire__Q44nw4r3snd6detail5VoiceFiiiPFPQ44nw4r3snd6detail5VoiceQ54nw4r3snd6detail5Voice19VoiceCallbackStatusPv_vPv 	libnw4r_snd.a snd_Voice.o
+8021dc5c 000000cc 8021dc5c 0 Free__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021dd28 00000278 8021dd28 0 Setup__Q44nw4r3snd6detail5VoiceFRCQ44nw4r3snd6detail8WaveInfoUl 	libnw4r_snd.a snd_Voice.o
+8021dfa0 00000020 8021dfa0 0 Start__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021dfc0 000000d0 8021dfc0 0 Stop__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021e090 00000020 8021e090 0 Pause__Q44nw4r3snd6detail5VoiceFb 	libnw4r_snd.a snd_Voice.o
+8021e0b0 0000001c 8021e0b0 0 GetFormat__Q44nw4r3snd6detail5VoiceCFv 	libnw4r_snd.a snd_Voice.o
+8021e0cc 00000044 8021e0cc 0 SetVolume__Q44nw4r3snd6detail5VoiceFf 	libnw4r_snd.a snd_Voice.o
+8021e110 000000a4 8021e110 0 SetVeVolume__Q44nw4r3snd6detail5VoiceFff 	libnw4r_snd.a snd_Voice.o
+8021e1b4 00000020 8021e1b4 0 SetPitch__Q44nw4r3snd6detail5VoiceFf 	libnw4r_snd.a snd_Voice.o
+8021e1d4 00000020 8021e1d4 0 SetPanMode__Q44nw4r3snd6detail5VoiceFQ34nw4r3snd7PanMode 	libnw4r_snd.a snd_Voice.o
+8021e1f4 00000020 8021e1f4 0 SetPanCurve__Q44nw4r3snd6detail5VoiceFQ34nw4r3snd8PanCurve 	libnw4r_snd.a snd_Voice.o
+8021e214 00000020 8021e214 0 SetPan__Q44nw4r3snd6detail5VoiceFf 	libnw4r_snd.a snd_Voice.o
+8021e234 00000020 8021e234 0 SetSurroundPan__Q44nw4r3snd6detail5VoiceFf 	libnw4r_snd.a snd_Voice.o
+8021e254 00000020 8021e254 0 SetLpfFreq__Q44nw4r3snd6detail5VoiceFf 	libnw4r_snd.a snd_Voice.o
+8021e274 00000068 8021e274 0 SetBiquadFilter__Q44nw4r3snd6detail5VoiceFif 	libnw4r_snd.a snd_Voice.o
+8021e2dc 00000038 8021e2dc 0 SetRemoteFilter__Q44nw4r3snd6detail5VoiceFi 	libnw4r_snd.a snd_Voice.o
+8021e314 00000020 8021e314 0 SetOutputLine__Q44nw4r3snd6detail5VoiceFi 	libnw4r_snd.a snd_Voice.o
+8021e334 00000044 8021e334 0 SetMainOutVolume__Q44nw4r3snd6detail5VoiceFf 	libnw4r_snd.a snd_Voice.o
+8021e378 00000048 8021e378 0 SetMainSend__Q44nw4r3snd6detail5VoiceFf 	libnw4r_snd.a snd_Voice.o
+8021e3c0 0000004c 8021e3c0 0 SetFxSend__Q44nw4r3snd6detail5VoiceFQ34nw4r3snd6AuxBusf 	libnw4r_snd.a snd_Voice.o
+8021e40c 0000004c 8021e40c 0 SetRemoteOutVolume__Q44nw4r3snd6detail5VoiceFif 	libnw4r_snd.a snd_Voice.o
+8021e458 00000050 8021e458 0 SetRemoteSend__Q44nw4r3snd6detail5VoiceFif 	libnw4r_snd.a snd_Voice.o
+8021e4a8 0000004c 8021e4a8 0 SetRemoteFxSend__Q44nw4r3snd6detail5VoiceFif 	libnw4r_snd.a snd_Voice.o
+8021e4f4 00000048 8021e4f4 0 SetVoiceOutParam__Q44nw4r3snd6detail5VoiceFiRCQ34nw4r3snd13VoiceOutParam 	libnw4r_snd.a snd_Voice.o
+8021e53c 000000a0 8021e53c 0 SetPriority__Q44nw4r3snd6detail5VoiceFi 	libnw4r_snd.a snd_Voice.o
+8021e5dc 00000090 8021e5dc 0 UpdateVoicesPriority__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021e66c 0000007c 8021e66c 0 SetAdpcmLoop__Q44nw4r3snd6detail5VoiceFiPCQ44nw4r3snd6detail14AdpcmLoopParam 	libnw4r_snd.a snd_Voice.o
+8021e6e8 00000018 8021e6e8 0 GetCurrentPlayingSample__Q44nw4r3snd6detail5VoiceCFv 	libnw4r_snd.a snd_Voice.o
+8021e700 00000074 8021e700 0 SetLoopStart__Q44nw4r3snd6detail5VoiceFiPCvUl 	libnw4r_snd.a snd_Voice.o
+8021e774 00000074 8021e774 0 SetLoopEnd__Q44nw4r3snd6detail5VoiceFiPCvUl 	libnw4r_snd.a snd_Voice.o
+8021e7e8 00000088 8021e7e8 0 SetLoopFlag__Q44nw4r3snd6detail5VoiceFb 	libnw4r_snd.a snd_Voice.o
+8021e870 00000074 8021e870 0 StopAtPoint__Q44nw4r3snd6detail5VoiceFiPCvUl 	libnw4r_snd.a snd_Voice.o
+8021e8e4 00000088 8021e8e4 0 SetVoiceType__Q44nw4r3snd6detail5VoiceFQ54nw4r3snd6detail7AxVoice9VoiceType 	libnw4r_snd.a snd_Voice.o
+8021e96c 000000f0 8021e96c 0 CalcAxVe__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021ea5c 000000ec 8021ea5c 0 CalcAxMix__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021eb48 00000080 8021eb48 0 ResetDelta__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021ebc8 00000150 8021ebc8 0 AxVoiceCallbackFunc__Q44nw4r3snd6detail5VoiceFPQ44nw4r3snd6detail7AxVoiceQ54nw4r3snd6detail7AxVoice21AxVoiceCallbackStatusPv 	libnw4r_snd.a snd_Voice.o
+8021ed18 000001a0 8021ed18 0 TransformDpl2Pan__Q44nw4r3snd6detail5VoiceFPfPfff 	libnw4r_snd.a snd_Voice.o
+8021eeb8 00000b88 8021eeb8 0 CalcMixParam__Q44nw4r3snd6detail5VoiceFiiPQ54nw4r3snd6detail7AxVoice8MixParamPQ54nw4r3snd6detail7AxVoice14RemoteMixParam 	libnw4r_snd.a snd_Voice.o
+8021fa40 0000014c 8021fa40 0 InvalidateWaveData__Q44nw4r3snd6detail5VoiceFPCvPCv 	libnw4r_snd.a snd_Voice.o
+8021fb8c 00000004 8021fb8c 0 InvalidateData__Q44nw4r3snd6detail5VoiceFPCvPCv 	libnw4r_snd.a snd_Voice.o
+8021fb90 0000008c 8021fb90 0 GetInstance__Q44nw4r3snd6detail12VoiceManagerFv 	libnw4r_snd.a snd_VoiceManager.o
+8021fc1c 00000070 8021fc1c 0 __dt__Q44nw4r3snd6detail12VoiceManagerFv 	libnw4r_snd.a snd_VoiceManager.o
+8021fc8c 00000008 8021fc8c 0 GetRequiredMemSize__Q44nw4r3snd6detail12VoiceManagerFi 	libnw4r_snd.a snd_VoiceManager.o
+8021fc94 000000b0 8021fc94 0 Setup__Q44nw4r3snd6detail12VoiceManagerFPvUl 	libnw4r_snd.a snd_VoiceManager.o
+8021fd44 000001bc 8021fd44 0 AllocVoice__Q44nw4r3snd6detail12VoiceManagerFiiiPFPQ44nw4r3snd6detail5VoiceQ54nw4r3snd6detail5Voice19VoiceCallbackStatusPv_vPv 	libnw4r_snd.a snd_VoiceManager.o
+8021ff00 00000098 8021ff00 0 FreeVoice__Q44nw4r3snd6detail12VoiceManagerFPQ44nw4r3snd6detail5Voice 	libnw4r_snd.a snd_VoiceManager.o
+8021ff98 000000b0 8021ff98 0 UpdateAllVoices__Q44nw4r3snd6detail12VoiceManagerFv 	libnw4r_snd.a snd_VoiceManager.o
+80220048 00000068 80220048 0 NotifyVoiceUpdate__Q44nw4r3snd6detail12VoiceManagerFv 	libnw4r_snd.a snd_VoiceManager.o
+802200b0 00000108 802200b0 0 ChangeVoicePriority__Q44nw4r3snd6detail12VoiceManagerFPQ44nw4r3snd6detail5Voice 	libnw4r_snd.a snd_VoiceManager.o
+802201b8 00000070 802201b8 0 UpdateAllVoicesSync__Q44nw4r3snd6detail12VoiceManagerFUl 	libnw4r_snd.a snd_VoiceManager.o
+80220228 00000190 80220228 0 CalcPitchRatio__Q44nw4r3snd6detail4UtilFi 	libnw4r_snd.a snd_Util.o
+802203b8 00000058 802203b8 0 CalcVolumeRatio__Q44nw4r3snd6detail4UtilFf 	libnw4r_snd.a snd_Util.o
+80220410 000000e0 80220410 0 CalcPanRatio__Q44nw4r3snd6detail4UtilFfRCQ54nw4r3snd6detail4Util7PanInfo 	libnw4r_snd.a snd_Util.o
+802204f0 00000094 802204f0 0 CalcSurroundPanRatio__Q44nw4r3snd6detail4UtilFfRCQ54nw4r3snd6detail4Util7PanInfo 	libnw4r_snd.a snd_Util.o
+80220584 00000084 80220584 0 CalcLpfFreq__Q44nw4r3snd6detail4UtilFf 	libnw4r_snd.a snd_Util.o
+80220608 00000054 80220608 0 GetRemoteFilterCoefs__Q44nw4r3snd6detail4UtilFiPUsPUsPUsPUsPUs 	libnw4r_snd.a snd_Util.o
+8022065c 00000024 8022065c 0 CalcRandom__Q44nw4r3snd6detail4UtilFv 	libnw4r_snd.a snd_Util.o
+80220680 00000024 80220680 0 GetDataRefAddressImpl__Q44nw4r3snd6detail4UtilFQ54nw4r3snd6detail4Util7RefTypeUlPCv 	libnw4r_snd.a snd_Util.o
+802206a4 00000074 802206a4 0 __ct__Q44nw4r3snd6detail17WaveArchiveReaderFPCv 	libnw4r_snd.a snd_WaveArchive.o
+80220718 00000088 80220718 0 GetWaveFile__Q44nw4r3snd6detail17WaveArchiveReaderCFi 	libnw4r_snd.a snd_WaveArchive.o
+802207a0 00000020 802207a0 0 __ct__Q44nw4r3snd6detail14WaveFileReaderFPCQ54nw4r3snd6detail8WaveFile10FileHeader 	libnw4r_snd.a snd_WaveFile.o
+802207c0 00000008 802207c0 0 __ct__Q44nw4r3snd6detail14WaveFileReaderFPCQ54nw4r3snd6detail8WaveFile8WaveInfo  	libnw4r_snd.a snd_WaveFile.o
+802207c8 00000200 802207c8 0 ReadWaveInfo__Q44nw4r3snd6detail14WaveFileReaderCFPQ44nw4r3snd6detail8WaveInfoPCv
 802209c8 00000068 802209c8 0 zz_802209c8_
-80220a30 00000068 80220a30 0 zz_80220a30_
-80220a98 00000040 80220a98 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-80220ad8 000000a0 80220ad8 0 zz_80220ad8_
-80220b78 0000009c 80220b78 0 zz_80220b78_
-80220c14 00000040 80220c14 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-80220c54 00000008 80220c54 0 zz_80220c54_
-80220c5c 000000ec 80220c5c 0 zz_80220c5c_
-80220d48 00000014 80220d48 0 LexicalCast<b,i>(int &)
-80220d5c 00000010 80220d5c 0 zz_80220d5c_
-80220d6c 00000008 80220d6c 0 J3DTexGenBlock4::getNBTScale(void) 	J3DGraphBase.a J3DMatBlock.o
-80220d74 00000008 80220d74 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
-80220d7c 00000008 80220d7c 0 nw4hbm::lyt::Window::GetRuntimeTypeInfo(void) const 	homebuttonLib.a lyt_window.o
-80220d84 0000000c 80220d84 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
-80220d90 00000038 80220d90 0 zz_80220d90_
-80220dc8 00000090 80220dc8 0 zz_80220dc8_
-80220e58 00000120 80220e58 0 zz_80220e58_
-80220f78 00000118 80220f78 0 zz_80220f78_
-80221090 000000f4 80221090 0 zz_80221090_
-80221184 0000006c 80221184 0 zz_80221184_
-802211f0 000000a8 802211f0 0 zz_802211f0_
-80221298 0000019c 80221298 0 zz_80221298_
-80221434 00000070 80221434 0 zz_80221434_
-802214a4 00000128 802214a4 0 zz_802214a4_
-802215cc 000000b4 802215cc 0 zz_802215cc_
-80221680 00000008 80221680 0 J3DColorBlockLightOff::setColorChanNum(unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-80221688 00000008 80221688 0 J3DColorBlockLightOff::setColorChanNum(unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-80221690 00000158 80221690 0 zz_80221690_
-802217e8 000002ac 802217e8 0 zz_802217e8_
-80221a94 000001b8 80221a94 0 zz_80221a94_
-80221c4c 0000049c 80221c4c 0 zz_80221c4c_
-802220e8 00000070 802220e8 0 zz_802220e8_
-80222158 00000018 80222158 0 zz_80222158_
-80222170 00000014 80222170 0 zz_80222170_
-80222184 00000014 80222184 0 zz_80222184_
-80222198 00000014 80222198 0 zz_80222198_
-802221ac 00000030 802221ac 0 zz_802221ac_
-802221dc 0000008c 802221dc 0 zz_802221dc_
-80222268 00000018 80222268 0 MEMInitList 	mem.a mem_list.o
-80222280 00000070 80222280 0 MEMAppendListObject 	mem.a mem_list.o
-802222f0 00000120 802222f0 0 zz_802222f0_
-80222410 0000006c 80222410 0 nw4hbm::ut::List_Remove(nw4hbm::ut::List *, void *) 	homebuttonLib.a ut_list.o
-8022247c 00000020 8022247c 0 MEMGetNextListObject 	mem.a mem_list.o
-8022249c 0000001c 8022249c 0 zz_8022249c_
-802224b8 00000084 802224b8 0 nw4hbm::ut::detail::LinkListImpl::~LinkListImpl(void) 	homebuttonLib.a ut_LinkList.o
-8022253c 00000048 8022253c 0 nw4hbm::ut::detail::LinkListImpl::Erase(nw4hbm::ut::detail::LinkListImpl::Iterator) 	homebuttonLib.a ut_LinkList.o
-80222584 00000044 80222584 0 zz_80222584_
-802225c8 0000002c 802225c8 0 JGadget::TNodeLinkList::Insert(JGadget::TNodeLinkList::iterator, JGadget::TLinkListNode *) 	JGadget.a linklist.o
-802225f4 00000030 802225f4 0 zz_802225f4_
-80222624 00000074 80222624 0 nw4hbm::ut::IsValidBinaryFile(nw4hbm::ut::BinaryFileHeader const *, unsigned long, unsigned short, unsigned short) 	homebuttonL
-80222698 00000078 80222698 0 nw4hbm::ut::CharStrmReader::ReadNextCharUTF8(void) 	homebuttonLib.a ut_CharStrmReader.o
-80222710 0000001c 80222710 0 nw4hbm::ut::CharStrmReader::ReadNextCharUTF16(void) 	homebuttonLib.a ut_CharStrmReader.o
-8022272c 0000001c 8022272c 0 nw4hbm::ut::CharStrmReader::ReadNextCharCP1252(void) 	homebuttonLib.a ut_CharStrmReader.o
-80222748 00000060 80222748 0 nw4hbm::ut::CharStrmReader::ReadNextCharSJIS(void) 	homebuttonLib.a ut_CharStrmReader.o
-802227a8 00000010 802227a8 0 J3DAnmKeyLoader_v15::J3DAnmKeyLoader_v15(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802227b8 00000040 802227b8 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802227f8 00000130 802227f8 0 zz_802227f8_
-80222928 000001e8 80222928 0 zz_80222928_
-80222b10 00000010 80222b10 0 J3DAnmKeyLoader_v15::J3DAnmKeyLoader_v15(void) 	J3DGraphLoader.a J3DAnmLoader.o
-80222b20 00000040 80222b20 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-80222b60 00000130 80222b60 0 zz_80222b60_
-80222c90 000001e8 80222c90 0 zz_80222c90_
-80222e78 00000008 80222e78 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-80222e80 00000008 80222e80 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-80222e88 0000000c 80222e88 0 FEAudio::ResetRandomVoiceToggleSFX(void)
-80222e94 00000064 80222e94 0 zz_80222e94_
-80222ef8 00000098 80222ef8 0 zz_80222ef8_
-80222f90 0000000c 80222f90 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
-80222f9c 0000002c 80222f9c 0 zz_80222f9c_
-80222fc8 00000028 80222fc8 0 zz_80222fc8_
-80222ff0 000000bc 80222ff0 0 zz_80222ff0_
-802230ac 00000130 802230ac 0 zz_802230ac_
-802231dc 00000078 802231dc 0 zz_802231dc_
-80223254 00000050 80223254 0 zz_80223254_
-802232a4 00000088 802232a4 0 zz_802232a4_
-8022332c 000000f4 8022332c 0 zz_8022332c_
-80223420 000000bc 80223420 0 zz_80223420_
-802234dc 00000008 802234dc 0 zz_802234dc_
-802234e4 00000064 802234e4 0 zz_802234e4_
-80223548 00000008 80223548 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-80223550 00000008 80223550 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-80223558 00000008 80223558 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-80223560 00000008 80223560 0 nw4hbm::lyt::Window::GetRuntimeTypeInfo(void) const 	homebuttonLib.a lyt_window.o
-80223568 0000000c 80223568 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
-80223574 00000084 80223574 0 zz_80223574_
-802235f8 00000084 802235f8 0 zz_802235f8_
-8022367c 00000058 8022367c 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
-802236d4 00000034 802236d4 0 cPlayer::PreUpdate(float)
-80223708 000000d4 80223708 0 zz_80223708_
-802237dc 000000d4 802237dc 0 zz_802237dc_
-802238b0 00000058 802238b0 0 zz_802238b0_
+80220a30 00000068 80220a30 0 nw4r3snd6detail9WaveSoundFPQ44nw4r3snd6detai.__ct
+80220a98 00000040 80220a98 0 nw4r3snd6detail9WsdPlayerFv.__dt
+80220ad8 000000a0 80220ad8 0 nw4r3snd6detail9WaveSoundFPCvlQ54nw4r3snd6de.Prepare
+80220b78 0000009c 80220b78 0 nw4r3snd6detail9WaveSoundFv.Shutdown
+80220c14 00000040 80220c14 0 nw4r3snd6detail9WaveSoundFv.__dt
+80220c54 00000008 80220c54 0 nw4r3snd6detail9WaveSoundFi.SetChannelPriority
+80220c5c 00000008 80220c5c 0 nw4r3snd6detail9WaveSoundFb.SetReleasePriorityFix
+80220c64 000000e4 80220c64 0 nw4r3snd6detail9WaveSoundFi.SetPlayerPriority
+80220d48 00000014 80220d48 0 nw4r3snd6detail9WaveSoundFv.IsAttachedTempSpecialHandle
+80220d5c 00000008 80220d5c 0 zz_80220d5c_
+80220d64 00000008 80220d64 0 zz_80220d5c_
+80220d6c 00000008 80220d6c 0 zz_80220d6c_
+80220d74 00000008 80220d74 0 zz_80220d74_
+80220d7c 00000008 80220d7c 0 zz_80220d7c_
+80220d84 0000000c 80220d84 0 zz_80220d84_
+80220d90 00000038 80220d90 0 DetachSound__Q34nw4r3snd15WaveSoundHandleFv 	libnw4r_snd.a snd_WaveSoundHandle.o
+80220dc8 00000090 80220dc8 0 __ct__Q44nw4r3snd6detail13WsdFileReaderFPCv 	libnw4r_snd.a snd_WsdFile.o
+80220e58 00000120 80220e58 0 ReadWaveSoundInfo__Q44nw4r3snd6detail13WsdFileReaderCFPQ44nw4r3snd6detail13WaveSoundInfoi 	libnw4r_snd.a snd_WsdFile.o
+80220f78 00000118 80220f78 0 ReadWaveSoundNoteInfo__Q44nw4r3snd6detail13WsdFileReaderCFPQ44nw4r3snd6detail17WaveSoundNoteInfoii 	libnw4r_snd.a snd_WsdFile.o
+80221090 000000f4 80221090 0 ReadWaveInfo__Q44nw4r3snd6detail13WsdFileReaderCFiPQ44nw4r3snd6detail8WaveInfoPCv 	libnw4r_snd.a snd_WsdFile.o
+80221184 0000006c 80221184 0 __ct__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+802211f0 000000a8 802211f0 0 InitParam__Q44nw4r3snd6detail9WsdPlayerFiPCQ54nw4r3snd6detail9WsdPlayer11WsdCallbackUl 	libnw4r_snd.a snd_WsdPlayer.o
+80221298 0000019c 80221298 0 Prepare__Q44nw4r3snd6detail9WsdPlayerFPCviQ54nw4r3snd6detail9WsdPlayer15StartOffsetTypeiiPCQ54nw4r3snd6detail9WsdPlayer11WsdCallbackUl 	libnw4r_snd.a snd_WsdPlayer.o
+80221434 00000070 80221434 0 Start__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+802214a4 00000128 802214a4 0 Stop__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+802215cc 000000b4 802215cc 0 Pause__Q44nw4r3snd6detail9WsdPlayerFb 	libnw4r_snd.a snd_WsdPlayer.o
+80221680 00000008 80221680 0 SetChannelPriority__Q44nw4r3snd6detail9WsdPlayerFi 	libnw4r_snd.a snd_WsdPlayer.o
+80221688 00000008 80221688 0 SetReleasePriorityFix__Q44nw4r3snd6detail9WsdPlayerFb 	libnw4r_snd.a snd_WsdPlayer.o
+80221690 00000158 80221690 0 InvalidateData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv 	libnw4r_snd.a snd_WsdPlayer.o
+802217e8 000002ac 802217e8 0 Update__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+80221a94 000001b8 80221a94 0 StartChannel__Q44nw4r3snd6detail9WsdPlayerFPCQ54nw4r3snd6detail9WsdPlayer11WsdCallbackUl 	libnw4r_snd.a snd_WsdPlayer.o
+80221c4c 0000049c 80221c4c 0 UpdateChannel__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+802220e8 00000070 802220e8 0 ChannelCallbackFunc__Q44nw4r3snd6detail9WsdPlayerFPQ44nw4r3snd6detail7ChannelQ54nw4r3snd6detail7Channel21ChannelCallbackStatusUl 	libnw4r_snd.a snd_WsdPlayer.o
+80222158 00000004 80222158 0 OnUpdateFrameSoundThread__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+8022215c 00000010 8022215c 0 OnShutdownSoundThread__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+8022216c 00000004 8022216c 0 InvalidateWaveData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv 	libnw4r_snd.a snd_WsdPlayer.o
+80222170 00000014 80222170 0 IsPause__Q44nw4r3snd6detail9WsdPlayerCFv 	libnw4r_snd.a snd_WsdPlayer.o
+80222184 00000014 80222184 0 IsStarted__Q44nw4r3snd6detail9WsdPlayerCFv 	libnw4r_snd.a snd_WsdPlayer.o
+80222198 00000014 80222198 0 IsActive__Q44nw4r3snd6detail9WsdPlayerCFv 	libnw4r_snd.a snd_WsdPlayer.o
+802221ac 00000008 802221ac 0 @180@InvalidateWaveData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv 	libnw4r_snd.a snd_WsdPlayer.o
+802221b4 00000008 802221b4 0 @180@InvalidateData__Q44nw4r3snd6detail9WsdPlayerFPCvPCv 	libnw4r_snd.a snd_WsdPlayer.o
+802221bc 00000008 802221bc 0 @180@__dt__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+802221c4 00000008 802221c4 0 @192@OnShutdownSoundThread__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+802221cc 00000008 802221cc 0 @192@OnUpdateFrameSoundThread__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+802221d4 00000008 802221d4 0 @192@__dt__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WsdPlayer.o
+802221dc 0000008c 802221dc 0 DecodeDspAdpcm__Q34nw4r3snd6detailFP10_AXPBADPCMUc 	libnw4r_ut.a snd_adpcm.o
+80222268 00000018 80222268 0 List_Init__Q26nw4hbm2utFPQ36nw4hbm2ut4ListUs 	libnw4r_ut.a ut_list.o
+80222280 00000070 80222280 0 List_Append__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv 	libnw4r_ut.a ut_list.o
+802222f0 00000120 802222f0 0 List_Insert__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPvPv libnw4r_ut.a ut_list.o
+80222410 0000006c 80222410 0 List_Remove__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv 	libnw4r_ut.a ut_list.o
+8022247c 00000020 8022247c 0 List_GetNext__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListPCv 	libnw4r_ut.a ut_list.o
+8022249c 0000001c 8022249c 0 List_GetPrev__Q24nw4r2utFPCQ34nw4r2ut4ListPCv 	libnw4r_ut.a ut_list.o
+802224b8 00000084 802224b8 0 __dt__Q44nw4r2ut6detail12LinkListImplFv 	libnw4r_ut.a ut_LinkList.o
+8022253c 00000048 8022253c 0 Erase__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8Iterator 	libnw4r_ut.a ut_LinkList.o
+80222584 00000044 80222584 0 Clear__Q44nw4r2ut6detail12LinkListImplFv 	libnw4r_ut.a ut_LinkList.o
+802225c8 0000002c 802225c8 0 Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode 	libnw4r_ut.a ut_LinkList.o
+802225f4 00000030 802225f4 0 Erase__Q44nw4r2ut6detail12LinkListImplFPQ34nw4r2ut12LinkListNode 	libnw4r_ut.a ut_LinkList.o
+80222624 00000074 80222624 0 IsValidBinaryFile__Q24nw4r2utFPCQ34nw4r2ut16BinaryFileHeaderUlUsUs 	libnw4r_ut.a ut_binaryFileFormat.o
+80222698 00000078 80222698 0 ReadNextCharUTF8__Q34nw4r2ut14CharStrmReaderFv 	libnw4r_ut.a ut_CharStrmReader.o
+80222710 0000001c 80222710 0 ReadNextCharUTF16__Q34nw4r2ut14CharStrmReaderFv 	libnw4r_ut.a ut_CharStrmReader.o
+8022272c 0000001c 8022272c 0 ReadNextCharCP1252__Q34nw4r2ut14CharStrmReaderFv 	libnw4r_ut.a ut_CharStrmReader.o
+80222748 00000060 80222748 0 ReadNextCharSJIS__Q34nw4r2ut14CharStrmReaderFv 	libnw4r_ut.a ut_CharStrmReader.o
+802227a8 00000010 802227a8 0 __ct__Q34nw4r2ut19TagProcessorBase<c>Fv 	libnw4r_ut.a ut_TagProcessorBase.o
+802227b8 00000040 802227b8 0 __dt__Q34nw4r2ut19TagProcessorBase<c>Fv 	libnw4r_ut.a ut_TagProcessorBase.o
+802227f8 00000130 802227f8 0 Process__Q34nw4r2ut19TagProcessorBase<c>FUsPQ34nw4r2ut15PrintContext<c> 	libnw4r_ut.a ut_TagProcessorBase.o
+80222928 000001e8 80222928 0 CalcRect__Q34nw4r2ut19TagProcessorBase<c>FPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<c> 	libnw4r_ut.a ut_TagProcessorBase.o
+80222b10 00000010 80222b10 0 __ct__Q34nw4r2ut19TagProcessorBase<w>Fv 	libnw4r_ut.a ut_TagProcessorBase.o
+80222b20 00000040 80222b20 0 __dt__Q34nw4r2ut19TagProcessorBase<w>Fv 	libnw4r_ut.a ut_TagProcessorBase.o
+80222b60 00000130 80222b60 0 Process__Q34nw4r2ut19TagProcessorBase<w>FUsPQ34nw4r2ut15PrintContext<w> 	libnw4r_ut.a ut_TagProcessorBase.o
+80222c90 000001e8 80222c90 0 CalcRect__Q34nw4r2ut19TagProcessorBase<w>FPQ34nw4r2ut4RectUsPQ34nw4r2ut15PrintContext<w> 	libnw4r_ut.a ut_TagProcessorBase.o
+80222e78 00000008 80222e78 0 Read__Q34nw4r2ut8IOStreamFPvUl libnw4r_ut.a ut_IOStream.o
+80222e80 00000008 80222e80 0 ReadAsync__Q34nw4r2ut8IOStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv libnw4r_ut.a ut_IOStream.o
+80222e88 0000000c 80222e88 0 __sinit_\ut_IOStream_cpp 	libnw4r_ut.a ut_IOStream.o
+80222e94 00000064 80222e94 0 Skip__Q44nw4r2ut10FileStream12FilePositionFl 	libnw4r_ut.a ut_FileStream.o
+80222ef8 00000098 80222ef8 0 Seek__Q44nw4r2ut10FileStream12FilePositionFlUl 	libnw4r_ut.a ut_FileStream.o
+80222f90 0000000c 80222f90 0 __sinit_\ut_FileStream_cpp 	libnw4r_ut.a ut_FileStream.o
+80222f9c 0000002c 80222f9c 0 DvdAsyncCallback___Q34nw4r2ut13DvdFileStreamFlP11DVDFileInfo 	libnw4r_ut.a ut_DvdFileStream.o
+80222fc8 00000028 80222fc8 0 DvdCBAsyncCallback___Q34nw4r2ut13DvdFileStreamFlP15DVDCommandBlock 	libnw4r_ut.a ut_DvdFileStream.o
+80222ff0 000000bc 80222ff0 0 __ct__Q34nw4r2ut13DvdFileStreamFl 	libnw4r_ut.a ut_DvdFileStream.o
+802230ac 00000130 802230ac 0 __ct__Q34nw4r2ut13DvdFileStreamFPC11DVDFileInfob 	libnw4r_ut.a ut_DvdFileStream.o
+802231dc 00000078 802231dc 0 __dt__Q34nw4r2ut13DvdFileStreamFv 	libnw4r_ut.a ut_DvdFileStream.o
+80223254 00000050 80223254 0 Close__Q34nw4r2ut13DvdFileStreamFv 	libnw4r_ut.a ut_DvdFileStream.o
+802232a4 00000088 802232a4 0 Read__Q34nw4r2ut13DvdFileStreamFPvUl 	libnw4r_ut.a ut_DvdFileStream.o
+8022332c 000000f4 8022332c 0 ReadAsync__Q34nw4r2ut13DvdFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv 	libnw4r_ut.a ut_DvdFileStream.o
+80223420 0000003c 80223420 0 Peek__Q34nw4r2ut13DvdFileStreamFPvUl 	libnw4r_ut.a ut_DvdFileStream.o
+8022345c 00000080 8022345c 0 PeekAsync__Q34nw4r2ut13DvdFileStreamFPvUlPFlPQ34nw4r2ut8IOStreamPv_vPv 	libnw4r_ut.a ut_DvdFileStream.o
+802234dc 00000008 802234dc 0 Seek__Q34nw4r2ut13DvdFileStreamFlUl 	libnw4r_ut.a ut_DvdFileStream.o
+802234e4 00000008 802234e4 0 Cancel__Q34nw4r2ut13DvdFileStreamFv 	libnw4r_ut.a ut_DvdFileStream.o
+802234ec 0000005c 802234ec 0 CancelAsync__Q34nw4r2ut13DvdFileStreamFPFlPQ34nw4r2ut8IOStreamPv_vPv 	libnw4r_ut.a ut_DvdFileStream.o
+80223548 00000008 80223548 0 CanAsync__Q34nw4r2ut13DvdFileStreamCFv 	libnw4r_ut.a ut_DvdFileStream.o
+80223550 00000008 80223550 0 GetSize__Q34nw4r2ut13DvdFileStreamCFv 	libnw4r_ut.a ut_DvdFileStream.o
+80223558 00000008 80223558 0 Tell__Q34nw4r2ut13DvdFileStreamCFv 	libnw4r_ut.a ut_DvdFileStream.o
+80223560 00000008 80223560 0 GetRuntimeTypeInfo__Q34nw4r2ut13DvdFileStreamCFv 	libnw4r_ut.a ut_DvdFileStream.o
+80223568 0000000c 80223568 0 __sinit_\ut_DvdFileStream_cpp 	libnw4r_ut.a ut_DvdFileStream.o
+80223574 00000084 80223574 0 __ct__Q34nw4r2ut19DvdLockedFileStreamFl 	libnw4r_ut.a ut_DvdLockedFileStream.o
+802235f8 00000084 802235f8 0 __ct__Q34nw4r2ut19DvdLockedFileStreamFPC11DVDFileInfob 	libnw4r_ut.a ut_DvdLockedFileStream.o
+8022367c 00000058 8022367c 0 __dt__Q34nw4r2ut19DvdLockedFileStreamFv 	libnw4r_ut.a ut_DvdLockedFileStream.o
+802236d4 00000034 802236d4 0 Close__Q34nw4r2ut19DvdLockedFileStreamFv 	libnw4r_ut.a ut_DvdLockedFileStream.o
+80223708 000000d4 80223708 0 Read__Q34nw4r2ut19DvdLockedFileStreamFPvUl 	libnw4r_ut.a ut_DvdLockedFileStream.o
+802237dc 000000d4 802237dc 0 Peek__Q34nw4r2ut19DvdLockedFileStreamFPvUl 	libnw4r_ut.a ut_DvdLockedFileStream.o
+802238b0 00000058 802238b0 0 Cancel__Q34nw4r2ut19DvdLockedFileStreamFv 	libnw4r_ut.a ut_DvdLockedFileStream.o
 80223908 0000000c 80223908 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
-80223914 00000060 80223914 0 zz_80223914_
-80223974 00000078 80223974 0 zz_80223974_
-802239ec 00000070 802239ec 0 zz_802239ec_
-80223a5c 00000040 80223a5c 0 zz_80223a5c_
-80223a9c 00000004 80223a9c 0 zz_80223a9c_
-80223aa0 00000004 80223aa0 0 zz_80223aa0_
-80223aa4 0000001c 80223aa4 0 zz_80223aa4_
-80223ac0 000000a8 80223ac0 0 nw4hbm::ut::Font::InitReaderFunc(nw4hbm::ut::FontEncoding) 	homebuttonLib.a ut_Font.o
-80223b68 00000054 80223b68 0 zz_80223b68_
-80223bbc 00000040 80223bbc 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-80223bfc 0000000c 80223bfc 0 FETweener::setDoneCallFunc(void (*)(void *), void *)
-80223c08 0000000c 80223c08 0 EmissionController::IsLingering( (void))
-80223c14 0000000c 80223c14 0 EmissionController::IsLingering( (void))
-80223c20 0000000c 80223c20 0 EmissionController::IsLingering( (void))
-80223c2c 00000014 80223c2c 0 nw4hbm::ut::detail::ResFontBase::GetDescent(void) const 	homebuttonLib.a ut_ResFontBase.o
-80223c40 00000014 80223c40 0 nw4hbm::ut::detail::ResFontBase::GetBaselinePos(void) const 	homebuttonLib.a ut_ResFontBase.o
-80223c54 00000010 80223c54 0 nw4hbm::ut::detail::ResFontBase::GetMaxCharWidth(void) const 	homebuttonLib.a ut_ResFontBase.o
-80223c64 00000010 80223c64 0 nw4hbm::ut::detail::ResFontBase::GetMaxCharWidth(void) const 	homebuttonLib.a ut_ResFontBase.o
-80223c74 00000010 80223c74 0 nw4hbm::ut::detail::ResFontBase::GetMaxCharWidth(void) const 	homebuttonLib.a ut_ResFontBase.o
-80223c84 00000008 80223c84 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-80223c8c 00000010 80223c8c 0 nw4hbm::ut::detail::ResFontBase::GetTextureFormat(void) const 	homebuttonLib.a ut_ResFontBase.o
-80223c9c 00000010 80223c9c 0 nw4hbm::ut::detail::ResFontBase::GetLineFeed(void) const 	homebuttonLib.a ut_ResFontBase.o
-80223cac 00000018 80223cac 0 nw4hbm::ut::detail::ResFontBase::GetDefaultCharWidths(void) const 	homebuttonLib.a ut_ResFontBase.o
-80223cc4 00000020 80223cc4 0 nw4hbm::ut::detail::ResFontBase::SetDefaultCharWidths(nw4hbm::ut::CharWidths const &) 	homebuttonLib.a ut_ResFontBase.o
-80223ce4 000000b8 80223ce4 0 zz_80223ce4_
-80223d9c 0000000c 80223d9c 0 AnimatedModelExplodable::SetUnexplodedModelVisibility(bool)
-80223da8 0000004c 80223da8 0 nw4hbm::ut::detail::ResFontBase::GetCharWidth(unsigned short) const 	homebuttonLib.a ut_ResFontBase.o
-80223df4 00000110 80223df4 0 zz_80223df4_
-80223f04 000000c4 80223f04 0 zz_80223f04_
-80223fc8 000000b8 80223fc8 0 zz_80223fc8_
-80224080 0000000c 80224080 0 EmissionController::IsLingering( (void))
-8022408c 00000060 8022408c 0 nw4hbm::ut::detail::ResFontBase::FindGlyphIndex(nw4hbm::ut::FontCodeMap const *, unsigned short) const 	homebuttonLib.a ut_ResF
-802240ec 00000068 802240ec 0 zz_802240ec_
-80224154 0000000c 80224154 0 zz_80224154_
-80224160 00000108 80224160 0 zz_80224160_
-80224268 0000003c 80224268 0 J3DModelLoader_v26::J3DModelLoader_v26(void) 	J3DGraphLoader.a J3DModelLoader.o
-802242a4 00000058 802242a4 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
-802242fc 00000144 802242fc 0 nw4hbm::ut::ResFont::SetResource(void *) 	homebuttonLib.a ut_ResFont.o
-80224440 0000012c 80224440 0 nw4hbm::ut::ResFont::Rebuild(nw4hbm::ut::BinaryFileHeader *) 	homebuttonLib.a ut_ResFont.o
-8022456c 00000220 8022456c 0 nw4hbm::ut::CharWriter::CharWriter(void) 	homebuttonLib.a ut_CharWriter.o
-8022478c 00000040 8022478c 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-802247cc 00000a58 802247cc 0 nw4hbm::ut::CharWriter::SetupGX(void) 	homebuttonLib.a ut_CharWriter.o
-80225224 000000c4 80225224 0 nw4hbm::ut::CharWriter::SetFontSize(float, float) 	homebuttonLib.a ut_CharWriter.o
-802252e8 00000060 802252e8 0 nw4hbm::ut::CharWriter::GetFontAscent(void) const 	homebuttonLib.a ut_CharWriter.o
-80225348 00000060 80225348 0 nw4hbm::ut::CharWriter::GetFontAscent(void) const 	homebuttonLib.a ut_CharWriter.o
-802253a8 00000060 802253a8 0 nw4hbm::ut::CharWriter::GetFontAscent(void) const 	homebuttonLib.a ut_CharWriter.o
-80225408 00000130 80225408 0 nw4hbm::ut::CharWriter::Print(unsigned short) 	homebuttonLib.a ut_CharWriter.o
-80225538 0000027c 80225538 0 nw4hbm::ut::CharWriter::PrintGlyph(float, float, float, nw4hbm::ut::Glyph const &) 	homebuttonLib.a ut_CharWriter.o
-802257b4 00000150 802257b4 0 zz_802257b4_
-80225904 0000034c 80225904 0 nw4hbm::ut::CharWriter::SetupGXWithColorMapping(nw4hbm::ut::Color, nw4hbm::ut::Color) 	homebuttonLib.a ut_CharWriter.o
-80225c50 0000007c 80225c50 0 zz_80225c50_
-80225ccc 0000005c 80225ccc 0 zz_80225ccc_
-80225d28 00000058 80225d28 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
-80225d80 0000007c 80225d80 0 zz_80225d80_
-80225dfc 00000008 80225dfc 0 zz_80225dfc_
-80225e04 00000688 80225e04 0 zz_80225e04_
-8022648c 00000120 8022648c 0 zz_8022648c_
-802265ac 00000a8c 802265ac 0 zz_802265ac_
-80227038 0000073c 80227038 0 zz_80227038_
+80223914 00000060 80223914 0 Enable__Q34nw4r2ut2LCFv 	libnw4r_ut.a ut_LockedCache.o
+80223974 00000078 80223974 0 Disable__Q34nw4r2ut2LCFv 	libnw4r_ut.a ut_LockedCache.o
+802239ec 00000070 802239ec 0 Lock__Q34nw4r2ut2LCFv 	libnw4r_ut.a ut_LockedCache.o
+80223a5c 00000040 80223a5c 0 Unlock__Q34nw4r2ut2LCFv 	libnw4r_ut.a ut_LockedCache.o
+80223a9c 00000004 80223a9c 0 LoadBlocks__Q34nw4r2ut2LCFPvPvUl 	libnw4r_ut.a ut_LockedCache.o
+80223aa0 00000004 80223aa0 0 StoreBlocks__Q34nw4r2ut2LCFPvPvUl 	libnw4r_ut.a ut_LockedCache.o
+80223aa4 00000004 80223aa4 0 StoreData__Q34nw4r2ut2LCFPvPvUl 	libnw4r_ut.a ut_LockedCache.o
+80223aa8 00000018 80223aa8 0 __sinit_\ut_LockedCache_cpp 	libnw4r_ut.a ut_LockedCache.o
+80223ac0 000000a8 80223ac0 0 InitReaderFunc__Q36nw4hbm2ut4FontFQ36nw4hbm2ut12FontEncoding 	libnw4r_ut.a ut_Font.o
+80223b68 00000054 80223b68 0 __ct__Q44nw4r2ut6detail11ResFontBaseFv 	libnw4r_ut.a ut_ResFontBase.o
+80223bbc 00000040 80223bbc 0 __dt__Q44nw4r2ut6detail11ResFontBaseFv 	libnw4r_ut.a ut_ResFontBase.o
+80223bfc 0000000c 80223bfc 0 SetResourceBuffer__Q44nw4r2ut6detail11ResFontBaseFPvPQ34nw4r2ut15FontInformation 	libnw4r_ut.a ut_ResFontBase.o
+80223c08 0000000c 80223c08 0 GetWidth__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223c14 0000000c 80223c14 0 GetHeight__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223c20 0000000c 80223c20 0 GetAscent__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223c2c 00000014 80223c2c 0 GetDescent__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223c40 00000014 80223c40 0 GetBaselinePos__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223c54 00000010 80223c54 0 GetCellHeight__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223c64 00000010 80223c64 0 GetCellWidth__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223c74 00000010 80223c74 0 GetMaxCharWidth__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223c84 00000008 80223c84 0 GetType__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223c8c 00000010 80223c8c 0 GetTextureFormat__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223c9c 00000010 80223c9c 0 GetLineFeed__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223cac 00000018 80223cac 0 GetDefaultCharWidths__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+80223cc4 00000020 80223cc4 0 SetDefaultCharWidths__Q44nw4r2ut6detail11ResFontBaseFRCQ34nw4r2ut10CharWidths 	libnw4r_ut.a ut_ResFontBase.o
+80223ce4 000000b8 80223ce4 0 SetAlternateChar__Q44nw4r2ut6detail11ResFontBaseFUs 	libnw4r_ut.a ut_ResFontBase.o
+80223d9c 0000000c 80223d9c 0 SetLineFeed__Q44nw4r2ut6detail11ResFontBaseFi 	libnw4r_ut.a ut_ResFontBase.o
+80223da8 0000004c 80223da8 0 GetCharWidth__Q44nw4r2ut6detail11ResFontBaseCFUs 	libnw4r_ut.a ut_ResFontBase.o
+80223df4 00000110 80223df4 0 GetCharWidths__Q44nw4r2ut6detail11ResFontBaseCFUs 	libnw4r_ut.a ut_ResFontBase.o
+80223f04 000000c4 80223f04 0 GetGlyph__Q44nw4r2ut6detail11ResFontBaseCFPQ34nw4r2ut5GlyphUs 	libnw4r_ut.a ut_ResFontBase.o
+80223fc8 000000b8 80223fc8 0 HasGlyph__Q44nw4r2ut6detail11ResFontBaseCFUs 	libnw4r_ut.a ut_ResFontBase.o
+80224080 0000000c 80224080 0 GetEncoding__Q44nw4r2ut6detail11ResFontBaseCFv 	libnw4r_ut.a ut_ResFontBase.o
+8022408c 000000d4 8022408c 0 FindGlyphIndex__Q44nw4r2ut6detail11ResFontBaseCFPCQ34nw4r2ut11FontCodeMapUs 	libnw4r_ut.a ut_ResFontBase.o
+80224160 00000108 80224160 0 GetGlyphFromIndex__Q44nw4r2ut6detail11ResFontBaseCFPQ34nw4r2ut5GlyphUs 	libnw4r_ut.a ut_ResFontBase.o
+80224268 0000003c 80224268 0 __ct__Q34nw4r2ut7ResFontFv 	libnw4r_ut.a ut_ResFont.o
+802242a4 00000058 802242a4 0 __dt__Q34nw4r2ut7ResFontFv 	libnw4r_ut.a ut_ResFont.o
+802242fc 00000144 802242fc 0 SetResource__Q34nw4r2ut7ResFontFPv 	libnw4r_ut.a ut_ResFont.o
+80224440 0000012c 80224440 0 Rebuild__Q34nw4r2ut7ResFontFPQ34nw4r2ut16BinaryFileHeader 	libnw4r_ut.a ut_ResFont.o
+8022456c 00000220 8022456c 0 __ct__Q34nw4r2ut10CharWriterFv 	libnw4r_ut.a ut_CharWriter.o
+8022478c 00000040 8022478c 0 __dt__Q34nw4r2ut10CharWriterFv 	libnw4r_ut.a ut_CharWriter.o
+802247cc 00000a58 802247cc 0 SetupGX__Q34nw4r2ut10CharWriterFv 	libnw4r_ut.a ut_CharWriter.o
+80225224 000000c4 80225224 0 SetFontSize__Q34nw4r2ut10CharWriterFff 	libnw4r_ut.a ut_CharWriter.o
+802252e8 00000060 802252e8 0 GetFontWidth__Q34nw4r2ut10CharWriterCFv 	libnw4r_ut.a ut_CharWriter.o
+80225348 00000060 80225348 0 GetFontHeight__Q34nw4r2ut10CharWriterCFv 	libnw4r_ut.a ut_CharWriter.o
+802253a8 00000060 802253a8 0 GetFontAscent__Q34nw4r2ut10CharWriterCFv 	libnw4r_ut.a ut_CharWriter.o
+80225408 00000130 80225408 0 Print__Q34nw4r2ut10CharWriterFUs 	libnw4r_ut.a ut_CharWriter.o
+80225538 0000027c 80225538 0 PrintGlyph__Q34nw4r2ut10CharWriterFfffRCQ34nw4r2ut5Glyph 	libnw4r_ut.a ut_CharWriter.o
+802257b4 00000150 802257b4 0 UpdateVertexColor__Q34nw4r2ut10CharWriterFv 	libnw4r_ut.a ut_CharWriter.o
+80225904 0000034c 80225904 0 SetupGXWithColorMapping__Q34nw4r2ut10CharWriterFQ34nw4r2ut5ColorQ34nw4r2ut5Color 	libnw4r_ut.a ut_CharWriter.o
+80225c50 0000007c 80225c50 0 GetLineHeight__Q34nw4r2ut17TextWriterBase<c>CFv 	libnw4r_ut.a ut_TextWriterBase.o
+80225ccc 0000005c 80225ccc 0 __ct__Q34nw4r2ut17TextWriterBase<w>Fv 	libnw4r_ut.a ut_TextWriterBase.o
+80225d28 00000058 80225d28 0 __dt__Q34nw4r2ut17TextWriterBase<w>Fv 	libnw4r_ut.a ut_TextWriterBase.o
+80225d80 0000007c 80225d80 0 GetLineHeight__Q34nw4r2ut17TextWriterBase<w>CFv 	libnw4r_ut.a ut_TextWriterBase.o
+80225dfc 00000008 80225dfc 0 PrintMutable__Q34nw4r2ut17TextWriterBase<w>FPCwi 	libnw4r_ut.a ut_TextWriterBase.o
+80225e04 00000688 80225e04 0 CalcLineRectImpl__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut4RectPPCwi 	libnw4r_ut.a ut_TextWriterBase.o
+8022648c 00000120 8022648c 0 zz_CalcStringRectImpl__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut4RectPCwi 	libnw4r_ut.a ut_TextWriterBase.o
+802265ac 00000a8c 802265ac 0 PrintImpl__Q34nw4r2ut17TextWriterBase<w>FPCwib 	libnw4r_ut.a ut_TextWriterBase.o
+80227038 0000073c 80227038 0 AdjustCursor__Q34nw4r2ut17TextWriterBase<w>FPfPfPCwi 	libnw4r_ut.a ut_TextWriterBase.o
 80227774 00000084 80227774 0 __sinit_\ut_TextWriterBase_cpp 	homebuttonLib.a ut_TextWriterBase.o
 802277f8 00000190 802277f8 0 DWC_Base64Encode 	dwc.a dwc_base64.o
 80227988 000001d0 80227988 0 DWC_Base64Decode 	dwc.a dwc_base64.o
