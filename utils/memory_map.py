@@ -12,6 +12,7 @@ def main():
         print('-d   Find duplicate functions.')
         print('-l   Map length check.')
         print('-o   Find functions without objects.')
+        print('-s   Find locations where the object has been switched/changed.')
         print('-v   Check the memory map for validity.')
         print('-z   Find functions that still are unidentified.')
         print('Example:')
@@ -26,6 +27,8 @@ def main():
         map_length_check()
     elif arg == '-o':
         find_missing_objects()
+    elif arg == '-s':
+        find_switched_objects()
     elif arg == '-v':
         is_map_valid()
     elif arg == '-z':
@@ -109,6 +112,33 @@ def find_missing_objects():
             parts = function.split(' ')
             if len(parts) < 2:
                 print(f'Function {function} does not have an object.')
+
+def find_switched_objects():
+    if len(sys.argv) != 5:
+        print('Please add a start and end line (decimal, inclusive) to find switched objects.')
+        sys.exit(1)
+    start = int(sys.argv[3])
+    end = int(sys.argv[4])
+    map_file = sys.argv[2]
+    switches = []
+    last = None
+    with open('general/symbol_maps/' + map_file, 'r') as open_file:
+        lines = open_file.readlines()
+    for count, line in enumerate(lines):
+        if start <= count <= end and len(line) > 29:
+            function = line[29:-1]
+            split = function.find(' ')
+            # Assume that all functions have objects
+            if split != -1:
+                obj = function[split + 1:]
+                if last != obj:
+                    # We've changed objects, check if we've already changed away before
+                    if obj in switches:
+                        # Found a switch, alert the user
+                        print(f'Switch found at line {count}: {function}')
+                    else:
+                        switches.append(obj)
+                last = obj
 
 def is_map_valid():
     ''' Checks that the given memory map file is a valid memory map. '''
