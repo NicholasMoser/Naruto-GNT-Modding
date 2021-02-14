@@ -3468,7 +3468,7 @@
 80138820 000000d0 80138820 0 zz_80138820_
 801388f0 00000048 801388f0 0 zz_801388f0_
 80138938 00000048 80138938 0 zz_80138938_
-80138980 00000010 80138980 0 SaveLoad::DidGameIDChange(void)
+80138980 00000010 80138980 0 zz_80138980_
 80138990 00000058 80138990 0 zz_80138990_
 801389a4 00000044 801389a4 0 zz_801389a4_
 801389e8 00000040 801389e8 0 zz_801389e8_
@@ -8557,7 +8557,7 @@
 8029a3d0 00000018 8029a3d0 0 AIGetDMAStartAddr 	ai.a ai.o
 8029a3e8 00000010 8029a3e8 0 AIGetDMALength 	ai.a ai.o
 8029a3f8 00000008 8029a3f8 0 AICheckInit 	ai.a ai.o
-8029a400 00000014 8029a400 0 AIGetDSPSampleRate
+8029a400 00000014 8029a400 0 AIGetDSPSampleRate ai.a ai.o
 8029a414 00000180 8029a414 0 AIInit 	ai.a ai.o
 8029a594 000000a8 8029a594 0 __AIDHandler 	ai.a ai.o
 8029a63c 00000064 8029a63c 0 __AICallbackStackSwitch 	ai.a ai.o
@@ -9261,7 +9261,7 @@
 802c16ac 00000100 802c16ac 0 l2cu_release_lcb 	bte.a l2c_utils.o
 802c17ac 00000088 802c17ac 0 l2cu_find_lcb_by_bd_addr 	bte.a l2c_utils.o
 802c1834 00000090 802c1834 0 sdpu_find_ccb_by_cid 	bte.a sdp_utils.o
-802c18c4 00000010 802c18c4 0 SaveLoad::DidGameIDChange(void)
+802c18c4 00000010 802c18c4 0 l2cu_get_conn_role 	bte.a l2c_utils.o
 802c18d4 000000c4 802c18d4 0 l2cu_build_header 	bte.a l2c_utils.o
 802c1998 000000fc 802c1998 0 l2cu_send_peer_cmd_reject 	bte.a l2c_utils.o
 802c1a94 000000c4 802c1a94 0 l2cu_send_peer_connect_req 	bte.a l2c_utils.o
@@ -9697,7 +9697,7 @@
 802e015c 0000026c 802e015c 0 GXGetVtxAttrFmt gx.a GXAttr.o
 802e03c8 00000074 802e03c8 0 GXGetVtxAttrFmtv gx.a GXAttr.o
 802e043c 00000040 802e043c 0 GXSetArray 	gx.a GXAttr.o
-802e047c 00000010 802e047c 0 GXInvalidateVtxCache
+802e047c 00000010 802e047c 0 GXInvalidateVtxCache 	gx.a GXAttr.o
 802e048c 00000228 802e048c 0 GXSetTexCoordGen2 	gx.a GXAttr.o
 802e06b4 00000024 802e06b4 0 GXSetNumTexGens 	gx.a GXAttr.o
 802e06d8 00000074 802e06d8 0 GXSetMisc 	gx.a GXMisc.o
@@ -10207,8 +10207,8 @@
 802fe200 0000000c 802fe200 0 SetCursor__Q36nw4hbm2ut10CharWriterFff 	homebuttonLib.a ut_CharWriter.o
 802fe20c 00000008 802fe20c 0 SetCursorX__Q36nw4hbm2ut10CharWriterFf 	homebuttonLib.a ut_CharWriter.o
 802fe214 00000008 802fe214 0 SetCursorY__Q36nw4hbm2ut10CharWriterFf 	homebuttonLib.a ut_CharWriter.o
-802fe21c 00000010 802fe21c 0 ColourBlendScreenTransition::Update(float)
-802fe22c 00000010 802fe22c 0 ColourBlendScreenTransition::Update(float)
+802fe21c 00000010 802fe21c 0 MoveCursorX__Q36nw4hbm2ut10CharWriterFf 	homebuttonLib.a ut_CharWriter.o
+802fe22c 00000010 802fe22c 0 MoveCursorY__Q36nw4hbm2ut10CharWriterFf 	homebuttonLib.a ut_CharWriter.o
 802fe23c 00000008 802fe23c 0 GetCursorX__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
 802fe244 00000008 802fe244 0 GetCursorY__Q36nw4hbm2ut10CharWriterCFv 	homebuttonLib.a ut_CharWriter.o
 802fe24c 00000284 802fe24c 0 PrintGlyph__Q36nw4hbm2ut10CharWriterFfffRCQ36nw4hbm2ut5Glyph 	homebuttonLib.a ut_CharWriter.o
