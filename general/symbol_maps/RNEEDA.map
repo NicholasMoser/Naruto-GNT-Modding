@@ -7107,18 +7107,19 @@
 8021c638 0000005c 8021c638 0 J3DModel::~J3DModel(void) 	J3DGraphAnimator.a J3DModel.o
 8021c694 000000e4 8021c694 0 zz_8021c694_
 8021c778 00000014 8021c778 0 LexicalCast<b,i>(int &)
-8021c78c 00000010 8021c78c 0 zz_8021c78c_
-8021c79c 00000008 8021c79c 0 J3DTexGenBlock4::getNBTScale(void) 	J3DGraphBase.a J3DMatBlock.o
-8021c7a4 00000008 8021c7a4 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
-8021c7ac 00000008 8021c7ac 0 nw4hbm::lyt::Window::GetRuntimeTypeInfo(void) const 	homebuttonLib.a lyt_window.o
-8021c7b4 0000000c 8021c7b4 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
-8021c7c0 00000038 8021c7c0 0 zz_8021c7c0_
-8021c7f8 00000040 8021c7f8 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-8021c838 0000009c 8021c838 0 zz_8021c838_
-8021c8d4 00000064 8021c8d4 0 zz_8021c8d4_
-8021c938 00000058 8021c938 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
-8021c990 00000020 8021c990 0 zz_8021c990_
-8021c9b0 0000007c 8021c9b0 0 zz_8021c9b0_
+8021c78c 00000008 8021c78c 0 zz_8021c78c_
+8021c794 00000008 8021c794 0 zz_8021c78c_
+8021c79c 00000008 8021c79c 0 zz_8021c79c_
+8021c7a4 00000008 8021c7a4 0 zz_8021c7a4_
+8021c7ac 00000008 8021c7ac 0 zz_8021c7ac_
+8021c7b4 0000000c 8021c7b4 0 zz_8021c7b4_
+8021c7c0 00000038 8021c7c0 0 DetachSound__Q34nw4r3snd15StrmSoundHandleFv 	libnw4r_snd.a snd_StrmSoundHandle.o
+8021c7f8 00000040 8021c7f8 0 __dt__Q44nw4r2ut22@unnamed@snd_Task_cpp@11NonCopyableFv libnw4r_snd.a snd_Task.o
+8021c838 0000009c 8021c838 0 GetInstance__Q44nw4r3snd6detail11TaskManagerFv 	libnw4r_snd.a snd_TaskManager.o
+8021c8d4 00000064 8021c8d4 0 __dt__Q44nw4r3snd6detail11TaskManagerFv 	libnw4r_snd.a snd_TaskManager.o
+8021c938 00000058 8021c938 0 __dt__Q34nw4r2ut35LinkList<Q44nw4r3snd6detail4Task,4>Fv 	libnw4r_snd.a snd_TaskManager.o
+8021c990 00000020 8021c990 0 __ct__Q34nw4r2ut35LinkList<Q44nw4r3snd6detail4Task,4>Fv 	libnw4r_snd.a snd_TaskManager.o
+8021c9b0 0000007c 8021c9b0 0 AppendTask__Q44nw4r3snd6detail11TaskManagerFPQ44nw4r3snd6detail4TaskQ54nw4r3snd6detail11TaskManager12TaskPriority 	libnw4r_snd.a snd_TaskManager.o
 8021ca2c 0000015c 8021ca2c 0 PopTask__Q44nw4r3snd6detail11TaskManagerFv 	libnw4r_snd.a snd_TaskManager.o
 8021cb88 0000010c 8021cb88 0 GetNextTask__Q44nw4r3snd6detail11TaskManagerFv 	libnw4r_snd.a snd_TaskManager.o
 8021cc94 0000007c 8021cc94 0 ExecuteTask__Q44nw4r3snd6detail11TaskManagerFv 	libnw4r_snd.a snd_TaskManager.o
@@ -7129,10 +7130,10 @@
 8021ced4 00000084 8021ced4 0 __dt__Q44nw4r3snd6detail10TaskThreadFv 	libnw4r_snd.a snd_TaskThread.o
 8021cf58 000000d4 8021cf58 0 Create__Q44nw4r3snd6detail10TaskThreadFlPvUl 	libnw4r_snd.a snd_TaskThread.o
 8021d02c 00000058 8021d02c 0 ThreadFunc__Q44nw4r3snd6detail10TaskThreadFPv 	libnw4r_snd.a snd_TaskThread.o
-8021d084 00000264 8021d084 0 zz_8021d084_
-8021d2e8 000000a4 8021d2e8 0 zz_8021d2e8_
-8021d38c 000000b0 8021d38c 0 zz_8021d38c_
-8021d43c 0000009c 8021d43c 0 zz_8021d43c_
+8021d084 00000264 8021d084 0 __ct__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021d2e8 000000a4 8021d2e8 0 __dt__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
+8021d38c 000000b0 8021d38c 0 InitParam__Q44nw4r3snd6detail5VoiceFiiPFPQ44nw4r3snd6detail5VoiceQ54nw4r3snd6detail5Voice19VoiceCallbackStatusPv_vPv 	libnw4r_snd.a snd_Voice.o
+8021d43c 0000009c 8021d43c 0 StopFinished__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
 8021d4d8 00000288 8021d4d8 0 Calc__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
 8021d760 000002c0 8021d760 0 Update__Q44nw4r3snd6detail5VoiceFv 	libnw4r_snd.a snd_Voice.o
 8021da20 0000023c 8021da20 0 Acquire__Q44nw4r3snd6detail5VoiceFiiiPFPQ44nw4r3snd6detail5VoiceQ54nw4r3snd6detail5Voice19VoiceCallbackStatusPv_vPv 	libnw4r_snd.a snd_Voice.o
@@ -7198,24 +7199,24 @@
 802206a4 00000074 802206a4 0 __ct__Q44nw4r3snd6detail17WaveArchiveReaderFPCv 	libnw4r_snd.a snd_WaveArchive.o
 80220718 00000088 80220718 0 GetWaveFile__Q44nw4r3snd6detail17WaveArchiveReaderCFi 	libnw4r_snd.a snd_WaveArchive.o
 802207a0 00000020 802207a0 0 __ct__Q44nw4r3snd6detail14WaveFileReaderFPCQ54nw4r3snd6detail8WaveFile10FileHeader 	libnw4r_snd.a snd_WaveFile.o
-802207c0 00000008 802207c0 0 __ct__Q44nw4r3snd6detail14WaveFileReaderFPCQ54nw4r3snd6detail8WaveFile8WaveInfo  	libnw4r_snd.a snd_WaveFile.o
-802207c8 00000200 802207c8 0 ReadWaveInfo__Q44nw4r3snd6detail14WaveFileReaderCFPQ44nw4r3snd6detail8WaveInfoPCv
-802209c8 00000068 802209c8 0 zz_802209c8_
-80220a30 00000068 80220a30 0 nw4r3snd6detail9WaveSoundFPQ44nw4r3snd6detai.__ct
-80220a98 00000040 80220a98 0 nw4r3snd6detail9WsdPlayerFv.__dt
-80220ad8 000000a0 80220ad8 0 nw4r3snd6detail9WaveSoundFPCvlQ54nw4r3snd6de.Prepare
-80220b78 0000009c 80220b78 0 nw4r3snd6detail9WaveSoundFv.Shutdown
-80220c14 00000040 80220c14 0 nw4r3snd6detail9WaveSoundFv.__dt
-80220c54 00000008 80220c54 0 nw4r3snd6detail9WaveSoundFi.SetChannelPriority
-80220c5c 00000008 80220c5c 0 nw4r3snd6detail9WaveSoundFb.SetReleasePriorityFix
-80220c64 000000e4 80220c64 0 nw4r3snd6detail9WaveSoundFi.SetPlayerPriority
-80220d48 00000014 80220d48 0 nw4r3snd6detail9WaveSoundFv.IsAttachedTempSpecialHandle
-80220d5c 00000008 80220d5c 0 zz_80220d5c_
-80220d64 00000008 80220d64 0 zz_80220d5c_
-80220d6c 00000008 80220d6c 0 zz_80220d6c_
-80220d74 00000008 80220d74 0 zz_80220d74_
-80220d7c 00000008 80220d7c 0 zz_80220d7c_
-80220d84 0000000c 80220d84 0 zz_80220d84_
+802207c0 00000008 802207c0 0 __ct__Q44nw4r3snd6detail14WaveFileReaderFPCQ54nw4r3snd6detail8WaveFile8WaveInfo 	libnw4r_snd.a snd_WaveFile.o
+802207c8 00000200 802207c8 0 ReadWaveInfo__Q44nw4r3snd6detail14WaveFileReaderCFPQ44nw4r3snd6detail8WaveInfoPCv 	libnw4r_snd.a snd_WaveFile.o
+802209c8 00000068 802209c8 0 GetWaveDataAddress__Q44nw4r3snd6detail14WaveFileReaderCFPCQ54nw4r3snd6detail8WaveFile15WaveChannelInfoPCv 	libnw4r_snd.a snd_WaveFile.o
+80220a30 00000068 80220a30 0 __ct__Q44nw4r3snd6detail9WaveSoundFPQ44nw4r3snd6detail50SoundInstanceManager<Q44nw4r3snd6detail9WaveSound>ii 	libnw4r_snd.a snd_WaveSound.o
+80220a98 00000040 80220a98 0 __dt__Q44nw4r3snd6detail9WsdPlayerFv 	libnw4r_snd.a snd_WaveSound.o
+80220ad8 000000a0 80220ad8 0 Prepare__Q44nw4r3snd6detail9WaveSoundFPCvlQ54nw4r3snd6detail9WsdPlayer15StartOffsetTypelPCQ54nw4r3snd6detail9WsdPlayer11WsdCallbackUl 	libnw4r_snd.a snd_WaveSound.o
+80220b78 0000009c 80220b78 0 Shutdown__Q44nw4r3snd6detail9WaveSoundFv 	libnw4r_snd.a snd_WaveSound.o
+80220c14 00000040 80220c14 0 __dt__Q44nw4r3snd6detail9WaveSoundFv 	libnw4r_snd.a snd_WaveSound.o
+80220c54 00000008 80220c54 0 SetChannelPriority__Q44nw4r3snd6detail9WaveSoundFi 	libnw4r_snd.a snd_WaveSound.o
+80220c5c 00000008 80220c5c 0 SetReleasePriorityFix__Q44nw4r3snd6detail9WaveSoundFb 	libnw4r_snd.a snd_WaveSound.o
+80220c64 000000e4 80220c64 0 SetPlayerPriority__nw4r3snd6detail9WaveSoundFi 	libnw4r_snd.a snd_WaveSound.o
+80220d48 00000014 80220d48 0 IsAttachedTempSpecialHandle__Q44nw4r3snd6detail9WaveSoundFv 	libnw4r_snd.a snd_WaveSound.o
+80220d5c 00000008 80220d5c 0 DetachTempSpecialHandle__Q44nw4r3snd6detail9WaveSoundFv 	libnw4r_snd.a snd_WaveSound.o
+80220d64 00000008 80220d64 0 GetBasicPlayer__Q44nw4r3snd6detail9WaveSoundFv 	libnw4r_snd.a snd_WaveSound.o
+80220d6c 00000008 80220d6c 0 GetBasicPlayer__Q44nw4r3snd6detail9WaveSoundCFv 	libnw4r_snd.a snd_WaveSound.o
+80220d74 00000008 80220d74 0 IsPrepared__Q44nw4r3snd6detail9WaveSoundCFv 	libnw4r_snd.a snd_WaveSound.o
+80220d7c 00000008 80220d7c 0 GetRuntimeTypeInfo__Q44nw4r3snd6detail9WaveSoundCFv 	libnw4r_snd.a snd_WaveSound.o
+80220d84 0000000c 80220d84 0 __sinit_\snd_WaveSound_cpp 	libnw4r_snd.a snd_WaveSound.o
 80220d90 00000038 80220d90 0 DetachSound__Q34nw4r3snd15WaveSoundHandleFv 	libnw4r_snd.a snd_WaveSoundHandle.o
 80220dc8 00000090 80220dc8 0 __ct__Q44nw4r3snd6detail13WsdFileReaderFPCv 	libnw4r_snd.a snd_WsdFile.o
 80220e58 00000120 80220e58 0 ReadWaveSoundInfo__Q44nw4r3snd6detail13WsdFileReaderCFPQ44nw4r3snd6detail13WaveSoundInfoi 	libnw4r_snd.a snd_WsdFile.o
@@ -7358,7 +7359,7 @@
 80225d80 0000007c 80225d80 0 GetLineHeight__Q34nw4r2ut17TextWriterBase<w>CFv 	libnw4r_ut.a ut_TextWriterBase.o
 80225dfc 00000008 80225dfc 0 PrintMutable__Q34nw4r2ut17TextWriterBase<w>FPCwi 	libnw4r_ut.a ut_TextWriterBase.o
 80225e04 00000688 80225e04 0 CalcLineRectImpl__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut4RectPPCwi 	libnw4r_ut.a ut_TextWriterBase.o
-8022648c 00000120 8022648c 0 zz_CalcStringRectImpl__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut4RectPCwi 	libnw4r_ut.a ut_TextWriterBase.o
+8022648c 00000120 8022648c 0 CalcStringRectImpl__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut4RectPCwi 	libnw4r_ut.a ut_TextWriterBase.o
 802265ac 00000a8c 802265ac 0 PrintImpl__Q34nw4r2ut17TextWriterBase<w>FPCwib 	libnw4r_ut.a ut_TextWriterBase.o
 80227038 0000073c 80227038 0 AdjustCursor__Q34nw4r2ut17TextWriterBase<w>FPfPfPCwi 	libnw4r_ut.a ut_TextWriterBase.o
 80227774 00000084 80227774 0 __sinit_\ut_TextWriterBase_cpp 	homebuttonLib.a ut_TextWriterBase.o
@@ -7627,15 +7628,15 @@
 8024d270 00000008 8024d270 0 DWCi_Acc_SetPlayerId 	dwc.a dwc_account.c
 8024d278 00000044 8024d278 0 zz_8024d278_ 	dwc.a dwc_account.c
 8024d2bc 00000024 8024d2bc 0 DWC_IsBuddyFriendData 	dwc.a dwc_account.c
-8024d2e0 0000000c 8024d2e0 0 zz_8024d2e0_ 	dwc.a dwc_account.c
-8024d2ec 0000000c 8024d2ec 0 zz_8024d2ec_ 	dwc.a dwc_account.c
+8024d2e0 0000000c 8024d2e0 0 DWCi_IsReverseBuddyFriendData 	dwc.a dwc_account.c
+8024d2ec 0000000c 8024d2ec 0 DWCi_IsBuddyMsgAlreadySent 	dwc.a dwc_account.c
 8024d2f8 0000000c 8024d2f8 0 DWC_GetFriendDataType 	dwc.a dwc_account.c
 8024d304 00000038 8024d304 0 DWCi_SetBuddyFriendData 	dwc.a dwc_account.c
-8024d33c 0000004c 8024d33c 0 zz_8024d33c_ 	dwc.a dwc_account.c
-8024d388 0000004c 8024d388 0 zz_8024d388_ 	dwc.a dwc_account.c
-8024d3d4 0000004c 8024d3d4 0 zz_8024d3d4_ 	dwc.a dwc_account.c
+8024d33c 0000004c 8024d33c 0 DWCi_SetReverseBuddyFlag 	dwc.a dwc_account.c
+8024d388 0000004c 8024d388 0 DWCi_SetExpIsBuddyFriendFlag 	dwc.a dwc_account.c
+8024d3d4 0000004c 8024d3d4 0 DWCi_SetSentBuddyReqFlag 	dwc.a dwc_account.c
 8024d420 000000ac 8024d420 0 DWC_CheckFriendKey 	dwc.a dwc_account.c
-8024d4cc 000001d4 8024d4cc 0 zz_8024d4cc_ 	dwc.a dwc_account.c
+8024d4cc 000001d4 8024d4cc 0 DWCi_Acc_U64ToString32 	dwc.a dwc_account.c
 8024d6a0 00000188 8024d6a0 0 DWCi_Acc_LoginIdToUserName 	dwc.a dwc_account.o
 8024d828 00000258 8024d828 0 DWCi_Acc_CreateUserData 	dwc.a  dwc_account.o
 8024da80 000000c8 8024da80 0 DWCi_Acc_CreateTempLoginId 	dwc.a  dwc_account.o
@@ -8106,7 +8107,7 @@
 8026fa90 0000005c 8026fa90 0 ghttpCleanup 	gs.a ghttpMain.o
 8026faec 00000218 8026faec 0 ghttpGetExA 	gs.a ghttpMain.o
 8026fd04 0000000c 8026fd04 0 ghttpThink 	gs.a ghttpMain.o
-8026fd10 00000090 8026fd10 0 zz_8026fd10_ 	gs.a ghttpMain.o
+8026fd10 00000090 8026fd10 0 ghttpCancelRequest 	gs.a ghttpMain.o
 8026fda0 00000038 8026fda0 0 ghttpSetMaxRecvTime 	gs.a ghttpMain.o
 8026fdd8 00000008 8026fdd8 0 ghiIsPostAutoFree 	gs.a ghttpPost.o
 8026fde0 00000038 8026fde0 0 ghiFreePost 	gs.a ghttpPost.o
@@ -8420,7 +8421,7 @@
 8028d9ec 00000214 8028d9ec 0 WPADControlBLC 	wpad.a WPAD.o
 8028dc00 00000098 8028dc00 0 zz_8028dc00_ 	wpad.a WPAD.o
 8028dc98 0000009c 8028dc98 0 zz_8028dc98_ 	wpad.a WPAD.o
-8028dd34 00000268 8028dd34 0 zz_8028dd34_ 	wpad.a WPAD.o
+8028dd34 00000268 8028dd34 0 WPADiSendSetReportType 	wpad.a WPAD.o
 8028df9c 000001b4 8028df9c 0 WPADiSendWriteDataCmd 	wpad.a WPAD.o
 8028e150 000001b8 8028e150 0 WPADiSendWriteData 	wpad.a WPAD.o
 8028e308 000001ac 8028e308 0 WPADiSendReadData 	wpad.a WPAD.o
@@ -9941,7 +9942,7 @@
 802e7c58 00000064 802e7c58 0 startMotor__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
 802e7cbc 00000030 802e7cbc 0 stopMotor__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
 802e7cec 00000084 802e7cec 0 getInfoAsync__Q210homebutton10ControllerFP8WPADInfo 	homebuttonLib.a HBMController.o
-802e7d70 00000024 802e7d70 0 zz_802e7d70_
+802e7d70 00000024 802e7d70 0 ControllerCallback__Q210homebutton10ControllerFll 	homebuttonLib.a HBMController.o
 802e7d94 00000024 802e7d94 0 getBatteryFlag__Q210homebutton10ControllerCFv 	homebuttonLib.a HBMController.o
 802e7db8 00000020 802e7db8 0 clrBatteryFlag__Q210homebutton10ControllerFv 	homebuttonLib.a HBMController.o
 802e7dd8 00000268 802e7dd8 0 UpdateSpeaker__Q210homebutton9RemoteSpkFP7OSAlarmP9OSContext 	homebuttonLib.a HBMRemoteSpk.o
