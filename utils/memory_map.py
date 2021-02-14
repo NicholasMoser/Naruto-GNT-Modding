@@ -10,6 +10,7 @@ def main():
         print('Usage:')
         print('-d   Find duplicate functions.')
         print('-l   Map length check.')
+        print('-o   Find functions without objects.')
         print('-v   Check the memory map for validity.')
         print('-z   Find functions that still are unidentified.')
         print('Example:')
@@ -20,6 +21,8 @@ def main():
         find_duplicates()
     elif arg == '-l':
         map_length_check()
+    elif arg == '-o':
+        find_missing_objects()
     elif arg == '-v':
         is_map_valid()
     elif arg == '-z':
@@ -66,6 +69,18 @@ def map_length_check():
                     print('Function: {} ({:02X})'.format(previous[4].strip(), previous_addr))
                     print('  Expected: {:02X} Actual: {:02X}'.format(previous_length, diff))
             previous = parts
+
+def find_missing_objects():
+    ''' Find functions without objects. '''
+    map_file = sys.argv[2]
+    with open('../general/symbol_maps/' + map_file, 'r') as open_file:
+        lines = open_file.readlines()
+    for line in lines:
+        if line.startswith('8') and len(line) > 29:
+            function = line[29:-1]
+            parts = function.split(' ')
+            if (len(parts) < 2):
+                print(f'Function {function} does not have an object.')
 
 def is_map_valid():
     ''' Checks that the given memory map file is a valid memory map. '''
