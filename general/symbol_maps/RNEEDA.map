@@ -6815,144 +6815,150 @@
 8020d8b4 00000024 8020d8b4 0 zz_8020d8b4_
 8020d8d8 00000014 8020d8d8 0 zz_8020d8d8_
 8020d8ec 0000009c 8020d8ec 0 zz_8020d8ec_
-8020d988 0000011c 8020d988 0 zz_8020d988_
-8020daa4 00000018 8020daa4 0 zz_8020daa4_
-8020dabc 00000004 8020dabc 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-8020dac0 00000008 8020dac0 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
-8020dac8 00000008 8020dac8 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
-8020dad0 00000008 8020dad0 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
-8020dad8 000006f0 8020dad8 0 zz_8020dad8_
-8020e1c8 00000914 8020e1c8 0 zz_8020e1c8_
-8020eadc 00000018 8020eadc 0 zz_8020eadc_
-8020eaf4 0000016c 8020eaf4 0 zz_8020eaf4_
-8020ec60 0000003c 8020ec60 0 zz_8020ec60_
-8020ec9c 0000003c 8020ec9c 0 J3DModelLoader_v26::J3DModelLoader_v26(void) 	J3DGraphLoader.a J3DModelLoader.o
-8020ecd8 0000006c 8020ecd8 0 zz_8020ecd8_
-8020ed44 00000068 8020ed44 0 zz_8020ed44_
-8020edac 00000068 8020edac 0 zz_8020edac_
-8020ee14 0000000c 8020ee14 0 zz_8020ee14_
-8020ee20 00000050 8020ee20 0 zz_8020ee20_
-8020ee70 00000030 8020ee70 0 zz_8020ee70_
-8020eea0 000000c4 8020eea0 0 zz_8020eea0_
-8020ef64 00000030 8020ef64 0 zz_8020ef64_
-8020ef94 00000030 8020ef94 0 zz_8020ef94_
-8020efc4 00000088 8020efc4 0 zz_8020efc4_
-8020f04c 00000010 8020f04c 0 zz_8020f04c_
-8020f05c 00000008 8020f05c 0 GXInitTexObjUserData 	gx.a GXTexture.o
-8020f064 0000000c 8020f064 0 cAIPad::__ct(void)
-8020f070 00000080 8020f070 0 zz_8020f070_
-8020f0f0 000000c0 8020f0f0 0 zz_8020f0f0_
-8020f1b0 000000ac 8020f1b0 0 zz_8020f1b0_
-8020f25c 00000020 8020f25c 0 zz_8020f25c_
-8020f27c 00000034 8020f27c 0 zz_8020f27c_
-8020f2b0 000000a0 8020f2b0 0 zz_8020f2b0_
-8020f350 00000304 8020f350 0 zz_8020f350_
-8020f654 0000010c 8020f654 0 zz_8020f654_
-8020f760 000000e8 8020f760 0 zz_8020f760_
-8020f848 000000e8 8020f848 0 zz_8020f848_
-8020f930 00000048 8020f930 0 zz_8020f930_
-8020f978 00000070 8020f978 0 zz_8020f978_
-8020f9e8 00000098 8020f9e8 0 zz_8020f9e8_
-8020fa80 00000010 8020fa80 0 J3DTexGenBlockPatched::getTexCoord(unsigned long) 	J3DGraphBase.a J3DMatBlock.o
-8020fa90 0000009c 8020fa90 0 zz_8020fa90_
-8020fb2c 000000f8 8020fb2c 0 zz_8020fb2c_
-8020fc24 0000006c 8020fc24 0 zz_8020fc24_
-8020fc90 00000010 8020fc90 0 zz_8020fc90_
-8020fca0 000000b8 8020fca0 0 zz_8020fca0_
-8020fd58 0000004c 8020fd58 0 zz_8020fd58_
-8020fda4 00000148 8020fda4 0 zz_8020fda4_
-8020feec 0000017c 8020feec 0 zz_8020feec_
-80210068 00000120 80210068 0 zz_80210068_
-80210188 00000294 80210188 0 zz_80210188_
-8021041c 0000007c 8021041c 0 zz_8021041c_
-80210498 00000070 80210498 0 zz_80210498_
-80210508 00000150 80210508 0 zz_80210508_
-80210658 00000090 80210658 0 zz_80210658_
-802106e8 000000c4 802106e8 0 zz_802106e8_
-802107ac 00000008 802107ac 0 J3DColorBlockLightOff::setColorChanNum(unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-802107b4 00000008 802107b4 0 J3DColorBlockLightOff::setColorChanNum(unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-802107bc 0000000c 802107bc 0 FETweener::setDoneCallFunc(void (*)(void *), void *)
-802107c8 00000098 802107c8 0 zz_802107c8_
-80210860 000001cc 80210860 0 zz_80210860_
-80210a2c 00000020 80210a2c 0 zz_80210a2c_
-80210a4c 00000138 80210a4c 0 zz_80210a4c_
-80210b84 0000003c 80210b84 0 zz_80210b84_
-80210bc0 0000010c 80210bc0 0 zz_80210bc0_
-80210ccc 00000264 80210ccc 0 zz_80210ccc_
-80210f30 000002a0 80210f30 0 zz_80210f30_
-802111d0 0000002c 802111d0 0 zz_802111d0_
-802111fc 00000008 802111fc 0 zz_802111fc_
-80211204 00000008 80211204 0 zz_802111fc_
-8021120c 0000009c 8021120c 0 zz_8021120c_
-802112a8 00000058 802112a8 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
-80211300 00000034 80211300 0 zz_80211300_
-80211334 0000007c 80211334 0 zz_80211334_
-802113b0 00000068 802113b0 0 zz_802113b0_
-80211418 000000f4 80211418 0 zz_80211418_
-8021150c 00000074 8021150c 0 zz_8021150c_
-80211580 000000dc 80211580 0 zz_80211580_
-8021165c 0000006c 8021165c 0 zz_8021165c_
+8020d988 0000011c 8020d988 0 GetValue__Q44nw4r3snd6detail3LfoCFv 	libnw4r_snd.a snd_Lfo.o
+8020daa4 00000004 8020daa4 0 OnUpdateFrameSoundThread__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_MidiSeqPlayer.o
+8020daa8 00000010 8020daa8 0 OnShutdownSoundThread__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_MidiSeqPlayer.o
+8020dab8 00000004 8020dab8 0 InvalidateWaveData__Q44nw4r3snd6detail9SeqPlayerFPCvPCv 	libnw4r_snd.a snd_MidiSeqPlayer.o
+8020dabc 00000004 8020dabc 0 OnUpdateVoiceSoundThread__Q54nw4r3snd6detail11SoundThread14PlayerCallbackFv 	libnw4r_snd.a snd_MidiSeqPlayer.o
+8020dac0 00000008 8020dac0 0 IsPause__Q44nw4r3snd6detail9SeqPlayerCFv 	libnw4r_snd.a snd_MidiSeqPlayer.o
+8020dac8 00000008 8020dac8 0 IsStarted__Q44nw4r3snd6detail9SeqPlayerCFv 	libnw4r_snd.a snd_MidiSeqPlayer.o
+8020dad0 00000008 8020dad0 0 IsActive__Q44nw4r3snd6detail9SeqPlayerCFv 	libnw4r_snd.a snd_MidiSeqPlayer.o
+8020dad8 000006f0 8020dad8 0 Parse__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackb 	libnw4r_snd.a snd_MmlParser.o
+8020e1c8 00000914 8020e1c8 0 CommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackUlll 	libnw4r_snd.a snd_MmlParser.o
+8020eadc 00000018 8020eadc 0 NoteOnCommandProc__Q44nw4r3snd6detail9MmlParserCFPQ44nw4r3snd6detail11MmlSeqTrackiilb 	libnw4r_snd.a snd_MmlParser.o
+8020eaf4 0000016c 8020eaf4 0 ReadArg__Q44nw4r3snd6detail9MmlParserCFPPCUcPQ44nw4r3snd6detail9SeqPlayerPQ44nw4r3snd6detail8SeqTrackQ54nw4r3snd6detail9MmlParser10SeqArgType 	libnw4r_snd.a snd_MmlParser.o
+8020ec60 0000003c 8020ec60 0 ParseAllocTrack__Q44nw4r3snd6detail9MmlParserFPCvUlPUl 	libnw4r_snd.a snd_MmlParser.o
+8020ec9c 0000003c 8020ec9c 0 __ct__Q44nw4r3snd6detail11MmlSeqTrackFv 	libnw4r_snd.a snd_MmlSeqTrack.o
+8020ecd8 00000014 8020ecd8 0 Parse__Q44nw4r3snd6detail11MmlSeqTrackFb 	libnw4r_snd.a snd_MmlSeqTrack.o
+8020ecec 00000058 8020ecec 0 __dt__Q44nw4r3snd6detail11MmlSeqTrackFv 	libnw4r_snd.a snd_MmlSeqTrack.o
+8020ed44 00000068 8020ed44 0 AllocTrack__Q44nw4r3snd6detail20MmlSeqTrackAllocatorFPQ44nw4r3snd6detail9SeqPlayer 	libnw4r_snd.a snd_MmlSeqTrackAllocator.o
+8020edac 00000068 8020edac 0 FreeTrack__Q44nw4r3snd6detail20MmlSeqTrackAllocatorFPQ44nw4r3snd6detail8SeqTrack 	libnw4r_snd.a snd_MmlSeqTrackAllocator.o
+8020ee14 0000000c 8020ee14 0 Create__Q44nw4r3snd6detail20MmlSeqTrackAllocatorFPvUl 	libnw4r_snd.a snd_MmlSeqTrackAllocator.o
+8020ee20 00000008 8020ee20 0 Destroy__Q44nw4r3snd6detail20MmlSeqTrackAllocatorFPvUl 	libnw4r_snd.a snd_MmlSeqTrackAllocator.o
+8020ee28 00000008 8020ee28 0 GetAllocatableTrackCount__Q44nw4r3snd6detail20MmlSeqTrackAllocatorCFv 	libnw4r_snd.a snd_MmlSeqTrackAllocator.o
+8020ee30 00000040 8020ee30 0 __dt__Q44nw4r3snd6detail20MmlSeqTrackAllocatorFv 	libnw4r_snd.a snd_MmlSeqTrackAllocator.o
+8020ee70 00000030 8020ee70 0 __ct__Q44nw4r3snd6detail10PlayerHeapFv 	libnw4r_snd.a snd_PlayerHeap.o
+8020eea0 000000c4 8020eea0 0 __dt__Q44nw4r3snd6detail10PlayerHeapFv 	libnw4r_snd.a snd_PlayerHeap.o
+8020ef64 00000030 8020ef64 0 Create__Q44nw4r3snd6detail10PlayerHeapFPvUl 	libnw4r_snd.a snd_PlayerHeap.o
+8020ef94 00000030 8020ef94 0 Alloc__Q44nw4r3snd6detail10PlayerHeapFUl 	libnw4r_snd.a snd_PlayerHeap.o
+8020efc4 00000088 8020efc4 0 Clear__Q44nw4r3snd6detail10PlayerHeapFv 	libnw4r_snd.a snd_PlayerHeap.o
+8020f04c 00000010 8020f04c 0 GetFreeSize__Q44nw4r3snd6detail10PlayerHeapCFv 	libnw4r_snd.a snd_PlayerHeap.o
+8020f05c 00000008 8020f05c 0 AttachSound 	libnw4r_snd.a snd_PlayerHeap.o
+8020f064 0000000c 8020f064 0 DetachSound 	libnw4r_snd.a snd_PlayerHeap.o
+8020f070 00000080 8020f070 0 __ct__Q34nw4r3snd13RemoteSpeakerFv 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f0f0 000000c0 8020f0f0 0 Setup__Q34nw4r3snd13RemoteSpeakerFPFll_v 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f1b0 000000ac 8020f1b0 0 Shutdown__Q34nw4r3snd13RemoteSpeakerFPFll_v 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f25c 00000020 8020f25c 0 EnableOutput__Q34nw4r3snd13RemoteSpeakerFb 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f27c 00000034 8020f27c 0 Update__Q34nw4r3snd13RemoteSpeakerFv 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f2b0 000000a0 8020f2b0 0 ExecCommand__Q34nw4r3snd13RemoteSpeakerFQ44nw4r3snd13RemoteSpeaker14SpeakerCommand 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f350 00000304 8020f350 0 UpdateStreamData__Q34nw4r3snd13RemoteSpeakerFPCs 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f654 0000010c 8020f654 0 SpeakerOnCallback__Q34nw4r3snd13RemoteSpeakerFll 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f760 000000e8 8020f760 0 SpeakerPlayCallback__Q34nw4r3snd13RemoteSpeakerFll 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f848 000000e8 8020f848 0 SpeakerOffCallback__Q34nw4r3snd13RemoteSpeakerFll 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f930 00000048 8020f930 0 ContinueAlarmHandler__Q34nw4r3snd13RemoteSpeakerFP7OSAlarmP9OSContext 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f978 00000070 8020f978 0 IntervalAlarmHandler__Q34nw4r3snd13RemoteSpeakerFP7OSAlarmP9OSContext 	libnw4r_snd.a snd_RemoteSpeaker.o
+8020f9e8 00000098 8020f9e8 0 GetInstance__Q44nw4r3snd6detail20RemoteSpeakerManagerFv 	libnw4r_snd.a snd_RemoteSpeakerManager.o
+8020fa80 00000010 8020fa80 0 GetRemoteSpeaker__Q44nw4r3snd6detail20RemoteSpeakerManagerFi 	libnw4r_snd.a snd_RemoteSpeakerManager.oGetRemoteSpeaker__Q44nw4r3snd6detail20RemoteSpeakerManagerFi 	libnw4r_snd.a snd_RemoteSpeakerManager.o
+8020fa90 0000009c 8020fa90 0 Setup__Q44nw4r3snd6detail20RemoteSpeakerManagerFv 	libnw4r_snd.a snd_RemoteSpeakerManager.oSetup__Q44nw4r3snd6detail20RemoteSpeakerManagerFv 	libnw4r_snd.a snd_RemoteSpeakerManager.o
+8020fb2c 000000f8 8020fb2c 0 RemoteSpeakerAlarmProc__Q44nw4r3snd6detail20RemoteSpeakerManagerFP7OSAlarmP9OSContext 	libnw4r_snd.a snd_RemoteSpeakerManager.o
+8020fc24 0000006c 8020fc24 0 __ct__Q44nw4r3snd6detail13SeqFileReaderFPCv 	libnw4r_snd.a snd_SeqFile.o
+8020fc90 00000010 8020fc90 0 GetBaseAddress__Q44nw4r3snd6detail13SeqFileReaderCFv 	libnw4r_snd.a snd_SeqFile.o
+8020fca0 000000b8 8020fca0 0 ReadOffsetByLabel__Q44nw4r3snd6detail13SeqFileReaderCFPCcPUl 	libnw4r_snd.a snd_SeqFile.o
+8020fd58 0000004c 8020fd58 0 InitSeqPlayer__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_SeqPlayer.o
+8020fda4 00000148 8020fda4 0 __ct__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_SeqPlayer.o
+8020feec 0000017c 8020feec 0 __dt__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_SeqPlayer.o
+80210068 00000120 80210068 0 InitParam__Q44nw4r3snd6detail9SeqPlayerFiPQ44nw4r3snd6detail14NoteOnCallback 	libnw4r_snd.a snd_SeqPlayer.o
+80210188 00000294 80210188 0 Setup__Q44nw4r3snd6detail9SeqPlayerFPQ44nw4r3snd6detail17SeqTrackAllocatorUliPQ44nw4r3snd6detail14NoteOnCallback 	libnw4r_snd.a snd_SeqPlayer.o
+8021041c 0000007c 8021041c 0 SetSeqData__Q44nw4r3snd6detail9SeqPlayerFPCvl 	libnw4r_snd.a snd_SeqPlayer.o
+80210498 00000070 80210498 0 Start__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_SeqPlayer.o
+80210508 00000150 80210508 0 Stop__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_SeqPlayer.o
+80210658 00000090 80210658 0 Pause__Q44nw4r3snd6detail9SeqPlayerFb 	libnw4r_snd.a snd_SeqPlayer.o
+802106e8 000000c4 802106e8 0 Skip__Q44nw4r3snd6detail9SeqPlayerFQ54nw4r3snd6detail9SeqPlayer10OffsetTypei 	libnw4r_snd.a snd_SeqPlayer.o
+802107ac 00000008 802107ac 0 SetChannelPriority__Q44nw4r3snd6detail9SeqPlayerFi 	libnw4r_snd.a snd_SeqPlayer.o
+802107b4 00000008 802107b4 0 SetReleasePriorityFix__Q44nw4r3snd6detail9SeqPlayerFb 	libnw4r_snd.a snd_SeqPlayer.o
+802107bc 0000000c 802107bc 0 SetSeqUserprocCallback__Q44nw4r3snd6detail9SeqPlayerFPFUsPQ34nw4r3snd24SeqUserprocCallbackParamPv_vPv 	libnw4r_snd.a snd_SeqPlayer.o
+802107c8 00000098 802107c8 0 CallSeqUserprocCallback__Q44nw4r3snd6detail9SeqPlayerFUsPQ44nw4r3snd6detail8SeqTrack 	libnw4r_snd.a snd_SeqPlayer.o
+80210860 000001cc 80210860 0 InvalidateData__Q44nw4r3snd6detail9SeqPlayerFPCvPCv 	libnw4r_snd.a snd_SeqPlayer.o
+80210a2c 00000020 80210a2c 0 GetPlayerTrack__Q44nw4r3snd6detail9SeqPlayerFi 	libnw4r_snd.a snd_SeqPlayer.o
+80210a4c 00000138 80210a4c 0 ParseNextTick__Q44nw4r3snd6detail9SeqPlayerFb 	libnw4r_snd.a snd_SeqPlayer.o
+80210b84 0000003c 80210b84 0 GetVariablePtr__Q44nw4r3snd6detail9SeqPlayerFi 	libnw4r_snd.a snd_SeqPlayer.o
+80210bc0 0000010c 80210bc0 0 Update__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_SeqPlayer.o
+80210ccc 00000264 80210ccc 0 UpdateTick__Q44nw4r3snd6detail9SeqPlayerFi 	libnw4r_snd.a snd_SeqPlayer.o
+80210f30 000002a0 80210f30 0 SkipTick__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_SeqPlayer.o
+802111d0 0000002c 802111d0 0 NoteOn__Q44nw4r3snd6detail9SeqPlayerFiRCQ44nw4r3snd6detail10NoteOnInfo 	libnw4r_snd.a snd_SeqPlayer.o
+802111fc 00000008 802111fc 0 @180@__dt__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_SeqPlayer.o
+80211204 00000008 80211204 0 @192@__dt__Q44nw4r3snd6detail9SeqPlayerFv 	libnw4r_snd.a snd_SeqPlayer.o
+8021120c 0000009c 8021120c 0 __ct__Q44nw4r3snd6detail8SeqSoundFPQ44nw4r3snd6detail49SoundInstanceManager<Q44nw4r3snd6detail8SeqSound>ii 	libnw4r_snd.a snd_SeqSound.o
+802112a8 00000058 802112a8 0 __dt__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv 	libnw4r_snd.a snd_SeqSound.o
+80211300 00000034 80211300 0 InitParam__Q44nw4r3snd6detail8SeqSoundFv 	libnw4r_snd.a snd_SeqSound.o
+80211334 0000007c 80211334 0 Setup__Q44nw4r3snd6detail8SeqSoundFPQ44nw4r3snd6detail17SeqTrackAllocatorUlPQ44nw4r3snd6detail14NoteOnCallback 	libnw4r_snd.a snd_SeqSound.o
+802113b0 00000068 802113b0 0 Prepare__Q44nw4r3snd6detail8SeqSoundFPCvlQ54nw4r3snd6detail9SeqPlayer10OffsetTypei 	libnw4r_snd.a snd_SeqSound.o
+80211418 000000f4 80211418 0 Prepare__Q44nw4r3snd6detail8SeqSoundFPQ34nw4r2ut10FileStreamlQ54nw4r3snd6detail9SeqPlayer10OffsetTypei 	libnw4r_snd.a snd_SeqSound.o
+8021150c 00000074 8021150c 0 NotifyLoadAsyncEndSeqData__Q44nw4r3snd6detail8SeqSoundFbPCvPv 	libnw4r_snd.a snd_SeqSound.o
+80211580 000000dc 80211580 0 Shutdown__Q44nw4r3snd6detail8SeqSoundFv 	libnw4r_snd.a snd_SeqSound.o
+8021165c 0000006c 8021165c 0 __dt__Q44nw4r3snd6detail8SeqSoundFv 	libnw4r_snd.a snd_SeqSound.o
 802116c8 00000008 802116c8 0 zz_802116c8_
 802116d0 00000008 802116d0 0 zz_802116d0_
-802116d8 000000ec 802116d8 0 zz_802116d8_
-802117c4 00000014 802117c4 0 LexicalCast<b,i>(int &)
-802117d8 00000100 802117d8 0 zz_802117d8_
-802118d8 00000024 802118d8 0 zz_802118d8_
-802118fc 0000002c 802118fc 0 zz_802118fc_
-80211928 00000008 80211928 0 J3DTexGenBlock4::getNBTScale(void) 	J3DGraphBase.a J3DMatBlock.o
-80211930 00000008 80211930 0 J3DTexGenBlock4::getNBTScale(void) 	J3DGraphBase.a J3DMatBlock.o
-80211938 00000008 80211938 0 J3DColorBlockLightOff::getColorChanNum(void) const 	J3DGraphBase.a J3DMatBlock.o
-80211940 00000008 80211940 0 nw4hbm::lyt::Window::GetRuntimeTypeInfo(void) const 	homebuttonLib.a lyt_window.o
-80211948 0000000c 80211948 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
-80211954 00000038 80211954 0 zz_80211954_
-8021198c 00000008 8021198c 0 J3DColorBlockLightOff::setColorChanNum(unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-80211994 00000090 80211994 0 zz_80211994_
-80211a24 00000104 80211a24 0 zz_80211a24_
-80211b28 00000180 80211b28 0 zz_80211b28_
-80211ca8 00000010 80211ca8 0 zz_80211ca8_
-80211cb8 0000001c 80211cb8 0 zz_80211cb8_
-80211cd4 000000d0 80211cd4 0 zz_80211cd4_
-80211da4 000000d0 80211da4 0 zz_80211da4_
-80211e74 00000174 80211e74 0 zz_80211e74_
-80211fe8 00000090 80211fe8 0 zz_80211fe8_
-80212078 00000094 80212078 0 zz_80212078_
-8021210c 000005c0 8021210c 0 zz_8021210c_
-802126cc 0000006c 802126cc 0 zz_802126cc_
-80212738 000000f8 80212738 0 zz_80212738_
-80212830 00000168 80212830 0 zz_80212830_
-80212998 00000020 80212998 0 zz_80212998_
-802129b8 0000040c 802129b8 0 zz_802129b8_
-80212dc4 00000008 80212dc4 0 zz_80212dc4_
-80212dcc 00000024 80212dcc 0 zz_80212dcc_
-80212df0 00000040 80212df0 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-80212e30 00000014 80212e30 0 LexicalCast<b,i>(int &)
-80212e44 00000008 80212e44 0 GXInitTexObjUserData 	gx.a GXTexture.o
-80212e4c 00000018 80212e4c 0 zz_80212e4c_
-80212e64 00000008 80212e64 0 zz_80212e64_
-80212e6c 00000008 80212e6c 0 zz_80212e6c_
-80212e74 00000010 80212e74 0 zz_80212e6c_
-80212e84 00000008 80212e84 0 zz_80212e84_
-80212e8c 00000008 80212e8c 0 zz_80212e8c_
-80212e94 00000008 80212e94 0 zz_80212e94_
-80212e9c 00000008 80212e9c 0 zz_80212e9c_
-80212ea4 00000008 80212ea4 0 zz_80212ea4_
-80212eac 00000008 80212eac 0 zz_80212eac_
-80212eb4 00000008 80212eb4 0 zz_80212eb4_
-80212ebc 00000008 80212ebc 0 zz_80212ebc_
-80212ec4 00000008 80212ec4 0 zz_80212ec4_
-80212ecc 00000008 80212ecc 0 zz_80212ecc_
-80212ed4 00000008 80212ed4 0 zz_80212ed4_
-80212edc 00000008 80212edc 0 zz_80212edc_
-80212ee4 00000008 80212ee4 0 zz_80212ee4_
-80212eec 00000228 80212eec 0 zz_80212eec_
-80213114 00000118 80213114 0 zz_80213114_
-8021322c 00000118 8021322c 0 zz_8021322c_
-80213344 0000007c 80213344 0 zz_80213344_
-802133c0 00000024 802133c0 0 GLXMemoryInfo::__ct(void)
-802133e4 000000b0 802133e4 0 zz_802133e4_
-80213494 000000a8 80213494 0 zz_80213494_
-8021353c 0000000c 8021353c 0 zz_8021353c_
-80213548 000000f0 80213548 0 zz_80213548_
+802116d8 000000ec 802116d8 0 OnUpdatePlayerPriority__Q44nw4r3snd6detail8SeqSoundFv 	libnw4r_snd.a snd_SeqSound.o
+802117c4 00000014 802117c4 0 IsAttachedTempSpecialHandle__Q44nw4r3snd6detail8SeqSoundFv 	libnw4r_snd.a snd_SeqSound.o
+802117d8 00000008 802117d8 0 DetachTempSpecialHandle__Q44nw4r3snd6detail8SeqSoundFv 	libnw4r_snd.a snd_SeqSound.o
+802117e0 000000f8 802117e0 0 Execute__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv 	libnw4r_snd.a snd_SeqSound.o
+802118d8 00000024 802118d8 0 Cancel__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv 	libnw4r_snd.a snd_SeqSound.o
+802118fc 0000002c 802118fc 0 OnCancel__Q54nw4r3snd6detail8SeqSound11SeqLoadTaskFv 	libnw4r_snd.a snd_SeqSound.o
+80211928 00000008 80211928 0 GetBasicPlayer__Q44nw4r3snd6detail8SeqSoundFv 	libnw4r_snd.a snd_SeqSound.o
+80211930 00000008 80211930 0 GetBasicPlayer__Q44nw4r3snd6detail8SeqSoundCFv 	libnw4r_snd.a snd_SeqSound.o
+80211938 00000008 80211938 0 IsPrepared__Q44nw4r3snd6detail8SeqSoundCFv 	libnw4r_snd.a snd_SeqSound.o
+80211940 00000008 80211940 0 GetRuntimeTypeInfo__Q44nw4r3snd6detail8SeqSoundCFv 	libnw4r_snd.a snd_SeqSound.o
+80211948 0000000c 80211948 0 __sinit_\snd_SeqSound_cpp 	libnw4r_snd.a snd_SeqSound.o
+80211954 00000038 80211954 0 DetachSound__Q34nw4r3snd14SeqSoundHandleFv 	libnw4r_snd.a snd_SeqSoundHandle.o
+8021198c 00000008 8021198c 0 SetPlayerTrackNo__Q44nw4r3snd6detail8SeqTrackFi 	libnw4r_snd.a snd_SeqTrack.o
+80211994 00000090 80211994 0 __ct__Q44nw4r3snd6detail8SeqTrackFv 	libnw4r_snd.a snd_SeqTrack.o
+80211a24 00000104 80211a24 0 __dt__Q44nw4r3snd6detail8SeqTrackFv 	libnw4r_snd.a snd_SeqTrack.o
+80211b28 00000180 80211b28 0 InitParam__Q44nw4r3snd6detail8SeqTrackFv 	libnw4r_snd.a snd_SeqTrack.o
+80211ca8 00000010 80211ca8 0 SetSeqData__Q44nw4r3snd6detail8SeqTrackFPCvl 	libnw4r_snd.a snd_SeqTrack.o
+80211cb8 0000001c 80211cb8 0 Open__Q44nw4r3snd6detail8SeqTrackFv 	libnw4r_snd.a snd_SeqTrack.o
+80211cd4 000000d0 80211cd4 0 Close__Q44nw4r3snd6detail8SeqTrackFv 	libnw4r_snd.a snd_SeqTrack.o
+80211da4 000000d0 80211da4 0 UpdateChannelLength__Q44nw4r3snd6detail8SeqTrackFv 	libnw4r_snd.a snd_SeqTrack.o
+80211e74 00000174 80211e74 0 ParseNextTick__Q44nw4r3snd6detail8SeqTrackFb 	libnw4r_snd.a snd_SeqTrack.o
+80211fe8 00000090 80211fe8 0 ReleaseAllChannel__Q44nw4r3snd6detail8SeqTrackFi 	libnw4r_snd.a snd_SeqTrack.o
+80212078 00000094 80212078 0 PauseAllChannel__Q44nw4r3snd6detail8SeqTrackFb 	libnw4r_snd.a snd_SeqTrack.o
+8021210c 000005c0 8021210c 0 UpdateChannelParam__Q44nw4r3snd6detail8SeqTrackFv 	libnw4r_snd.a snd_SeqTrack.o
+802126cc 0000006c 802126cc 0 FreeAllChannel__Q44nw4r3snd6detail8SeqTrackFv 	libnw4r_snd.a snd_SeqTrack.o
+80212738 000000f8 80212738 0 ChannelCallbackFunc__Q44nw4r3snd6detail8SeqTrackFPQ44nw4r3snd6detail7ChannelQ54nw4r3snd6detail7Channel21ChannelCallbackStatusUl 	libnw4r_snd.a snd_SeqTrack.o
+80212830 00000168 80212830 0 SetMute__Q44nw4r3snd6detail8SeqTrackFQ34nw4r3snd7SeqMute 	libnw4r_snd.a snd_SeqTrack.o
+80212998 00000020 80212998 0 GetVariablePtr__Q44nw4r3snd6detail8SeqTrackFi 	libnw4r_snd.a snd_SeqTrack.o
+802129b8 0000040c 802129b8 0 NoteOn__Q44nw4r3snd6detail8SeqTrackFiilb 	libnw4r_snd.a snd_SeqTrack.o
+80212dc4 00000008 80212dc4 0 detail_ConvertLabelStringToSoundId__Q34nw4r3snd18SoundArchivePlayerFPCc 	libnw4r_snd.a snd_SoundActor.o
+80212dcc 00000024 80212dcc 0 __ct__Q34nw4r3snd12SoundArchiveFv 	libnw4r_snd.a snd_SoundArchive.o
+80212df0 00000040 80212df0 0 __dt__Q34nw4r3snd12SoundArchiveFv 	libnw4r_snd.a snd_SoundArchive.o
+80212e30 00000014 80212e30 0 IsAvailable__Q34nw4r3snd12SoundArchiveCFv 	libnw4r_snd.a snd_SoundArchive.o
+80212e44 00000008 80212e44 0 Setup__nw4r3snd12SoundArchiveFPQ44nw4r3sn 	libnw4r_snd.a snd_SoundArchive.o
+80212e4c 00000018 80212e4c 0 Shutdown__Q34nw4r3snd12SoundArchiveFv 	libnw4r_snd.a snd_SoundArchive.o
+80212e64 00000008 80212e64 0 GetPlayerCount__Q34nw4r3snd12SoundArchiveCFv 	libnw4r_snd.a snd_SoundArchive.o
+80212e6c 00000008 80212e6c 0 GetGroupCount__Q34nw4r3snd12SoundArchiveCFv 	libnw4r_snd.a snd_SoundArchive.o
+80212e74 00000010 80212e74 0 ConvertLabelStringToSoundId__Q34nw4r3snd12SoundArchiveCFPCc 	libnw4r_snd.a snd_SoundArchive.o
+80212e84 00000008 80212e84 0 GetSoundType__Q34nw4r3snd12SoundArchiveCFUl 	libnw4r_snd.a snd_SoundArchive.o
+80212e8c 00000008 80212e8c 0 ReadSoundInfo__Q34nw4r3snd12SoundArchiveCFUlPQ44nw4r3snd12SoundArchive9SoundInfo 	libnw4r_snd.a snd_SoundArchive.o
+80212e94 00000008 80212e94 0 ReadSeqSoundInfo__Q34nw4r3snd12SoundArchiveCFUlPQ44nw4r3snd12SoundArchive12SeqSoundInfo 	libnw4r_snd.a snd_SoundArchive.o
+80212e9c 00000008 80212e9c 0 detail_ReadStrmSoundInfo__Q34nw4r3snd12SoundArchiveCFUlPQ44nw4r3snd12SoundArchive13StrmSoundInfo 	libnw4r_snd.a snd_SoundArchive.o
+80212ea4 00000008 80212ea4 0 detail_ReadWaveSoundInfo__Q34nw4r3snd12SoundArchiveCFUlPQ44nw4r3snd12SoundArchive13WaveSoundInfo 	libnw4r_snd.a snd_SoundArchive.o
+80212eac 00000008 80212eac 0 ReadPlayerInfo__Q34nw4r3snd12SoundArchiveCFUlPQ44nw4r3snd12SoundArchive10PlayerInfo 	libnw4r_snd.a snd_SoundArchive.o
+80212eb4 00000008 80212eb4 0 ReadSoundArchivePlayerInfo__Q34nw4r3snd12SoundArchiveCFPQ44nw4r3snd12SoundArchive22SoundArchivePlayerInfo 	libnw4r_snd.a snd_SoundArchive.o
+80212ebc 00000008 80212ebc 0 ReadBankInfo__Q34nw4r3snd12SoundArchiveCFUlPQ44nw4r3snd12SoundArchive8BankInfo 	libnw4r_snd.a snd_SoundArchive.o
+80212ec4 00000008 80212ec4 0 detail_ReadGroupInfo__Q34nw4r3snd12SoundArchiveCFUlPQ44nw4r3snd12SoundArchive9GroupInfo 	libnw4r_snd.a snd_SoundArchive.o
+80212ecc 00000008 80212ecc 0 detail_ReadGroupItemInfo__Q34nw4r3snd12SoundArchiveCFUlUlPQ44nw4r3snd12SoundArchive13GroupItemInfo 	libnw4r_snd.a snd_SoundArchive.o
+80212ed4 00000008 80212ed4 0 detail_GetFileCount__Q34nw4r3snd12SoundArchiveCFv 	libnw4r_snd.a snd_SoundArchive.o
+80212edc 00000008 80212edc 0 detail_ReadFileInfo__Q34nw4r3snd12SoundArchiveCFUlPQ44nw4r3snd12SoundArchive8FileInfo 	libnw4r_snd.a snd_SoundArchive.o
+80212ee4 00000008 80212ee4 0 detail_ReadFilePos__Q34nw4r3snd12SoundArchiveCFUlUlPQ44nw4r3snd12SoundArchive7FilePos 	libnw4r_snd.a snd_SoundArchive.o
+80212eec 00000228 80212eec 0 detail_OpenFileStream__Q34nw4r3snd12SoundArchiveCFUlPvi 	libnw4r_snd.a snd_SoundArchive.o
+80213114 00000118 80213114 0 detail_OpenGroupStream__Q34nw4r3snd12SoundArchiveCFUlPvi 	libnw4r_snd.a snd_SoundArchive.o
+8021322c 00000118 8021322c 0 detail_OpenGroupWaveDataStream__Q34nw4r3snd12SoundArchiveCFUlPvi 	libnw4r_snd.a snd_SoundArchive.o
+80213344 0000007c 80213344 0 SetExternalFileRoot__Q34nw4r3snd12SoundArchiveFPCc 	libnw4r_snd.a snd_SoundArchive.o
+802133c0 00000024 802133c0 0 __ct__Q44nw4r3snd6detail22SoundArchiveFileReaderFv 	libnw4r_snd.a snd_SoundArchiveFile.o
+802133e4 000000b0 802133e4 0 Init__Q44nw4r3snd6detail22SoundArchiveFileReaderFPCv 	libnw4r_snd.a snd_SoundArchiveFile.o
+80213494 000000a8 80213494 0 SetStringChunk__Q44nw4r3snd6detail22SoundArchiveFileReaderFPCvUl 	libnw4r_snd.a snd_SoundArchiveFile.o
+8021353c 0000000c 8021353c 0 SetInfoChunk__Q44nw4r3snd6detail22SoundArchiveFileReaderFPCvUl 	libnw4r_snd.a snd_SoundArchiveFile.o
+80213548 000000f0 80213548 0 GetSoundType__Q44nw4r3snd6detail22SoundArchiveFileReaderCFUl 	libnw4r_snd.a snd_SoundArchiveFile.o
 80213638 00000128 80213638 0 ReadSoundInfo__Q44nw4r3snd6detail22SoundArchiveFileReaderCFUlPQ44nw4r3snd12SoundArchive9SoundInfo 	libnw4r_snd.a snd_SoundArchiveFile.o
 80213760 000000e4 80213760 0 ReadSeqSoundInfo__Q44nw4r3snd6detail22SoundArchiveFileReaderCFUlPQ44nw4r3snd12SoundArchive12SeqSoundInfo 	libnw4r_snd.a snd_SoundArchiveFile.o
 80213844 00000104 80213844 0 ReadStrmSoundInfo__Q44nw4r3snd6detail22SoundArchiveFileReaderCFUlPQ44nw4r3snd12SoundArchive13StrmSoundInfo 	libnw4r_snd.a snd_SoundArchiveFile.o
@@ -6964,7 +6970,7 @@
 80213dc8 00000084 80213dc8 0 ReadSoundArchivePlayerInfo__Q44nw4r3snd6detail22SoundArchiveFileReaderCFPQ44nw4r3snd12SoundArchive22SoundArchivePlayerInfo 	libnw4r_snd.a snd_SoundArchiveFile.o
 80213e4c 00000040 80213e4c 0 GetPlayerCount__Q44nw4r3snd6detail22SoundArchiveFileReaderCFv 	libnw4r_snd.a snd_SoundArchiveFile.o
 80213e8c 00000044 80213e8c 0 GetGroupCount__Q44nw4r3snd6detail22SoundArchiveFileReaderCFv 	libnw4r_snd.a snd_SoundArchiveFile.o
-80213ed0 00000040 80213ed0 0 GetBankCount__Q44nw4r3snd6detail22SoundArchiveFileReaderCFv libnw4r_snd.a snd_SoundArchiveFile.o
+80213ed0 00000040 80213ed0 0 GetFileCount__Q44nw4r3snd6detail22SoundArchiveFileReaderCFv 	libnw4r_snd.a snd_SoundArchiveFile.o
 80213f10 00000100 80213f10 0 ReadFileInfo__Q44nw4r3snd6detail22SoundArchiveFileReaderCFUlPQ44nw4r3snd12SoundArchive8FileInfo 	libnw4r_snd.a snd_SoundArchiveFile.o
 80214010 00000120 80214010 0 ReadFilePos__Q44nw4r3snd6detail22SoundArchiveFileReaderCFUlUlPQ44nw4r3snd12SoundArchive7FilePos 	libnw4r_snd.a snd_SoundArchiveFile.o
 80214130 00000148 80214130 0 ConvertLabelStringToId__Q44nw4r3snd6detail22SoundArchiveFileReaderCFPCQ54nw4r3snd6detail16SoundArchiveFile10StringTreePCc 	libnw4r_snd.a snd_SoundArchiveFile.o
