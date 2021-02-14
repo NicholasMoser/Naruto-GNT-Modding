@@ -1873,7 +1873,7 @@
 8008997c 0000011c 8008997c 0 zz_8008997c_
 80089a98 00000020 80089a98 0 zz_80089a98_
 80089ab8 0000000c 80089ab8 0 FEAudio::ResetRandomVoiceToggleSFX(void)
-80089ac4 00000010 80089ac4 0 cCameraManager::PushWorldUpVector(void)
+80089ac4 00000010 80089ac4 0 zz_80089ac4_
 80089ad4 00000008 80089ad4 0 IPCGetBufferLo 	ipc.a ipcMain.o
 80089adc 00000314 80089adc 0 zz_80089adc_
 80089df0 00000150 80089df0 0 zz_80089df0_
@@ -6552,7 +6552,7 @@
 802010dc 00000064 802010dc 0 zz_802010dc_
 80201140 00000024 80201140 0 zz_80201140_
 80201164 00000044 80201164 0 zz_80201164_
-802011a8 00000044 802011a8 0 PSVECNormalize 	mtx.a vec.o
+802011a8 00000044 802011a8 0 zz_802011a8_
 802011ec 00000024 802011ec 0 zz_802011ec_
 80201210 00000034 80201210 0 zz_80201210_
 80201244 00000020 80201244 0 zz_80201244_
@@ -7362,7 +7362,7 @@
 8022648c 00000120 8022648c 0 CalcStringRectImpl__Q34nw4r2ut17TextWriterBase<w>FPQ34nw4r2ut4RectPCwi 	libnw4r_ut.a ut_TextWriterBase.o
 802265ac 00000a8c 802265ac 0 PrintImpl__Q34nw4r2ut17TextWriterBase<w>FPCwib 	libnw4r_ut.a ut_TextWriterBase.o
 80227038 0000073c 80227038 0 AdjustCursor__Q34nw4r2ut17TextWriterBase<w>FPfPfPCwi 	libnw4r_ut.a ut_TextWriterBase.o
-80227774 00000084 80227774 0 __sinit_\ut_TextWriterBase_cpp 	homebuttonLib.a ut_TextWriterBase.o
+80227774 00000084 80227774 0 __sinit_\ut_TextWriterBase_cpp 	libnw4r_ut.a ut_TextWriterBase.o
 802277f8 00000190 802277f8 0 DWC_Base64Encode 	dwc.a dwc_base64.o
 80227988 000001d0 80227988 0 DWC_Base64Decode 	dwc.a dwc_base64.o
 80227b58 00000018 80227b58 0 DWC_GetLastError 	dwc.a dwc_error.o
@@ -10263,7 +10263,7 @@
 802ffc68 0000005c 802ffc68 0 __ct__Q36nw4hbm2ut17TextWriterBase<w>Fv 	homebuttonLib.a ut_TextWriterBase.o
 802ffcc4 00000058 802ffcc4 0 __dt__Q36nw4hbm2ut17TextWriterBase<w>Fv 	homebuttonLib.a ut_TextWriterBase.o
 802ffd1c 0000008c 802ffd1c 0 GetLineHeight__Q36nw4hbm2ut17TextWriterBase<w>CFv 	homebuttonLib.a ut_TextWriterBase.o
-802ffda8 00000008 802ffda8 0 SetLineSpace__Q36nw4hbm2ut17TextWriterBase<c>Ff 	homebuttonLib.a ut_TextWriterBase.o
+802ffda8 00000008 802ffda8 0 SetLineSpace__Q36nw4hbm2ut17TextWriterBase<w>Ff 	homebuttonLib.a ut_TextWriterBase.o
 802ffdb0 00000008 802ffdb0 0 SetCharSpace__Q36nw4hbm2ut17TextWriterBase<c>Ff 	homebuttonLib.a ut_TextWriterBase.o
 802ffdb8 00000008 802ffdb8 0 GetCharSpace__Q36nw4hbm2ut17TextWriterBase<c>CFv 	homebuttonLib.a ut_TextWriterBase.o
 802ffdc0 00000008 802ffdc0 0 GetTabWidth__Q36nw4hbm2ut17TextWriterBase<c>CFv 	homebuttonLib.a ut_TextWriterBase.o
@@ -10364,7 +10364,7 @@
 80306bf8 000001ec 80306bf8 0 iosFree 	ipc.a memory.o
 80306de4 000000b8 80306de4 0 IPCiProfInit 	ipc.a ipcProfile.o
 80306e9c 00000080 80306e9c 0 IPCiProfQueueReq 	ipc.a ipcProfile.o
-80306f1c 00000010 80306f1c 0 cCameraManager::PushWorldUpVector(void)
+80306f1c 00000010 80306f1c 0 IPCiProfAck 	ipc.a ipcProfile.o
 80306f2c 0000007c 80306f2c 0 IPCiProfReply 	ipc.a ipcProfile.o
 80306fa8 00000090 80306fa8 0 KPADSetBtnRepeat 	kpad.a KPAD.o
 80307038 0000001c 80307038 0 KPADSetPosParam 	kpad.a KPAD.o
@@ -10620,7 +10620,7 @@
 8031488c 000000cc 8031488c 0 __LCEnable 	os.a OSCache.o
 80314958 00000038 80314958 0 LCEnable 	os.a OSCache.o
 80314990 00000028 80314990 0 LCDisable 	os.a OSCache.o
-803149b8 00000024 803149b8 0 LCStoreBlocks 	os.a OSCache.o
+803149b8 00000024 803149b8 0 LCLoadBlocks 	os.a OSCache.o
 803149dc 00000024 803149dc 0 LCStoreBlocks 	os.a OSCache.o
 80314a00 000000a0 80314a00 0 LCStoreData 	os.a OSCache.o
 80314aa0 0000000c 80314aa0 0 LCQueueLength 	os.a OSCache.o
@@ -10742,7 +10742,7 @@
 8031bec8 00000010 8031bec8 0 OSInitThreadQueue 	os.a OSThread.o
 8031bed8 0000000c 8031bed8 0 OSGetCurrentThread 	os.a OSThread.o
 8031bee4 0000002c 8031bee4 0 OSIsThreadTerminated 	os.a OSThread.o
-8031bf10 0000003c 8031bf10 0 OSEnableScheduler 	os.a OSThread.o
+8031bf10 0000003c 8031bf10 0 OSDisableScheduler 	os.a OSThread.o
 8031bf4c 0000003c 8031bf4c 0 OSEnableScheduler 	os.a OSThread.o
 8031bf88 00000068 8031bf88 0 UnsetRun 	os.a OSThread.o
 8031bff0 0000003c 8031bff0 0 __OSGetEffectivePriority 	os.a OSThread.o
@@ -10806,7 +10806,7 @@
 8031f204 000000a0 8031f204 0 __OSPlayTimeAlarmExpired 	os.a OSPlayTime.o
 8031f2a4 000001c8 8031f2a4 0 __OSGetPlayTime 	os.a OSPlayTime.o
 8031f46c 00000158 8031f46c 0 __OSInitPlayTime 	os.a OSPlayTime.o
-8031f5c4 00000180 8031f5c4 0 PackArgs 	os.a OSExec.o
+8031f5c4 00000180 8031f5c4 0 PackArgs 	os.a OSLaunch.o
 8031f744 00000114 8031f744 0 __OSCheckCompanyCode 	os.a OSLaunch.o
 8031f858 000000d4 8031f858 0 __OSCheckTmdSysVersion 	os.a OSLaunch.o
 8031f92c 000001f0 8031f92c 0 __OSGetValidTicketIndex 	os.a OSLaunch.o
@@ -10867,7 +10867,7 @@
 80323a88 00000064 80323a88 0 SCGetSoundMode 	sc.a scapi.o
 80323aec 00000040 80323aec 0 SCGetCounterBias 	sc.a scapi.o
 80323b2c 0000000c 80323b2c 0 SCGetBtDeviceInfoArray 	sc.a scapi.o
-80323b38 0000000c 80323b38 0 SCSetBtCmpDevInfoArray 	sc.a scapi.o
+80323b38 0000000c 80323b38 0 SCSetBtDeviceInfoArray 	sc.a scapi.o
 80323b44 0000000c 80323b44 0 SCGetBtCmpDevInfoArray 	sc.a scapi.o
 80323b50 0000000c 80323b50 0 SCSetBtCmpDevInfoArray 	sc.a scapi.o
 80323b5c 00000068 80323b5c 0 SCGetBtDpdSensibility 	sc.a scapi.o
