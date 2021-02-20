@@ -6140,404 +6140,412 @@
 801eb940 000000ec 801eb940 0 zz_801eb940_
 801eba2c 00000084 801eba2c 0 zz_801eba2c_
 801ebab0 00000190 801ebab0 0 zz_801ebab0_
-801ebc40 00000008 801ebc40 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
+801ebc40 00000008 801ebc40 0 zz_801ebc40_
 801ebc48 000000c8 801ebc48 0 zz_801ebc48_
-801ebd10 00000008 801ebd10 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
+801ebd10 00000008 801ebd10 0 zz_801ebd10_
 801ebd18 0000008c 801ebd18 0 zz_801ebd18_
-801ebda4 0000004c 801ebda4 0 zz_801ebda4_
-801ebdf0 0000000c 801ebdf0 0 zz_801ebdf0_
-801ebdfc 00000008 801ebdfc 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801ebe04 00000024 801ebe04 0 zz_801ebe04_
-801ebe28 00000024 801ebe28 0 zz_801ebe28_
-801ebe4c 00000040 801ebe4c 0 zz_801ebe4c_
-801ebe8c 00000040 801ebe8c 0 zz_801ebe8c_
-801ebecc 00000014 801ebecc 0 zz_801ebecc_
-801ebee0 00000014 801ebee0 0 zz_801ebee0_
-801ebef4 00000084 801ebef4 0 zz_801ebef4_
-801ebf78 00000060 801ebf78 0 zz_801ebf78_
-801ebfd8 00000038 801ebfd8 0 zz_801ebfd8_
-801ec010 00000048 801ec010 0 zz_801ec010_
-801ec058 0000004c 801ec058 0 zz_801ec058_
-801ec0a4 000000f4 801ec0a4 0 zz_801ec0a4_
-801ec198 00000040 801ec198 0 zz_801ec198_
-801ec1d8 00000308 801ec1d8 0 zz_801ec1d8_
-801ec4e0 000000bc 801ec4e0 0 zz_801ec4e0_
-801ec59c 00000138 801ec59c 0 zz_801ec59c_
-801ec6d4 00000118 801ec6d4 0 zz_801ec6d4_
-801ec7ec 0000003c 801ec7ec 0 zz_801ec7ec_
-801ec828 0000045c 801ec828 0 zz_801ec828_
-801ecc84 0000018c 801ecc84 0 zz_801ecc84_
-801ece10 000000bc 801ece10 0 zz_801ece10_
-801ececc 00000084 801ececc 0 zz_801ececc_
-801ecf50 00000070 801ecf50 0 zz_801ecf50_
-801ecfc0 000000c4 801ecfc0 0 zz_801ecfc0_
-801ed084 00000030 801ed084 0 zz_801ed084_
-801ed0b4 0000000c 801ed0b4 0 GetOneTimerLeadGroundContactAnims(void)
-801ed0c0 00000030 801ed0c0 0 zz_801ed0c0_
-801ed0f0 0000000c 801ed0f0 0 GetOneTimerLeadGroundContactAnims(void)
-801ed0fc 00000030 801ed0fc 0 zz_801ed0fc_
-801ed12c 0000000c 801ed12c 0 GetOneTimerLeadGroundContactAnims(void)
-801ed138 00000138 801ed138 0 zz_801ed138_
-801ed270 000000ac 801ed270 0 zz_801ed270_
-801ed31c 0000005c 801ed31c 0 zz_801ed31c_
-801ed378 0000003c 801ed378 0 zz_801ed378_
-801ed3b4 00000008 801ed3b4 0 J3DColorBlockLightOff::setColorChanNum(unsigned char) 	J3DGraphBase.a J3DMatBlock.o
-801ed3bc 0000005c 801ed3bc 0 zz_801ed3bc_
-801ed418 00000008 801ed418 0 zz_801ed418_
-801ed420 00000068 801ed420 0 zz_801ed420_
-801ed488 00000220 801ed488 0 zz_801ed488_
-801ed6a8 00000188 801ed6a8 0 zz_801ed6a8_
-801ed830 0000004c 801ed830 0 zz_801ed830_
-801ed87c 0000001c 801ed87c 0 zz_801ed87c_
-801ed898 0000001c 801ed898 0 zz_801ed898_
-801ed8b4 00000078 801ed8b4 0 zz_801ed8b4_
-801ed92c 000000ec 801ed92c 0 zz_801ed92c_
-801eda18 00000060 801eda18 0 zz_801eda18_
-801eda78 00000074 801eda78 0 zz_801eda78_
-801edaec 00000074 801edaec 0 zz_801edaec_
-801edb60 0000002c 801edb60 0 zz_801edb60_
-801edb8c 000000fc 801edb8c 0 zz_801edb8c_
-801edc88 0000007c 801edc88 0 zz_801edc88_
-801edd04 00000120 801edd04 0 zz_801edd04_
-801ede24 00000060 801ede24 0 zz_801ede24_
-801ede84 00000040 801ede84 0 zz_801ede84_
-801edec4 00000040 801edec4 0 zz_801edec4_
-801edf04 00000380 801edf04 0 zz_801edf04_
-801ee284 00000380 801ee284 0 zz_801ee284_
-801ee604 00000100 801ee604 0 zz_801ee604_
-801ee704 00000060 801ee704 0 zz_801ee704_
-801ee764 00000090 801ee764 0 zz_801ee764_
-801ee7f4 00000090 801ee7f4 0 zz_801ee7f4_
-801ee884 00000064 801ee884 0 zz_801ee884_
-801ee8e8 00000088 801ee8e8 0 zz_801ee8e8_
-801ee970 00000088 801ee970 0 zz_801ee970_
-801ee9f8 00000008 801ee9f8 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801eea00 00000010 801eea00 0 nlListContainer<P8SaveData>::__ct(void)
-801eea10 00000040 801eea10 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-801eea50 00000068 801eea50 0 zz_801eea50_
-801eeab8 00000030 801eeab8 0 zz_801eeab8_
-801eeae8 0000000c 801eeae8 0 GetOneTimerLeadGroundContactAnims(void)
-801eeaf4 0000025c 801eeaf4 0 zz_801eeaf4_
-801eed50 00000034 801eed50 0 zz_801eed50_
-801eed84 0000034c 801eed84 0 zz_801eed84_
-801ef0d0 00000890 801ef0d0 0 zz_801ef0d0_
-801ef960 00000048 801ef960 0 zz_801ef960_
-801ef9a8 00000040 801ef9a8 0 zz_801ef9a8_
-801ef9e8 000000e4 801ef9e8 0 zz_801ef9e8_
-801efacc 000005fc 801efacc 0 zz_801efacc_
-801f00c8 00000178 801f00c8 0 zz_801f00c8_
-801f0240 000000ec 801f0240 0 zz_801f0240_
-801f032c 00000068 801f032c 0 zz_801f032c_
-801f0394 00000068 801f0394 0 zz_801f0394_
-801f03fc 000000b8 801f03fc 0 zz_801f03fc_
-801f04b4 00000040 801f04b4 0 zz_801f04b4_
-801f04f4 00000040 801f04f4 0 zz_801f04f4_
-801f0534 00000024 801f0534 0 zz_801f0534_
-801f0558 00000034 801f0558 0 zz_801f0558_
-801f058c 00000034 801f058c 0 zz_801f058c_
-801f05c0 00000050 801f05c0 0 zz_801f05c0_
-801f0610 00000218 801f0610 0 zz_801f0610_
-801f0828 00000124 801f0828 0 zz_801f0828_
-801f094c 00000068 801f094c 0 zz_801f094c_
-801f09b4 00000030 801f09b4 0 zz_801f09b4_
-801f09e4 0000000c 801f09e4 0 GetOneTimerLeadGroundContactAnims(void)
-801f09f0 00000048 801f09f0 0 zz_801f09f0_
-801f0a38 00000048 801f0a38 0 zz_801f0a38_
-801f0a80 00000048 801f0a80 0 zz_801f0a80_
-801f0ac8 00000048 801f0ac8 0 zz_801f0ac8_
-801f0b10 00000048 801f0b10 0 zz_801f0b10_
-801f0b58 00000280 801f0b58 0 zz_801f0b58_
-801f0dd8 000000d0 801f0dd8 0 zz_801f0dd8_
-801f0ea8 000000bc 801f0ea8 0 zz_801f0ea8_
-801f0f64 00000b88 801f0f64 0 zz_801f0f64_
-801f1aec 00000770 801f1aec 0 zz_801f1aec_
-801f225c 000004b4 801f225c 0 zz_801f225c_
-801f2710 00000048 801f2710 0 zz_801f2710_
-801f2758 00000048 801f2758 0 zz_801f2758_
-801f27a0 000003b4 801f27a0 0 zz_801f27a0_
-801f2b54 0000034c 801f2b54 0 zz_801f2b54_
-801f2ea0 00000164 801f2ea0 0 zz_801f2ea0_
-801f3004 000001f8 801f3004 0 zz_801f3004_
-801f31fc 00000050 801f31fc 0 zz_801f31fc_
-801f324c 00000018 801f324c 0 zz_801f324c_
-801f3264 00000018 801f3264 0 zz_801f3264_
-801f327c 00000068 801f327c 0 zz_801f327c_
-801f32e4 00000080 801f32e4 0 zz_801f32e4_
-801f3364 00000030 801f3364 0 zz_801f3364_
-801f3394 0000000c 801f3394 0 GetOneTimerLeadGroundContactAnims(void)
-801f33a0 00000410 801f33a0 0 zz_801f33a0_
-801f37b0 000000f4 801f37b0 0 zz_801f37b0_
-801f38a4 00000110 801f38a4 0 zz_801f38a4_
-801f39b4 00000008 801f39b4 0 GXInitTexObjUserData 	gx.a GXTexture.o
-801f39bc 00000070 801f39bc 0 zz_801f39bc_
-801f3a2c 00000054 801f3a2c 0 zz_801f3a2c_
-801f3a80 00000088 801f3a80 0 zz_801f3a80_
-801f3b08 00000020 801f3b08 0 zz_801f3b08_
-801f3b28 00000088 801f3b28 0 zz_801f3b28_
-801f3bb0 00000014 801f3bb0 0 zz_801f3bb0_
-801f3bc4 00000048 801f3bc4 0 zz_801f3bc4_
-801f3c0c 0000003c 801f3c0c 0 zz_801f3c0c_
-801f3c48 00000040 801f3c48 0 zz_801f3c48_
-801f3c88 00000040 801f3c88 0 zz_801f3c88_
-801f3cc8 00000040 801f3cc8 0 zz_801f3cc8_
-801f3d08 00000040 801f3d08 0 zz_801f3d08_
-801f3d48 00000040 801f3d48 0 zz_801f3d48_
-801f3d88 00000040 801f3d88 0 zz_801f3d88_
-801f3dc8 00000060 801f3dc8 0 zz_801f3dc8_
-801f3e28 00000054 801f3e28 0 zz_801f3e28_
-801f3e7c 0000001c 801f3e7c 0 zz_801f3e7c_
-801f3e98 00000054 801f3e98 0 zz_801f3e98_
-801f3eec 0000001c 801f3eec 0 zz_801f3eec_
-801f3f08 00000014 801f3f08 0 zz_801f3f08_
-801f3f1c 0000043c 801f3f1c 0 zz_801f3f1c_
-801f4358 00000190 801f4358 0 zz_801f4358_
-801f44e8 00000120 801f44e8 0 zz_801f44e8_
-801f4608 00000058 801f4608 0 zz_801f4608_
-801f4660 00000050 801f4660 0 zz_801f4660_
-801f46b0 00000070 801f46b0 0 zz_801f46b0_
-801f4720 00000068 801f4720 0 zz_801f4720_
-801f4788 000007f8 801f4788 0 zz_801f4788_
-801f4f80 00000054 801f4f80 0 zz_801f4f80_
-801f4fd4 00000138 801f4fd4 0 zz_801f4fd4_
-801f510c 00000138 801f510c 0 zz_801f510c_
-801f5244 00000050 801f5244 0 nw4hbm::lyt::Pane::AppendChild(nw4hbm::lyt::Pane *) 	homebuttonLib.a lyt_pane.o
-801f5294 0000000c 801f5294 0 cAIPad::__ct(void)
-801f52a0 00000004 801f52a0 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801f52a4 00000014 801f52a4 0 nw4hbm::lyt::Pane::GetColorElement(unsigned long) const 	homebuttonLib.a lyt_pane.o
-801f52b8 00000014 801f52b8 0 J2DPane::setAnimationVC(J2DAnmVtxColor *) 	J2DGraph.a J2DPane.o
-801f52cc 00000014 801f52cc 0 nw4hbm::lyt::Pane::SetColorElement(unsigned long, unsigned char) 	homebuttonLib.a lyt_pane.o
-801f52e0 00000014 801f52e0 0 J2DPane::setAnimationVC(J2DAnmVtxColor *) 	J2DGraph.a J2DPane.o
-801f52f4 00000008 801f52f4 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801f52fc 00000004 801f52fc 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801f5300 000000a8 801f5300 0 zz_801f5300_
-801f53a8 000000b4 801f53a8 0 zz_801f53a8_
-801f545c 000002f8 801f545c 0 nw4hbm::lyt::Pane::CalculateMtx(nw4hbm::lyt::DrawInfo const &) 	homebuttonLib.a lyt_pane.o
-801f5754 00000084 801f5754 0 nw4hbm::lyt::Pane::Draw(nw4hbm::lyt::DrawInfo const &) 	homebuttonLib.a lyt_pane.o
-801f57d8 00000004 801f57d8 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801f57dc 0000008c 801f57dc 0 nw4hbm::lyt::Pane::Animate(unsigned long) 	homebuttonLib.a lyt_pane.o
-801f5868 000000b4 801f5868 0 nw4hbm::lyt::Pane::AnimateSelf(unsigned long) 	homebuttonLib.a lyt_pane.o
-801f591c 000000ac 801f591c 0 zz_801f591c_
-801f59c8 00000018 801f59c8 0 zz_801f59c8_
-801f59e0 00000060 801f59e0 0 zz_801f59e0_
-801f5a40 00000034 801f5a40 0 nw4hbm::lyt::Pane::AddAnimationLink(nw4hbm::lyt::AnimationLink *) 	homebuttonLib.a lyt_pane.o
-801f5a74 00000110 801f5a74 0 zz_801f5a74_
-801f5b84 00000100 801f5b84 0 zz_801f5b84_
-801f5c84 00000058 801f5c84 0 zz_801f5c84_
-801f5cdc 000000e4 801f5cdc 0 zz_801f5cdc_
-801f5dc0 00000014 801f5dc0 0 LexicalCast<b,i>(int &)
-801f5dd4 00000008 801f5dd4 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-801f5ddc 00000020 801f5ddc 0 zz_801f5ddc_
-801f5dfc 0000000c 801f5dfc 0 FEAudio::ResetRandomVoiceToggleSFX(void)
-801f5e08 0000011c 801f5e08 0 zz_801f5e08_
-801f5f24 000000ac 801f5f24 0 zz_801f5f24_
-801f5fd0 000000c8 801f5fd0 0 zz_801f5fd0_
-801f6098 00000034 801f6098 0 nw4hbm::lyt::GroupContainer::AppendGroup(nw4hbm::lyt::Group *) 	homebuttonLib.a lyt_group.o
-801f60cc 0000007c 801f60cc 0 nw4hbm::lyt::GroupContainer::FindGroupByName(char const *) 	homebuttonLib.a lyt_group.o
-801f6148 000001ac 801f6148 0 zz_801f6148_
-801f62f4 000000c8 801f62f4 0 zz_801f62f4_
-801f63bc 00000040 801f63bc 0 zz_801f63bc_
-801f63fc 00000128 801f63fc 0 zz_801f63fc_
-801f6524 00000340 801f6524 0 zz_801f6524_
-801f6864 00000080 801f6864 0 zz_801f6864_
-801f68e4 00000058 801f68e4 0 zz_801f68e4_
-801f693c 00000084 801f693c 0 zz_801f693c_
-801f69c0 00000028 801f69c0 0 zz_801f69c0_
-801f69e8 00000024 801f69e8 0 nw4hbm::lyt::Layout::UnbindAnimation(nw4hbm::lyt::AnimTransform *) 	homebuttonLib.a lyt_layout.o
-801f6a0c 000002b0 801f6a0c 0 zz_801f6a0c_
-801f6cbc 00000024 801f6cbc 0 nw4hbm::lyt::Layout::SetAnimationEnable(nw4hbm::lyt::AnimTransform *, bool) 	homebuttonLib.a lyt_layout.o
-801f6ce0 00000020 801f6ce0 0 nw4hbm::lyt::Layout::Animate(unsigned long) 	homebuttonLib.a lyt_layout.o
-801f6d00 00000020 801f6d00 0 nw4hbm::lyt::Layout::Animate(unsigned long) 	homebuttonLib.a lyt_layout.o
-801f6d20 00000020 801f6d20 0 nw4hbm::lyt::Layout::Animate(unsigned long) 	homebuttonLib.a lyt_layout.o
-801f6d40 00000038 801f6d40 0 zz_801f6d40_
-801f6d78 000001b0 801f6d78 0 zz_801f6d78_
-801f6f28 0000020c 801f6f28 0 nw4hbm::lyt::Layout::BuildPaneObj(long, void const *, nw4hbm::lyt::ResBlockSet const &) 	homebuttonLib.a lyt_layout.o
-801f7134 0000014c 801f7134 0 zz_801f7134_
-801f7280 000000d8 801f7280 0 zz_801f7280_
-801f7358 000001b4 801f7358 0 zz_801f7358_
-801f750c 00000008 801f750c 0 zz_801f750c_
-801f7514 00000034 801f7514 0 zz_801f7514_
-801f7548 0000002c 801f7548 0 nw4hbm::lyt::Window::SetVtxColor(unsigned long, nw4hbm::ut::Color) 	homebuttonLib.a lyt_window.o
-801f7574 00000018 801f7574 0 nw4hbm::lyt::Window::GetVtxColorElement(unsigned long) const 	homebuttonLib.a lyt_window.o
-801f758c 00000018 801f758c 0 nw4hbm::lyt::Window::SetVtxColorElement(unsigned long, unsigned char) 	homebuttonLib.a lyt_window.o
-801f75a4 000000dc 801f75a4 0 nw4hbm::lyt::Picture::DrawSelf(nw4hbm::lyt::DrawInfo const &) 	homebuttonLib.a lyt_picture.o
-801f7680 00000008 801f7680 0 nw4hbm::lyt::Window::GetRuntimeTypeInfo(void) const 	homebuttonLib.a lyt_window.o
-801f7688 0000000c 801f7688 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
+801ebda4 0000004c 801ebda4 0 GetMtx__Q34nw4r3g3d6ScnObjCFQ44nw4r3g3d6ScnObj13ScnObjMtxTypePQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_scnobj.o
+801ebdf0 0000000c 801ebdf0 0 GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv 	libnw4r_g3d.a g3d_scnobj.o
+801ebdfc 00000008 801ebdfc 0 GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv 	libnw4r_g3d.a g3d_scnobj.o
+801ebe04 00000024 801ebe04 0 SetPriorityDrawOpa__Q34nw4r3g3d6ScnObjFi libnw4r_g3d.a g3d_scnobj.o
+801ebe28 00000024 801ebe28 0 SetPriorityDrawXlu__Q34nw4r3g3d6ScnObjFi 	libnw4r_g3d.a g3d_scnobj.o
+801ebe4c 00000040 801ebe4c 0 EnableScnObjCallbackTiming__Q34nw4r3g3d6ScnObjFQ44nw4r3g3d6ScnObj6Timing 	libnw4r_g3d.a g3d_scnobj.o
+801ebe8c 00000040 801ebe8c 0 DisableScnObjCallbackTiming__Q34nw4r3g3d6ScnObjFQ44nw4r3g3d6ScnObj6Timing libnw4r_g3d.a g3d_scnobj.o
+801ebecc 00000014 801ebecc 0 EnableScnObjCallbackExecOp__Q34nw4r3g3d6ScnObjFQ44nw4r3g3d6ScnObj6ExecOp 	libnw4r_g3d.a g3d_scnobj.o
+801ebee0 00000014 801ebee0 0 DisableScnObjCallbackExecOp__Q34nw4r3g3d6ScnObjFQ44nw4r3g3d6ScnObj6ExecOp 	libnw4r_g3d.a g3d_scnobj.o
+801ebef4 00000084 801ebef4 0 SetBoundingVolume__Q34nw4r3g3d6ScnObjFQ44nw4r3g3d6ScnObj24ScnObjBoundingVolumeTypePCQ34nw4r4math4AABB 	libnw4r_g3d.a g3d_scnobj.o
+801ebf78 00000060 801ebf78 0 GetBoundingVolume__Q34nw4r3g3d6ScnObjCFQ44nw4r3g3d6ScnObj24ScnObjBoundingVolumeTypePQ34nw4r4math4AABB 	libnw4r_g3d.a g3d_scnobj.o
+801ebfd8 00000038 801ebfd8 0 ForEach__Q34nw4r3g3d7ScnLeafFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb 	libnw4r_g3d.a g3d_scnobj.o
+801ec010 00000048 801ec010 0 SetScnObjOption__Q34nw4r3g3d7ScnLeafFUlUl 	libnw4r_g3d.a g3d_scnobj.o
+801ec058 0000004c 801ec058 0 GetScnObjOption__Q34nw4r3g3d7ScnLeafCFUlPUl 	libnw4r_g3d.a g3d_scnobj.o
+801ec0a4 000000f4 801ec0a4 0 CalcWorldMtx__Q34nw4r3g3d7ScnLeafFPCQ34nw4r4math5MTX34PUl 	libnw4r_g3d.a g3d_scnobj.o
+801ec198 00000040 801ec198 0 GetScaleProperty__Q34nw4r3g3d7ScnLeafCFv 	libnw4r_g3d.a g3d_scnobj.o
+801ec1d8 00000308 801ec1d8 0 DefG3dProcScnLeaf__Q34nw4r3g3d7ScnLeafFUlUlPv 	libnw4r_g3d.a g3d_scnobj.o
+801ec4e0 000000bc 801ec4e0 0 Construct__Q34nw4r3g3d8ScnGroupFP12MEMAllocatorPUlUl libnw4r_g3d.a g3d_scnobj.o
+801ec59c 00000138 801ec59c 0 ForEach__Q34nw4r3g3d8ScnGroupFPFPQ34nw4r3g3d6ScnObjPv_Q44nw4r3g3d6ScnObj13ForEachResultPvb 	libnw4r_g3d.a g3d_scnobj.o
+801ec6d4 00000118 801ec6d4 0 ScnGroup_G3DPROC_GATHER_SCNOBJ__Q34nw4r3g3d8ScnGroupFUlPQ34nw4r3g3d13IScnObjGather 	libnw4r_g3d.a g3d_scnobj.o
+801ec7ec 0000003c 801ec7ec 0 G3dProc__Q34nw4r3g3d8ScnGroupFUlUlPv 	libnw4r_g3d.a g3d_scnobj.o
+801ec828 0000045c 801ec828 0 DefG3dProcScnGroup__Q34nw4r3g3d8ScnGroupFUlUlPv 	libnw4r_g3d.a g3d_scnobj.o
+801ecc84 0000018c 801ecc84 0 Insert__Q34nw4r3g3d8ScnGroupFUlPQ34nw4r3g3d6ScnObj 	libnw4r_g3d.a g3d_scnobj.o
+801ece10 000000bc 801ece10 0 Remove__Q34nw4r3g3d8ScnGroupFUl 	libnw4r_g3d.a g3d_scnobj.o
+801ececc 00000084 801ececc 0 Remove__Q34nw4r3g3d8ScnGroupFPQ34nw4r3g3d6ScnObj 	libnw4r_g3d.a g3d_scnobj.o
+801ecf50 00000070 801ecf50 0 __ct__Q34nw4r3g3d8ScnGroupFP12MEMAllocatorPPQ34nw4r3g3d6ScnObjUl 	libnw4r_g3d.a g3d_scnobj.o
+801ecfc0 000000c4 801ecfc0 0 __dt__Q34nw4r3g3d8ScnGroupFv 	libnw4r_g3d.a g3d_scnobj.o
+801ed084 00000030 801ed084 0 GetTypeName__Q34nw4r3g3d8ScnGroupCFv 	libnw4r_g3d.a g3d_scnobj.o
+801ed0b4 0000000c 801ed0b4 0 GetTypeObj__Q34nw4r3g3d8ScnGroupCFv 	libnw4r_g3d.a g3d_scnobj.o
+801ed0c0 00000030 801ed0c0 0 GetTypeName__Q34nw4r3g3d7ScnLeafCFv libnw4r_g3d.a g3d_scnobj.o
+801ed0f0 0000000c 801ed0f0 0 GetTypeObj__Q34nw4r3g3d7ScnLeafCFv libnw4r_g3d.a g3d_scnobj.o
+801ed0fc 00000030 801ed0fc 0 GetTypeName__Q34nw4r3g3d6ScnObjCFv 	libnw4r_g3d.a g3d_scnobj.o
+801ed12c 0000000c 801ed12c 0 GetTypeObj__Q34nw4r3g3d6ScnObjCFv 	libnw4r_g3d.a g3d_scnobj.o
+801ed138 00000138 801ed138 0 Construct__Q34nw4r3g3d7ScnRootFP12MEMAllocatorPUlUlUlUlUl 	libnw4r_g3d.a g3d_scnroot.o
+801ed270 000000ac 801ed270 0 G3dProc__Q34nw4r3g3d7ScnRootFUlUlPv 	libnw4r_g3d.a g3d_scnroot.o
+801ed31c 0000005c 801ed31c 0 GetCamera__Q34nw4r3g3d7ScnRootFi 	libnw4r_g3d.a g3d_scnroot.o
+801ed378 0000003c 801ed378 0 GetCurrentCamera__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801ed3b4 00000008 801ed3b4 0 SetCurrentCamera__Q34nw4r3g3d7ScnRootFi libnw4r_g3d.a g3d_scnroot.o
+801ed3bc 0000005c 801ed3bc 0 GetFog__Q34nw4r3g3d7ScnRootFi 	libnw4r_g3d.a g3d_scnroot.o
+801ed418 00000008 801ed418 0 GetLightSet__Q34nw4r3g3d7ScnRootFi 	libnw4r_g3d.a g3d_scnroot.o
+801ed420 00000068 801ed420 0 RemoveAnmScn__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801ed488 00000220 801ed488 0 SetGlbSettings__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801ed6a8 00000188 801ed6a8 0 CalcAnmScn__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801ed830 0000004c 801ed830 0 CalcWorld__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801ed87c 0000001c 801ed87c 0 CalcMaterial__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801ed898 0000001c 801ed898 0 CalcVtx__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801ed8b4 00000078 801ed8b4 0 CalcView__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801ed92c 000000ec 801ed92c 0 GatherDrawScnObj__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801eda18 00000060 801eda18 0 ZSort__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801eda78 00000074 801eda78 0 DrawOpa__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801edaec 00000074 801edaec 0 DrawXlu__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801edb60 0000002c 801edb60 0 ForceDrawMode__Q34nw4r3g3d7ScnRootFbQ34nw4r3g3d14ResMdlDrawMode libnw4r_g3d.a g3d_scnroot.o
+801edb8c 000000fc 801edb8c 0 __ct__Q34nw4r3g3d7ScnRootFP12MEMAllocatorPQ34nw4r3g3d13IScnObjGatherPPQ34nw4r3g3d6ScnObjUlUlUlPQ34nw4r3g3d8LightObjPQ34nw4r3g3d11AmbLightObjPQ34nw4r3g3d12LightSetData 	libnw4r_g3d.a g3d_scnroot.o
+801edc88 0000007c 801edc88 0 __dt__Q34nw4r3g3d7ScnRootFv 	libnw4r_g3d.a g3d_scnroot.o
+801edd04 00000120 801edd04 0 Add__Q34nw4r3g3d12ScnObjGatherFPQ34nw4r3g3d6ScnObjbb 	libnw4r_g3d.a g3d_scnroot.o
+801ede24 00000060 801ede24 0 ZSort__Q34nw4r3g3d12ScnObjGatherFv 	libnw4r_g3d.a g3d_scnroot.o
+801ede84 00000040 801ede84 0 LessZSortOpa__Q34nw4r3g3d25@unnamed@g3d_scnroot_cpp@FPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj 	libnw4r_g3d.a g3d_scnroot.o
+801edec4 00000040 801edec4 0 LessZSortXlu__Q34nw4r3g3d25@unnamed@g3d_scnroot_cpp@FPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj 	libnw4r_g3d.a g3d_scnroot.o
+801edf04 00000380 801edf04 0 sort<PPQ34nw4r3g3d6ScnObj,PFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b>__3stdFPPQ34nw4r3g3d6ScnObjPPQ34nw4r3g3d6ScnObjPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b_v 	libnw4r_g3d.a g3d_scnroot.o
+801ee284 00000380 801ee284 0 sort<PPQ34nw4r3g3d6ScnObj,RPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b>__3stdFPPQ34nw4r3g3d6ScnObjPPQ34nw4r3g3d6ScnObjRPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b_v 	libnw4r_g3d.a g3d_scnroot.o
+801ee604 00000100 801ee604 0 __sort132<RPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b,PPQ34nw4r3g3d6ScnObj>__3stdFPPQ34nw4r3g3d6ScnObjPPQ34nw4r3g3d6ScnObjPPQ34nw4r3g3d6ScnObjRPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b_v 	libnw4r_g3d
+801ee704 00000060 801ee704 0 Sort__Q34nw4r3g3d12ScnObjGatherFv 	libnw4r_g3d.a g3d_scnroot.o
+801ee764 00000090 801ee764 0 LessByGetValueForSortOpa__Q34nw4r3g3d25@unnamed@g3d_scnroot_cpp@FPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj 	libnw4r_g3d.a g3d_scnroot.o
+801ee7f4 00000090 801ee7f4 0 LessByGetValueForSortXlu__Q34nw4r3g3d25@unnamed@g3d_scnroot_cpp@FPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj 	libnw4r_g3d.a g3d_scnroot.o
+801ee884 00000064 801ee884 0 Sort__Q34nw4r3g3d12ScnObjGatherFPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_bPFPCQ34nw4r3g3d6ScnObjPCQ34nw4r3g3d6ScnObj_b 	libnw4r_g3d.a g3d_scnroot.o
+801ee8e8 00000088 801ee8e8 0 DrawOpa__Q34nw4r3g3d12ScnObjGatherFPQ34nw4r3g3d14ResMdlDrawMode 	libnw4r_g3d.a g3d_scnroot.o
+801ee970 00000088 801ee970 0 DrawXlu__Q34nw4r3g3d12ScnObjGatherFPQ34nw4r3g3d14ResMdlDrawMode 	libnw4r_g3d.a g3d_scnroot.o
+801ee9f8 00000008 801ee9f8 0 CheckScnObj__Q34nw4r3g3d12ScnObjGatherFPQ34nw4r3g3d6ScnObj 	libnw4r_g3d.a g3d_scnroot.o
+801eea00 00000010 801eea00 0 Clear__Q34nw4r3g3d12ScnObjGatherFv 	libnw4r_g3d.a g3d_scnroot.o
+801eea10 00000040 801eea10 0 __dt__Q34nw4r3g3d12ScnObjGatherFv 	libnw4r_g3d.a g3d_scnroot.o
+801eea50 00000068 801eea50 0 IsDerivedFrom__Q34nw4r3g3d7ScnRootCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_scnroot.o
+801eeab8 00000030 801eeab8 0 GetTypeName__Q34nw4r3g3d7ScnRootCFv 	libnw4r_g3d.a g3d_scnroot.o
+801eeae8 0000000c 801eeae8 0 GetTypeObj__Q34nw4r3g3d7ScnRootCFv 	libnw4r_g3d.a g3d_scnroot.o
+801eeaf4 0000025c 801eeaf4 0 ScnMdlSmpl_CalcPosture__Q34nw4r3g3d12ScnMdlSimpleFUlPCQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801eed50 00000034 801eed50 0 ScnMdlSmpl_G3DPROC_GATHER_SCNOBJ__Q34nw4r3g3d12ScnMdlSimpleFUlPQ34nw4r3g3d13IScnObjGather 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801eed84 0000034c 801eed84 0 ScnMdlSmpl_G3DPROC_CALC_VIEW__Q34nw4r3g3d12ScnMdlSimpleFUlPCQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801ef0d0 00000890 801ef0d0 0 G3dProc__Q34nw4r3g3d12ScnMdlSimpleFUlUlPv 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801ef960 00000048 801ef960 0 SetScnObjOption__Q34nw4r3g3d12ScnMdlSimpleFUlUl 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801ef9a8 00000040 801ef9a8 0 GetScnObjOption__Q34nw4r3g3d12ScnMdlSimpleCFUlPUl 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801ef9e8 000000e4 801ef9e8 0 GetScnMtxPos__Q34nw4r3g3d12ScnMdlSimpleCFPQ34nw4r4math5MTX34Q44nw4r3g3d6ScnObj13ScnObjMtxTypeUl 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801efacc 000005fc 801efacc 0 SetAnmObj__Q34nw4r3g3d12ScnMdlSimpleFPQ34nw4r3g3d6AnmObjQ44nw4r3g3d12ScnMdlSimple10AnmObjType 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f00c8 00000178 801f00c8 0 RemoveAnmObj__Q34nw4r3g3d12ScnMdlSimpleFPQ34nw4r3g3d6AnmObj 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f0240 000000ec 801f0240 0 RemoveAnmObj__Q34nw4r3g3d12ScnMdlSimpleFQ44nw4r3g3d12ScnMdlSimple10AnmObjType 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f032c 00000068 801f032c 0 GetAnmObj__Q34nw4r3g3d12ScnMdlSimpleFQ44nw4r3g3d12ScnMdlSimple10AnmObjType 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f0394 00000068 801f0394 0 GetAnmObj__Q34nw4r3g3d12ScnMdlSimpleCFQ44nw4r3g3d12ScnMdlSimple10AnmObjType 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f03fc 000000b8 801f03fc 0 UpdateFrame__Q34nw4r3g3d12ScnMdlSimpleFv 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f04b4 00000040 801f04b4 0 EnableScnMdlCallbackTiming__Q34nw4r3g3d12ScnMdlSimpleFQ44nw4r3g3d6ScnObj6Timing 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f04f4 00000040 801f04f4 0 DisableScnMdlCallbackTiming__Q34nw4r3g3d12ScnMdlSimpleFQ44nw4r3g3d6ScnObj6Timing 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f0534 00000024 801f0534 0 GetViewPosMtxArray__Q34nw4r3g3d12ScnMdlSimpleFv 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f0558 00000034 801f0558 0 GetViewNrmMtxArray__Q34nw4r3g3d12ScnMdlSimpleFv 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f058c 00000034 801f058c 0 GetViewTexMtxArray__Q34nw4r3g3d12ScnMdlSimpleFv 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f05c0 00000050 801f05c0 0 GetByteCode__Q34nw4r3g3d12ScnMdlSimpleCFQ44nw4r3g3d12ScnMdlSimple12ByteCodeType libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f0610 00000218 801f0610 0 __ct__Q34nw4r3g3d12ScnMdlSimpleFP12MEMAllocatorQ34nw4r3g3d6ResMdlPQ34nw4r4math5MTX34PUlPQ34nw4r4math5MTX34PQ34nw4r4math5MTX33PQ34nw4r4math5MTX34ii 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f0828 00000124 801f0828 0 __dt__Q34nw4r3g3d12ScnMdlSimpleFv 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f094c 00000068 801f094c 0 IsDerivedFrom__Q34nw4r3g3d12ScnMdlSimpleCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f09b4 00000030 801f09b4 0 GetTypeName__Q34nw4r3g3d12ScnMdlSimpleCFv 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f09e4 0000000c 801f09e4 0 GetTypeObj__Q34nw4r3g3d12ScnMdlSimpleCFv 	libnw4r_g3d.a g3d_scnmdlsmpl.o
+801f09f0 00000048 801f09f0 0 GetResTexObj__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb 	libnw4r_g3d.a g3d_scnmdl.o
+801f0a38 00000048 801f0a38 0 GetResTexSrt__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb 	libnw4r_g3d.a g3d_scnmdl.o
+801f0a80 00000048 801f0a80 0 GetResMatChan__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb 	libnw4r_g3d.a g3d_scnmdl.o
+801f0ac8 00000048 801f0ac8 0 GetResMatPix__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb 	libnw4r_g3d.a g3d_scnmdl.o
+801f0b10 00000048 801f0b10 0 GetResMatTevColor__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFb 	libnw4r_g3d.a g3d_scnmdl.o
+801f0b58 00000280 801f0b58 0 __ct__Q44nw4r3g3d6ScnMdl15CopiedMatAccessFPQ34nw4r3g3d6ScnMdlUl 	libnw4r_g3d.a g3d_scnmdl.o
+801f0dd8 000000d0 801f0dd8 0 SetVisibilityEx__Q44nw4r3g3d6ScnMdl15CopiedVisAccessFb libnw4r_g3d.a g3d_scnmdl.o
+801f0ea8 000000bc 801f0ea8 0 __ct__Q44nw4r3g3d6ScnMdl15CopiedVisAccessFPQ34nw4r3g3d6ScnMdlUl 	libnw4r_g3d.a g3d_scnmdl.o
+801f0f64 00000b88 801f0f64 0 Construct__Q34nw4r3g3d6ScnMdlFP12MEMAllocatorPUlQ34nw4r3g3d6ResMdlUli 	libnw4r_g3d.a g3d_scnmdl.o
+801f1aec 00000770 801f1aec 0 ScnMdl_G3DPROC_CALC_MAT__Q34nw4r3g3d6ScnMdlFUlPv 	libnw4r_g3d.a g3d_scnmdl.o
+801f225c 000004b4 801f225c 0 G3dProc__Q34nw4r3g3d6ScnMdlFUlUlPv 	libnw4r_g3d.a g3d_scnmdl.o
+801f2710 00000048 801f2710 0 SetScnObjOption__Q34nw4r3g3d6ScnMdlFUlUl 	libnw4r_g3d.a g3d_scnmdl.o
+801f2758 00000048 801f2758 0 GetScnObjOption__Q34nw4r3g3d6ScnMdlCFUlPUl 	libnw4r_g3d.a g3d_scnmdl.o
+801f27a0 000003b4 801f27a0 0 InitBuffer__Q34nw4r3g3d6ScnMdlFv 	libnw4r_g3d.a g3d_scnmdl.o
+801f2b54 0000034c 801f2b54 0 CleanMatBuffer__Q34nw4r3g3d6ScnMdlFUlUl 	libnw4r_g3d.a g3d_scnmdl.o
+801f2ea0 00000164 801f2ea0 0 SetAnmObj__Q34nw4r3g3d6ScnMdlFPQ34nw4r3g3d6AnmObjQ44nw4r3g3d12ScnMdlSimple10AnmObjType 	libnw4r_g3d.a g3d_scnmdl.o
+801f3004 000001f8 801f3004 0 RemoveAnmObj__Q34nw4r3g3d6ScnMdlFPQ34nw4r3g3d6AnmObj 	libnw4r_g3d.a g3d_scnmdl.o
+801f31fc 00000050 801f31fc 0 RemoveAnmObj__Q34nw4r3g3d6ScnMdlFQ44nw4r3g3d12ScnMdlSimple10AnmObjType 	libnw4r_g3d.a g3d_scnmdl.o
+801f324c 00000018 801f324c 0 GetAnmObj__Q34nw4r3g3d6ScnMdlFQ44nw4r3g3d12ScnMdlSimple10AnmObjType 	libnw4r_g3d.a g3d_scnmdl.o
+801f3264 00000018 801f3264 0 GetAnmObj__Q34nw4r3g3d6ScnMdlCFQ44nw4r3g3d12ScnMdlSimple10AnmObjType 	libnw4r_g3d.a g3d_scnmdl.o
+801f327c 00000068 801f327c 0 __dt__Q34nw4r3g3d6ScnMdlFv 	libnw4r_g3d.a g3d_scnmdl.o
+801f32e4 00000080 801f32e4 0 IsDerivedFrom__Q34nw4r3g3d6ScnMdlCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_scnmdl.o
+801f3364 00000030 801f3364 0 GetTypeName__Q34nw4r3g3d6ScnMdlCFv 	libnw4r_g3d.a g3d_scnmdl.o
+801f3394 0000000c 801f3394 0 GetTypeObj__Q34nw4r3g3d6ScnMdlCFv 	libnw4r_g3d.a g3d_scnmdl.o
+801f33a0 00000410 801f33a0 0 CalcMaterialDirectly__Q24nw4r3g3dFQ34nw4r3g3d6ResMdlPQ34nw4r3g3d12AnmObjTexPatPQ34nw4r3g3d12AnmObjTexSrtPQ34nw4r3g3d12AnmObjMatClr 	libnw4r_g3d.a g3d_calcmaterial.o
+801f37b0 000000f4 801f37b0 0 G3dInit__Q24nw4r3g3dFb 	libnw4r_g3d.a g3d_init.o
+801f38a4 00000008 801f38a4 0 G3dReset__Q24nw4r3g3dFv 	libnw4r_g3d.a g3d_init.o
+801f38ac 00000108 801f38ac 0 G3dProc__Q34nw4r3g3d16AnmObjTexPatNodeFUlUlPv 	libnw4r_g3d.a g3d_scnproc.o
+801f39b4 00000008 801f39b4 0 zz_801f39b4_
+801f39bc 00000070 801f39bc 0 Init__Q34nw4r3g3d3FogFv 	libnw4r_g3d.a g3d_fog.o
+801f3a2c 00000054 801f3a2c 0 CopyTo__Q34nw4r3g3d3FogCFPv 	libnw4r_g3d.a g3d_fog.o
+801f3a80 00000088 801f3a80 0 GetFog__Q34nw4r3g3d3FogFP10_GXFogTypePfPfPfPfP8_GXColor libnw4r_g3d.a g3d_fog.o
+801f3b08 00000020 801f3b08 0 SetFogRangeAdjParam__Q34nw4r3g3d3FogFUsUsRCQ34nw4r4math5MTX44 	libnw4r_g3d.a g3d_fog.o
+801f3b28 00000088 801f3b28 0 SetGP__Q34nw4r3g3d3FogCFv 	libnw4r_g3d.a g3d_fog.o
+801f3bb0 00000014 801f3bb0 0 Clear__Q34nw4r3g3d8LightObjFv 	libnw4r_g3d.a g3d_light.o
+801f3bc4 00000048 801f3bc4 0 InitLightColor__Q34nw4r3g3d8LightObjF8_GXColor 	libnw4r_g3d.a g3d_light.o
+801f3c0c 0000003c 801f3c0c 0 InitLightPos__Q34nw4r3g3d8LightObjFfff 	libnw4r_g3d.a g3d_light.o
+801f3c48 00000040 801f3c48 0 InitLightDir__Q34nw4r3g3d8LightObjFfff 	libnw4r_g3d.a g3d_light.o
+801f3c88 00000040 801f3c88 0 InitLightSpot__Q34nw4r3g3d8LightObjFf9_GXSpotFn 	libnw4r_g3d.a g3d_light.o
+801f3cc8 00000040 801f3cc8 0 InitLightAttnA__Q34nw4r3g3d8LightObjFfff 	libnw4r_g3d.a g3d_light.o
+801f3d08 00000040 801f3d08 0 InitLightDistAttn__Q34nw4r3g3d8LightObjFff13_GXDistAttnFn 	libnw4r_g3d.a g3d_light.o
+801f3d48 00000040 801f3d48 0 InitLightAttnK__Q34nw4r3g3d8LightObjFfff 	libnw4r_g3d.a g3d_light.o
+801f3d88 00000040 801f3d88 0 InitSpecularDir__Q34nw4r3g3d8LightObjFfff 	libnw4r_g3d.a g3d_light.o
+801f3dc8 00000060 801f3dc8 0 InitLightShininess__Q34nw4r3g3d8LightObjFf 	libnw4r_g3d.a g3d_light.o
+801f3e28 00000054 801f3e28 0 GetLightPos__Q34nw4r3g3d8LightObjCFPfPfPf libnw4r_g3d.a g3d_light.o
+801f3e7c 0000001c 801f3e7c 0 GetLightPos__Q34nw4r3g3d8LightObjCFPQ34nw4r4math4VEC3 	libnw4r_g3d.a g3d_light.o
+801f3e98 00000054 801f3e98 0 GetLightDir__Q34nw4r3g3d8LightObjCFPfPfPf libnw4r_g3d.a g3d_light.o
+801f3eec 0000001c 801f3eec 0 GetLightDir__Q34nw4r3g3d8LightObjCFPQ34nw4r4math4VEC3 	libnw4r_g3d.a g3d_light.o
+801f3f08 00000014 801f3f08 0 GetLightColor__Q34nw4r3g3d8LightObjCFP8_GXColor libnw4r_g3d.a g3d_light.o
+801f3f1c 0000043c 801f3f1c 0 __ct__Q34nw4r3g3d12LightSettingFPQ34nw4r3g3d8LightObjPQ34nw4r3g3d11AmbLightObjUlPQ34nw4r3g3d12LightSetDataUl 	libnw4r_g3d.a g3d_light.o
+801f4358 00000190 801f4358 0 Import__Q34nw4r3g3d12LightSettingFRCQ34nw4r3g3d12LightSetting 	libnw4r_g3d.a g3d_light.o
+801f44e8 00000120 801f44e8 0 ApplyViewMtx__Q34nw4r3g3d12LightSettingFRCQ34nw4r4math5MTX34Ul 	libnw4r_g3d.a g3d_light.o
+801f4608 00000058 801f4608 0 GetLightObj__Q34nw4r3g3d8LightSetFUl 	libnw4r_g3d.a g3d_light.o
+801f4660 00000050 801f4660 0 GetAmbLightObj__Q34nw4r3g3d8LightSetFv 	libnw4r_g3d.a g3d_light.o
+801f46b0 00000070 801f46b0 0 SelectLightObj__Q34nw4r3g3d8LightSetFUli 	libnw4r_g3d.a g3d_light.o
+801f4720 00000068 801f4720 0 SelectAmbLightObj__Q34nw4r3g3d8LightSetFi 	libnw4r_g3d.a g3d_light.o
+801f4788 000007f8 801f4788 0 CalcVtx__Q24nw4r3g3dFQ34nw4r3g3d6ResMdlPQ34nw4r3g3d9AnmObjShpPPQ34nw4r3g3d13ResVtxPosDataPPQ34nw4r3g3d13ResVtxNrmDataPPQ34nw4r3g3d13ResVtxClrData 	libnw4r_g3d.a g3d_calcvtx.o
+801f4f80 00000054 801f4f80 0 LytInit__Q24nw4r3lytFv 	libnw4r_lyt.a lyt_init.o 
+801f4fd4 00000138 801f4fd4 0 __ct__Q34nw4r3lyt4PaneFPCQ44nw4r3lyt3res4Pane 	libnw4r_lyt.a lyt_pane.o
+801f510c 00000138 801f510c 0 __dt__Q34nw4r3lyt4PaneFv 	libnw4r_lyt.a lyt_pane.o
+801f5244 00000050 801f5244 0 AppendChild__Q34nw4r3lyt4PaneFPQ34nw4r3lyt4Pane 	libnw4r_lyt.a lyt_pane.o
+801f5294 0000000c 801f5294 0 GetVtxColor__Q34nw4r3lyt4PaneCFUl 	libnw4r_lyt.a lyt_pane.o
+801f52a0 00000004 801f52a0 0 SetVtxColor__Q34nw4r3lyt4PaneFUlQ34nw4r2ut5Color 	libnw4r_lyt.a lyt_pane.o
+801f52a4 00000014 801f52a4 0 GetColorElement__Q34nw4r3lyt4PaneCFUl 	libnw4r_lyt.a lyt_pane.o
+801f52b8 00000014 801f52b8 0 GetVtxColorElement 	libnw4r_lyt.a lyt_pane.o
+801f52cc 00000014 801f52cc 0 SetColorElement__Q34nw4r3lyt4PaneFUlUc 	libnw4r_lyt.a lyt_pane.o
+801f52e0 00000014 801f52e0 0 SetVtxColorElement 	libnw4r_lyt.a lyt_pane.o
+801f52f4 00000008 801f52f4 0 GetVtxColorElement__Q34nw4r3lyt4PaneCFUl 	libnw4r_lyt.a lyt_pane.o
+801f52fc 00000004 801f52fc 0 SetVtxColorElement__Q34nw4r3lyt4PaneFUlUc 	libnw4r_lyt.a lyt_pane.o
+801f5300 000000a8 801f5300 0 FindPaneByName__Q34nw4r3lyt4PaneFPCcb 	libnw4r_lyt.a lyt_pane.o
+801f53a8 000000b4 801f53a8 0 FindMaterialByName__Q34nw4r3lyt4PaneFPCcb 	libnw4r_lyt.a lyt_pane.o
+801f545c 000002f8 801f545c 0 CalculateMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_pane.o
+801f5754 00000084 801f5754 0 Draw__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_pane.o
+801f57d8 00000004 801f57d8 0 DrawSelf__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_pane.o
+801f57dc 0000008c 801f57dc 0 Animate__Q34nw4r3lyt4PaneFUl 	libnw4r_lyt.a lyt_pane.o
+801f5868 000000b4 801f5868 0 AnimateSelf__Q34nw4r3lyt4PaneFUl 	libnw4r_lyt.a lyt_pane.o
+801f591c 0000001c 801f591c 0 BindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb 	libnw4r_lyt.a lyt_pane.o
+801f5938 00000090 801f5938 0 UnbindAnimation__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformb 	libnw4r_lyt.a lyt_pane.o
+801f59c8 00000018 801f59c8 0 UnbindAllAnimation__Q34nw4r3lyt4PaneFb 	libnw4r_lyt.a lyt_pane.o
+801f59e0 00000060 801f59e0 0 UnbindAnimationSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform 	libnw4r_lyt.a lyt_pane.o
+801f5a40 00000034 801f5a40 0 AddAnimationLink__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimationLink 	libnw4r_lyt.a lyt_pane.o
+801f5a74 00000008 801f5a74 0 FindAnimationLinkSelf__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransform 	libnw4r_lyt.a lyt_pane.o
+801f5a7c 00000008 801f5a7c 0 FindAnimationLinkSelf__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResource 	libnw4r_lyt.a lyt_pane.o
+801f5a84 00000100 801f5a84 0 SetAnimationEnable__Q34nw4r3lyt4PaneFPQ34nw4r3lyt13AnimTransformbb 	libnw4r_lyt.a lyt_pane.o
+801f5b84 00000100 801f5b84 0 SetAnimationEnable__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt12AnimResourcebb 	libnw4r_lyt.a lyt_pane.o
+801f5c84 00000058 801f5c84 0 LoadMtx__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_pane.o
+801f5cdc 000000e4 801f5cdc 0 GetVtxPos__Q34nw4r3lyt4PaneCFv 	libnw4r_lyt.a lyt_pane.o
+801f5dc0 00000014 801f5dc0 0 GetMaterialNum__Q34nw4r3lyt4PaneCFv 	libnw4r_lyt.a lyt_pane.o
+801f5dd4 00000008 801f5dd4 0 GetMaterial__Q34nw4r3lyt4PaneCFv 	libnw4r_lyt.a lyt_pane.o
+801f5ddc 00000020 801f5ddc 0 GetMaterial__Q34nw4r3lyt4PaneCFUl 	libnw4r_lyt.a lyt_pane.o
+801f5dfc 0000000c 801f5dfc 0 __sinit_\lyt_pane_cpp 	libnw4r_lyt.a lyt_pane.o
+801f5e08 0000011c 801f5e08 0 __ct__Q34nw4r3lyt5GroupFPCQ44nw4r3lyt3res5GroupPQ34nw4r3lyt4Pane 	libnw4r_lyt.a lyt_group.o
+801f5f24 000000ac 801f5f24 0 __dt__Q34nw4r3lyt5GroupFv 	libnw4r_lyt.a lyt_group.o
+801f5fd0 000000c8 801f5fd0 0 __dt__Q34nw4r3lyt14GroupContainerFv 	libnw4r_lyt.a lyt_group.o
+801f6098 00000034 801f6098 0 AppendGroup__Q34nw4r3lyt14GroupContainerFPQ34nw4r3lyt5Group 	libnw4r_lyt.a lyt_group.o
+801f60cc 0000007c 801f60cc 0 FindGroupByName__Q34nw4r3lyt14GroupContainerFPCc 	libnw4r_lyt.a lyt_group.o
+801f6148 000001ac 801f6148 0 SetTagProcessorImpl__Q34nw4r3lyt24@unnamed@lyt_layout_cpp@FPQ34nw4r3lyt4PanePQ34nw4r2ut19TagProcessorBase<w> 	libnw4r_lyt.a lyt_layout.o
+801f62f4 000000c8 801f62f4 0 IsIncludeAnimationGroupRef__Q34nw4r3lyt24@unnamed@lyt_layout_cpp@FPQ34nw4r3lyt14GroupContainerPCQ34nw4r3lyt17AnimationGroupRefUsbPQ34nw4r3lyt4Pane 	libnw4r_lyt.a lyt_layout.o
+801f63bc 00000040 801f63bc 0 __ct__Q34nw4r3lyt6LayoutFv 	libnw4r_lyt.a lyt_layout.o
+801f63fc 00000128 801f63fc 0 __dt__Q34nw4r3lyt6LayoutFv 	libnw4r_lyt.a lyt_layout.o
+801f6524 00000340 801f6524 0 Build__Q34nw4r3lyt6LayoutFPCvPQ34nw4r3lyt16ResourceAccessor 	libnw4r_lyt.a lyt_layout.o
+801f6864 00000080 801f6864 0 CreateAnimTransform__Q34nw4r3lyt6LayoutFv 	libnw4r_lyt.a lyt_layout.o
+801f68e4 00000058 801f68e4 0 CreateAnimTransform__Q34nw4r3lyt6LayoutFPCvPQ34nw4r3lyt16ResourceAccessor 	libnw4r_lyt.a lyt_layout.o
+801f693c 00000084 801f693c 0 CreateAnimTransform__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt12AnimResourcePQ34nw4r3lyt16ResourceAccessor 	libnw4r_lyt.a lyt_layout.o
+801f69c0 00000028 801f69c0 0 BindAnimation__Q34nw4r3lyt6LayoutFPQ34nw4r3lyt13AnimTransform 	libnw4r_lyt.a lyt_layout.o
+801f69e8 00000024 801f69e8 0 UnbindAnimation__Q34nw4r3lyt6LayoutFPQ34nw4r3lyt13AnimTransform 	libnw4r_lyt.a lyt_layout.o
+801f6a0c 000002b0 801f6a0c 0 BindAnimationAuto__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt12AnimResourcePQ34nw4r3lyt16ResourceAccessor 	libnw4r_lyt.a lyt_layout.o
+801f6cbc 00000024 801f6cbc 0 SetAnimationEnable__Q34nw4r3lyt6LayoutFPQ34nw4r3lyt13AnimTransformb 	libnw4r_lyt.a lyt_layout.o
+801f6ce0 00000020 801f6ce0 0 CalculateMtx__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_layout.o
+801f6d00 00000020 801f6d00 0 Draw__Q34nw4r3lyt6LayoutFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_layout.o
+801f6d20 00000020 801f6d20 0 Animate__Q34nw4r3lyt6LayoutFUl 	libnw4r_lyt.a lyt_layout.o
+801f6d40 00000038 801f6d40 0 GetLayoutRect__Q34nw4r3lyt6LayoutCFv 	libnw4r_lyt.a lyt_layout.o
+801f6d78 000001b0 801f6d78 0 SetTagProcessor__Q34nw4r3lyt6LayoutFPQ34nw4r2ut19TagProcessorBase<w> 	libnw4r_lyt.a lyt_layout.o
+801f6f28 0000020c 801f6f28 0 BuildPaneObj__Q34nw4r3lyt6LayoutFlPCvRCQ34nw4r3lyt11ResBlockSet 	libnw4r_lyt.a lyt_layout.o
+801f7134 0000014c 801f7134 0 __ct__Q34nw4r3lyt7PictureFPCQ44nw4r3lyt3res7PictureRCQ34nw4r3lyt11ResBlockSet 	libnw4r_lyt.a lyt_picture.o
+801f7280 000000d8 801f7280 0 __dt__Q34nw4r3lyt7PictureFv 	libnw4r_lyt.a lyt_picture.o
+801f7358 000001b4 801f7358 0 Append__Q34nw4r3lyt7PictureFRCQ34nw4r3lyt6TexMap 	libnw4r_lyt.a lyt_picture.o
+801f750c 00000008 801f750c 0 GetTexCoord__Q34nw4r3lyt7PictureCFUlPQ34nw4r4math4VEC2 libnw4r_lyt.a lyt_picture.o
+801f7514 00000008 801f7514 0 SetTexCoord__Q34nw4r3lyt7PictureFUlPCQ34nw4r4math4VEC2 libnw4r_lyt.a lyt_picture.o
+801f7514 0000002c 801f7514 0 GetVtxColor__Q34nw4r3lyt7PictureCFUl 	libnw4r_lyt.a lyt_picture.o
+801f7548 0000002c 801f7548 0 SetVtxColor__Q34nw4r3lyt7PictureFUlQ34nw4r2ut5Color 	libnw4r_lyt.a lyt_picture.o
+801f7574 00000018 801f7574 0 GetVtxColorElement__Q34nw4r3lyt7PictureCFUl 	libnw4r_lyt.a lyt_picture.o
+801f758c 00000018 801f758c 0 SetVtxColorElement__Q34nw4r3lyt7PictureFUlUc 	libnw4r_lyt.a lyt_picture.o
+801f75a4 000000dc 801f75a4 0 DrawSelf__Q34nw4r3lyt7PictureFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_picture.o
+801f7680 00000008 801f7680 0 GetRuntimeTypeInfo__Q34nw4r3lyt7PictureCFv 	libnw4r_lyt.a lyt_picture.o
+801f7688 0000000c 801f7688 0 __sinit_\lyt_picture_cpp 	libnw4r_lyt.a lyt_picture.o
 801f7694 000000b4 801f7694 0 GetColor__25@unnamed@lyt_textBox_cpp@FRC11_GXColorS10 	homebuttonLib.a lyt_textBox.o
-801f7748 000002ec 801f7748 0 zz_801f7748_
-801f7a34 000001a0 801f7a34 0 zz_801f7a34_
-801f7bd4 00000034 801f7bd4 0 zz_801f7bd4_
-801f7c08 00000048 801f7c08 0 nw4hbm::lyt::TextBox::SetVtxColor(unsigned long, nw4hbm::ut::Color) 	homebuttonLib.a lyt_textBox.o
-801f7c50 0000002c 801f7c50 0 nw4hbm::lyt::Window::SetVtxColor(unsigned long, nw4hbm::ut::Color) 	homebuttonLib.a lyt_window.o
-801f7c7c 00000018 801f7c7c 0 nw4hbm::lyt::Window::GetVtxColorElement(unsigned long) const 	homebuttonLib.a lyt_window.o
-801f7c94 00000018 801f7c94 0 nw4hbm::lyt::Window::SetVtxColorElement(unsigned long, unsigned char) 	homebuttonLib.a lyt_window.o
-801f7cac 00000568 801f7cac 0 zz_801f7cac_
-801f8214 00000044 801f8214 0 nw4hbm::ut::CharWriter::SetColorMapping(nw4hbm::ut::Color, nw4hbm::ut::Color) 	homebuttonLib.a ut_CharWriter.o
-801f8258 000003e0 801f8258 0 zz_801f8258_
-801f8638 00000038 801f8638 0 nw4hbm::ut::Font::GetCharStrmReader(void) const 	homebuttonLib.a lyt_textBox.o
-801f8670 000000c4 801f8670 0 zz_801f8670_
-801f8734 0000004c 801f8734 0 zz_801f8734_
-801f8780 000000dc 801f8780 0 zz_801f8780_
-801f885c 000000c4 801f885c 0 zz_801f885c_
-801f8920 00000040 801f8920 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-801f8960 00000084 801f8960 0 zz_801f8960_
-801f89e4 00000384 801f89e4 0 zz_801f89e4_
-801f8d68 000001d4 801f8d68 0 zz_801f8d68_
-801f8f3c 00000008 801f8f3c 0 nw4hbm::lyt::Window::GetRuntimeTypeInfo(void) const 	homebuttonLib.a lyt_window.o
-801f8f44 0000000c 801f8f44 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
-801f8f50 00000284 801f8f50 0 zz_801f8f50_
-801f91d4 00000144 801f91d4 0 zz_801f91d4_
-801f9318 000000fc 801f9318 0 zz_801f9318_
-801f9414 0000002c 801f9414 0 nw4hbm::lyt::Window::GetVtxColor(unsigned long) const 	homebuttonLib.a lyt_window.o
-801f9440 0000002c 801f9440 0 nw4hbm::lyt::Window::SetVtxColor(unsigned long, nw4hbm::ut::Color) 	homebuttonLib.a lyt_window.o
-801f946c 00000018 801f946c 0 nw4hbm::lyt::Window::GetVtxColorElement(unsigned long) const 	homebuttonLib.a lyt_window.o
-801f9484 00000018 801f9484 0 nw4hbm::lyt::Window::SetVtxColorElement(unsigned long, unsigned char) 	homebuttonLib.a lyt_window.o
-801f949c 00000140 801f949c 0 nw4hbm::lyt::Window::DrawSelf(nw4hbm::lyt::DrawInfo const &) 	homebuttonLib.a lyt_window.o
-801f95dc 00000090 801f95dc 0 nw4hbm::lyt::Window::AnimateSelf(unsigned long) 	homebuttonLib.a lyt_window.o
-801f966c 00000090 801f966c 0 nw4hbm::lyt::Window::UnbindAnimationSelf(nw4hbm::lyt::AnimTransform *) 	homebuttonLib.a lyt_window.o
-801f96fc 00000114 801f96fc 0 zz_801f96fc_
-801f9810 000005e0 801f9810 0 zz_801f9810_
-801f9df0 00000744 801f9df0 0 zz_801f9df0_
-801fa534 00000e48 801fa534 0 zz_801fa534_
-801fb37c 00000100 801fb37c 0 nw4hbm::lyt::Window::GetFrameSize(unsigned char, nw4hbm::lyt::Window::Frame const *) 	homebuttonLib.a lyt_window.o
-801fb47c 00000010 801fb47c 0 zz_801fb47c_
-801fb48c 00000054 801fb48c 0 zz_801fb48c_
-801fb4e0 00000018 801fb4e0 0 zz_801fb4e0_
-801fb4f8 0000000c 801fb4f8 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
-801fb504 0000003c 801fb504 0 J3DModelLoader_v26::J3DModelLoader_v26(void) 	J3DGraphLoader.a J3DModelLoader.o
-801fb540 00000058 801fb540 0 J3DAnmTransformFullWithLerp::~J3DAnmTransformFullWithLerp(void) 	J3DGraphAnimator.a J3DAnimation.o
-801fb598 00000004 801fb598 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801fb59c 00000008 801fb59c 0 nw4hbm::lyt::Window::GetRuntimeTypeInfo(void) const 	homebuttonLib.a lyt_window.o
-801fb5a4 0000000c 801fb5a4 0 __sinit_\lyt_window_cpp 	homebuttonLib.a lyt_window.o
+801f7748 000002ec 801f7748 0 __ct__Q34nw4r3lyt7TextBoxFPCQ44nw4r3lyt3res7TextBoxRCQ34nw4r3lyt11ResBlockSet 	libnw4r_lyt.a lyt_textBox.o
+801f7a34 000001a0 801f7a34 0 __dt__Q34nw4r3lyt7TextBoxFv 	libnw4r_lyt.a lyt_textBox.o
+801f7bd4 00000034 801f7bd4 0 GetVtxColor__Q34nw4r3lyt7TextBoxCFUl 	libnw4r_lyt.a lyt_textBox.o
+801f7c08 00000048 801f7c08 0 SetVtxColor__Q34nw4r3lyt7TextBoxFUlQ34nw4r2ut5Colo 	libnw4r_lyt.a lyt_textBox.o
+801f7c50 0000002c 801f7c50 0 SetTextColor__Q34nw4r3lyt7TextBoxFUlQ34nw4r2ut5Colo 	libnw4r_lyt.a lyt_textBox.o
+801f7c7c 00000018 801f7c7c 0 GetVtxColorElement__Q34nw4r3lyt7TextBoxCFUl 	libnw4r_lyt.a lyt_textBox.o
+801f7c94 00000018 801f7c94 0 SetVtxColorElement__Q34nw4r3lyt7TextBoxFUlUc 	libnw4r_lyt.a lyt_textBox.o
+801f7cac 00000568 801f7cac 0 DrawSelf__Q34nw4r3lyt7TextBoxFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_textBox.o
+801f8214 00000044 801f8214 0 SetColorMapping 	libnw4r_lyt.a lyt_textBox.o
+801f8258 000003e0 801f8258 0 CalcLineRectImpl<w>__Q34nw4r3lyt25@unnamed@lyt_textBox_cpp@FPQ34nw4r2ut4RectPQ34nw4r2ut17TextWriterBase<w>PCwifPb_i 	libnw4r_lyt.a lyt_textBox.o
+801f8638 00000038 801f8638 0 GetCharStrmReader__Q34nw4r2ut4FontCFv 	libnw4r_lyt.a lyt_textBox.o
+801f8670 000000c4 801f8670 0 AllocStringBuffer__Q34nw4r3lyt7TextBoxFUs 	libnw4r_lyt.a lyt_textBox.o
+801f8734 0000004c 801f8734 0 FreeStringBuffer__Q34nw4r3lyt7TextBoxFv 	libnw4r_lyt.a lyt_textBox.o
+801f8780 000000dc 801f8780 0 SetString__Q34nw4r3lyt7TextBoxFPCwUs 	libnw4r_lyt.a lyt_textBox.o
+801f885c 000000c4 801f885c 0 SetString__Q34nw4r3lyt7TextBoxFPCwUsUs 	libnw4r_lyt.a lyt_textBox.o
+801f8920 00000040 801f8920 0 __dt__Q34nw4r2ut4FontFv 	libnw4r_lyt.a lyt_textBox.o
+801f8960 00000084 801f8960 0 LoadMtx__Q34nw4r3lyt7TextBoxFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_textBox.o
+801f89e4 00000384 801f89e4 0 GetTextDrawRect__Q34nw4r3lyt7TextBoxCFPQ34nw4r2ut17TextWriterBase<w> 	libnw4r_lyt.a lyt_textBox.o
+801f8d68 000001d4 801f8d68 0 CalcStringRectImpl<w>__Q34nw4r3lyt25@unnamed@lyt_textBox_cpp@FPQ34nw4r2ut4RectPQ34nw4r2ut17TextWriterBase<w>PCwif_v 	libnw4r_lyt.a lyt_textBox.o
+801f8f3c 00000008 801f8f3c 0 GetRuntimeTypeInfo__Q34nw4r3lyt7TextBoxCFv 	libnw4r_lyt.a lyt_textBox.o
+801f8f44 0000000c 801f8f44 0 __sinit_\lyt_textBox_cpp 	libnw4r_lyt.a lyt_textBox.o
+801f8f50 00000284 801f8f50 0 __ct__Q34nw4r3lyt6WindowFPCQ44nw4r3lyt3res6WindowRCQ34nw4r3lyt11ResBlockSet 	libnw4r_lyt.a lyt_window.o
+801f91d4 00000144 801f91d4 0 __dt__Q34nw4r3lyt6WindowFv 	libnw4r_lyt.a lyt_window.o
+801f9318 000000fc 801f9318 0 FindMaterialByName__Q34nw4r3lyt6WindowFPCcb 	libnw4r_lyt.a lyt_window.o
+801f9414 0000002c 801f9414 0 GetVtxColor__Q34nw4r3lyt6WindowCFUl 	libnw4r_lyt.a lyt_window.o
+801f9440 0000002c 801f9440 0 SetVtxColor__Q34nw4r3lyt6WindowFUlQ34nw4r2ut5Color 	libnw4r_lyt.a lyt_window.o
+801f946c 00000018 801f946c 0 GetVtxColorElement__Q34nw4r3lyt6WindowCFUl 	libnw4r_lyt.a lyt_window.o
+801f9484 00000018 801f9484 0 SetVtxColorElement__Q34nw4r3lyt6WindowFUlUc 	libnw4r_lyt.a lyt_window.o
+801f949c 00000140 801f949c 0 DrawSelf__Q34nw4r3lyt6WindowFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_window.o
+801f95dc 00000090 801f95dc 0 AnimateSelf__Q34nw4r3lyt6WindowFUl 	libnw4r_lyt.a lyt_window.o
+801f966c 00000090 801f966c 0 UnbindAnimationSelf__Q34nw4r3lyt6WindowFPQ34nw4r3lyt13AnimTransform 	libnw4r_lyt.a lyt_window.o
+801f96fc 00000114 801f96fc 0 DrawContent__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2RCQ34nw4r3lyt15WindowFrameSizeUc 	libnw4r_lyt.a lyt_window.o
+801f9810 000005e0 801f9810 0 DrawFrame__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2RCQ44nw4r3lyt6Window5FrameRCQ34nw4r3lyt15WindowFrameSizeUc 	libnw4r_lyt.a lyt_window.o
+801f9df0 00000744 801f9df0 0 DrawFrame4__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2PCQ44nw4r3lyt6Window5FrameRCQ34nw4r3lyt15WindowFrameSizeUc 	libnw4r_lyt.a lyt_window.o
+801fa534 00000e48 801fa534 0 DrawFrame8__Q34nw4r3lyt6WindowFRCQ34nw4r4math4VEC2PCQ44nw4r3lyt6Window5FrameRCQ34nw4r3lyt15WindowFrameSizeUc 	libnw4r_lyt.a lyt_window.o
+801fb37c 00000100 801fb37c 0 GetFrameSize__Q34nw4r3lyt6WindowFUcPCQ44nw4r3lyt6Window5Frame libnw4r_lyt.a lyt_window.o
+801fb47c 00000010 801fb47c 0 GetMaterialNum__Q34nw4r3lyt6WindowCFv 	libnw4r_lyt.a lyt_window.o
+801fb48c 0000002c 801fb48c 0 GetMaterial__Q34nw4r3lyt6WindowCFUl 	libnw4r_lyt.a lyt_window.o
+801fb4b8 00000028 801fb4b8 0 GetFrameMaterial__Q34nw4r3lyt6WindowCFUl 	libnw4r_lyt.a lyt_window.o
+801fb4e0 00000010 801fb4e0 0 GetContentMaterial__Q34nw4r3lyt6WindowCFv 	libnw4r_lyt.a lyt_window.o
+801fb4f0 00000008 801fb4f0 0 GetRuntimeTypeInfo__Q34nw4r3lyt6WindowCFv 	libnw4r_lyt.a lyt_window.o
+801fb4f8 0000000c 801fb4f8 0 __sinit_\lyt_window_cpp 	libnw4r_lyt.a lyt_window.o
+801fb504 0000003c 801fb504 0 __ct__Q34nw4r3lyt8BoundingFPCQ44nw4r3lyt3res8BoundingRCQ34nw4r3lyt11ResBlockSet 	libnw4r_lyt.a lyt_bounding.o
+801fb540 00000058 801fb540 0 __dt__Q34nw4r3lyt8BoundingFv 	libnw4r_lyt.a lyt_bounding.o
+801fb598 00000004 801fb598 0 DrawSelf__Q34nw4r3lyt8BoundingFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_bounding.o
+801fb59c 00000008 801fb59c 0 GetRuntimeTypeInfo__Q34nw4r3lyt8BoundingCFv 	libnw4r_lyt.a lyt_bounding.o
+801fb5a4 0000000c 801fb5a4 0 __sinit_\lyt_bounding_cpp 	libnw4r_lyt.a lyt_bounding.o
 801fb5b0 00000108 801fb5b0 0 CalcTextureMtx__26@unnamed@lyt_material_cpp@FPQ36nw4hbm4math5MTX34RCQ36nw4hbm3lyt6TexSRT 	homebuttonLib.a lyt_material.o
 801fb6b8 000001fc 801fb6b8 0 SetIndTexMtx__26@unnamed@lyt_material_cpp@F14_GXIndTexMtxIDPA3_Cf 	homebuttonLib.a lyt_material.o
-801fb8b4 00000020 801fb8b4 0 zz_801fb8b4_
-801fb8d4 00000664 801fb8d4 0 zz_801fb8d4_
-801fbf38 0000000c 801fbf38 0 GXInitLightColor
-801fbf44 0000000c 801fbf44 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbf50 0000000c 801fbf50 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbf5c 0000000c 801fbf5c 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbf68 0000000c 801fbf68 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbf74 0000000c 801fbf74 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbf80 0000000c 801fbf80 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbf8c 0000000c 801fbf8c 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbf98 0000000c 801fbf98 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbfa4 0000000c 801fbfa4 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbfb0 0000000c 801fbfb0 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbfbc 0000000c 801fbfbc 0 GXGetTexObjWrapT 	gx.a GXTexture.o
-801fbfc8 00000014 801fbfc8 0 GXInitTexObjWrapMode 	gx.a GXTexture.o
-801fbfdc 0000000c 801fbfdc 0 GXGetTexObjMipMap 	gx.a GXTexture.o
-801fbfe8 0000000c 801fbfe8 0 GXGetTexObjMipMap 	gx.a GXTexture.o
-801fbff4 00000014 801fbff4 0 GXInitTexObjWrapMode 	gx.a GXTexture.o
-801fc008 00000014 801fc008 0 zz_801fc008_
-801fc01c 00000014 801fc01c 0 zz_801fc01c_
-801fc030 00000024 801fc030 0 J2DBlendInfo::operator=(J2DBlendInfo const &) 	J2DGraph.a J2DMaterialFactory.o
-801fc054 00000024 801fc054 0 J2DBlendInfo::operator=(J2DBlendInfo const &) 	J2DGraph.a J2DMaterialFactory.o
-801fc078 00000024 801fc078 0 J2DBlendInfo::operator=(J2DBlendInfo const &) 	J2DGraph.a J2DMaterialFactory.o
-801fc09c 0000000c 801fc09c 0 J3DColorBlockLightOff::setColorChanNum(unsigned char const *) 	J3DGraphBase.a J3DMatBlock.o
-801fc0a8 0000002c 801fc0a8 0 zz_801fc0a8_
-801fc0d4 00000024 801fc0d4 0 J2DBlendInfo::operator=(J2DBlendInfo const &) 	J2DGraph.a J2DMaterialFactory.o
-801fc0f8 000000ac 801fc0f8 0 zz_801fc0f8_
-801fc1a4 00000024 801fc1a4 0 J2DBlendInfo::operator=(J2DBlendInfo const &) 	J2DGraph.a J2DMaterialFactory.o
-801fc1c8 00000024 801fc1c8 0 J2DBlendInfo::operator=(J2DBlendInfo const &) 	J2DGraph.a J2DMaterialFactory.o
-801fc1ec 00000008 801fc1ec 0 zz_801fc1ec_
-801fc1f4 00000008 801fc1f4 0 zz_801fc1f4_
-801fc1fc 00000008 801fc1fc 0 zz_801fc1fc_
-801fc204 00000008 801fc204 0 zz_801fc204_
-801fc20c 00000008 801fc20c 0 zz_801fc20c_
-801fc214 00000008 801fc214 0 zz_801fc214_
-801fc21c 00000008 801fc21c 0 zz_801fc21c_
-801fc224 00000008 801fc224 0 zz_801fc224_
-801fc22c 00000008 801fc22c 0 zz_801fc22c_
-801fc234 00000010 801fc234 0 zz_801fc234_
-801fc244 00000008 801fc244 0 zz_801fc244_
-801fc24c 00000008 801fc24c 0 zz_801fc24c_
-801fc254 00000008 801fc254 0 zz_801fc254_
-801fc25c 00000070 801fc25c 0 zz_801fc25c_
-801fc2cc 000000ac 801fc2cc 0 nw4hbm::lyt::Material::~Material(void) 	homebuttonLib.a lyt_material.o
-801fc378 0000076c 801fc378 0 zz_801fc378_
-801fcae4 00000008 801fcae4 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-801fcaec 00000008 801fcaec 0 CBGetBytesAvailableForRead 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\utils\common\Circle
-801fcaf4 00000018 801fcaf4 0 zz_801fcaf4_
-801fcb0c 00000024 801fcb0c 0 zz_801fcb0c_
-801fcb30 0000002c 801fcb30 0 zz_801fcb30_
-801fcb5c 00000034 801fcb5c 0 zz_801fcb5c_
-801fcb90 0000003c 801fcb90 0 zz_801fcb90_
-801fcbcc 00000044 801fcbcc 0 zz_801fcbcc_
-801fcc10 0000004c 801fcc10 0 zz_801fcc10_
-801fcc5c 00000054 801fcc5c 0 zz_801fcc5c_
-801fccb0 0000005c 801fccb0 0 zz_801fccb0_
-801fcd0c 00000064 801fcd0c 0 zz_801fcd0c_
-801fcd70 0000003c 801fcd70 0 zz_801fcd70_
-801fcdac 00000090 801fcdac 0 zz_801fcdac_
-801fce3c 00000088 801fce3c 0 zz_801fce3c_
-801fcec4 00000120 801fcec4 0 zz_801fcec4_
-801fcfe4 000000c4 801fcfe4 0 zz_801fcfe4_
-801fd0a8 00000138 801fd0a8 0 zz_801fd0a8_
-801fd1e0 00000010 801fd1e0 0 J3DTevBlockPatched::setTexNo(unsigned long, unsigned short) 	J3DGraphBase.a J3DMatBlock.o
-801fd1f0 00000088 801fd1f0 0 zz_801fd1f0_
-801fd278 00000010 801fd278 0 zz_801fd278_
-801fd288 00000ea0 801fd288 0 zz_801fd288_
-801fe128 000000b4 801fe128 0 zz_801fe128_
-801fe1dc 00000034 801fe1dc 0 nw4hbm::lyt::Pane::AddAnimationLink(nw4hbm::lyt::AnimationLink *) 	homebuttonLib.a lyt_pane.o
-801fe210 0000005c 801fe210 0 zz_801fe210_
-801fe26c 0000004c 801fe26c 0 nw4hbm::lyt::Material::SetAnimationEnable(nw4hbm::lyt::AnimTransform *, bool) 	homebuttonLib.a lyt_material.o
-801fe2b8 00000070 801fe2b8 0 zz_801fe2b8_
-801fe328 000000ec 801fe328 0 zz_801fe328_
-801fe414 0000001c 801fe414 0 zz_801fe414_
-801fe430 00000070 801fe430 0 zz_801fe430_
-801fe4a0 00000124 801fe4a0 0 zz_801fe4a0_
-801fe5c4 000000d0 801fe5c4 0 zz_801fe5c4_
-801fe694 00000074 801fe694 0 nw4hbm::lyt::DrawInfo::DrawInfo(void) 	homebuttonLib.a lyt_drawInfo.o
-801fe708 00000040 801fe708 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-801fe748 000000e8 801fe748 0 GetStepCurveValue__27@unnamed@lyt_animation_cpp@FfPCQ46nw4hbm3lyt3res7StepKeyUl 	homebuttonLib.a lyt_animation.o
-801fe830 000001bc 801fe830 0 GetHermiteCurveValue__27@unnamed@lyt_animation_cpp@FfPCQ46nw4hbm3lyt3res10HermiteKeyUl 	homebuttonLib.a lyt_animation.o
-801fe9ec 0000000c 801fe9ec 0 JUTResFont::getFontType(void) const 	JUtility.a JUTCacheFont.o
-801fe9f8 00000034 801fe9f8 0 nw4hbm::lyt::AnimTransformBasic::AnimTransformBasic(void) 	homebuttonLib.a lyt_animation.o
-801fea2c 00000084 801fea2c 0 nw4hbm::lyt::AnimTransformBasic::~AnimTransformBasic(void) 	homebuttonLib.a lyt_animation.o
-801feab0 00000178 801feab0 0 zz_801feab0_
-801fec28 000001c8 801fec28 0 zz_801fec28_
-801fedf0 00000114 801fedf0 0 zz_801fedf0_
-801fef04 000001ec 801fef04 0 nw4hbm::lyt::AnimTransformBasic::Animate(unsigned long, nw4hbm::lyt::Pane *) 	homebuttonLib.a lyt_animation.o
-801ff0f0 000002fc 801ff0f0 0 zz_801ff0f0_
-801ff3ec 00000018 801ff3ec 0 cPlayer::ClearSwapControllerTimer(void)
-801ff404 00000110 801ff404 0 zz_801ff404_
-801ff514 0000001c 801ff514 0 zz_801ff514_
-801ff530 00000020 801ff530 0 zz_801ff530_
-801ff550 00000020 801ff550 0 zz_801ff550_
-801ff570 0000001c 801ff570 0 zz_801ff570_
-801ff58c 00000020 801ff58c 0 zz_801ff58c_
-801ff5ac 000000d8 801ff5ac 0 zz_801ff5ac_
-801ff684 00000068 801ff684 0 zz_801ff684_
-801ff6ec 00000038 801ff6ec 0 zz_801ff6ec_
-801ff724 00000260 801ff724 0 zz_801ff724_
-801ff984 000001e4 801ff984 0 zz_801ff984_
-801ffb68 00000034 801ffb68 0 nw4hbm::lyt::detail::FindAnimationLink(nw4hbm::ut::LinkList<Q36nw4hbm3lyt13AnimationLink,0> *, nw4hbm::lyt::AnimTransform *) 	h
-801ffb9c 0000003c 801ffb9c 0 zz_801ffb9c_
-801ffbd8 00000084 801ffbd8 0 zz_801ffbd8_
-801ffc5c 00000040 801ffc5c 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-801ffc9c 00000010 801ffc9c 0 J3DAnmKeyLoader_v15::J3DAnmKeyLoader_v15(void) 	J3DGraphLoader.a J3DAnmLoader.o
-801ffcac 00000008 801ffcac 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
+801fb8b4 00000020 801fb8b4 0 __ct__Q34nw4r2ut38LinkList<Q34nw4r3lyt13AnimationLink,0>Fv 	libnw4r_lyt.a lyt_material.o
+801fb8d4 00000664 801fb8d4 0 __ct__Q34nw4r3lyt8MaterialFPCQ44nw4r3lyt3res8MaterialRCQ34nw4r3lyt11ResBlockSet 	libnw4r_lyt.a lyt_material.o
+801fbf38 0000000c 801fbf38 0 __as__Q34nw4r2ut5ColorFRC8_GXColor 	libnw4r_lyt.a lyt_material.o
+801fbf44 0000000c 801fbf44 0 GetTexMapNum__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbf50 0000000c 801fbf50 0 GetTexSRTNum__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbf5c 0000000c 801fbf5c 0 GetTexCoordGenNum__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbf68 0000000c 801fbf68 0 GetChanCtrlNum__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbf74 0000000c 801fbf74 0 GetMatColNum__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbf80 0000000c 801fbf80 0 HasTevSwapTable__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbf8c 0000000c 801fbf8c 0 HasAlphaCompare__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbf98 0000000c 801fbf98 0 HasBlendMode__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbfa4 0000000c 801fbfa4 0 GetIndTexSRTNum__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbfb0 0000000c 801fbfb0 0 GetIndTexStageNum__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbfbc 0000000c 801fbfbc 0 GetTevStageNum__Q44nw4r3lyt3res19MaterialResourceNumCFv 	libnw4r_lyt.a lyt_material.o
+801fbfc8 00000014 801fbfc8 0 SetWrapMode__Q34nw4r3lyt6TexMapF14_GXTexWrapMode14_GXTexWrapMode 	libnw4r_lyt.a lyt_material.o
+801fbfdc 0000000c 801fbfdc 0 GetWarpModeS__Q44nw4r3lyt3res6TexMapCFv 	libnw4r_lyt.a lyt_material.o
+801fbfe8 0000000c 801fbfe8 0 GetWarpModeT__Q44nw4r3lyt3res6TexMapCFv 	libnw4r_lyt.a lyt_material.o
+801fbff4 00000014 801fbff4 0 SetFilter__Q34nw4r3lyt6TexMapF12_GXTexFilter12_GXTexFilter 	libnw4r_lyt.a lyt_material.o
+801fc008 00000014 801fc008 0 GetMinFilter__Q44nw4r3lyt3res6TexMapCFv 	libnw4r_lyt.a lyt_material.o
+801fc01c 00000014 801fc01c 0 GetMagFilter__Q44nw4r3lyt3res6TexMapCFv 	libnw4r_lyt.a lyt_material.o
+801fc030 00000024 801fc030 0 __as__Q34nw4r3lyt11TexCoordGenFRCQ34nw4r3lyt11TexCoordGen 	libnw4r_lyt.a lyt_material.o
+801fc054 00000024 801fc054 0 __as__Q34nw4r3lyt8ChanCtrlFRCQ34nw4r3lyt8ChanCtrl 	libnw4r_lyt.a lyt_material.o
+801fc078 00000024 801fc078 0 __as__Q34nw4r2ut5ColorFRCQ34nw4r2ut5Color 	libnw4r_lyt.a lyt_material.o
+801fc09c 0000000c 801fc09c 0 __as__Q34nw4r3lyt11TevSwapModeFRCQ34nw4r3lyt11TevSwapMode 	libnw4r_lyt.a lyt_material.o
+801fc0a8 0000002c 801fc0a8 0 __as__Q34nw4r3lyt6TexSRTFRCQ34nw4r3lyt6TexSRT 	libnw4r_lyt.a lyt_material.o
+801fc0d4 00000024 801fc0d4 0 __as__Q34nw4r3lyt13IndirectStageFRCQ34nw4r3lyt13IndirectStage 	libnw4r_lyt.a lyt_material.o
+801fc0f8 000000ac 801fc0f8 0 __as__Q34nw4r3lyt8TevStageFRCQ34nw4r3lyt8TevStage 	libnw4r_lyt.a lyt_material.o
+801fc1a4 00000024 801fc1a4 0 __as__Q34nw4r3lyt12AlphaCompareFRCQ34nw4r3lyt12AlphaCompare 	libnw4r_lyt.a lyt_material.o
+801fc1c8 00000024 801fc1c8 0 __as__Q34nw4r3lyt9BlendModeFRCQ34nw4r3lyt9BlendMode 	libnw4r_lyt.a lyt_material.o
+801fc1ec 00000008 801fc1ec 0 ConvertOffsToPtr<Q34nw4r3lyt9BlendMode>__Q34nw4r3lyt6detailFPCvUi_PCQ34nw4r3lyt9BlendMode 	libnw4r_lyt.a lyt_material.o
+801fc1f4 00000008 801fc1f4 0 ConvertOffsToPtr<Q34nw4r3lyt12AlphaCompare>__Q34nw4r3lyt6detailFPCvUi_PCQ34nw4r3lyt12AlphaCompare 	libnw4r_lyt.a lyt_material.o
+801fc1fc 00000008 801fc1fc 0 ConvertOffsToPtr<Q34nw4r3lyt8TevStage>__Q34nw4r3lyt6detailFPCvUi_PCQ34nw4r3lyt8TevStage 	libnw4r_lyt.a lyt_material.o
+801fc204 00000008 801fc204 0 ConvertOffsToPtr<Q34nw4r3lyt13IndirectStage>__Q34nw4r3lyt6detailFPCvUi_PCQ34nw4r3lyt13IndirectStage 	libnw4r_lyt.a lyt_material.o
+801fc20c 00000008 801fc20c 0 ConvertOffsToPtr<Q34nw4r3lyt11TevSwapMode>__Q34nw4r3lyt6detailFPCvUi_PCQ34nw4r3lyt11TevSwapMode 	libnw4r_lyt.a lyt_material.o
+801fc214 00000008 801fc214 0 ConvertOffsToPtr<Q34nw4r2ut5Color>__Q34nw4r3lyt6detailFPCvUi_PCQ34nw4r2ut5Color 	libnw4r_lyt.a lyt_material.o
+801fc21c 00000008 801fc21c 0 ConvertOffsToPtr<Q34nw4r3lyt8ChanCtrl>__Q34nw4r3lyt6detailFPCvUi_PCQ34nw4r3lyt8ChanCtrl 	libnw4r_lyt.a lyt_material.o
+801fc224 00000008 801fc224 0 ConvertOffsToPtr<c>__Q34nw4r3lyt6detailFPCvUi_PCc 	libnw4r_lyt.a lyt_material.o
+801fc22c 00000008 801fc22c 0 ConvertOffsToPtr<Q44nw4r3lyt3res7Texture>__Q34nw4r3lyt6detailFPCvUi_PCQ44nw4r3lyt3res7Texture 	libnw4r_lyt.a lyt_material.o
+801fc234 00000010 801fc234 0 Min<Uc>__Q34nw4r2ut26@unnamed@lyt_material_cpp@FUcUc_Uc 	libnw4r_lyt.a lyt_material.o
+801fc244 00000008 801fc244 0 ConvertOffsToPtr<Q34nw4r3lyt11TexCoordGen>__Q34nw4r3lyt6detailFPCvUi_PCQ34nw4r3lyt11TexCoordGen 	libnw4r_lyt.a lyt_material.o
+801fc24c 00000008 801fc24c 0 ConvertOffsToPtr<Q34nw4r3lyt6TexSRT>__Q34nw4r3lyt6detailFPCvUi_PCQ34nw4r3lyt6TexSRT 	libnw4r_lyt.a lyt_material.o
+801fc254 00000008 801fc254 0 ConvertOffsToPtr<Q44nw4r3lyt3res6TexMap>__Q34nw4r3lyt6detailFPCvUi_PCQ44nw4r3lyt3res6TexMap 	libnw4r_lyt.a lyt_material.o
+801fc25c 00000070 801fc25c 0 Init__Q34nw4r3lyt8MaterialFv 	libnw4r_lyt.a lyt_material.o
+801fc2cc 000000ac 801fc2cc 0 __dt__Q34nw4r3lyt8MaterialFv 	libnw4r_lyt.a lyt_material.o
+801fc378 0000076c 801fc378 0 ReserveGXMem__Q34nw4r3lyt8MaterialFUcUcUcUcbUcUcbbbb 	libnw4r_lyt.a lyt_material.o
+801fcae4 00000008 801fcae4 0 GetTexMapAry__Q34nw4r3lyt8MaterialCFv libnw4r_lyt.a lyt_material.o
+801fcaec 00000008 801fcaec 0 GetTexMapAry__Q34nw4r3lyt8MaterialFv 	libnw4r_lyt.a lyt_material.o
+801fcaf4 00000018 801fcaf4 0 GetTexSRTAry__Q34nw4r3lyt8MaterialFv 	libnw4r_lyt.a lyt_material.o
+801fcb0c 00000024 801fcb0c 0 GetTexCoordGenAry__Q34nw4r3lyt8MaterialFv 	libnw4r_lyt.a lyt_material.o
+801fcb30 0000002c 801fcb30 0 GetChanCtrlAry__Q34nw4r3lyt8MaterialFv libnw4r_lyt.a lyt_material.o
+801fcb5c 00000034 801fcb5c 0 GetMatColAry__Q34nw4r3lyt8MaterialFv libnw4r_lyt.a lyt_material.o
+801fcb90 0000003c 801fcb90 0 GetTevSwapAry__Q34nw4r3lyt8MaterialFv libnw4r_lyt.a lyt_material.o
+801fcbcc 00000044 801fcbcc 0 GetAlphaComparePtr__Q34nw4r3lyt8MaterialFv libnw4r_lyt.a lyt_material.o
+801fcc10 0000004c 801fcc10 0 GetBlendModePtr__Q34nw4r3lyt8MaterialFv libnw4r_lyt.a lyt_material.o
+801fcc5c 00000054 801fcc5c 0 GetIndirectStageAry__Q34nw4r3lyt8MaterialFv libnw4r_lyt.a lyt_material.o
+801fccb0 0000005c 801fccb0 0 GetIndTexSRTAry__Q34nw4r3lyt8MaterialFv 	libnw4r_lyt.a lyt_material.o
+801fcd0c 00000064 801fcd0c 0 GetTevStageAry__Q34nw4r3lyt8MaterialFv 	libnw4r_lyt.a lyt_material.o
+801fcd70 0000003c 801fcd70 0 SetName__Q34nw4r3lyt8MaterialFPCc 	libnw4r_lyt.a lyt_material.o
+801fcdac 00000090 801fcdac 0 SetTextureNum__Q34nw4r3lyt8MaterialFUc 	libnw4r_lyt.a lyt_material.o
+801fce3c 00000088 801fce3c 0 SetTexCoordGenNum__Q34nw4r3lyt8MaterialFUc 	libnw4r_lyt.a lyt_material.o
+801fcec4 00000120 801fcec4 0 SetTevStageNum__Q34nw4r3lyt8MaterialFUc 	libnw4r_lyt.a lyt_material.o
+801fcfe4 000000c4 801fcfe4 0 SetIndStageNum__Q34nw4r3lyt8MaterialFUc 	libnw4r_lyt.a lyt_material.o
+801fd0a8 000001e0 801fd0a8 0 SetColorElement__Q34nw4r3lyt8MaterialFUls 	libnw4r_lyt.a lyt_material.o
+801fd288 00000ea0 801fd288 0 SetupGX__Q34nw4r3lyt8MaterialFbUc 	libnw4r_lyt.a lyt_material.o
+801fe128 00000020 801fe128 0 BindAnimation__Q34nw4r3lyt8MaterialFPQ34nw4r3lyt13AnimTransform 	libnw4r_lyt.a lyt_material.o
+801fe148 00000008 801fe148 0 UnbindAnimation__Q34nw4r3lyt8MaterialFPQ34nw4r3lyt13AnimTransform 	libnw4r_lyt.a lyt_material.o
+801fe150 00000014 801fe150 0 UnbindAllAnimation__Q34nw4r3lyt8MaterialFv 	libnw4r_lyt.a lyt_material.o
+801fe164 00000078 801fe164 0 Animate__Q34nw4r3lyt8MaterialFv 	libnw4r_lyt.a lyt_material.o
+801fe1dc 00000034 801fe1dc 0 AddAnimationLink__Q34nw4r3lyt8MaterialFPQ34nw4r3lyt13AnimationLink 	libnw4r_lyt.a lyt_material.o
+801fe210 0000005c 801fe210 0 SetAnimationEnable__Q34nw4r3lyt8MaterialFPQ34nw4r3lyt13AnimTransformb 	libnw4r_lyt.a lyt_material.o
+801fe26c 0000004c 801fe26c 0 SetAnimationEnable__Q34nw4r3lyt8MaterialFRCQ34nw4r3lyt12AnimResourceb 	libnw4r_lyt.a lyt_material.o
+801fe2b8 00000070 801fe2b8 0 GetTextureSize__Q34nw4r3lyt6detailFPQ34nw4r3lyt8MaterialUc 	libnw4r_lyt.a lyt_material.o
+801fe328 000000ec 801fe328 0 Get__Q34nw4r3lyt6TexMapCFP9_GXTexObj 	libnw4r_lyt.a lyt_texMap.o
+801fe414 0000001c 801fe414 0 Get__Q34nw4r3lyt6TexMapCFP10_GXTlutObj 	libnw4r_lyt.a lyt_texMap.o
+801fe430 00000070 801fe430 0 Set__Q34nw4r3lyt6TexMapFP10TPLPaletteUl libnw4r_lyt.a lyt_texMap.o
+801fe4a0 00000124 801fe4a0 0 Set__Q34nw4r3lyt6TexMapFPC13TPLDescriptor libnw4r_lyt.a lyt_texMap.o
+801fe5c4 000000d0 801fe5c4 0 ReplaceImage__Q34nw4r3lyt6TexMapFP10TPLPaletteUl 	libnw4r_lyt.a lyt_texMap.o
+801fe694 00000074 801fe694 0 __ct__Q34nw4r3lyt8DrawInfoFv 	libnw4r_lyt.a lyt_drawInfo.o
+801fe708 00000040 801fe708 0 __dt__Q34nw4r3lyt8DrawInfoFv 	libnw4r_lyt.a lyt_drawInfo.o
+801fe748 000000e8 801fe748 0 GetStepCurveValue__Q34nw4r3lyt27@unnamed@lyt_animation_cpp@FfPCQ44nw4r3lyt3res7StepKeyUl 	libnw4r_lyt.a lyt_animation.o
+801fe830 000001bc 801fe830 0 GetHermiteCurveValue__Q34nw4r3lyt27@unnamed@lyt_animation_cpp@FfPCQ44nw4r3lyt3res10HermiteKeyUl 	libnw4r_lyt.a lyt_animation.o
+801fe9ec 0000000c 801fe9ec 0 GetFrameSize__Q34nw4r3lyt13AnimTransformCFv 	libnw4r_lyt.a lyt_animation.o
+801fe9f8 00000034 801fe9f8 0 __ct__Q34nw4r3lyt18AnimTransformBasicFv 	libnw4r_lyt.a lyt_animation.o
+801fea2c 00000084 801fea2c 0 __dt__Q34nw4r3lyt18AnimTransformBasicFv 	libnw4r_lyt.a lyt_animation.o
+801feab0 00000178 801feab0 0 SetResource__Q34nw4r3lyt18AnimTransformBasicFPCQ44nw4r3lyt3res14AnimationBlockPQ34nw4r3lyt16ResourceAccessorUs 	libnw4r_lyt.a lyt_animation.o
+801fec28 000001c8 801fec28 0 Bind__Q34nw4r3lyt18AnimTransformBasicFPQ34nw4r3lyt4Panebb 	libnw4r_lyt.a lyt_animation.o
+801fedf0 00000114 801fedf0 0 Bind__Q34nw4r3lyt18AnimTransformBasicFPQ34nw4r3lyt8Materialb 	libnw4r_lyt.a lyt_animation.o
+801fef04 000001ec 801fef04 0 __ct__Q34nw4r3lyt12AnimResourceFv 	libnw4r_lyt.a lyt_animation.o
+801ff0f0 000002fc 801ff0f0 0 Set__Q34nw4r3lyt12AnimResourceFPCv 	libnw4r_lyt.a lyt_animation.o
+801ff3ec 00000018 801ff3ec 0 __ct__Q34nw4r3lyt12AnimResourceFv 	libnw4r_lyt.a lyt_animation.o
+801ff404 00000110 801ff404 0 Set__Q34nw4r3lyt12AnimResourceFPCv 	libnw4r_lyt.a lyt_animation.o
+801ff514 0000001c 801ff514 0 GetGroupNum__Q34nw4r3lyt12AnimResourceCFv 	libnw4r_lyt.a lyt_animation.o
+801ff530 00000020 801ff530 0 GetGroupArray__Q34nw4r3lyt12AnimResourceCFv 	libnw4r_lyt.a lyt_animation.o
+801ff550 00000020 801ff550 0 IsDescendingBind__Q34nw4r3lyt12AnimResourceCFv 	libnw4r_lyt.a lyt_animation.o
+801ff570 0000001c 801ff570 0 GetAnimationShareInfoNum__Q34nw4r3lyt12AnimResourceCFv 	libnw4r_lyt.a lyt_animation.o
+801ff58c 00000020 801ff58c 0 GetAnimationShareInfoArray__Q34nw4r3lyt12AnimResourceCFv 	libnw4r_lyt.a lyt_animation.o
+801ff5ac 000000d8 801ff5ac 0 CalcAnimationNum__Q34nw4r3lyt12AnimResourceCFPQ34nw4r3lyt4Paneb 	libnw4r_lyt.a lyt_animation.o
+801ff684 00000068 801ff684 0 CalcAnimationNum__Q34nw4r3lyt12AnimResourceCFPQ34nw4r3lyt5Groupb 	libnw4r_lyt.a lyt_animation.o
+801ff6ec 00000038 801ff6ec 0 Init__Q44nw4r3lyt6detail12AnimPaneTreeFv 	libnw4r_lyt.a lyt_animation.o
+801ff724 00000260 801ff724 0 Set__Q44nw4r3lyt6detail12AnimPaneTreeFPQ34nw4r3lyt4PaneRCQ34nw4r3lyt12AnimResource 	libnw4r_lyt.a lyt_animation.o
+801ff984 000001e4 801ff984 0 Bind__Q44nw4r3lyt6detail12AnimPaneTreeCFPQ34nw4r3lyt6LayoutPQ34nw4r3lyt4PanePQ34nw4r3lyt16ResourceAccessor 	libnw4r_lyt.a lyt_animation.o
+801ffb68 00000034 801ffb68 0 FindAnimationLink__Q34nw4r3lyt6detailFPQ34nw4r2ut38LinkList<Q34nw4r3lyt13AnimationLink,0>PQ34nw4r3lyt13AnimTransform 	libnw4r_lyt.a lyt_animation.o
+801ffb9c 0000003c 801ffb9c 0 FindAnimationLink__Q34nw4r3lyt6detailFPQ34nw4r2ut38LinkList<Q34nw4r3lyt13AnimationLink,0>RCQ34nw4r3lyt12AnimResource 	libnw4r_lyt.a lyt_animation.o
+801ffbd8 00000084 801ffbd8 0 UnbindAnimationLink__Q34nw4r3lyt6detailFPQ34nw4r2ut38LinkList<Q34nw4r3lyt13AnimationLink,0>PQ34nw4r3lyt13AnimTransform 	libnw4r_lyt.a lyt_animation.o
+801ffc5c 00000040 801ffc5c 0 __dt__Q34nw4r3lyt16ResourceAccessorFv 	libnw4r_lyt.a lyt_resourceAccessor.o
+801ffc9c 00000010 801ffc9c 0 __ct__Q34nw4r3lyt16ResourceAccessorFv 	libnw4r_lyt.a lyt_resourceAccessor.o
+801ffcac 00000008 801ffcac 0 GetFont__Q34nw4r3lyt16ResourceAccessorFPCc 	libnw4r_lyt.a lyt_resourceAccessor.o
 801ffcb4 000000cc 801ffcb4 0 FindNameResource__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCc 	homebuttonLib.a lyt_arcResourceAccessor.o
 801ffd80 00000140 801ffd80 0 GetResourceSub__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCcUlPCcPUl 	homebuttonLib.a lyt_arcResourceAccessor.o
-801ffec0 0000005c 801ffec0 0 nw4hbm::lyt::ArcResourceAccessor::ArcResourceAccessor(void) 	homebuttonLib.a lyt_arcResourceAccessor.o
-801fff1c 0000007c 801fff1c 0 nw4hbm::lyt::ArcResourceAccessor::Attach(void *, char const *) 	homebuttonLib.a lyt_arcResourceAccessor.o
-801fff98 00000090 801fff98 0 zz_801fff98_
-80200028 0000002c 80200028 0 nw4hbm::lyt::detail::EqualsMaterialName(char const *, char const *) 	homebuttonLib.a lyt_common.o
-80200054 0000002c 80200054 0 nw4hbm::lyt::detail::EqualsMaterialName(char const *, char const *) 	homebuttonLib.a lyt_common.o
-80200080 00000028 80200080 0 zz_80200080_
-802000a8 00000014 802000a8 0 nw4hbm::lyt::detail::TexCoordAry::TexCoordAry(void) 	homebuttonLib.a lyt_common.o
-802000bc 00000050 802000bc 0 zz_802000bc_
-8020010c 00000094 8020010c 0 zz_8020010c_
-802001a0 000000ec 802001a0 0 nw4hbm::lyt::detail::TexCoordAry::SetSize(unsigned char) 	homebuttonLib.a lyt_common.o
-8020028c 0000004c 8020028c 0 zz_8020028c_
-802002d8 00000068 802002d8 0 zz_802002d8_
-80200340 00000094 80200340 0 nw4hbm::lyt::detail::TexCoordAry::Copy(void const *, unsigned char) 	homebuttonLib.a lyt_common.o
-802003d4 00000068 802003d4 0 nw4hbm::lyt::detail::IsModulateVertexColor(nw4hbm::ut::Color *, unsigned char) 	homebuttonLib.a lyt_common.o
-8020043c 00000054 8020043c 0 nw4hbm::lyt::detail::MultipleAlpha(nw4hbm::ut::Color, unsigned char) 	homebuttonLib.a lyt_common.o
-80200490 000000e4 80200490 0 nw4hbm::lyt::detail::SetVertexFormat(bool, unsigned char) 	homebuttonLib.a lyt_common.o
-80200574 00000560 80200574 0 zz_80200574_
-80200ad4 000000f8 80200ad4 0 nw4hbm::lyt::detail::DrawQuad(nw4hbm::math::VEC2 const &, nw4hbm::lyt::Size const &, unsigned char, nw4hbm::math::VEC2 const (*
-80200bcc 00000070 80200bcc 0 zz_80200bcc_
+801ffec0 0000005c 801ffec0 0 __ct__Q34nw4r3lyt19ArcResourceAccessorFv 	libnw4r_lyt.a lyt_arcResourceAccessor.o
+801fff1c 0000007c 801fff1c 0 Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc 	libnw4r_lyt.a lyt_arcResourceAccessor.o
+801fff98 00000020 801fff98 0 GetResource__Q34nw4r3lyt19ArcResourceAccessorFUlPCcPUl 	libnw4r_lyt.a lyt_arcResourceAccessor.o
+801fffb8 00000070 801fffb8 0 GetFont__Q34nw4r3lyt19ArcResourceAccessorFPCc 	libnw4r_lyt.a lyt_arcResourceAccessor.o
+80200028 0000002c 80200028 0 EqualsResName__Q34nw4r3lyt6detailFPCcPCc 	libnw4r_lyt.a lyt_common.o
+80200054 0000002c 80200054 0 EqualsMaterialName__Q34nw4r3lyt6detailFPCcPCc 	libnw4r_lyt.a lyt_common.o
+80200080 00000028 80200080 0 TestFileHeader__Q34nw4r3lyt6detailFRCQ44nw4r3lyt3res16BinaryFileHeaderUl 	libnw4r_lyt.a lyt_common.o
+802000a8 00000014 802000a8 0 __ct__Q44nw4r3lyt6detail11TexCoordAryFv 	libnw4r_lyt.a lyt_common.o
+802000bc 00000050 802000bc 0 Free__Q44nw4r3lyt6detail11TexCoordAryFv 	libnw4r_lyt.a lyt_common.o
+8020010c 00000094 8020010c 0 Reserve__Q44nw4r3lyt6detail11TexCoordAryFUc 	libnw4r_lyt.a lyt_common.o
+802001a0 000000ec 802001a0 0 SetSize__Q44nw4r3lyt6detail11TexCoordAryFUc 	libnw4r_lyt.a lyt_common.o
+8020028c 0000004c 8020028c 0 GetCoord__Q44nw4r3lyt6detail11TexCoordAryCFUlPQ34nw4r4math4VEC2 libnw4r_lyt.a lyt_common.o
+802002d8 00000068 802002d8 0 SetCoord__Q44nw4r3lyt6detail11TexCoordAryFUlPCQ34nw4r4math4VEC2 libnw4r_lyt.a lyt_common.o
+80200340 00000094 80200340 0 Copy__Q44nw4r3lyt6detail11TexCoordAryFPCvUc 	libnw4r_lyt.a lyt_common.o
+802003d4 00000068 802003d4 0 IsModulateVertexColor__Q34nw4r3lyt6detailFPQ34nw4r2ut5ColorUc 	libnw4r_lyt.a lyt_common.o
+8020043c 00000054 8020043c 0 MultipleAlpha__Q34nw4r3lyt6detailFQ34nw4r2ut5ColorUc 	libnw4r_lyt.a lyt_common.o
+80200490 000000e4 80200490 0 SetVertexFormat__Q34nw4r3lyt6detailFbUc 	libnw4r_lyt.a lyt_common.o
+80200574 00000560 80200574 0 DrawQuad__Q34nw4r3lyt6detailFRCQ34nw4r4math4VEC2RCQ34nw4r3lyt4SizeUcPA4_CQ34nw4r4math4VEC2PCQ34nw4r2ut5Color 	libnw4r_lyt.a lyt_common.o
+80200ad4 000000f8 80200ad4 0 DrawQuad__Q34nw4r3lyt6detailFRCQ34nw4r4math4VEC2RCQ34nw4r3lyt4SizeUcPA4_CQ34nw4r4math4VEC2PCQ34nw4r2ut5ColorUc 	libnw4r_lyt.a lyt_common.o
+80200bcc 00000070 80200bcc 0 BindAnimation__Q24nw4r3lytFPQ34nw4r3lyt5GroupPQ34nw4r3lyt13AnimTransformbb 	libnw4r_lyt.a lyt_util.o
 80200c3c 0000008c 80200c3c 0 FExp__Q34nw4r4math6detailFf 	libnw4r_math.a math_arithmetic.o
 80200cc8 0000008c 80200cc8 0 FLog__Q34nw4r4math6detailFf 	libnw4r_math.a math_arithmetic.o
 80200d54 00000024 80200d54 0 FrSqrt__Q24nw4r4mathFf 	libnw4r_math.a math_arithmetic.o
