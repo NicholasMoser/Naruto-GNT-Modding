@@ -5487,7 +5487,7 @@
 801c493c 000000bc 801c493c 0 zz_801c493c_
 801c49f8 0000007c 801c49f8 0 zz_801c49f8_
 801c4a74 00000030 801c4a74 0 zz_801c4a74_
-801c4aa4 0000003c 801c4aa4 0 J3DModelLoader_v26::J3DModelLoader_v26(void) 	J3DGraphLoader.a J3DModelLoader.o
+801c4aa4 0000003c 801c4aa4 0 zz_801c4aa4_
 801c4ae0 00000138 801c4ae0 0 zz_801c4ae0_
 801c4c18 0000086c 801c4c18 0 zz_801c4c18_
 801c5484 0000003c 801c5484 0 J3DModelLoader_v26::J3DModelLoader_v26(void) 	J3DGraphLoader.a J3DModelLoader.o
@@ -5802,348 +5802,351 @@
 801d9488 00000068 801d9488 0 zz_801d9488_
 801d94f0 00000050 801d94f0 0 zz_801d94f0_
 801d9540 00000030 801d9540 0 zz_801d9540_
-801d9570 0000000c 801d9570 0 GetOneTimerLeadGroundContactAnims(void)
+801d9570 0000000c 801d9570 0 zz_801d9570_
 801d957c 00000044 801d957c 0 zz_801d957c_
 801d95c0 00000030 801d95c0 0 zz_801d95c0_
-801d95f0 0000000c 801d95f0 0 GetOneTimerLeadGroundContactAnims(void)
+801d95f0 0000000c 801d95f0 0 zz_801d95f0_
 801d95fc 0000001c 801d95fc 0 zz_801d95fc_
-801d9618 00000044 801d9618 0 zz_801d9618_
-801d965c 00000008 801d965c 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801d9664 00000004 801d9664 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+801d9618 0000003c 801d9618 0 release
+801d9654 00000008 801d9654 0 zz_801d9618_
+801d965c 00000008 801d965c 0 zz_801d965c_
+801d9664 00000004 801d9664 0 zz_801d9664_
 801d9668 00000040 801d9668 0 zz_801d9668_
-801d96a8 000001f0 801d96a8 0 zz_801d96a8_
-801d9898 000000c0 801d9898 0 zz_801d9898_
-801d9958 00000008 801d9958 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801d9960 000000b4 801d9960 0 zz_801d9960_
-801d9a14 00000008 801d9a14 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801d9a1c 000000e0 801d9a1c 0 zz_801d9a1c_
-801d9afc 000000f8 801d9afc 0 zz_801d9afc_
-801d9bf4 00000078 801d9bf4 0 zz_801d9bf4_
-801d9c6c 00000054 801d9c6c 0 zz_801d9c6c_
-801d9cc0 000001f4 801d9cc0 0 zz_801d9cc0_
-801d9eb4 00000068 801d9eb4 0 zz_801d9eb4_
-801d9f1c 00000050 801d9f1c 0 zz_801d9f1c_
-801d9f6c 00000030 801d9f6c 0 zz_801d9f6c_
-801d9f9c 0000000c 801d9f9c 0 GetOneTimerLeadGroundContactAnims(void)
-801d9fa8 00000044 801d9fa8 0 zz_801d9fa8_
-801d9fec 00000030 801d9fec 0 zz_801d9fec_
-801da01c 0000000c 801da01c 0 GetOneTimerLeadGroundContactAnims(void)
-801da028 0000001c 801da028 0 zz_801da028_
-801da044 00000044 801da044 0 zz_801da044_
-801da088 00000008 801da088 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801da090 00000004 801da090 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801da094 00000040 801da094 0 zz_801da094_
-801da0d4 000001f0 801da0d4 0 zz_801da0d4_
-801da2c4 000000c0 801da2c4 0 zz_801da2c4_
-801da384 00000008 801da384 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801da38c 000000b4 801da38c 0 zz_801da38c_
-801da440 00000008 801da440 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801da448 000000e0 801da448 0 zz_801da448_
-801da528 000000f8 801da528 0 zz_801da528_
-801da620 00000074 801da620 0 zz_801da620_
-801da694 00000054 801da694 0 zz_801da694_
-801da6e8 0000009c 801da6e8 0 zz_801da6e8_
-801da784 000001ac 801da784 0 zz_801da784_
-801da930 00000068 801da930 0 zz_801da930_
-801da998 00000050 801da998 0 zz_801da998_
-801da9e8 00000030 801da9e8 0 zz_801da9e8_
-801daa18 0000000c 801daa18 0 GetOneTimerLeadGroundContactAnims(void)
-801daa24 00000044 801daa24 0 zz_801daa24_
-801daa68 00000030 801daa68 0 zz_801daa68_
-801daa98 0000000c 801daa98 0 GetOneTimerLeadGroundContactAnims(void)
-801daaa4 00000044 801daaa4 0 zz_801daaa4_
-801daae8 00000008 801daae8 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801daaf0 00000004 801daaf0 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801daaf4 00000008 801daaf4 0 J3DAnmCluster::getWeight(unsigned short) const 	J3DGraphAnimator.a J3DCluster.o
-801daafc 00000004 801daafc 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801dab00 00000040 801dab00 0 zz_801dab00_
-801dab40 00000064 801dab40 0 zz_801dab40_
-801daba4 000000ec 801daba4 0 zz_801daba4_
-801dac90 00000118 801dac90 0 zz_801dac90_
-801dada8 00000060 801dada8 0 zz_801dada8_
-801dae08 00000078 801dae08 0 zz_801dae08_
-801dae80 00000088 801dae80 0 zz_801dae80_
-801daf08 00000054 801daf08 0 zz_801daf08_
-801daf5c 00000088 801daf5c 0 zz_801daf5c_
-801dafe4 00000054 801dafe4 0 zz_801dafe4_
-801db038 000000f0 801db038 0 zz_801db038_
-801db128 00000100 801db128 0 zz_801db128_
-801db228 000000b8 801db228 0 zz_801db228_
-801db2e0 0000013c 801db2e0 0 zz_801db2e0_
-801db41c 00000090 801db41c 0 zz_801db41c_
-801db4ac 00000174 801db4ac 0 zz_801db4ac_
-801db620 00000640 801db620 0 zz_801db620_
-801dbc60 00000010 801dbc60 0 cPN_Feather::SetNodeWeight(int, float)
-801dbc70 00000010 801dbc70 0 zz_801dbc70_
-801dbc80 000001f0 801dbc80 0 zz_801dbc80_
-801dbe70 000000c0 801dbe70 0 zz_801dbe70_
-801dbf30 00000008 801dbf30 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801dbf38 000000b4 801dbf38 0 zz_801dbf38_
-801dbfec 00000008 801dbfec 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801dbff4 000000e0 801dbff4 0 zz_801dbff4_
-801dc0d4 00000104 801dc0d4 0 zz_801dc0d4_
-801dc1d8 000001f8 801dc1d8 0 zz_801dc1d8_
-801dc3d0 000001cc 801dc3d0 0 zz_801dc3d0_
-801dc59c 00000074 801dc59c 0 zz_801dc59c_
-801dc610 00000054 801dc610 0 zz_801dc610_
-801dc664 00000068 801dc664 0 zz_801dc664_
-801dc6cc 00000050 801dc6cc 0 zz_801dc6cc_
-801dc71c 00000030 801dc71c 0 zz_801dc71c_
-801dc74c 0000000c 801dc74c 0 GetOneTimerLeadGroundContactAnims(void)
-801dc758 00000044 801dc758 0 zz_801dc758_
-801dc79c 0000007c 801dc79c 0 zz_801dc79c_
-801dc818 00000068 801dc818 0 zz_801dc818_
-801dc880 00000030 801dc880 0 zz_801dc880_
-801dc8b0 0000000c 801dc8b0 0 GetOneTimerLeadGroundContactAnims(void)
-801dc8bc 00000068 801dc8bc 0 zz_801dc8bc_
-801dc924 00000030 801dc924 0 zz_801dc924_
-801dc954 0000000c 801dc954 0 GetOneTimerLeadGroundContactAnims(void)
-801dc960 00000030 801dc960 0 zz_801dc960_
-801dc990 0000000c 801dc990 0 GetOneTimerLeadGroundContactAnims(void)
-801dc99c 0000001c 801dc99c 0 zz_801dc99c_
-801dc9b8 00000044 801dc9b8 0 zz_801dc9b8_
-801dc9fc 00000008 801dc9fc 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801dca04 00000004 801dca04 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801dca08 00000008 801dca08 0 J3DAnmCluster::getWeight(unsigned short) const 	J3DGraphAnimator.a J3DCluster.o
-801dca10 00000004 801dca10 0 DBClose 	NdevExi2A.a DebuggerDriver.o
-801dca14 00000040 801dca14 0 zz_801dca14_
-801dca54 00000240 801dca54 0 zz_801dca54_
-801dcc94 000000c4 801dcc94 0 zz_801dcc94_
-801dcd58 00000008 801dcd58 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801dcd60 000000b8 801dcd60 0 zz_801dcd60_
-801dce18 00000008 801dce18 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801dce20 000000e4 801dce20 0 zz_801dce20_
-801dcf04 000001b4 801dcf04 0 zz_801dcf04_
-801dd0b8 00000078 801dd0b8 0 zz_801dd0b8_
-801dd130 00000054 801dd130 0 zz_801dd130_
-801dd184 00000068 801dd184 0 zz_801dd184_
-801dd1ec 00000050 801dd1ec 0 zz_801dd1ec_
-801dd23c 00000030 801dd23c 0 zz_801dd23c_
-801dd26c 0000000c 801dd26c 0 GetOneTimerLeadGroundContactAnims(void)
-801dd278 00000044 801dd278 0 zz_801dd278_
-801dd2bc 00000030 801dd2bc 0 zz_801dd2bc_
-801dd2ec 0000000c 801dd2ec 0 GetOneTimerLeadGroundContactAnims(void)
-801dd2f8 00000280 801dd2f8 0 zz_801dd2f8_
-801dd578 00000314 801dd578 0 zz_801dd578_
-801dd88c 0000003c 801dd88c 0 zz_801dd88c_
-801dd8c8 00000008 801dd8c8 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801dd8d0 00000008 801dd8d0 0 gdev_cc_shutdown 	TRK_Hollywood_Revolution.a C:\products\RVL\runtime_libs\gamedev\cust_connection\cc\exi2\GCN\EXI2_GDEV_GCN\mai
-801dd8d8 0000003c 801dd8d8 0 zz_801dd8d8_
-801dd914 00000024 801dd914 0 zz_801dd914_
-801dd938 0000001c 801dd938 0 zz_801dd938_
-801dd954 0000000c 801dd954 0 JUTResFont::getFontType(void) const 	JUtility.a JUTCacheFont.o
-801dd960 0000000c 801dd960 0 JUTResFont::getFontType(void) const 	JUtility.a JUTCacheFont.o
-801dd96c 0000000c 801dd96c 0 JUTResFont::getFontType(void) const 	JUtility.a JUTCacheFont.o
-801dd978 0000000c 801dd978 0 JUTResFont::getFontType(void) const 	JUtility.a JUTCacheFont.o
-801dd984 00000194 801dd984 0 zz_801dd984_
-801ddb18 0000010c 801ddb18 0 zz_801ddb18_
-801ddc24 00000040 801ddc24 0 zz_801ddc24_
-801ddc64 00000058 801ddc64 0 zz_801ddc64_
-801ddcbc 00000008 801ddcbc 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801ddcc4 00000024 801ddcc4 0 zz_801ddcc4_
-801ddce8 00000008 801ddce8 0 nw4hbm::ut::TextWriterBase<w>::GetCharSpace(void) const 	homebuttonLib.a ut_TextWriterBase.o
-801ddcf0 00000078 801ddcf0 0 zz_801ddcf0_
-801ddd68 00000054 801ddd68 0 zz_801ddd68_
-801dddbc 00000138 801dddbc 0 zz_801dddbc_
-801ddef4 00000068 801ddef4 0 zz_801ddef4_
-801ddf5c 00000190 801ddf5c 0 zz_801ddf5c_
-801de0ec 000000b0 801de0ec 0 zz_801de0ec_
-801de19c 00000160 801de19c 0 zz_801de19c_
-801de2fc 00000094 801de2fc 0 zz_801de2fc_
-801de390 0000008c 801de390 0 zz_801de390_
-801de41c 0000008c 801de41c 0 zz_801de41c_
-801de4a8 0000008c 801de4a8 0 zz_801de4a8_
-801de534 00000038 801de534 0 zz_801de534_
-801de56c 00000044 801de56c 0 zz_801de56c_
-801de5b0 00000174 801de5b0 0 zz_801de5b0_
-801de724 00000050 801de724 0 zz_801de724_
-801de774 00000038 801de774 0 zz_801de774_
-801de7ac 00000030 801de7ac 0 zz_801de7ac_
-801de7dc 0000000c 801de7dc 0 GetOneTimerLeadGroundContactAnims(void)
-801de7e8 00000030 801de7e8 0 zz_801de7e8_
-801de818 0000000c 801de818 0 GetOneTimerLeadGroundContactAnims(void)
-801de824 0000004c 801de824 0 zz_801de824_
-801de870 00000078 801de870 0 zz_801de870_
-801de8e8 00000030 801de8e8 0 zz_801de8e8_
-801de918 0000000c 801de918 0 GetOneTimerLeadGroundContactAnims(void)
-801de924 00000008 801de924 0 zz_801de924_
-801de92c 00000070 801de92c 0 zz_801de92c_
-801de99c 00000028 801de99c 0 zz_801de99c_
-801de9c4 00000018 801de9c4 0 zz_801de9c4_
-801de9dc 00000080 801de9dc 0 zz_801de9dc_
-801dea5c 00000030 801dea5c 0 zz_801dea5c_
-801dea8c 00000070 801dea8c 0 zz_801dea8c_
-801deafc 00000298 801deafc 0 zz_801deafc_
-801ded94 0000005c 801ded94 0 zz_801ded94_
-801dedf0 0000007c 801dedf0 0 zz_801dedf0_
-801dee6c 00000080 801dee6c 0 zz_801dee6c_
-801deeec 000000dc 801deeec 0 zz_801deeec_
-801defc8 000000c8 801defc8 0 zz_801defc8_
-801df090 000003e4 801df090 0 zz_801df090_
-801df474 0000012c 801df474 0 zz_801df474_
-801df5a0 0000044c 801df5a0 0 zz_801df5a0_
-801df9ec 00000010 801df9ec 0 zz_801df9ec_
-801df9fc 00000070 801df9fc 0 zz_801df9fc_
-801dfa6c 0000000c 801dfa6c 0 cAIPad::__ct(void)
-801dfa78 00000040 801dfa78 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-801dfab8 000000f4 801dfab8 0 zz_801dfab8_
-801dfbac 00000418 801dfbac 0 zz_801dfbac_
-801dffc4 00000098 801dffc4 0 zz_801dffc4_
-801e005c 00000070 801e005c 0 zz_801e005c_
-801e00cc 00000268 801e00cc 0 zz_801e00cc_
-801e0334 0000014c 801e0334 0 zz_801e0334_
-801e0480 000001cc 801e0480 0 zz_801e0480_
-801e064c 00000210 801e064c 0 zz_801e064c_
-801e085c 000000ac 801e085c 0 zz_801e085c_
-801e0908 000000ac 801e0908 0 zz_801e0908_
-801e09b4 000000b8 801e09b4 0 zz_801e09b4_
-801e0a6c 000001d0 801e0a6c 0 zz_801e0a6c_
-801e0c3c 0000072c 801e0c3c 0 zz_801e0c3c_
-801e1368 00000090 801e1368 0 zz_801e1368_
-801e13f8 000002ac 801e13f8 0 zz_801e13f8_
-801e16a4 000001a4 801e16a4 0 zz_801e16a4_
-801e1848 000002f0 801e1848 0 zz_801e1848_
-801e1b38 00000088 801e1b38 0 zz_801e1b38_
-801e1bc0 00000088 801e1bc0 0 zz_801e1bc0_
-801e1c48 00000068 801e1c48 0 zz_801e1c48_
-801e1cb0 00000008 801e1cb0 0 IPCGetBufferLo 	ipc.a ipcMain.o
-801e1cb8 000000a4 801e1cb8 0 zz_801e1cb8_
-801e1d5c 000000c0 801e1d5c 0 zz_801e1d5c_
-801e1e1c 00000010 801e1e1c 0 zz_801e1e1c_
-801e1e2c 00000030 801e1e2c 0 zz_801e1e2c_
-801e1e5c 0000005c 801e1e5c 0 zz_801e1e5c_
-801e1eb8 000000ac 801e1eb8 0 zz_801e1eb8_
-801e1f64 0000001c 801e1f64 0 zz_801e1f64_
-801e1f80 00000068 801e1f80 0 zz_801e1f80_
-801e1fe8 00000030 801e1fe8 0 zz_801e1fe8_
-801e2018 00000200 801e2018 0 zz_801e2018_
-801e2218 0000000c 801e2218 0 GetOneTimerLeadGroundContactAnims(void)
-801e2224 0000016c 801e2224 0 zz_801e2224_
-801e2390 00000164 801e2390 0 zz_801e2390_
-801e24f4 00000050 801e24f4 0 zz_801e24f4_
-801e2544 0000016c 801e2544 0 zz_801e2544_
-801e26b0 00000040 801e26b0 0 J3DAnmVisibilityFull::~J3DAnmVisibilityFull(void) 	J3DGraphLoader.a J3DAnmLoader.o
-801e26f0 00000294 801e26f0 0 zz_801e26f0_
-801e2984 00000068 801e2984 0 zz_801e2984_
-801e29ec 00000494 801e29ec 0 zz_801e29ec_
-801e2e80 000008a0 801e2e80 0 zz_801e2e80_
-801e3720 000000c0 801e3720 0 zz_801e3720_
-801e37e0 000000d8 801e37e0 0 zz_801e37e0_
-801e38b8 00000258 801e38b8 0 zz_801e38b8_
-801e3b10 00000350 801e3b10 0 zz_801e3b10_
-801e3e60 00000304 801e3e60 0 zz_801e3e60_
-801e4164 000003f0 801e4164 0 zz_801e4164_
-801e4554 000002e0 801e4554 0 zz_801e4554_
-801e4834 00000314 801e4834 0 zz_801e4834_
-801e4b48 0000033c 801e4b48 0 zz_801e4b48_
-801e4e84 000004dc 801e4e84 0 zz_801e4e84_
-801e5360 0000059c 801e5360 0 zz_801e5360_
-801e58fc 00000088 801e58fc 0 zz_801e58fc_
-801e5984 00000054 801e5984 0 zz_801e5984_
-801e59d8 0000000c 801e59d8 0 GetOneTimerLeadGroundContactAnims(void)
-801e59e4 00000010 801e59e4 0 dataARAMDefaultGetInfo
-801e59f4 0000000c 801e59f4 0 GetOneTimerLeadGroundContactAnims(void)
-801e5a00 0000000c 801e5a00 0 GetOneTimerLeadGroundContactAnims(void)
-801e5a0c 0000000c 801e5a0c 0 GetOneTimerLeadGroundContactAnims(void)
-801e5a18 00000080 801e5a18 0 zz_801e5a18_
-801e5a98 000005c4 801e5a98 0 zz_801e5a98_
-801e605c 000004f4 801e605c 0 zz_801e605c_
-801e6550 0000051c 801e6550 0 zz_801e6550_
-801e6a6c 000001c8 801e6a6c 0 zz_801e6a6c_
-801e6c34 00000140 801e6c34 0 zz_801e6c34_
-801e6d74 000001c4 801e6d74 0 zz_801e6d74_
-801e6f38 00000110 801e6f38 0 zz_801e6f38_
-801e7048 00000160 801e7048 0 zz_801e7048_
-801e71a8 00000164 801e71a8 0 zz_801e71a8_
-801e730c 00000228 801e730c 0 zz_801e730c_
-801e7534 0000003c 801e7534 0 zz_801e7534_
-801e7570 00000064 801e7570 0 zz_801e7570_
-801e75d4 000005bc 801e75d4 0 zz_801e75d4_
-801e7b90 000005bc 801e7b90 0 zz_801e7b90_
-801e814c 00000260 801e814c 0 zz_801e814c_
-801e83ac 00000008 801e83ac 0 GXInitTexObjUserData 	gx.a GXTexture.o
-801e83b4 00000050 801e83b4 0 zz_801e83b4_
-801e8404 0000011c 801e8404 0 zz_801e8404_
-801e8520 00000028 801e8520 0 zz_801e8520_
-801e8548 00000034 801e8548 0 zz_801e8548_
-801e857c 00000188 801e857c 0 zz_801e857c_
-801e8704 00000098 801e8704 0 zz_801e8704_
-801e879c 000000b4 801e879c 0 zz_801e879c_
-801e8850 00000038 801e8850 0 zz_801e8850_
-801e8888 00000040 801e8888 0 zz_801e8888_
-801e88c8 00000020 801e88c8 0 zz_801e88c8_
-801e88e8 00000018 801e88e8 0 zz_801e88e8_
-801e8900 0000009c 801e8900 0 zz_801e8900_
-801e899c 00000018 801e899c 0 zz_801e899c_
-801e89b4 00000070 801e89b4 0 zz_801e89b4_
-801e8a24 00000050 801e8a24 0 zz_801e8a24_
-801e8a74 00000060 801e8a74 0 zz_801e8a74_
-801e8ad4 000000dc 801e8ad4 0 zz_801e8ad4_
-801e8bb0 000000d0 801e8bb0 0 zz_801e8bb0_
-801e8c80 00000080 801e8c80 0 zz_801e8c80_
-801e8d00 00000084 801e8d00 0 zz_801e8d00_
-801e8d84 000000c8 801e8d84 0 zz_801e8d84_
-801e8e4c 00000024 801e8e4c 0 zz_801e8e4c_
-801e8e70 0000001c 801e8e70 0 zz_801e8e70_
-801e8e8c 00000404 801e8e8c 0 zz_801e8e8c_
-801e9290 0000015c 801e9290 0 zz_801e9290_
-801e93ec 00000168 801e93ec 0 zz_801e93ec_
-801e9554 00000038 801e9554 0 zz_801e9554_
-801e958c 00000094 801e958c 0 zz_801e958c_
-801e9620 00000038 801e9620 0 zz_801e9620_
-801e9658 000000bc 801e9658 0 zz_801e9658_
-801e9714 000000b0 801e9714 0 zz_801e9714_
-801e97c4 00000050 801e97c4 0 zz_801e97c4_
-801e9814 000000dc 801e9814 0 zz_801e9814_
-801e98f0 00000078 801e98f0 0 zz_801e98f0_
-801e9968 00000130 801e9968 0 zz_801e9968_
-801e9a98 00000028 801e9a98 0 zz_801e9a98_
-801e9ac0 00000194 801e9ac0 0 zz_801e9ac0_
-801e9c54 00000160 801e9c54 0 zz_801e9c54_
-801e9db4 00000088 801e9db4 0 zz_801e9db4_
-801e9e3c 000001a8 801e9e3c 0 zz_801e9e3c_
-801e9fe4 0000009c 801e9fe4 0 zz_801e9fe4_
-801ea080 00000194 801ea080 0 zz_801ea080_
-801ea214 00000038 801ea214 0 zz_801ea214_
-801ea24c 00000088 801ea24c 0 zz_801ea24c_
-801ea2d4 00000038 801ea2d4 0 zz_801ea2d4_
-801ea30c 000000a0 801ea30c 0 zz_801ea30c_
-801ea3ac 000000c8 801ea3ac 0 zz_801ea3ac_
-801ea474 00000050 801ea474 0 zz_801ea474_
-801ea4c4 000000c8 801ea4c4 0 zz_801ea4c4_
-801ea58c 00000078 801ea58c 0 zz_801ea58c_
-801ea604 00000110 801ea604 0 zz_801ea604_
-801ea714 00000024 801ea714 0 zz_801ea714_
-801ea738 0000013c 801ea738 0 zz_801ea738_
-801ea874 0000012c 801ea874 0 zz_801ea874_
-801ea9a0 00000088 801ea9a0 0 zz_801ea9a0_
-801eaa28 0000015c 801eaa28 0 zz_801eaa28_
-801eab84 0000009c 801eab84 0 zz_801eab84_
-801eac20 000001b4 801eac20 0 zz_801eac20_
-801eadd4 00000048 801eadd4 0 zz_801eadd4_
-801eae1c 000000ac 801eae1c 0 zz_801eae1c_
-801eaec8 00000038 801eaec8 0 zz_801eaec8_
-801eaf00 000000b4 801eaf00 0 zz_801eaf00_
-801eafb4 000000cc 801eafb4 0 zz_801eafb4_
-801eb080 00000058 801eb080 0 zz_801eb080_
-801eb0d8 000000cc 801eb0d8 0 zz_801eb0d8_
-801eb1a4 00000080 801eb1a4 0 zz_801eb1a4_
-801eb224 00000124 801eb224 0 zz_801eb224_
-801eb348 00000024 801eb348 0 zz_801eb348_
-801eb36c 00000144 801eb36c 0 zz_801eb36c_
-801eb4b0 00000140 801eb4b0 0 zz_801eb4b0_
-801eb5f0 00000094 801eb5f0 0 zz_801eb5f0_
-801eb684 00000164 801eb684 0 zz_801eb684_
-801eb7e8 0000009c 801eb7e8 0 zz_801eb7e8_
-801eb884 000000a8 801eb884 0 zz_801eb884_
-801eb92c 00000014 801eb92c 0 zz_801eb92c_
-801eb940 000000ec 801eb940 0 zz_801eb940_
-801eba2c 00000084 801eba2c 0 zz_801eba2c_
-801ebab0 00000190 801ebab0 0 zz_801ebab0_
-801ebc40 00000008 801ebc40 0 zz_801ebc40_
-801ebc48 000000c8 801ebc48 0 zz_801ebc48_
-801ebd10 00000008 801ebd10 0 zz_801ebd10_
-801ebd18 0000008c 801ebd18 0 zz_801ebd18_
+801d96a8 000001f0 801d96a8 0 Construct__Q34nw4r3g3d15AnmObjTexPatResFP12MEMAllocatorPUlQ34nw4r3g3d12ResAnmTexPatQ34nw4r3g3d6ResMdlb 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9898 000000c0 801d9898 0 SetFrame__Q34nw4r3g3d15AnmObjTexPatResFf 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9958 00000008 801d9958 0 GetFrame__Q34nw4r3g3d15AnmObjTexPatResCFv 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9960 000000b4 801d9960 0 SetUpdateRate__Q34nw4r3g3d15AnmObjTexPatResFf 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9a14 00000008 801d9a14 0 GetUpdateRate__Q34nw4r3g3d15AnmObjTexPatResCFv 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9a1c 000000e0 801d9a1c 0 UpdateFrame__Q34nw4r3g3d15AnmObjTexPatResFv 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9afc 000000f8 801d9afc 0 Bind__Q34nw4r3g3d15AnmObjTexPatResFQ34nw4r3g3d6ResMdl 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9bf4 00000078 801d9bf4 0 GetResult__Q34nw4r3g3d15AnmObjTexPatResFPQ34nw4r3g3d15TexPatAnmResultUl 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9c6c 00000054 801d9c6c 0 G3dProc__Q34nw4r3g3d15AnmObjTexPatResFUlUlPv 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9cc0 000001f4 801d9cc0 0 ApplyTexPatAnmResult__Q24nw4r3g3dFQ34nw4r3g3d9ResTexObjQ34nw4r3g3d10ResTlutObjPCQ34nw4r3g3d15TexPatAnmResult 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9eb4 00000068 801d9eb4 0 IsDerivedFrom__Q34nw4r3g3d15AnmObjTexPatResCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9f1c 00000050 801d9f1c 0 IsDerivedFrom__Q34nw4r3g3d12AnmObjTexPatCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9f6c 00000030 801d9f6c 0 GetTypeName__Q34nw4r3g3d15AnmObjTexPatResCFv 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9f9c 0000000c 801d9f9c 0 GetTypeObj__Q34nw4r3g3d15AnmObjTexPatResCFv 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9fa8 00000044 801d9fa8 0 __dt__Q34nw4r3g3d15AnmObjTexPatResFv 	libnw4r_g3d.a g3d_anmtexpat.o
+801d9fec 00000030 801d9fec 0 GetTypeName__Q34nw4r3g3d12AnmObjTexPatCFv 	libnw4r_g3d.a g3d_anmtexpat.o
+801da01c 0000000c 801da01c 0 GetTypeObj__Q34nw4r3g3d12AnmObjTexPatCFv 	libnw4r_g3d.a g3d_anmtexpat.o
+801da028 0000001c 801da028 0 TestExistence__Q34nw4r3g3d12AnmObjTexSrtCFUl 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da044 00000044 801da044 0 Release__Q34nw4r3g3d12AnmObjTexSrtFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da088 00000008 801da088 0 Attach__Q34nw4r3g3d12AnmObjTexSrtFiPQ34nw4r3g3d15AnmObjTexSrtRes 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da090 00000004 801da090 0 DetachAll__Q34nw4r3g3d12AnmObjTexSrtFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da094 00000040 801da094 0 DetachAll__Q34nw4r3g3d12AnmObjTexSrtFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da0d4 000001f0 801da0d4 0 Construct__Q34nw4r3g3d15AnmObjTexSrtResFP12MEMAllocatorPUlQ34nw4r3g3d12ResAnmTexSrtQ34nw4r3g3d6ResMdlb 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da2c4 000000c0 801da2c4 0 SetFrame__Q34nw4r3g3d15AnmObjTexSrtResFf 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da384 00000008 801da384 0 GetFrame__Q34nw4r3g3d15AnmObjTexSrtResCFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da38c 000000b4 801da38c 0 SetUpdateRate__Q34nw4r3g3d15AnmObjTexSrtResFf 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da440 00000008 801da440 0 GetUpdateRate__Q34nw4r3g3d15AnmObjTexSrtResCFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da448 000000e0 801da448 0 UpdateFrame__Q34nw4r3g3d15AnmObjTexSrtResFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da528 000000f8 801da528 0 Bind__Q34nw4r3g3d15AnmObjTexSrtResFQ34nw4r3g3d6ResMdl 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da620 00000074 801da620 0 GetResult__Q34nw4r3g3d15AnmObjTexSrtResFPQ34nw4r3g3d15TexSrtAnmResultUl 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da694 00000054 801da694 0 G3dProc__Q34nw4r3g3d15AnmObjTexSrtResFUlUlPv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da6e8 0000009c 801da6e8 0 ApplyTexSrtAnmResult__Q24nw4r3g3dFQ34nw4r3g3d9ResTexSrtPCQ34nw4r3g3d15TexSrtAnmResult 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da784 000001ac 801da784 0 ApplyTexSrtAnmResult__Q24nw4r3g3dFQ34nw4r3g3d9ResTexSrtQ34nw4r3g3d20ResMatIndMtxAndScalePCQ34nw4r3g3d15TexSrtAnmResult 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da930 00000068 801da930 0 IsDerivedFrom__Q34nw4r3g3d15AnmObjTexSrtResCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da998 00000050 801da998 0 IsDerivedFrom__Q34nw4r3g3d12AnmObjTexSrtCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da9e8 00000030 801da9e8 0 GetTypeName__Q34nw4r3g3d15AnmObjTexSrtResCFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801daa18 0000000c 801daa18 0 GetTypeObj__Q34nw4r3g3d15AnmObjTexSrtResCFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801daa24 00000044 801daa24 0 __dt__Q34nw4r3g3d15AnmObjTexSrtResFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801daa68 00000030 801daa68 0 GetTypeName__Q34nw4r3g3d12AnmObjTexSrtCFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801daa98 0000000c 801daa98 0 GetTypeObj__Q34nw4r3g3d12AnmObjTexSrtCFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801daaa4 00000044 801daaa4 0 Release__Q34nw4r3g3d9AnmObjChrFv 	libnw4r_g3d.a g3d_anmchr.o
+801daae8 00000008 801daae8 0 Attach__Q34nw4r3g3d9AnmObjChrFiPQ34nw4r3g3d12AnmObjChrRes 	libnw4r_g3d.a g3d_anmchr.o
+801daaf0 00000004 801daaf0 0 SetWeight__Q34nw4r3g3d9AnmObjChrFif 	libnw4r_g3d.a g3d_anmchr.o
+801daaf4 00000008 801daaf4 0 GetWeight__Q34nw4r3g3d9AnmObjChrCFi 	libnw4r_g3d.a g3d_anmchr.o
+801daafc 00000004 801daafc 0 __dt__Q34nw4r3g3d9AnmObjChrFv 	libnw4r_g3d.a g3d_anmchr.o
+801dab00 00000040 801dab00 0 __dt__Q34nw4r3g3d13AnmObjChrNodeFv 	libnw4r_g3d.a g3d_anmchr.o
+801dab40 00000064 801dab40 0 __dt__Q34nw4r3g3d13AnmObjChrNodeFv 	libnw4r_g3d.a g3d_anmchr.o
+801daba4 000000ec 801daba4 0 Attach__Q34nw4r3g3d13AnmObjChrNodeFiPQ34nw4r3g3d12AnmObjChrRes 	libnw4r_g3d.a g3d_anmchr.o
+801dac90 00000118 801dac90 0 Detach__Q34nw4r3g3d13AnmObjChrNodeFi 	libnw4r_g3d.a g3d_anmchr.o
+801dada8 00000060 801dada8 0 DetachAll__Q34nw4r3g3d13AnmObjChrNodeFv 	libnw4r_g3d.a g3d_anmchr.o
+801dae08 00000078 801dae08 0 UpdateFrame__Q34nw4r3g3d13AnmObjChrNodeFv 	libnw4r_g3d.a g3d_anmchr.o
+801dae80 00000088 801dae80 0 SetFrame__Q34nw4r3g3d13AnmObjChrNodeFf 	libnw4r_g3d.a g3d_anmchr.o
+801daf08 00000054 801daf08 0 GetFrame__Q34nw4r3g3d13AnmObjChrNodeCFv 	libnw4r_g3d.a g3d_anmchr.o
+801daf5c 00000088 801daf5c 0 SetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeFf 	libnw4r_g3d.a g3d_anmchr.o
+801dafe4 00000054 801dafe4 0 GetUpdateRate__Q34nw4r3g3d13AnmObjChrNodeCFv 	libnw4r_g3d.a g3d_anmchr.o
+801db038 000000f0 801db038 0 Bind__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdl 	libnw4r_g3d.a g3d_anmchr.o
+801db128 00000100 801db128 0 Bind__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption 	libnw4r_g3d.a g3d_anmchr.o
+801db228 000000b8 801db228 0 Release__Q34nw4r3g3d13AnmObjChrNodeFv 	libnw4r_g3d.a g3d_anmchr.o
+801db2e0 0000013c 801db2e0 0 Release__Q34nw4r3g3d13AnmObjChrNodeFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption 	libnw4r_g3d.a g3d_anmchr.o
+801db41c 00000090 801db41c 0 G3dProc__Q34nw4r3g3d13AnmObjChrNodeFUlUlPv 	libnw4r_g3d.a g3d_anmchr.o
+801db4ac 00000174 801db4ac 0 Construct__Q34nw4r3g3d14AnmObjChrBlendFP12MEMAllocatorPUlQ34nw4r3g3d6ResMdli 	libnw4r_g3d.a g3d_anmchr.o
+801db620 00000640 801db620 0 GetResult__Q34nw4r3g3d14AnmObjChrBlendFPQ34nw4r3g3d12ChrAnmResultUl 	libnw4r_g3d.a g3d_anmchr.o
+801dbc60 00000010 801dbc60 0 SetWeight__Q34nw4r3g3d14AnmObjChrBlendFif 	libnw4r_g3d.a g3d_anmchr.o
+801dbc70 00000010 801dbc70 0 GetWeight__Q34nw4r3g3d14AnmObjChrBlendCFi 	libnw4r_g3d.a g3d_anmchr.o
+801dbc80 000001f0 801dbc80 0 Construct__Q34nw4r3g3d12AnmObjChrResFP12MEMAllocatorPUlQ34nw4r3g3d9ResAnmChrQ34nw4r3g3d6ResMdlb 	libnw4r_g3d.a g3d_anmchr.o
+801dbe70 000000c0 801dbe70 0 SetFrame__Q34nw4r3g3d12AnmObjChrResFf 	libnw4r_g3d.a g3d_anmchr.o
+801dbf30 00000008 801dbf30 0 GetFrame__Q34nw4r3g3d12AnmObjChrResCFv 	libnw4r_g3d.a g3d_anmchr.o
+801dbf38 000000b4 801dbf38 0 SetUpdateRate__Q34nw4r3g3d12AnmObjChrResFf 	libnw4r_g3d.a g3d_anmchr.o
+801dbfec 00000008 801dbfec 0 GetUpdateRate__Q34nw4r3g3d12AnmObjChrResCFv 	libnw4r_g3d.a g3d_anmchr.o
+801dbff4 000000e0 801dbff4 0 UpdateFrame__Q34nw4r3g3d12AnmObjChrResFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc0d4 00000104 801dc0d4 0 Bind__Q34nw4r3g3d12AnmObjChrResFQ34nw4r3g3d6ResMdl 	libnw4r_g3d.a g3d_anmchr.o
+801dc1d8 000001f8 801dc1d8 0 Bind__Q34nw4r3g3d12AnmObjChrResFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption 	libnw4r_g3d.a g3d_anmchr.o
+801dc3d0 000001cc 801dc3d0 0 Release__Q34nw4r3g3d12AnmObjChrResFQ34nw4r3g3d6ResMdlUlQ44nw4r3g3d9AnmObjChr10BindOption 	libnw4r_g3d.a g3d_anmchr.o
+801dc59c 00000074 801dc59c 0 GetResult__Q34nw4r3g3d12AnmObjChrResFPQ34nw4r3g3d12ChrAnmResultUl 	libnw4r_g3d.a g3d_anmchr.o
+801dc610 00000054 801dc610 0 G3dProc__Q34nw4r3g3d12AnmObjChrResFUlUlPv 	libnw4r_g3d.a g3d_anmchr.o
+801dc664 00000068 801dc664 0 IsDerivedFrom__Q34nw4r3g3d12AnmObjChrResCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmchr.o
+801dc6cc 00000050 801dc6cc 0 IsDerivedFrom__Q34nw4r3g3d9AnmObjChrCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmchr.o
+801dc71c 00000030 801dc71c 0 GetTypeName__Q34nw4r3g3d12AnmObjChrResCFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc74c 0000000c 801dc74c 0 GetTypeObj__Q34nw4r3g3d12AnmObjChrResCFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc758 00000044 801dc758 0 __dt__Q34nw4r3g3d12AnmObjChrResFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc79c 0000007c 801dc79c 0 IsDerivedFrom__Q34nw4r3g3d14AnmObjChrBlendCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmchr.o
+801dc818 00000068 801dc818 0 IsDerivedFrom__Q34nw4r3g3d13AnmObjChrNodeCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmchr.o
+801dc880 00000030 801dc880 0 GetTypeName__Q34nw4r3g3d14AnmObjChrBlendCFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc8b0 0000000c 801dc8b0 0 GetTypeObj__Q34nw4r3g3d14AnmObjChrBlendCFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc8bc 00000068 801dc8bc 0 __dt__Q34nw4r3g3d14AnmObjChrBlendFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc924 00000030 801dc924 0 GetTypeName__Q34nw4r3g3d13AnmObjChrNodeCFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc954 0000000c 801dc954 0 GetTypeObj__Q34nw4r3g3d13AnmObjChrNodeCFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc960 00000030 801dc960 0 GetTypeName__Q34nw4r3g3d9AnmObjChrCFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc990 0000000c 801dc990 0 GetTypeObj__Q34nw4r3g3d9AnmObjChrCFv 	libnw4r_g3d.a g3d_anmchr.o
+801dc99c 0000001c 801dc99c 0 TestExistence__Q34nw4r3g3d9AnmObjShpCFUl 	libnw4r_g3d.a g3d_anmshp.o
+801dc9b8 00000044 801dc9b8 0 Release__Q34nw4r3g3d9AnmObjShpFv 	libnw4r_g3d.a g3d_anmshp.o
+801dc9fc 00000008 801dc9fc 0 Detach__Q34nw4r3g3d9AnmObjShpFi 	libnw4r_g3d.a g3d_anmshp.o
+801dca04 00000004 801dca04 0 SetWeight__Q34nw4r3g3d9AnmObjShpFif 	libnw4r_g3d.a g3d_anmshp.o
+801dca08 00000008 801dca08 0 GetWeight__Q34nw4r3g3d9AnmObjShpCFi 	libnw4r_g3d.a g3d_anmshp.o
+801dca10 00000004 801dca10 0 DetachAll__Q34nw4r3g3d9AnmObjShpFv 	libnw4r_g3d.a g3d_anmshp.o
+801dca14 00000040 801dca14 0 __dt__Q34nw4r3g3d9AnmObjShpFv 	libnw4r_g3d.a g3d_anmshp.o
+801dca54 00000240 801dca54 0 Construct__Q34nw4r3g3d12AnmObjShpResFP12MEMAllocatorPUlQ34nw4r3g3d9ResAnmShpQ34nw4r3g3d6ResMdlb 	libnw4r_g3d.a g3d_anmshp.o
+801dcc94 000000c4 801dcc94 0 SetFrame__Q34nw4r3g3d12AnmObjShpResFf 	libnw4r_g3d.a g3d_anmshp.o
+801dcd58 00000008 801dcd58 0 GetFrame__Q34nw4r3g3d12AnmObjShpResCFv 	libnw4r_g3d.a g3d_anmshp.o
+801dcd60 000000b8 801dcd60 0 SetUpdateRate__Q34nw4r3g3d12AnmObjShpResFf 	libnw4r_g3d.a g3d_anmshp.o
+801dce18 00000008 801dce18 0 GetUpdateRate__Q34nw4r3g3d12AnmObjShpResCFv 	libnw4r_g3d.a g3d_anmshp.o
+801dce20 000000e4 801dce20 0 UpdateFrame__Q34nw4r3g3d12AnmObjShpResFv 	libnw4r_g3d.a g3d_anmshp.o
+801dcf04 000001b4 801dcf04 0 Bind__Q34nw4r3g3d12AnmObjShpResFQ34nw4r3g3d6ResMdl 	libnw4r_g3d.a g3d_anmshp.o
+801dd0b8 00000078 801dd0b8 0 GetResult__Q34nw4r3g3d12AnmObjShpResFPQ34nw4r3g3d12ShpAnmResultUl 	libnw4r_g3d.a g3d_anmshp.o
+801dd130 00000054 801dd130 0 G3dProc__Q34nw4r3g3d12AnmObjShpResFUlUlPv 	libnw4r_g3d.a g3d_anmshp.o
+801dd184 00000068 801dd184 0 IsDerivedFrom__Q34nw4r3g3d12AnmObjShpResCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmshp.o
+801dd1ec 00000050 801dd1ec 0 IsDerivedFrom__Q34nw4r3g3d9AnmObjShpCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmshp.o
+801dd23c 00000030 801dd23c 0 GetTypeName__Q34nw4r3g3d12AnmObjShpResCFv 	libnw4r_g3d.a g3d_anmshp.o
+801dd26c 0000000c 801dd26c 0 GetTypeObj__Q34nw4r3g3d12AnmObjShpResCFv 	libnw4r_g3d.a g3d_anmshp.o
+801dd278 00000044 801dd278 0 __dt__Q34nw4r3g3d12AnmObjShpResFv 	libnw4r_g3d.a g3d_anmshp.o
+801dd2bc 00000030 801dd2bc 0 GetTypeName__Q34nw4r3g3d14AnmObjShpBlendCFv 	libnw4r_g3d.a g3d_anmshp.o
+801dd2ec 0000000c 801dd2ec 0 GetTypeObj__Q34nw4r3g3d14AnmObjShpBlendCFv 	libnw4r_g3d.a g3d_anmshp.o
+801dd2f8 00000280 801dd2f8 0 MakeDiffuseLightObj__Q34nw4r3g3d24@unnamed@g3d_anmscn_cpp@FPQ34nw4r3g3d8LightObjPCQ34nw4r3g3d14LightAnmResult 	libnw4r_g3d.a g3d_anmscn.o
+801dd578 00000314 801dd578 0 GetLightSetting__Q34nw4r3g3d6AnmScnFPQ34nw4r3g3d12LightSetting 	libnw4r_g3d.a g3d_anmscn.o
+801dd88c 0000003c 801dd88c 0 __dt__Q34nw4r3g3d6AnmScnFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd8c8 00000008 801dd8c8 0 Attach__Q34nw4r3g3d6AnmScnFiPQ34nw4r3g3d9AnmScnRes 	libnw4r_g3d.a g3d_anmscn.o
+801dd8d0 00000008 801dd8d0 0 Detach__Q34nw4r3g3d6AnmScnFi 	libnw4r_g3d.a g3d_anmscn.o
+801dd8d8 0000003c 801dd8d8 0 __dt__Q34nw4r3g3d6AnmScnFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd914 00000008 801dd914 0 GetNumLightSet__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd91c 00000008 801dd91c 0 GetNumAmbLight__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd924 00000008 801dd924 0 GetNumDiffuseLight__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd92c 0000000c 801dd92c 0 GetNumSpecularLight__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd938 00000008 801dd938 0 GetNumFog__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd940 00000008 801dd940 0 GetNumCamera__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd948 0000000c 801dd948 0 GetLightSetMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd954 0000000c 801dd954 0 GetAmbLightMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd960 0000000c 801dd960 0 GetDiffuseLightMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd96c 0000000c 801dd96c 0 GetFogMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd978 0000000c 801dd978 0 GetCameraMaxRefNumber__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd984 00000194 801dd984 0 Construct__Q34nw4r3g3d9AnmScnResFP12MEMAllocatorPUlQ34nw4r3g3d9ResAnmScnb 	libnw4r_g3d.a g3d_anmscn.o
+801ddb18 0000010c 801ddb18 0 __ct__Q34nw4r3g3d9AnmScnResFP12MEMAllocatorQ34nw4r3g3d9ResAnmScnPQ34nw4r3g3d17AmbLightAnmResultPQ34nw4r3g3d14LightAnmResultPQ34nw4r3g3d12FogAnmResultPQ34nw4r3g3d15CameraAnmResult 	libnw4r_g3d.a g3d_anmscn.o
+801ddc24 00000040 801ddc24 0 __dt__Q34nw4r3g3d9AnmScnResFv 	libnw4r_g3d.a g3d_anmscn.o
+801ddc64 00000058 801ddc64 0 SetFrame__Q34nw4r3g3d9AnmScnResFf 	libnw4r_g3d.a g3d_anmscn.o
+801ddcbc 00000008 801ddcbc 0 GetFrame__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801ddcc4 00000024 801ddcc4 0 SetUpdateRate__Q34nw4r3g3d9AnmScnResFf 	libnw4r_g3d.a g3d_anmscn.o
+801ddce8 00000008 801ddce8 0 GetUpdateRate__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801ddcf0 00000078 801ddcf0 0 UpdateFrame__Q34nw4r3g3d9AnmScnResFv 	libnw4r_g3d.a g3d_anmscn.o
+801ddd68 00000054 801ddd68 0 G3dProc__Q34nw4r3g3d9AnmScnResFUlUlPv 	libnw4r_g3d.a g3d_anmscn.o
+801dddbc 00000138 801dddbc 0 GetLightSet__Q34nw4r3g3d9AnmScnResFQ34nw4r3g3d8LightSetUl 	libnw4r_g3d.a g3d_anmscn.o
+801ddef4 00000068 801ddef4 0 GetAmbLightColor__Q34nw4r3g3d9AnmScnResFUl 	libnw4r_g3d.a g3d_anmscn.o
+801ddf5c 00000190 801ddf5c 0 GetLight__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d8LightObjPQ34nw4r3g3d8LightObjUl 	libnw4r_g3d.a g3d_anmscn.o
+801de0ec 000000b0 801de0ec 0 GetFog__Q34nw4r3g3d9AnmScnResFQ34nw4r3g3d3FogUl 	libnw4r_g3d.a g3d_anmscn.o
+801de19c 00000160 801de19c 0 GetCamera__Q34nw4r3g3d9AnmScnResFQ34nw4r3g3d6CameraUl 	libnw4r_g3d.a g3d_anmscn.o
+801de2fc 00000094 801de2fc 0 GetAmbLightResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d17AmbLightAnmResultUl 	libnw4r_g3d.a g3d_anmscn.o
+801de390 0000008c 801de390 0 GetLightResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d14LightAnmResultUl 	libnw4r_g3d.a g3d_anmscn.o
+801de41c 0000008c 801de41c 0 GetFogResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d12FogAnmResultUl 	libnw4r_g3d.a g3d_anmscn.o
+801de4a8 0000008c 801de4a8 0 GetCameraResult__Q34nw4r3g3d9AnmScnResFPQ34nw4r3g3d15CameraAnmResultUl 	libnw4r_g3d.a g3d_anmscn.o
+801de534 00000038 801de534 0 GetSpecularLightID__Q34nw4r3g3d9AnmScnResCFUl 	libnw4r_g3d.a g3d_anmscn.o
+801de56c 00000044 801de56c 0 HasSpecularLight__Q34nw4r3g3d9AnmScnResCFUl 	libnw4r_g3d.a g3d_anmscn.o
+801de5b0 00000174 801de5b0 0 UpdateCache__Q34nw4r3g3d9AnmScnResFv 	libnw4r_g3d.a g3d_anmscn.o
+801de724 00000050 801de724 0 IsDerivedFrom__Q34nw4r3g3d9AnmScnResCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmscn.o
+801de774 00000038 801de774 0 IsDerivedFrom__Q34nw4r3g3d6AnmScnCFQ44nw4r3g3d6G3dObj7TypeObj 	libnw4r_g3d.a g3d_anmscn.o
+801de7ac 00000030 801de7ac 0 GetTypeName__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801de7dc 0000000c 801de7dc 0 GetTypeObj__Q34nw4r3g3d9AnmScnResCFv 	libnw4r_g3d.a g3d_anmscn.o
+801de7e8 00000030 801de7e8 0 GetTypeName__Q34nw4r3g3d6AnmScnCFv 	libnw4r_g3d.a g3d_anmscn.o
+801de818 0000000c 801de818 0 GetTypeObj__Q34nw4r3g3d6AnmScnCFv 	libnw4r_g3d.a g3d_anmscn.o
+801de824 0000004c 801de824 0 __dt__Q34nw4r3g3d6G3dObjFv 	libnw4r_g3d.a g3d_obj.o
+801de870 00000078 801de870 0 Destroy__Q34nw4r3g3d6G3dObjFv 	libnw4r_g3d.a g3d_obj.o
+801de8e8 00000030 801de8e8 0 GetTypeName__Q34nw4r3g3d6G3dObjCFv 	libnw4r_g3d.a g3d_obj.o
+801de918 0000000c 801de918 0 GetTypeObj__Q34nw4r3g3d6G3dObjCFv 	libnw4r_g3d.a g3d_obj.o
+801de924 00000008 801de924 0 PlayPolicy_Onetime__Q24nw4r3g3dFfff 	libnw4r_g3d.a g3d_anmobj.o
+801de92c 00000070 801de92c 0 PlayPolicy_Loop__Q24nw4r3g3dFfff 	libnw4r_g3d.a g3d_anmobj.o
+801de99c 00000028 801de99c 0 SetAnmFlag__Q34nw4r3g3d6AnmObjFQ44nw4r3g3d6AnmObj7AnmFlagb 	libnw4r_g3d.a g3d_anmobj.o
+801de9c4 00000018 801de9c4 0 TestAnmFlag__Q34nw4r3g3d6AnmObjCFQ44nw4r3g3d6AnmObj7AnmFlag 	libnw4r_g3d.a g3d_anmobj.o
+801de9dc 00000080 801de9dc 0 GDSetGenMode2__Q34nw4r3g3d4fifoFUcUcUcUc11_GXCullMode 	libnw4r_g3d.a g3d_gpu.o
+801dea5c 00000030 801dea5c 0 GDSetCullMode__Q34nw4r3g3d4fifoF11_GXCullMode 	libnw4r_g3d.a g3d_gpu.o
+801dea8c 00000070 801dea8c 0 GDSetTexCoordScale2__Q34nw4r3g3d4fifoF13_GXTexCoordIDUsUcUcUsUcUc 	libnw4r_g3d.a g3d_gpu.o
+801deafc 00000298 801deafc 0 GDSetIndTexMtx__Q34nw4r3g3d4fifoFUlRCQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_gpu.o
+801ded94 0000005c 801ded94 0 GDResetCurrentMtx__Q34nw4r3g3d4fifoFv 	libnw4r_g3d.a g3d_gpu.o
+801dedf0 0000007c 801dedf0 0 GDSetCurrentMtx__Q34nw4r3g3d4fifoFPCUl 	libnw4r_g3d.a g3d_gpu.o
+801dee6c 00000080 801dee6c 0 GDLoadTexMtxImm3x3__Q34nw4r3g3d4fifoFRCQ34nw4r4math5MTX33Ul 	libnw4r_g3d.a g3d_gpu.o
+801deeec 000000dc 801deeec 0 Copy32ByteBlocks__Q34nw4r3g3d6detailFPvPCvUl 	libnw4r_g3d.a g3d_cpu.o
+801defc8 000000c8 801defc8 0 ZeroMemory32ByteBlocks__Q34nw4r3g3d6detailFPvUl 	libnw4r_g3d.a g3d_cpu.o
+801df090 000003e4 801df090 0 EnvironmentMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc 	libnw4r_g3d.a g3d_state.o
+801df474 0000012c 801df474 0 ProjectionMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc 	libnw4r_g3d.a g3d_state.o
+801df5a0 0000044c 801df5a0 0 EnvironmentSpecularMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc 	libnw4r_g3d.a g3d_state.o
+801df9ec 00000010 801df9ec 0 DefaultMapping__Q44nw4r3g3d6detail19ScnDependentMtxFuncFPQ34nw4r4math5MTX34ScSc 	libnw4r_g3d.a g3d_state.o
+801df9fc 00000070 801df9fc 0 FifoSend__Q44nw4r3g3d8G3DState13IndTexMtxInfoCFv 	libnw4r_g3d.a g3d_state.o
+801dfa6c 0000000c 801dfa6c 0 __ct__Q34nw4r3g3d8LightObjFv 	libnw4r_g3d.a g3d_state.o
+801dfa78 00000040 801dfa78 0 __dt__Q34nw4r3g3d12LightSettingFv libnw4r_g3d.a g3d_state.o
+801dfab8 000000f4 801dfab8 0 SetLightSetting__Q54nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@10LightStateFRCQ34nw4r3g3d12LightSetting 	libnw4r_g3d.a g3d_state.o
+801dfbac 00000418 801dfbac 0 LoadLightSet__Q54nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@10LightStateFiPUlPUlPUlPUlPQ34nw4r3g3d11AmbLightObj 	libnw4r_g3d.a g3d_state.o
+801dffc4 00000098 801dffc4 0 __ct__Q54nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@14CameraMtxStateFv 	libnw4r_g3d.a g3d_state.o
+801e005c 00000070 801e005c 0 LoadResMatMisc__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d10ResMatMisc 	libnw4r_g3d.a g3d_state.o
+801e00cc 00000268 801e00cc 0 LoadResTexObj__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d9ResTexObj 	libnw4r_g3d.a g3d_state.o
+801e0334 0000014c 801e0334 0 LoadResTlutObj__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d10ResTlutObj 	libnw4r_g3d.a g3d_state.o
+801e0480 000001cc 801e0480 0 LoadResGenMode__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d10ResGenMode 	libnw4r_g3d.a g3d_state.o
+801e064c 00000210 801e064c 0 LoadResTev__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d6ResTev 	libnw4r_g3d.a g3d_state.o
+801e085c 000000ac 801e085c 0 LoadResMatPix__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d9ResMatPix 	libnw4r_g3d.a g3d_state.o
+801e0908 000000ac 801e0908 0 LoadResMatTevColor__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d14ResMatTevColor 	libnw4r_g3d.a g3d_state.o
+801e09b4 000000b8 801e09b4 0 LoadResMatIndMtxAndScale__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d20ResMatIndMtxAndScale 	libnw4r_g3d.a g3d_state.o
+801e0a6c 000001d0 801e0a6c 0 LoadResMatIndMtxAndScale__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d20ResMatIndMtxAndScaleRQ44nw4r3g3d8G3DState8IndMtxOp 	libnw4r_g3d.a g3d_state.o
+801e0c3c 0000072c 801e0c3c 0 LoadResMatChan__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d10ResMatChanUlUlUlUl8_GXColorb 	libnw4r_g3d.a g3d_state.o
+801e1368 00000090 801e1368 0 LoadResMatTexCoordGen__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d17ResMatTexCoordGen 	libnw4r_g3d.a g3d_state.o
+801e13f8 000002ac 801e13f8 0 LoadResTexSrt__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d9ResTexSrt 	libnw4r_g3d.a g3d_state.o
+801e16a4 000001a4 801e16a4 0 LoadResShpPrePrimitive__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d6ResShp 	libnw4r_g3d.a g3d_state.o
+801e1848 000002f0 801e1848 0 LoadResShpPrimitive__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d6ResShpPCQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_state.o
+801e1b38 00000088 801e1b38 0 SetViewPosNrmMtxArray__Q34nw4r3g3d8G3DStateFPCQ34nw4r4math5MTX34PCQ34nw4r4math5MTX33PCQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_state.o
+801e1bc0 00000088 801e1bc0 0 GetViewNrmMtxPtr__Q34nw4r3g3d8G3DStateFUl 	libnw4r_g3d.a g3d_state.o
+801e1c48 00000068 801e1c48 0 SetScnDependentTexMtxFunc__Q34nw4r3g3d8G3DStateFUlPFPQ34nw4r4math5MTX34ScSc_vQ44nw4r3g3d8G3DState26ScnDependentTexMtxFuncType libnw4r_g3d.a g3d_state.o
+801e1cb0 00000008 801e1cb0 0 GetIndMtxOp__Q34nw4r3g3d8G3DStateFv 	libnw4r_g3d.a g3d_state.o
+801e1cb8 000000a4 801e1cb8 0 SetFog__Q34nw4r3g3d8G3DStateFQ34nw4r3g3d3Fogi 	libnw4r_g3d.a g3d_state.o
+801e1d5c 000000c0 801e1d5c 0 LoadFog__Q34nw4r3g3d8G3DStateFi 	libnw4r_g3d.a g3d_state.o
+801e1e1c 00000010 801e1e1c 0 SetLightSetting__Q34nw4r3g3d8G3DStateFRCQ34nw4r3g3d12LightSetting 	libnw4r_g3d.a g3d_state.o
+801e1e2c 00000030 801e1e2c 0 GetLightObj__Q34nw4r3g3d8G3DStateFi 	libnw4r_g3d.a g3d_state.o
+801e1e5c 0000005c 801e1e5c 0 LoadLightSet__Q34nw4r3g3d8G3DStateFiPUlPUlPUlPUlPQ34nw4r3g3d11AmbLightObj 	libnw4r_g3d.a g3d_state.o
+801e1eb8 000000ac 801e1eb8 0 SetCameraProjMtx__Q34nw4r3g3d8G3DStateFRCQ34nw4r3g3d6Cameraib 	libnw4r_g3d.a g3d_state.o
+801e1f64 0000001c 801e1f64 0 GetCameraMtxPtr__Q34nw4r3g3d8G3DStateFv 	libnw4r_g3d.a g3d_state.o
+801e1f80 00000068 801e1f80 0 GetInvCameraMtxPtr__Q34nw4r3g3d8G3DStateFv libnw4r_g3d.a g3d_state.o
+801e1fe8 00000030 801e1fe8 0 GetCameraMtxPtr__Q34nw4r3g3d8G3DStateFi libnw4r_g3d.a g3d_state.o
+801e2018 00000200 801e2018 0 SetRenderModeObj__Q34nw4r3g3d8G3DStateFRC16_GXRenderMod 	libnw4r_g3d.a g3d_state.o
+801e2218 0000000c 801e2218 0 GetRenderModeObj__Q34nw4r3g3d8G3DStateFv 	libnw4r_g3d.a g3d_state.o
+801e2224 0000016c 801e2224 0 Invalidate__Q34nw4r3g3d8G3DStateFUl 	libnw4r_g3d.a g3d_state.o
+801e2390 00000164 801e2390 0 SetNrmMapMtx__Q44nw4r3g3d8G3DState11IndMtxOpStdF14_GXIndTexMtxIDPCQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34Q44nw4r3g3d14ResMatMiscData14IndirectMethod 	libnw4r_g3d.a g3d_state.o
+801e24f4 00000050 801e24f4 0 Reset__Q44nw4r3g3d8G3DState11IndMtxOpStdFv 	libnw4r_g3d.a g3d_state.o
+801e2544 0000016c 801e2544 0 __cl__Q44nw4r3g3d8G3DState11IndMtxOpStdFPQ44nw4r3g3d8G3DState13IndTexMtxInfo 	libnw4r_g3d.a g3d_state.o
+801e26b0 00000040 801e26b0 0 __dt__Q44nw4r3g3d8G3DState11IndMtxOpStdFv 	libnw4r_g3d.a g3d_state.o
+801e26f0 00000294 801e26f0 0 __sinit_\g3d_state_cpp 	libnw4r_g3d.a g3d_state.o
+801e2984 00000068 801e2984 0 __dt__Q54nw4r3g3d8G3DState23@unnamed@g3d_state_cpp@10LightStateFv 	libnw4r_g3d.a g3d_state.o
+801e29ec 00000494 801e29ec 0 LoadMaterial__Q34nw4r3g3d6detailFQ34nw4r3g3d6ResMatUlPQ34nw4r3g3d16Draw1Mat1ShpSwapPQ44nw4r3g3d8G3DState8IndMtxOpb 	libnw4r_g3d.a g3d_draw1mat1shp.o
+801e2e80 000008a0 801e2e80 0 Draw1Mat1ShpDirectly__Q24nw4r3g3dFQ34nw4r3g3d6ResMatQ34nw4r3g3d6ResShpPCQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34UlPQ34nw4r3g3d16Draw1Mat1ShpSwapPQ44nw4r3g3d8G3DState8IndMtxOp 	libnw4r_g3d.a g3d_draw1mat1shp.o
+801e3720 000000c0 801e3720 0 GetModelLocalAxisY2__Q34nw4r3g3d26@unnamed@g3d_calcview_cpp@FPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_calcview.o
+801e37e0 000000d8 801e37e0 0 GetModelLocalAxisY3__Q34nw4r3g3d26@unnamed@g3d_calcview_cpp@FPQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_calcview.o
+801e38b8 00000258 801e38b8 0 Calc_BILLBOARD_STD__Q34nw4r3g3d26@unnamed@g3d_calcview_cpp@FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl 	libnw4r_g3d.a g3d_calcview.o
+801e3b10 00000350 801e3b10 0 Calc_BILLBOARD_PERSP_STD__Q34nw4r3g3d26@unnamed@g3d_calcview_cpp@FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl 	libnw4r_g3d.a g3d_calcview.o
+801e3e60 00000304 801e3e60 0 Calc_BILLBOARD_ROT__Q34nw4r3g3d26@unnamed@g3d_calcview_cpp@FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl 	libnw4r_g3d.a g3d_calcview.o
+801e4164 000003f0 801e4164 0 Calc_BILLBOARD_PERSP_ROT__Q34nw4r3g3d26@unnamed@g3d_calcview_cpp@FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl 	libnw4r_g3d.a g3d_calcview.o
+801e4554 000002e0 801e4554 0 Calc_BILLBOARD_Y__Q34nw4r3g3d26@unnamed@g3d_calcview_cpp@FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl 	libnw4r_g3d.a g3d_calcview.o
+801e4834 00000314 801e4834 0 Calc_BILLBOARD_PERSP_Y__Q34nw4r3g3d26@unnamed@g3d_calcview_cpp@FPQ34nw4r4math5MTX34PCQ34nw4r4math5MTX34bPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlUl 	libnw4r_g3d.a g3d_calcview.o
+801e4b48 0000033c 801e4b48 0 CalcView__Q24nw4r3g3dFPQ34nw4r4math5MTX34PQ34nw4r4math5MTX33PCQ34nw4r4math5MTX34PCUlUlPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_calcview.o
+801e4e84 000004dc 801e4e84 0 CalcView_LC__Q24nw4r3g3dFPQ34nw4r4math5MTX34PQ34nw4r4math5MTX33PCQ34nw4r4math5MTX34PCUlUlPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_calcview.o
+801e5360 0000059c 801e5360 0 CalcView_LC_DMA_ModelMtx__Q24nw4r3g3dFPQ34nw4r4math5MTX34PQ34nw4r4math5MTX33PCQ34nw4r4math5MTX34PCUlUlPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_calcview.o
+801e58fc 00000088 801e58fc 0 CalcTexMtx__Q24nw4r3g3dFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4FlagQ44nw4r3g3d13TexSrtTypedef13TexMatrixMode 	libnw4r_g3d.a g3d_dcc.o
+801e5984 00000054 801e5984 0 CalcTexMtx__Q24nw4r3g3dFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag 	libnw4r_g3d.a g3d_dcc.o
+801e59d8 0000000c 801e59d8 0 GetScaleTemporary__Q24nw4r3g3d6detail7workmemFv 	libnw4r_g3d.a g3d_workmem.o
+801e59e4 00000010 801e59e4 0 GetMtxIDTemporary__Q24nw4r3g3d6detail7workmemFv 	libnw4r_g3d.a g3d_workmem.o
+801e59f4 0000000c 801e59f4 0 GetMdlZTemporary__Q24nw4r3g3d6detail7workmemFv 	libnw4r_g3d.a g3d_workmem.o
+801e5a00 0000000c 801e5a00 0 GetSkinningMtxTemporary__Q24nw4r3g3d6detail7workmemFv 	libnw4r_g3d.a g3d_workmem.o
+801e5a0c 0000000c 801e5a0c 0 GetBillboardMtxTemporary__Q24nw4r3g3d6detail7workmemFv 	libnw4r_g3d.a g3d_workmem.o
+801e5a18 00000080 801e5a18 0 SetScale__Q24nw4r3g3d13WorldMtxManipFfff 	libnw4r_g3d.a g3d_calcworld.o
+801e5a98 000005c4 801e5a98 0 CalcWorld__Q24nw4r3g3dFPQ34nw4r4math5MTX34PUlPCUcPCQ34nw4r4math5MTX34Q34nw4r3g3d6ResMdlPQ34nw4r3g3d9AnmObjChrPQ34nw4r3g3d16FuncObjCalcWorldUl 	libnw4r_g3d.a g3d_calcworld.o
+801e605c 000004f4 801e605c 0 CalcSkinning__Q24nw4r3g3dFPQ34nw4r4math5MTX34PUlQ34nw4r3g3d6ResMdlPCUc 	libnw4r_g3d.a g3d_calcworld.o
+801e6550 0000051c 801e6550 0 GetIndMtxOp__Q34nw4r3g3d6detailFQ34nw4r3g3d6ResMatQ34nw4r3g3d7ResNodeQ34nw4r3g3d6ResShp 	libnw4r_g3d.a g3d_draw.o
+801e6a6c 000001c8 801e6a6c 0 SetupDraw1Mat1ShpSwap__Q34nw4r3g3d22@unnamed@g3d_draw_cpp@FPQ34nw4r3g3d16Draw1Mat1ShpSwapPQ34nw4r3g3d21DrawResMdlReplacementUl 	libnw4r_g3d.a g3d_draw.o
+801e6c34 00000140 801e6c34 0 DrawResMdlLoop__Q34nw4r3g3d22@unnamed@g3d_draw_cpp@FQ34nw4r3g3d6ResMdlPCUcUl 	libnw4r_g3d.a g3d_draw.o
+801e6d74 000001c4 801e6d74 0 DrawResMdlLoop__Q34nw4r3g3d22@unnamed@g3d_draw_cpp@FQ34nw4r3g3d6ResMdlPCUcPQ34nw4r3g3d21DrawResMdlReplacementUl 	libnw4r_g3d.a g3d_draw.o
+801e6f38 00000110 801e6f38 0 DrawResMdlLoop__Q34nw4r3g3d22@unnamed@g3d_draw_cpp@FQ34nw4r3g3d6ResMdlPCQ54nw4r3g3d6detail7workmem4MdlZUlUl 	libnw4r_g3d.a g3d_draw.o
+801e7048 00000160 801e7048 0 DrawResMdlLoop__Q34nw4r3g3d22@unnamed@g3d_draw_cpp@FQ34nw4r3g3d6ResMdlPCQ54nw4r3g3d6detail7workmem4MdlZUlPQ34nw4r3g3d21DrawResMdlReplacementUl 	libnw4r_g3d.a g3d_draw.o
+801e71a8 00000164 801e71a8 0 SetUpMdlZ__Q34nw4r3g3d22@unnamed@g3d_draw_cpp@FPUlQ34nw4r3g3d6ResMdlPCQ34nw4r4math5MTX34PCUcPQ34nw4r3g3d21DrawResMdlReplacement 	libnw4r_g3d.a g3d_draw.o
+801e730c 00000228 801e730c 0 DrawResMdlDirectly__Q24nw4r3g3dFQ34nw4r3g3d6ResMdlPCQ34nw4r4math5MTX34PCQ34nw4r4math5MTX33PCQ34nw4r4math5MTX34PCUcPCUcPQ34nw4r3g3d21DrawResMdlReplacementUl 	libnw4r_g3d.a g3d_draw.o
+801e7534 0000003c 801e7534 0 FrontToBack__Q34nw4r3g3d22@unnamed@g3d_draw_cpp@FRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ 	libnw4r_g3d.a g3d_draw.o
+801e7570 00000064 801e7570 0 BackToFront__Q34nw4r3g3d22@unnamed@g3d_draw_cpp@FRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ 	libnw4r_g3d.a g3d_draw.o
+801e75d4 000005bc 801e75d4 0 sort<PQ54nw4r3g3d6detail7workmem4MdlZ,PFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b>__3stdFPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b_v 	libnw4r_g3d.a g3d_draw.o
+801e7b90 000005bc 801e7b90 0 sort<PQ54nw4r3g3d6detail7workmem4MdlZ,RPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b>__3stdFPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZRPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b_v 	libnw4r_g3d.a g3d_draw.o
+801e814c 00000260 801e814c 0 __sort132<RPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b,PQ54nw4r3g3d6detail7workmem4MdlZ>__3stdFPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZPQ54nw4r3g3d6detail7workmem4MdlZRPFRCQ54nw4r3g3d6detail7workmem4MdlZRCQ54nw4r3g3d6detail7workmem4MdlZ_b_v 	libnw4r_g3d.a g3d_draw.o
+801e83ac 00000008 801e83ac 0 __ct__Q34nw4r3g3d6CameraFPQ34nw4r3g3d10CameraData 	libnw4r_g3d.a g3d_camera.o
+801e83b4 00000050 801e83b4 0 Init__Q34nw4r3g3d6CameraFv 	libnw4r_g3d.a g3d_camera.o
+801e8404 0000011c 801e8404 0 Init__Q34nw4r3g3d6CameraFUsUsUsUsUsUs 	libnw4r_g3d.a g3d_camera.o
+801e8520 00000028 801e8520 0 SetPosition__Q34nw4r3g3d6CameraFfff libnw4r_g3d.a g3d_camera.o
+801e8548 00000034 801e8548 0 SetPosition__Q34nw4r3g3d6CameraFRCQ34nw4r4math4VEC3 	libnw4r_g3d.a g3d_camera.o
+801e857c 0000021c 801e857c 0 SetPosture__Q34nw4r3g3d6CameraFRCQ44nw4r3g3d6Camera11PostureInfo 	libnw4r_g3d.a g3d_camera.o
+801e879c 000000b4 801e879c 0 GetPosture__Q34nw4r3g3d6CameraCFPQ44nw4r3g3d6Camera11PostureInfo 	libnw4r_g3d.a g3d_camera.o
+801e8850 00000038 801e8850 0 SetPerspective__Q34nw4r3g3d6CameraFffff 	libnw4r_g3d.a g3d_camera.o
+801e8888 00000040 801e8888 0 SetOrtho__Q34nw4r3g3d6CameraFffffff 	libnw4r_g3d.a g3d_camera.o
+801e88c8 00000020 801e88c8 0 SetScissor__Q34nw4r3g3d6CameraFUlUlUlUl 	libnw4r_g3d.a g3d_camera.o
+801e88e8 00000018 801e88e8 0 SetScissorBoxOffset__Q34nw4r3g3d6CameraFll 	libnw4r_g3d.a g3d_camera.o
+801e8900 0000009c 801e8900 0 SetViewport__Q34nw4r3g3d6CameraFffff 	libnw4r_g3d.a g3d_camera.o
+801e899c 00000018 801e899c 0 SetViewportZRange__Q34nw4r3g3d6CameraFff libnw4r_g3d.a g3d_camera.o
+801e89b4 00000070 801e89b4 0 GetViewport__Q34nw4r3g3d6CameraCFPfPfPfPfPfPf 	libnw4r_g3d.a g3d_camera.o
+801e8a24 00000050 801e8a24 0 GetScissor__Q34nw4r3g3d6CameraCFPUlPUlPUlPUl libnw4r_g3d.a g3d_camera.o
+801e8a74 00000060 801e8a74 0 GetCameraMtx__Q34nw4r3g3d6CameraCFPQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_camera.o
+801e8ad4 000000dc 801e8ad4 0 GetProjectionMtx__Q34nw4r3g3d6CameraCFPQ34nw4r4math5MTX44 	libnw4r_g3d.a g3d_camera.o
+801e8bb0 000000d0 801e8bb0 0 GetProjectionTexMtx__Q34nw4r3g3d6CameraCFPQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_camera.o
+801e8c80 00000080 801e8c80 0 GetEnvironmentTexMtx__Q34nw4r3g3d6CameraCFPQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_camera.o
+801e8d00 00000084 801e8d00 0 GXSetViewport__Q34nw4r3g3d6CameraCFv 	libnw4r_g3d.a g3d_camera.o
+801e8d84 000000c8 801e8d84 0 GXSetProjection__Q34nw4r3g3d6CameraCFv 	libnw4r_g3d.a g3d_camera.o
+801e8e4c 00000024 801e8e4c 0 GXSetScissor__Q34nw4r3g3d6CameraCFv 	libnw4r_g3d.a g3d_camera.o
+801e8e70 0000001c 801e8e70 0 GXSetScissorBoxOffset__Q34nw4r3g3d6CameraCFv 	libnw4r_g3d.a g3d_camera.o
+801e8e8c 00000404 801e8e8c 0 UpdateCameraMtx__Q34nw4r3g3d6CameraCFv 	libnw4r_g3d.a g3d_camera.o
+801e9290 0000015c 801e9290 0 CalcTexMtx_Basic__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag 	libnw4r_g3d.a g3d_basic.o
+801e93ec 00000168 801e93ec 0 CalcWorldMtx_Basic__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34PQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3UlPCQ34nw4r3g3d12ChrAnmResult 	libnw4r_g3d.a g3d_basic.o
+801e9554 00000038 801e9554 0 MakeTexSrtMtx_S__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e958c 00000094 801e958c 0 MakeTexSrtMtx_R__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9620 00000038 801e9620 0 MakeTexSrtMtx_T__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9658 000000bc 801e9658 0 MakeTexSrtMtx_SR__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9714 000000b0 801e9714 0 MakeTexSrtMtx_RT__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e97c4 00000050 801e97c4 0 MakeTexSrtMtx_ST__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9814 000000dc 801e9814 0 MakeTexSrtMtx_SRT__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e98f0 00000078 801e98f0 0 ProductTexSrtMtx_S__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9968 00000130 801e9968 0 ProductTexSrtMtx_R__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9a98 00000028 801e9a98 0 ProductTexSrtMtx_T__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9ac0 00000194 801e9ac0 0 ProductTexSrtMtx_SR__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9c54 00000160 801e9c54 0 ProductTexSrtMtx_RT__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9db4 00000088 801e9db4 0 ProductTexSrtMtx_ST__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9e3c 000001a8 801e9e3c 0 ProductTexSrtMtx_SRT__Q54nw4r3g3d6detail3dcc22@unnamed@g3d_maya_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_maya.o
+801e9fe4 0000009c 801e9fe4 0 CalcTexMtx_Maya__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag 	libnw4r_g3d.a g3d_maya.o
+801ea080 00000194 801ea080 0 CalcWorldMtx_Maya_SSC_Apply__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34PQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3UlPCQ34nw4r3g3d12ChrAnmResult 	libnw4r_g3d.a g3d_maya.o
+801ea214 00000038 801ea214 0 MakeTexSrtMtx_S__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea24c 00000088 801ea24c 0 MakeTexSrtMtx_R__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea2d4 00000038 801ea2d4 0 MakeTexSrtMtx_T__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea30c 000000a0 801ea30c 0 MakeTexSrtMtx_SR__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea3ac 000000c8 801ea3ac 0 MakeTexSrtMtx_RT__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea474 00000050 801ea474 0 MakeTexSrtMtx_ST__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea4c4 000000c8 801ea4c4 0 MakeTexSrtMtx_SRT__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea58c 00000078 801ea58c 0 ProductTexSrtMtx_S__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea604 00000110 801ea604 0 ProductTexSrtMtx_R__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea714 00000024 801ea714 0 ProductTexSrtMtx_T__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea738 0000013c 801ea738 0 ProductTexSrtMtx_SR__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea874 0000012c 801ea874 0 ProductTexSrtMtx_RT__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801ea9a0 00000088 801ea9a0 0 ProductTexSrtMtx_ST__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801eaa28 0000015c 801eaa28 0 ProductTexSrtMtx_SRT__Q54nw4r3g3d6detail3dcc21@unnamed@g3d_xsi_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_xsi.o
+801eab84 0000009c 801eab84 0 CalcTexMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag 	libnw4r_g3d.a g3d_xsi.o
+801eac20 000001b4 801eac20 0 CalcWorldMtx_Xsi__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34PQ34nw4r4math4VEC3PCQ34nw4r4math5MTX34PCQ34nw4r4math4VEC3UlPCQ34nw4r3g3d12ChrAnmResult 	libnw4r_g3d.a g3d_xsi.o
+801eadd4 00000048 801eadd4 0 MakeTexSrtMtx_S__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eae1c 000000ac 801eae1c 0 MakeTexSrtMtx_R__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eaec8 00000038 801eaec8 0 MakeTexSrtMtx_T__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eaf00 000000b4 801eaf00 0 MakeTexSrtMtx_SR__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eafb4 000000cc 801eafb4 0 MakeTexSrtMtx_RT__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eb080 00000058 801eb080 0 MakeTexSrtMtx_ST__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eb0d8 000000cc 801eb0d8 0 MakeTexSrtMtx_SRT__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eb1a4 00000080 801eb1a4 0 ProductTexSrtMtx_S__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eb224 00000124 801eb224 0 ProductTexSrtMtx_R__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eb348 00000024 801eb348 0 ProductTexSrtMtx_T__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eb36c 00000144 801eb36c 0 ProductTexSrtMtx_SR__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eb4b0 00000140 801eb4b0 0 ProductTexSrtMtx_RT__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eb5f0 00000094 801eb5f0 0 ProductTexSrtMtx_ST__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eb684 00000164 801eb684 0 ProductTexSrtMtx_SRT__Q54nw4r3g3d6detail3dcc24@unnamed@g3d_3dsmax_cpp@FPQ34nw4r4math5MTX34RCQ34nw4r3g3d6TexSrt 	libnw4r_g3d.a g3d_3dsmax.o
+801eb7e8 0000009c 801eb7e8 0 CalcTexMtx_3dsmax__Q44nw4r3g3d6detail3dccFPQ34nw4r4math5MTX34bRCQ34nw4r3g3d6TexSrtQ44nw4r3g3d6TexSrt4Flag 	libnw4r_g3d.a g3d_3dsmax.o
+801eb884 000000a8 801eb884 0 CalcWorldMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34PUl 	libnw4r_g3d.a g3d_scnobj.o
+801eb92c 00000014 801eb92c 0 CalcViewMtx__Q34nw4r3g3d6ScnObjFPCQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_scnobj.o
+801eb940 000000ec 801eb940 0 __ct__Q34nw4r3g3d6ScnObjFP12MEMAllocator 	libnw4r_g3d.a g3d_scnobj.o
+801eba2c 00000084 801eba2c 0 __dt__Q34nw4r3g3d6ScnObjFv 	libnw4r_g3d.a g3d_scnobj.o
+801ebab0 00000198 801ebab0 0 SetScnObjOption__Q34nw4r3g3d6ScnObjFUlUl 	libnw4r_g3d.a g3d_scnobj.o
+801ebc48 000000d0 801ebc48 0 GetScnObjOption__Q34nw4r3g3d6ScnObjCFUlPUl 	libnw4r_g3d.a g3d_scnobj.o
+801ebd18 0000008c 801ebd18 0 SetMtx__Q34nw4r3g3d6ScnObjFQ44nw4r3g3d6ScnObj13ScnObjMtxTypePCQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_scnobj.o
 801ebda4 0000004c 801ebda4 0 GetMtx__Q34nw4r3g3d6ScnObjCFQ44nw4r3g3d6ScnObj13ScnObjMtxTypePQ34nw4r4math5MTX34 	libnw4r_g3d.a g3d_scnobj.o
 801ebdf0 0000000c 801ebdf0 0 GetValueForSortOpa__Q34nw4r3g3d6ScnObjCFv 	libnw4r_g3d.a g3d_scnobj.o
 801ebdfc 00000008 801ebdfc 0 GetValueForSortXlu__Q34nw4r3g3d6ScnObjCFv 	libnw4r_g3d.a g3d_scnobj.o
