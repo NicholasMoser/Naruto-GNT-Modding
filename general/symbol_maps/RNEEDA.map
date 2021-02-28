@@ -1066,12 +1066,12 @@
 8003f918 000000ac 8003f918 0 zz_8003f918_
 8003f9c4 00000078 8003f9c4 0 zz_8003f9c4_
 8003fa3c 00000030 8003fa3c 0 zz_8003fa3c_
-8003fa6c 00000010 8003fa6c 0 dGeomEnable
+8003fa6c 00000010 8003fa6c 0 zz_8003fa6c_
 8003fa7c 00000010 8003fa7c 0 zz_8003fa7c_
-8003fa8c 00000010 8003fa8c 0 dGeomEnable
+8003fa8c 00000010 8003fa8c 0 zz_8003fa8c_
 8003fa9c 00000010 8003fa9c 0 zz_8003fa9c_
 8003faac 00000010 8003faac 0 zz_8003faac_
-8003fabc 00000010 8003fabc 0 dGeomEnable
+8003fabc 00000010 8003fabc 0 zz_8003fabc_
 8003facc 00000008 8003facc 0 zz_8003facc_
 8003fad4 00000014 8003fad4 0 zz_8003fad4_
 8003fae8 00000014 8003fae8 0 zz_8003fae8_
@@ -1777,7 +1777,7 @@
 80082654 00000100 80082654 0 zz_80082654_
 80082754 000000b4 80082754 0 zz_80082754_
 80082808 00000010 80082808 0 zz_80082808_
-80082818 00000010 80082818 0 dGeomEnable
+80082818 00000010 80082818 0 zz_80082818_
 80082828 00000018 80082828 0 zz_80082828_
 80082840 00000030 80082840 0 zz_80082840_
 80082870 00000010 80082870 0 zz_80082870_
@@ -5252,7 +5252,7 @@
 801a7d38 000000a4 801a7d38 0 DBQueryData 	NdevExi2A.a DebuggerDriver.o
 801a7ddc 00000080 801a7ddc 0 DBRead 	NdevExi2A.a DebuggerDriver.o
 801a7e5c 00000110 801a7e5c 0 DBWrite 	NdevExi2A.a DebuggerDriver.o
-801a7f6c 00000004 801a7f6c 0 DBClose 	NdevExi2A.a DebuggerDriver.o
+801a7f6c 00000004 801a7f6c 0 DBOpen 	NdevExi2A.a DebuggerDriver.o
 801a7f70 00000004 801a7f70 0 DBClose 	NdevExi2A.a DebuggerDriver.o
 801a7f74 000002e8 801a7f74 0 __EXI2Imm 	NdevExi2A.a exi2.o
 801a825c 000000bc 801a825c 0 __DBEXIInit 	NdevExi2A.a exi2.o
@@ -5380,7 +5380,7 @@
 801b7e98 000000b8 801b7e98 0 breffSearchName__Q24nw4r2efFPQ34nw4r2ef13EffectProjectPCc 	libnw4r_ef.a ef_resource.o
 801b7f50 00000094 801b7f50 0 breffIndexOf__Q24nw4r2efFPQ34nw4r2ef13EffectProjectUs 	libnw4r_ef.a ef_resource.o
 801b7fe4 0000008c 801b7fe4 0 breftRelocate__Q24nw4r2efFPQ34nw4r2ef14TextureProject 	libnw4r_ef.a ef_resource.o
-801b8070 000000b8 801b8070 0 Add__Q34nw4r2ef8ResourceFPUc 	libnw4r_ef.a ef_resource.o
+801b8070 000000b8 801b8070 0 breftSearchName_Q24nw4r2efFPQ34nw4r2ef14Tex 	libnw4r_ef.a ef_resource.o
 801b8128 0000007c 801b8128 0 Add__Q34nw4r2ef8ResourceFPUc 	libnw4r_ef.a ef_resource.o
 801b81a4 000000a4 801b81a4 0 FindEmitter__Q34nw4r2ef8ResourceCFPCcPQ34nw4r2ef13EffectProject 	libnw4r_ef.a ef_resource.o
 801b8248 0000007c 801b8248 0 AddTexture__Q34nw4r2ef8ResourceFPUc 	libnw4r_ef.a ef_resource.o
@@ -5835,7 +5835,7 @@
 801da080 00000008 801da080 0 Attach__Q34nw4r3g3d12AnmObjTexSrtFiPQ34nw4r3g3d15AnmObjTexSrtRes 	libnw4r_g3d.a g3d_anmtexsrt.o
 801da088 00000008 801da088 0 Detach__Q34nw4r3g3d12AnmObjTexSrtFi 	libnw4r_g3d.a g3d_anmtexsrt.o
 801da090 00000004 801da090 0 DetachAll__Q34nw4r3g3d12AnmObjTexSrtFv 	libnw4r_g3d.a g3d_anmtexsrt.o
-801da094 00000040 801da094 0 __dt__Q34nw4r3g3d15AnmObjTexSrtResFv 	libnw4r_g3d.a g3d_anmtexsrt.o
+801da094 00000040 801da094 0 __dt__Q34nw4r3g3d12AnmObjTexSrtFv 	libnw4r_g3d.a g3d_anmtexsrt.o
 801da0d4 000001f0 801da0d4 0 Construct__Q34nw4r3g3d15AnmObjTexSrtResFP12MEMAllocatorPUlQ34nw4r3g3d12ResAnmTexSrtQ34nw4r3g3d6ResMdlb 	libnw4r_g3d.a g3d_anmtexsrt.o
 801da2c4 000000c0 801da2c4 0 SetFrame__Q34nw4r3g3d15AnmObjTexSrtResFf 	libnw4r_g3d.a g3d_anmtexsrt.o
 801da384 00000008 801da384 0 GetFrame__Q34nw4r3g3d15AnmObjTexSrtResCFv 	libnw4r_g3d.a g3d_anmtexsrt.o
@@ -5860,7 +5860,7 @@
 801daaf0 00000004 801daaf0 0 SetWeight__Q34nw4r3g3d9AnmObjChrFif 	libnw4r_g3d.a g3d_anmchr.o
 801daaf4 00000008 801daaf4 0 GetWeight__Q34nw4r3g3d9AnmObjChrCFi 	libnw4r_g3d.a g3d_anmchr.o
 801daafc 00000004 801daafc 0 __dt__Q34nw4r3g3d9AnmObjChrFv 	libnw4r_g3d.a g3d_anmchr.o
-801dab00 00000040 801dab00 0 __dt__Q34nw4r3g3d13AnmObjChrNodeFv 	libnw4r_g3d.a g3d_anmchr.o
+801dab00 00000040 801dab00 0 __dt__unknown 	libnw4r_g3d.a g3d_anmchr.o
 801dab40 00000064 801dab40 0 __dt__Q34nw4r3g3d13AnmObjChrNodeFv 	libnw4r_g3d.a g3d_anmchr.o
 801daba4 000000ec 801daba4 0 Attach__Q34nw4r3g3d13AnmObjChrNodeFiPQ34nw4r3g3d12AnmObjChrRes 	libnw4r_g3d.a g3d_anmchr.o
 801dac90 00000118 801dac90 0 Detach__Q34nw4r3g3d13AnmObjChrNodeFi 	libnw4r_g3d.a g3d_anmchr.o
@@ -5930,7 +5930,7 @@
 801dd2ec 0000000c 801dd2ec 0 GetTypeObj__Q34nw4r3g3d14AnmObjShpBlendCFv 	libnw4r_g3d.a g3d_anmshp.o
 801dd2f8 00000280 801dd2f8 0 MakeDiffuseLightObj__Q34nw4r3g3d24@unnamed@g3d_anmscn_cpp@FPQ34nw4r3g3d8LightObjPCQ34nw4r3g3d14LightAnmResult 	libnw4r_g3d.a g3d_anmscn.o
 801dd578 00000314 801dd578 0 GetLightSetting__Q34nw4r3g3d6AnmScnFPQ34nw4r3g3d12LightSetting 	libnw4r_g3d.a g3d_anmscn.o
-801dd88c 0000003c 801dd88c 0 __dt__Q34nw4r3g3d6AnmScnFv 	libnw4r_g3d.a g3d_anmscn.o
+801dd88c 0000003c 801dd88c 0 GetLightSet 	libnw4r_g3d.a g3d_anmscn.o
 801dd8c8 00000008 801dd8c8 0 Attach__Q34nw4r3g3d6AnmScnFiPQ34nw4r3g3d9AnmScnRes 	libnw4r_g3d.a g3d_anmscn.o
 801dd8d0 00000008 801dd8d0 0 Detach__Q34nw4r3g3d6AnmScnFi 	libnw4r_g3d.a g3d_anmscn.o
 801dd8d8 0000003c 801dd8d8 0 __dt__Q34nw4r3g3d6AnmScnFv 	libnw4r_g3d.a g3d_anmscn.o
@@ -6374,7 +6374,7 @@
 801f75a4 000000dc 801f75a4 0 DrawSelf__Q34nw4r3lyt7PictureFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_picture.o
 801f7680 00000008 801f7680 0 GetRuntimeTypeInfo__Q34nw4r3lyt7PictureCFv 	libnw4r_lyt.a lyt_picture.o
 801f7688 0000000c 801f7688 0 __sinit_\lyt_picture_cpp 	libnw4r_lyt.a lyt_picture.o
-801f7694 000000b4 801f7694 0 GetColor__25@unnamed@lyt_textBox_cpp@FRC11_GXColorS10 	homebuttonLib.a lyt_textBox.o
+801f7694 000000b4 801f7694 0 GetColor__Q34nw4r 	homebuttonLib.a lyt_textBox.o
 801f7748 000002ec 801f7748 0 __ct__Q34nw4r3lyt7TextBoxFPCQ44nw4r3lyt3res7TextBoxRCQ34nw4r3lyt11ResBlockSet 	libnw4r_lyt.a lyt_textBox.o
 801f7a34 000001a0 801f7a34 0 __dt__Q34nw4r3lyt7TextBoxFv 	libnw4r_lyt.a lyt_textBox.o
 801f7bd4 00000034 801f7bd4 0 GetVtxColor__Q34nw4r3lyt7TextBoxCFUl 	libnw4r_lyt.a lyt_textBox.o
@@ -6422,8 +6422,8 @@
 801fb598 00000004 801fb598 0 DrawSelf__Q34nw4r3lyt8BoundingFRCQ34nw4r3lyt8DrawInfo 	libnw4r_lyt.a lyt_bounding.o
 801fb59c 00000008 801fb59c 0 GetRuntimeTypeInfo__Q34nw4r3lyt8BoundingCFv 	libnw4r_lyt.a lyt_bounding.o
 801fb5a4 0000000c 801fb5a4 0 __sinit_\lyt_bounding_cpp 	libnw4r_lyt.a lyt_bounding.o
-801fb5b0 00000108 801fb5b0 0 CalcTextureMtx__26@unnamed@lyt_material_cpp@FPQ36nw4hbm4math5MTX34RCQ36nw4hbm3lyt6TexSRT 	homebuttonLib.a lyt_material.o
-801fb6b8 000001fc 801fb6b8 0 SetIndTexMtx__26@unnamed@lyt_material_cpp@F14_GXIndTexMtxIDPA3_Cf 	homebuttonLib.a lyt_material.o
+801fb5b0 00000108 801fb5b0 0 CalcTextureMtx__Q34nw4r 	homebuttonLib.a lyt_material.o
+801fb6b8 000001fc 801fb6b8 0 SetIndTexMtx__Q34nw4r 	homebuttonLib.a lyt_material.o
 801fb8b4 00000020 801fb8b4 0 __ct__Q34nw4r2ut38LinkList<Q34nw4r3lyt13AnimationLink,0>Fv 	libnw4r_lyt.a lyt_material.o
 801fb8d4 00000664 801fb8d4 0 __ct__Q34nw4r3lyt8MaterialFPCQ44nw4r3lyt3res8MaterialRCQ34nw4r3lyt11ResBlockSet 	libnw4r_lyt.a lyt_material.o
 801fbf38 0000000c 801fbf38 0 __as__Q34nw4r2ut5ColorFRC8_GXColor 	libnw4r_lyt.a lyt_material.o
@@ -6511,8 +6511,8 @@
 801feab0 00000178 801feab0 0 SetResource__Q34nw4r3lyt18AnimTransformBasicFPCQ44nw4r3lyt3res14AnimationBlockPQ34nw4r3lyt16ResourceAccessorUs 	libnw4r_lyt.a lyt_animation.o
 801fec28 000001c8 801fec28 0 Bind__Q34nw4r3lyt18AnimTransformBasicFPQ34nw4r3lyt4Panebb 	libnw4r_lyt.a lyt_animation.o
 801fedf0 00000114 801fedf0 0 Bind__Q34nw4r3lyt18AnimTransformBasicFPQ34nw4r3lyt8Materialb 	libnw4r_lyt.a lyt_animation.o
-801fef04 000001ec 801fef04 0 __ct__Q34nw4r3lyt12AnimResourceFv 	libnw4r_lyt.a lyt_animation.o
-801ff0f0 000002fc 801ff0f0 0 Set__Q34nw4r3lyt12AnimResourceFPCv 	libnw4r_lyt.a lyt_animation.o
+801fef04 000001ec 801fef04 0 Animate__Q34nw4r3lyt18AnimTransformBasicFUlPQ34nw4r3lyt4Pane 	libnw4r_lyt.a lyt_animation.o
+801ff0f0 000002fc 801ff0f0 0 Animate__Q34nw4r3lyt18AnimTransformBasicFUlPQ34nw4r3lyt8Material 	libnw4r_lyt.a lyt_animation.o
 801ff3ec 00000018 801ff3ec 0 __ct__Q34nw4r3lyt12AnimResourceFv 	libnw4r_lyt.a lyt_animation.o
 801ff404 00000110 801ff404 0 Set__Q34nw4r3lyt12AnimResourceFPCv 	libnw4r_lyt.a lyt_animation.o
 801ff514 0000001c 801ff514 0 GetGroupNum__Q34nw4r3lyt12AnimResourceCFv 	libnw4r_lyt.a lyt_animation.o
@@ -6531,8 +6531,8 @@
 801ffc5c 00000040 801ffc5c 0 __dt__Q34nw4r3lyt16ResourceAccessorFv 	libnw4r_lyt.a lyt_resourceAccessor.o
 801ffc9c 00000010 801ffc9c 0 __ct__Q34nw4r3lyt16ResourceAccessorFv 	libnw4r_lyt.a lyt_resourceAccessor.o
 801ffcac 00000008 801ffcac 0 GetFont__Q34nw4r3lyt16ResourceAccessorFPCc 	libnw4r_lyt.a lyt_resourceAccessor.o
-801ffcb4 000000cc 801ffcb4 0 FindNameResource__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCc 	homebuttonLib.a lyt_arcResourceAccessor.o
-801ffd80 00000140 801ffd80 0 GetResourceSub__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCcUlPCcPUl 	homebuttonLib.a lyt_arcResourceAccessor.o
+801ffcb4 000000cc 801ffcb4 0 FindNameResource__Q34nw4r 	homebuttonLib.a lyt_arcResourceAccessor.o
+801ffd80 00000140 801ffd80 0 GetResourceSub__Q34nw4r 	homebuttonLib.a lyt_arcResourceAccessor.o
 801ffec0 0000005c 801ffec0 0 __ct__Q34nw4r3lyt19ArcResourceAccessorFv 	libnw4r_lyt.a lyt_arcResourceAccessor.o
 801fff1c 0000007c 801fff1c 0 Attach__Q34nw4r3lyt19ArcResourceAccessorFPvPCc 	libnw4r_lyt.a lyt_arcResourceAccessor.o
 801fff98 00000020 801fff98 0 GetResource__Q34nw4r3lyt19ArcResourceAccessorFUlPCcPUl 	libnw4r_lyt.a lyt_arcResourceAccessor.o
@@ -7607,29 +7607,29 @@
 802481c0 00000210 802481c0 0 DWCi_SendServerPolling 	dwc.a dwc_match.s
 802483d0 000004d8 802483d0 0 DWCi_ProcessRequestMatch 	dwc.a dwc_match.s
 802488a8 00000500 802488a8 0 zz_802488a8_ 	dwc.a dwc_match.s
-80248da8 0000015c 80248da8 0 DWCi_RequestSuspendMatchP? 	dwc.a dwc_match.s
+80248da8 0000015c 80248da8 0 DWCi_RequestSuspendMatchP_cutoff 	dwc.a dwc_match.s
 80248f04 000002d0 80248f04 0 DWCi_RequestSuspendMatch 	dwc.a dwc_match.s
 802491d4 00000028 802491d4 0 DWCi_IsServerChanging 	dwc.a dwc_match.s
 802491fc 000000e8 802491fc 0 DWCi_SetMatchStatus 	dwc.a dwc_match.s
-802492e4 0000001c 802492e4 0 DWCi_IsServerChangeEnable? 	dwc.a dwc_match.s
+802492e4 0000001c 802492e4 0 DWCi_IsServerChangeEnable_cutoff 	dwc.a dwc_match.s
 80249300 00000014 80249300 0 DWCi_NodeInfoList_Clear 	dwc.a dwc_match.s
-80249314 0000000c 80249314 0 DWCi_NodeInfoList_GetCoun? 	dwc.a dwc_match.s
-80249320 000000e4 80249320 0 DWCi_NodeInfoList_RemoveA? 	dwc.a dwc_match.s
-80249404 000000e4 80249404 0 DWCi_NodeInfoList_RemoveP? 	dwc.a dwc_match.s
-802494e8 00000020 802494e8 0 DWCi_NodeInfoList_GetServ? 	dwc.a dwc_match.s
-80249508 00000028 80249508 0 DWCi_NodeInfoList_GetNode? 	dwc.a dwc_match.s
-80249530 0000004c 80249530 0 DWCi_NodeInfoList_GetNode? 	dwc.a dwc_match.s
-8024957c 0000004c 8024957c 0 DWCi_NodeInfoList_GetNode? 	dwc.a dwc_match.s
-802495c8 0000006c 802495c8 0 DWCi_NodeInfoList_GetFree? 	dwc.a dwc_match.s
-80249634 000001a0 80249634 0 DWCi_GetNextMeshMakeTryTi? 	dwc.a dwc_match.s
+80249314 0000000c 80249314 0 DWCi_NodeInfoList_GetCoun_cutoff 	dwc.a dwc_match.s
+80249320 000000e4 80249320 0 DWCi_NodeInfoList_RemoveA_cutoff 	dwc.a dwc_match.s
+80249404 000000e4 80249404 0 DWCi_NodeInfoList_RemoveP_cutoff 	dwc.a dwc_match.s
+802494e8 00000020 802494e8 0 DWCi_NodeInfoList_GetServ_cutoff 	dwc.a dwc_match.s
+80249508 00000028 80249508 0 DWCi_NodeInfoList_GetNode_cutoff1 	dwc.a dwc_match.s
+80249530 0000004c 80249530 0 DWCi_NodeInfoList_GetNode_cutoff2 	dwc.a dwc_match.s
+8024957c 0000004c 8024957c 0 DWCi_NodeInfoList_GetNode_cutoff3 	dwc.a dwc_match.s
+802495c8 0000006c 802495c8 0 DWCi_NodeInfoList_GetFree_cutoff 	dwc.a dwc_match.s
+80249634 000001a0 80249634 0 DWCi_GetNextMeshMakeTryTi_cutoff 	dwc.a dwc_match.s
 802497d4 00000248 802497d4 0 DWCi_StopMeshMaking 	dwc.a dwc_match.s
 80249a1c 00000018 80249a1c 0 DWCi_IsFullMesh 	dwc.a dwc_match.s
 80249a34 00000060 80249a34 0 DWCi_IsLockedBuddyStatus 	dwc.a dwc_match.s
 80249a94 00000014 80249a94 0 DWCi_InitReliableQueue 	dwc.a dwc_reliable.s
-80249aa8 00000070 80249aa8 0 DWCi_CleanupReliableQueue? 	dwc.a dwc_reliable.s
+80249aa8 00000070 80249aa8 0 DWCi_CleanupReliableQueue_cutoff 	dwc.a dwc_reliable.s
 80249b18 00000020 80249b18 0 DWCi_IsReliableQueueFree 	dwc.a dwc_reliable.s
-80249b38 0000000c 80249b38 0 DWCi_ProcessReliableQueue? 	dwc.a dwc_reliable.s
-80249b44 00000110 80249b44 0 DWCi_ProcessReliableQueue? 	dwc.a dwc_reliable.s
+80249b38 0000000c 80249b38 0 DWCi_ProcessReliableQueue_cutoff1 	dwc.a dwc_reliable.s
+80249b44 00000110 80249b44 0 DWCi_ProcessReliableQueue_cutoff2 	dwc.a dwc_reliable.s
 80249c54 00000128 80249c54 0 DWCi_InsertReliableQueue 	dwc.a dwc_reliable.s
 80249d7c 00000210 80249d7c 0 DWCi_IsSendableReliable 	dwc.a dwc_transport.s
 80249f8c 00000240 80249f8c 0 DWCi_SendReliable 	dwc.a dwc_transport.s
@@ -8452,7 +8452,7 @@
 8028c498 00000138 8028c498 0 IsBusyStream 	wpad.a WPAD.o
 8028c5d0 00000084 8028c5d0 0 WPADCanSendStreamData 	wpad.a WPAD.o
 8028c654 00000210 8028c654 0 WPADSendStreamData 	wpad.a WPAD.o
-8028c864 00000034 8028c864 0 WPADGetSpeakerVolume 	wpad.a WPAD.o
+8028c864 00000034 8028c864 0 WPADGetDpdSensitivity 	wpad.a WPAD.o
 8028c898 00000044 8028c898 0 WPADIsDpdEnabled 	wpad.a WPAD.o
 8028c8dc 00000058 8028c8dc 0 WPADGetDpdFormat 	wpad.a WPAD.o
 8028c934 00000038 8028c934 0 __wpadDpdCallback 	wpad.a WPAD.o
@@ -8825,12 +8825,12 @@
 802a495c 00000010 802a495c 0 bta_ci_hci_msg_handler 	bte.a bte_hcisu.o
 802a496c 0000002c 802a496c 0 BTE_InitStack 	bte.a bte_init.o
 802a4998 000000bc 802a4998 0 LogMsg 	bte.a bte_logmsg.o
-802a4a54 00000018 802a4a54 0 LogMsg_6 	bte.a bte_logmsg.o
-802a4a6c 00000018 802a4a6c 0 LogMsg_6 	bte.a bte_logmsg.o
-802a4a84 00000018 802a4a84 0 LogMsg_6 	bte.a bte_logmsg.o
-802a4a9c 00000018 802a4a9c 0 LogMsg_6 	bte.a bte_logmsg.o
-802a4ab4 00000018 802a4ab4 0 LogMsg_6 	bte.a bte_logmsg.o
-802a4acc 00000018 802a4acc 0 LogMsg_6 	bte.a bte_logmsg.o
+802a4a54 00000018 802a4a54 0 LogMsg_0 	bte.a bte_logmsg.o
+802a4a6c 00000018 802a4a6c 0 LogMsg_1 	bte.a bte_logmsg.o
+802a4a84 00000018 802a4a84 0 LogMsg_2 	bte.a bte_logmsg.o
+802a4a9c 00000018 802a4a9c 0 LogMsg_3 	bte.a bte_logmsg.o
+802a4ab4 00000018 802a4ab4 0 LogMsg_4 	bte.a bte_logmsg.o
+802a4acc 00000018 802a4acc 0 LogMsg_5 	bte.a bte_logmsg.o
 802a4ae4 00000018 802a4ae4 0 LogMsg_6 	bte.a bte_logmsg.o
 802a4afc 00000018 802a4afc 0 BTUInterruptHandler 	bte.a bte_main.o
 802a4b14 000000dc 802a4b14 0 BTA_Init 	bte.a bte_main.o
@@ -8845,10 +8845,10 @@
 802a5178 00000010 802a5178 0 bta_sys_rm_register 	bte.a bta_sys_conn.o
 802a5188 00000010 802a5188 0 bta_sys_compress_register 	bte.a bta_sys_conn.o
 802a5198 00000010 802a5198 0 bta_sys_pm_register 	bte.a bta_sys_conn.o
-802a51a8 000000c4 802a51a8 0 bta_sys_conn_close 	bte.a bta_sys_conn.o
+802a51a8 000000c4 802a51a8 0 bta_sys_conn_open 	bte.a bta_sys_conn.o
 802a526c 000000c4 802a526c 0 bta_sys_conn_close 	bte.a bta_sys_conn.o
-802a5330 00000034 802a5330 0 bta_sys_busy 	bte.a bta_sys_conn.o
-802a5364 00000034 802a5364 0 bta_sys_busy 	bte.a bta_sys_conn.o
+802a5330 00000034 802a5330 0 bta_sys_sco_close 	bte.a bta_sys_conn.o
+802a5364 00000034 802a5364 0 bta_sys_idle 	bte.a bta_sys_conn.o
 802a5398 00000034 802a5398 0 bta_sys_busy 	bte.a bta_sys_conn.o
 802a53cc 00000064 802a53cc 0 bta_sys_init 	bte.a bta_sys_main.o
 802a5430 000000ec 802a5430 0 bta_sys_event 	bte.a bta_sys_main.o
@@ -8883,10 +8883,10 @@
 802a654c 00000050 802a654c 0 bta_dm_disc_result 	bte.a bta_dm_act.o
 802a659c 00000088 802a659c 0 bta_dm_search_result 	bte.a bta_dm_act.o
 802a6624 0000004c 802a6624 0 bta_dm_search_timer_cback 	bte.a bta_dm_act.o
-802a6670 00000044 802a6670 0 bta_dm_search_cancel_cmpl 	bte.a bta_dm_act.o
-802a66b4 00000048 802a66b4 0 bta_dm_queue_disc 	bte.a bta_dm_act.o
+802a6670 00000044 802a6670 0 bta_dm_free_sdp_db 	bte.a bta_dm_act.o
+802a66b4 00000048 802a66b4 0 bta_dm_queue_search 	bte.a bta_dm_act.o
 802a66fc 00000048 802a66fc 0 bta_dm_queue_disc 	bte.a bta_dm_act.o
-802a6744 00000044 802a6744 0 bta_dm_search_cancel_cmpl 	bte.a bta_dm_act.o
+802a6744 00000044 802a6744 0 bta_dm_search_clear_queue 	bte.a bta_dm_act.o
 802a6788 00000044 802a6788 0 bta_dm_search_cancel_cmpl 	bte.a bta_dm_act.o
 802a67cc 0000005c 802a67cc 0 bta_dm_search_cancel_transac_cmpl 	bte.a bta_dm_act.o
 802a6828 00000018 802a6828 0 bta_dm_search_cancel_notify 	bte.a bta_dm_act.o
@@ -8982,7 +8982,7 @@
 802ab44c 0000021c 802ab44c 0 BTM_SwitchRole 	bte.a btm_acl.o
 802ab668 00000170 802ab668 0 btm_acl_encrypt_change 	bte.a btm_acl.o
 802ab7d8 000001f0 802ab7d8 0 BTM_SetLinkPolicy 	bte.a btm_acl.o
-802ab9c8 00000010 802ab9c8 0 BTM_SetDefaultLinkSuperTout 	bte.a btm_acl.o
+802ab9c8 00000010 802ab9c8 0 BTM_SetDefaultLinkPolicy 	bte.a btm_acl.o
 802ab9d8 00000104 802ab9d8 0 btm_read_link_policy_complete 	bte.a btm_acl.o
 802abadc 0000008c 802abadc 0 btm_read_remote_version_complete 	bte.a btm_acl.o
 802abb68 0000022c 802abb68 0 btm_read_remote_features_complete 	bte.a btm_acl.o
@@ -9047,7 +9047,7 @@
 802aed80 000000b8 802aed80 0 btm_discovery_db_reset 	bte.a btm_discovery.o
 802aee38 00000004 802aee38 0 btm_discovery_timeout 	bte.a btm_discovery.o
 802aee3c 00000284 802aee3c 0 BTM_SetDiscoverability 	bte.a btm_inq.o
-802af0c0 000000b0 802af0c0 0 BTM_SetPageScanType 	bte.a btm_inq.o
+802af0c0 000000b0 802af0c0 0 BTM_SetInquiryScanType 	bte.a btm_inq.o
 802af170 000000b0 802af170 0 BTM_SetPageScanType 	bte.a btm_inq.o
 802af220 00000098 802af220 0 BTM_SetInquiryMode 	bte.a btm_inq.o
 802af2b8 00000188 802af2b8 0 BTM_SetConnectability 	bte.a btm_inq.o
@@ -9159,7 +9159,7 @@
 802b7718 000001b4 802b7718 0 gap_find_addr_inq_cb 	bte.a gap_utils.o
 802b78cc 00000060 802b78cc 0 gap_convert_btm_status 	bte.a gap_utils.o
 802b792c 000000a8 802b792c 0 btsnd_hcic_inquiry 	bte.a hcicmds.o
-802b79d4 00000060 802b79d4 0 btsnd_hcic_read_bd_addr 	bte.a hcicmds.o
+802b79d4 00000060 802b79d4 0 btsnd_hcic_inq_cancel 	bte.a hcicmds.o
 802b7a34 000000c0 802b7a34 0 btsnd_hcic_per_inq_mode 	bte.a hcicmds.o
 802b7af4 000000e0 802b7af4 0 btsnd_hcic_create_conn 	bte.a hcicmds.o
 802b7bd4 00000088 802b7bd4 0 btsnd_hcic_disconnect 	bte.a hcicmds.o
@@ -9167,30 +9167,30 @@
 802b7ce8 00000060 802b7ce8 0 btsnd_hcic_accept_conn 	bte.a hcicmds.o
 802b7d48 0000005c 802b7d48 0 btsnd_hcic_reject_conn 	bte.a hcicmds.o
 802b7da4 000001a0 802b7da4 0 btsnd_hcic_link_key_req_reply 	bte.a hcicmds.o
-802b7f44 000000a0 802b7f44 0 btsnd_hcic_rmt_name_req_cancel 	bte.a hcicmds.o
+802b7f44 000000a0 802b7f44 0 btsnd_hcic_link_key_neg_reply 	bte.a hcicmds.o
 802b7fe4 000001e4 802b7fe4 0 btsnd_hcic_pin_code_req_reply 	bte.a hcicmds.o
-802b81c8 000000a0 802b81c8 0 btsnd_hcic_rmt_name_req_cancel 	bte.a hcicmds.o
+802b81c8 000000a0 802b81c8 0 btsnd_hcic_pin_code_neg_reply 	bte.a hcicmds.o
 802b8268 00000090 802b8268 0 btsnd_hcic_change_conn_type 	bte.a hcicmds.o
-802b82f8 0000007c 802b82f8 0 btsnd_hcic_get_link_quality 	bte.a hcicmds.o
+802b82f8 0000007c 802b82f8 0 btsnd_hcic_auth_request 	bte.a hcicmds.o
 802b8374 0000008c 802b8374 0 btsnd_hcic_set_conn_encrypt 	bte.a hcicmds.o
 802b8400 000000d8 802b8400 0 btsnd_hcic_rmt_name_req 	bte.a hcicmds.o
 802b84d8 000000a0 802b84d8 0 btsnd_hcic_rmt_name_req_cancel 	bte.a hcicmds.o
-802b8578 0000007c 802b8578 0 btsnd_hcic_get_link_quality 	bte.a hcicmds.o
-802b85f4 0000007c 802b85f4 0 btsnd_hcic_get_link_quality 	bte.a hcicmds.o
-802b8670 0000007c 802b8670 0 btsnd_hcic_get_link_quality 	bte.a hcicmds.o
+802b8578 0000007c 802b8578 0 btsnd_hcic_rmt_features_req 	bte.a hcicmds.o
+802b85f4 0000007c 802b85f4 0 btsnd_hcic_rmt_ver_req 	bte.a hcicmds.o
+802b8670 0000007c 802b8670 0 btsnd_hcic_read_rmt_clk_offset 	bte.a hcicmds.o
 802b86ec 000000fc 802b86ec 0 btsnd_hcic_setup_esco_conn 	bte.a hcicmds.o
 802b87e8 000000e8 802b87e8 0 btsnd_hcic_accept_esco_conn 	bte.a hcicmds.o
 802b88d0 00000060 802b88d0 0 btsnd_hcic_reject_esco_conn 	bte.a hcicmds.o
-802b8930 000000b4 802b8930 0 btsnd_hcic_park_mode 	bte.a hcicmds.o
+802b8930 000000b4 802b8930 0 btsnd_hcic_hold_mode 	bte.a hcicmds.o
 802b89e4 000000cc 802b89e4 0 btsnd_hcic_sniff_mode 	bte.a hcicmds.o
-802b8ab0 00000084 802b8ab0 0 btsnd_hcic_exit_park_mode 	bte.a hcicmds.o
+802b8ab0 00000084 802b8ab0 0 btsnd_hcic_exit_sniff_mode 	bte.a hcicmds.o
 802b8b34 000000b4 802b8b34 0 btsnd_hcic_park_mode 	bte.a hcicmds.o
 802b8be8 00000084 802b8be8 0 btsnd_hcic_exit_park_mode 	bte.a hcicmds.o
-802b8c6c 000000b0 802b8c6c 0 btsnd_hcic_delete_stored_key 	bte.a hcicmds.o
-802b8d1c 00000094 802b8d1c 0 btsnd_hcic_write_link_super_tout 	bte.a hcicmds.o
-802b8db0 0000005c 802b8db0 0 btsnd_hcic_read_local_features 	bte.a hcicmds.o
+802b8c6c 000000b0 802b8c6c 0 btsnd_hcic_switch_role 	bte.a hcicmds.o
+802b8d1c 00000094 802b8d1c 0 btsnd_hcic_write_policy_set 	bte.a hcicmds.o
+802b8db0 0000005c 802b8db0 0 btsnd_hcic_reset 	bte.a hcicmds.o
 802b8e0c 000001bc 802b8e0c 0 btsnd_hcic_set_event_filter 	bte.a hcicmds.o
-802b8fc8 00000074 802b8fc8 0 btsnd_hcic_write_encr_mode 	bte.a hcicmds.o
+802b8fc8 00000074 802b8fc8 0 btsnd_hcic_write_pin_type 	bte.a hcicmds.o
 802b903c 00000060 802b903c 0 btsnd_hcic_read_stored_key 	bte.a hcicmds.o
 802b909c 000001c0 802b909c 0 btsnd_hcic_write_stored_key 	bte.a hcicmds.o
 802b925c 000000b0 802b925c 0 btsnd_hcic_delete_stored_key 	bte.a hcicmds.o
@@ -9206,7 +9206,7 @@
 802b96ac 000000bc 802b96ac 0 btsnd_hcic_set_host_buf_size 	bte.a hcicmds.o
 802b9768 00000094 802b9768 0 btsnd_hcic_write_link_super_tout 	bte.a hcicmds.o
 802b97fc 00000070 802b97fc 0 btsnd_hcic_write_cur_iac_lap 	bte.a hcicmds.o
-802b986c 00000060 802b986c 0 btsnd_hcic_read_bd_addr 	bte.a hcicmds.o
+802b986c 00000060 802b986c 0 btsnd_hcic_read_local_ver 	bte.a hcicmds.o
 802b98cc 0000005c 802b98cc 0 btsnd_hcic_read_local_features 	bte.a hcicmds.o
 802b9928 00000028 802b9928 0 btsnd_hcic_read_buffer_size 	bte.a hcicmds.o
 802b9950 00000060 802b9950 0 btsnd_hcic_read_bd_addr 	bte.a hcicmds.o
@@ -9256,7 +9256,7 @@
 802bd7d4 00000190 802bd7d4 0 L2CA_ConnectRsp 	bte.a l2c_api.o
 802bd964 000000b8 802bd964 0 L2CA_ConfigReq 	bte.a l2c_api.o
 802bda1c 000000d0 802bda1c 0 L2CA_ConfigRsp 	bte.a l2c_api.o
-802bdaec 000000a4 802bdaec 0 L2CA_DisconnectRsp 	bte.a l2c_api.o
+802bdaec 000000a4 802bdaec 0 L2CA_DisconnectReq 	bte.a l2c_api.o
 802bdb90 000000a4 802bdb90 0 L2CA_DisconnectRsp 	bte.a l2c_api.o
 802bdc34 00000124 802bdc34 0 L2CA_DataWrite 	bte.a l2c_api.o
 802bdd58 000000c8 802bdd58 0 L2CA_SetIdleTimeout 	bte.a l2c_api.o
@@ -9321,7 +9321,7 @@
 802c2d30 00000010 802c2d30 0 l2cu_release_rcb 	bte.a l2c_utils.o
 802c2d40 000000b8 802c2d40 0 l2cu_find_rcb_by_psm 	bte.a l2c_utils.o
 802c2df8 00000148 802c2df8 0 l2cu_process_peer_cfg_req 	bte.a l2c_utils.o
-802c2f40 00000040 802c2f40 0 l2cu_process_our_cfg_rsp 	bte.a l2c_utils.o
+802c2f40 00000040 802c2f40 0 l2cu_process_peer_cfg_rsp 	bte.a l2c_utils.o
 802c2f80 00000110 802c2f80 0 l2cu_process_our_cfg_req 	bte.a l2c_utils.o
 802c3090 00000040 802c3090 0 l2cu_process_our_cfg_rsp 	bte.a l2c_utils.o
 802c30d0 0000006c 802c30d0 0 l2cu_device_reset 	bte.a l2c_utils.o
@@ -9357,7 +9357,7 @@
 802c4cf4 000001cc 802c4cf4 0 port_flow_control_peer 	bte.a port_utils.o
 802c4ec0 00000108 802c4ec0 0 rfcomm_l2cap_if_init 	bte.a rfc_l2cap_if.o
 802c4fc8 00000104 802c4fc8 0 RFCOMM_ConnectCnf 	bte.a rfc_l2cap_if.o
-802c50cc 00000108 802c50cc 0 RFCOMM_ConfigCnf 	bte.a rfc_l2cap_if.o
+802c50cc 00000108 802c50cc 0 RFCOMM_ConfigInd 	bte.a rfc_l2cap_if.o
 802c51d4 00000108 802c51d4 0 RFCOMM_ConfigCnf 	bte.a rfc_l2cap_if.o
 802c52dc 00000004 802c52dc 0 RFCOMM_QoSViolationInd 	bte.a rfc_l2cap_if.o
 802c52e0 00000124 802c52e0 0 RFCOMM_DisconnectInd 	bte.a rfc_l2cap_if.o
@@ -9403,13 +9403,13 @@
 802c7a08 00000098 802c7a08 0 RFCOMM_LineStatusReq 	bte.a rfc_port_if.o
 802c7aa0 0000002c 802c7aa0 0 RFCOMM_DlcReleaseReq 	bte.a rfc_port_if.o
 802c7acc 00000038 802c7acc 0 RFCOMM_DataReq 	bte.a rfc_port_if.o
-802c7b04 000000b0 802c7b04 0 rfc_send_disc 	bte.a rfc_ts_frames.o
-802c7bb4 000000b0 802c7bb4 0 rfc_send_disc 	bte.a rfc_ts_frames.o
+802c7b04 000000b0 802c7b04 0 rfc_send_sabme 	bte.a rfc_ts_frames.o
+802c7bb4 000000b0 802c7bb4 0 rfc_send_ua 	bte.a rfc_ts_frames.o
 802c7c64 000000c4 802c7c64 0 rfc_send_dm 	bte.a rfc_ts_frames.o
 802c7d28 000000b0 802c7d28 0 rfc_send_disc 	bte.a rfc_ts_frames.o
 802c7dd8 00000198 802c7dd8 0 rfc_send_buf_uih 	bte.a rfc_ts_frames.o
 802c7f70 000000e8 802c7f70 0 rfc_send_pn 	bte.a rfc_ts_frames.o
-802c8058 00000084 802c8058 0 rfc_send_fcoff 	bte.a rfc_ts_frames.o
+802c8058 00000084 802c8058 0 rfc_send_fcon 	bte.a rfc_ts_frames.o
 802c80dc 00000084 802c80dc 0 rfc_send_fcoff 	bte.a rfc_ts_frames.o
 802c8160 00000120 802c8160 0 rfc_send_msc 	bte.a rfc_ts_frames.o
 802c8280 000000b0 802c8280 0 rfc_send_rls 	bte.a rfc_ts_frames.o
@@ -9611,7 +9611,7 @@
 802d6ec0 00000298 802d6ec0 0 DVDLowGetNoDiscOpenPartitionParams 	dvd.a dvd_broadway.o
 802d7158 00000164 802d7158 0 DVDLowClosePartition 	dvd.a dvd_broadway.o
 802d72bc 00000194 802d72bc 0 DVDLowUnencryptedRead 	dvd.a dvd_broadway.o
-802d7450 00000194 802d7450 0 DVDLowAudioBufferConfig 	dvd.a dvd_broadway.o
+802d7450 00000194 802d7450 0 DVDLowStopMotor 	dvd.a dvd_broadway.o
 802d75e4 00000168 802d75e4 0 DVDLowInquiry 	dvd.a dvd_broadway.o
 802d774c 00000168 802d774c 0 DVDLowRequestError 	dvd.a dvd_broadway.o
 802d78b4 0000000c 802d78b4 0 DVDLowSetSpinupFlag 	dvd.a dvd_broadway.o
@@ -9749,9 +9749,9 @@
 802e0bd8 00000024 802e0bd8 0 GXPixModeSync 	gx.a GXMisc.o
 802e0bfc 00000010 802e0bfc 0 GXPokeAlphaMode 	gx.a GXMisc.o
 802e0c0c 00000018 802e0c0c 0 GXPokeAlphaRead 	gx.a GXMisc.o
-802e0c24 00000014 802e0c24 0 GXPokeDither 	gx.a GXMisc.o
+802e0c24 00000014 802e0c24 0 GXPokeAlphaUpdate 	gx.a GXMisc.o
 802e0c38 0000005c 802e0c38 0 GXPokeBlendMode 	gx.a GXMisc.o
-802e0c94 00000014 802e0c94 0 GXPokeDither 	gx.a GXMisc.o
+802e0c94 00000014 802e0c94 0 GXPokeColorUpdate 	gx.a GXMisc.o
 802e0ca8 00000018 802e0ca8 0 GXPokeDstAlpha 	gx.a GXMisc.o
 802e0cc0 00000014 802e0cc0 0 GXPokeDither 	gx.a GXMisc.o
 802e0cd4 0000001c 802e0cd4 0 GXPokeZMode 	gx.a GXMisc.o
@@ -9772,7 +9772,7 @@
 802e1484 0000001c 802e1484 0 GXGetCullMode 	gx.a GXGeometry.o
 802e14a0 0000003c 802e14a0 0 GXSetCoPlanar 	gx.a GXGeometry.o
 802e14dc 00000024 802e14dc 0 __GXSetGenMode 	gx.a GXGeometry.o
-802e1500 00000040 802e1500 0 GXSetTexCopySrc 	gx.a GXFrameBuf.o
+802e1500 00000040 802e1500 0 GXSetDispCopySrc 	gx.a GXFrameBuf.o
 802e1540 00000040 802e1540 0 GXSetTexCopySrc 	gx.a GXFrameBuf.o
 802e1580 00000024 802e1580 0 GXSetDispCopyDst 	gx.a GXFrameBuf.o
 802e15a4 0000011c 802e15a4 0 GXSetTexCopyDst 	gx.a GXFrameBuf.o
@@ -9815,11 +9815,11 @@
 802e2bb4 00000028 802e2bb4 0 GXInitTexObjFilter 	gx.a GXTexture.o
 802e2bdc 00000008 802e2bdc 0 GXInitTexObjUserData 	gx.a GXTexture.o
 802e2be4 00000008 802e2be4 0 GXGetTexObjUserData 	gx.a GXTexture.o
-802e2bec 0000000c 802e2bec 0 GXGetTexObjWrapT 	gx.a GXTexture.o
+802e2bec 0000000c 802e2bec 0 GXGetTexObjData 	gx.a GXTexture.o
 802e2bf8 00000014 802e2bf8 0 GXGetTexObjWidth 	gx.a GXTexture.o
 802e2c0c 00000014 802e2c0c 0 GXGetTexObjHeight 	gx.a GXTexture.o
 802e2c20 00000008 802e2c20 0 GXGetTexObjFmt 	gx.a GXTexture.o
-802e2c28 0000000c 802e2c28 0 GXGetTexObjWrapT 	gx.a GXTexture.o
+802e2c28 0000000c 802e2c28 0 GXGetTexObjWrapS 	gx.a GXTexture.o
 802e2c34 0000000c 802e2c34 0 GXGetTexObjWrapT 	gx.a GXTexture.o
 802e2c40 0000000c 802e2c40 0 GXGetTexObjMipMap 	gx.a GXTexture.o
 802e2c4c 000000e4 802e2c4c 0 GXGetTexObjLODAll 	gx.a GXTexture.o
@@ -9831,7 +9831,7 @@
 802e2fac 000000b4 802e2fac 0 GXInitTexCacheRegion 	gx.a GXTexture.o
 802e3060 00000020 802e3060 0 GXInitTlutRegion 	gx.a GXTexture.o
 802e3080 00000048 802e3080 0 GXInvalidateTexAll 	gx.a GXTexture.o
-802e30c8 00000014 802e30c8 0 GXSetTlutRegionCallback 	gx.a GXTexture.o
+802e30c8 00000014 802e30c8 0 GXSetTexRegionCallback 	gx.a GXTexture.o
 802e30dc 00000014 802e30dc 0 GXSetTlutRegionCallback 	gx.a GXTexture.o
 802e30f0 00000090 802e30f0 0 __SetSURegs 	gx.a GXTexture.o
 802e3180 00000168 802e3180 0 __GXSetSUTexRegs 	gx.a GXTexture.o
@@ -9846,14 +9846,14 @@
 802e3a34 00000030 802e3a34 0 __GXSetIndirectMask 	gx.a GXBump.o
 802e3a64 00000024 802e3a64 0 __GXFlushTextureState 	gx.a GXBump.o
 802e3a88 00000094 802e3a88 0 GXSetTevOp 	gx.a GXTev.o
-802e3b1c 00000040 802e3b1c 0 GXSetTevAlphaIn 	gx.a GXTev.o
+802e3b1c 00000040 802e3b1c 0 GXSetTevColorIn 	gx.a GXTev.o
 802e3b5c 00000040 802e3b5c 0 GXSetTevAlphaIn 	gx.a GXTev.o
-802e3b9c 00000058 802e3b9c 0 GXSetTevAlphaOp 	gx.a GXTev.o
+802e3b9c 00000058 802e3b9c 0 GXSetTevColorOp 	gx.a GXTev.o
 802e3bf4 00000058 802e3bf4 0 GXSetTevAlphaOp 	gx.a GXTev.o
 802e3c4c 00000060 802e3c4c 0 GXSetTevColor 	gx.a GXTev.o
 802e3cac 00000064 802e3cac 0 GXSetTevColorS10 	gx.a GXTev.o
 802e3d10 0000005c 802e3d10 0 GXSetTevKColor 	gx.a GXTev.o
-802e3d6c 00000050 802e3d6c 0 GXSetTevKAlphaSel 	gx.a GXTev.o
+802e3d6c 00000050 802e3d6c 0 GXSetTevKColorSel 	gx.a GXTev.o
 802e3dbc 00000050 802e3dbc 0 GXSetTevKAlphaSel 	gx.a GXTev.o
 802e3e0c 0000003c 802e3e0c 0 GXSetTevSwapMode 	gx.a GXTev.o
 802e3e48 0000007c 802e3e48 0 GXSetTevSwapModeTable 	gx.a GXTev.o
@@ -9865,8 +9865,8 @@
 802e4334 00000160 802e4334 0 GXInitFogAdjTable 	gx.a GXPixel.o
 802e4494 00000124 802e4494 0 GXSetFogRangeAdj 	gx.a GXPixel.o
 802e45b8 00000050 802e45b8 0 GXSetBlendMode 	gx.a GXPixel.o
-802e4608 0000002c 802e4608 0 GXSetDither 	gx.a GXPixel.o
-802e4634 0000002c 802e4634 0 GXSetDither 	gx.a GXPixel.o
+802e4608 0000002c 802e4608 0 GXSetColorUpdate 	gx.a GXPixel.o
+802e4634 0000002c 802e4634 0 GXSetAlphaUpdate 	gx.a GXPixel.o
 802e4660 00000034 802e4660 0 GXSetZMode 	gx.a GXPixel.o
 802e4694 00000030 802e4694 0 GXSetZCompLoc 	gx.a GXPixel.o
 802e46c4 000000a8 802e46c4 0 GXSetPixelFmt 	gx.a GXPixel.o
@@ -10062,8 +10062,8 @@
 802f1c10 000001f0 802f1c10 0 Animate__Q36nw4hbm3lyt18AnimTransformBasicFUlPQ36nw4hbm3lyt4Pane 	homebuttonLib.a lyt_animation.o
 802f1e00 000002f0 802f1e00 0 Animate__Q36nw4hbm3lyt18AnimTransformBasicFUlPQ36nw4hbm3lyt8Material 	homebuttonLib.a lyt_animation.o
 802f20f0 00000034 802f20f0 0 FindAnimationLink__Q36nw4hbm3lyt6detailFPQ36nw4hbm2ut40LinkList<Q36nw4hbm3lyt13AnimationLink,0>PQ36nw4hbm3lyt13AnimTransform 	homebuttonLib.a lyt_animation.o
-802f2124 000000dc 802f2124 0 FindNameResource__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCc 	homebuttonLib.a lyt_arcResourceAccessor.o
-802f2200 00000148 802f2200 0 GetResourceSub__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCcUlPCcPUl 	homebuttonLib.a lyt_arcResourceAccessor.o
+802f2124 000000dc 802f2124 0 FindNameResource___Q36nw4hbm 	homebuttonLib.a lyt_arcResourceAccessor.o
+802f2200 00000148 802f2200 0 GetResourceSub___Q36nw4hbm 	homebuttonLib.a lyt_arcResourceAccessor.o
 802f2348 0000005c 802f2348 0 __ct__Q36nw4hbm3lyt19ArcResourceAccessorFv 	homebuttonLib.a lyt_arcResourceAccessor.o
 802f23a4 0000007c 802f23a4 0 Attach__Q36nw4hbm3lyt19ArcResourceAccessorFPvPCc 	homebuttonLib.a lyt_arcResourceAccessor.o
 802f2420 00000020 802f2420 0 GetResource__Q36nw4hbm3lyt19ArcResourceAccessorFUlPCcPUl 	homebuttonLib.a lyt_arcResourceAccessor.o
@@ -10112,8 +10112,8 @@
 802f408c 0000006c 802f408c 0 GetLayoutRect__Q36nw4hbm3lyt6LayoutCFv 	homebuttonLib.a lyt_layout.o
 802f40f8 000001a4 802f40f8 0 SetTagProcessor__Q36nw4hbm3lyt6LayoutFPQ36nw4hbm2ut19TagProcessorBase<w> 	homebuttonLib.a lyt_layout.o
 802f429c 00000220 802f429c 0 BuildPaneObj__Q36nw4hbm3lyt6LayoutFlPCvRCQ36nw4hbm3lyt11ResBlockSet 	homebuttonLib.a lyt_layout.o
-802f44bc 00000118 802f44bc 0 CalcTextureMtx__26@unnamed@lyt_material_cpp@FPQ36nw4hbm4math5MTX34RCQ36nw4hbm3lyt6TexSRT 	homebuttonLib.a lyt_material.o
-802f45d4 00000204 802f45d4 0 SetIndTexMtx__26@unnamed@lyt_material_cpp@F14_GXIndTexMtxIDPA3_Cf 	homebuttonLib.a lyt_material.o
+802f44bc 00000118 802f44bc 0 CalcTextureMtx__Q36nw4hbm 	homebuttonLib.a lyt_material.o
+802f45d4 00000204 802f45d4 0 SetIndTexMtx__Q36nw4hbm 	homebuttonLib.a lyt_material.o
 802f47d8 0000000c 802f47d8 0 __ct__Q36nw4hbm2ut5ColorFv 	homebuttonLib.a lyt_material.o
 802f47e4 0000124c 802f47e4 0 __ct__Q36nw4hbm3lyt8MaterialFPCQ46nw4hbm3lyt3res8MaterialRCQ36nw4hbm3lyt11ResBlockSet 	homebuttonLib.a lyt_material.o
 802f5a30 000000b0 802f5a30 0 __dt__Q36nw4hbm3lyt8MaterialFv 	homebuttonLib.a lyt_material.o
@@ -10177,7 +10177,7 @@
 802f8d9c 00000040 802f8d9c 0 __dt__Q36nw4hbm3lyt16ResourceAccessorFv 	homebuttonLib.a lyt_resourceAccessor.o
 802f8ddc 00000010 802f8ddc 0 __ct__Q36nw4hbm3lyt16ResourceAccessorFv 	homebuttonLib.a lyt_resourceAccessor.o
 802f8dec 00000008 802f8dec 0 GetFont__Q36nw4hbm3lyt16ResourceAccessorFPCc 	homebuttonLib.a lyt_resourceAccessor.o
-802f8df4 000000b4 802f8df4 0 GetColor__25@unnamed@lyt_textBox_cpp@FRC11_GXColorS10 	homebuttonLib.a lyt_textBox.o
+802f8df4 000000b4 802f8df4 0 GetColor__Q36nw4hbm 	homebuttonLib.a lyt_textBox.o
 802f8ea8 000002b4 802f8ea8 0 __ct__Q36nw4hbm3lyt7TextBoxFPCQ46nw4hbm3lyt3res7TextBoxRCQ36nw4hbm3lyt11ResBlockSet 	homebuttonLib.a lyt_textBox.o
 802f915c 00000190 802f915c 0 __dt__Q36nw4hbm3lyt7TextBoxFv 	homebuttonLib.a lyt_textBox.o
 802f92ec 00000034 802f92ec 0 GetVtxColor__Q36nw4hbm3lyt7TextBoxCFUl 	homebuttonLib.a lyt_textBox.o
