@@ -11,6 +11,7 @@ def main():
         print('-c   Clean up functions.')
         print('-d   Find duplicate functions.')
         print('-l   Map length check.')
+        print('-ll  Map length fix.')
         print('-o   Find functions without objects.')
         print('-s   Find locations where the object has been switched/changed.')
         print('-v   Check the memory map for validity.')
@@ -25,6 +26,8 @@ def main():
         find_duplicates()
     elif arg == '-l':
         map_length_check()
+    elif arg == '-ll':
+        map_length_fix()
     elif arg == '-o':
         find_missing_objects()
     elif arg == '-s':
@@ -100,6 +103,36 @@ def map_length_check():
                     print('Function: {} ({:02X})'.format(previous[4].strip(), previous_addr))
                     print('  Expected: {:02X} Actual: {:02X}'.format(previous_length, diff))
             previous = parts
+
+def map_length_fix():
+    '''
+    Fixes the length of function in the symbol map with incorrect lengths.
+    The reason that some lengths are incorrect is because they may contain a branch that shouldn't
+    count for the function length, but did count when Dolphin automatically generated the symbol
+    map. It accomplished this by counting the difference in bytes between the start and end
+    of the function.
+    '''
+    map_file = sys.argv[2]
+    with open('general/symbol_maps/' + map_file, 'r') as open_file:
+        lines = open_file.readlines()
+    newlines = []
+    previous = []
+    for _, line in enumerate(lines):
+        parts = line.split(' ')
+        if line.startswith('8'):
+            addr = int(parts[0], 16)
+            if previous:
+                previous_length = int(previous[1], 16)
+                previous_addr = int(previous[0], 16)
+                diff = addr - previous_addr
+                if diff < previous_length:
+                    newlines[-1] = newlines[-1][:9] + '{:08x}'.format(diff) + newlines[-1][17:]
+                    print('Fixed function: {} ({:02X})'.format(previous[4].strip(), previous_addr))
+            previous = parts
+        newlines.append(line)
+    with open('general/symbol_maps/' + map_file, 'w', newline='\n') as open_file:
+        for newline in newlines:
+            open_file.write(newline)
 
 def find_missing_objects():
     ''' Find functions without objects. '''
