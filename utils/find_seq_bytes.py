@@ -3,6 +3,7 @@ Find which seq files contain a specific pattern of bytes
 '''
 import sys
 import os
+from bitstring import ConstBitStream
 
 def main():
     # Get arguments and check for validity
@@ -28,10 +29,13 @@ def main():
                 check_file(file_path, byte_array)
 
 def check_file(file_path, byte_array):
-    with open(file_path, 'rb') as seq_file:
-        data = seq_file.read()
-    if (byte_array in data):
-        print(file_path)
+    s = ConstBitStream(filename=file_path)
+    found = s.find(byte_array, bytealigned=True)
+    if found:
+        print("File: %s" % file_path)
+        print("Found start code at byte offset %d." % found[0])
+        s0f0, length, bitdepth, height, width = s.readlist('hex:16, uint:16, uint:8, 2*uint:16')
+        print("Width %d, Height %d\n" % (width, height))
 
 if __name__ == "__main__":
     main()
