@@ -3,7 +3,8 @@
 # GameCube .dol file disassembler
 # Usage: doldisasm.py DOL_FILE > assembly_file.s
 #
-# v2 written by Noki Doki
+# Written by camthesaxman
+# v2 updated by Noki Doki
 # "updated doldisasm.py to take a symbol map
 # it also applies substitutions to the symbols like postprocess.py"
 #

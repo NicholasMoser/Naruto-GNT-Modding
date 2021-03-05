@@ -3,6 +3,8 @@
 # GameCube .dol file disassembler
 # Usage: doldisasm.py DOL_FILE > assembly_file.s
 #
+# Written by camthesaxman
+#
 
 from capstone import *
 from capstone.ppc import *
