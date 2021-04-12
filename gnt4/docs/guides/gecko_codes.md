@@ -76,6 +76,29 @@ C2042C40 00000007
 04222FB8 8004CB64
 ```
 
+### 3MC Training Mode Uses Fight Debug Menu [Nick]
+
+```gecko
+c2045328 00000005
+9003001c 3ca08022
+800561ec 28000007
+40820010 3ca08005
+38a5cb64 90a40008
+60000000 00000000
+```
+
+### 3MC Training Mode is 1v1 Training Mode and 1v1 Training Mode Uses Fight Debug Menu [Nick]
+
+```gecko
+c2045328 00000006
+9003001c 3ca08022
+800561ec 28000007
+40820010 38000006
+900561ec 48000010
+3ca08005 38a5cb64
+90a40008 00000000
+```
+
 ### Audio Plays While Paused [Nick]
 
 ```gecko
