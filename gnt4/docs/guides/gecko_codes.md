@@ -99,6 +99,12 @@ c2045328 00000006
 90a40008 00000000
 ```
 
+### Rounds Default is 3
+
+```gecko
+0400b2fc b07f0192
+```
+
 ### Audio Plays While Paused [Nick]
 
 ```gecko
