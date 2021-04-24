@@ -45,7 +45,7 @@ Stage identification can be found here: [Stages](/gnt4/docs/stages/stages.md)
 | m054.trk |  Chunin Exams Prelims                     |  3:32 |
 | m055.trk |  Chunin Exams Finals                      |  3:40 |
 | m056.trk |  Chunin Exams Rooftop (Sound 4 Barrier)   |  3:40 |
-| m057.trk |  ???                                      |  3:05 |
+| m057.trk |  Shop (Unused)                            |  3:05 |
 | m058.trk |  Hot Springs                              |  4:19 |
 | m059.trk |  Hidden Sand Village                      |  5:03 |
 | m060.trk |  Chunin Exams Rooftop                     |  3:42 |
