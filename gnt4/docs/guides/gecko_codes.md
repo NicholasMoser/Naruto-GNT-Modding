@@ -76,6 +76,16 @@ C2042C40 00000007
 04222FB8 8004CB64
 ```
 
+### Battle Mode is the Default Menu Option [Nick]
+
+```gecko
+c20d687c 00000002
+38000002 b0030000
+38000000 00000000
+```
+
+When you first start up the game, Battle Mode will be selected by default. This is the menu option with 1v1 and 4p mode. To change it to use a different mode instead, replace the `00000002` with a different number.
+
 ### 3MC Training Mode Uses Fight Debug Menu [Nick]
 
 ```gecko
@@ -200,6 +210,24 @@ Note: This new default will only take affect after pausing unless you modify `fi
 ```
 
 ## Experimental (May cause unintended side effects or crash)
+
+### Naruto's Clone Drains Chakra Really Fast [Nick]
+
+```gecko
+0403e8dc 3803ff01
+```
+
+### Naruto's Clone Never Drains Chakra [Nick]
+
+```gecko
+0403e8dc 38030000
+```
+
+### Naruto's Clone Drains Chakra Slower [Nick]
+
+```gecko
+0403e8dc 3803ffe0
+```
 
 ### Unlimited Block Guard [Nick]
 
