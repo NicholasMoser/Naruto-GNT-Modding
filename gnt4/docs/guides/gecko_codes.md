@@ -109,10 +109,16 @@ c2045328 00000006
 90a40008 00000000
 ```
 
-### Rounds Default is 3
+### Rounds Default is 3 [Nick]
 
 ```gecko
 0400b2fc b07f0192
+```
+
+### Match Time Default is 90 [Nick]
+
+```gecko
+0400b304 b09f0196
 ```
 
 ### Audio Plays While Paused [Nick]
