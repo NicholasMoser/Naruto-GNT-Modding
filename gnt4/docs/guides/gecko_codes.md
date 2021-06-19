@@ -349,6 +349,17 @@ e0000000 80008000
 04014868 60000000
 ```
 
+### No Slow Down on Kill (Training Mode Only) [Nick]
+
+```gecko
+c2014868 00000005
+3c808022 608461ec
+80040000 2c000006
+41820010 2c000007
+41820008 b0650000
+60000000 00000000
+```
+
 ### Add Random Select to Character Select (Activate with Down+Start) [Nick]
 
 ```gecko
