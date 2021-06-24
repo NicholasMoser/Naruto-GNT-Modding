@@ -1,6 +1,6 @@
 # Reflect
 
-When a project is within reflect distance, the flag 0x2000 is set at 0x80080c8c.
+When a projectile is within reflect distance, the flag 0x2000 is set at 0x80080c8c.
 
 This is checked at instruction 0x80063784.
 
