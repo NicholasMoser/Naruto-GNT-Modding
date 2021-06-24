@@ -24,3 +24,5 @@ A much cleaner way of implenting this is to nop the if checks at instruction 0x8
 04080c58 60000000
 04080c64 60000000
 ```
+
+When you reflect with the above codes, the `chr_p` is swapped at instruction 0x80080c8c, indicating that the projectile is now targeting the other player. Before the reflect, chr_p[4] has the flag 0x0800_0000, and after it doesn't. Before the reflect chr_p[0x15f] has a pointer, after it doesn't. Both of these values appear to be set at instruction 0x801405a0; this is seq opcode 0x3f10, and is not called upon a reflect.
