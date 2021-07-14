@@ -582,3 +582,11 @@ So for example, `game00.seq` starts with `0x00000006`, so it will initialize a `
 ### pc
 
 The third parameter `pc` is a pointer to the current opcode being executed in the seq file. It will move from opcode to opcode and branch when told to. When set to 0 it will cease executing opcodes.
+
+## Known Values
+
+- seq_p[0x05] + 0x5c: Memory address of the start of the current SEQ file.
+- reg_p[0x14]: Holds a counter. Set by opcode 0402 (reg_p[0x15] also is set to this counter) and read/decremented by opcode 013B.
+- reg_p[0x15]: Holds values to be compared for branching. Set by opcode group 04 and compared in opcode group 01.
+- reg_p[0x16]: Holds a program counter while the program counter is reset to zero. Set by opcode 0100 and 0101 and used in the function `seq_parse(...)`. Reset by opcode 0001.
+- reg_p[0x17]: Holds some sort of program counter. Used in opcode group 01.
