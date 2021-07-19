@@ -612,3 +612,5 @@ The third parameter `pc` is a pointer to the current opcode being executed in th
 - reg_p[0x17]: Return Addresses (`ra`). The stack of return addresses for subroutine calls.
 
 Any of the above registers can be read from by certain opcodes. You will know this can be done if the opcode calls `seq_read_params`. If the last byte is under 0x18, it will return the value in the registers associated with that value. For example, the opcode `01500013` will read from register 0x13.
+
+If the last byte is between 0x18 and 0x30, it will access from stored registers at seq_p[5].
