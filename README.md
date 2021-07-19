@@ -56,11 +56,13 @@ Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.c
 
 [File Formats](/gnt4/docs/file_formats/formats.md)
 
-[Ghidra Guide](/gnt4/docs/guides/ghidra.md)
-
 [Stage Modding](/gnt4/docs/guides/stage_modding.md)
 
 [Structs](/gnt4/docs/guides/structs.md)
+
+[Ghidra Guide](/gnt4/docs/guides/ghidra.md)
+
+[SEQ Decompilation](/gnt4/docs/guides/seq_decomp.md)
 
 [Main Menu Character](/gnt4/docs/guides/main_menu_character.md)
 
