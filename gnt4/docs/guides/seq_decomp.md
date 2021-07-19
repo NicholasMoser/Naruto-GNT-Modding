@@ -586,25 +586,25 @@ The third parameter `pc` is a pointer to the current opcode being executed in th
 ## Known Values
 
 - seq_p[5][0x17]: Memory address of the start of the current SEQ file.
-- reg_p[0x00]: Possibly a general purpose register (`grp0`).
-- reg_p[0x01]: Possibly a general purpose register (`grp1`).
-- reg_p[0x02]: Possibly a general purpose register (`grp2`).
-- reg_p[0x03]: Possibly a general purpose register (`grp3`).
-- reg_p[0x04]: Possibly a general purpose register (`grp4`).
-- reg_p[0x05]: Possibly a general purpose register (`grp5`).
-- reg_p[0x06]: Possibly a general purpose register (`grp6`).
-- reg_p[0x07]: Possibly a general purpose register (`grp7`).
-- reg_p[0x08]: Possibly a general purpose register (`grp8`).
-- reg_p[0x09]: Possibly a general purpose register (`grp9`).
-- reg_p[0x0A]: Possibly a general purpose register (`grp10`).
-- reg_p[0x0B]: Possibly a general purpose register (`grp11`).
-- reg_p[0x0C]: Possibly a general purpose register (`grp12`).
-- reg_p[0x0D]: Possibly a general purpose register (`grp13`).
-- reg_p[0x0E]: Possibly a general purpose register (`grp14`).
-- reg_p[0x0F]: Possibly a general purpose register (`grp15`).
-- reg_p[0x10]: Possibly a general purpose register (`grp16`).
-- reg_p[0x11]: Possibly a general purpose register (`grp17`).
-- reg_p[0x12]: Possibly a general purpose register (`grp18`).
+- reg_p[0x00]: Possibly a general purpose register (`gpr0`).
+- reg_p[0x01]: Possibly a general purpose register (`gpr1`).
+- reg_p[0x02]: Possibly a general purpose register (`gpr2`).
+- reg_p[0x03]: Possibly a general purpose register (`gpr3`).
+- reg_p[0x04]: Possibly a general purpose register (`gpr4`).
+- reg_p[0x05]: Possibly a general purpose register (`gpr5`).
+- reg_p[0x06]: Possibly a general purpose register (`gpr6`).
+- reg_p[0x07]: Possibly a general purpose register (`gpr7`).
+- reg_p[0x08]: Possibly a general purpose register (`gpr8`).
+- reg_p[0x09]: Possibly a general purpose register (`gpr9`).
+- reg_p[0x0A]: Possibly a general purpose register (`gpr10`).
+- reg_p[0x0B]: Possibly a general purpose register (`gpr11`).
+- reg_p[0x0C]: Possibly a general purpose register (`gpr12`).
+- reg_p[0x0D]: Possibly a general purpose register (`gpr13`).
+- reg_p[0x0E]: Possibly a general purpose register (`gpr14`).
+- reg_p[0x0F]: Possibly a general purpose register (`gpr15`).
+- reg_p[0x10]: Possibly a general purpose register (`gpr16`).
+- reg_p[0x11]: Possibly a general purpose register (`gpr17`).
+- reg_p[0x12]: Possibly a general purpose register (`gpr18`).
 - reg_p[0x13]: Currently unknown, appears to be used alongside the Comparison Register (`cr`).
 - reg_p[0x14]: Count Register (`ctr`). Holds a counter. Set by opcode 0402 (reg_p[0x15] also is set to this counter) and read/decremented by opcode 013B.
 - reg_p[0x15]: Comparison Register (`cr`). Holds values to be compared for branching. Set by opcode group 04 and compared in opcode group 01.
