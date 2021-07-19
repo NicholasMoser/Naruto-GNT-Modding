@@ -567,11 +567,11 @@ sprintf("sys_bp(): seq_p%08x reg_p%08x pc%08x\n", seq_p, reg_p, pc);
 
 ### seq_p
 
-The first parameter `seq_p` is a pointer to something currently unknown.
+The first parameter `seq_p` is a pointer to a variety of information related to the seq files being executed. One such example is the offset in memory to the start of the current seq file being executed.
 
 ### reg_p
 
-The second parameter `reg_p` is a pointer to what is believed to be registers used by opcodes. The size of it appears to be the first four-byte word of the seq file plus 1 times 0x60.
+The second parameter `reg_p` holds pointers to the registers used. There are 18 registers. Despite this, the size of it in appears to be the first four-byte word of the seq file plus 1 times 0x60.
 
 ```c
 reg_p_size = (first_word + 1) * 0x60
