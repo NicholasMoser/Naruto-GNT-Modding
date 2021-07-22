@@ -609,7 +609,7 @@ The third parameter `pc` is a pointer to the current opcode being executed in th
 - reg_p[0x14]: Count Register (`ctr`). Holds a counter. Set by opcode 0402 (reg_p[0x15] also is set to this counter) and read/decremented by opcode 013B.
 - reg_p[0x15]: Comparison Register (`cr`). Holds values to be compared for branching. Set by opcode group 04 and compared in opcode group 01.
 - reg_p[0x16]: Holds a program counter while the program counter is reset to zero. Set by opcode 0100 and 0101 and used in the function `seq_parse(...)`. Reset by opcode 0001.
-- reg_p[0x17]: Return Addresses (`ra`). The stack of return addresses for subroutine calls.
+- reg_p[0x17]: Stack Pointer (`sp`). The stack pointer to push and pop values from, such as return addresses for subroutine calls.
 
 Any of the above registers can be read from by certain opcodes. You will know this can be done if the opcode calls `seq_read_params`. If the last byte is under 0x18, it will return the value in the registers associated with that value. For example, the opcode `01500013` will read from register 0x13.
 
