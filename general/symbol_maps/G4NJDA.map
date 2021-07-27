@@ -645,7 +645,7 @@
 8003e46c 0000018c 8003e46c 0 zz_8003e46c_ 	battle.o
 8003e5f8 000009f4 8003e5f8 0 damage_handler 	battle.o
 8003efec 000000d8 8003efec 0 zz_8003efec_ 	battle.o
-8003f0c4 00000128 8003f0c4 0 block_guard_modify 	battle.o
+8003f0c4 00000128 8003f0c4 0 guard_meter_add 	battle.o
 8003f1ec 0000008c 8003f1ec 0 zz_8003f1ec_ 	battle.o
 8003f278 0000025c 8003f278 0 zz_8003f278_ 	battle.o
 8003f4d4 00000064 8003f4d4 0 zz_8003f4d4_ 	battle.o
