@@ -16,35 +16,37 @@ The absolute positions of these structs can be found at the locations listed bel
 
 ### Values
 
-- 0x07: Character ID. See [INTERNAL_CHAR_ORDER](https://github.com/NicholasMoser/GNTool/blob/3.7/src/main/java/com/github/nicholasmoser/gnt4/GNT4Characters.java#L105)
-- 0x44: **Movement Stuff**
+- 0x1c: Character ID. See [INTERNAL_CHAR_ORDER](https://github.com/NicholasMoser/GNTool/blob/3.7/src/main/java/com/github/nicholasmoser/gnt4/GNT4Characters.java#L105)
+- 0x110: **Movement Stuff**
   - Pointer to some movement related stuff.
-- 0x4C: Flags
+- 0x130: Flags
   - `0x810000` is invincibility; all damage becomes 0. See `damage_handler(uint* chr_p)`.
-- 0x67: **X Position**
-- 0x68: **Y Position**
-- 0x69: **Z Position**
-- 0x6F: **Facing Opponent**
+- 0x164: Added to 0x166 to get combo count
+- 0x166: Added to 0x164 to get combo count
+- 0x19c: **X Position**
+- 0x1a0: **Y Position**
+- 0x1a4: **Z Position**
+- 0x1bc: **Facing Opponent**
   - A signed short representing the degree to which you are facing the opponent. 0 is directly facing the opponent, −32,767 is directly facing away from your opponent.
-- 0x77: **Vertical Speed**
-- 0x7A: **Horizontal Air Speed**
-- 0x8E: **Idle Counter Difference**
+- 0x1dc: **Vertical Speed**
+- 0x1e0: **Gravitational Constant**
+- 0x1e8: **Horizontal Air Speed**
+- 0x238: **Idle Counter Difference**
   - The amount to add to the **Idle Counter** every frame.
-- 0x78: **Gravitational Constant**
-- 0x96: **Idle Counter**
+- 0x258: **Idle Counter**
   - Resets to 0 when any button is pressed.
-- 0x98: **Current Damage**
+- 0x260: **Current Damage**
   - Current health. Counts up from 0.
-- 0x9B: **Health Frame Counter**
+- 0x26c: **Health Frame Counter**
   - Used to count frames for damage/healing over time. e.g. Tsunade heal.
-- 0x9F: **Max Damage**
+- 0x27c: **Max Damage**
   - The total health of your character. You die when **Current Damage** >= **Max Damage**
-- 0xA0: **New Damage**
+- 0x280: **New Damage**
   - This gets added to **Current Damage**. Can be negative, which results in healing.
-- 0xA2: **Last Damage**
+- 0x288: **Last Damage**
   - The **New Damage** of the previous attack.
-- 0xA3: **Current Chakra**
-- 0xA5: **Current Block Guard**
-- 0xA6: **Max Block Guard**
-- 0xAA: **Idle Counter 2**
+- 0x28c: **Current Chakra**
+- 0x294: **Current Block Guard**
+- 0x298: **Max Block Guard**
+- 0x2a8: **Idle Counter 2**
   - Appears to be a duplicate of **Idle Counter**
