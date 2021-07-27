@@ -215,7 +215,9 @@ Note: This new default will only take affect after pausing unless you modify `fi
 04045380 B0A30040
 ```
 
-## Experimental (May cause unintended side effects or crash)
+## Experimental
+
+These codes are experimental and may cause unintended side effects, even crashes in some cases.
 
 ### Counter Hit Plays Sound
 
