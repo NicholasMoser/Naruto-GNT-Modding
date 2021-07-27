@@ -45,7 +45,6 @@ The absolute positions of these structs can be found at the locations listed bel
   - The **New Damage** of the previous attack.
 - 0xA3: **Current Chakra**
 - 0xA5: **Current Block Guard**
-- 0xA6: **New Block Guard**
-  - This gets set to **Current Block Guard**
+- 0xA6: **Max Block Guard**
 - 0xAA: **Idle Counter 2**
   - Appears to be a duplicate of **Idle Counter**
