@@ -217,6 +217,24 @@ Note: This new default will only take affect after pausing unless you modify `fi
 
 ## Experimental (May cause unintended side effects or crash)
 
+### Counter Hit Plays Sound
+
+It will play sound effect `53` from sound effect group `02`. Group `02` is where "general" sound effects like attacks go. Sound effect `53` is a sort of fanfare noise that isn't normally used in combat. Group `00` is battle sounds. Group `01` is announcer sounds. Groups over `02` are character sounds.
+
+You can test other sound effects by replacing the `53` in `38800253` from the above code. The `02` before the `53` is the sound group.
+
+```gecko
+c203a378 00000008
+2c150080 41820030
+7c771b78 38600300
+38800253 38a07f00
+38c00000 38e00000
+3c00800c 6000e4a8
+7c0903a6 4e800421
+7ee3bb78 3a700166
+60000000 00000000
+```
+
 ### Naruto's Clone Drains Chakra Really Fast [Nick]
 
 ```gecko
