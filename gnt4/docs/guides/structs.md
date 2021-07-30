@@ -16,6 +16,9 @@ The absolute positions of these structs can be found at the locations listed bel
 
 ### Values
 
+- 0x00: Flags
+  - 0x1: If set to 0, the character is removed. Probably used to remove clones and such.
+  - 0x8: Invincibility; all damage becomes 0. Used in `damage_handler()`.
 - 0x10: **CPU Flags**
   - 0 if a player, other values if non-player controlled.
 - 0x1c: **Character ID**
@@ -23,13 +26,17 @@ The absolute positions of these structs can be found at the locations listed bel
 - 0x110: **Movement Stuff**
   - Pointer to some movement related stuff.
 - 0x128: Flags
-  - Used in `counter_hit_check()`. 0x80000000 causes counter hits.
+  - 0x00001000: Jumping
+  - 0x00002000: Falling from a jump.
+  - 0x80000000: Causes counter hits. Used in `counter_hit_check()`.
 - 0x130: Flags
-  - `0x810000` is invincibility; all damage becomes 0. See `damage_handler(uint* chr_p)`.
+  - 0x00000008: If the player has double jumped. Set to 0x8 when you double jump. When set to 0x8 prevents a double jump.
+  - 0x00810000: Invincibility; all damage becomes 0. Used in `damage_handler()`.
 - 0x138: Flags
   - Used in `counter_hit_check()`.
 - 0x140: Flags
-  - Used in `counter_hit_check()`. 0x02000000 is set on counter hit. 0x30000000 causes counter hits.
+  - 0x02000000: Set on counter hit. Used in `counter_hit_check()`.
+  - 0x30000000: Causes counter hits. Used in `counter_hit_check()`.
 - 0x164: **Combo Count 1**
   - Added to Combo Count 2 to get combo count
 - 0x166: **Combo Count 2**
@@ -63,3 +70,13 @@ The absolute positions of these structs can be found at the locations listed bel
 - 0x298: **Max Block Guard**
 - 0x2a8: **Idle Counter 2**
   - Appears to be a duplicate of **Idle Counter**
+- 0x2c4: **Attack Multiplier**
+  - A multiplier that is applied to the damage you do. Defaults to 1. Choji chips can raise it up to a max of 1.5.
+- 0x854: **Transformation Flag**
+  - 0 is Naruto, 2 is ZTK.
+  - 0 is Sasuke, 2 is Sharingan Sasuke.
+  - 0 is Kakashi, 2 is Sharingan Kakashi.
+  - 0 is Lee, 2 is First Gate, 6 is Second Gate.
+  - 0 is Gai, 2 is First Gate.
+  - 0 is Sakon, 0x2002 is Ukon.
+  - 0 is Tsunade, 2 is Tsunade Healing from 2X
