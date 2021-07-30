@@ -16,13 +16,24 @@ The absolute positions of these structs can be found at the locations listed bel
 
 ### Values
 
-- 0x1c: Character ID. See [INTERNAL_CHAR_ORDER](https://github.com/NicholasMoser/GNTool/blob/3.7/src/main/java/com/github/nicholasmoser/gnt4/GNT4Characters.java#L105)
+- 0x10: **CPU Flags**
+  - 0 if a player, other values if non-player controlled.
+- 0x1c: **Character ID**
+  - See [INTERNAL_CHAR_ORDER](https://github.com/NicholasMoser/GNTool/blob/3.7/src/main/java/com/github/nicholasmoser/gnt4/GNT4Characters.java#L105)
 - 0x110: **Movement Stuff**
   - Pointer to some movement related stuff.
+- 0x128: Flags
+  - Used in `counter_hit_check()`. 0x80000000 causes counter hits.
 - 0x130: Flags
   - `0x810000` is invincibility; all damage becomes 0. See `damage_handler(uint* chr_p)`.
-- 0x164: Added to 0x166 to get combo count
-- 0x166: Added to 0x164 to get combo count
+- 0x138: Flags
+  - Used in `counter_hit_check()`.
+- 0x140: Flags
+  - Used in `counter_hit_check()`. 0x02000000 is set on counter hit. 0x30000000 causes counter hits.
+- 0x164: **Combo Count 1**
+  - Added to Combo Count 2 to get combo count
+- 0x166: **Combo Count 2**
+  - Added to Combo Count 1 to get combo count
 - 0x19c: **X Position**
 - 0x1a0: **Y Position**
 - 0x1a4: **Z Position**
@@ -31,6 +42,8 @@ The absolute positions of these structs can be found at the locations listed bel
 - 0x1dc: **Vertical Speed**
 - 0x1e0: **Gravitational Constant**
 - 0x1e8: **Horizontal Air Speed**
+- 0x1f4: **Knockback Velocity**
+- 0x1f8: **Knockback Acceleration**
 - 0x238: **Idle Counter Difference**
   - The amount to add to the **Idle Counter** every frame.
 - 0x258: **Idle Counter**
