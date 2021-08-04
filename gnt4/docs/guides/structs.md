@@ -17,7 +17,7 @@ The absolute positions of these structs can be found at the locations listed bel
 ### Values
 
 - 0x00: Flags
-  - 0x1: If set to 0, the character is removed. Probably used to remove clones and such.
+  - 0x00000001: If set to 0, the character is removed. Probably used to remove clones and such.
   - 0x8: Invincibility; all damage becomes 0. Used in `damage_handler()`.
 - 0x10: **CPU Flags**
   - 0 if a player, other values if non-player controlled.
@@ -51,10 +51,10 @@ The absolute positions of these structs can be found at the locations listed bel
 - 0x1e8: **Horizontal Air Speed**
 - 0x1f4: **Knockback Velocity**
 - 0x1f8: **Knockback Acceleration**
-- 0x238: **Idle Counter Difference**
-  - The amount to add to the **Idle Counter** every frame.
-- 0x258: **Idle Counter**
-  - Resets to 0 when any button is pressed.
+- 0x238: **Act Counter Difference**
+  - The amount to add to the **Act Counter** every frame.
+- 0x258: **Act Counter**
+  - Resets to 0 at the end of your last action. Can be displayed in the debug menu under the ACT mess, labeled on the right side as ACT.
 - 0x260: **Current Damage**
   - Current health. Counts up from 0.
 - 0x26c: **Health Frame Counter**
