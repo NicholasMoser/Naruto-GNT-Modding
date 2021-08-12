@@ -368,33 +368,33 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 
 | Opcode | Offset | Code Pointer | Purpose                                          |
 |--------|--------|--------------|--------------------------------------------------|
-| 0x0    | 0x0    | 800A6068     |                                                  |
+| 0x0    | 0x0    | 800A6068     | Termination                                      |
 | 0x1    | 0x4    | 800A5698     | Branching                                        |
 | 0x2    | 0x8    | 800A52F8     |                                                  |
-| 0x3    | 0xc    | 800A51B0     |                                                  |
-| 0x4    | 0x10   | 800A4B40     |                                                  |
-| 0x5    | 0x14   | 800A44C4     |                                                  |
-| 0x6    | 0x18   | 800A3ED4     |                                                  |
+| 0x3    | 0xc    | 800A51B0     | Moving ints                                      |
+| 0x4    | 0x10   | 800A4B40     | Comparing `int`s                                 |
+| 0x5    | 0x14   | 800A44C4     | Comparing `byte`s                                |
+| 0x6    | 0x18   | 800A3ED4     | Comparing `short`s                               |
 | 0x7    | 0x1c   | 800A3888     |                                                  |
-| 0x8    | 0x20   | 800A32C0     |                                                  |
+| 0x8    | 0x20   | 800A32C0     | Comparing `float`s                               |
 | 0x9    | 0x24   | 800A2A8C     |                                                  |
 | 0xa    | 0x28   | 800A274C     |                                                  |
 | 0xb    | 0x2c   | 800A1C5C     |                                                  |
-| 0xc    | 0x30   | 800A1894     |                                                  |
+| 0xc    | 0x30   | 800A1894     | Call mtx functions                               |
 | 0xd    | 0x34   | 800A188C     | Empty and unused                                 |
 | 0xe    | 0x38   | 800AA9B8     |                                                  |
 | 0xf    | 0x3c   | 800AA430     |                                                  |
-| 0x10   | 0x40   | 800A9C1C     |                                                  |
+| 0x10   | 0x40   | 800A9C1C     | Call HSD functions                               |
 | 0x11   | 0x44   | 800A99F0     |                                                  |
 | 0x12   | 0x48   | 800A8E68     |                                                  |
 | 0x13   | 0x4c   | 800A8594     |                                                  |
 | 0x14   | 0x50   | 800A76EC     |                                                  |
 | 0x15   | 0x54   | 800A75C0     |                                                  |
-| 0x16   | 0x58   | 800A7204     |                                                  |
+| 0x16   | 0x58   | 800A7204     | Sounds                                           |
 | 0x17   | 0x5c   | 800A713C     |                                                  |
 | 0x18   | 0x60   | 800A7054     |                                                  |
 | 0x19   | 0x64   | 800A6B1C     |                                                  |
-| 0x1a   | 0x68   | 800A6458     |                                                  |
+| 0x1a   | 0x68   | 800A6458     | Call HSD functions                               |
 | 0x1b   | 0x6c   | 800A6324     |                                                  |
 | 0x1c   | 0x70   | 800A6228     |                                                  |
 | 0x1d   | 0x74   | 800BB7A0     |                                                  |
@@ -411,7 +411,7 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 | 0x28   | 0xa0   | 800B0320     |                                                  |
 | 0x29   | 0xa4   | 800B214C     |                                                  |
 | 0x2a   | 0xa8   | 800B1750     |                                                  |
-| 0x2b   | 0xac   | 800B1590     |                                                  |
+| 0x2b   | 0xac   | 800B1590     | Particles                                        |
 | 0x2c   | 0xb0   | 800B24B8     | Empty and unused                                 |
 | 0x2d   | 0xb4   | 800B24B0     | Empty and unused                                 |
 | 0x2e   | 0xb8   | 800B24A8     | Empty and unused                                 |
@@ -436,7 +436,7 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 | 0x41   | 0x104  | 800C531C     |                                                  |
 | 0x42   | 0x108  | 800C5124     |                                                  |
 | 0x43   | 0x10c  | 800C4FCC     |                                                  |
-| 0x44   | 0x110  | 800C4688     |                                                  |
+| 0x44   | 0x110  | 800C4688     | Save data                                        |
 | 0x45   | 0x114  | 00000000     | Invalid                                          |
 | 0x46   | 0x118  | 800C88A8     |                                                  |
 | 0x47   | 0x11c  | 800C8404     |                                                  |
