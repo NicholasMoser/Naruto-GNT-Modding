@@ -2007,9 +2007,9 @@
 800c8e5c 000000dc 800c8e5c 0 zz_800c8e5c_ 	seq.o
 800c8f38 000002b0 800c8f38 0 seq_parse 	seq.o
 800c91e8 00000100 800c91e8 0 zz_800c91e8_ 	seq.o
-800c92e8 000002fc 800c92e8 0 seq_get_ops 	seq.o
-800c95e4 000001a8 800c95e4 0 seq_get_op 	seq.o
-800c978c 000000d4 800c978c 0 op_lookup 	seq.o
+800c92e8 000002fc 800c92e8 0 get_effective_addresses 	seq.o
+800c95e4 000001a8 800c95e4 0 get_effective_address 	seq.o
+800c978c 000000d4 800c978c 0 load_value 	seq.o
 800c9860 00000004 800c9860 0 debug_empty_1 	seq.o
 800c9864 00000004 800c9864 0 debug_empty_2 	seq.o
 800c9868 00000044 800c9868 0 debug_print_sometimes 	seq.o
