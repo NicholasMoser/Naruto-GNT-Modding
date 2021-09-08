@@ -48,6 +48,8 @@ Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.c
 
 [Gecko Codetype Documentation](/general/docs/guides/gecko_codetype_documentation.md)
 
+[Archived Save Data](https://archive.org/details/GNTSaveFiles)
+
 ## Games
 
 ### GNT4
