@@ -39,3 +39,31 @@ C2155014 00000003
 ```
 
 Note: The `0F` in `2C00000F` is Kiba. Replace the `0F` with other hex values to replace other characters. The `2B` in `3800002B` is Rogue Ninja. Replace the `2B` that with other values to load other characters.
+
+### 60 FPS + Widescreen (PAL) [Nick]
+
+This code makes Rev 3 PAL run in 60 FPS widescreen. This effectively changes the game from NTSC to PAL.
+This is useful since the PAL version fixed a few bugs in the NTSC version such as the game crashing when
+Kabuto does 2X on Kurenai. For more info see
+[Regional Differences](https://tcrf.net/User:DarthDub/Naruto_Shippuden:_Clash_of_Ninja_Revolution_3#Regional_Differences).
+
+```gecko
+04172020 60000000
+04172028 60000000
+04172078 60000000
+04172064 60000000
+04172084 380002c8
+041718f0 38000004
+0437ae20 00000002
+0437ae24 028001e0
+0437ae28 01e00028
+0437ae2c 00000280
+0437ae30 01e00000
+0437ae34 00000000
+0437ae50 06060000
+0437ae54 15161500
+0437ae58 00000000
+0437ae5c 00000008
+042837d8 48000020
+040000cc 00000000
+```
