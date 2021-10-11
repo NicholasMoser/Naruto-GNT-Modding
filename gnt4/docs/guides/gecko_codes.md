@@ -381,6 +381,23 @@ b0650000 3c608022
 60000000 00000000
 ```
 
+### Turn off grab break while DEF or SDEF is active [Nick]
+
+The grab break window is set at the beginning of victim states for all throws. This sets the DF flag "TEscape" for three frames
+which allows you to break a grab by inputting a face button. This gecko code makes a player unable to break this grab if the victim
+is grabbed during a time when the AF flag DEF is active. Therefore, during a 4A counter, a 2X super counter, or a 4B move when the
+guard frames are active, you would not be able to break the grab.
+
+See [GNTool Issue #43](https://github.com/NicholasMoser/GNTool/issues/43) for more info.
+
+```gecko
+C20B5140 00000003
+801F0128 540000C7
+4082000C 5480402E
+901F02F8 00000000
+040b5144 60000000
+```
+
 ### Add Random Select to Character Select Screen [Nick]
 
 This replaces Akamaru with random select. Akamaru is also moved to the top of the Character Select Screen, replacing Awakened Hinata.
