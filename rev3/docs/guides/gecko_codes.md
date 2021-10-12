@@ -66,4 +66,5 @@ Kabuto does 2X on Kurenai. For more info see
 0437ae5c 00000008
 042837d8 48000020
 040000cc 00000000
+04171a84 60030000
 ```
