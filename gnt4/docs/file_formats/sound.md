@@ -24,7 +24,7 @@ This file contains the actual sample data in the format needed on the target pla
 
 You can unpack and pack SAM and SDI files with [MusyX-Extract](https://github.com/Nisto/musyx-extract). This can also be done with [GNTool](https://github.com/NicholasMoser/GNTool), which uses MusyX-Extract underneath.
 
-You can listen to the DSP files using [foobar2000](https://www.foobar2000.org/) with the [foo_input_vgmstream](https://www.foobar2000.org/components/view/foo_input_vgmstream) plugin.
+You can listen to the DSP files using [foobar2000](https://www.foobar2000.org/) with the [foo_input_vgmstream](https://github.com/vgmstream/vgmstream/blob/master/doc/USAGE.md#foo_input_vgmstream-foobar2000-plugin) plugin.
 
 ## How to Modify Them
 
