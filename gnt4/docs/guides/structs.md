@@ -16,63 +16,632 @@ The absolute positions of these structs can be found at the locations listed bel
 
 ### Values
 
-- 0x00: Flags
-  - 0x00000001: If set to 0, the character is removed. Probably used to remove clones and such.
-  - 0x8: Invincibility; all damage becomes 0. Used in `damage_handler()`.
-- 0x10: **CPU Flags**
+#### 0x00: **Flags**
+
+- 00000001: If set to 0, the character is removed. Probably used to remove clones and such.
+- 00000008: Invincibility; all damage becomes 0. Used in `damage_handler()`.
+
+#### 0x10: **CPU Flags**
+
   - 0 if a player, other values if non-player controlled.
-- 0x1c: **Character ID**
+
+#### 0x1c: **Character ID**
+
   - See [INTERNAL_CHAR_ORDER](https://github.com/NicholasMoser/GNTool/blob/3.7/src/main/java/com/github/nicholasmoser/gnt4/GNT4Characters.java#L105)
-- 0x110: **Movement Stuff**
+
+#### 0x30: **Health Multipler**
+
+A multipler for calculating health. For example, Naruto has 0xDC total health and a health multiplier of 0x64. After some calculations around instruction 0x8003f674,
+this results in a total health of 0xDC. But, when using the character modifier flag of "Health Boost Lv2", the health multiplier will instead be 0xC8. This will
+result in a total health of 0x1B8.
+  
+#### 0x110: **Movement Stuff**
+
   - Pointer to some movement related stuff.
-- 0x128: Flags
-  - 0x00001000: Jumping
-  - 0x00002000: Falling from a jump.
-  - 0x80000000: Causes counter hits. Used in `counter_hit_check()`.
-- 0x130: Flags
-  - 0x00000008: If the player has double jumped. Set to 0x8 when you double jump. When set to 0x8 prevents a double jump.
-  - 0x00810000: Invincibility; all damage becomes 0. Used in `damage_handler()`.
-- 0x138: Flags
-  - Used in `counter_hit_check()`.
-- 0x140: Flags
-  - 0x02000000: Set on counter hit. Used in `counter_hit_check()`.
-  - 0x30000000: Causes counter hits. Used in `counter_hit_check()`.
-- 0x164: **Combo Count 1**
+
+#### 0x124: **MF Flags**
+
+<details>
+  <summary>MF Flag Values</summary>
+
+  - `00000001` - GUARD
+  - `00000002` - MUTEKI
+  - `00000004` - BUTT
+  - `00000008` - DEBUG
+  - `00000010` - DEKA
+  - `00000020` - TIBI
+  - `00000040` - UDE
+  - `00000080` - TYAKURA
+  - `00000100` - TYAKURAREC
+  - `00000200` - 09
+  - `00000400` - 10
+  - `00000800` - 11
+  - `00001000` - 12
+  - `00002000` - 13
+  - `00004000` - 14
+  - `00008000` - 15
+  - `00010000` - 16
+  - `00020000` - 17
+  - `00040000` - 18
+  - `00080000` - 19
+  - `00100000` - 20
+  - `00200000` - 21
+  - `00400000` - 22
+  - `00800000` - 23
+  - `01000000` - 24
+  - `02000000` - 25
+  - `04000000` - 26
+  - `08000000` - 27
+  - `10000000` - 28
+  - `20000000` - 29
+  - `40000000` - 30
+  - `80000000` - 31
+
+</details>
+
+#### 0x128: **AF Flags (Action State)**
+
+<details>
+  <summary>AF Flag Values</summary>
+
+  - `00000001` - STAND
+  - `00000002` - FORWARD
+  - `00000004` - BACK
+  - `00000008` - DASH
+  - `00000010` - SIT
+  - `00000020` - FUSE
+  - `00000040` - UKEMI
+  - `00000080` - KIRI
+  - `00000100` - SPMDMG
+  - `00000200` - SLANT
+  - `00000400` - QUICK
+  - `00000800` - FLOAT
+  - `00001000` - JUMP
+  - `00002000` - FALL
+  - `00004000` - SMALL
+  - `00008000` - DAMAGE
+  - `00010000` - DOWNU
+  - `00020000` - DOWNO
+  - `00040000` - GETUP
+  - `00080000` - TURN
+  - `00100000` - TDOWN
+  - `00200000` - CANTACT
+  - `00400000` - SDEF: Special defense
+  - `00800000` - BDEF: Seems to appear when hit by a move with beast
+  - `01000000` - BEAST
+  - `02000000` - UKI
+  - `04000000` - BUTT
+  - `08000000` - NDOWN
+  - `10000000` - DEF: 4B guard
+  - `20000000` - TFAIL: Missed throw
+  - `40000000` - THROW: When placed on an attack, turns off follow ups
+  - `80000000` - ATTACK: Used in `counter_hit_check()`
+  
+</details>
+
+#### 0x12c: **PF Flags**
+
+<details>
+  <summary>PF Flag Values</summary>
+
+  - `00000001` - DEFOK
+  - `00000002` - BDEFOK
+  - `00000004` - BGUARD
+  - `00000008` - HIT
+  - `00000010` - REVERSAL
+  - `00000020` - GHIT
+  - `00000040` - COMBO
+  - `00000080` - FLOAT
+  - `00000100` - FALL
+  - `00000200` - ENEDMG
+  - `00000400` - DIRNOGRD
+  - `00000800` - ENEDWN
+  - `00001000` - ENEATK
+  - `00002000` - BDEF
+  - `00004000` - THROWOK
+  - `00008000` - BTNOMOVE
+  - `00010000` - NECKTURN
+  - `00020000` - ABSTURN
+  - `00040000` - AIR
+  - `00080000` - RINGOUT
+  - `00100000` - TURN
+  - `00200000` - ZOMBIE
+  - `00400000` - BACK
+  - `00800000` - BODY
+  - `01000000` - M_KABE
+  - `02000000` - GUARD
+  - `04000000` - DAMAGE: Makes your face in the HUD shake and the background of it to go red
+  - `08000000` - ABSTURNR
+  - `10000000` - NORMAL
+  - `20000000` - DMG
+  - `40000000` - DEF
+  - `80000000` - OUT
+
+Note: 0x00810000 is invincibility; all damage becomes 0. Used in `damage_handler()`.
+
+</details>
+
+#### 0x130: **NF Flags**
+
+<details>
+  <summary>NF Flag Values</summary>
+
+  - `00000001` - KAMAE
+  - `00000002` - DISP: Disappears. Can even walk through opponent while invisible.
+  - `00000004` - TDMG
+  - `00000008` - JUMP2: Double jump.
+  - `00000010` - LEVERDIR
+  - `00000020` - GETUP
+  - `00000040` - HITEFT
+  - `00000080` - NFOG
+  - `00000100` - TAKEON
+  - `00000200` - FOG
+  - `00000400` - BDRIVESLEEP
+  - `00000800` - JUMP
+  - `00001000` - FALL
+  - `00002000` - JSPD
+  - `00004000` - SHOTDEF: Expected this to block projectiles. It didn't.
+  - `00008000` - MOVE
+  - `00010000` - ATTACK
+  - `00020000` - BUTTON
+  - `00040000` - COMBO
+  - `00080000` - DISP_N
+  - `00100000` - KABEHIT
+  - `00200000` - BODYTOUCH
+  - `00400000` - AGUARD
+  - `00800000` - DAMAGE
+  - `01000000` - GUARD
+  - `02000000` - AUTODIR: Determines if something has any tracking on it..?
+  - `04000000` - ENEAUTO
+  - `08000000` - NJPTURN
+  - `10000000` - RINGOUT
+  - `20000000` - KABE
+  - `40000000` - TDOWN
+  - `80000000` - LEVER
+
+</details>
+
+#### 0x134: **N2F Flags**
+
+<details>
+  <summary>N2F Flag Values</summary>
+
+  - `00000001` - UKEMI
+  - `00000002` - KAWARIMI
+  - `00000004` - NAGENUKE: Turn on throw escape in BR.
+  - `00000008` - PUSH
+  - `00000010` - DEFEFT
+  - `00000020` - HITSHOCK
+  - `00000040` - DEFSHOCK
+  - `00000080` - GAGE
+  - `00000100` - TYAKURA: Appears during supers that drain, stays on for a while after Oro super.
+  - `00000200` - CAMERAOFF: Shifts the camera.
+  - `00000400` - CUTOFF: Seen when hit by Tayuya 5X. This Flag turns off the music.
+  - `00000800` - KABEHITSP
+  - `00001000` - NULL
+  - `00002000` - NULL
+  - `00004000` - NULL
+  - `00008000` - NULL
+  - `00010000` - NULL
+  - `00020000` - NULL
+  - `00040000` - NULL
+  - `00080000` - NULL
+  - `00100000` - NULL
+  - `00200000` - NULL
+  - `00400000` - NULL
+  - `00800000` - NULL
+  - `01000000` - NULL
+  - `02000000` - NULL
+  - `04000000` - NULL
+  - `08000000` - NULL
+  - `10000000` - NULL
+  - `20000000` - NULL
+  - `40000000` - NULL
+  - `80000000` - NULL
+
+</details>
+
+#### 0x138: **KF Flags**
+
+<details>
+  <summary>KF Flag Values</summary>
+
+  - `00000001` - REPLAY: No effect
+  - `00000002` - BDRIVE: Changes lighting, no sub or tech roll
+  - `00000004` - SHOT: ??
+  - `00000008` - POW_W: Weak hit. affects blockstun and hitstun
+  - `00000010` - POW_M: Medium hit
+  - `00000020` - POW_S: Strong hit
+  - `00000040` - LOW: Attack hits low, and can be evaded by small flag
+  - `00000080` - MIDDLE: Attack hits middle
+  - `00000100` - HIGH: Atack hits high, and can be evaded by sit flag
+  - `00000200` - PUNCH: Attack is classified as a punch
+  - `00000400` - KICK: Atack is classified as a kick
+  - `00000800` - THROW: Attack is classified as a throw
+  - `00001000` - OIUCHI: Hits later on OTG
+  - `00002000` - SPECIAL: Builds no chakra
+  - `00004000` - NOGUARD: Unblockable
+  - `00008000` - TDOWN: Makes a move grabbable while active
+  - `00010000` - SPTATA: This is a large bounce (like Naruto 4B)
+  - `00020000` - BREAK: Used in combination with other flags to move guard
+  - `00040000` - COMBO: Seen in attacks that are only follow ups
+  - `00080000` - DOWN: Spinout launcher. Launches higher than Uki flag
+  - `00100000` - YORO: Stagger
+  - `00200000` - BUTT: Flying Screen knockback
+  - `00400000` - UKI: Launch on hit
+  - `00800000` - FURI: Turns opponents around on hit
+  - `01000000` - KORO: Sweep
+  - `02000000` - REACH_L: ?? (Set on counter hit. Used in `counter_hit_check()`)
+  - `04000000` - TATA: Small Ground Bounce
+  - `08000000` - NOSPEEP: ??
+  - `10000000` - BEAST: Slash hit effect and chip damage
+  - `20000000` - FREEZE: Opponent does not move from the attack (Kimi multihit moves)
+  - `40000000` - CANCEL: Cancel the move when you press Y (combine with RF for feint)
+  - `80000000` - ATKCAN: Super Cancel
+
+Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
+
+</details>
+
+<details>
+  <summary>K2F Flag Values</summary>
+
+#### 0x13c: **K2F Flags**
+
+  - `00000001` - YORO2: Feet trapped (air and ground)
+  - `00000002` - HIKI: Swamp hole sink (jiraiya 2A)
+  - `00000004` - HIKI2: Fall into ground and appear above (shikamaru 2X)
+  - `00000008` - MISSION: In mission mode this pops up when you achieve the objective and is on incoming Zsubs
+  - `00000010` - NATEMI: Used on Ino 5X
+  - `00000020` - SUPERARMOR: Gives the move super armor
+  - `00000040` - MOTO2: Feet trapped 2 (ground only)
+  - `00000080` - ATKALLCAN: Can follow up with any other attack
+  - `00000100` - TOJI: Jirobo 2X drain
+  - `00000200` - HASA: Jirobo stone clap crumple (air and ground grabbable crumple)
+  - `00000400` - SHAVE: For Kisame
+  - `00000800` - NEMU: Sleep
+  - `00001000` - WING
+  - `00002000` - NULL: (Grounded only crumple; OTK 2X)
+  - `00004000` - NULL
+  - `00008000` - NULL
+  - `00010000` - NULL
+  - `00020000` - NULL
+  - `00040000` - NULL
+  - `00080000` - NULL
+  - `00100000` - NULL
+  - `00200000` - NULL
+  - `00400000` - NULL
+  - `00800000` - NULL
+  - `01000000` - NULL
+  - `02000000` - NULL
+  - `04000000` - NULL
+  - `08000000` - NULL
+  - `10000000` - NULL
+  - `20000000` - NULL
+  - `40000000` - NULL
+  - `80000000` - NULL
+
+</details>
+
+#### 0x140: **DF Flags**
+
+<details>
+  <summary>DF Flag Values</summary>
+
+  - `00000001` - F
+  - `00000002` - B
+  - `00000004` - R
+  - `00000008` - L
+  - `00000010` - W
+  - `00000020` - M
+  - `00000040` - S
+  - `00000080` - SPECIAL
+  - `00000100` - DOWN
+  - `00000200` - YORO
+  - `00000400` - BUTT
+  - `00000800` - UKI
+  - `00001000` - FURI
+  - `00002000` - KORO
+  - `00004000` - TATA
+  - `00008000` - NODIS
+  - `00010000` - A_LOW
+  - `00020000` - A_MIDDLE
+  - `00040000` - A_HIGH
+  - `00080000` - BREAK
+  - `00100000` - NBREAK: Guard break.
+  - `00200000` - OIUCHI
+  - `00400000` - TESCAPE: Turn on for throw breaks.
+  - `00800000` - MEKURI
+  - `01000000` - BDRIVE
+  - `02000000` - COUNTER_N
+  - `04000000` - SHOT
+  - `08000000` - COUNTER
+  - `10000000` - HITCNT
+  - `20000000` - HITCNT2
+  - `40000000` - OFFSET
+  - `80000000` - SPMDMG
+
+</details>
+
+#### 0x144: **D2F Flags**
+
+<details>
+  <summary>D2F Flag Values</summary>
+
+  - `00000001` - MATO
+  - `00000002` - HIKI
+  - `00000004` - HIKI2
+  - `00000008` - MISSION
+  - `00000010` - BDGUARD
+  - `00000020` - MOTO2
+  - `00000040` - TOJI
+  - `00000080` - HASA
+  - `00000100` - NEMU
+  - `00000200` - NULL
+  - `00000400` - NULL
+  - `00000800` - NULL
+  - `00001000` - NULL
+  - `00002000` - NULL
+  - `00004000` - NULL
+  - `00008000` - NULL
+  - `00010000` - NULL
+  - `00020000` - NULL
+  - `00040000` - NULL
+  - `00080000` - NULL
+  - `00100000` - NULL
+  - `00200000` - NULL
+  - `00400000` - NULL
+  - `00800000` - NULL
+  - `01000000` - NULL
+  - `02000000` - NULL
+  - `04000000` - NULL
+  - `08000000` - NULL
+  - `10000000` - NULL
+  - `20000000` - NULL
+  - `40000000` - NULL
+  - `80000000` - NULL
+
+</details>
+
+#### 0x148: **EF Flags**
+
+<details>
+  <summary>EF Flag Values</summary>
+
+  - `00000001` - KABE
+  - `00000002` - KABEN
+  - `00000004` - KABEC
+  - `00000008` - PAUSE
+  - `00000010` - COMNUKE
+  - `00000020` - RESCAPE
+  - `00000040` - HOKAN
+  - `00000080` - WARPHIP
+  - `00000100` - TDOWNFAIL: State of getting combo'd?
+  - `00000200` - NULL
+  - `00000400` - BKOUT
+  - `00000800` - ATK
+  - `00001000` - SPOSE
+  - `00002000` - LEVERREV
+  - `00004000` - ATKCAN
+  - `00008000` - OFFBEAST: Screen flash.
+  - `00010000` - HOPUP
+  - `00020000` - WARP
+  - `00040000` - FIX
+  - `00080000` - TAKEON
+  - `00100000` - RINGOUT
+  - `00200000` - TFAIL
+  - `00400000` - THROW
+  - `00800000` - TDOWN
+  - `01000000` - COMBO0
+  - `02000000` - COMBO1
+  - `04000000` - TESCAPE
+  - `08000000` - BDRIVE
+  - `10000000` - FLAG0
+  - `20000000` - FLAG1
+  - `40000000` - FLAG2
+  - `80000000` - 31
+
+</details>
+
+#### 0x14c: **RF Flags**
+
+<details>
+  <summary>RF Flag Values</summary>
+
+  - `00000001` - COLOR
+  - `00000002` - TYAKURASUB: Meter drain
+  - `00000004` - HAZIKI: Allows kunai deflect Neji 2X
+  - `00000008` - HAZIKIR
+  - `00000010` - ALLGUARD: Guards all sides when DEF is active
+  - `00000020` - EFTREV: Removes GFX
+  - `00000040` - TARGETDIRA
+  - `00000080` - GCANCELCHK: Hyuuga cancel, must be on at the start of the move
+  - `00000100` - GCANCELOK: Appears after you confirm the cancel, is set on the cancel frame
+  - `00000200` - GCANCEL: Shows until a cancel can be done
+  - `00000400` - GATTACK
+  - `00000800` - NKAWARIMI
+  - `00001000` - AUTOMOTION
+  - `00002000` - EVENT00
+  - `00004000` - SHADOWOFF: Makes character shadow disappear while on
+  - `00008000` - NOBACK: Removes slide back while blocking
+  - `00010000` - NSOUSAI
+  - `00020000` - TAG2SP
+  - `00040000` - TAG3SP
+  - `00080000` - VANISH: On sakura 6A
+  - `00100000` - INTRUDE
+  - `00200000` - NOSTIFF
+  - `00400000` - MOTIONREG
+  - `00800000` - BDRIVEDEFDMG
+  - `01000000` - ATTACKOK
+  - `02000000` - DEFAULTTEXREV: On Oro 5X
+  - `04000000` - PARDIR
+  - `08000000` - ATKCHANGE
+  - `10000000` - KAWARIMI
+  - `20000000` - ACTCAN
+  - `40000000` - 30: Affects the camera?
+  - `80000000` - 31: Affects the camera?
+
+</details>
+
+#### 0x150: **CF Flags**
+
+<details>
+  <summary>CF Flag Values</summary>
+
+  - `00000001` - DMGOFF
+  - `00000002` - TYAKURASUB
+  - `00000004` - DISPOFF: Turns off the display for the character model.
+  - `00000008` - TAKEONOFF
+  - `00000010` - CHGNOATTACK
+  - `00000020` - CHGNODMG
+  - `00000040` - ANMCHG
+  - `00000080` - COPYPFHIT
+  - `00000100` - CLR
+  - `00000200` - TYAKURAADD
+  - `00000400` - PARENTMOVE
+  - `00000800` - PINCH
+  - `00001000` - CAMERAON
+  - `00002000` - COMBOONLY
+  - `00004000` - TARGETPARENT
+  - `00008000` - NORESULT
+  - `00010000` - TARGETPARENT2
+  - `00020000` - PARDMGOFFCOPYTHROW
+  - `00040000` - 19
+  - `00080000` - 20
+  - `00100000` - 21
+  - `00200000` - 22
+  - `00400000` - 23
+  - `00800000` - 24
+  - `01000000` - 25
+  - `02000000` - 26
+  - `04000000` - 27
+  - `08000000` - 28
+  - `10000000` - 29
+  - `20000000` - 30
+  - `40000000` - 31
+  - `80000000` - (empty): The name of this flag is blank.
+
+</details>
+
+#### 0x154: **Character Modifier Flag**
+
+<details>
+  <summary>Character Modifier Flag</summary>
+
+All of these are available to be selected in GNT Clash of Ninja 2, but only a few are available in GNT4.
+You can view the English names given to them by Eighting in CON2 in the item viewer menu.
+
+  - `00000001` - Attack Boost Lv1
+  - `00000002` - Attack Boost Lv2
+  - `00000004` - Disable Chakra Gain
+  - `00000008` - Auto-Recover Chakra
+  - `00000010` - Special Jutsu Boost
+  - `00000020` - Health Absorption
+  - `00000040` - Reverse Directions
+  - `00000080` - Health Boost Small
+  - `00000100` - Health Boost Medium (This is the Lv1 boost in GNT4)
+  - `00000200` - Health Boost Large (This is the Lv2 boost in GNT4)
+  - `00000400` - Auto-Throw Escape
+  - `00000800` - Auto-Ground Tech
+  - `00001000` - Super Armor
+  - `00002000` - Auto-Recover Health
+  - `00004000` - Invincibility for 10 Seconds
+  - `00008000` - Absolute Defense
+  - `00010000` - Halve Chakra Consumption
+  - `00020000` - Disable Ground Tech
+  - `00040000` - Disable Substitution
+  - `00080000` - Disable Sidestep
+  - `00100000` - Disable B Button
+  - `00200000` - Disable A Button
+  - `00400000` - Disable X Button
+  - `00800000` - Disable Y Button
+  - `01000000` - Disable Throw Escape
+  - `02000000` - Disable Chakra Use
+  - `04000000` - Disable Jump
+  - `08000000` - Disable Guard
+  - `10000000` - Disable Projectiles
+  - `20000000` - Health Drain
+  - `40000000` - Halve Attack Power
+  - `80000000` - Delete HP and Chakra Guard
+
+</details>
+
+#### 0x164: **Combo Count 1**
+
   - Added to Combo Count 2 to get combo count
-- 0x166: **Combo Count 2**
+
+#### 0x166: **Combo Count 2**
+
   - Added to Combo Count 1 to get combo count
-- 0x19c: **X Position**
-- 0x1a0: **Y Position**
-- 0x1a4: **Z Position**
-- 0x1bc: **Facing Opponent**
+
+#### 0x19c: **X Position**
+
+#### 0x1a0: **Y Position**
+
+#### 0x1a4: **Z Position**
+
+#### 0x1bc: **Facing Opponent**
+
   - A signed short representing the degree to which you are facing the opponent. 0 is directly facing the opponent, −32,767 is directly facing away from your opponent.
-- 0x1dc: **Vertical Speed**
-- 0x1e0: **Gravitational Constant**
-- 0x1e8: **Horizontal Air Speed**
-- 0x1f4: **Knockback Velocity**
-- 0x1f8: **Knockback Acceleration**
-- 0x238: **Act Counter Difference**
+
+#### 0x1dc: **Vertical Speed**
+
+#### 0x1e0: **Gravitational Constant**
+
+#### 0x1e8: **Horizontal Air Speed**
+
+#### 0x1f4: **Knockback Velocity**
+
+#### 0x1f8: **Knockback Acceleration**
+
+#### 0x238: **Act Counter Difference**
+
   - The amount to add to the **Act Counter** every frame.
-- 0x258: **Act Counter**
+
+#### 0x258: **Act Counter**
+
   - Resets to 0 at the end of your last action. Can be displayed in the debug menu under the ACT mess, labeled on the right side as ACT.
-- 0x260: **Current Damage**
+
+#### 0x260: **Current Damage**
+
   - Current health. Counts up from 0.
-- 0x26c: **Health Frame Counter**
+
+#### 0x26c: **Health Frame Counter**
+
   - Used to count frames for damage/healing over time. e.g. Tsunade heal.
-- 0x27c: **Max Damage**
+
+#### 0x27c: **Max Damage**
+
   - The total health of your character. You die when **Current Damage** >= **Max Damage**
-- 0x280: **New Damage**
+
+#### 0x280: **New Damage**
+
   - This gets added to **Current Damage**. Can be negative, which results in healing.
-- 0x288: **Last Damage**
+
+#### 0x288: **Last Damage**
+
   - The **New Damage** of the previous attack.
-- 0x28c: **Current Chakra**
-- 0x294: **Current Block Guard**
-- 0x298: **Max Block Guard**
-- 0x2a8: **Idle Counter 2**
+
+#### 0x28c: **Current Chakra**
+
+#### 0x294: **Current Block Guard**
+
+#### 0x298: **Max Block Guard**
+
+#### 0x2a8: **Idle Counter 2**
+
   - Appears to be a duplicate of **Idle Counter**
-- 0x2c4: **Attack Multiplier**
+
+#### 0x2c4: **Attack Multiplier**
+
   - A multiplier that is applied to the damage you do. Defaults to 1. Choji chips can raise it up to a max of 1.5.
-- 0x854: **Transformation Flag**
+
+#### 0x2f8: **Grab Break Counter**
+
+  - A counter that while it is not zero, you can break a grab. Every frame subtracts 0x100. Seems to always be set to 0x300.
+
+#### 0x854: **Transformation Flag**
+
   - 0 is Naruto, 2 is ZTK.
   - 0 is Sasuke, 2 is Sharingan Sasuke.
   - 0 is Kakashi, 2 is Sharingan Kakashi.
@@ -80,3 +649,47 @@ The absolute positions of these structs can be found at the locations listed bel
   - 0 is Gai, 2 is First Gate.
   - 0 is Sakon, 0x2002 is Ukon.
   - 0 is Tsunade, 2 is Tsunade Healing from 2X
+
+#### 0x87c: **SF Flags**
+
+<details>
+  <summary>SF Flag Values</summary>
+
+  - `00000001` - HIT
+  - `00000002` - GHIT
+  - `00000004` - DAMAGE
+  - `00000008` - GUARD
+  - `00000010` - DEFOK
+  - `00000020` - CATCH
+  - `00000040` - 06
+  - `00000080` - 07
+  - `00000100` - 08
+  - `00000200` - 09
+  - `00000400` - 10
+  - `00000800` - 11
+  - `00001000` - 12
+  - `00002000` - 13
+  - `00004000` - 14
+  - `00008000` - 15
+  - `00010000` - 16
+  - `00020000` - 17
+  - `00040000` - 18
+  - `00080000` - 19
+  - `00100000` - 20
+  - `00200000` - 21
+  - `00400000` - 22
+  - `00800000` - 23
+  - `01000000` - 24
+  - `02000000` - 25
+  - `04000000` - 26
+  - `08000000` - 27
+  - `10000000` - 28
+  - `20000000` - 29
+  - `40000000` - 30
+  - `80000000` - 31
+
+</details>
+
+#### 0x8C8: **Synchronous timer**
+
+Set by opcode 2011263F.
