@@ -569,6 +569,11 @@ sprintf("sys_bp(): seq_p%08x reg_p%08x pc%08x\n", seq_p, reg_p, pc);
 
 The first parameter `seq_p` is a pointer to a variety of information related to the seq files being executed. One such example is the offset in memory to the start of the current seq file being executed.
 
+seq_p->seq_p_sp is field 0x20 on seq_p, and seems to have lots of interesting data in it.
+
+seq_p->seq_p_sp->field_0x38 = Pointer to a chr_p (not sure which character)?
+seq_p->seq_p_sp->field_0x98->field_0x18 = Character index (player 1, player 2, player 3, player 4)?
+
 ### reg_p
 
 The second parameter `reg_p` holds pointers to the registers used. There are 18 registers. Despite this, the size of it in appears to be the first four-byte word of the seq file plus 1 times 0x60.

@@ -12,7 +12,11 @@ The absolute positions of these structs can be found at the locations listed bel
 - Player 2: `80226614`
 - Player 3: `802268D0`
 - Player 4: `80226B8C`
-- Training Mode Single CPU: `802283FC`
+- CPU 1: ``
+- CPU 2: `802283FC`
+  - This also serves as the address for P2 in training mode
+- CPU 3: `80228400`
+- CPU 4: `80228404`
 
 ### Values
 
@@ -21,9 +25,21 @@ The absolute positions of these structs can be found at the locations listed bel
 - 00000001: If set to 0, the character is removed. Probably used to remove clones and such.
 - 00000008: Invincibility; all damage becomes 0. Used in `damage_handler()`.
 
+#### 0x04: **Player ID**
+
+The "controller" of the player, e.g. 0x0 through 0x3.
+
 #### 0x10: **CPU Flags**
 
   - 0 if a player, other values if non-player controlled.
+
+#### 0x14: **Player ID**
+
+The "controller" of the player, e.g. 0x0 through 0x3.
+
+#### 0x18: **Player ID**
+
+The "controller" of the player, e.g. 0x0 through 0x3.
 
 #### 0x1c: **Character ID**
 
@@ -34,6 +50,14 @@ The absolute positions of these structs can be found at the locations listed bel
 A multipler for calculating health. For example, Naruto has 0xDC total health and a health multiplier of 0x64. After some calculations around instruction 0x8003f674,
 this results in a total health of 0xDC. But, when using the character modifier flag of "Health Boost Lv2", the health multiplier will instead be 0xC8. This will
 result in a total health of 0x1B8.
+
+#### 0x40: **Opponent chr_p**
+
+Seems to be an opponent chr_p pointer. Referenced at dol address 0x800c02c8.
+
+#### 0x44 **Some Seq Pointer**
+
+Seems to be some pointer to an offset in an seq file, probably 0010.seq. Referenced at dol address 0x800c3ab8.
   
 #### 0x110: **Movement Stuff**
 
@@ -459,7 +483,7 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
   - `00000100` - GCANCELOK: Appears after you confirm the cancel, is set on the cancel frame
   - `00000200` - GCANCEL: Shows until a cancel can be done
   - `00000400` - GATTACK
-  - `00000800` - NKAWARIMI
+  - `00000800` - NKAWARIMI: Applies confusion on damage (Used by Tsunade)
   - `00001000` - AUTOMOTION
   - `00002000` - EVENT00
   - `00004000` - SHADOWOFF: Makes character shadow disappear while on
@@ -628,6 +652,15 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 #### 0x298: **Max Block Guard**
 
+#### 0x2a0: **Confusion Flag**
+
+  - The flag for which Tsunade confusion effect you are afflicted with. `0` is reverse directions. `1` is reverse buttons (A with B, Y with X).
+  Set at dol address 0x8003bad0.
+
+#### 0x2a4: **Confusion Timer**
+
+  - The timer for how long you are affected by Tsunade's confusion effect. Initialized to 300 frames (5 seconds) at dol address 0x8003bad4.
+
 #### 0x2a8: **Idle Counter 2**
 
   - Appears to be a duplicate of **Idle Counter**
@@ -693,3 +726,11 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 #### 0x8C8: **Synchronous timer**
 
 Set by opcode 2011263F.
+
+#### 0x960 **Opponent Target**
+
+Pointer to potentially the target of an attack. Set at dol address 0x8003ba78
+
+#### 0x974: **Opponent Character Struct**
+
+Pointer to potentially one or more enemy character structs.

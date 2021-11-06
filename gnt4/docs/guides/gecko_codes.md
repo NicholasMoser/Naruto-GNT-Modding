@@ -129,7 +129,7 @@ c2045328 00000006
 040477fc 3860ffff
 ```
 
-The above code is actually compressed of three codes. The first plays audio when you pause in training mode.
+The above code is actually comprised of three codes. The first plays audio when you pause in training mode.
 The second plays audio when you pause in mission mode. The third plays audio when you pause in other modes.
 The volume can be modified by changing the `ffff` to a different value. `0000` is mute, which is the default.
 If you want the audio somewhat softer, the value `0fff` is recommended. However, using a value other than `ffff`
