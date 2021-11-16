@@ -219,6 +219,33 @@ Note: This new default will only take affect after pausing unless you modify `fi
 
 These codes are experimental and may cause unintended side effects, even crashes in some cases.
 
+### Allow Players to Pick Tsunade Confusion Effect
+
+If you enable the above code, it lets Tsunade decide whether to reverse buttons or reverse movement based
+on what direction you're holding the control stick in the moment the confusion attack hits.
+
+Left is always reverse buttons, right is always reverse movement. Doesn't matter which way your character is
+facing. Doesn't matter if Tsunade confusion currently has your own movement swapped. If you are holding neither
+movement, it continues to use the old RNG value it used to use for confusion.
+
+One side effect is that it
+retrieves the controller inputs of the player id that does it. So if a CPU does the Tsunade confusion attack,
+it will read inputs from that player controller (e.g. controller 2 for 1v1 matches). That really should never
+come into play, but I suppose if someone was holding left or right on P2 they could always force Tsunade CPU to
+do one or the other.
+
+```gecko
+C203BAD4 00000008
+901102A4 80100004
+1C000040 3C608022
+38632EB0 7C630214
+80030024 5403035B
+4182000C 38600001
+907102A0 54030319
+4182000C 38600000
+907102A0 00000000
+```
+
 ### Counter Hit Plays Sound
 
 It will play sound effect `53` from sound effect group `02`. Group `02` is where "general" sound effects like attacks go. Sound effect `53` is a sort of fanfare noise that isn't normally used in combat. Group `00` is battle sounds. Group `01` is announcer sounds. Groups over `02` are character sounds.
@@ -1215,3 +1242,95 @@ Here is an example of using 0xBE23D70A (-0.16):
 ![High Gravity](/gnt4/images/gameplay/high_gravity.gif?raw=true "High Gravity")
 
 As you can see, any float closer to zero than -0.083008 will be lower gravity and any float further from zero will be higher gravity.
+
+## SCON4 Codes
+
+These are codes only used in SCON4. They aren't generally applicable as they likely involve file modifications as well, making them crash or not work if used with a vanilla copy of the game.
+
+### Tsunade: Punch KF Flag Reverses Buttons, Kick KF Flag Reverses Movement
+
+```gecko
+C203BAD4 00000006
+901102A4 80100138
+540305AD 4182000C
+38600001 907102A0
+5403056B 4182000C
+38600000 907102A0
+60000000 00000000
+```
+
+### Tsunade: Punch KF Flag Reverses Buttons, Kick KF Flag Reverses Movement
+
+```gecko
+C203BAD4 00000006
+901102A4 80100138
+540305AD 4182000C
+38600000 907102A0
+5403056B 4182000C
+38600001 907102A0
+60000000 00000000
+```
+
+### Add Random Select and Reorder CSS
+
+For more info see https://github.com/NicholasMoser/GNTool/issues/68
+
+```gecko
+c215b9e8 00000003
+2c000011 40820008
+38006dad 7c04412e
+60000000 00000000
+c2092154 0000000e
+7ca6282e 2c056dad
+40820064 9421fff0
+90610004 90010008
+9081000c 38600029
+3ca0801c 60a5ce50
+7ca903a6 4e800421
+2c030000 4081ffe8
+2c03000f 4182ffe0
+2c030011 4182ffd8
+2c030014 4182ffd0
+2c030029 4080ffc8
+7c651b78 8081000c
+80010008 80610004
+38210010 00000000
+04213F80 00000024
+04213F84 00000001
+04213F88 00000023
+04213F8C 00000002
+04213F90 00000003
+04213F94 0000000A
+04213F98 00000007
+04213F9C 00000012
+04213FA0 0000000B
+04213FA4 0000000D
+04213FA8 00000014
+04213FAC 0000000C
+04213FB0 00000013
+04213FB4 0000000E
+04213FB8 0000000F
+04213FBC 00000026
+04213FC0 00000009
+04213FC4 00000015
+04213FC8 00000008
+04213FCC 0000001A
+04213FD0 00000006
+04213FD4 00000005
+04213FD8 00000004
+04213FDC 0000001B
+04213FE0 0000001C
+04213FE4 00000018
+04213FE8 00000016
+04213FEC 00000017
+04213FF0 00000010
+04213FF4 00000025
+04213FF8 00000020
+04213FFC 00000021
+04214000 0000001E
+04214004 0000001F
+04214008 0000001D
+0421400C 00000019
+04214010 00000022
+04214014 00000011
+```
