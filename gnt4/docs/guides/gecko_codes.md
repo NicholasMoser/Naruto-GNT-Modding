@@ -1271,7 +1271,7 @@ C203BAD4 00000006
 60000000 00000000
 ```
 
-### Add Random Select and Reorder CSS
+### Add Random Select and Reorder CSS [Nick]
 
 For more info see https://github.com/NicholasMoser/GNTool/issues/68
 
