@@ -1919,8 +1919,8 @@
 800a4b40 00000670 800a4b40 0 seq_opcode_group_04 	seq.o
 800a51b0 00000148 800a51b0 0 seq_opcode_group_03 	seq.o
 800a52f8 000003a0 800a52f8 0 seq_opcode_group_02 	seq.o
-800a5698 000009d0 800a5698 0 seq_opcode_group_01 	seq.o
-800a6068 000001c0 800a6068 0 seq_opcode_group_00 	seq.o
+800a5698 000009d0 800a5698 0 SEQ_CmdSEQ2__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a6068 000001c0 800a6068 0 SEQ_CmdSEQ1__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
 800a6228 000000fc 800a6228 0 seq_opcode_group_1C 	seq.o
 800a6324 00000134 800a6324 0 seq_opcode_group_1B 	seq.o
 800a6458 000006c4 800a6458 0 seq_opcode_group_1A 	seq.o
@@ -2007,9 +2007,9 @@
 800c8e5c 000000dc 800c8e5c 0 zz_800c8e5c_ 	seq.o
 800c8f38 000002b0 800c8f38 0 seq_parse 	seq.o
 800c91e8 00000100 800c91e8 0 zz_800c91e8_ 	seq.o
-800c92e8 000002fc 800c92e8 0 get_effective_addresses 	seq.o
-800c95e4 000001a8 800c95e4 0 get_effective_address 	seq.o
-800c978c 000000d4 800c978c 0 load_value 	seq.o
+800c92e8 000002fc 800c92e8 0 SEQ_RegCMD2__FP6_SEQ_TP6SREG_TPPUiPPUiPUi 	seq_main.o 
+800c95e4 000001a8 800c95e4 0 SEQ_RegCMD1__FP6_SEQ_TP6SREG_TPPUiPUi 	seq_main.o 
+800c978c 000000d4 800c978c 0 SEQ_RegGP__FiPPUiPUi 	seq_main.o 
 800c9860 00000004 800c9860 0 debug_empty_1 	seq.o
 800c9864 00000004 800c9864 0 debug_empty_2 	seq.o
 800c9868 00000044 800c9868 0 debug_print_sometimes 	seq.o

@@ -478,8 +478,8 @@ There are 82 total opcode groups. 6 of the groups are empty (resulting in a no-o
 <details>
   <summary>Opcode Group Pages</summary>
 
-- [Group 00](opcode_group/00.md)
-- [Group 01](opcode_group/01.md)
+- [Group 00: SEQ_CmdSEQ1](opcode_group/00.md)
+- [Group 01: SEQ_CmdSEQ2](opcode_group/01.md)
 - [Group 02](opcode_group/02.md)
 - [Group 03](opcode_group/03.md)
 - [Group 04](opcode_group/04.md)
