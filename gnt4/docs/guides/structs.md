@@ -12,7 +12,7 @@ The absolute positions of these structs can be found at the locations listed bel
 - Player 2: `80226614`
 - Player 3: `802268D0`
 - Player 4: `80226B8C`
-- CPU 1: ``
+- CPU 1: `802283F8`
 - CPU 2: `802283FC`
   - This also serves as the address for P2 in training mode
 - CPU 3: `80228400`
