@@ -1907,18 +1907,18 @@
 800a1718 000000a0 800a1718 0 zz_800a1718_
 800a17b8 00000050 800a17b8 0 zz_800a17b8_
 800a1808 00000084 800a1808 0 zz_800a1808_
-800a188c 00000008 800a188c 0 seq_opcode_group_0D 	seq.o
-800a1894 000003c8 800a1894 0 seq_opcode_group_0C 	seq.o
-800a1c5c 00000af0 800a1c5c 0 seq_opcode_group_0B 	seq.o
-800a274c 00000340 800a274c 0 seq_opcode_group_0A 	seq.o
-800a2a8c 00000834 800a2a8c 0 seq_opcode_group_09 	seq.o
-800a32c0 000005c8 800a32c0 0 seq_opcode_group_08 	seq.o
-800a3888 0000064c 800a3888 0 seq_opcode_group_07 	seq.o
-800a3ed4 000005f0 800a3ed4 0 seq_opcode_group_06 	seq.o
-800a44c4 0000067c 800a44c4 0 seq_opcode_group_05 	seq.o
-800a4b40 00000670 800a4b40 0 seq_opcode_group_04 	seq.o
-800a51b0 00000148 800a51b0 0 seq_opcode_group_03 	seq.o
-800a52f8 000003a0 800a52f8 0 seq_opcode_group_02 	seq.o
+800a188c 00000008 800a188c 0 SEQ_CmdRGB__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a1894 000003c8 800a1894 0 SEQ_CmdFM__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a1c5c 00000af0 800a1c5c 0 SEQ_CmdFV__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a274c 00000340 800a274c 0 SEQ_CmdIV__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a2a8c 00000834 800a2a8c 0 SEQ_CmdP__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a32c0 000005c8 800a32c0 0 SEQ_CmdF__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a3888 0000064c 800a3888 0 SEQ_CmdIL__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a3ed4 000005f0 800a3ed4 0 SEQ_CmdIS__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a44c4 0000067c 800a44c4 0 SEQ_CmdIC__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a4b40 00000670 800a4b40 0 SEQ_CmdI__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a51b0 00000148 800a51b0 0 SEQ_CmdREG__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
+800a52f8 000003a0 800a52f8 0 SEQ_CmdTSK__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
 800a5698 000009d0 800a5698 0 SEQ_CmdSEQ2__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
 800a6068 000001c0 800a6068 0 SEQ_CmdSEQ1__FP6_SEQ_TP6SREG_TPUi 	seq_cmdcmn.o 
 800a6228 000000fc 800a6228 0 seq_opcode_group_1C 	seq.o
