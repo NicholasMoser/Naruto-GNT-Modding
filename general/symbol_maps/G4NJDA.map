@@ -1186,10 +1186,10 @@
 8006f47c 00000044 8006f47c 0 zz_8006f47c_
 8006f4c0 00000004 8006f4c0 0 zz_8006f4c0_
 8006f4c4 000000b8 8006f4c4 0 zz_8006f4c4_
-8006f57c 00000094 8006f57c 0 zz_8006f57c_
-8006f610 000005c8 8006f610 0 file_extension_apply
-8006fbd8 00000314 8006fbd8 0 zz_8006fbd8_
-8006feec 00000074 8006feec 0 zz_8006feec_
+8006f57c 00000094 8006f57c 0 strcmp
+8006f610 000005c8 8006f610 0 GLIB_LoadObj__FPcUlUl 	glib_object.o
+8006fbd8 00000314 8006fbd8 0 strlen
+8006feec 00000074 8006feec 0 strmfe
 8006ff60 00000058 8006ff60 0 zz_8006ff60_
 8006ffb8 00000058 8006ffb8 0 zz_8006ffb8_
 80070010 0000001c 80070010 0 zz_80070010_
@@ -1928,15 +1928,15 @@
 800a7054 000000e8 800a7054 0 seq_opcode_group_18 	seq.o
 800a713c 000000c8 800a713c 0 seq_opcode_group_17 	seq.o
 800a7204 000003bc 800a7204 0 seq_opcode_group_16 	seq.o
-800a75c0 0000012c 800a75c0 0 seq_opcode_group_15 	seq.o
-800a76ec 00000ea8 800a76ec 0 seq_opcode_group_14 	seq.o
+800a75c0 0000012c 800a75c0 0 SEQ_CmdPAUSE__FP6_SEQ_TP6SREG_TPUi 	seq_cmdsub.o 
+800a76ec 00000ea8 800a76ec 0 SEQ_CmdHIT__FP6_SEQ_TP6SREG_TPUi 	seq_cmdsub.o 
 800a8594 000008d4 800a8594 0 seq_opcode_group_13 	seq.o
 800a8e68 00000b88 800a8e68 0 seq_opcode_group_12 	seq.o
-800a99f0 0000022c 800a99f0 0 seq_opcode_group_11 	seq.o
+800a99f0 0000022c 800a99f0 0 SEQ_CmdOBJ__FP6_SEQ_TP6SREG_TPUi 	seq_cmdsub.o 
 800a9c1c 000007a8 800a9c1c 0 seq_opcode_group_10 	seq.o
 800aa3c4 0000006c 800aa3c4 0 zz_800aa3c4_ 	seq.o
-800aa430 00000588 800aa430 0 seq_opcode_group_0F 	seq.o
-800aa9b8 000002b0 800aa9b8 0 seq_opcode_group_0E 	seq.o
+800aa430 00000588 800aa430 0 SEQ_CmdFILE__FP6_SEQ_TP6SREG_TPUi 	seq_cmdsub.o 
+800aa9b8 000002b0 800aa9b8 0 SEQ_CmdMEM__FP6_SEQ_TP6SREG_TPUi 	seq_cmdsub.o 
 800aac68 000000bc 800aac68 0 seq_opcode_group_56 	seq.o
 800aad24 00000a30 800aad24 0 seq_opcode_group_55 	seq.o
 800ab754 00004b94 800ab754 0 seq_opcode_group_61 	seq.o
@@ -2003,24 +2003,23 @@
 800c8108 000002fc 800c8108 0 seq_opcode_group_48 	seq.o
 800c8404 000004a4 800c8404 0 seq_opcode_group_47 	seq.o
 800c88a8 00000508 800c88a8 0 seq_opcode_group_46 	seq.o
-800c8db0 000000ac 800c8db0 0 zz_800c8db0_ 	seq.o
-800c8e5c 000000dc 800c8e5c 0 zz_800c8e5c_ 	seq.o
-800c8f38 000002b0 800c8f38 0 seq_parse 	seq.o
-800c91e8 00000100 800c91e8 0 zz_800c91e8_ 	seq.o
+800c8db0 000000ac 800c8db0 0 SEQ_Exit__FP6_SEQ_Ti 	seq_main.o
+800c8e5c 000000dc 800c8e5c 0 SEQ_Msg__FP6_SEQ_TiUi 	seq_main.o
+800c8f38 000002b0 800c8f38 0 SEQ_Exec__FP6_SEQ_Ti 	seq_main.o
+800c91e8 00000100 800c91e8 0 SEQ_Task__FP8_SEQ_TSKUi 	seq_main.o
 800c92e8 000002fc 800c92e8 0 SEQ_RegCMD2__FP6_SEQ_TP6SREG_TPPUiPPUiPUi 	seq_main.o 
 800c95e4 000001a8 800c95e4 0 SEQ_RegCMD1__FP6_SEQ_TP6SREG_TPPUiPUi 	seq_main.o 
 800c978c 000000d4 800c978c 0 SEQ_RegGP__FiPPUiPUi 	seq_main.o 
-800c9860 00000004 800c9860 0 debug_empty_1 	seq.o
-800c9864 00000004 800c9864 0 debug_empty_2 	seq.o
-800c9868 00000044 800c9868 0 debug_print_sometimes 	seq.o
-800c98ac 00000070 800c98ac 0 zz_800c98ac_ 	seq.o
-800c991c 000000bc 800c991c 0 seq_parse_header 	seq.o
-800c99d8 00000184 800c99d8 0 SEQ_Task 	seq.o
-800c9b5c 000000a8 800c9b5c 0 zz_800c9b5c_ 	seq.o
-800c9c04 000000a8 800c9c04 0 zz_800c9c04_ 	seq.o
-800c9cac 00000034 800c9cac 0 zz_800c9cac_ 	seq.o
-800c9ce0 0000005c 800c9ce0 0 zz_800c9ce0_ 	seq.o
-800c9d3c 00000090 800c9d3c 0 zz_800c9d3c_ 	seq.o
+800c9860 00000004 800c9860 0 SEQ_PrintREG__FP6_SEQ_Ti 	seq_main.o
+800c9864 00000004 800c9864 0 SEQ_PrintSEQ__FP6_SEQ_Ti 	seq_main.o
+800c9868 00000044 800c9868 0 SEQ_Print__FP6_SEQ_TPc 	seq_main.o
+800c98ac 00000070 800c98ac 0 SEQ_Free__FP6_SEQ_Ti 	seq_main.o
+800c991c 000000bc 800c991c 0 SEQ_Setup__FP6_SEQ_TPvP9_OBJECT_Ti 	seq_main.o
+800c99d8 00000184 800c99d8 0 SEQ_Setup_Inner__FP6_SEQ_TPvP9_OBJECT_Ti 	seq_main.o
+800c9b5c 000000a8 800c9b5c 0 SEQ_ReqLoadNext__FPcii 	seq_main.o
+800c9c04 000000a8 800c9c04 0 SEQ_ReqLoadPrev__FPcii 	seq_main.o
+800c9cac 00000090 800c9cac 0 SEQ_ReqSetNext__FPviii 	seq_main.o
+800c9d3c 00000090 800c9d3c 0 SEQ_ReqSetPrev__FPviii 	seq_main.o
 800c9dcc 00000350 800c9dcc 0 zz_800c9dcc_ 	HVQM4PlayerEx.o
 800ca11c 00000008 800ca11c 0 zz_800ca11c_ 	HVQM4PlayerEx.o
 800ca124 00000008 800ca124 0 zz_800ca124_ 	HVQM4PlayerEx.o
@@ -2172,7 +2171,7 @@
 800d01b4 00000010 800d01b4 0 zz_800d01b4_
 800d01c4 000000ec 800d01c4 0 zz_800d01c4_
 800d02b0 00000064 800d02b0 0 zz_800d02b0_
-800d0314 000001e8 800d0314 0 audio_init
+800d0314 000001e8 800d0314 0 SOUND_Init
 800d04fc 0000003c 800d04fc 0 zz_800d04fc_
 800d0538 00000064 800d0538 0 sound_play_c
 800d059c 00000068 800d059c 0 zz_800d059c_
