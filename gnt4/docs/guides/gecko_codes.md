@@ -219,6 +219,19 @@ Note: This new default will only take affect after pausing unless you modify `fi
 
 These codes are experimental and may cause unintended side effects, even crashes in some cases.
 
+### Other Character Don't Stop Your Character From Running
+
+When your character runs at another character, your character will stop when they touch the other character's body. This code prevents that
+so that you can continue running. An example can be seen [in this video](https://imgur.com/a/h1uvV2i).
+
+This is accomplished by removing the PF flag BODY when players touch, which may have side effects. This does not affect when you run against
+the wall of a stage, which instead applies the PF flag M_KABE.
+
+```gecko
+0403985c 60000000
+04039868 60000000
+```
+
 ### Allow Players to Pick Tsunade Confusion Effect
 
 If you enable the above code, it lets Tsunade decide whether to reverse buttons or reverse movement based
