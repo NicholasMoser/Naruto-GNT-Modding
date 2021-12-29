@@ -18,12 +18,24 @@ The absolute positions of these structs can be found at the locations listed bel
 - CPU 3: `80228400`
 - CPU 4: `80228404`
 
+- Partner Character 1: `80228424`
+- Partner Character 2: `80228420`
+- Partner Character 3: `8022841C`
+- Partner Character 4: `80228418`
+- Partner Character 5: `80228414`
+- Partner Character 6: `80228410`
+  - i.e. Naruto and Itachi clones, Tayuya doki demon, Kankuro's puppet, and Kiba's dog. Anything non-playable character with a char struct.
+    You can have up to 6 by doing a 3v3 battle where each character has a Partner Character. The order doesn't correlate to the player number,
+    but rather is added as Partner Characters are needed. In a 1v1 match where P2 has a Partner Character, their Partner Character will be
+    Partner Character 1.
+
 ### Values
 
 #### 0x00: **Flags**
 
 - 00000001: If set to 0, the character is removed. Probably used to remove clones and such.
 - 00000008: Invincibility; all damage becomes 0. Used in `damage_handler()`.
+- 01000000: If this char is a Partner Character. Used for opcodes like `241A3C00`.
 
 #### 0x04: **Player ID**
 
@@ -171,8 +183,8 @@ Seems to be some pointer to an offset in an seq file, probably 0010.seq. Referen
   - `00100000` - TURN
   - `00200000` - ZOMBIE
   - `00400000` - BACK
-  - `00800000` - BODY
-  - `01000000` - M_KABE
+  - `00800000` - BODY: Colliding with a player, likely used to stop you from moving.
+  - `01000000` - M_KABE: Colliding with a wall, likely used to stop you from moving.
   - `02000000` - GUARD
   - `04000000` - DAMAGE: Makes your face in the HUD shake and the background of it to go red
   - `08000000` - ABSTURNR
