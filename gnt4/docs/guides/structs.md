@@ -604,11 +604,11 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 #### 0x164: **Combo Count 1**
 
-  - Added to Combo Count 2 to get combo count
+  - Normal tally. Added to Combo Count 2 to get combo count
 
 #### 0x166: **Combo Count 2**
 
-  - Added to Combo Count 1 to get combo count
+  - Beast mode capture state tally. Added to Combo Count 1 to get combo count
 
 #### 0x19c: **X Position**
 
