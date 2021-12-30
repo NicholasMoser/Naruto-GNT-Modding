@@ -590,6 +590,11 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 </details>
 
+#### 0x15c: **Active Hitbox Check**
+
+  - FFFFFFFF when no hitbox is active
+  - 00000000 when hitbox is active
+
 #### 0x164: **Combo Count 1**
 
   - Added to Combo Count 2 to get combo count
