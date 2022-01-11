@@ -39,3 +39,11 @@ You can bump the main heap by about 4 MB with the following Gecko code
 ^ WARNING: Very experimental, high likelihood of breaking stuff
 
 If you try and bump the main heap any higher than 18.8 MB, it will fail to allocate memory for the other stuff like graphics and the game will crash on boot.
+
+I wanted to see if I could actually just tell Dolphin to make RAM larger than 24 MB. Unfortunately the way the GameCube lays out memory is kind of weird. There's data after RAM, so you'd have to push all that data even further.
+Specifically:
+RAM ends at 0x817FEC60 and the file system table begins (fst.bin)[1]
+24 MB likely is a hard cap, looks like Dolphin can't even address above 0x817FFFFF.
+
+[1] https://wiibrew.org/wiki/Memory_map
+
