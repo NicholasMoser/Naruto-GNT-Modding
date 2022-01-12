@@ -602,6 +602,11 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 </details>
 
+#### 0x15c: **Active Hitbox Check**
+
+  - FFFFFFFF when no hitbox is active
+  - 00000000 when hitbox is active
+
 #### 0x164: **Combo Count 1**
 
   - Normal tally. Added to Combo Count 2 to get combo count
@@ -634,13 +639,48 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
   - The amount to add to the **Act Counter** every frame.
 
+#### 0x23c: **Act ID**
+
+  - Current Action ID
+
+#### 0x240: **Act ID2**
+
+  - Current Action ID again
+
+#### 0x24c: **Something about jumping and attacking**
+
+    - Start round at FFFFFFFF
+    - Set to 1D when jumping
+    - Set to E4 at start of dive kick
+    - Set to FFFFFFFF at end of dive kick or start of air throw
+
+#### 0x250: **Changes on start of actions that moves character**
+
+    - Getting thrown
+    - Doing any attack
+
+#### 0x254: **Unknown**
+
+    - Start round at FFFFFFFF
+    - Set to 0 first jump
+
 #### 0x258: **Act Counter**
 
   - Resets to 0 at the end of your last action. Can be displayed in the debug menu under the ACT mess, labeled on the right side as ACT.
 
+#### 0x25c: **Current Recoverable Damage**
+
+  - Current recoverable health. Counts up from 0.
+  - REMAIN in debug mode (LIFE)
+
 #### 0x260: **Current Damage**
 
   - Current health. Counts up from 0.
+  - TOTAL in debug mode (LIFE)
+
+#### 0x264: **Current REC**
+
+  - REC in debug mode (LIFE)
 
 #### 0x26c: **Health Frame Counter**
 
@@ -660,9 +700,17 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 #### 0x28c: **Current Chakra**
 
+#### 0x290: **New Chakra**
+
+  - Signed integer, this gets added to **Current Chakra**. Can be negative, which results in drain.
+
 #### 0x294: **Current Block Guard**
 
 #### 0x298: **Max Block Guard**
+
+### 0x29c: **GRD**
+
+  - GRD value current attack
 
 #### 0x2a0: **Confusion Flag**
 
@@ -677,9 +725,67 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
   - Appears to be a duplicate of **Idle Counter**
 
+#### 0x2ac: **Hitbox Removal Timer**
+
+  - Count down 100 each frame, hitbox disappear when timer reach 0.
+
+#### 0x2b0: **Hitbox Appearance Timer**
+
+  - Count down 100 each frame, hitbox appear when timer reach 0.
+
+#### 0x2b4: **Synchronous timer after hitbox**
+
+  - FFFFFFFF in neutral
+  - 00000000 at start of action
+  - Count up 100 from 0 each frame after hitbox disappear
+
+#### 0x2b8: **Attack Angle**
+
+  - What angle the attacking character was turned away from the opponent when the attack connected
+
+#### 0x2bc: **POW**
+
+  - Current attack POW value
+
+#### 0x2c0: **ANG**
+
+  - Current attack ANG value
+
 #### 0x2c4: **Attack Multiplier**
 
   - A multiplier that is applied to the damage you do. Defaults to 1. Choji chips can raise it up to a max of 1.5.
+
+#### 0x2c8: **DMG**
+
+  - Current attack DMG value
+
+#### 0x2d0: **REV**
+
+#### 0x2d4: **REV2**
+
+#### 0x2d8: **Block Stun**
+
+  - Shows how many frames blockstun last received attack gave
+
+#### 0x2dc: **Stand up timer**
+
+  - Timer idling on the ground before standing up
+
+#### 0x2ec: **Inactionable timer**
+
+  - No inputs possible before timer reach 0
+  - Used at round start or after reset
+
+#### 0x2f0: **Intangible timer**
+
+  - Reset when moving
+  - Set when standing up
+  - Count down 100 each frame
+
+#### 0x2f4: **Anti Super timer?**
+
+  - Count down 100 each frame
+  - If super connect when not 0, character freeze
 
 #### 0x2f8: **Grab Break Counter**
 
