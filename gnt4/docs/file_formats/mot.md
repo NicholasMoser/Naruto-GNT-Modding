@@ -4,6 +4,17 @@ Credit to [Sifo](https://twitter.com/Zameen_Jinya) and Icylittlething for their 
 
 MOT files contain one or more animations. They can be unpacked using QuickBMS and [naruto_mot.bms](/utils/naruto_mot.bms). Each character has a **0000.mot**, **0001.mot**, and potentially others. 0001.mot contains only a single animation, the idle animation used for the character select screen. 0000.mot contains battle animations, as well as the same idle animation in 0001.mot. You can replace animations with each other using the QuickBMS reimport option.
 
+### Header info
+
+| Offset | Size | Description                                                                                        |
+|--------|------|----------------------------------------------------------------------------------------------------|
+| 0x00   | 4    | Null bytes                                                                                         |
+| 0x04   | 4    | Total number of animations                                                                         |
+| 0x08   | 4    | Header size                                                                                        |
+| 0x0C   | 4    | File size                                                                                          |
+
+The header is followed by an integer for every animation, where that integer is the offset to it.
+
 ## GNTA Files
 
 Gnta files are specific animations extracted using **naruto_mot.bms**. Gnta is an unofficial name given to these files since we do not know the original file type name. It stands for GNT Animation.
@@ -43,6 +54,165 @@ Gnta files were also designed to be able to combine, in that you can ask the gam
 | 0x10   | 4    | Offset to the first part of the animation values                    |
 | 0x14   | 4    | Offset to the second part of the animation values                   |
 | 0x18   | 4    | 0 padding                                                           |
+
+## Character Animation IDs to Purpose
+
+- 0000: Idle
+- 0001: Walk Forward
+- 0002: Walk Backward
+- 0003: Dash
+- 0004: Dash End
+- 0005: Run
+- 0006: Run End
+- 0007: Back Dash
+- 0008: Turn Around
+- 000A: 5Z out
+
+- 0010: Rolling across the ground after being killed with butt
+- 0013: Turn around while getting up
+
+- 0020: Block
+- 0021: Standing blocking slide
+- 0022: Block
+- 0023: Block
+- 0024: Block low
+- 0026: Crouching pushing sliding block
+- 0028: Hit by butt
+- 0029: Hit by butt back turned
+- 002A: Landing from butt on back
+- 002B: Landing from butt on face
+- 002C: Sinking in Jiraiya swamp
+- 002D: Hit by Shika 2X
+- 002E: Coming to a stop from tata on face
+- 002F: Trapped (Kido 5A2C / Shino 2A)
+
+- 0030: Jump Startup
+- 0031: Jump Land
+- 0032: Jump
+- 0033: Falling in the air
+- 0034: Breaking a grab
+- 0035: Having a grab broken
+- 0036: grab break in the air
+- 0037: Guard break in the air / grab broken in the air
+- 0038: Feet trapped (Kido 2A)
+- 0039: Launching block
+- 003E: Landing after air guard break
+
+- 0041: Hit while standing (during stagger?)
+- 0042: Hit while standing and head bucks back
+- 0043: Hit by 5B
+- 0044: Hit by 5B(B)B
+- 0045: Hit by 5BB(B)
+- 0046: Hit by Kakashi/Kabuto 2A (low throw?)
+- 0047: Hit by 2B
+- 0048: Hit by a strong low
+
+- 004F: Stagger
+
+- 0050: Hit in the back
+- 0051: Hit in the back
+- 0052: Hit low in the back
+- 0053: Reverse stagger
+- 0054: Hit towards ground with tata or sptata
+- 0056: Koro onto back
+- 0058: Hit by down
+- 0059: Hit by down
+- 005A: About to hit the ground in hitstun (likely tech roll)
+- 005B: Flying through the air from a throw
+- 005D: Crumple (OTK 2X)
+- 005E: Hit by Furi
+
+- 0061: Hit by Hasa
+- 0064: Hit by Kabuto sleep
+- 0066: Hitting the ground in hitstun
+- 0067: Coming to a stop in hitstun on back
+- 0068: Coming to a stop in hitstun on face
+- 0069: Hit OTG on back
+- 006A: Hit OTG on face
+- 006B: Standing guard break
+- 006C: Death crumple with arms out
+- 006D: Death crumple slow
+- 006E: Rising in hitstun
+- 006F: Falling in hitstun
+
+- 0071: Getting up after being knocked down on back
+- 0077: Getting up after being knocked down on face
+- 007E: Sptata bounce on back
+- 00F7: Sptata bounce on face
+
+- 008E: Landing on back from air throw
+- 008F: Tata bounce on face
+
+- 0090: 5B
+- 0091: 6B
+- 0092: 4B
+- 0093: 2B
+- 0097: RB
+
+- 00A0: 5A
+- 00A1: 6A
+- 00A2: 4A / Y cancel
+- 00A3: 2A
+- 00A7: RA
+
+- 00B0: 2A reappear
+- 00B1: A4A
+- 00B3: Pulled into the ground by Kakashi 2A/ Stunned by Kabuto 2A
+
+- 00D6: Sidestep to foreground
+- 00D7: Sidestep to background
+- 00D8: Running sidestep to background
+- 00D9: Running sidestep to foreground
+
+- 00F0: Generic Match beginning
+- 00F1: Match opening
+- 00F2: 3MC match beginning
+- 00F6: Match Loss
+- 00FB: Super Freeze for 5X
+
+- 0100: 8B
+- 0109: 8A
+
+- 0110: JB (0111 and 0112 with dive kicks)
+
+- 0121: Air RKnJ
+- 012A: JA (12B and 12C for dive kicks like Sakon)
+
+- 0130: Charge 5A
+- 0131: Release 5A
+
+- 0140: Throw
+- 0141: Activated 8A going up
+- 0142: Activated 8A going down
+- 0143: Activated 8A landing
+- 0146: Air Throw
+
+- 0150: Entering a match
+
+- 0160: Being grabbed
+- 0166: Being air thrown
+- 0167: Released from air throw
+- 0168: Head buried in the ground
+
+- 0180: Missed throw
+- 0181: Missed air throw
+
+- 01B0: 5X
+- 01B3: 2X
+- 01B4: 2X hit
+
+- 01E0: 5BB(B)
+- 01E1: 5BBB(B)
+- 01E2: 5BBBA(A)
+- 01E3: 5B(B)
+- 01E4: 8B(B)
+- 01E5: 5BBBA(B)
+- 01E6: 2B(B)
+
+- 01F0: Main person for 6X start
+- 01F1: Second person for 6X
+- 01F2: Third person for 6X
+- 01F4: Main person finishing 6X
 
 ## Bone IDs
 
