@@ -609,11 +609,13 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 #### 0x164: **Combo Count 1**
 
-  - Normal tally. Added to Combo Count 2 to get combo count
+  - Normal tally.
+  - Added to Combo Count 2 to get combo count
 
 #### 0x166: **Combo Count 2**
 
-  - Beast mode capture state tally. Added to Combo Count 1 to get combo count
+  - Capture state tally, for attacks that add to combo counter inside of capture state, e.g. supers, or anko 4B(B) second hit
+  - Added to Combo Count 1 to get combo count
 
 #### 0x19c: **X Position**
 
