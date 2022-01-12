@@ -653,6 +653,10 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 #### 0x28c: **Current Chakra**
 
+#### 0x290: **New Chakra**
+
+  - Signed integer, this gets added to **Current Chakra**. Can be negative, which results in drain.
+
 #### 0x294: **Current Block Guard**
 
 #### 0x298: **Max Block Guard**
