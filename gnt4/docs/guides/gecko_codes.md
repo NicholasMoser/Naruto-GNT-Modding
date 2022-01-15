@@ -219,6 +219,29 @@ Note: This new default will only take affect after pausing unless you modify `fi
 
 These codes are experimental and may cause unintended side effects, even crashes in some cases.
 
+### Remove Port Priority on Throw Breaks
+
+In GNT4, throw breaking is affected by port priority. Higher port priority in this case is whoever is
+P4 or closest to P4. Then a player throws another player, the throw break window is:
+
+- 3 if the attacker has **lower** port priority than the defender
+- 2 if the attacker has **higher** port priority than the defender
+
+For example, P4 has higher port priority than all other players. Therefore when thrown, P4 always will have
+a 3 frame throw break window. When P4 throws other players, they will always have a 2 frame throw break window.
+The opposite is true for P1, as they will always have a 2 frame throw break window when defending and give other
+players a 3 frame throw break window.
+
+```gecko
+C20632C0 00000006
+80790004 80C50004
+7C033000 40810014
+2C000200 4082000C
+38600201 906502F8
+2C000000 38C00000
+60000000 00000000
+```
+
 ### Other Character Don't Stop Your Character From Running
 
 When your character runs at another character, your character will stop when they touch the other character's body. This code prevents that
