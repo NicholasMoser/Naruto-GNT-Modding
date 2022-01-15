@@ -45,8 +45,7 @@ Gnta files were also designed to be able to combine, in that you can ask the gam
 
 | Offset | Size | Description                                                         |
 |--------|------|---------------------------------------------------------------------|
-| 0x00   | 2    | Always begins with 02 02                                            |
-| 0x02   | 2    | Always 21 or 28, other values don't seem to be allowed              |
+| 0x00   | 4    | Flags. Always begins with 02 02. Ends with 21 or 28.                |
 | 0x04   | 2    | Bone id maybe                                                       |
 | 0x06   | 2    | Number of floats                                                    |
 | 0x08   | 4    | That float doesn't repeat itself twice for a specific value in 0x02 |

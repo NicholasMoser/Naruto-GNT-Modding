@@ -140,7 +140,7 @@ Seems to be some pointer to an offset in an seq file, probably 0010.seq. Referen
   - `00020000` - DOWNO
   - `00040000` - GETUP
   - `00080000` - TURN
-  - `00100000` - TDOWN
+  - `00100000` - TDOWN: Cannot be thrown.
   - `00200000` - CANTACT
   - `00400000` - SDEF: Special defense
   - `00800000` - BDEF: Seems to appear when hit by a move with beast
@@ -683,7 +683,7 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 #### 0x2f8: **Grab Break Counter**
 
-  - A counter that while it is not zero, you can break a grab. Every frame subtracts 0x100. Seems to always be set to 0x300.
+  - A counter that while it is not zero, you can break a grab. Seems to always be set to 0x300 at instruction 0x800b5144. Every frame subtracts 0x100 at instruction 0x8001aaec.
 
 #### 0x854: **Transformation Flag**
 
@@ -738,6 +738,10 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 #### 0x8C8: **Synchronous timer**
 
 Set by opcode 2011263F.
+
+#### 0x954 **Throw Target**
+
+Pointer to the character struct of the target of a throw.
 
 #### 0x960 **Opponent Target**
 

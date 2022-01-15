@@ -46,4 +46,3 @@ RAM ends at 0x817FEC60 and the file system table begins (fst.bin)[1]
 24 MB likely is a hard cap, looks like Dolphin can't even address above 0x817FFFFF.
 
 [1] https://wiibrew.org/wiki/Memory_map
-
