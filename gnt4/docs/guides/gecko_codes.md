@@ -491,7 +491,7 @@ c2092154 0000000e
 04214014 00000011
 ```
 
-## Increase Heap (Memory) Size
+## Increase Heap (Memory) Size [Nick]
 
 So in the below info, Main system RAM is how much memory the GameCube has available, Main heap is the main heap for loading stuff, and there are a few other heaps below it used for other system stuff.
 
