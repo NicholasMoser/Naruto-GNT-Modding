@@ -17,9 +17,9 @@ The header is followed by an integer for every animation, where that integer is 
 
 ## GNTA Files
 
-Gnta files are specific animations extracted using **naruto_mot.bms**. Gnta is an unofficial name given to these files since we do not know the original file type name. It stands for GNT Animation.
+.gnta is an unofficial file name extension given to individual animations of a .mot file. It's unofficial since we don't know the actual name that Eighting used.
 
-Gnta files are a series of keyframes. The game will automatically fill animations in-between each keyframe. A keyframe consists of an x, y, z, and w for all applicable joints. The joint values are the same as those used in the jcv and seq files. These were originally created using the auto key feature of soft image, a now-defunct 3D modeling program. You would give it a series of poses and it would fill in animations between them for you. 3dsmax has the same feature today.
+Gnta files are a series of keyframes. Keyframes are snapshots of movement at specific moments. The game will automatically fill animations in-between each keyframe. A keyframe consists of an x, y, z, and w for all applicable joints. The joint values are the same as those used in the jcv and seq files. These were originally created using the auto key feature of soft image, a now-defunct 3D modeling program. You would give it a series of poses and it would fill in animations between them for you. 3dsmax has the same feature today.
 
 Eighting made the animations in soft image and converted them to gnta. Reason being, they wanted their animations to be recyclable across many characters. The gnta format works across jcv files. It can store bone movement data for bones, and can even do so for bones a character potentially doesn't have. This allows them to reuse the same animation across many characters with different bones.
 
@@ -27,32 +27,50 @@ The universal throw for example defines movements for bones 118, 119, and 120, w
 
 Gnta files were also designed to be able to combine, in that you can ask the game to play two at once. If the joints do not conflict, the game will do so. This is how hand animations in done in the GNT games. For example, Naruto's clone summoning animation is completely separate from the hand sign animation he does to call it.
 
-### Header info
+### MOT Header
+
+The MOT header defines a number of animation IDs. The header is followed by 4-byte words for each animation ID. Each 4-byte word
+is the optional offset to that animation. If there is no animation, the offset will be 0. The animation at the given offset is
+a GNTA file.
 
 | Offset | Size | Description                                                                                        |
 |--------|------|----------------------------------------------------------------------------------------------------|
-| 0x00   | 4    | Number of entries                                                                                  |
-| 0x04   | 4    | Always 00000010                                                                                    |
+| 0x00   | 4    | Padding (zeros)                                                                                    |
+| 0x04   | 4    | Number of animation IDs                                                                            |
+| 0x08   | 4    | Header size (always 0x10)                                                                          |
+| 0x0C   | 4    | MOT file size                                                                                      |
+
+### GNTA Header
+
+A GNTA file defines a number of bone animations.
+
+| Offset | Size | Description                                                                                        |
+|--------|------|----------------------------------------------------------------------------------------------------|
+| 0x00   | 4    | Number of bone animations                                                                          |
+| 0x04   | 4    | Always 0x00000010                                                                                  |
 | 0x08   | 4    | Float. Smoothness/Bounciness of the animation, lower is bouncier. Usually is between .03 and .25   |
 | 0x0C   | 4    | Float. Animation repeat delay, lower is quicker. Usually is between .03 and 5.0                    |
 | 0x10   | 4    | Playback speed of the animations. Eighting has always used 00000040                                |
-| 0x14   | 4    | idk what this is, but always starts with FF FF                                                     |
-| 0x18   | 4    | idk the purpose of this float, but you can find it in the frame data entries in 0x08               |
-| 0x1C   | 4    | 0 padding                                                                                          |
-| 0x20   | 4    | Pointer to the beginning of the animation values                                                   |
+| 0x14   | 2    | Unknown, always 0xFFFF                                                                             |
+| 0x16   | 2    | Number of function curve values                                                                    |
+| 0x18   | 4    | Unknown, but you can find it in the frame data entries in 0x08                                     |
+| 0x1C   | 4    | Padding (zeros)                                                                                    |
+| 0x20   | 4    | Offset to the function curve values                                                                |
 
-### Frame data entries
+### Bone Animation Header
+
+A bone animation defines a number of key frames for a specific bone.
 
 | Offset | Size | Description                                                         |
 |--------|------|---------------------------------------------------------------------|
 | 0x00   | 4    | Flags. Always begins with 02 02. Ends with 21 or 28.                |
 | 0x04   | 2    | Bone id maybe                                                       |
-| 0x06   | 2    | Number of floats                                                    |
+| 0x06   | 2    | Number of key frames                                                |
 | 0x08   | 4    | That float doesn't repeat itself twice for a specific value in 0x02 |
-| 0x0C   | 4    | 0 padding                                                           |
-| 0x10   | 4    | Offset to the first part of the animation values                    |
-| 0x14   | 4    | Offset to the second part of the animation values                   |
-| 0x18   | 4    | 0 padding                                                           |
+| 0x0C   | 4    | Padding (zeros)                                                     |
+| 0x10   | 4    | Offset to the function curve for each key frame                     |
+| 0x14   | 4    | Offset to the coordinates for each key frame                        |
+| 0x18   | 4    | Padding (zeros)                                                     |
 
 ## Character Animation IDs to Purpose
 
