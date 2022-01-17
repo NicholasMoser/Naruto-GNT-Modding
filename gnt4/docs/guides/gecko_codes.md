@@ -491,6 +491,29 @@ c2092154 0000000e
 04214014 00000011
 ```
 
+## Increase Heap (Memory) Size
+
+So in the below info, Main system RAM is how much memory the GameCube has available, Main heap is the main heap for loading stuff, and there are a few other heaps below it used for other system stuff.
+
+```
+Main system RAM is 24 MB (0x01800000 bytes)
+Main heap uses    ~15 MB (0x00e4b000 bytes)
+Graphics use    ~0.52 MB (0x00080000 bytes)
+HSD FXB uses    ~0.61 MB (0x00096000 bytes)
+HSD FIFO uses   ~0.52 MB (0x00080000 bytes)
+```
+
+There are very likely other heaps as well that I couldn't find. I was able to bump the main heap to ~18.8 MB (0x011fb000 bytes) before it would crash on boot.
+
+
+You can bump the main heap by about 4 MB with the below Gecko code. Be warned that it has a high likelihood of breaking stuff.
+If you try and bump the main heap any higher than 18.8 MB, it will fail to allocate memory for the other stuff like graphics and the game will crash on boot
+
+```gecko
+0400c99c 3c600120
+0400c9a0 3863b000
+```
+
 ## Player 1 Codes
 
 ### P1 Infinite Health [Ralf]
@@ -1267,7 +1290,7 @@ c200ca80 00000012
 38600000 00000000
 ```
 
-## Gravity Adjustment
+## Gravity Adjustment [Nick]
 
 The Gecko codes for low gravity can easily be modified to use different gravity values. This is accomplished by adjusting the value following 0x140001E0. For example, the default set for the codes listed on this page is 0xBCF5C28F. That number is the hexadecimal representation of the float -0.03. The default gravity value of the game is 0xBDAA0000 (-0.083008). Gravity in this case represents the change in speed that occurs each frame of the game. Here are the results of using -0.03 for the gravity:
 
