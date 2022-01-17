@@ -219,7 +219,7 @@ Note: This new default will only take affect after pausing unless you modify `fi
 
 These codes are experimental and may cause unintended side effects, even crashes in some cases.
 
-### Remove Port Priority on Throw Breaks
+### Remove Port Priority on Throw Breaks [Nick]
 
 In GNT4, throw breaking is affected by port priority. Higher port priority in this case is whoever is
 P4 or closest to P4. Then a player throws another player, the throw break window is:
@@ -242,7 +242,7 @@ C20632C0 00000006
 60000000 00000000
 ```
 
-### Other Character Don't Stop Your Character From Running
+### Other Character Don't Stop Your Character From Running [Nick]
 
 When your character runs at another character, your character will stop when they touch the other character's body. This code prevents that
 so that you can continue running. An example can be seen [in this video](https://imgur.com/a/h1uvV2i).
@@ -255,7 +255,7 @@ the wall of a stage, which instead applies the PF flag M_KABE.
 04039868 60000000
 ```
 
-### Allow Players to Pick Tsunade Confusion Effect
+### Allow Players to Pick Tsunade Confusion Effect [Nick]
 
 If you enable the above code, it lets Tsunade decide whether to reverse buttons or reverse movement based
 on what direction you're holding the control stick in the moment the confusion attack hits.
@@ -282,7 +282,7 @@ C203BAD4 00000008
 907102A0 00000000
 ```
 
-### Counter Hit Plays Sound
+### Counter Hit Plays Sound [Nick]
 
 It will play sound effect `53` from sound effect group `02`. Group `02` is where "general" sound effects like attacks go. Sound effect `53` is a sort of fanfare noise that isn't normally used in combat. Group `00` is battle sounds. Group `01` is announcer sounds. Groups over `02` are character sounds.
 
@@ -1283,7 +1283,7 @@ As you can see, any float closer to zero than -0.083008 will be lower gravity an
 
 These are codes only used in SCON4. They aren't generally applicable as they likely involve file modifications as well, making them crash or not work if used with a vanilla copy of the game.
 
-### Tsunade: Punch KF Flag Reverses Buttons, Kick KF Flag Reverses Movement
+### Tsunade: Punch KF Flag Reverses Buttons, Kick KF Flag Reverses Movement [Nick]
 
 ```gecko
 C203BAD4 00000006
@@ -1295,7 +1295,7 @@ C203BAD4 00000006
 60000000 00000000
 ```
 
-### Tsunade: Punch KF Flag Reverses Buttons, Kick KF Flag Reverses Movement
+### Tsunade: Punch KF Flag Reverses Buttons, Kick KF Flag Reverses Movement [Nick]
 
 ```gecko
 C203BAD4 00000006

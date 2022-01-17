@@ -10,13 +10,13 @@ These are codes that modify the game in various ways. You can add them to games 
 041091e0 60030000
 ```
 
-## Disable Stage Transition
+## Disable Stage Transition [Nick]
 
 ```gecko
 040b9f8c 4e800020
 ```
 
-## Disable Stage Obstacles
+## Disable Stage Obstacles [Nick]
 
 Obstacles were hard to remove because the code of the stages forces the obstacles into the stage, unlike Rev2 and Rev3. This was addressed by making all obstacles explode upon first loading the stage. Furthermore, the sound for these obstacles exploding had to be muted or else you get a giant explosion sound when the match starts.
 
