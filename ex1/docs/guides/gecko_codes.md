@@ -4,14 +4,6 @@ These are codes that modify the game in various ways. You can add them to games 
 
 ## General
 
-### Online Fix [Nick]
-
-The latest Dolphin dev version currently crashes when attempting to play this game online. The following code is a hack to fix this. It has yet to be fully tested and may have unintentional side effects.
-
-```gecko
-04014840 60000000
-```
-
 ## Disable Stage Transition [Nick]
 
 ```gecko
