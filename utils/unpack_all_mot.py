@@ -55,5 +55,9 @@ def unpack(path, output):
 
     mot.close()
 
+    # Write out the total number of animation ids
+    with open(output + '/totalAnimationIds', 'w') as totalAnimationIds:
+        totalAnimationIds.write(str(header[1]))
+
 if __name__ == "__main__":
     main()
