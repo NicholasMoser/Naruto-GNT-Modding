@@ -9,3 +9,9 @@ These are codes that modify the game in various ways. You can add them to games 
 ```gecko
 04015cdc 60030000
 ```
+
+## Disable Stage Transition [Nick]
+
+```gecko
+040c7d64 4e800020
+```
