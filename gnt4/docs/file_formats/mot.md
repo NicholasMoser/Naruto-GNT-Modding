@@ -4,17 +4,6 @@ Credit to [Sifo](https://twitter.com/Zameen_Jinya) and Icylittlething for their 
 
 MOT files contain one or more animations. They can be unpacked using QuickBMS and [naruto_mot.bms](/utils/naruto_mot.bms). Each character has a **0000.mot**, **0001.mot**, and potentially others. 0001.mot contains only a single animation, the idle animation used for the character select screen. 0000.mot contains battle animations, as well as the same idle animation in 0001.mot. You can replace animations with each other using the QuickBMS reimport option.
 
-### Header info
-
-| Offset | Size | Description                                                                                        |
-|--------|------|----------------------------------------------------------------------------------------------------|
-| 0x00   | 4    | Null bytes                                                                                         |
-| 0x04   | 4    | Total number of animations                                                                         |
-| 0x08   | 4    | Header size                                                                                        |
-| 0x0C   | 4    | File size                                                                                          |
-
-The header is followed by an integer for every animation, where that integer is the offset to it.
-
 ## GNTA Files
 
 .gnta is an unofficial file name extension given to individual animations of a .mot file. It's unofficial since we don't know the actual name that Eighting used.
@@ -27,50 +16,57 @@ The universal throw for example defines movements for bones 118, 119, and 120, w
 
 Gnta files were also designed to be able to combine, in that you can ask the game to play two at once. If the joints do not conflict, the game will do so. This is how hand animations in done in the GNT games. For example, Naruto's clone summoning animation is completely separate from the hand sign animation he does to call it.
 
-### MOT Header
+## MOT Header
 
-The MOT header defines a number of animation IDs. The header is followed by 4-byte words for each animation ID. Each 4-byte word
+The MOT header defines one or more animation IDs. The MOT header is followed by 4-byte words for each animation ID. Each 4-byte word
 is the optional offset to that animation. If there is no animation, the offset will be 0. The animation at the given offset is
-a GNTA file.
+a [GNTA Header](#gnta-header) (and therefore a GNTA file).
 
-| Offset | Size | Description                                                                                        |
+| Offset | Type | Description                                                                                        |
 |--------|------|----------------------------------------------------------------------------------------------------|
-| 0x00   | 4    | Padding (zeros)                                                                                    |
-| 0x04   | 4    | Number of animation IDs                                                                            |
-| 0x08   | 4    | Header size (always 0x10)                                                                          |
-| 0x0C   | 4    | MOT file size                                                                                      |
+| 0x00   | u16  | **Padding**: Zeros.                                                                                |
+| 0x02   | u16  | **Padding**: Zeros. Set at runtime to 1 when header is initialized in `LoadObj_readMOTHeader`.     |
+| 0x04   | u16  | **Padding**: Zeros.                                                                                |
+| 0x06   | u16  | **Number of Animation IDs**: Total possible number of animations. May not reflect the actual size. |
+| 0x08   | u32  | **Header Size**: Always 0x10.                                                                      |
+| 0x0C   | u32  | **MOT File Size**                                                                                  |
 
-### GNTA Header
+## GNTA Header
 
-A GNTA file defines a number of bone animations.
+A GNTA file defines one or more bone animations. The GNTA header is followed by each respective bone animation header.
 
-| Offset | Size | Description                                                                                        |
+| Offset | Type | Description                                                                                        |
 |--------|------|----------------------------------------------------------------------------------------------------|
-| 0x00   | 4    | Number of bone animations                                                                          |
-| 0x04   | 4    | Always 0x00000010                                                                                  |
-| 0x08   | 4    | Float. Smoothness/Bounciness of the animation, lower is bouncier. Usually is between .03 and .25   |
-| 0x0C   | 4    | Float. Animation repeat delay, lower is quicker. Usually is between .03 and 5.0                    |
-| 0x10   | 4    | Playback speed of the animations. Eighting has always used 00000040                                |
-| 0x14   | 2    | Unknown, always 0xFFFF                                                                             |
-| 0x16   | 2    | Number of function curve values                                                                    |
-| 0x18   | 4    | Unknown, but you can find it in the frame data entries in 0x08                                     |
-| 0x1C   | 4    | Padding (zeros)                                                                                    |
-| 0x20   | 4    | Offset to the function curve values                                                                |
+| 0x00   | u16  | **Padding**: Zeros.                                                                                |
+| 0x02   | u16  | **Number of Bone Animations**                                                                      |
+| 0x04   | u32  | **Header Size**: Always 0x10.                                                                      |
+| 0x08   | f32  | **Animation Smoothness/Bounciness**: Lower is bouncier. Usually is between .03 and .25.            |
+| 0x0C   | f32  | **Animation Repeat Delay**: Lower is quicker. Usually is between .03 and 5.0.                      |
 
-### Bone Animation Header
+???
 
-A bone animation defines a number of key frames for a specific bone.
+| 0x10   | u32  | **Animation Playback Speed**: Eighting has always used 0x40.                                       |
+| 0x14   | u16  | **Unknown**: Always 0xFFFF.                                                                        |
+| 0x16   | u16  | **Number of Function Curve Values**                                                                |
+| 0x18   | u32  | **Unknown**: You can find it in the frame data entries in 0x08.                                    |
+| 0x1C   | u32  | **Padding**: Zeros.                                                                                |
+| 0x20   | u32  | **Offset to the Function Curve Values**                                                            |
 
-| Offset | Size | Description                                                         |
+## Bone Animation Header
+
+A bone animation header defines one or more key frames for a specific bone. The header is always 0x20 bytes.
+
+| Offset | Type | Description                                                         |
 |--------|------|---------------------------------------------------------------------|
-| 0x00   | 4    | Flags. Always begins with 02 02. Ends with 21 or 28.                |
-| 0x04   | 2    | Bone id maybe                                                       |
-| 0x06   | 2    | Number of key frames                                                |
-| 0x08   | 4    | That float doesn't repeat itself twice for a specific value in 0x02 |
-| 0x0C   | 4    | Padding (zeros)                                                     |
-| 0x10   | 4    | Offset to the function curve for each key frame                     |
-| 0x14   | 4    | Offset to the coordinates for each key frame                        |
-| 0x18   | 4    | Padding (zeros)                                                     |
+| 0x00   | u16  | **Flags**: Always 0x0202                                            |
+| 0x02   | u16  | **Flags**: Always 0x21 or 0x28.                                     |
+| 0x04   | u16  | Bone id maybe                                                       |
+| 0x06   | u16  | **Number of Key Frames**                                            |
+| 0x08   | f32  | Last function curve value of key frames                             |
+| 0x0C   | u32  | **Padding**: Zeros.                                                 |
+| 0x10   | u32  | **Function Curve Offset**: For each key frame.                      |
+| 0x14   | u32  | **Coordinates Offset**: For each key frame.                         |
+| 0x18   | u32  | **Padding**: Zeros.                                                 |
 
 ## Character Animation IDs to Purpose
 

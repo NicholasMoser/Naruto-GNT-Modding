@@ -73,7 +73,23 @@ Seems to be some pointer to an offset in an seq file, probably 0010.seq. Referen
   
 #### 0x110: **Movement Stuff**
 
-  - Pointer to some movement related stuff.
+Pointer to some movement related stuff.
+
+#### 0x114: **Animation Stuff**
+
+Pointer to animation related stuff. Offset 0x1c contains the current gnta data being executed by the chr.
+
+#### 0x118: **Knockback Function Curve 1**
+
+The first function curve value for the animation of being knocked back by a hit.
+
+#### 0x11c: **Knockback Function Curve 2**
+
+The second function curve value for the animation of being knocked back by a hit.
+
+#### 0x120: **Knockback Speed**
+
+How long the knockback animation takes as a float. Lower is slower. Derived from the above two function curve values.
 
 #### 0x124: **MF Flags**
 
