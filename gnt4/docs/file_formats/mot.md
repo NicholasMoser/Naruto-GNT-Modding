@@ -59,6 +59,9 @@ A bone animation header defines one or more key frames for a specific bone. The 
 | 0x14   | u32  | **Coordinates Offset**: For each key frame.                         |
 | 0x18   | u32  | **Padding**: Zeros.                                                 |
 
+Each time value is a 32-bit float, representing the current frame count divided by 60. This is because the game runs at
+60 frames per second, therefore the fractional value is in seconds.
+
 [1] Track flag values
 
 - `TRANSLATE = 0x01`
