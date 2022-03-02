@@ -40,17 +40,8 @@ A GNTA file defines one or more bone animations. The GNTA header is followed by 
 | 0x00   | u16  | **Padding**: Zeros.                                                                                |
 | 0x02   | u16  | **Number of Bone Animations**                                                                      |
 | 0x04   | u32  | **Header Size**: Always 0x10.                                                                      |
-| 0x08   | f32  | **Animation Smoothness/Bounciness**: Lower is bouncier. Usually is between .03 and .25.            |
-| 0x0C   | f32  | **Animation Repeat Delay**: Lower is quicker. Usually is between .03 and 5.0.                      |
-
-???
-
-| 0x10   | u32  | **Animation Playback Speed**: Eighting has always used 0x40.                                       |
-| 0x14   | u16  | **Unknown**: Always 0xFFFF.                                                                        |
-| 0x16   | u16  | **Number of Function Curve Values**                                                                |
-| 0x18   | u32  | **Unknown**: You can find it in the frame data entries in 0x08.                                    |
-| 0x1C   | u32  | **Padding**: Zeros.                                                                                |
-| 0x20   | u32  | **Offset to the Function Curve Values**                                                            |
+| 0x08   | f32  | **Play Speed**: Lower is bouncier. Usually is between .03 and .25.                                 |
+| 0x0C   | f32  | **End Time**: Usually is between .03 and 5.0.                                                      |
 
 ## Bone Animation Header
 
@@ -58,15 +49,169 @@ A bone animation header defines one or more key frames for a specific bone. The 
 
 | Offset | Type | Description                                                         |
 |--------|------|---------------------------------------------------------------------|
-| 0x00   | u16  | **Flags**: Always 0x0202                                            |
-| 0x02   | u16  | **Flags**: Always 0x21 or 0x28.                                     |
-| 0x04   | u16  | Bone id maybe                                                       |
+| 0x00   | u16  | **Flags**: Usually 0x0202 or 0x0000.                                |
+| 0x02   | u16  | **Track Flag**: See values below.[1]                                |
+| 0x04   | u16  | **Bone ID**                                                         |
 | 0x06   | u16  | **Number of Key Frames**                                            |
-| 0x08   | f32  | Last function curve value of key frames                             |
+| 0x08   | f32  | **Total Time**: `frames / 60` where 60 is the FPS.                  |
 | 0x0C   | u32  | **Padding**: Zeros.                                                 |
-| 0x10   | u32  | **Function Curve Offset**: For each key frame.                      |
+| 0x10   | u32  | **Time Values Offset**: For each key frame.                         |
 | 0x14   | u32  | **Coordinates Offset**: For each key frame.                         |
 | 0x18   | u32  | **Padding**: Zeros.                                                 |
+
+[1] Track flag values
+
+- `TRANSLATE = 0x01`
+- `SCALE     = 0x02`
+- `ROTATE    = 0x08`
+- `ENABLED   = 0x20`
+- `DISABLED  = 0x40`
+
+## Bone IDs
+
+- 0xFFFF: root?
+- 0x00: Y
+- 0x01: X
+- 0x02: Z
+- 0x03: hip
+- 0x04: waist
+- 0x05: breast
+- 0x06: head
+- 0x07: right collar
+- 0x08: right high arm
+- 0x09: right lower arm
+- 0x0a: right hand
+- 0x0b: left collar
+- 0x0c: left high arm
+- 0x0d: left lower arm
+- 0x0e: left hand
+- 0x0f: right high leg
+- 0x10: right lower leg
+- 0x11: right foot
+- 0x12: left high leg
+- 0x13: left lower leg
+- 0x14: left foot
+- 0x15: neck
+- 0x16: ?
+- 0x17: ?
+- 0x18: ?
+- 0x19: ?
+- 0x1a: ?
+- 0x1b: ?
+- 0x1c: ?
+- 0x1d: ?
+- 0x1e: right high arm ex
+- 0x1f: right high arm ex eff
+- 0x20: ?
+- 0x21: ?
+- 0x22: ?
+- 0x23: left high arm ex
+- 0x24: left high arm ex eff
+- 0x25: ?
+- 0x26: ?
+- 0x27: ?
+- 0x28: right high leg EX
+- 0x29: right high leg EX eff
+- 0x2a: ?
+- 0x2b: ?
+- 0x2c: ?
+- 0x2d: right toe
+- 0x2e: left high leg EX
+- 0x2f: left high leg EX eff
+- 0x30: ?
+- 0x31: ?
+- 0x32: ?
+- 0x33: left toe
+- 0x34: ?
+- 0x35: ?
+- 0x36: ?
+- 0x37: ?
+- 0x38: ?
+- 0x39: ?
+- 0x3a: ?
+- 0x3b: ?
+- 0x3c: right thumb 1
+- 0x3d: right thumb 2
+- 0x3e: right thumb 3
+- 0x3f: right index finger 1
+- 0x40: right index finger 2
+- 0x41: right index finger 3
+- 0x42: right middle finger 1
+- 0x43: right middle finger 2
+- 0x44: right middle finger 3
+- 0x45: right ring finger 1
+- 0x46: right ring finger 2
+- 0x47: right ring finger 3
+- 0x48: right pinky 1
+- 0x49: right pinky 2
+- 0x4a: right pinky 3
+- 0x4b: left thumb 1
+- 0x4c: left thumb 2
+- 0x4d: left thumb 3
+- 0x4e: left index finger 1
+- 0x4f: left index finger 2
+- 0x50: left index finger 3
+- 0x51: left middle finger 1
+- 0x52: left middle finger 2
+- 0x53: left middle finger 3
+- 0x54: left ring finger 1
+- 0x55: left ring finger 2
+- 0x56: left ring finger 3
+- 0x57: left pinky 1
+- 0x58: left pinky 2
+- 0x59: left pinky 3
+- 0x5a: ?
+- 0x5b: ?
+- 0x5c: mouth top lip
+- 0x5d: jaw
+- 0x5e: mouth right side
+- 0x5f: mouth left side
+- 0x60: ?
+- 0x61: ?
+- 0x62: ?
+- 0x63: ?
+- 0x64: ?
+- 0x65: ?
+- 0x66: mouth bottom lip
+- 0x67: ?
+- 0x68: ?
+- 0x69: ?
+- 0x6a: ?
+- 0x6b: ?
+- 0x6c: ?
+- 0x6d: ?
+- 0x6e: pelvic bone?
+- 0x6f: hair base
+- 0x70: hair right 1
+- 0x71: hair right 2
+- 0x72: hair right 3
+- 0x73: ?
+- 0x74: hair left 1
+- 0x75: hair left 2
+- 0x76: hair left 3
+- 0x77: upper breast
+- 0x78: lower breast
+- 0x79: ?
+- 0x7a: ?
+- 0x7b: ?
+- 0x7c: ?
+- 0x7d: ?
+- 0x7e: ?
+- 0x7f: ?
+- 0x80: ?
+- 0x81: ?
+- 0x82: ?
+- 0x83: ?
+- 0x84: ?
+- 0x85: ?
+- 0x86: ?
+- 0x87: ?
+- 0x88: ?
+- 0x89: ?
+- 0x8a: ?
+- 0x8b: ?
+- 0x8c: ?
+- 0x8d: ?
 
 ## Character Animation IDs to Purpose
 
@@ -226,152 +371,6 @@ A bone animation header defines one or more key frames for a specific bone. The 
 - 01F1: Second person for 6X
 - 01F2: Third person for 6X
 - 01F4: Main person finishing 6X
-
-## Bone IDs
-
-- -1 - root?
-- 0 - Y
-- 1 - X
-- 2 - Z
-- 3 - hip
-- 4 - waist
-- 5 - breast
-- 6 - head
-- 7 - right collar
-- 8 - right high arm
-- 9 - right lower arm
-- 10 - right hand
-- 11 - left collar
-- 12 - left high arm
-- 13 - left lower arm
-- 14 - left hand
-- 15 - right high leg
-- 16 - right lower leg
-- 17 - right foot
-- 18 - left high leg
-- 19 - left lower leg
-- 20 - left foot
-- 21 - neck
-- 22 - ?
-- 23 - ?
-- 24 - ?
-- 25 - ?
-- 26 - ?
-- 27 - ?
-- 28 - ?
-- 29 - ?
-- 30 - right high arm ex
-- 31 - right high arm ex eff
-- 32 - ?
-- 33 - ?
-- 34 - ?
-- 35 - left high arm ex
-- 36 - left high arm ex eff
-- 37 - ?
-- 38 - ?
-- 39 - ?
-- 40 - right high leg EX
-- 41 - right high leg EX eff
-- 42 - ?
-- 43 - ?
-- 44 - ?
-- 45 - right toe
-- 46 - left high leg EX
-- 47 - left high leg EX eff
-- 48 - ?
-- 49 - ?
-- 50 - ?
-- 51 - left toe
-- 52 - ?
-- 53 - ?
-- 54 - ?
-- 55 - ?
-- 56 - ?
-- 57 - ?
-- 58 - ?
-- 59 - ?
-- 60 - right thumb 1
-- 61 - right thumb 2
-- 62 - right thumb 3
-- 63 - right index finger 1
-- 64 - right index finger 2
-- 65 - right index finger 3
-- 66 - right middle finger 1
-- 67 - right middle finger 2
-- 68 - right middle finger 3
-- 69 - right ring finger 1
-- 70 - right ring finger 2
-- 71 - right ring finger 3
-- 72 - right pinky 1
-- 73 - right pinky 2
-- 74 - right pinky 3
-- 75 - left thumb 1
-- 76 - left thumb 2
-- 77 - left thumb 3
-- 78 - left index finger 1
-- 79 - left index finger 2
-- 80 - left index finger 3
-- 81 - left middle finger 1
-- 82 - left middle finger 2
-- 83 - left middle finger 3
-- 84 - left ring finger 1
-- 85 - left ring finger 2
-- 86 - left ring finger 3
-- 87 - left pinky 1
-- 88 - left pinky 2
-- 89 - left pinky 3
-- 90 - ?
-- 91 - ?
-- 92 - mouth top lip
-- 93 - jaw
-- 94 - mouth right side
-- 95 - mouth left side
-- 96 - ?
-- 97 - ?
-- 98 - ?
-- 99 - ?
-- 100 - ?
-- 101 - ?
-- 102 - mouth bottom lip
-- 103 - ?
-- 104 - ?
-- 105 - ?
-- 106 - ?
-- 107 - ?
-- 108 - ?
-- 109 - ?
-- 110 - pelvic bone?
-- 111 - hair base
-- 112 - hair right 1
-- 113 - hair right 2
-- 114 - hair right 3
-- 115 - ?
-- 116 - hair left 1
-- 117 - hair left 2
-- 118 - hair left 3
-- 119 - upper breast
-- 120 - lower breast
-- 121 - ?
-- 122 - ?
-- 123 - ?
-- 124 - ?
-- 125 - ?
-- 126 - ?
-- 127 - ?
-- 128 - ?
-- 129 - ?
-- 130 - ?
-- 131 - ?
-- 132 - ?
-- 133 - ?
-- 134 - ?
-- 135 - ?
-- 136 - ?
-- 137 - ?
-- 138 - ?
-- 139 - ?
-- 140 - ?
-- 141 - ?
 
 ## Full List of MOT Files
 
