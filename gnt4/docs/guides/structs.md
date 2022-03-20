@@ -63,6 +63,14 @@ A multipler for calculating health. For example, Naruto has 0xDC total health an
 this results in a total health of 0xDC. But, when using the character modifier flag of "Health Boost Lv2", the health multiplier will instead be 0xC8. This will
 result in a total health of 0x1B8.
 
+#### 0x38: **Own SEQ struct**
+
+  - Contains information about the SEQ, starting offset found at offset 0x5C from the address stored in offset 0x1C
+
+#### 0x3C: **Opponent SEQ struct**
+
+  - Contains information about the SEQ, starting offset found at offset 0x5C from the address stored in offset 0x1C
+
 #### 0x40: **Opponent chr_p**
 
 Seems to be an opponent chr_p pointer. Referenced at dol address 0x800c02c8.
@@ -335,10 +343,10 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
 
 </details>
 
+#### 0x13c: **K2F Flags**
+
 <details>
   <summary>K2F Flag Values</summary>
-
-#### 0x13c: **K2F Flags**
 
   - `00000001` - YORO2: Feet trapped (air and ground)
   - `00000002` - HIKI: Swamp hole sink (jiraiya 2A)
@@ -808,6 +816,54 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 #### 0x2f8: **Grab Break Counter**
 
   - A counter that while it is not zero, you can break a grab. Seems to always be set to 0x300 at instruction 0x800b5144. Every frame subtracts 0x100 at instruction 0x8001aaec.
+
+#### 0x7d8: **Start String Offset**
+
+  - Where the offsets for all the characters strings start
+
+#### 0x7e0: **Something with Strings**
+
+  - 2 Bytes
+  - Set upon controller input
+  - POW is added to it
+  - If early, can be overwritten at a later frame
+  - Set to 0 if **PF FLAG** combo is not set and the value in 0x7f8 is < 0
+
+#### 0x7e2: **String Next ATK ID**
+
+  - 2 Bytes
+  - Set upon controller input
+
+#### 0x7e4: **Something with Strings**
+
+  - 2 Bytes
+  - Set to 0 if **PF FLAG** combo is not set and the value in 0x7f8 is < 0
+
+#### 0x7e6: **Something with Strings**
+
+  - 2 Bytes
+  - Set sometimes in strings
+  - Set to 0 if **PF FLAG** combo is not set and the value in 0x7f8 is < 0
+
+#### 0x7ec: **Something with Strings**
+
+  - 4 Bytes
+  - Set sometimes in strings
+
+#### 0x7f4: **Something with Strings**
+
+  - 2 Bytes
+  - Compared with 0x7f6
+
+#### 0x7f6: **Something with Strings**
+  
+  - 2 Bytes
+  - Seem to oscillate between 0 and 1
+
+#### 0x7f8: **0x7f6 previous value**
+
+  - 2 Bytes
+  - Value in 0x7f6 backed up here before being manipulated
 
 #### 0x854: **Transformation Flag**
 
