@@ -1,11 +1,12 @@
--- During seq file parsing will print the filename, seq file offset, opcode, and program counter
--- Make sure to change the filename from D:/test.log to something else before running.
--- Warning: The file fills up very quickly, it is recommended to instead use udp_gnt4.lua
+-- During seq file parsing will send UDP packets with the filename, seq file offset, opcode, and program counter
+-- The UDP packet will be sent over port 12198
 
-file = io.open("D:/test.log", "a")
-io.output(file)
-io.write("Begin seq_reader_gnt4.lua", "\n")
-io.write("File             Offset   Opcode   PC", "\n")
+socket = require("socket")
+udp = socket.udp()
+udp:settimeout(0)
+udp:setoption('reuseaddr',true)
+udp:setsockname('*', 1900)
+udp:setpeername('localhost', 12198) -- Echo IP and Port number
 
 function parse_seq()
     -- The start of the seq file is at *(int *)(seq_p[5] + 0x5c)
@@ -18,24 +19,22 @@ function parse_seq()
 
     -- Calculate the offset in the seq file
     seq_offset = seq_pc - seq_start
-    offset_str = string.format("%08x ", seq_offset)
+    offset_str = string.format("%08x,", seq_offset)
 
     -- Get the file name, which can be found at seq_p[8][5]
     file_entry = dolphin.mem_u32[seq_p + 0x20]
     file_name = dolphin.str_read(file_entry + 0x14, 0x10)
-    file_name_str = string.format("%-16s ", string.sub(file_name, 0, string.len(file_name) - 1))
+    file_name_str = string.format("%-15s,", string.sub(file_name, 0, string.len(file_name) - 1))
 
     -- Get the current opcode being executed
     opcode = dolphin.mem_u32[seq_pc]
-    opcode_str = string.format("%08x ", opcode)
+    opcode_str = string.format("%08x,", opcode)
 
     -- Get the program counter
     pc = dolphin.ppc.pc
-    pc_str = string.format("%08x ", pc)
-
-    -- Append the data to the log file
-    io.write(file_name_str, offset_str, opcode_str, pc_str, "\n")
-	io.flush()
+    pc_str = string.format("%08x", pc)
+    full_str = file_name_str .. offset_str .. opcode_str .. pc_str
+    udp:send(full_str)
 end
 
 -- The below four hooks occur in the function seq_parse (0x800c8f38)
