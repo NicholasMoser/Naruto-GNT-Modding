@@ -6,6 +6,10 @@ HAL Labs HSD Model format. The same model format used for Super Smash Bros Melee
 
 These models originally created by Eighting were created in the now defunct software [Softimage](https://en.wikipedia.org/wiki/Autodesk_Softimage). These models were then converted to the Hal Labs HSD model format. We know this is true because the the DAT files have the save signature in the hex representing Softimage.
 
+## Model Identification
+
+In `chr` folders, `0000.dat` is the primary costume model. `0100.dat` is the secondary costume model. If they exist, `0200.dat` and `0300.dat` are the third and fourth costumes.
+
 ## Replacing Models
 
 It is possible to replace models in GNT4 with models from outside GNT4. The steps below will describe how to do this.
