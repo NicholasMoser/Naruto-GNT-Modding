@@ -19,21 +19,21 @@ function parse_seq()
 
     -- Calculate the offset in the seq file
     seq_offset = seq_pc - seq_start
-    offset_str = string.format("%08x,", seq_offset)
+    offset_str = string.format("%08x ", seq_offset)
 
     -- Get the file name, which can be found at seq_p[8][5]
     file_entry = dolphin.mem_u32[seq_p + 0x20]
     file_name = dolphin.str_read(file_entry + 0x14, 0x10)
-    file_name_str = string.format("%-15s,", string.sub(file_name, 0, string.len(file_name) - 1))
+    file_name_str = string.format("%-15s", string.sub(file_name, 0, string.len(file_name) - 1))
 
     -- Get the current opcode being executed
     opcode = dolphin.mem_u32[seq_pc]
-    opcode_str = string.format("%08x,", opcode)
+    opcode_str = string.format("%08x ", opcode)
 
     -- Get the program counter
     pc = dolphin.ppc.pc
-    pc_str = string.format("%08x", pc)
-    full_str = file_name_str .. offset_str .. opcode_str .. pc_str
+    pc_str = string.format("%08x ", pc)
+    full_str = offset_str .. opcode_str .. pc_str .. file_name_str
     udp:send(full_str)
 end
 
