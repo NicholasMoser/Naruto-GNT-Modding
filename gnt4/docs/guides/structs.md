@@ -550,7 +550,7 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
 
   - `00000001` - DMGOFF
   - `00000002` - TYAKURASUB
-  - `00000004` - DISPOFF: Turns off the display for the character model.
+  - `00000004` - DISPOFF: Turns off the display for the character model. Halts synchronous timers.
   - `00000008` - TAKEONOFF
   - `00000010` - CHGNOATTACK
   - `00000020` - CHGNODMG
