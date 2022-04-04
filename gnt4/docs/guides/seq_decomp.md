@@ -571,7 +571,10 @@ The first parameter `seq_p` is a pointer to a variety of information related to 
 
 seq_p->seq_p_sp is field 0x20 on seq_p, and seems to have lots of interesting data in it.
 
-seq_p->seq_p_sp->field_0x38 = Pointer to a chr_p (not sure which character)?
+seq_p->seq_p_sp->field_0x1c = Battle frame count. Number of frames since the battle started.
+seq_p->seq_p_sp->field_0x2c = Used in synchronous timers. How much to subtract from the timer per frame, seems to default to 0x100.
+seq_p->seq_p_sp->field_0x38 = Pointer to this character's chr_p.
+seq_p->seq_p_sp->field_0x3c = Pointer to the opposing character's chr_p.
 seq_p->seq_p_sp->field_0x98->field_0x18 = Character index (player 1, player 2, player 3, player 4)?
 
 ### reg_p
