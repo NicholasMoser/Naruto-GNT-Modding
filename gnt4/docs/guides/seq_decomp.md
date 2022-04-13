@@ -368,32 +368,32 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 
 | Opcode | Offset | Code Pointer | Purpose                                          |
 |--------|--------|--------------|--------------------------------------------------|
-| 0x0    | 0x0    | 800A6068     | Termination                                      |
-| 0x1    | 0x4    | 800A5698     | Branching                                        |
-| 0x2    | 0x8    | 800A52F8     |                                                  |
-| 0x3    | 0xc    | 800A51B0     | Moving ints                                      |
-| 0x4    | 0x10   | 800A4B40     | Comparing `int`s                                 |
-| 0x5    | 0x14   | 800A44C4     | Comparing `byte`s                                |
-| 0x6    | 0x18   | 800A3ED4     | Comparing `short`s                               |
-| 0x7    | 0x1c   | 800A3888     |                                                  |
-| 0x8    | 0x20   | 800A32C0     | Comparing `float`s                               |
-| 0x9    | 0x24   | 800A2A8C     |                                                  |
-| 0xa    | 0x28   | 800A274C     |                                                  |
-| 0xb    | 0x2c   | 800A1C5C     |                                                  |
-| 0xc    | 0x30   | 800A1894     | Call mtx functions                               |
-| 0xd    | 0x34   | 800A188C     | Empty and unused                                 |
-| 0xe    | 0x38   | 800AA9B8     |                                                  |
-| 0xf    | 0x3c   | 800AA430     |                                                  |
-| 0x10   | 0x40   | 800A9C1C     | Call HSD functions                               |
-| 0x11   | 0x44   | 800A99F0     |                                                  |
+| 0x0    | 0x0    | 800A6068     | SEQ_CmdSEQ1                                      |
+| 0x1    | 0x4    | 800A5698     | SEQ_CmdSEQ2                                      |
+| 0x2    | 0x8    | 800A52F8     | SEQ_CmdTSK                                       |
+| 0x3    | 0xc    | 800A51B0     | SEQ_CmdREG                                       |
+| 0x4    | 0x10   | 800A4B40     | SEQ_CmdI                                         |
+| 0x5    | 0x14   | 800A44C4     | SEQ_CmdIC                                        |
+| 0x6    | 0x18   | 800A3ED4     | SEQ_CmdIS                                        |
+| 0x7    | 0x1c   | 800A3888     | SEQ_CmdIL                                        |
+| 0x8    | 0x20   | 800A32C0     | SEQ_CmdF                                         |
+| 0x9    | 0x24   | 800A2A8C     | SEQ_CmdP                                         |
+| 0xa    | 0x28   | 800A274C     | SEQ_CmdIV                                        |
+| 0xb    | 0x2c   | 800A1C5C     | SEQ_CmdFV                                        |
+| 0xc    | 0x30   | 800A1894     | SEQ_CmdFM                                        |
+| 0xd    | 0x34   | 800A188C     | SEQ_CmdRGB                                       |
+| 0xe    | 0x38   | 800AA9B8     | SEQ_CmdMEM                                       |
+| 0xf    | 0x3c   | 800AA430     | SEQ_CmdFILE                                      |
+| 0x10   | 0x40   | 800A9C1C     | SEQ_CmdGOBJ                                      |
+| 0x11   | 0x44   | 800A99F0     | SEQ_CmdOBJ                                       |
 | 0x12   | 0x48   | 800A8E68     |                                                  |
 | 0x13   | 0x4c   | 800A8594     |                                                  |
 | 0x14   | 0x50   | 800A76EC     |                                                  |
-| 0x15   | 0x54   | 800A75C0     |                                                  |
+| 0x15   | 0x54   | 800A75C0     | SEQ_CmdPAUSE                                     |
 | 0x16   | 0x58   | 800A7204     | Sounds                                           |
 | 0x17   | 0x5c   | 800A713C     |                                                  |
 | 0x18   | 0x60   | 800A7054     |                                                  |
-| 0x19   | 0x64   | 800A6B1C     |                                                  |
+| 0x19   | 0x64   | 800A6B1C     | SEQ_CmdPRT                                       |
 | 0x1a   | 0x68   | 800A6458     | Call HSD functions                               |
 | 0x1b   | 0x6c   | 800A6324     |                                                  |
 | 0x1c   | 0x70   | 800A6228     |                                                  |
