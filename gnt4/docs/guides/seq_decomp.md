@@ -615,9 +615,9 @@ The structs for `reg_p` seem to all be next to each other in memory.
 - reg_p[0x10]: Possibly a general purpose register (`gpr16`).
 - reg_p[0x11]: Possibly a general purpose register (`gpr17`).
 - reg_p[0x12]: Possibly a general purpose register (`gpr18`).
-- reg_p[0x13]: Currently unknown, appears to be used alongside the Comparison Register (`cr`).
+- reg_p[0x13]: Currently unknown, appears to be used alongside the Condition Register (`cr`).
 - reg_p[0x14]: Count Register (`ctr`). Holds a counter. Set by opcode 0402 (reg_p[0x15] also is set to this counter) and read/decremented by opcode 013B.
-- reg_p[0x15]: Comparison Register (`cr`). Holds values to be compared for branching. Set by opcode group 04 and compared in opcode group 01.
+- reg_p[0x15]: Condition Register (`cr`). Holds values to be compared for branching. Set by opcode group 04 and compared in opcode group 01.
 - reg_p[0x16]: Stored PC (`stored_pc`). Holds a program counter while the program counter is reset to zero. Set by opcode 0100 and 0101 and used in the function `seq_parse(...)`. Reset by opcode 0001.
 - reg_p[0x17]: Stack Pointer (`sp`). The stack pointer to push and pop values from, such as return addresses for subroutine calls.
 
