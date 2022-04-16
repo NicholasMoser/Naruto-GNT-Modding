@@ -68,3 +68,9 @@ Kabuto does 2X on Kurenai. For more info see
 040000cc 00000000
 04171a84 60030000
 ```
+
+### Force 50 FPS (PAL) [Nick]
+
+```gecko
+04171a84 60030000
+```
