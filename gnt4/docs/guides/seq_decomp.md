@@ -591,6 +591,12 @@ So for example, `game00.seq` starts with `0x00000006`, so it will initialize a `
 
 The third parameter `pc` is a pointer to the current opcode being executed in the seq file. It will move from opcode to opcode and branch when told to. When set to 0 it will cease executing opcodes.
 
+## Operand Names
+
+- `op1` - The operand from `SEQ_RegCMD1` or the first operand from `SEQ_RegCMD2`.
+- `op2` - The second operand from `SEQ_RegCMD2`.
+- `varX` - An operand that follows after the opcode word, where X is the index (starting at 1).
+
 ## Known Values
 
 The structs for `reg_p` seem to all be next to each other in memory.
