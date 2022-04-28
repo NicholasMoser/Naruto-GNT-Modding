@@ -890,6 +890,10 @@ You can view the English names given to them by Eighting in CON2 in the item vie
   - 0 is Tsunade, 2 is Tsunade Healing from 2X
   - 8 is unknown but used in some places like 0x8003e470
 
+#### 0x894: **Air Fall Combo Counter**
+
+The current combo count against this character, used to slowly increase gravity as the combo continues. Written to at 0x8003a884 and sometimes 0x8003bb04 in `damage_stuff`. Read from functions `calculate_air_fall_1` and `calculate_air_fall_2`.
+
 #### 0x87c: **SF Flags**
 
 <details>
