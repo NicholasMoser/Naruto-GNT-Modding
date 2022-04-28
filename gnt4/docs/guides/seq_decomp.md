@@ -368,32 +368,32 @@ The highest value that can come from this math is `0x3fc`, so the opcode pointer
 
 | Opcode | Offset | Code Pointer | Purpose                                          |
 |--------|--------|--------------|--------------------------------------------------|
-| 0x0    | 0x0    | 800A6068     | Termination                                      |
-| 0x1    | 0x4    | 800A5698     | Branching                                        |
-| 0x2    | 0x8    | 800A52F8     |                                                  |
-| 0x3    | 0xc    | 800A51B0     | Moving ints                                      |
-| 0x4    | 0x10   | 800A4B40     | Comparing `int`s                                 |
-| 0x5    | 0x14   | 800A44C4     | Comparing `byte`s                                |
-| 0x6    | 0x18   | 800A3ED4     | Comparing `short`s                               |
-| 0x7    | 0x1c   | 800A3888     |                                                  |
-| 0x8    | 0x20   | 800A32C0     | Comparing `float`s                               |
-| 0x9    | 0x24   | 800A2A8C     |                                                  |
-| 0xa    | 0x28   | 800A274C     |                                                  |
-| 0xb    | 0x2c   | 800A1C5C     |                                                  |
-| 0xc    | 0x30   | 800A1894     | Call mtx functions                               |
-| 0xd    | 0x34   | 800A188C     | Empty and unused                                 |
-| 0xe    | 0x38   | 800AA9B8     |                                                  |
-| 0xf    | 0x3c   | 800AA430     |                                                  |
-| 0x10   | 0x40   | 800A9C1C     | Call HSD functions                               |
-| 0x11   | 0x44   | 800A99F0     |                                                  |
+| 0x0    | 0x0    | 800A6068     | SEQ_CmdSEQ1                                      |
+| 0x1    | 0x4    | 800A5698     | SEQ_CmdSEQ2                                      |
+| 0x2    | 0x8    | 800A52F8     | SEQ_CmdTSK                                       |
+| 0x3    | 0xc    | 800A51B0     | SEQ_CmdREG                                       |
+| 0x4    | 0x10   | 800A4B40     | SEQ_CmdI                                         |
+| 0x5    | 0x14   | 800A44C4     | SEQ_CmdIC                                        |
+| 0x6    | 0x18   | 800A3ED4     | SEQ_CmdIS                                        |
+| 0x7    | 0x1c   | 800A3888     | SEQ_CmdIL                                        |
+| 0x8    | 0x20   | 800A32C0     | SEQ_CmdF                                         |
+| 0x9    | 0x24   | 800A2A8C     | SEQ_CmdP                                         |
+| 0xa    | 0x28   | 800A274C     | SEQ_CmdIV                                        |
+| 0xb    | 0x2c   | 800A1C5C     | SEQ_CmdFV                                        |
+| 0xc    | 0x30   | 800A1894     | SEQ_CmdFM                                        |
+| 0xd    | 0x34   | 800A188C     | SEQ_CmdRGB                                       |
+| 0xe    | 0x38   | 800AA9B8     | SEQ_CmdMEM                                       |
+| 0xf    | 0x3c   | 800AA430     | SEQ_CmdFILE                                      |
+| 0x10   | 0x40   | 800A9C1C     | SEQ_CmdGOBJ                                      |
+| 0x11   | 0x44   | 800A99F0     | SEQ_CmdOBJ                                       |
 | 0x12   | 0x48   | 800A8E68     |                                                  |
 | 0x13   | 0x4c   | 800A8594     |                                                  |
 | 0x14   | 0x50   | 800A76EC     |                                                  |
-| 0x15   | 0x54   | 800A75C0     |                                                  |
+| 0x15   | 0x54   | 800A75C0     | SEQ_CmdPAUSE                                     |
 | 0x16   | 0x58   | 800A7204     | Sounds                                           |
 | 0x17   | 0x5c   | 800A713C     |                                                  |
 | 0x18   | 0x60   | 800A7054     |                                                  |
-| 0x19   | 0x64   | 800A6B1C     |                                                  |
+| 0x19   | 0x64   | 800A6B1C     | SEQ_CmdPRT                                       |
 | 0x1a   | 0x68   | 800A6458     | Call HSD functions                               |
 | 0x1b   | 0x6c   | 800A6324     |                                                  |
 | 0x1c   | 0x70   | 800A6228     |                                                  |
@@ -571,7 +571,10 @@ The first parameter `seq_p` is a pointer to a variety of information related to 
 
 seq_p->seq_p_sp is field 0x20 on seq_p, and seems to have lots of interesting data in it.
 
-seq_p->seq_p_sp->field_0x38 = Pointer to a chr_p (not sure which character)?
+seq_p->seq_p_sp->field_0x1c = Battle frame count. Number of frames since the battle started.
+seq_p->seq_p_sp->field_0x2c = Used in synchronous timers. How much to subtract from the timer per frame, seems to default to 0x100.
+seq_p->seq_p_sp->field_0x38 = Pointer to this character's chr_p.
+seq_p->seq_p_sp->field_0x3c = Pointer to the opposing character's chr_p.
 seq_p->seq_p_sp->field_0x98->field_0x18 = Character index (player 1, player 2, player 3, player 4)?
 
 ### reg_p
@@ -587,6 +590,12 @@ So for example, `game00.seq` starts with `0x00000006`, so it will initialize a `
 ### pc
 
 The third parameter `pc` is a pointer to the current opcode being executed in the seq file. It will move from opcode to opcode and branch when told to. When set to 0 it will cease executing opcodes.
+
+## Operand Names
+
+- `op1` - The operand from `SEQ_RegCMD1` or the first operand from `SEQ_RegCMD2`.
+- `op2` - The second operand from `SEQ_RegCMD2`.
+- `varX` - An operand that follows after the opcode word, where X is the index (starting at 1).
 
 ## Known Values
 
@@ -612,9 +621,9 @@ The structs for `reg_p` seem to all be next to each other in memory.
 - reg_p[0x10]: Possibly a general purpose register (`gpr16`).
 - reg_p[0x11]: Possibly a general purpose register (`gpr17`).
 - reg_p[0x12]: Possibly a general purpose register (`gpr18`).
-- reg_p[0x13]: Currently unknown, appears to be used alongside the Comparison Register (`cr`).
+- reg_p[0x13]: Currently unknown, appears to be used alongside the Condition Register (`cr`).
 - reg_p[0x14]: Count Register (`ctr`). Holds a counter. Set by opcode 0402 (reg_p[0x15] also is set to this counter) and read/decremented by opcode 013B.
-- reg_p[0x15]: Comparison Register (`cr`). Holds values to be compared for branching. Set by opcode group 04 and compared in opcode group 01.
+- reg_p[0x15]: Condition Register (`cr`). Holds values to be compared for branching. Set by opcode group 04 and compared in opcode group 01.
 - reg_p[0x16]: Stored PC (`stored_pc`). Holds a program counter while the program counter is reset to zero. Set by opcode 0100 and 0101 and used in the function `seq_parse(...)`. Reset by opcode 0001.
 - reg_p[0x17]: Stack Pointer (`sp`). The stack pointer to push and pop values from, such as return addresses for subroutine calls.
 

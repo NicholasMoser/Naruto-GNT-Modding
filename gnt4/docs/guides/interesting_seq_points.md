@@ -5,18 +5,20 @@
 04F00: Where costume selection button inputs are processed
 
 ```
-04F00 | andws {04034400 00000028 3F000000 00000100} EA: *gpr4 + offset 0x00000028; EA: Immediate value offset 0x4f0c (0x00000100)
-04F10 | bnez 0xEC68 {01340000 0000EC68} // A
-04F18 | andws {04034400 00000028 3F000000 00000800} EA: *gpr4 + offset 0x00000028; EA: Immediate value offset 0x4f24 (0x00000800)
-04F28 | bnez 0xEC98 {01340000 0000EC98} // Y
-04F30 | andws {04034400 00000028 3F000000 00000400} EA: *gpr4 + offset 0x00000028; EA: Immediate value offset 0x4f3c (0x00000400)
-04F40 | bnez 0xECC8 {01340000 0000ECC8} // X
-04F48 | andws {04034400 00000028 3F000000 00000010} EA: *gpr4 + offset 0x00000028; EA: Immediate value offset 0x4f54 (0x00000010)
-04F58 | bnez 0xED0C {01340000 0000ED0C} // Z
-04F60 | andws {04034400 00000028 3F000000 00000200} EA: *gpr4 + offset 0x00000028; EA: Immediate value offset 0x4f6c (0x00000200)
-04F70 | bnez 0x5C70 {01340000 00005C70} // B?
-04F78 | blr {01450000}
+04F00 | and. *gpr4 + offset 0x28, 0x100 {04034400 00000028 3F000000 00000100}
+04F10 | bnez 0xEC68 01340000 0000EC68 // A
+04F18 | and. *gpr4 + offset 0x28, 0x800 {04034400 00000028 3F000000 00000800}
+04F28 | bnez 0xEC98 01340000 0000EC98 // Y
+04F30 | and. *gpr4 + offset 0x28, 0x400 {04034400 00000028 3F000000 00000400}
+04F40 | bnez 0xECC8 01340000 0000ECC8 // X
+04F48 | and. *gpr4 + offset 0x28, 0x10 {04034400 00000028 3F000000 00000010}
+04F58 | bnez 0xED0C 01340000 0000ED0C // Z
+04F60 | and. *gpr4 + offset 0x28, 0x200 {04034400 00000028 3F000000 00000200}
+04F70 | bnez 0x5C70 01340000 00005C70 // B?
+04F78 | blr 01450000
 ```
+
+Note: Other buttons could be checked here. `R` is 0x20, `L` is 0x40, `Start` is 0x1000, `Control Stick` and `C-Stick` are also accessible in the top two bytes.
 
 5708: Breaks here to offset 0x571c if extra costumes are being used
 

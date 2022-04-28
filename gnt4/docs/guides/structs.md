@@ -550,7 +550,7 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
 
   - `00000001` - DMGOFF
   - `00000002` - TYAKURASUB
-  - `00000004` - DISPOFF: Turns off the display for the character model.
+  - `00000004` - DISPOFF: Turns off the display for the character model. Halts synchronous timers.
   - `00000008` - TAKEONOFF
   - `00000010` - CHGNOATTACK
   - `00000020` - CHGNODMG
@@ -647,11 +647,25 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 #### 0x1a4: **Z Position**
 
+#### 0x1cc: Movement Flags
+
+  - Set to 0x1 if being pushed horizontally or vertically (fields 0x1d4 and 0x1dc). Sometimes set to 0x2 when doing other things like walking.
+
 #### 0x1bc: **Facing Opponent**
 
   - A signed short representing the degree to which you are facing the opponent. 0 is directly facing the opponent, −32,767 is directly facing away from your opponent.
 
-#### 0x1dc: **Vertical Speed**
+#### 0x1d4: **Horizontal Push Speed**
+
+  - A float value representing a push or pull horizontally on the character. Normally 0. Positive pushes the character forward, negative pulls them backwards. Kinda looks like a [Raging Demon](https://streetfighter.fandom.com/wiki/Shun_Goku_Satsu).
+
+#### 0x1d4: **Horizontal Push Acceleration**
+
+  - A float value representing the amount to decrease Horizontal Push Speed (field 0x1d4) per frame. Positive increases it, negative decreases it.
+
+#### 0x1dc: **Vertical Push Speed**
+
+  - A float value representing how fast you are moving up or down. Normally 0. When jumping starts at 1.42, peaks at 0, and ends at -1.56. Positive is moving up, negative is moving down.
 
 #### 0x1e0: **Gravitational Constant**
 
@@ -882,6 +896,11 @@ You can view the English names given to them by Eighting in CON2 in the item vie
   - 0 is Gai, 2 is First Gate.
   - 0 is Sakon, 0x2002 is Ukon.
   - 0 is Tsunade, 2 is Tsunade Healing from 2X
+  - 8 is unknown but used in some places like 0x8003e470
+
+#### 0x894: **Air Fall Combo Counter**
+
+The current combo count against this character, used to slowly increase gravity as the combo continues. Written to at 0x8003a884 and sometimes 0x8003bb04 in `damage_stuff`. Read from functions `calculate_air_fall_1` and `calculate_air_fall_2`.
 
 #### 0x87c: **SF Flags**
 
