@@ -675,6 +675,10 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 #### 0x1f8: **Knockback Acceleration**
 
+#### 0x230: **chr_tbl**
+
+  - Pointer to memory address for characters chr_tbl
+
 #### 0x238: **Act Counter Difference**
 
   - The amount to add to the **Act Counter** every frame.
@@ -748,7 +752,7 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 #### 0x298: **Max Block Guard**
 
-### 0x29c: **GRD**
+#### 0x29c: **GRD**
 
   - GRD value current attack
 
@@ -830,6 +834,10 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 #### 0x2f8: **Grab Break Counter**
 
   - A counter that while it is not zero, you can break a grab. Seems to always be set to 0x300 at instruction 0x800b5144. Every frame subtracts 0x100 at instruction 0x8001aaec.
+
+#### 0x54c: **Active Throws**
+
+  - Pointer to where in memory the available throws are defined
 
 #### 0x7d8: **Start String Offset**
 
