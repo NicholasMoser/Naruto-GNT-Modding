@@ -679,6 +679,10 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
   - Pointer to memory address for characters chr_tbl
 
+#### 0x234: **chr_cam**
+
+  - Offset in seq file for characters chr_cam
+
 #### 0x238: **Act Counter Difference**
 
   - The amount to add to the **Act Counter** every frame.
