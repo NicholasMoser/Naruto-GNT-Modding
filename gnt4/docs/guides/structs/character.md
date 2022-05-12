@@ -43,11 +43,11 @@ The "controller" of the player, e.g. 0x0 through 0x3.
 
   - 0 if a player, other values if non-player controlled.
 
-### 0x14: **Player ID**
+### 0x14: **Player ID 2**
 
 The "controller" of the player, e.g. 0x0 through 0x3.
 
-### 0x18: **Player ID**
+### 0x18: **Player ID 3**
 
 The "controller" of the player, e.g. 0x0 through 0x3.
 
@@ -481,10 +481,10 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
   - `00001000` - SPOSE
   - `00002000` - LEVERREV
   - `00004000` - ATKCAN
-  - `00008000` - OFFBEAST: Screen flash.
-  - `00010000` - HOPUP
-  - `00020000` - WARP
-  - `00040000` - FIX
+  - `00008000` - OFFBEAST: Screen flash
+  - `00010000` - HOPUP: Screen blur
+  - `00020000` - WARP: Warp this character in front of the opponent
+  - `00040000` - FIX: Pushes this character in front of the opponent
   - `00080000` - TAKEON
   - `00100000` - RINGOUT
   - `00200000` - TFAIL
@@ -645,19 +645,19 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 ### 0x1a4: **Z Position**
 
-### 0x1cc: Movement Flags
-
-  - Set to 0x1 if being pushed horizontally or vertically (fields 0x1d4 and 0x1dc). Sometimes set to 0x2 when doing other things like walking.
-
 ### 0x1bc: **Facing Opponent**
 
   - A signed short representing the degree to which you are facing the opponent. 0 is directly facing the opponent, −32,767 is directly facing away from your opponent.
+
+### 0x1cc: Movement Flags
+
+  - Set to 0x1 if being pushed horizontally or vertically (fields 0x1d4 and 0x1dc). Sometimes set to 0x2 when doing other things like walking.
 
 ### 0x1d4: **Horizontal Push Speed**
 
   - A float value representing a push or pull horizontally on the character. Normally 0. Positive pushes the character forward, negative pulls them backwards. Kinda looks like a [Raging Demon](https://streetfighter.fandom.com/wiki/Shun_Goku_Satsu).
 
-### 0x1d4: **Horizontal Push Acceleration**
+### 0x1d8: **Horizontal Push Acceleration**
 
   - A float value representing the amount to decrease Horizontal Push Speed (field 0x1d4) per frame. Positive increases it, negative decreases it.
 
@@ -665,11 +665,13 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
   - A float value representing how fast you are moving up or down. Normally 0. When jumping starts at 1.42, peaks at 0, and ends at -1.56. Positive is moving up, negative is moving down.
 
-### 0x1e0: **Gravitational Constant**
+### 0x1e0: **Vertical Push Acceleration**
+
+- Also known as gravity.
 
 ### 0x1e8: **Horizontal Air Speed**
 
-### 0x1f4: **Knockback Velocity**
+### 0x1f4: **Knockback Speed**
 
 ### 0x1f8: **Knockback Acceleration**
 
@@ -689,7 +691,7 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
   - Current Action ID
 
-### 0x240: **Act ID2**
+### 0x240: **Act ID 2**
 
   - Current Action ID again
 
@@ -900,10 +902,6 @@ You can view the English names given to them by Eighting in CON2 in the item vie
   - 0 is Tsunade, 2 is Tsunade Healing from 2X
   - 8 is unknown but used in some places like 0x8003e470
 
-### 0x894: **Air Fall Combo Counter**
-
-The current combo count against this character, used to slowly increase gravity as the combo continues. Written to at 0x8003a884 and sometimes 0x8003bb04 in `damage_stuff`. Read from functions `calculate_air_fall_1` and `calculate_air_fall_2`.
-
 ### 0x87c: **SF Flags**
 
 <details>
@@ -943,6 +941,10 @@ The current combo count against this character, used to slowly increase gravity 
   - `80000000` - 31
 
 </details>
+
+### 0x894: **Air Fall Combo Counter**
+
+The current combo count against this character, used to slowly increase gravity as the combo continues. Written to at 0x8003a884 and sometimes 0x8003bb04 in `damage_stuff`. Read from functions `calculate_air_fall_1` and `calculate_air_fall_2`.
 
 ### 0x8C8: **Synchronous timer**
 
