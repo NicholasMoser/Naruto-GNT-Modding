@@ -889,6 +889,17 @@ You can view the English names given to them by Eighting in CON2 in the item vie
   - 2 Bytes
   - Value in 0x7f6 backed up here before being manipulated
 
+### 0x800: **capture\_state\_attack**
+
+  - Signed short
+  - Normally -1
+  - Set to attack id of the capture state move
+  - Opponent act forced to 0xF0 + value set here
+
+### 0x808: **capture\_range?**
+  
+  - If small, the opponent will not get captured
+
 ### 0x854: **Transformation Flag**
 
   - 0 is Naruto, 2 is ZTK.
