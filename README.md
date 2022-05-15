@@ -56,6 +56,8 @@ Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.c
 
 [Gecko Codes](/gnt4/docs/guides/gecko_codes.md)
 
+[Tournament Edition](/gnt4/docs/guides/tournament_edition.md)
+
 [File Formats](/gnt4/docs/file_formats/formats.md)
 
 [Stage Modding](/gnt4/docs/guides/stage_modding.md)
