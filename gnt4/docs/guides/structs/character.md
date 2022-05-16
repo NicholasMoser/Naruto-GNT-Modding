@@ -639,6 +639,12 @@ You can view the English names given to them by Eighting in CON2 in the item vie
   - Capture state tally, for attacks that add to combo counter inside of capture state, e.g. supers, or anko 4B(B) second hit
   - Added to Combo Count 1 to get combo count
 
+### 0x168: **Hitbox Struct**
+
+  - A struct where one of the fields stores active hitboxes and other stuff.
+  - Modified in `create_hitbox`
+  - Offset 0x3c: Pointer to hitboxes, where each hitbox is 0x40 bytes. Appears to be a maximum of 0x14 hitboxes allowed so 0x500 bytes total.
+
 ### 0x19c: **X Position**
 
 ### 0x1a0: **Y Position**
@@ -783,9 +789,11 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 ### 0x2b4: **Synchronous timer after hitbox**
 
+Neutral in this case means idling and is represented by END in ATK debug menu.
+
   - FFFFFFFF in neutral
   - 00000000 at start of action
-  - Count up 100 from 0 each frame after hitbox disappear
+  - Count up 100 from 0 each frame after hitbox disappear (at instruction 0x80017200)
 
 ### 0x2b8: **Attack Angle**
 
