@@ -492,7 +492,7 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
   - `00800000` - TDOWN
   - `01000000` - COMBO0
   - `02000000` - COMBO1
-  - `04000000` - TESCAPE
+  - `04000000` - TESCAPE: Set to the attacker and defender when a throw break occurs
   - `08000000` - BDRIVE
   - `10000000` - FLAG0
   - `20000000` - FLAG1
