@@ -40,6 +40,18 @@ You can see the SEQ code change for this below:
 
 ![CS2 Sasuke Code Change](/gnt4/images/te/cs2_code_change.png?raw=true "CS2 Sasuke Code Change")
 
+### Menu Changes
+
+`char_sel.seq` had a new function added to it at offset 0x9EC.
+
+Before
+
+![char_sel.seq before](/gnt4/images/te/char_sel_before.png?raw=true "char_sel.seq before")
+
+After
+
+![char_sel.seq after](/gnt4/images/te/char_sel_after.png?raw=true "char_sel.seq after")
+
 ## How to Play
 
 The easiest way to play the tournament edition is to patch your [ripped copy of GNT4](https://dolphin-emu.org/docs/guides/ripping-games/). Right click on your GNT4 ISO in Dolphin and select **Properties**. Go to the **Verify** tab and hit the button **Verify Integrity**.
