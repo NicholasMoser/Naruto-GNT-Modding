@@ -21,6 +21,21 @@ c2055264 00000005
 041712A8 60030000
 ```
 
+### X and X+Y Do Not Throw Break [Nick]
+
+When you don't have full chakra, you can mash X for easy throw breaks. This code disables X as a throw break button completely to disable that.
+
+When you press X+Y on the same frame your character does not do anything. X+Y is also capable of throw breaking, so you can set X+Y to a macro for easier throw breaks. This code disables X+Y as a throw break button completely to disable that.
+
+```gecko
+040739BC 54000676
+C20739B8 00000004
+801F0B98 700000C0
+2C0000C0 4082000C
+38000000 48000008
+801F0B98 00000000
+```
+
 ### LNP Always Activated [Nick]
 
 ```gecko
@@ -91,4 +106,19 @@ Kabuto does 2X on Kurenai. For more info see
 0437ae58 00000000
 0437ae5c 00000008
 042837d8 48000020
+```
+
+### X and X+Y Do Not Throw Break (PAL) [Nick]
+
+When you don't have full chakra, you can mash X for easy throw breaks. This code disables X as a throw break button completely to disable that.
+
+When you press X+Y on the same frame your character does not do anything. X+Y is also capable of throw breaking, so you can set X+Y to a macro for easier throw breaks. This code disables X+Y as a throw break button completely to disable that.
+
+```gecko
+04073f28 54000676
+C2073f24 00000004
+801F0B98 700000C0
+2C0000C0 4082000C
+38000000 48000008
+801F0B98 00000000
 ```
