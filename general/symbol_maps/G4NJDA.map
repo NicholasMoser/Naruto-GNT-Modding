@@ -637,7 +637,7 @@
 8003e1b8 000000f4 8003e1b8 0 zz_8003e1b8_ 	battle.o
 8003e2ac 000000fc 8003e2ac 0 damage_multiplier 	battle.o
 8003e3a8 00000058 8003e3a8 0 zz_8003e3a8_ 	battle.o
-8003e400 0000006c 8003e400 0 zz_8003e400_ 	battle.o
+8003e400 0000006c 8003e400 0 heal_chr 	battle.o
 8003e46c 0000018c 8003e46c 0 calculate_new_chakra 	battle.o
 8003e5f8 000009f4 8003e5f8 0 damage_handler 	battle.o
 8003efec 000000d8 8003efec 0 guard_break_check 	battle.o
@@ -1965,7 +1965,7 @@
 800bb5f8 000001a8 800bb5f8 0 seq_opcode_group_1E 	seq.o
 800bb7a0 000002a8 800bb7a0 0 seq_opcode_group_1D 	seq.o
 800bba48 000000e0 800bba48 0 zz_800bba48_ 	seq.o
-800bbb28 000007dc 800bbb28 0 zz_800bbb28_ 	seq.o
+800bbb28 000007dc 800bbb28 0 training_mode_logic 	seq.o
 800bc304 000003d4 800bc304 0 zz_800bc304_ 	seq.o
 800bc6d8 000001d0 800bc6d8 0 zz_800bc6d8_ 	seq.o
 800bc8a8 0000173c 800bc8a8 0 zz_800bc8a8_ 	seq.o
