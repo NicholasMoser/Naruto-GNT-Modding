@@ -55,6 +55,10 @@ The "controller" of the player, e.g. 0x0 through 0x3.
 
   - See [INTERNAL_CHAR_ORDER](https://github.com/NicholasMoser/GNTool/blob/3.7/src/main/java/com/github/nicholasmoser/gnt4/GNT4Characters.java#L105)
 
+### 0x24: **Transform Model Flag**
+
+A flag to set if the character model is to be transformed in some way. One example is to set it to 1 when Choji enlarges during certain attacks. It is also apparently used by Akamaru for something. Used by opcode `2108`.
+
 ### 0x30: **Health Multipler**
 
 A multipler for calculating health. For example, Naruto has 0xDC total health and a health multiplier of 0x64. After some calculations around instruction 0x8003f674,
