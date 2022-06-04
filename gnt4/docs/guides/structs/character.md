@@ -1,6 +1,6 @@
 # Character Struct
 
-Holds values related to a player character in battle. Named `chr_p` in the decompilation. They appear to have a size of `0xA08` bytes.
+Holds values related to a player character in battle. Named `chr_p` in the decompilation. They appear to have a size of `0xA08` bytes (per `memset` at address 0x800560d4)
 
 ## Where to Find
 
@@ -15,6 +15,8 @@ The absolute positions of these structs can be found at the locations listed bel
   - This also serves as the address for P2 in training mode
 - CPU 3: `80228400`
 - CPU 4: `80228404`
+
+The addresses `80228408` and `8022840c` also appear to be used for 3v3 Training Mode.
 
 - Partner Character 1: `80228424`
 - Partner Character 2: `80228420`
@@ -701,9 +703,9 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
   - Current Action ID
 
-### 0x240: **Act ID 2**
+### 0x240: **Last Act ID**
 
-  - Current Action ID again
+  - The last Action ID executed, updated at 0xA74 in the chr seq files. When Act ID and Last Act ID are not equal, the game knows that the action has changed and will re-initialize many values at instruction 0x800178ec.
 
 ### 0x24c: **Something about jumping and attacking**
 
