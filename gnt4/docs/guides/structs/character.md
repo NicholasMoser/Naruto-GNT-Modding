@@ -76,6 +76,10 @@ Seems to be an opponent chr_p pointer. Referenced at dol address 0x800c02c8.
 ### 0x44 **Some Seq Pointer**
 
 Seems to be some pointer to an offset in an seq file, probably 0010.seq. Referenced at dol address 0x800c3ab8.
+
+### 0x48
+
+[Set here](https://nicholasmoser.github.io/iru_0000.html#15390)
   
 ### 0x110: **Movement Stuff**
 
