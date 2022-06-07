@@ -34,7 +34,9 @@ Character movement data, takes data from seq\_p\_sp-\>field\_0x28
 [Set here in 0010.seq](https://nicholasmoser.github.io/iru_0010.html#40)
 
 ## 0x28
-[Set here](https://nicholasmoser.github.io/iru_0000.html#81D4), [here](https://nicholasmoser.github.io/iru_0000.html#9704), [here](https://nicholasmoser.github.io/iru_0000.html#976C), [here](https://nicholasmoser.github.io/iru_0000.html#97D4)
+[Set here](https://nicholasmoser.github.io/iru_0000.html#81D4), [here](https://nicholasmoser.github.io/iru_0000.html#9704), [here](https://nicholasmoser.github.io/iru_0000.html#976C), [here](https://nicholasmoser.github.io/iru_0000.html#97D4) in 0000.seq
+[Set here in 0010.seq](https://nicholasmoser.github.io/iru_0010.html#44)
+Always set to chr\_p-\>foe\_chr\_p in 0010.seq
 
 ## 0x38 chr\_p
 Character information [Set here](https://nicholasmoser.github.io/iru_0000.html#7CC0).
