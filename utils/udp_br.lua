@@ -9,9 +9,9 @@ udp:setsockname('*', 1900)
 udp:setpeername('localhost', 12198) -- Echo IP and Port number
 
 function parse_seq()
-    -- The start of the seq file is at *(int *)(seq_p[5] + 0x5c)
+    -- The start of the seq file is at *(int *)(seq_p[4] + 0x5c)
     seq_p = dolphin.ppc.gpr[3]
-    temp_p = dolphin.mem_u32[seq_p + 0x14]
+    temp_p = dolphin.mem_u32[seq_p + 0x10]
     seq_start = dolphin.mem_u32[temp_p + 0x5c]
 
     -- The current program counter of the seq file is in general purpose register 5
@@ -22,7 +22,7 @@ function parse_seq()
     offset_str = string.format("%08x ", seq_offset)
 
     -- Get the file name, which can be found at seq_p[8][5]
-    file_entry = dolphin.mem_u32[seq_p + 0x20]
+    file_entry = dolphin.mem_u32[seq_p + 0x1C]
     file_name = dolphin.str_read(file_entry + 0x14, 0x10)
     file_name_str = string.format("%-15s", string.sub(file_name, 0, string.len(file_name) - 1))
 
@@ -37,18 +37,16 @@ function parse_seq()
     udp:send(full_str)
 end
 
--- The below four hooks occur in the function SEQ_Exec (0x800c8f38)
-dolphin.hook_instruction(0x800c903c, parse_seq)
+-- The below four hooks occur in the function SEQ_Exec (0x8006d8c8)
+dolphin.hook_instruction(0x8006d9cc, parse_seq)
 
-dolphin.hook_instruction(0x800c9094, parse_seq)
+dolphin.hook_instruction(0x8006da1c, parse_seq)
 
-dolphin.hook_instruction(0x800c9138, parse_seq)
+dolphin.hook_instruction(0x8006dabc, parse_seq)
 
-dolphin.hook_instruction(0x800c91a0, parse_seq)
+dolphin.hook_instruction(0x8006db1c, parse_seq)
 
 -- These appear to be called in other circumstances, like seqs calling other seqs
-dolphin.hook_instruction(0x800c8e30, parse_seq)
+dolphin.hook_instruction(0x8006dc08, parse_seq)
 
-dolphin.hook_instruction(0x800c8ef8, parse_seq)
-
-dolphin.hook_instruction(0x80106f10, parse_seq)
+dolphin.hook_instruction(0x8006dccc, parse_seq)

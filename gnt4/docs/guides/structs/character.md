@@ -1,6 +1,6 @@
 # Character Struct
 
-Holds values related to a player character in battle. Named `chr_p` in the decompilation. They appear to have a size of `0xA08` bytes.
+Holds values related to a player character in battle. Named `chr_p` in the decompilation. They appear to have a size of `0xA08` bytes (per `memset` at address 0x800560d4)
 
 ## Where to Find
 
@@ -12,9 +12,11 @@ The absolute positions of these structs can be found at the locations listed bel
 - Player 4: `80226B8C`
 - CPU 1: `802283F8`
 - CPU 2: `802283FC`
-- This also serves as the address for P2 in training mode
+  - This also serves as the address for P2 in training mode
 - CPU 3: `80228400`
 - CPU 4: `80228404`
+
+The addresses `80228408` and `8022840c` also appear to be used for 3v3 Training Mode.
 
 - Partner Character 1: `80228424`
 - Partner Character 2: `80228420`
@@ -54,6 +56,10 @@ The "controller" of the player, e.g. 0x0 through 0x3.
 ### 0x1c: **Character ID**
 
   - See [INTERNAL_CHAR_ORDER](https://github.com/NicholasMoser/GNTool/blob/3.7/src/main/java/com/github/nicholasmoser/gnt4/GNT4Characters.java#L105)
+
+### 0x24: **Transform Model Flag**
+
+A flag to set if the character model is to be transformed in some way. One example is to set it to 1 when Choji enlarges during certain attacks. It is also apparently used by Akamaru for something. Used by opcode `2108`.
 
 ### 0x30: **Health Multipler**
 
@@ -496,7 +502,7 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
   - `00800000` - TDOWN
   - `01000000` - COMBO0
   - `02000000` - COMBO1
-  - `04000000` - TESCAPE
+  - `04000000` - TESCAPE: Set to the attacker and defender when a throw break occurs
   - `08000000` - BDRIVE
   - `10000000` - FLAG0
   - `20000000` - FLAG1
@@ -643,6 +649,12 @@ You can view the English names given to them by Eighting in CON2 in the item vie
   - Capture state tally, for attacks that add to combo counter inside of capture state, e.g. supers, or anko 4B(B) second hit
   - Added to Combo Count 1 to get combo count
 
+### 0x168: **Hitbox Struct**
+
+  - A struct where one of the fields stores active hitboxes and other stuff.
+  - Modified in `create_hitbox`
+  - Offset 0x3c: Pointer to hitboxes, where each hitbox is 0x40 bytes. Appears to be a maximum of 0x14 hitboxes allowed so 0x500 bytes total.
+
 ### 0x19c: **X Position**
 
 ### 0x1a0: **Y Position**
@@ -695,9 +707,9 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
   - Current Action ID
 
-### 0x240: **Act ID 2**
+### 0x240: **Last Act ID**
 
-  - Current Action ID again
+  - The last Action ID executed, updated at 0xA74 in the chr seq files. When Act ID and Last Act ID are not equal, the game knows that the action has changed and will re-initialize many values at instruction 0x800178ec.
 
 ### 0x24c: **Something about jumping and attacking**
 
@@ -787,9 +799,11 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 ### 0x2b4: **Synchronous timer after hitbox**
 
+Neutral in this case means idling and is represented by END in ATK debug menu.
+
   - FFFFFFFF in neutral
   - 00000000 at start of action
-  - Count up 100 from 0 each frame after hitbox disappear
+  - Count up 100 from 0 each frame after hitbox disappear (at instruction 0x80017200)
 
 ### 0x2b8: **Attack Angle**
 
@@ -894,6 +908,17 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
   - 2 Bytes
   - Value in 0x7f6 backed up here before being manipulated
+
+### 0x7fc: **capture\_range?**
+  
+  - If small, the opponent will not get captured
+
+### 0x800: **capture\_state\_attack**
+
+  - Signed short
+  - Normally -1
+  - Set to attack id of the capture state move
+  - Opponent act forced to 0xF0 + value set here
 
 ### 0x854: **Transformation Flag**
 

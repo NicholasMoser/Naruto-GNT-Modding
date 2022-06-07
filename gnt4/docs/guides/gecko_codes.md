@@ -330,9 +330,24 @@ c203a378 00000008
 0403F0A8 60000000
 ```
 
+### X and X+Y Do Not Throw Break [Nick]
+
+When you don't have full chakra, you can mash X for easy throw breaks. This code disables X as a throw break button completely to disable that.
+
+When you press X+Y on the same frame your character does not do anything. X+Y is also capable of throw breaking, so you can set X+Y to a macro for easier throw breaks. This code disables X+Y as a throw break button completely to disable that.
+
+```gecko
+040632f0 70000230
+C20632EC 00000004
+A00503C0 70002200
+2C002200 4082000C
+38000000 48000008
+A00503C0 00000000
+```
+
 ### X Does Not Throw Break [Nick]
 
-When you don't have full chakra, you can mash X for easy throw breaks. This disables X as a throw break button completely to disable that.
+When you don't have full chakra, you can mash X for easy throw breaks. This code disables X as a throw break button completely to disable that.
 
 ```gecko
 040632f0 70000230
