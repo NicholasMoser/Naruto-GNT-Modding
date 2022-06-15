@@ -1,4 +1,4 @@
-# Recording Functionality
+# Recording
 
 This page will document efforts to re-implement Bloody Roar's recording mode in GNT4.
 
@@ -65,3 +65,7 @@ Recording state seems to be affected by `*seq_p_sp->field_0x24->field_0x26`, e.g
 01754 | beqz 0x1790 01330000 00001790
 0175C | i16_subc *seq_p_sp->field_0x24->field_0x26, 0x20000 06116100 00000026 3F000000 00020000
 ```
+
+## Adding Recording
+
+Recording support has now been added to GNT4 via this [GNTool PR](https://github.com/NicholasMoser/GNTool/pull/111).
