@@ -82,6 +82,10 @@ Seems to be an opponent chr_p pointer. Referenced at dol address 0x800c02c8.
 ### 0x44 **Some Seq Pointer**
 
 Seems to be some pointer to an offset in an seq file, probably 0010.seq. Referenced at dol address 0x800c3ab8.
+
+### 0x48
+
+[Set here](https://nicholasmoser.github.io/iru_0000.html#15390)
   
 ### 0x110: **Movement Stuff**
 
@@ -801,7 +805,7 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
   - 00000000 at start of action
   - Count up 100 from 0 each frame after hitbox disappear (at instruction 0x80017200)
 
-### 0x2b8: **Attack Angle**
+### 0x2b8: **DIR**
 
   - What angle the attacking character was turned away from the opponent when the attack connected
 
@@ -853,9 +857,9 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
 
   - A counter that while it is not zero, you can break a grab. Seems to always be set to 0x300 at instruction 0x800b5144. Every frame subtracts 0x100 at instruction 0x8001aaec.
 
-### 0x54c: **Active Throws**
+### 0x54c: **Active Attacks**
 
-  - Pointer to where in memory the available throws are defined
+  - Pointer to where in memory the available throws, supers and jump attacks are defined
 
 ### 0x7d8: **Start String Offset**
 
