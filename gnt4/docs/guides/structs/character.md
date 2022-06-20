@@ -41,9 +41,58 @@ The addresses `80228408` and `8022840c` also appear to be used for 3v3 Training 
 
 The "controller" of the player, e.g. 0x0 through 0x3.
 
-### 0x10: **CPU Flags**
+### 0x10: **CPU Flag**
 
-  - 0 if a player, other values if non-player controlled.
+The flag for what action the CPU is doing. Flags 0x10 - 0x1B are selectable in the training menu.
+
+  - 0x00: Player controlled, no CPU action.
+  - 0x01: Dash forward continuously.
+  - 0x02: Simple AI, just does 5B and 5A. Maybe Oboro AI?
+  - 0x03: Stand. Will turn around if you get behind them (character head tracks the player).
+  - 0x04: Jump, no air block or throw tech. Will turn around if you get behind them.
+  - 0x05: Jump, air block but no throw tech. Will turn around if you get behind them.
+  - 0x06: Unknown, looks like Stand but might do other things.
+  - 0x07: Jump, air block and throw tech. Will turn around if you get behind them.
+  - 0x08: Continuously attack with 5BB.
+  - 0x09: Unknown, looks like Stand but might do other things.
+  - 0x0A: Unknown, looks like Stand but might do other things.
+  - 0x0B: Unknown, looks like Stand but might do other things.
+  - 0x0C: Unknown, looks like Stand but might do other things.
+  - 0x0D: Unknown, looks like Stand but might do other things.
+  - 0x0E: Unknown, looks like Stand but might do other things.
+  - 0x10: Unknown CPU level
+  - 0x11: Stand
+  - 0x12: Jump
+  - 0x13: 2P Control
+  - 0x14: Approach and Throw
+  - 0x15: Substitution Jutsu
+  - 0x16: Tech Roll Recovery
+  - 0x17: Quick Stun Recovery
+  - 0x18: COM Difficulty Lv1
+  - 0x19: COM Difficulty Lv2
+  - 0x1A: COM Difficulty Lv3
+  - 0x1B: COM Difficulty Lv4
+  - 0x1C: Unknown, looks like Stand but might do other things.
+  - 0x1D: Unknown, looks like Stand but might do other things.
+  - 0x1E: Unknown, looks like Stand but might do other things.
+  - 0x1F: Unknown, looks like Stand but might do other things.
+  - 0x20: Unknown, looks like Stand but might do other things.
+  - 0x21: Character will mash 5B until the combo ends and then resets the CPU Flag to 0.
+  - 0x22: Nothing
+  - 0x23: Nothing
+  - 0x24: Nothing
+  - 0x25: Nothing
+  - 0x26: Nothing
+  - 0x27: Nothing
+  - 0x28: Nothing
+  - 0x29: Nothing
+  - 0x2A: Nothing
+  - 0x2B: Nothing
+  - 0x2C: Nothing
+  - 0x2D: Nothing
+  - 0x2E: Nothing
+  - 0x2F: Nothing
+  - 0x30: Unknown, looks like Stand but might do other things.
 
 ### 0x14: **Player ID 2**
 
