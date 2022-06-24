@@ -906,6 +906,22 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
 
   - A counter that while it is not zero, you can break a grab. Seems to always be set to 0x300 at instruction 0x800b5144. Every frame subtracts 0x100 at instruction 0x8001aaec.
 
+### 0x3be: **Current Buttons Held**
+
+  - Half-word bitflag of buttons pressed
+  
+  |Button|Bitflag|
+  |---------|-------|
+  | A:      | 0x20  |
+  | B:      | 0x10  |
+  | Up      |0x4    |
+  | Down    |0x8    |
+  |Back     |0x2    |
+  | Forward |0x1    | 
+  | Z       |0x4000 |
+  | L       |0x800  |
+  | R       |0x1000 |
+
 ### 0x54c: **Active Attacks**
 
   - Pointer to where in memory the available throws, supers and jump attacks are defined
