@@ -908,19 +908,26 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
 
 ### 0x3be: **Current Buttons Held**
 
-  - Half-word bitflag of buttons pressed
+  - Half-word bitflag of buttons pressed. Some of the bitflags are for "states" more than buttons pressed, e.g. Facing Left.
   
-  |Button|Bitflag|
-  |---------|-------|
-  | A:      | 0x20  |
-  | B:      | 0x10  |
-  | Up      |0x4    |
-  | Down    |0x8    |
-  |Back     |0x2    |
-  | Forward |0x1    | 
-  | Z       |0x4000 |
-  | L       |0x800  |
-  | R       |0x1000 |
+  | Button      | Bitflag |
+  |-------------|---------|
+  | Forward     | 0x1     | 
+  | Back        | 0x2     |
+  | Up          | 0x4     |
+  | Down        | 0x8     |
+  | B           | 0x10    |
+  | A           | 0x20    |
+  | ???         | 0x40    |
+  | ???         | 0x80    |
+  | Facing Left | 0x100   |
+  | Y           | 0x200   |
+  | ???         | 0x400   |
+  | L           | 0x800   |
+  | R           | 0x1000  |
+  | X           | 0x2000  |
+  | Z           | 0x4000  |
+  | ???         | 0x8000  |
 
 ### 0x54c: **Active Attacks**
 
