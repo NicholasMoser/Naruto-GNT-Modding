@@ -167,7 +167,7 @@ To modify the passive chakra gain:
 In the above code, the 0x1 at the end of the code is the amount of chakra to gain each frame. By default is is 0xA. The above code sets it to 0x1.
 For example, to change it to 0x10 chakra per frame change it to `04069928 38800010`.
 
-### Modify 2v2 Rounds [Nick]
+### Modify 2v2 Rounds (PAL) [Nick]
 
 ```gecko
 043963cc 00000003
