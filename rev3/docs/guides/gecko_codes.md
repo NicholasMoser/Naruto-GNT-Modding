@@ -2,7 +2,7 @@
 
 These are codes that modify the game in various ways. You can add them to games by right clicking on the game in Dolphin and going to properties. Go to Gecko Codes and you can add them here by either going to Edit Config or hitting the Add button (Add button only exists in latest Dolphin versions).
 
-## General
+## US
 
 ### Skip Intro Cutscenes [Nick]
 
@@ -54,6 +54,33 @@ C2155014 00000003
 ```
 
 Note: The `0F` in `2C00000F` is Kiba. Replace the `0F` with other hex values to replace other characters. The `2B` in `3800002B` is Rogue Ninja. Replace the `2B` that with other values to load other characters.
+
+### Remove/Modify 2v2 Passive Chakra Gain [Nick]
+
+To remove passive chakra gain for your partner in 2v2 use the below Gecko code:
+
+```gecko
+04069928 38800000
+```
+
+To modify the passive chakra gain:
+
+```gecko
+04069928 38800001
+```
+
+In the above code, the 0x1 at the end of the code is the amount of chakra to gain each frame. By default is is 0xA. The above code sets it to 0x1.
+For example, to change it to 0x10 chakra per frame change it to `04069928 38800010`.
+
+### Modify 2v2 Rounds [Nick]
+
+```gecko
+04395b4c 00000003
+```
+
+In the above code, the 0x3 at the end of the code is the amount of rounds to change it to.
+
+## PAL
 
 ### 60 FPS + Widescreen (PAL) [Nick]
 
@@ -122,3 +149,28 @@ C2073f24 00000004
 38000000 48000008
 801F0B98 00000000
 ```
+
+### Remove/Modify 2v2 Passive Chakra Gain (PAL) [Nick]
+
+To remove passive chakra gain for your partner in 2v2 use the below Gecko code:
+
+```gecko
+04069e94 38800000
+```
+
+To modify the passive chakra gain:
+
+```gecko
+04069e94 38800001
+```
+
+In the above code, the 0x1 at the end of the code is the amount of chakra to gain each frame. By default is is 0xA. The above code sets it to 0x1.
+For example, to change it to 0x10 chakra per frame change it to `04069928 38800010`.
+
+### Modify 2v2 Rounds [Nick]
+
+```gecko
+043963cc 00000003
+```
+
+In the above code, the 0x3 at the end of the code is the amount of rounds to change it to.
