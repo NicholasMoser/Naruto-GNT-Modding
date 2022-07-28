@@ -106,6 +106,14 @@ The "controller" of the player, e.g. 0x0 through 0x3.
 
   - See [INTERNAL_CHAR_ORDER](https://github.com/NicholasMoser/GNTool/blob/3.7/src/main/java/com/github/nicholasmoser/gnt4/GNT4Characters.java#L105)
 
+### 0x20: **Costume ID**
+
+  - The costume selected for the character.
+    - 1st (A): 0
+    - 2nd (Y): 1
+    - 3rd (X): 2
+    - 4th (Z): 3
+
 ### 0x24: **Transform Model Flag**
 
 A flag to set if the character model is to be transformed in some way. One example is to set it to 1 when Choji enlarges during certain attacks. It is also apparently used by Akamaru for something. Used by opcode `2108`.
