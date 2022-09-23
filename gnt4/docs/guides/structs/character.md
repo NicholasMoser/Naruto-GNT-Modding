@@ -44,7 +44,8 @@ The "controller" of the player, e.g. 0x0 through 0x3.
 ### 0x10: **CPU Flag**
 
 The flag for what action the CPU is doing. Flags 0x10 - 0x1B are selectable in the training menu.
-
+<details>
+<summary>CPU Flag</summary>
   - 0x00: Player controlled, no CPU action.
   - 0x01: Dash forward continuously.
   - 0x02: Simple AI, just does 5B and 5A. Maybe Oboro AI?
@@ -93,7 +94,7 @@ The flag for what action the CPU is doing. Flags 0x10 - 0x1B are selectable in t
   - 0x2E: Nothing
   - 0x2F: Nothing
   - 0x30: Unknown, looks like Stand but might do other things.
-
+</details>
 ### 0x14: **Player ID 2**
 
 The "controller" of the player, e.g. 0x0 through 0x3.
@@ -917,7 +918,8 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
 ### 0x3be: **Current Buttons Held**
 
   - Half-word bitflag of buttons pressed. Some of the bitflags are for "states" more than buttons pressed, e.g. Facing Left.
-  
+<details>
+  <summary>Button mapping</summary>
   | Button      | Bitflag |
   |-------------|---------|
   | Forward     | 0x1     | 
@@ -936,14 +938,101 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
   | X           | 0x2000  |
   | Z           | 0x4000  |
   | ???         | 0x8000  |
+</details>
 
 ### 0x54c: **Active Attacks**
 
   - Pointer to where in memory the available throws, supers and jump attacks are defined
+  - Each active attack consists of two parts
+    - Header tells which attack is to be activated and where extra data is located
+    - Extra data contains requirements for the attack to activate
+
+<details>
+  <summary>Header</summary>
+  - Byte 1-2 seems to be dependant on what attack it is
+    - `0000` air throw (naruto transform)
+    - `0001` air attack
+    - `0003` jump squat attack
+    - `0008` super
+    - `0020` grounded throw
+    - `0040` z swap
+    - `0080` unknown
+  - Byte 3 seems to only matter for throws
+    - `00` not a throw
+    - `56` throw from the front
+    - `66` throw from the back
+    - `79` air throw
+  - Byte 4
+    - `00` air moves
+    - `03` unknown
+    - `23` supers (including transformation)
+    - `80` ground throw
+  - Byte 5-6 is ATK ID
+  - Byte 7-8 
+    - `0004` any throw
+    - `0008` jump and jump squat
+    - `000D` anything that drains chakra
+  - Byte 9-10
+    - `0014` throws, jump attack and jump squat attacks
+    - `001E` anything else
+  - Byte 11-12 0 all
+  - Byte 13-14
+    - `0000` anything else
+    - `42E0` grounded throw
+    - `4316` air throw
+    - `C248` jump attack
+    - `C32A` jump squat attack
+  - Byte 15-16 0 all
+  - Byte 17-20 offset in file to extra data
+</details>
+<details>
+<summary>Extra data</data>
+- `0001000A` incoming command
+- Command types
+  - `0001` directional input
+    - Byte 1-2 probably a mask for what inputs to read among
+    - Byte 3-4 the sought after input, can be directional by setting two cardinal directions as input
+  - `0002` button input
+    - `2270`
+      - Button input
+    - `227F`
+      - Button input and chakra cost, can be extended with more unknown commands. Terminated with 8 bytes of 0
+</details>
 
 ### 0x7d8: **Start String Offset**
 
   - Where the offsets for all the characters strings start
+  - Header is a list with an offset to each active string, terminated by 4 bytes of 0
+  <details>
+  <summary>String structure</summary>
+- `0001`
+- 2 bytes atk id that this string combo from
+ - if start with `40`, the second byte is how many atk id's this instruction is for
+ - follow with a list of 2 byte atk id
+- `0004`
+- 2 bytes input leeway after hitbox ends, default `FFFF`
+- 2 bytes earliest frame delay after hitbox disappear
+- 2 bytes condition continue, default `0002`, other behaviour unknown
+- 2 bytes number of inputs required for activation, default `0001`
+- `00062270`
+- 2 bytes button input, direction ignored
+- `0000` seems to be padding
+- 2 bytes whiffable or not
+  - `0003` allow follow up on whiff
+  - `0007` don't allow follow up on whiff
+- 2 bytes attack id to combo into
+- 4 bytes unknown normal values include
+  - `00000028` most common
+  - `00000090`
+  - `00000096`
+  - `00000098`
+  - `0000009A`
+- 2 bytes tells if it terminates or not
+  - `0000` final part of this string
+  - `0004` start over with the input leeway after hitbox after this one, and continue
+  - Other values unknown
+</details>
+  
 
 ### 0x7e0: **Something with Strings**
 
