@@ -112,6 +112,6 @@ Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.c
 
 [GNT Community Discord](https://discord.gg/jDUxzvH)
 
-[Super GNT4 Discord](https://discord.gg/wyNpXKx)
+[Super GNT4 Discord](https://discord.com/invite/supercon4)
 
 [GNT4 Documentation Notion](https://www.notion.so/GNT4-Documentation-40969865cc5d46cd97fd3900037c1de7)
