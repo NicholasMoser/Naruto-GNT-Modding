@@ -46,6 +46,7 @@ The "controller" of the player, e.g. 0x0 through 0x3.
 The flag for what action the CPU is doing. Flags 0x10 - 0x1B are selectable in the training menu.
 <details>
 <summary>CPU Flag</summary>
+  
   - 0x00: Player controlled, no CPU action.
   - 0x01: Dash forward continuously.
   - 0x02: Simple AI, just does 5B and 5A. Maybe Oboro AI?
@@ -95,6 +96,7 @@ The flag for what action the CPU is doing. Flags 0x10 - 0x1B are selectable in t
   - 0x2F: Nothing
   - 0x30: Unknown, looks like Stand but might do other things.
 </details>
+
 ### 0x14: **Player ID 2**
 
 The "controller" of the player, e.g. 0x0 through 0x3.
@@ -771,20 +773,20 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
 ### 0x24c: **Something about jumping and attacking**
 
-    - Start round at FFFFFFFF
-    - Set to 1D when jumping
-    - Set to E4 at start of dive kick
-    - Set to FFFFFFFF at end of dive kick or start of air throw
+- Start round at FFFFFFFF
+- Set to 1D when jumping
+- Set to E4 at start of dive kick
+- Set to FFFFFFFF at end of dive kick or start of air throw
 
 ### 0x250: **Changes on start of actions that moves character**
 
-    - Getting thrown
-    - Doing any attack
+  - Getting thrown
+  - Doing any attack
 
 ### 0x254: **Unknown**
 
-    - Start round at FFFFFFFF
-    - Set to 0 first jump
+  - Start round at FFFFFFFF
+  - Set to 0 first jump
 
 ### 0x258: **Act Counter**
 
@@ -920,6 +922,7 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
   - Half-word bitflag of buttons pressed. Some of the bitflags are for "states" more than buttons pressed, e.g. Facing Left.
 <details>
   <summary>Button mapping</summary>
+  
   | Button      | Bitflag |
   |-------------|---------|
   | Forward     | 0x1     | 
@@ -938,6 +941,7 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
   | X           | 0x2000  |
   | Z           | 0x4000  |
   | ???         | 0x8000  |
+  
 </details>
 
 ### 0x54c: **Active Attacks**
@@ -949,6 +953,7 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
 
 <details>
   <summary>Header</summary>
+  
   - Byte 1-2 seems to be dependant on what attack it is
     - `0000` air throw (naruto transform)
     - `0001` air attack
@@ -984,9 +989,12 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
     - `C32A` jump squat attack
   - Byte 15-16 0 all
   - Byte 17-20 offset in file to extra data
+  
 </details>
+
 <details>
-<summary>Extra data</data>
+<summary>Extra data</summary>
+  
 - `0001000A` incoming command
 - Command types
   - `0001` directional input
@@ -997,14 +1005,16 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
       - Button input
     - `227F`
       - Button input and chakra cost, can be extended with more unknown commands. Terminated with 8 bytes of 0
+  
 </details>
 
 ### 0x7d8: **Start String Offset**
 
-  - Where the offsets for all the characters strings start
-  - Header is a list with an offset to each active string, terminated by 4 bytes of 0
-  <details>
-  <summary>String structure</summary>
+- Where the offsets for all the characters strings start
+- Header is a list with an offset to each active string, terminated by 4 bytes of 0
+<details>
+<summary>String structure</summary>
+  
 - `0001`
 - 2 bytes atk id that this string combo from
  - if start with `40`, the second byte is how many atk id's this instruction is for
@@ -1031,6 +1041,7 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
   - `0000` final part of this string
   - `0004` start over with the input leeway after hitbox after this one, and continue
   - Other values unknown
+  
 </details>
   
 
