@@ -221,6 +221,43 @@ Note: This new default will only take affect after pausing unless you modify `fi
 04045380 B0A30040
 ```
 
+### Randomize CSS Music [Nick]
+
+Gecko code to cycle between different CSS songs. This code currently randomly chooses between m001 (original), m014, m016, m019, m020.
+
+```gecko
+C20CEF0C 0000000B
+38600005 3C80801C
+6084CE50 7C8903A6
+4E800421 2C030000
+40820008 38A29D40
+2C030001 40820008
+38A29D50 2C030002
+40820008 38A29D68
+2C030003 40820008
+38A29D70 2C030004
+40820008 38A29CD8
+60000000 00000000
+```
+
+Gecko code to cycle between different CSS songs. This code currently randomly chooses between m001 (original), m014, m016, m019, m020, and m010.
+
+```gecko
+C20CEF0C 0000000C
+38600006 3C80801C
+6084CE50 7C8903A6
+4E800421 2C030000
+40820008 38A29D40
+2C030001 40820008
+38A29D50 2C030002
+40820008 38A29D68
+2C030003 40820008
+38A29D70 2C030004
+40820008 38A29CD8
+2C030005 40820008
+38A29D20 00000000
+```
+
 ## Experimental
 
 These codes are experimental and may cause unintended side effects, even crashes in some cases.
