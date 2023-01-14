@@ -345,9 +345,20 @@ A00503C0 70002200
 A00503C0 00000000
 ```
 
+### X+Y Does Not Throw Break [Nick]
+
+Same code as above but just X+Y.
+
+```
+A00503C0 70002200
+2C002200 4082000C
+38000000 48000008
+A00503C0 00000000
+```
+
 ### X Does Not Throw Break [Nick]
 
-When you don't have full chakra, you can mash X for easy throw breaks. This code disables X as a throw break button completely to disable that.
+Same code as above but just X.
 
 ```gecko
 040632f0 70000230
