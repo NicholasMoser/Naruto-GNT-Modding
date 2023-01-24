@@ -258,6 +258,28 @@ C20CEF0C 0000000C
 38A29D20 00000000
 ```
 
+### Hold Start to Pause
+
+In non-training battle modes, requires that the start button is held for 20 frames to trigger the pause menu. This is useful for tournament play,
+since it will help prevent accidental pauses. To read more about how this code was written please see [Hold Start to Pause](/gnt4/docs/guides/hold_start_to_pause.md).
+
+To change the amount of frames to hold start to pause, change the 0x14 at the end of `2C040014` to the number you wish to use.
+
+```gecko
+C20477B0 0000000B
+801D0024 540004E7
+4182003C 3C608027
+80836B8C 2C040014
+4081001C 38000000
+90036B8C 38001000
+3C608022 90032ED8
+48000024 38040001
+90036B8C 38000000
+48000014 38800000
+3C608027 90836B8C
+38000000 00000000
+```
+
 ## Experimental
 
 These codes are experimental and may cause unintended side effects, even crashes in some cases.
