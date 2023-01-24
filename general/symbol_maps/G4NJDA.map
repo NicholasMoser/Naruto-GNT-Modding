@@ -61,7 +61,7 @@
 8000ad30 00000018 8000ad30 0 zz_8000ad30_ 	save_data.o
 8000ad48 00000018 8000ad48 0 zz_8000ad48_ 	save_data.o
 8000ad60 00000014 8000ad60 0 zz_8000ad60_ 	save_data.o
-8000ad74 00000014 8000ad74 0 zz_8000ad74_ 	save_data.o
+8000ad74 00000014 8000ad74 0 get_stg_unlocked 	save_data.o
 8000ad88 00000018 8000ad88 0 zz_8000ad88_ 	save_data.o
 8000ada0 00000018 8000ada0 0 zz_8000ada0_ 	save_data.o
 8000adb8 00000014 8000adb8 0 get_chr_unlocked_2 	save_data.o
