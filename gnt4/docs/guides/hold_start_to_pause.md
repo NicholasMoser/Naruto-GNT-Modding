@@ -83,3 +83,70 @@ and each frame will only have new buttons that have been pressed. So pressing st
 
 The code will only work for non-training battle modes since it is currently in the function `battle_menu_handler`. To create a similar code for
 training mode, the code would need to be written in the function `training_mode_menu_handler`.
+
+## Rev3 (US) Code
+
+A similar code was written for Rev3, but unfortunately it is more complicated.
+
+The main difference is that the pause is checked for every player every frame. Therefore, the counter if incremented every iteration will be increased by 2 every frame if there are two players. This is handled by simply doubling the number of frames to wait. Obviously this is a problem for 3 or 4 players, but this code wouldn't be used for 3 or 4 player modes.
+
+Additionally, we need a check for the pressed button of the current player to start the counter or else it will always start on player 1, meaning that player 2 pausing will open the player 1 pause menu. The frames to wait also must be an odd number so that the player that starts the pause counter is the same player it ends on.
+
+```gecko
+C208A830 0000000D
+80A30050 3C60803C
+3863D7B0 8003004C
+540005EF 41820040
+808D828C 2C040000
+4082000C 2C050100
+4082002C 2C040029
+40810014 38000000
+900D828C 38000100
+48000020 38040001
+900D828C 38000000
+48000010 38800000
+908D828C 38000000
+60000000 00000000
+```
+
+```asm
+check_start:
+  # Check if start is pressed
+  lwz r5, 80(r3) # Load pressed button of current player
+  lis r3, 0x803C 
+  subi r3, r3, 0x2850
+  lwz r0, 76(r3) # Load held buttons of all players
+  rlwinm. r0, r0, 0, 23, 23
+  beq- reset_counter
+  lwz r4, -32116(r13)
+  cmpwi r4, 0x0
+  bne- compare_max
+  cmpwi r5, 0x100 # This code is to make sure that the player actually holding start begins the counter
+  bne- reset_counter
+
+compare_max:
+  cmpwi r4, 0x29 # Needs to be higher since it's incremented every frame for every player
+  ble- increment_counter
+  
+complete_start:
+  # Reset counter and return 0x1000 (successful start)
+  li r0, 0x0
+  stw r0, -32116(r13)
+  li r0, 0x100
+  b end
+
+increment_counter:
+  # Increment the counter and return 0
+  addi r0, r4, 0x1
+  stw r0, -32116(r13)
+  li r0, 0x0
+  b end
+
+reset_counter:
+  # Reset counter and return 0
+  li r4, 0x0
+  stw r4, -32116(r13)
+  li r0, 0x0
+
+end:
+```

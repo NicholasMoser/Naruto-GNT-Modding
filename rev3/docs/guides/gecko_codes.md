@@ -88,6 +88,25 @@ When you set **Single or Multi Number of Rounds** in the options menu, it also a
 
 In the above code, the 0x3 at the end of the code is the amount of rounds to change it to.
 
+### Hold Start to Pause
+
+```gecko
+C208A830 0000000D
+80A30050 3C60803C
+3863D7B0 8003004C
+540005EF 41820040
+808D828C 2C040000
+4082000C 2C050100
+4082002C 2C040029
+40810014 38000000
+900D828C 38000100
+48000020 38040001
+900D828C 38000000
+48000010 38800000
+908D828C 38000000
+60000000 00000000
+```
+
 ## PAL
 
 ### 60 FPS + Widescreen (PAL) [Nick]
