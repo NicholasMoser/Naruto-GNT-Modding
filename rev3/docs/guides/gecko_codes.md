@@ -88,7 +88,7 @@ When you set **Single or Multi Number of Rounds** in the options menu, it also a
 
 In the above code, the 0x3 at the end of the code is the amount of rounds to change it to.
 
-### Hold Start to Pause
+### Hold Start to Pause [Nick]
 
 ```gecko
 C208A830 0000000D
