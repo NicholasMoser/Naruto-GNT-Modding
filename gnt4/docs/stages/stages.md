@@ -1,6 +1,8 @@
 # Stages
 
 There are 31 stages in total. Note, there is no stage with Stage ID 018.
+The measurement for stage size is the number of Hinata 5B attacks it takes
+to go from one end to the other.
 
 | Stage                                  | Stage ID | Order | Size    | Shape         |
 |----------------------------------------|----------|-------|---------|---------------|
@@ -8,20 +10,20 @@ There are 31 stages in total. Note, there is no stage with Stage ID 018.
 | Academy Rooftop - Day                  | 002      | 8     | 09 x 09 | Octagon       |
 | Ichiraku Ramen - Night                 | 003      | 9     | 09 x 09 | Octagon       |
 | Konoha Gates - Day                     | 004      | 10    | 20 x 20 | Octagon       |
-| Academy Schoolyard - Sunrise           | 005      | 11    |         |               |
+| Academy Yard - Sunrise                 | 005      | 11    | 12 x 12 | Octagon       |
 | Forest of Death - Night                | 006      | 12    | 12 x 12 | Octagon       |
 | Great Naruto Bridge                    | 007      | 13    | 09 x 27 | Quadrilateral |
-| Great Naruto Bridge - Mist             | 008      | 14    |         |               |
+| Great Naruto Bridge - Mist             | 008      | 14    | 09 x 27 | Quadrilateral |
 | Gamabunta's Bath - 2                   | 009      | 15    | 11 x 11 | Octagon       |
 | Academy Rooftop - Storm                | 010      | 16    | 09 x 09 | Octagon       |
-| Ichiraku Ramen - Sunset                | 011      | 17    |         |               |
+| Ichiraku Ramen - Sunset                | 011      | 17    | 09 x 09 | Octagon       |
 | Konoha Gates - Night                   | 012      | 18    | 20 x 20 | Octagon       |
 | Academy Yard - Day                     | 013      | 19    | 12 x 12 | Octagon       |
 | Forest of Death - Morning              | 014      | 20    | 12 x 12 | Octagon       |
 | Chuunin Exam Preliminaries             | 015      | 21    | 09 x 09 | Quadrilateral |
 | Chuunin Exam Finals                    | 016      | 22    | 13 x 13 | Octagon       |
-| Chunin Exams Rooftop - Sound 4 Barrier | 017      | 23    |         |               |
-| Hot Springs                            | 019      | 1     |         |               |
+| Chunin Exams Rooftop - Sound 4 Barrier | 017      | 23    | 06 x 13 | Quadrilateral |
+| Hot Springs                            | 019      | 1     | 07 x 07 | Octagon       |
 | Hidden Sand Village                    | 020      | 2     | 08 x 08 | Octagon       |
 | Deep Forest Emergence Rooftop          | 021      | 3     | 06 x 13 | Quadrilateral |
 | Tanzaku Castle                         | 022      | 4     | 06 x 10 | Quadrilateral |
@@ -36,7 +38,7 @@ There are 31 stages in total. Note, there is no stage with Stage ID 018.
 | Plains                                 | 031      | 30    | 12 x 12 | Octagon       |
 | Final Valley                           | 032      | 31    | 13 x 13 | Octagon       |
 
-Here are custom stages as of SCON4 1.5.1:
+Here are Super Clash of Ninja 4 custom stages as of SCON4 1.5.1:
 
 | Stage          | Stage ID | Size    | Shape         |
 |----------------|----------|---------|---------------|
@@ -70,7 +72,7 @@ Alternate names: Hidden Leaf Village Gate and Konoha Gate: Day
 
 ![Konoha Gates - Day](/gnt4/images/stage_art/hidden_leaf_village_gate.png?raw=true "Konoha Gates - Day")
 
-## Academy Schoolyard - Sunrise
+## Academy Yard - Sunrise
 
 Alternate names: Academy Schoolyard (Sunrise) and Academy Schoolyard: Sunset
 
