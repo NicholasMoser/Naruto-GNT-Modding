@@ -4,39 +4,48 @@ There are 31 stages in total. Note, there is no stage with Stage ID 018.
 The measurement for stage size is the number of Hinata 5B attacks it takes
 to go from one end to the other.
 
-| Stage                                  | Stage ID | Order | Size    | Shape         |
-|----------------------------------------|----------|-------|---------|---------------|
-| Gamabunta's Bath                       | 001      | 7     | 07 x 07 | Octagon       |
-| Academy Rooftop - Day                  | 002      | 8     | 09 x 09 | Octagon       |
-| Ichiraku Ramen - Night                 | 003      | 9     | 09 x 09 | Octagon       |
-| Konoha Gates - Day                     | 004      | 10    | 20 x 20 | Octagon       |
-| Academy Yard - Sunrise                 | 005      | 11    | 12 x 12 | Octagon       |
-| Forest of Death - Night                | 006      | 12    | 12 x 12 | Octagon       |
-| Great Naruto Bridge                    | 007      | 13    | 09 x 27 | Quadrilateral |
-| Great Naruto Bridge - Mist             | 008      | 14    | 09 x 27 | Quadrilateral |
-| Gamabunta's Bath - 2                   | 009      | 15    | 11 x 11 | Octagon       |
-| Academy Rooftop - Storm                | 010      | 16    | 09 x 09 | Octagon       |
-| Ichiraku Ramen - Sunset                | 011      | 17    | 09 x 09 | Octagon       |
-| Konoha Gates - Night                   | 012      | 18    | 20 x 20 | Octagon       |
-| Academy Yard - Day                     | 013      | 19    | 12 x 12 | Octagon       |
-| Forest of Death - Morning              | 014      | 20    | 12 x 12 | Octagon       |
-| Chuunin Exam Preliminaries             | 015      | 21    | 09 x 09 | Quadrilateral |
-| Chuunin Exam Finals                    | 016      | 22    | 13 x 13 | Octagon       |
-| Chunin Exams Rooftop - Sound 4 Barrier | 017      | 23    | 06 x 13 | Quadrilateral |
-| Hot Springs                            | 019      | 1     | 07 x 07 | Octagon       |
-| Hidden Sand Village                    | 020      | 2     | 08 x 08 | Octagon       |
-| Deep Forest Emergence Rooftop          | 021      | 3     | 06 x 13 | Quadrilateral |
-| Tanzaku Castle                         | 022      | 4     | 06 x 10 | Quadrilateral |
-| Kyuubi Chamber                         | 023      | 5     | 09 x 09 | Quadrilateral |
-| Three-Way Deadlock                     | 024      | 6     | 14 x 14 | Octagon       |
-| Konoha Hospital                        | 025      | 24    | 07 x 07 | Quadrilateral |
-| Konoha Shrine                          | 026      | 25    | 06 x 06 | Octagon       |
-| Konoha Police Department               | 027      | 26    | 06 x 06 | Octagon       |
-| Uchiha Compound                        | 028      | 27    | 08 x 08 | Quadrilateral |
-| Land of Ice                            | 029      | 28    | 12 x 12 | Octagon       |
-| Orochimaru's Lair                      | 030      | 29    | 07 x 11 | Quadrilateral |
-| Plains                                 | 031      | 30    | 12 x 12 | Octagon       |
-| Final Valley                           | 032      | 31    | 13 x 13 | Octagon       |
+SS Text is the file for the Stage Selection text. It is the *.tpl file in sel/0051.txg.
+These values are defined at offset 0x23F0 in char_sel.seq and charsel4.seq, where the offset
+is the order of stages in the State Selection.
+
+SS BG is the texture for the Stage Selection background. It is a texture offset in
+3.tpl in sel/0051.txg. The SS BG value will always be 5 larger than the SS Text value;
+this is because it is set to start at 5.tpl and end at 36.tpl.
+
+| Stage                                  | Stage ID | Order | SS Text | SS BG | Size    | Shape         |
+|----------------------------------------|----------|-------|---------|-------|---------|---------------|
+| Gamabunta's Bath                       | 001      | 7     | 15      | 10    | 07 x 07 | Octagon       |
+| Academy Rooftop - Day                  | 002      | 8     | 16      | 11    | 09 x 09 | Octagon       |
+| Ichiraku Ramen - Night                 | 003      | 9     | 29      | 24    | 09 x 09 | Octagon       |
+| Konoha Gates - Day                     | 004      | 10    | 30      | 25    | 20 x 20 | Octagon       |
+| Academy Yard - Sunrise                 | 005      | 11    | 22      | 17    | 12 x 12 | Octagon       |
+| Forest of Death - Night                | 006      | 12    | 23      | 18    | 12 x 12 | Octagon       |
+| Great Naruto Bridge                    | 007      | 13    | 18      | 13    | 09 x 27 | Quadrilateral |
+| Great Naruto Bridge - Mist             | 008      | 14    | 9       | 4     | 09 x 27 | Quadrilateral |
+| Gamabunta's Bath - 2                   | 009      | 15    | 24      | 19    | 11 x 11 | Octagon       |
+| Academy Rooftop - Storm                | 010      | 16    | 26      | 21    | 09 x 09 | Octagon       |
+| Ichiraku Ramen - Sunset                | 011      | 17    | 17      | 12    | 09 x 09 | Octagon       |
+| Konoha Gates - Night                   | 012      | 18    | 19      | 14    | 20 x 20 | Octagon       |
+| Academy Yard - Day                     | 013      | 19    | 31      | 26    | 12 x 12 | Octagon       |
+| Forest of Death - Morning              | 014      | 20    | 33      | 28    | 12 x 12 | Octagon       |
+| Chuunin Exam Preliminaries             | 015      | 21    | 25      | 20    | 09 x 09 | Quadrilateral |
+| Chuunin Exam Finals                    | 016      | 22    | 10      | 5     | 13 x 13 | Octagon       |
+| Chunin Exams Rooftop - Sound 4 Barrier | 017      | 23    | 32      | 27    | 06 x 13 | Quadrilateral |
+| Hot Springs                            | 019      | 1     | 12      | 7     | 07 x 07 | Octagon       |
+| Hidden Sand Village                    | 020      | 2     | 13      | 8     | 08 x 08 | Octagon       |
+| Deep Forest Emergence Rooftop          | 021      | 3     | 20      | 15    | 06 x 13 | Quadrilateral |
+| Tanzaku Castle                         | 022      | 4     | 27      | 22    | 06 x 10 | Quadrilateral |
+| Kyuubi Chamber                         | 023      | 5     | 34      | 29    | 09 x 09 | Quadrilateral |
+| Three-Way Deadlock                     | 024      | 6     | 11      | 6     | 14 x 14 | Octagon       |
+| Konoha Hospital                        | 025      | 24    | 5       | 0     | 07 x 07 | Quadrilateral |
+| Konoha Shrine                          | 026      | 25    | 14      | 9     | 06 x 06 | Octagon       |
+| Konoha Police Department               | 027      | 26    | 6       | 1     | 06 x 06 | Octagon       |
+| Uchiha Compound                        | 028      | 27    | 21      | 16    | 08 x 08 | Quadrilateral |
+| Land of Ice                            | 029      | 28    | 7       | 2     | 12 x 12 | Octagon       |
+| Orochimaru's Lair                      | 030      | 29    | 28      | 23    | 07 x 11 | Quadrilateral |
+| Plains                                 | 031      | 30    | 35      | 30    | 12 x 12 | Octagon       |
+| Final Valley                           | 032      | 31    | 8       | 3     | 13 x 13 | Octagon       |
+| Random                                 |          | 32    | 36      | 31    |         |               |
 
 Here are Super Clash of Ninja 4 custom stages as of SCON4 1.5.1:
 
