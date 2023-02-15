@@ -1,7 +1,8 @@
 # Naruto GNT Modding
 
-This repository contains information related to modding the Naruto Gekitō Ninja Taisen(GNT)/Clash of Ninja games.
+![Naruto GNT Modding](/general/images/naruto_computer.png?raw=true "Naruto GNT Modding")
 
+This repository contains information related to modding the Naruto Gekitō Ninja Taisen(GNT)/Clash of Ninja games.
 
 - [Overview](#Overview)
 - [Skins](#Skins)
