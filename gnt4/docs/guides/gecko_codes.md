@@ -280,6 +280,17 @@ C20477B0 0000000B
 38000000 00000000
 ```
 
+### Fix P1 Health Bar Spacing [Nick]
+
+This code fixes the empty transparent pixels at the far right end of the P1 health bar.
+
+![Fix P1 Health Bar Spacing](/general/images/fix_p1_health_bar_spacing.png?raw=true "Fix P1 Health Bar Spacing")
+
+```gecko
+0415e580 3a800061
+0415e5ac 3a800061
+```
+
 ## Experimental
 
 These codes are experimental and may cause unintended side effects, even crashes in some cases.
