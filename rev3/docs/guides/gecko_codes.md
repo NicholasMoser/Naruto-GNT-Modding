@@ -55,13 +55,16 @@ C2155014 00000003
 
 Note: The `0F` in `2C00000F` is Kiba. Replace the `0F` with other hex values to replace other characters. The `2B` in `3800002B` is Rogue Ninja. Replace the `2B` that with other values to load other characters.
 
-### Remove/Modify 2v2 Passive Chakra Gain [Nick]
+### Remove 2v2 Passive Chakra Gain [Nick]
 
 To remove passive chakra gain for your partner in 2v2 use the below Gecko code:
 
 ```gecko
 04069928 38800000
 ```
+
+### Modify 2v2 Passive Chakra Gain [Nick]
+
 
 To modify the passive chakra gain:
 
