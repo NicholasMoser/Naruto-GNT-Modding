@@ -28,7 +28,11 @@ Note: You can remove or disable this code after you create/load your file, they 
 0416CBEC 60030000
 ```
 
-### Teleports Use 75% of Chakra (instead of KnJ) [Nick]
+### KnJ Use 75% of Chakra (instead of KnJ Meter) [Nick]
+
+GNT Special introduced a new meter specifically for KnJ. This gecko code reverts that and instead has KnJ
+use chakra like in older GNT games. Additionally, switching out for your partner in 2v2 also will use
+chakra instead of the KnJ meter.
 
 ```gecko
 04064E04 80030044
