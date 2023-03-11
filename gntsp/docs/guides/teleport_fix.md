@@ -18,6 +18,21 @@ The Naruto GNT SP teleport fix is a change to the game to use Chakra for telepor
 C2064B00 00000002
 38800000 C8228848
 60000000 00000000
+C2064B4C 0000000E
+907F0044 7C892378
+3C60803E 38633110
+8063000C 8063000C
+3803FFFF 28000001
+4181004C 7FE3FB78
+3880FFFF 3CA08006
+38A59284 7CA903A6
+4E800421 2C030000
+4182002C 80C30040
+7D244B78 7C691B78
+80690044 3CA08017
+38A5DDB4 7CA903A6
+38A00000 4E800421
+90690044 00000000
 ```
 
 ### Assembly
@@ -157,3 +172,57 @@ lfd f1, -0x77B8 (rtoc)
 ```
 
 Since Gecko codes replace the original line you put it at, it is important to also include the original line, since in this case we do not want to use it.
+
+A problem was found with only implenting the above code though. The original code that subtracted from the KnJ bar only subtracted from the KnJ bar
+from one character. This is a problem because all chakra actions such as supers subtract from both players. Therefore, by only changing the KnJ
+interactions to chakra, there is now a mismatch between one character having chakra changed but the other not.
+
+Thankfully, there is already code for handling both characters at once when a super is done at instruction 80064b50. Therefore I've taken that code
+and reworked it to work in the location with the KnJ code:
+
+```asm
+@80064b4c
+; r4 has the new chakra value
+; r31 has the current chr_p
+; Available registers: r0, r3, r4, r5, r31
+; Maybe available: r6, r7, r8, r9
+; Not available: r1, r2, r13, r27, r28, r30
+
+; Original instruction
+stw	r3, 0x0044 (r31)
+
+; First condition for the partner check (taken from 80064b50)
+mr r9, r4 ; Store new chakra value to r9
+lis	r3, 0x803E
+addi	r3, r3, 12560
+lwz	r3, 0x000C (r3)
+lwz	r3, 0x000C (r3)
+subi	r0, r3, 1
+cmplwi	r0, 1 ; Weird partner global value check
+bgt label1
+
+; Second condition for the partner check (taken from 80064b50)
+mr	r3, r31 ; Move main chr_p to r3 for the method call
+li	r4, -1
+lis	r5 ,-0x7ffa ; Load function address to get partner chr_p into r5 (0x80059284)
+addi	r5,r5,-0x6d7c
+mtctr r5
+bctrl ; Call function and get partner chr_p if it exists and store in r3
+cmpwi	r3, 0
+beq label1
+
+; Add chakra to partner
+lwz r6, 0x40(r3) ; Set r6 (max_chakra)
+mr r4, r9 ; Set r4 (add_amt)
+mr r9, r3 ; Reuse r9 now that we're done with it; store partner chr_p in in
+; r9 has the partner chr_p
+; r31 has the current chr_p
+lwz r3, 0x44 (r9) ; Set r3 (chr_p->current_chakra)
+lis r5,-0x7fe9 ; Load function address for add_with_range_check(...) into r5 (0x8016ddb4)
+addi    r5,r5,-0x224c
+mtctr r5
+li r5, 0 ; Set r5 (min_chakra)
+bctrl ; Call function to get new chakra
+stw	r3, 0x0044 (r9) ; Store new chakra to partner chr_p
+label1: ; End of new code
+```
