@@ -255,9 +255,9 @@ How long the knockback animation takes as a float. Lower is slower. Derived from
   - `00000001` - DEFOK
   - `00000002` - BDEFOK
   - `00000004` - BGUARD
-  - `00000008` - HIT
+  - `00000008` - HIT: A clean hit on the opponent
   - `00000010` - REVERSAL
-  - `00000020` - GHIT
+  - `00000020` - GHIT: When you hit the opponent's guard
   - `00000040` - COMBO
   - `00000080` - FLOAT
   - `00000100` - FALL
