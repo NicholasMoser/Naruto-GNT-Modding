@@ -291,6 +291,24 @@ This code fixes the empty transparent pixels at the far right end of the P1 heal
 0415e5ac 3a800061
 ```
 
+### Player 1 Infinite Block Meter
+
+```gecko
+48000000 80226358
+DE000000 80008180
+12000294 000006E0
+E0000000 80008000
+```
+
+### CPU 2 (Training Mode Dummy) Infinite Block Meter
+
+```gecko
+48000000 802283FC
+DE000000 80008180
+12000294 000006E0
+E0000000 80008000
+```
+
 ## Experimental
 
 These codes are experimental and may cause unintended side effects, even crashes in some cases.
