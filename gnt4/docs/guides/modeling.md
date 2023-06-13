@@ -46,10 +46,52 @@ After done modifying the model, you can re-import it at `File->Import Model From
 
 ![Import Model From File](/gnt4/images/modeling/6.png?raw=true "Import Model From File")
 
-Once again, the default settings should be fine.
+Once again, the default settings should be fine. It is recommended to keep the current skeleton if you get a warning for it.
 
 ![Import Settings](/gnt4/images/modeling/7.png?raw=true "Export Settings")
 
-After importing, you likely will need to update the **Culling** for the Shadow Outline.
+**Note that many of the object properties will be changed. This is because the export format does not store these properties.
+You will need to compare each object to the original object properties and fix them.**
 
 ![Update Culling](/gnt4/images/modeling/8.png?raw=true "Update Culling")
+
+After you've compared to the original model and fixed the object properties, you may notice that the new model still
+doesn't appear to match the original.
+
+![Model Not Matching](/gnt4/images/modeling/9.PNG?raw=true "Model Not Matching")
+
+At this point you will need to change the culling on many objects. HSDRAW gets confused
+and thinks the original model has `Front` culling on all objects, but the objects are
+instead a mix of `None` and `Back`:
+
+- Object 0 - `None` Culling
+- Object 1 - `None` Culling
+- Object 2 - `None` Culling
+- Object 3 - `None` Culling
+- Object 4 - `None` Culling
+- Object 5 - `None` Culling
+- Object 6 - `None` Culling
+- Object 7 - `None` Culling
+- Object 8 - `None` Culling
+- Object 9 - `None` Culling
+- Object 10 - `Back` Culling
+- Object 11 - `None` Culling
+- Object 12 - `Back` Culling
+- Object 13 - `Back` Culling
+- Object 14 - `Back` Culling
+- Object 15 - `Back` Culling
+- Object 16 - `None` Culling
+- Object 17 - `Back` Culling
+- Object 18 - `Back` Culling
+- Object 19 - `Back` Culling
+- Object 20 - `Back` Culling
+- Object 21 - `Back` Culling
+- Object 22 - `Back` Culling
+- Object 23 - `Back` Culling
+
+The idea being, shadows should only be visible in **Back** of non-shadows. This creates the illusion
+of cell shading.
+
+The model should now roughly match the original in HSDRAW:
+
+![Model Matching](/gnt4/images/modeling/10.PNG?raw=true "Model Matching")
