@@ -1,7 +1,5 @@
 # JCV Files
 
-*Credit to Sifo for the information on this page*
-
 ## Format Information
 
 JCV stands for Joint Connector Value. These files are part of the sysdolphin middleware and work in conjunction with .dat files to define parts of a model.
@@ -126,3 +124,7 @@ int16[count]
 100. InoBone
 101. ?
 102. Mouth2
+
+## Credits
+
+*Credit to Sifo and Ploaj for the information on this page*
