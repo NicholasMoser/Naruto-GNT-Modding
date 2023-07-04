@@ -46,3 +46,19 @@ RAM ends at 0x817FEC60 and the file system table begins (fst.bin)[1]
 24 MB likely is a hard cap, looks like Dolphin can't even address above 0x817FFFFF.
 
 [1] https://wiibrew.org/wiki/Memory_map
+
+## Block in Debug Mode
+
+Despite there being a [Gecko code](https://github.com/NicholasMoser/Naruto-GNT-Modding/blob/main/gnt4/docs/guides/gecko_codes.md#training-mode-default-guard-on-nick)
+to turn guard on for training mode, the game only applies it after pausing. This won't work in debug training mode since the pause works differently.
+You can get around this by modifying the 0010.seq files of the characters you are playing with and against. Specifically, at offset 0x140 you want to change:
+
+```asm
+00140 | i32_mov *seq_p_sp9->field_0x04, HITBOX_IDENTITY_MATRIX->field_0x68
+```
+
+to
+
+```asm
+00140 | i32_mov *seq_p_sp9->field_0x04, 0x0
+```
