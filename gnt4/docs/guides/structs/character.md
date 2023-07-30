@@ -36,6 +36,7 @@ The addresses `80228408` and `8022840c` also appear to be used for 3v3 Training 
 - 00000001: If set to 0, the character is removed. Probably used to remove clones and such.
 - 00000008: Invincibility; all damage becomes 0. Used in `damage_handler()`.
 - 01000000: If this char is a Partner Character. Used for opcodes like `241A3C00`.
+- 80000000: Used for the Naruto clone when it is active.
 
 ### 0x04: **Player ID**
 
@@ -209,6 +210,8 @@ How long the knockback animation takes as a float. Lower is slower. Derived from
 
 ### 0x128: **AF Flags (Action State)**
 
+Action flags.
+
 <details>
   <summary>AF Flag Values</summary>
 
@@ -259,7 +262,7 @@ How long the knockback animation takes as a float. Lower is slower. Derived from
   - `00000010` - REVERSAL
   - `00000020` - GHIT: When you hit the opponent's guard
   - `00000040` - COMBO
-  - `00000080` - FLOAT
+  - `00000080` - FLOAT: In air, similar to AIR. Not set during Tayuya 8B.
   - `00000100` - FALL
   - `00000200` - ENEDMG
   - `00000400` - DIRNOGRD
@@ -270,7 +273,7 @@ How long the knockback animation takes as a float. Lower is slower. Derived from
   - `00008000` - BTNOMOVE
   - `00010000` - NECKTURN
   - `00020000` - ABSTURN
-  - `00040000` - AIR
+  - `00040000` - AIR: In air, similar to FLOAT. Set during Tayuya 8B.
   - `00080000` - RINGOUT
   - `00100000` - TURN
   - `00200000` - ZOMBIE
@@ -398,7 +401,7 @@ Note: 0x00810000 is invincibility; all damage becomes 0. Used in `damage_handler
   - `00200000` - BUTT: Flying Screen knockback
   - `00400000` - UKI: Launch on hit
   - `00800000` - FURI: Turns opponents around on hit
-  - `01000000` - KORO: Sweep
+  - `01000000` - KORO: Sweep, prevents Y cancel for this attack.
   - `02000000` - REACH_L: ?? (Set on counter hit. Used in `counter_hit_check()`)
   - `04000000` - TATA: Small Ground Bounce
   - `08000000` - NOSPEEP: ??
@@ -413,21 +416,23 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
 
 ### 0x13c: **K2F Flags**
 
+Eighting ran out of KF flags, and so added the rest to K2F flags.
+
 <details>
   <summary>K2F Flag Values</summary>
 
-  - `00000001` - YORO2: Feet trapped (air and ground)
+  - `00000001` - YORO2: Body trapped (Kido 5A)
   - `00000002` - HIKI: Swamp hole sink (jiraiya 2A)
   - `00000004` - HIKI2: Fall into ground and appear above (shikamaru 2X)
   - `00000008` - MISSION: In mission mode this pops up when you achieve the objective and is on incoming Zsubs
   - `00000010` - NATEMI: Used on Ino 5X
   - `00000020` - SUPERARMOR: Gives the move super armor
-  - `00000040` - MOTO2: Feet trapped 2 (ground only)
+  - `00000040` - MOTO2: Feet trapped (Kido 2A)
   - `00000080` - ATKALLCAN: Can follow up with any other attack
   - `00000100` - TOJI: Jirobo 2X drain
   - `00000200` - HASA: Jirobo stone clap crumple (air and ground grabbable crumple)
   - `00000400` - SHAVE: For Kisame
-  - `00000800` - NEMU: Sleep
+  - `00000800` - NEMU: Sleep (Kabuto 2X)
   - `00001000` - WING
   - `00002000` - NULL: (Grounded only crumple; OTK 2X)
   - `00004000` - NULL
@@ -456,16 +461,16 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
 <details>
   <summary>DF Flag Values</summary>
 
-  - `00000001` - F
-  - `00000002` - B
-  - `00000004` - R
-  - `00000008` - L
+  - `00000001` - F: Front
+  - `00000002` - B: Back
+  - `00000004` - R: Right
+  - `00000008` - L: Left
   - `00000010` - W
   - `00000020` - M
   - `00000040` - S
   - `00000080` - SPECIAL
   - `00000100` - DOWN
-  - `00000200` - YORO
+  - `00000200` - YORO: Stagger (Naruto first charge of 5A or OTK 5AA)
   - `00000400` - BUTT
   - `00000800` - UKI
   - `00001000` - FURI
@@ -493,18 +498,20 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
 
 ### 0x144: **D2F Flags**
 
+Eighting ran out of DF flags, and so added the rest to D2F flags.
+
 <details>
   <summary>D2F Flag Values</summary>
 
-  - `00000001` - MATO
-  - `00000002` - HIKI
-  - `00000004` - HIKI2
+  - `00000001` - MATO: Body trapped (Kido 5A)
+  - `00000002` - HIKI: Suck into ground (Jiraiya 2A)
+  - `00000004` - HIKI2: Drop into ground (Shikamaru 2X)
   - `00000008` - MISSION
   - `00000010` - BDGUARD
-  - `00000020` - MOTO2
+  - `00000020` - MOTO2: Feet trapped (Kido 2A)
   - `00000040` - TOJI
   - `00000080` - HASA
-  - `00000100` - NEMU
+  - `00000100` - NEMU: Sleep (Kabuto 2X)
   - `00000200` - NULL
   - `00000400` - NULL
   - `00000800` - NULL
@@ -557,7 +564,7 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
   - `00040000` - FIX: Pushes this character in front of the opponent
   - `00080000` - TAKEON
   - `00100000` - RINGOUT
-  - `00200000` - TFAIL
+  - `00200000` - TFAIL: Whiffing a throw, set at 0x800637f4 in `throw_logic()`
   - `00400000` - THROW
   - `00800000` - TDOWN
   - `01000000` - COMBO0
@@ -605,7 +612,7 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
   - `04000000` - PARDIR
   - `08000000` - ATKCHANGE
   - `10000000` - KAWARIMI
-  - `20000000` - ACTCAN
+  - `20000000` - ACTCAN: Canceling an attack with Y
   - `40000000` - 30: Affects the camera?
   - `80000000` - 31: Affects the camera?
 
@@ -1089,9 +1096,10 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
   - 2 Bytes
   - Value in 0x7f6 backed up here before being manipulated
 
-### 0x7fc: **capture\_range?**
+### 0x7fc: **Capture Range**
   
-  - If small, the opponent will not get captured
+  - If small, the opponent will not get captured. The `throw_logic()` expects this to be 0x8000 to initiate capture
+    at 0x80063448.
 
 ### 0x800: **capture\_state\_attack**
 
@@ -1099,6 +1107,10 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
   - Normally -1
   - Set to attack id of the capture state move
   - Opponent act forced to 0xF0 + value set here
+
+### 0x804 **Throw Qualifying Distance**
+
+The distance between the two players to qualify a throw. Usually 11.2.
 
 ### 0x854: **Transformation Flag**
 
@@ -1110,6 +1122,7 @@ Neutral in this case means idling and is represented by END in ATK debug menu.
   - 0 is Sakon, 0x2002 is Ukon.
   - 0 is Tsunade, 2 is Tsunade Healing from 2X
   - 8 is unknown but used in some places like 0x8003e470
+  - 0x20 prevents web trap (YORO2) at 0x8005e580
 
 ### 0x87c: **SF Flags**
 
@@ -1161,11 +1174,19 @@ Set by opcode 2011263F.
 
 ### 0x954 **Throw Target**
 
-Pointer to the character struct of the target of a throw.
+Pointer to the character struct of the target of a throw or projectile
 
 ### 0x960 **Opponent Target**
 
 Pointer to potentially the target of an attack. Set at dol address 0x8003ba78
+
+### 0x964 **Capture Target**
+
+Pointer to the target of capture, such as Kidomaru 6A.
+
+### 0x968 **Captured By**
+
+Pointer to the person capturing the current player, such as Kidomaru 6A.
 
 ### 0x974: **Opponent Character Struct**
 
