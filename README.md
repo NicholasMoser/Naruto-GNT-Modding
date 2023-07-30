@@ -75,6 +75,10 @@ Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.c
 
 [Choji's Chips](gnt4/docs/guides/choji_chips.md)
 
+### Clash of Ninja 2
+
+[Gecko Codes](/con2/docs/guides/gecko_codes.md)
+
 ### GNT EX 1
 
 [Gecko Codes](/ex1/docs/guides/gecko_codes.md)
