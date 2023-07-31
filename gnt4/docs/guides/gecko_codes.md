@@ -26,6 +26,16 @@ Most of the codes you'll find here were written by [Ralf from GC-FOREVER](http:/
 0400CB3C 60000000
 ```
 
+### Skip Memory Card Warning Message [Nick]
+
+```gecko
+0408b310 3860000a
+0408b1b8 38000000
+0408a2e0 3860000a
+0408b20c 38000000
+0408a238 38600000
+```
+
 ### Infinite Time [Ralf]
 
 ```gecko
