@@ -103,7 +103,7 @@ Change the background for the main menu, where each background is a month and ea
 - November = A
 - December = B
 
-**Please replace the X in the below code with the value of the month you wish to use.**
+Please replace the X in the below code with the value of the month you wish to use.
 
 ```gecko
 C200B33C 00000002
