@@ -86,6 +86,31 @@ C2042C40 00000007
 04222FB8 8004CB64
 ```
 
+### Change Default Background Month [Nick]
+
+Change the background for the main menu, where each background is a month and each month is a value:
+
+- January = 0
+- February = 1
+- March = 2
+- April = 3
+- May = 4
+- June = 5
+- July = 6
+- August = 7
+- September = 8
+- October = 9
+- November = A
+- December = B
+
+**Please replace the X in the below code with the value of the month you wish to use.**
+
+```gecko
+C200B33C 00000002
+3900000X 911F01B4
+39000000 00000000
+```
+
 ### Battle Mode is the Default Menu Option [Nick]
 
 ```gecko
