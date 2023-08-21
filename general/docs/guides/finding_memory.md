@@ -49,7 +49,7 @@ you need to check. Then you manually check those locations to confirm if they ar
 
 We start by establishing a baseline. We don't know what the max chakra is, so let's start a new search using **4 bytes (Word)** and **Unknown initial value**.
 
-![Unknown initial value](/general/images/mem/unknown_initial_value.png?raw=true "Unknown initial value")
+![Unknown initial value](/general/images/mem/unknown_initial_value.PNG?raw=true "Unknown initial value")
 
 This tells Dolphin Memory Engine to load all 4-byte integers from Dolphin memory with no restraints.
 Max chakra may be a float, so we could also try selecting **Float** instead of **4 bytes (Word)**.
@@ -106,7 +106,7 @@ column we can see the last value scanned.
 By resuming the game we can watch this value change live and determine if it is what we're looking for.
 Furthermore, you can double click on it to add it to the watch list below:
 
-![Watch list](/general/images/mem/watch_list.png?raw=true "Watch list")
+![Watch list](/general/images/mem/watch_list.PNG?raw=true "Watch list")
 
 Now that we have it here, we can double click on the **Value** to manually change it to see what happens in-game.
 We can also select the **Lock** checkbox to prevent it from changing and see what happens in-game. We also may
@@ -139,7 +139,7 @@ We can create a memory read or write breakpoint to find where in the code this v
 Since battle state is updated every frame, we should expect this to be hit every frame, possibly multiple
 times a frame:
 
-![Code stopped](/general/images/mem/code_stopped.png?raw=true "Code stopped")
+![Code stopped](/general/images/mem/code_stopped.PNG?raw=true "Code stopped")
 
 We can now right click on this line of code and select **Copy address** and open Ghidra to view the code
 at that location. Once Ghidra is open hit **G** on your keyboard and paste the address.
