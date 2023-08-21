@@ -51,6 +51,8 @@ Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.c
 
 [Archived Save Data](https://archive.org/details/GNTSaveFiles)
 
+[Finding Memory Addresses](/general/docs/guides/finding_memory.md)
+
 ## Games
 
 ### GNT4
