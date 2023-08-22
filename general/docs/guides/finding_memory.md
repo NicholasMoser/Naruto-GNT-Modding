@@ -13,10 +13,7 @@ Second, you are not required to have, but will likely want:
 
 - [Dolphin Memory Engine](https://github.com/aldelaro5/Dolphin-memory-engine)
 - [Ghidra](https://github.com/NicholasMoser/Naruto-GNT-Modding/blob/main/gnt4/docs/guides/ghidra.md)
-- A [Symbol Map](https://github.com/NicholasMoser/Naruto-GNT-Modding/tree/main/general/symbol_maps) for the
-  respective game. It must be named after the [Game ID](https://wiki.dolphin-emu.org/index.php?title=GameIDs)
-  with the extension `.map`. Put it in your Dolphin folder under the `Maps` folder and in Dolphin select
-  `Symbols->Load Symbol Map`.
+- A [Symbol Map](/general/docs/guides/symbol_maps.md) for the respective game. 
 
 The following guide assumes you have Dolphin Memory Engine and Ghidra, however you can use the Dolphin
 built-in memory search instead of Dolphin Memory Engine which is located under

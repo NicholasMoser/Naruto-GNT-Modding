@@ -15,7 +15,7 @@ In addition to downloading Ghidra, you will need a few other things as well.
 Then you will want one of the two following things:
 
 - The community Ghidra Zip File. This cannot be directly linked here due to containing the code of the game. Please feel free to reach out to a modder and prove that you own a legal copy of the game to be provided this.
-- Assuming you cannot get a Ghidra Zip File, the appropriate symbol map for the game you wish to decompile. If a [community symbol map](https://github.com/NicholasMoser/Naruto-GNT-Modding/tree/master/general/symbol_maps) exists for the game you wish to decompile, you should use that. If a symbol map doesn't yet exist for the game you wish to decomp, you can create a starting map from Dolphin. In Dolphin run the game and go to `Symbols -> Generate Symbols From -> Signature Database`. Once that is complete go to `Symbols -> Save Symbol Map`.
+- Assuming you cannot get a Ghidra Zip File, the [symbol map](/general/docs/guides/symbol_maps.md) for the game you wish to decompile.
 
 On first boot, you will want to create a new project. You will want to create a **Non-Shared Project**, as a **Shared Project** requires Ghidra running on a server. Once the project is created, select `File->Import File`.
 
