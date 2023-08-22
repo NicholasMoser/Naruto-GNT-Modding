@@ -21,7 +21,7 @@ This repository contains information related to modding the Naruto Gekitō Ninja
 
 ## Overview
 
-The GNT series of games currently has a very active modding community. Most modding work is currently going into the Super GNT4 mod. Here you can find the [SUPER Naruto Gekitou Ninja Taisen 4 Trailer](https://www.youtube.com/watch?v=dBm2x1XauN8). And by going to the [Super GNT4 Discord](https://discord.com/invite/supercon4) you can download the mod.
+The GNT series of games currently has a very active community. Most development effort is currently going into the Super Clash of Ninja 4 community patch. You can download the patch at https://gnt4.online/ and engage with the community in the [SCON4 Discord](https://discord.com/invite/supercon4).
 
 ## Skins
 
@@ -117,10 +117,10 @@ Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.c
 
 ## Other Resources
 
+[Online GNT Patcher](https://gnt4.online)
+
 [Naruto GNT4 Subreddit](https://www.reddit.com/r/GNT4/)
 
-[GNT Community Discord](https://discord.gg/jDUxzvH)
-
-[Super GNT4 Discord](https://discord.com/invite/supercon4)
+[SCON4 Discord](https://discord.com/invite/supercon4)
 
 [GNT4 Documentation Notion](https://www.notion.so/GNT4-Documentation-40969865cc5d46cd97fd3900037c1de7)
