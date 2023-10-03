@@ -559,6 +559,31 @@ c203e2b0 00000003
 
 This is in contrast to normal circumstances, where Ukon takes 1.2x damage and ZTK takes 1.5x damage.
 
+### ZTK Regains Red Health Like Kabuto
+
+This code is a proof of concept that other characters can be modified to work like
+Kabuto, such that some red health is left after attacks that heal every 18 frames.
+
+```gecko
+0403ea3c 2c000018
+0403ea4c 801c025c
+0403ea50 807c0260
+0403ea54 7c001800
+0403ea5c 3803ffff
+C203EC7C 00000003
+801C001C 28000008
+40820008 38000027
+60000000 00000000
+C215E63C 00000003
+8006001C 28000008
+40820008 38000027
+60000000 00000000
+C215E688 00000003
+8006001C 28000008
+40820008 38000027
+60000000 00000000
+```
+
 ### No limit to Choji Chip Eating Attack Boost [Nick]
 
 ```gecko
