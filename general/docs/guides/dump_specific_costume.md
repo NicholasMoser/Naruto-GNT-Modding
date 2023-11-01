@@ -31,3 +31,5 @@ Then, select the costume to load the textures. Dolphin will dump them out to the
 ![Dump Textures](/general/images/dump_specific_costume/8.png?raw=true "Dump Textures")
 
 You can now modify these textures to make them custom and load them using the guide [Dolphin Texture Loading](/general/docs/guides/dolphin_texture_loading.md).
+
+**Make sure to disable the Dump Textures Dolphin setting now that you are done, or else it will continue dumping textures while you play. This will slow down your game.**
