@@ -9,8 +9,6 @@ The file begins with a 16 byte header. Only the first three four-byte words are 
 <details>
   <summary>First word</summary>
 
-Appears to be used to determine the number of register groups needed. For more info see [Opcode Method Parameters](#opcode-method-parameters)
-
 - 0x01
 - 0x02
 - 0x04
@@ -61,6 +59,50 @@ Appears to be used to determine the number of register groups needed. For more i
 - 0x40
 
 </details>
+
+The file `loading.seq` for example has the first three words: `00 00 00 0E 00 00 00 40 00 00 00 40`, or 0xE, 0x40, and 0x40.
+The specific calculation at 0x800c991c is:
+
+```c
+void SEQ_Setup(seq_stuff *stuff,int seq_word_one,int seq_word_two,int seq_word_three)
+{
+  void *reg_p_sp;
+  stuff->seq_word_one = seq_word_one + 1;
+  stuff->seq_word_two = seq_word_two;
+  stuff->seq_word_three = seq_word_three;
+  stuff->size = stuff->seq_word_two + ((stuff->seq_word_one * 0x60) >> 2) + stuff->seq_word_three * (stuff->seq_word_one + -1);
+                    /* Allocate memory for the SEQ, multiply by 4 (<< 2)
+                       likely because size is the number of 4-byte ints */
+  reg_p_sp = F_LoadMalloc(&HEAP_STRUCT,stuff->size << 2); // start of reg_p->sp
+  stuff->reg_p_sp = reg_p_sp;
+  stuff->end_of_reg_p_sp = (stuff->reg_p_sp + stuff->seq_word_one * 0x60);
+  stuff->field10_0x1c = stuff->end_of_reg_p_sp + stuff->seq_word_two * 4;
+                    /* Null out all of reg_p->sp */
+  Runtime.PPCEABI.H::memset(stuff->reg_p_sp,0,stuff->seq_word_one * 0x60);
+  return;
+}
+```
+
+So using `loading.seq` this would be:
+
+```c
+void SEQ_Setup(seq_stuff *stuff, 0xE, 0x40, 0x40)
+{
+  void *reg_p_sp;
+  stuff->seq_word_one = 0xE + 1; // 0xF
+  stuff->seq_word_two = 0x40;
+  stuff->seq_word_three = 0x40;
+  stuff->size = 0x40 + ((0xF * 0x60) >> 2) + 0x40 * (0xF + -1); // 0x528
+  reg_p_sp = F_LoadMalloc(&HEAP_STRUCT,stuff->size << 2); // 0x528 << 2 = 0x14A0
+  stuff->reg_p_sp = reg_p_sp;
+  stuff->end_of_reg_p_sp = (stuff->reg_p_sp + 0xF * 0x60); //   0xF  * 0x60 = 0x5A0
+  stuff->field10_0x1c = stuff->end_of_reg_p_sp + 0x40 * 4; //   0x40 * 4 = 0x100
+  Runtime.PPCEABI.H::memset(stuff->reg_p_sp, 0, 0xF * 0x60); // 0xF  * 0x60 = 0x5A0
+  return;
+}
+```
+
+
 
 Here are the headers of each SEQ file in the game:
 
