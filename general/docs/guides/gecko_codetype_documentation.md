@@ -2,6 +2,9 @@
 
 This page contains documentation for the different types of Gecko codes. Gecko codes are similar to [Action Replay](http://www.bsfree.org/hack/hacking_gcn.html#ar_code_types) codes and can be used for both Gamecube and Wii games. The information was taken from the now defunct [WiiRD Code Database](https://web.archive.org/web/20200807235652/https://geckocodes.org/index.php?arsenal=1), which lists the authors as kenobi, Nuke, Link, Brkirch, dcx2, Skiller, wiiztec, hetoan2, Romaap, mugwhump, and James0x57.
 
+The PowerPC assembly to handle these codes can be found in [codehandler.bin](https://github.com/dolphin-emu/dolphin/blob/115ad825813d76e3ac8bd8aaab0d110c3fe378ad/Data/Sys/codehandler.bin)
+which is loaded by Dolphin into the unused area [starting at 0x80001800](https://github.com/dolphin-emu/dolphin/blob/115ad825813d76e3ac8bd8aaab0d110c3fe378ad/Source/Core/Core/GeckoCode.h#L50).
+
 ## Direct Ram Writes
 
 ### 8 bits Write & Fill
