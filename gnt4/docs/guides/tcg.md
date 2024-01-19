@@ -43,7 +43,7 @@ The best guess for what the name means is:
 ```
 s_  = static
 lp  = long pointer
-CTD = ??? Table Data
+CTD = Cell Table Data
 ```
 
 The first part, `s_` makes sense considering that the variable is static and accessible from many functions. This can further be
@@ -54,4 +54,12 @@ The second part, `lp` likely is long pointer which is apparently a name derived 
 is for the Windows data type [LPSTR](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/3f6cc0e2-1303-4088-a26b-fb9582f29197).
 
 The third part, `CTD` has a few things it could be. The `TD` likely stands for Table Data since this is a pointer to a table of data.
-Not sure what the `C` stands for though, maybe Context or Command.
+Not sure what the `C` stands for though, maybe Context or Command. More likely Cell since that shows up in many related function names.
+
+## Current Understanding
+
+Based on known function names from the Doraemon symbol map, each graphical component is a _TCGCELL struct. These cells appear to be
+initialized in the SEQ files, e.g. m_title.seq. It is likely creating some [Finite-state_machine](https://en.wikipedia.org/wiki/Finite-state_machine)
+to tie the cells to each other, where certain inputs display and move certain cells. This is believed to be the case due to the fact that
+we can see little SEQ code running between frames in the menus. Furthermore the text entries at the end of m_title.seq are read only
+once at the title screen after hitting Start.

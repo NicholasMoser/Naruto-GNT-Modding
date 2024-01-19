@@ -3,7 +3,10 @@
 This page documents my efforts to create a Gecko code to hold start to pause in player vs player fights. The benefit of such a code is to
 prevent accidental pauses during matches.
 
-### The Code
+## The Codes
+
+
+### Hold Start to Pause
 
 To change the amount of frames to hold start to pause, change the 0x14 at the end of `2C040014` to the number you wish to use.
 
@@ -24,6 +27,11 @@ C20477B0 0000000B
 04047848 800300a4
 04047864 80030064
 04047880 80030024
+```
+
+### Display Player Who Paused
+
+```gecko
 042182f0 20504155
 042182f4 53454420
 042182f8 42592050
@@ -48,7 +56,36 @@ B00382FC 38000000
 60000000 00000000
 ```
 
-### Main Assembly Code
+## General Explanation
+
+The goal for this code is to have an internal memory address that keeps track of how many frames start is held. If it reaches a certain value,
+then and only then, will the pause menu actually be activated.
+
+We store the start counter at memory address 0x80276B8C, which is unused space in the OdemuExi2 code (unreachable developer debugging code).
+If start is being held by any player, we increment this value. If it is over the max value (currently 0x14 frames), then we reset the counter
+and trigger the pause menu. Otherwise, we increment the counter and do not trigger the pause menu. If at any frame start is not held,
+the counter is reset to 0.
+
+One problem is that the memory address read for start being pressed is at offset 0x28 of a controller struct. This field is `pressed_buttons`
+and each frame will only have new buttons that have been pressed. So pressing start will set it to 0x1000 the first frame, but will reset it to
+0 every frame after until a new button is pressed. For this code, we instead use offset 0x24 of the controller struct which is `held_buttons`.
+`held_buttons` will have every currently held button every frame, therefore we can use this to track how long start is held.
+
+Another problem ran into is that at 0x80047824, 0x80047848, 0x80047864, and 0x80047880 we check pressed buttons on each controller to determine
+the player who paused. Since start is being held and not pressed, none of these will ever show the button having been pressed. Therefore we must
+instead read the memory address 4 bytes before these, which is the **held buttons** for each controller. Whichever controller is holding start
+on the last frame of the frame count will be the one who paused. If multiple players are holding pause on the last frame, the lower controller
+number will be the one to pause.
+
+Last, there was an idea to identify visually which player paused. This can be done by modifying the "PAUSED" text in memory. Unfortunately,
+the existing "PAUSED" text at 0x80278a50 only has 8 bytes available (7 characters with a null terminator). This limits the length of the text
+we can use. But also, 0x80278a50 is in [sdata2](https://refspecs.linuxfoundation.org/LSB_3.1.0/LSB-Core-PPC32/LSB-Core-PPC32/sections.html)
+which is initialized unmodifiable data anyways, so we must use text from somewhere else. 0x802182f0 was available so I used that.
+
+The code will only work for non-training battle modes since it is currently in the function `battle_menu_handler`. To create a similar code for
+training mode, the code would need to be written in the function `training_mode_menu_handler`.
+
+## Hold Start to Pause Code Explanation
 
 The following PowerPC assembly code is inserted at 0x800477B0. To change the amount of frames to hold start to pause,
 change the 0x14 under the `update_counter` label to the number you wish to use.
@@ -118,7 +155,7 @@ or else they won't register which player paused. See below in **Explanation** fo
 04047880 80030024
 ```
 
-### Code to Display Player Paused
+## Display Player Who Paused Code Explanation
 
 Now, we want to display in-game which player paused. First, we create the String " PAUSED BY P".
 We will modify this String in memory to add the 1, 2, 3, or 4 to the end of it. We must make sure that
@@ -202,35 +239,6 @@ C204788C 00000003
 B00382FC 38000000
 60000000 00000000
 ```
-
-### Explanation
-
-The goal for this code is to have an internal memory address that keeps track of how many frames start is held. If it reaches a certain value,
-then and only then, will the pause menu actually be activated.
-
-We store the start counter at memory address 0x80276B8C, which is unused space in the OdemuExi2 code (unreachable developer debugging code).
-If start is being held by any player, we increment this value. If it is over the max value (currently 0x14 frames), then we reset the counter
-and trigger the pause menu. Otherwise, we increment the counter and do not trigger the pause menu. If at any frame start is not held,
-the counter is reset to 0.
-
-One problem is that the memory address read for start being pressed is at offset 0x28 of a controller struct. This field is `pressed_buttons`
-and each frame will only have new buttons that have been pressed. So pressing start will set it to 0x1000 the first frame, but will reset it to
-0 every frame after until a new button is pressed. For this code, we instead use offset 0x24 of the controller struct which is `held_buttons`.
-`held_buttons` will have every currently held button every frame, therefore we can use this to track how long start is held.
-
-Another problem ran into is that at 0x80047824, 0x80047848, 0x80047864, and 0x80047880 we check pressed buttons on each controller to determine
-the player who paused. Since start is being held and not pressed, none of these will ever show the button having been pressed. Therefore we must
-instead read the memory address 4 bytes before these, which is the **held buttons** for each controller. Whichever controller is holding start
-on the last frame of the frame count will be the one who paused. If multiple players are holding pause on the last frame, the lower controller
-number will be the one to pause.
-
-Last, there was an idea to identify visually which player paused. This can be done by modifying the "PAUSED" text in memory. Unfortunately,
-the existing "PAUSED" text at 0x80278a50 only has 8 bytes available (7 characters with a null terminator). This limits the length of the text
-we can use. But also, 0x80278a50 is in [sdata2](https://refspecs.linuxfoundation.org/LSB_3.1.0/LSB-Core-PPC32/LSB-Core-PPC32/sections.html)
-which is initialized unmodifiable data anyways, so we must use text from somewhere else. 0x802182f0 was available so I used that.
-
-The code will only work for non-training battle modes since it is currently in the function `battle_menu_handler`. To create a similar code for
-training mode, the code would need to be written in the function `training_mode_menu_handler`.
 
 ## Rev3 (US) Code
 
