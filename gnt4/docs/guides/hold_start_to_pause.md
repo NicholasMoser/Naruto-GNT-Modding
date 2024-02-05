@@ -54,6 +54,16 @@ C204788C 00000003
 38003120 3C608022
 B00382FC 38000000
 60000000 00000000
+C20478A4 00000009
+2C000003 40820008
+38003420 2C000002
+40820008 38003320
+2C000001 40820008
+38003220 2C000000
+40820008 38003120
+3C608022 B00382FC
+801D0038 2000FFFF
+901C0028 00000000
 ```
 
 ## General Explanation
@@ -182,7 +192,7 @@ C204765C 00000002
 60000000 00000000
 ```
 
-Last, we need to modify the P1 in the new String with P2, P3, and P4 respectively for each player.
+We also need to modify the P1 in the new String with P2, P3, and P4 respectively for each player.
 
 ```asm
   li r0, 0x3420
@@ -238,6 +248,51 @@ C204788C 00000003
 38003120 3C608022
 B00382FC 38000000
 60000000 00000000
+```
+
+Last, we must update the code where a controller disconnects and sets the player who disconnected.
+This code is at 0x800478a0.
+
+```asm
+player_4:
+  cmpwi r0, 0x3
+  bne- player_3
+  li r0, 0x3420
+
+player_3:
+  cmpwi r0, 0x2
+  bne- player_2
+  li r0, 0x3320
+
+player_2:
+  cmpwi r0, 0x1
+  bne- player_1
+  li r0, 0x3220
+
+player_1:
+  cmpwi r0, 0x0
+  bne- store_and_reload_r0
+  li r0, 0x3120
+
+store_and_reload_r0:
+  lis r3, 0x8022
+  sth r0, -32004(r3)
+  lwz r0, 56(r29)
+  subfic r0, r0, -1
+  stw r0, 40(r28)
+```
+
+```gecko
+C20478A4 00000009
+2C000003 40820008
+38003420 2C000002
+40820008 38003320
+2C000001 40820008
+38003220 2C000000
+40820008 38003120
+3C608022 B00382FC
+801D0038 2000FFFF
+901C0028 00000000
 ```
 
 ## Rev3 (US) Code
