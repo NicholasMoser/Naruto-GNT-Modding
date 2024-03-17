@@ -2,6 +2,12 @@
 
 ## char_sel.seq
 
+04DC0: Where the delay on CSS model loads is set, namely 0x3C frames. Only for Player 1.
+
+```
+04DC0 | op_3B02 0x00, 0x00, 0x00004E80, 0x0000003C, 0x7FFFFF2A 3B020000 00004E80 0000003C 7FFFFF2A
+```
+
 04F00: Where costume selection button inputs are processed
 
 ```
