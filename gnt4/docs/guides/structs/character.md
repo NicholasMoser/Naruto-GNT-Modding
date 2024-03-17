@@ -210,26 +210,26 @@ How long the knockback animation takes as a float. Lower is slower. Derived from
 
 ### 0x128: **AF Flags (Action State)**
 
-Action flags.
+Action state flags.
 
 <details>
   <summary>AF Flag Values</summary>
 
-  - `00000001` - STAND
+  - `00000001` - STAND: This action is in the default stance on this frame (No crush)
   - `00000002` - FORWARD
   - `00000004` - BACK
   - `00000008` - DASH
-  - `00000010` - SIT
-  - `00000020` - FUSE
+  - `00000010` - SIT: This action is invulnerable to "High" attacks on this frame (High Crush)
+  - `00000020` - FUSE: This action is invulnerable to "High" and "Middle" attacks on this frame (Middle Crush)
   - `00000040` - UKEMI
   - `00000080` - KIRI
   - `00000100` - SPMDMG
   - `00000200` - SLANT
   - `00000400` - QUICK
-  - `00000800` - FLOAT
+  - `00000800` - FLOAT: This action is considered to not be grounded (not to be confused with AIR flag)
   - `00001000` - JUMP
   - `00002000` - FALL
-  - `00004000` - SMALL
+  - `00004000` - SMALL: This action is invulnerable to "Low" attacks on this frame (Low Crush)
   - `00008000` - DAMAGE
   - `00010000` - DOWNU
   - `00020000` - DOWNO
@@ -245,35 +245,37 @@ Action flags.
   - `08000000` - NDOWN
   - `10000000` - DEF: 4B guard
   - `20000000` - TFAIL: Missed throw
-  - `40000000` - THROW: When placed on an attack, turns off follow ups
+  - `40000000` - THROW: This attack is considered a throw (substitution is not possible, turns off follow ups)
   - `80000000` - ATTACK: Used in `counter_hit_check()`
   
 </details>
 
 ### 0x12c: **PF Flags**
 
+Animation related flags.
+
 <details>
   <summary>PF Flag Values</summary>
 
-  - `00000001` - DEFOK
+  - `00000001` - DEFOK: The character's attack will have Auto Guard (in conjunction with DEF flag)
   - `00000002` - BDEFOK
   - `00000004` - BGUARD
   - `00000008` - HIT: A clean hit on the opponent
   - `00000010` - REVERSAL
   - `00000020` - GHIT: When you hit the opponent's guard
   - `00000040` - COMBO
-  - `00000080` - FLOAT: In air, similar to AIR. Not set during Tayuya 8B.
+  - `00000080` - FLOAT: In air, similar to AIR. Tayuya 8B sets AIR but not FLOAT, so there is a difference.
   - `00000100` - FALL
   - `00000200` - ENEDMG
   - `00000400` - DIRNOGRD
   - `00000800` - ENEDWN
   - `00001000` - ENEATK
   - `00002000` - BDEF
-  - `00004000` - THROWOK
+  - `00004000` - THROWOK: The character is in a throwable state
   - `00008000` - BTNOMOVE
   - `00010000` - NECKTURN
   - `00020000` - ABSTURN
-  - `00040000` - AIR: In air, similar to FLOAT. Set during Tayuya 8B.
+  - `00040000` - AIR: This action is considered airborne on this frame (getting hit will result in a juggle).
   - `00080000` - RINGOUT
   - `00100000` - TURN
   - `00200000` - ZOMBIE
@@ -294,12 +296,14 @@ Note: 0x00810000 is invincibility; all damage becomes 0. Used in `damage_handler
 
 ### 0x130: **NF Flags**
 
+Direction/generic flags.
+
 <details>
   <summary>NF Flag Values</summary>
 
   - `00000001` - KAMAE
   - `00000002` - DISP: Disappears. Can even walk through opponent while invisible.
-  - `00000004` - TDMG
+  - `00000004` - TDMG: The character is invincible in their current state
   - `00000008` - JUMP2: Double jump.
   - `00000010` - LEVERDIR
   - `00000020` - GETUP
@@ -322,17 +326,19 @@ Note: 0x00810000 is invincibility; all damage becomes 0. Used in `damage_handler
   - `00400000` - AGUARD
   - `00800000` - DAMAGE
   - `01000000` - GUARD
-  - `02000000` - AUTODIR: Determines if something has any tracking on it..?
+  - `02000000` - AUTODIR: The "tracking" flag; during this move, the character will automatically pivot towards the opponent in an attempt to align their attack with them if they are off-axis.
   - `04000000` - ENEAUTO
   - `08000000` - NJPTURN
   - `10000000` - RINGOUT
   - `20000000` - KABE
-  - `40000000` - TDOWN
+  - `40000000` - TDOWN: If not present, the attack will not allow Throws to be used until the flag dissapears (regardless of distance with the opponent)
   - `80000000` - LEVER
 
 </details>
 
 ### 0x134: **N2F Flags**
+
+More direction/generic flags.
 
 <details>
   <summary>N2F Flag Values</summary>
@@ -374,41 +380,43 @@ Note: 0x00810000 is invincibility; all damage becomes 0. Used in `damage_handler
 
 ### 0x138: **KF Flags**
 
+Attack flags.
+
 <details>
   <summary>KF Flag Values</summary>
 
   - `00000001` - REPLAY: No effect
-  - `00000002` - BDRIVE: Changes lighting, no sub or tech roll
-  - `00000004` - SHOT: ??
-  - `00000008` - POW_W: Weak hit. affects blockstun and hitstun
-  - `00000010` - POW_M: Medium hit
-  - `00000020` - POW_S: Strong hit
-  - `00000040` - LOW: Attack hits low, and can be evaded by small flag
-  - `00000080` - MIDDLE: Attack hits middle
-  - `00000100` - HIGH: Atack hits high, and can be evaded by sit flag
-  - `00000200` - PUNCH: Attack is classified as a punch
-  - `00000400` - KICK: Atack is classified as a kick
+  - `00000002` - BDRIVE: This attack is considered a super (substitution is not possible)
+  - `00000004` - SHOT: This attack is considered a projectile (almost always seen combined with REACH_L flag)
+  - `00000008` - POW_W: This attack is considered to be "weak" (affects blockstun and hitstun)
+  - `00000010` - POW_M: This attack is considered to be "medium" (affects blockstun and hitstun)
+  - `00000020` - POW_S: This attack is considered to be "strong" (affects blockstun and hitstun)
+  - `00000040` - LOW: This attack hits Low (will not hit moves that currently have SMALL flag active)
+  - `00000080` - MIDDLE: This attack hits Mid (will still hit moves that currently have either SIT and SMALL flag active, but not FUSE)
+  - `00000100` - HIGH: This attack hits High (will not hit moves that currently have SIT flag active)
+  - `00000200` - PUNCH: This attack is considered a punch (enables Y-Cancels for the attack)
+  - `00000400` - KICK: This attack is considered a kick (enables Y-Cancels for the attack)
   - `00000800` - THROW: Attack is classified as a throw
-  - `00001000` - OIUCHI: Hits later on OTG
-  - `00002000` - SPECIAL: Builds no chakra
-  - `00004000` - NOGUARD: Unblockable
+  - `00001000` - OIUCHI: This attack can bypass a tech roll's invincibility (unused)
+  - `00002000` - SPECIAL: This attack will not build any meter (most commonly seen on supers)
+  - `00004000` - NOGUARD: This attack is unblockable
   - `00008000` - TDOWN: Makes a move grabbable while active
-  - `00010000` - SPTATA: This is a large bounce (like Naruto 4B)
-  - `00020000` - BREAK: Used in combination with other flags to move guard
-  - `00040000` - COMBO: Seen in attacks that are only follow ups
-  - `00080000` - DOWN: Spinout launcher. Launches higher than Uki flag
-  - `00100000` - YORO: Stagger
-  - `00200000` - BUTT: Flying Screen knockback
-  - `00400000` - UKI: Launch on hit
-  - `00800000` - FURI: Turns opponents around on hit
-  - `01000000` - KORO: Sweep, prevents Y cancel for this attack.
-  - `02000000` - REACH_L: ?? (Set on counter hit. Used in `counter_hit_check()`)
-  - `04000000` - TATA: Small Ground Bounce
+  - `00010000` - SPTATA: This attack causes a large groundbounce on hit (cannot be Y-Canceled)
+  - `00020000` - BREAK: This attack pushes the opponent on block (the direction of the push depends on the attack's inherent angle value)
+  - `00040000` - COMBO: This action is considered a part of a string
+  - `00080000` - DOWN: This attack causes a spinning launch on hit (launches higher than Uki flag)
+  - `00100000` - YORO: This attack staggers the opponent on hit
+  - `00200000` - BUTT: This attack causes heavy knockback (when combined with BREAK flag, triggers flying screen)
+  - `00400000` - UKI: This attack launches the opponent on hit
+  - `00800000` - FURI: On hit, this attack causes opponents to forcefully turn their back towards the attacker (unused)
+  - `01000000` - KORO: This attack trips the opponent on hit (cannot be Y-Canceled)
+  - `02000000` - REACH_L: The projectile's hitboxes will refresh as it travels
+  - `04000000` - TATA: This attack causes a small groundbounce on hit (cannot be Y-Canceled)
   - `08000000` - NOSPEEP: ??
-  - `10000000` - BEAST: Slash hit effect and chip damage
-  - `20000000` - FREEZE: Opponent does not move from the attack (Kimi multihit moves)
+  - `10000000` - BEAST: This attack deals chip damage
+  - `20000000` - FREEZE: This attack does not have pushback on hit or block (Kimi multihit moves)
   - `40000000` - CANCEL: Cancel the move when you press Y (combine with RF for feint)
-  - `80000000` - ATKCAN: Super Cancel
+  - `80000000` - ATKCAN: This attack can be canceled into supers
 
 Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
 
@@ -416,7 +424,7 @@ Note: 0x30000000 causes counter hits. Used in `counter_hit_check()`
 
 ### 0x13c: **K2F Flags**
 
-Eighting ran out of KF flags, and so added the rest to K2F flags.
+More attack flags.
 
 <details>
   <summary>K2F Flag Values</summary>
@@ -584,15 +592,15 @@ Eighting ran out of DF flags, and so added the rest to D2F flags.
   <summary>RF Flag Values</summary>
 
   - `00000001` - COLOR
-  - `00000002` - TYAKURASUB: Meter drain
-  - `00000004` - HAZIKI: Allows kunai deflect Neji 2X
+  - `00000002` - TYAKURASUB: This attack subtracts chakra from the opponent
+  - `00000004` - HAZIKI: This attack can repel projectiles (Neji 2X)
   - `00000008` - HAZIKIR
   - `00000010` - ALLGUARD: Guards all sides when DEF is active
   - `00000020` - EFTREV: Removes GFX
   - `00000040` - TARGETDIRA
-  - `00000080` - GCANCELCHK: Hyuuga cancel, must be on at the start of the move
-  - `00000100` - GCANCELOK: Appears after you confirm the cancel, is set on the cancel frame
-  - `00000200` - GCANCEL: Shows until a cancel can be done
+  - `00000080` - GCANCELCHK: This move is Hyuuga-cancellable and will be checking for a Hyuuga-cancel input before active frames.
+  - `00000100` - GCANCELOK: A Hyuuga-cancel animation can initiate as soon as the frame after this flag appears.
+  - `00000200` - GCANCEL: The game puts this flag down if a Hyuuga-cancel has been input while GCANCELCHK is active. Initiates a Hyuuga-cancel when paired with flag GCANCELOK.
   - `00000400` - GATTACK
   - `00000800` - NKAWARIMI: Applies confusion on damage (Used by Tsunade)
   - `00001000` - AUTOMOTION
@@ -611,7 +619,7 @@ Eighting ran out of DF flags, and so added the rest to D2F flags.
   - `02000000` - DEFAULTTEXREV: On Oro 5X
   - `04000000` - PARDIR
   - `08000000` - ATKCHANGE
-  - `10000000` - KAWARIMI
+  - `10000000` - KAWARIMI: This character is currently performing a "Kawarimi-no-Jutsu"
   - `20000000` - ACTCAN: Canceling an attack with Y
   - `40000000` - 30: Affects the camera?
   - `80000000` - 31: Affects the camera?
