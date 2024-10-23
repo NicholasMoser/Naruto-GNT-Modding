@@ -706,15 +706,20 @@ C2092154 00000010
 04214014 00000011
 ```
 
-### Add Random Select and Reorder CSS [Nick]
+### Add Random Select and Reorder CSS v2 [Nick]
 
 Similar to the above random select, but with a slightly different CSS character order.
+Also normal Hinata is also random now.
 For more info see https://github.com/NicholasMoser/GNTool/issues/68
 
 ```gecko
 c215b9e8 00000003
 2c000011 40820008
 38006dad 7c04412e
+60000000 00000000
+C215B9B4 00000003
+2C09000C 40820008
+39206DAD 7D28012E
 60000000 00000000
 C2092154 00000010
 7CA6282E 2C056DAD
