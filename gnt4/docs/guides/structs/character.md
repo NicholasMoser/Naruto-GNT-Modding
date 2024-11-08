@@ -825,6 +825,17 @@ You can view the English names given to them by Eighting in CON2 in the item vie
 
   - Used to count frames for damage/healing over time. e.g. Tsunade heal.
 
+### 0x270: **Transform Drain Counter**
+
+  - Used for every character but transformed Kakashi, Naruto, and Lee.
+    If current recoverable damage is less than current damage, heal 1 health.
+    The counter counts up by 1 until it reaches 0x18.
+
+### 0x278: **Health Recovery Drain Counter**
+
+  - Every frame counts up by 1 until it reaches 0x14, and either adds and subtracts 1 health.
+    Used with the Health Recovery and Drain handicaps.
+
 ### 0x27c: **Max Damage**
 
   - The total health of your character. You die when **Current Damage** >= **Max Damage**
