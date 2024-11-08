@@ -70,6 +70,20 @@ Then to actually enable it, you must do three things:
    so for example if you want to do damage every 3 frames and end on frame 9, you
    would use the value 0x00030009 (located at chr_p->0x278).
 
+For 2 and 3, you would apply this to yourself with
+
+```
+04026600 00000274 3F000000 00000000
+04026600 00000278 3F000000 00030009
+```
+
+and to the opponent with
+
+```
+04026700 00000274 3F000000 00000000
+04026700 00000278 3F000000 00030009
+```
+
 ### How it Works
 
 To create a new poison effect, we need a few different components.

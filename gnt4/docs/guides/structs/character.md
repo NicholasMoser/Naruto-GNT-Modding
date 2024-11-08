@@ -581,7 +581,7 @@ Eighting ran out of DF flags, and so added the rest to D2F flags.
   - `08000000` - BDRIVE
   - `10000000` - FLAG0
   - `20000000` - FLAG1
-  - `40000000` - FLAG2
+  - `40000000` - FLAG2: SCON4 hijacks this value for a poison effect
   - `80000000` - 31
 
 </details>
