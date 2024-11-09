@@ -111,6 +111,8 @@ Decompilation of GNT4 is currently underway at [doldecomp/gnt4](https://github.c
 
 [Gecko Codes](/rev3/docs/guides/gecko_codes.md)
 
+[Modding](/rev3/docs/guides/modding.md)
+
 ### GNT Special
 
 [Gecko Codes](/gntsp/docs/guides/gecko_codes.md)

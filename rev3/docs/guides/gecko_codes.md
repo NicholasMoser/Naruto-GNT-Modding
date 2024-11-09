@@ -21,6 +21,19 @@ c2055264 00000005
 041712A8 60030000
 ```
 
+### Unlock Everything
+
+```gecko
+08395BA0 FFFFFFFF
+20040004 00000000
+```
+
+An alternative version of this code that can be inserted into the DOL:
+
+```gecko
+04091424 3800FFFF
+```
+
 ### X and X+Y Do Not Throw Break [Nick]
 
 When you don't have full chakra, you can mash X for easy throw breaks. This code disables X as a throw break button completely to disable that.
