@@ -225,3 +225,11 @@ When you set **Single or Multi Number of Rounds** in the options menu, it also a
 ```
 
 In the above code, the 0x3 at the end of the code is the amount of rounds to change it to.
+
+### LNP Always Activated [Nick]
+
+```gecko
+0449f628 3f8ccccd
+0449f62c 3f8ccccd
+0449f630 3f8ccccd
+```
