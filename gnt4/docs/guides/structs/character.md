@@ -638,8 +638,8 @@ Used for things like Naruto and his clone, Kiba and Akamaru, etc.
   - `00000002` - TYAKURASUB: If this child takes damage, its parent loses chakra.  tyakurasub = "chakra substitute". 
   - `00000004` - DISPOFF: This child is dismissed/hidden/dormant. Halts synchronous timers.
   - `00000008` - TAKEONOFF: This child will be dismissed when it lands. (when it doesn't have PF FLOAT, or if it doesn't have EF TAKEON)
-  - `00000010` - CHGNOATTACK: A requested action waits while the parent is in an attack state.
-  - `00000020` - CHGNODMG: A requested action waits while the parent is in a damage or downed state.
+  - `00000010` - CHGNOATTACK: A requested action won't go through if the parent is in an attack state.
+  - `00000020` - CHGNODMG: A requested action won't go through if the parent is in a damage or downed state.
   - `00000040` - ANMCHG: ??
   - `00000080` - COPYPFHIT: If this child's attack hits, it also counts as the parent's attack hitting.
   - `00000100` - CLR: A requested action resets the character first, and ignores CHGNODMG
