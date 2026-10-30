@@ -651,7 +651,7 @@ Used for things like Naruto and his clone, Kiba and Akamaru, etc.
   - `00004000` - TARGETPARENT: ??
   - `00008000` - NORESULT: ??
   - `00010000` - TARGETPARENT2: ??
-  - `00020000` - PARDMGOFFCOPYTHROW: This child will be dismissed with no VFX if its parent is hurt.
+  - `00020000` - PARDMGOFFCOPYTHROW: This child will be dismissed with no VFX if its parent is hurt. (Naruto 2A clone while still under the ground)
   - `00040000` - 19
   - `00080000` - 20
   - `00100000` - 21: ?? This has something to do with a request from the parent to dismiss this child. (Naruto 4A while clone is already autonomous)
