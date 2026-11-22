@@ -412,7 +412,7 @@ Attack flags.
   - `01000000` - KORO: This attack trips the opponent on hit (cannot be Y-Canceled)
   - `02000000` - REACH_L: The projectile's hitboxes will refresh as it travels
   - `04000000` - TATA: This attack causes a small groundbounce on hit (cannot be Y-Canceled)
-  - `08000000` - NOSPEEP: ??
+  - `08000000` - NOSPEEP: This attack is not subject to the effects of hitstop (NOSPEEP is a typo of NOSLEEP)
   - `10000000` - BEAST: This attack deals chip damage
   - `20000000` - FREEZE: This attack does not have pushback on hit or block (Kimi multihit moves)
   - `40000000` - CANCEL: Cancel the move when you press Y (combine with RF for feint)
@@ -628,30 +628,33 @@ Eighting ran out of DF flags, and so added the rest to D2F flags.
 
 ### 0x150: **CF Flags**
 
+The C likely stands for "child", as in a Child/Parent relationship.
+Used for things like Naruto and his clone, Kiba and Akamaru, etc.
+
 <details>
   <summary>CF Flag Values</summary>
 
-  - `00000001` - DMGOFF
-  - `00000002` - TYAKURASUB
-  - `00000004` - DISPOFF: Turns off the display for the character model. Halts synchronous timers.
-  - `00000008` - TAKEONOFF
-  - `00000010` - CHGNOATTACK
-  - `00000020` - CHGNODMG
-  - `00000040` - ANMCHG
-  - `00000080` - COPYPFHIT
-  - `00000100` - CLR
-  - `00000200` - TYAKURAADD
-  - `00000400` - PARENTMOVE
-  - `00000800` - PINCH
-  - `00001000` - CAMERAON
-  - `00002000` - COMBOONLY
-  - `00004000` - TARGETPARENT
-  - `00008000` - NORESULT
-  - `00010000` - TARGETPARENT2
-  - `00020000` - PARDMGOFFCOPYTHROW
+  - `00000001` - DMGOFF: This child will be dismissed when damaged.
+  - `00000002` - TYAKURASUB: If this child takes damage, its parent loses chakra.  tyakurasub = "chakra substitute". 
+  - `00000004` - DISPOFF: This child is dismissed/hidden/dormant. Halts synchronous timers.
+  - `00000008` - TAKEONOFF: This child will be dismissed when it lands. (when it doesn't have PF FLOAT, or if it does have EF TAKEON)
+  - `00000010` - CHGNOATTACK: A requested action won't go through if the parent is in an attack state.
+  - `00000020` - CHGNODMG: A requested action won't go through if the parent is in a damage or downed state.
+  - `00000040` - ANMCHG: ??
+  - `00000080` - COPYPFHIT: If this child's attack hits, it also counts as the parent's attack hitting.
+  - `00000100` - CLR: A requested action resets the character first, and ignores CHGNODMG
+  - `00000200` - TYAKURAADD: Chakra gains go to the parent.
+  - `00000400` - PARENTMOVE: ??
+  - `00000800` - PINCH: ??
+  - `00001000` - CAMERAON: ??
+  - `00002000` - COMBOONLY: ?? Something to do with B and A being ignored for attack inputs.
+  - `00004000` - TARGETPARENT: ??
+  - `00008000` - NORESULT: ??
+  - `00010000` - TARGETPARENT2: ??
+  - `00020000` - PARDMGOFFCOPYTHROW: This child will be dismissed with no VFX if its parent is hurt. (Naruto 2A clone while still under the ground)
   - `00040000` - 19
   - `00080000` - 20
-  - `00100000` - 21
+  - `00100000` - 21: ?? This has something to do with a request from the parent to dismiss this child. (Naruto 4A while clone is already autonomous)
   - `00200000` - 22
   - `00400000` - 23
   - `00800000` - 24
